@@ -32,43 +32,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Hubbard model}{5}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {A~--}}{5}{paragraph.2.2.0.0.1}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Electron correlations in narrow $d-$bands}{6}{subsection.2.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {B~--}}{6}{paragraph.2.2.1.0.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Hubbard Hamiltonian}{8}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {C~--}}{8}{paragraph.2.2.2.0.3}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.3}Mott insulators}{12}{subsection.2.2.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {D~--}}{12}{paragraph.2.2.3.0.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.4}Effective Heisenberg Hamiltonian}{14}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {E~--}}{14}{paragraph.2.2.4.0.5}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.4.A}Two-site calculation}{15}{subsubsection.2.2.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {A~--}}{15}{paragraph.2.2.4.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.4.B}Degenerate perturbation theory}{17}{subsubsection.2.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {A~--}}{17}{paragraph.2.2.4.2.1}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.5}Exact solutions for simple cases}{19}{subsection.2.2.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {B~--}}{19}{paragraph.2.2.5.0.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.6}The purely atomic $\frac {t}{U} = 0$ limit}{22}{subsection.2.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {C~--}}{22}{paragraph.2.2.6.0.3}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.7}The non-interacting $\frac {t}{U} \rightarrow \infty $ limit}{24}{subsection.2.2.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {D~--}}{24}{paragraph.2.2.7.0.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Section B}{27}{section.2.3}
 \defcounter {refsection}{0}\relax 

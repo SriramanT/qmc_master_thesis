@@ -1,5 +1,4 @@
-\section{Introduction}
-\label{sec:intro}
+\section{Introduction}\label{sec:intro}
 
 The Hubbard model appeared in 1963 as one of the first attempts to include electron correlation effects in a quantum mechanical description of a solid \cite{Hubbard1963}. Originally, it was introduced to explain the behavior of the electrons occupying the narrow, partially filled $d-$bands of transition metals. Correlation phenomena in these bands lead to a behavior reminiscent of the atomic picture of a solid. We have come a long way since the introduction of the Hubbard model and it is now as paradigm-defining in many-body theory as the Ising model in statistical physics\cite{Mahan2000}.
 
@@ -9,7 +8,7 @@ When Hubbard's seminal paper came out, it followed a trend that arose in the 195
 
 An example of an application of a QMC technique is the simulation of electron correlations in a transition metal dichalcogenide (TMD) nanoribbon, a two-dimensional nanostructure made out of some graphene-like compound \cite{Yang2017, Raczkowski2017, Chen2017, Wang2012, Braz2017}. The structure is much longer on one direction than on the other, resembling a ribbon, hence its name. The electronic states that accumulate on the edges of this ribbon might lead to interesting magnetic behavior in these TMD nanostructures (as they do in the analogous graphene nanostructures\cite{Yazyev2010}) and this possibility remains unexplored numerically\cite{Feldner2011, Golor2013}. Moreover, there is some interest in exploring the phase diagram of these systems because recent studies point at the possibility of topological superconductivity \cite{Hsu2017}.
 
-\section{Hubbard model}\paragraph{}
+\section{Hubbard model}
 
 We start with an overview of the Hubbard model and in section \ref{hubbQMC} we provide details on how to simulate it numerically using quantum Monte Carlo. In particular, we discuss the original motivation to introduce the model and show how the Hubbard Hamiltonian arises as an approximate representation of the Coulomb repulsion between electrons. Finally, we present exact solutions for particular limiting cases, which can be used to crosscheck our simulations.
 
@@ -17,7 +16,7 @@ The nearly free electron gas models the conduction bands of metals and alloys fa
 
 Take Molybdenum, a transition metal. Its electronic configuration is $[Kr] 5s^1 4d^5$. The $s$-orbital is higher in energy than the $d$-orbital. Thus, the Fermi energy lies in the corresponding partially filled $s-$band, which is then the conduction band. However, the $d$-band will be only partially filled as well, leading to the effects mentioned in the previous paragraph. Platinum is yet another example, with electronic configuration $[Xe]4f^{14} 5d^9 6s^1 $, where the $5d$ level in only partially filled. In these partially filled narrow energy bands correlation phenomena are particularly relevant, as opposed to the case of conduction bands. Thus, the nearly free electron gas model does not suffice to describe the electrons in these bands; we must turn to a model that includes correlations. While for $f-$electrons of rare earth metals, a purely atomic, localized model - such as the Heitler-London model - might be satisfactory, the same cannot be said for $d-$electrons of transition metals because the band they occupy is narrower and correlations should be more relevant since the electronic states within the band are closer in energy.
 
-\subsection{Electron correlations in narrow $d-$bands}\paragraph{}
+\subsection{Electron correlations in narrow $d-$bands}
 
 First, note that the effects of correlations cannot possibly be the same in narrow energy bands and in the free electron gas. To see this, we may simply recall the shape of a $d-$wave function. In a $d-$orbital, the electron charge density is concentrated near the nucleus. In a solid the electronic charge density should then also be concentrated near the nuclei, as long as the atomic description is useful, even if not completely correct\footnote{The electronic charge density is, of course, not actually defined in terms of a squared norm of the $d-$wave function for a narrow band. There is some broadening of the corresponding atomic energy level, and the wave function describing an electron is a Bloch wave function. Since the band is narrow, we assume that the atomic wave function description is still somewhat useful in a given range and we use it to provide a heuristic motivation for the non validity of the free electron assumption.}. It is much smaller between atoms so that electrons do seem to belong to individual atoms in some sense. For a $d-$band, we assume that the case is not so different since the band is narrow. The fact that we may speak with some meaning of an electron belonging to a particular atom motivates an atomic description, in spite of the fact that the bandwidth of a $d-$band is still appreciable. The point is that electrons in $d-$bands are certainly not well described by a free electron gas, which cannot possibly account for atomic-like behavior.
 
@@ -41,7 +40,7 @@ A theory of electron correlations in a narrow energy band should reduce to an at
 
 In short, our picture is the following: electrons hop rapidly from atom to atom in a band-like fashion, but their motion is correlated in such a way that atomic characteristics emerge. The extent of atomic behavior depends, of course, on the strength of the interaction.
 
-\subsection{Hubbard Hamiltonian}\label{hubbardHamiltonian}\paragraph{}
+\subsection{Hubbard Hamiltonian}\label{hubbardHamiltonian}
 
 Imagine a hypothetical partially filled narrow $s-$band with $n$ electrons per atom. Suppose you have obtained Bloch wave functions $\psi_{\bm k}$ corresponding to energies $\varepsilon_{\bm k}$ by solving the Schr\"odinger equation for some spin-independent mean field Hartree-Fock potential that accounts for the average interaction of the $s-$band electrons with electrons on other bands, and the interaction with the other $s-$electrons. The electrons on the band evolve according to the Hamiltonian (in a suitable unit system):
 
@@ -213,7 +212,7 @@ Let's suppose we have the simplest uniform nearest neighbor hopping model. Going
 \mathcal{H} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg(c_{i,\sigma} c_{j,\sigma}^\dagger + c_{j,\sigma} c_{i,\sigma}^\dagger \bigg) + U \sum_{i} n_{i,\uparrow} n_{i\downarrow}
 \end{equation}
 
-\subsection{Mott insulators}\paragraph{}
+\subsection{Mott insulators}
 
 Band theory was found to be flawed soon after it was introduced. The picture it proposes is simple and generally works pretty well. It is based on considering the electrons to be independently moving under the constant background potential created by the ions. The solutions of the Schr\"odinger for free electrons in a periodic potential $U(\bm r)$, such that $U(\bm r) = U(\bm r + \bm R)$,
 
@@ -255,7 +254,7 @@ The bandwidth is then $W = 8 t$. The energy of a configuration with a hole and a
 \end{equation}
 where $U$ is practically independent of the lattice parameter $a$. The bandwidth $W$, however, depends strongly on $a$. When $a \gg a_0$, where $a_0$ is the Bohr radius, the transfer integral is exponentially small, because only the exponential tails of the wave functions are relevant. In this limit, $\Delta_c \approx U$ is a large, positive number, and the system is an insulator. This type of insulator is called a Mott insulator, and $\Delta_c$ is called the charge gap. As $a$ decreases, $t$ increases, and there must be a critical value $a_c \sim a_0$, for which $U = W$. Below this value, the computation of $\Delta_c$ is not valid anymore because the gap cannot be negative. Thus, there must be a metal-insulator transition. It is possible to see this transition if we apply enough pressure to a Mott insulator so as to decrease $a$ and increase $t$. A transition of this type was first seen in the 1970's for $V_2 O_3$\footnote{Of course, the transition is not so easy to describe. However, this simple argument provides an intuitive picture.}. There is a fundamental difference between a band insulator and a Mott insulator. While we must pay an energy $\Delta_c$ to make a charge excitation, this is not the cost of a spin excitation: we can flip the spin of an electron without creating a doubly occupied site. The fluctuations of both charge and spin due to the electron interactions may then lead to magnetic behavior characteristic of this type of systems.
 
-\subsection{Effective Heisenberg Hamiltonian}\paragraph{}
+\subsection{Effective Heisenberg Hamiltonian}
 
 Mott insulators allow low energy magnetic excitations (spin flips). The insulating phase corresponds to a configuration where each atom has an odd number of electrons, let's say one. This electron may have its spin up or down. In the purely atomic limit $\frac{t}{U} \rightarrow 0$, the atoms are infinitely far, and the excitation spectrum is very simple. The ground state is highly degenerate: every configuration with one electron per site is a ground state. As a matter of fact, the ground state is $2^N$-fold degenerate. The first excited state corresponds to configurations with a hole and a doubly occupied site. Let us set the energy of the ground state to zero in our conventions.  The energy of these configurations is then $U$, and there are $N(N-1)2^{N-2}$ of them. This process of generating higher energy excitations may be continued.
 
@@ -265,7 +264,7 @@ When the atoms are brought together, the first effect is the lifting of the dege
 \mathcal{H}_0 = - t \sum_{\left\langle i, j \right\rangle, \sigma} ( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} ) 
 \end{equation}
 
-\subsubsection{Two-site calculation}\paragraph{}
+\subsubsection{Two-site calculation}
 
 The effect of the hopping term is best understood in a minimal two-site example. There are four one-particle quantum states, represented by the action of the operators $c_{1,\uparrow}^\dagger$, $c_{1,\downarrow}^\dagger$, $c_{2,\uparrow}^\dagger$, $c_{2,\downarrow}^\dagger$ on the vacuum state. There are six two-particle states in the Fock space $\left| n_{1\uparrow} \,  n_{1\downarrow} \,  n_{2\uparrow} \, n_{2\downarrow} \right\rangle$:
 
@@ -352,7 +351,7 @@ for two spins-$\frac{1}{2}$.
 
 It turns out that this result is yet more general. For an arbitrary number of sites, this is is the form of the effective Hamiltonian at second order.
 
-\subsubsection{Degenerate perturbation theory}\paragraph{}
+\subsubsection{Degenerate perturbation theory}
 
 To first order in $\mathcal{H}$, the matrix elements of its effective Hamiltonian coincide in the ground state subspace (by definition).
 
@@ -513,7 +512,7 @@ which corresponds to the antiferromagnetic Heisenberg model: $\mathcal{H}_{\text
 
 As a final remark, we note that the effective Hamiltonian we obtained corresponds to the $\frac{t}{U} \ll 1$ limit, which is consistent since the Heisenberg model couples spins on different sites, thus it is an \emph{atomic} model.
 
-\subsection{Exact solutions for simple cases}\label{exactSolutions}\paragraph{}
+\subsection{Exact solutions for simple cases}\label{exactSolutions}
 
 If we relax the condition of fixed number of particles, there is an extra energy term $-\mu N_p$ in the Hamiltonian (compared to equation (\ref{eq:hubbard_hamiltonian})), where $\mu$ is the chemical potential, and $N_p$ is the total number of particles. The Hubbard Hamiltonian may then be written as a sum of kinetic, chemical and potential energy terms, respectively:
 
@@ -623,7 +622,7 @@ c_i^\dagger c_{i+1}^\dagger \begin{cases}
 
 The operator annihilates the particle at $i+1$ and creates it back at $i$, i.e. the electron hops from $i+1$ to $i$.
 
-\subsection{The purely atomic $\frac{t}{U} = 0$ limit}\paragraph{}
+\subsection{The purely atomic $\frac{t}{U} = 0$ limit}
 
 When $t = 0$, the Hamiltonian reduces to 
 
@@ -730,7 +729,7 @@ which, at half filling, simplifies to
 Note that as either $U$ or $\beta$ increase the double occupancy tends to zero.
 \end{enumerate}
 
-\subsection{The non-interacting $\frac{t}{U} \rightarrow \infty$ limit}\paragraph{}
+\subsection{The non-interacting $\frac{t}{U} \rightarrow \infty$ limit}
 
 In the $\frac{t}{U} \rightarrow \infty$ limit, the spin spaces become independent, and they may be considered separately. Thus we omit the spin indices of the operators in the Hamiltonian:
 
