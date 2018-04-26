@@ -1,0 +1,27 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dummy Chapter:
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Introduction:
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancychapter{Finite Temperature Auxiliary Field Quantum Monte Carlo}
+\label{cap:finiteTafqmc}
+
+These notes aim to present the basic aspects of a numerical technique used to simulate the Hubbard model in a self-contained, tutorial form. The idea is to reduce our problem to solving a set of integrals, which we evaluate numerically through a standard stochastic procedure, known as the Monte Carlo method. These integrals are arrived at upon formulating the quantum many-body description of the system using the Schr\"odinger equation. Hence the name Quantum Monte Carlo, which is used to distinguish it from Classical Monte Carlo. In the classical version, one measures thermal averages. In the quantum version, one measures expectations of operators over the Hilbert space of the system, corresponding to physical observables that fluctuate with a dynamics given by Schr\"odinger's equation.
+
+An example of an application of a QMC technique is the simulation of electron correlations in a transition metal dichalcogenide (TMD) nanoribbon, a two-dimensional nanostructure made out of some graphene-like compound \cite{Yang2017, Raczkowski2017, Chen2017, Wang2012, Braz2017}. The structure is much longer on one direction than on the other, resembling a ribbon, hence its name. The electronic states that accumulate on the edges of this ribbon might lead to interesting magnetic behavior in these TMD nanostructures (as they do in the analogous graphene nanostructures\cite{Yazyev2010}) and this possibility remains unexplored numerically\cite{Feldner2011, Golor2013}. Moreover, there is some interest in exploring the phase diagram of these systems because recent studies point at the possibility of topological superconductivity \cite{Hsu2017}.
+
+The interactions between the electrons in a solid give rise to effects that arise specifically due to the many-body nature of the system. The Hubbard model is a minimal model that encapsulates electron correlations. It goes beyond the periodic ionic potential perturbation to the free electron gas or tight binding approaches, which lead to band theory. One obtains the Hubbard Hamiltonian by adding the simplest possible electron-electron interaction term to a tight binding Hamiltonian: an on-site interaction term that penalises double occupancy of a site. From it, we can make predictions about properties of a strongly correlated system, namely magnetic and superconducting behavior, and metal-insulator transitions.
+
+Auxiliary-field, or Determinant Quantum Monte Carlo \footnote{AFQMC or DQMC, respectively.} is a simulation method that is amply applicable to condensed matter physics problems and that is commonly used to simulate the Hubbard model. Despite the system size being constrained due to limited simulation time, the method provides reliable, unbiased, and generally accurate solutions to the often otherwise intractable quantum many-body problem. In particular, the technique allows us to capture the elusive effects of electron correlations, for example in the two-dimensional graphene-like nanostructures we are concerned with.
+
+Among the various methods belonging to the family of QMC methods, AFQMC has the advantage of  allowing us to circumvent the sign problem for the half filled Hubbard model. The sign problem is an uncontrolled numerical error due to the antisymmetry of the many-electron wave function, leading to oscillations in the sign of the quantities that we are interested in measuring. These oscillations deem the algorithm exponentially complex in the size of the system, in general, but it is possible to overcome this hurdle for a class of models, namely the Hubbard model at half filling. The difficulty lies in computing averages of a quantity $X$ that is very close to zero, on average, but has a large variance, i.e. $\sigma_X / \left\langle X \right\rangle \gg 1$.
+
+We seek a computable approximation of the projection operator $\mathcal{P}$ defined in equation (\ref{eq:projection}). As we shall see, it is found by using a discrete Hubbard-Stratonovich transformation. This transformation introduces an auxiliary field (consisting basically of Ising spins), and we use Monte Carlo to sample configurations from the distribution corresponding to this \emph{classical} configuration space.
+
+For now, let us assume half filling $\mu = 0$, so that there is no sign problem. In fact, many interesting phenomena occur at half filling, for example magnetic ordering and the Mott metal-insulator transition.
+
+\input{5.FiniteTafqmc/1.sectiona.tex}
+\input{5.FiniteTafqmc/2.sectionb.tex}
+\cleardoublepage

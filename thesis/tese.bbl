@@ -397,6 +397,163 @@
       \verb 10.1103/PhysRevB.31.4403
       \endverb
     \endentry
+    \entry{Ashcroft1976}{book}{}
+      \name{author}{2}{}{%
+        {{hash=0561494cb251a6b3232fc6452d305040}{%
+           family={Ashcroft},
+           familyi={A\bibinitperiod},
+           given={Neil\bibnamedelima W},
+           giveni={N\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=e57dc8e9c288c940d9bda885fdb36ca3}{%
+           family={Mermin},
+           familyi={M\bibinitperiod},
+           given={N\bibnamedelima David},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{62ca54533c47b92e987d34d8f2ef9a66}
+      \strng{fullhash}{62ca54533c47b92e987d34d8f2ef9a66}
+      \strng{authornamehash}{62ca54533c47b92e987d34d8f2ef9a66}
+      \strng{authorfullhash}{62ca54533c47b92e987d34d8f2ef9a66}
+      \field{sortinit}{7}
+      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Great Job in explaining this "hairy" matter. Reading the book as an theoretical Physisist there is some stuff missing when it gets to the theoretical aspects. And this is not what the authors intended. The book rather explains in "simple" words and formulas a deep physical understanding of all fields of solid state physics. It has everything a good text book needs. Great Job by the athors Fun to read.}
+      \field{booktitle}{Solid State Physics}
+      \field{isbn}{0030839939}
+      \field{issn}{00319228}
+      \field{number}{ISBN 0-471-92805-4}
+      \field{title}{{Solid State Physics}}
+      \field{volume}{2}
+      \field{year}{1976}
+      \field{pages}{848}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/0038-1101(66)90069-4
+      \endverb
+      \verb{url}
+      \verb http://www.amazon.com/Solid-State-Physics-Neil-Ashcroft/dp/0030839939
+      \endverb
+    \endentry
+    \entry{Boer1937}{article}{}
+      \name{author}{2}{}{%
+        {{hash=00a80ac359104e968711042c6d1841c6}{%
+           family={Boer},
+           familyi={B\bibinitperiod},
+           given={J\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=20ba04de0b7444a37a8b59a5dc443cf8}{%
+           family={Verwey},
+           familyi={V\bibinitperiod},
+           given={E\bibnamedelima J\bibnamedelima W},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b0cadb1351371e0444833c8dda59de0}
+      \strng{fullhash}{2b0cadb1351371e0444833c8dda59de0}
+      \strng{authornamehash}{2b0cadb1351371e0444833c8dda59de0}
+      \strng{authorfullhash}{2b0cadb1351371e0444833c8dda59de0}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Attention is drawn to a class of semi-conductors or insulators with incompletely filled 3 d bands. Their lack of conductivity, if the number of electrons per atom is an integer, is explained by the circumstance that a moving electron will have a large probability of being withdrawn to the initial atom, if only the potential barriers to be penetrated are sufficiently high to reduce the frequency of transition below a certain limit. This inhibiting factor disappears, if for ions of equal electronic levels the number of electrons per atom differs from an integer. In the case of NiO this condition is fulfilled if an electron is brought by thermal excitation from the lattice 3 d band into the somewhat raised and less occupied levels a, a ' (figure 1); these levels belong to Ni ions adjacent to a vacant Ni lattice point introduced by the deviations from stoichiometry, and two of these Ni ions are at the absolute zero Ni 3+ ions. An analogous conduction mechanism holds for non-stoichiometric Cu 2 O, with a completely filled 3 d band (figure 2). Photoconductivity is generally observed with substances with completely filled zones and never with substances of the NiO type. A tentative explanation is given for this fact on the basis of the model of figure 1 and figure 2. In non-stoechiometric ZnO vacant oxygen lattice points are assumed (figure 3); in that case the calculation of the lattice levels shows that at the lattice holes one Zn 2+ is converted into Zn, whereas in the lattice the additional electrons form Zn + ions, as will be the case after thermal transitions of the electrons belonging to these Zn atoms into the lattice 4 s band.}
+      \field{journaltitle}{Proceedings of the Physical Society}
+      \field{number}{4S}
+      \field{title}{Semi-conductors with partially and with completely filled 3 d -lattice bands}
+      \field{volume}{49}
+      \field{year}{1937}
+      \field{pages}{59}
+      \range{pages}{1}
+      \verb{url}
+      \verb http://stacks.iop.org/0959-5309/49/i=4S/a=307
+      \endverb
+    \endentry
+    \entry{Mott1939}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1638ef5a5e93e73733dd03c2e0aabf3b}{%
+           family={{Mott}},
+           familyi={M\bibinitperiod},
+           given={N.\bibnamedelimi F.},
+           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=4d8055559580656277f9ac07d17d4bf4}{%
+           family={{Peierls}},
+           familyi={P\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d23ac3fa0b220eb6a29cc6bf3949f081}
+      \strng{fullhash}{d23ac3fa0b220eb6a29cc6bf3949f081}
+      \strng{authornamehash}{d23ac3fa0b220eb6a29cc6bf3949f081}
+      \strng{authorfullhash}{d23ac3fa0b220eb6a29cc6bf3949f081}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Physical Society}
+      \field{month}{8}
+      \field{title}{{Discussion of the paper by de Boer and Verwey}}
+      \field{volume}{49}
+      \field{year}{1937}
+      \field{pages}{72\bibrangedash 73}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1088/0959-5309/49/4S/308
+      \endverb
+    \endentry
+    \entry{Mott1949}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a119e0d37db44eb2842a2575e3a5eeab}{%
+           family={Mott},
+           familyi={M\bibinitperiod},
+           given={N\bibnamedelima F},
+           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a119e0d37db44eb2842a2575e3a5eeab}
+      \strng{fullhash}{a119e0d37db44eb2842a2575e3a5eeab}
+      \strng{authornamehash}{a119e0d37db44eb2842a2575e3a5eeab}
+      \strng{authorfullhash}{a119e0d37db44eb2842a2575e3a5eeab}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is shown that the collective electron and London-Heitler models are not to be regarded as different approximations to the same exact wave function for solids in which, according to the former model, there is a partially filled zone of energy levels. It can thus be shown why nickel oxide in the pure state is a non-conductor, although it contains an incomplete zone. The properties of the metals nickel, palladium and platinum are discussed in the light of these results; platinum differs from nickel in that the orbital contribution to the moment of the elementary magnets is not quenched. A discussion is given of x-ray absorption edges, and it is shown why exciton lines are absent for metals.}
+      \field{journaltitle}{Proceedings of the Physical Society. Section A}
+      \field{number}{7}
+      \field{title}{The Basis of the Electron Theory of Metals, with Special Reference to the Transition Metals}
+      \field{volume}{62}
+      \field{year}{1949}
+      \field{pages}{416}
+      \range{pages}{1}
+      \verb{url}
+      \verb http://stacks.iop.org/0370-1298/62/i=7/a=303
+      \endverb
+    \endentry
+    \entry{Mila2007}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=5ecae643825cd4b71c24d994dbd4253a}{%
+           family={Mila},
+           familyi={M\bibinitperiod},
+           given={Frédéric},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {École Polytechnique Fédérale de Lausanne}%
+      }
+      \strng{namehash}{5ecae643825cd4b71c24d994dbd4253a}
+      \strng{fullhash}{5ecae643825cd4b71c24d994dbd4253a}
+      \strng{authornamehash}{5ecae643825cd4b71c24d994dbd4253a}
+      \strng{authorfullhash}{5ecae643825cd4b71c24d994dbd4253a}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Physique du Solide III et IV}}
+      \field{year}{2007}
+      \field{pages}{1\bibrangedash 186}
+      \range{pages}{186}
+    \endentry
     \entry{Yang2017}{article}{}
       \name{author}{5}{}{%
         {{hash=11a33b1aa9e89479e304318dff521b9c}{%
@@ -429,8 +586,8 @@
       \strng{fullhash}{c7a4370bebc051bb90cc0d25db16b320}
       \strng{authornamehash}{f417e8a65f8cc3f417c43e53877ac454}
       \strng{authorfullhash}{c7a4370bebc051bb90cc0d25db16b320}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Using the determinant quantum Monte-Carlo method, we elucidate the strain tuning of edge magnetism in zigzag graphene nanoribbons. Our intensive numerical results show that a relatively weak Coulomb interaction may induce a ferromagnetic-like behaviour with a proper strain, and the edge magnetism can be enhanced greatly as the strain along the zigzag edge increases, which provides another way to control graphene magnetism even at room temperature.}
@@ -466,8 +623,8 @@
       \strng{fullhash}{13c37595f84604ddea6882d758b089d7}
       \strng{authornamehash}{13c37595f84604ddea6882d758b089d7}
       \strng{authorfullhash}{13c37595f84604ddea6882d758b089d7}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We perform projective quantum Monte Carlo simulations of zigzag graphene nanoribbons within a realistic model with long-range Coulomb interactions. Increasing the relative strength of nonlocal interactions with respect to the on-site repulsion does not generate a phase transition but has a number of nontrivial effects. At the single-particle level we observe a marked enhancement of the Fermi velocity at the Dirac points. At the two-particle level, spin- and charge-density-wave fluctuations compete. As a consequence, the edge magnetic moment is reduced but the edge dispersion relation increases in the sense that the single-particle gap at momentum {\$}q=\backslashpi/|{\{}\backslashpmb a{\}}{\_}1|{\$} grows. We attribute this to nonlocal charge fluctuations which assist the spin fluctuations to generate the aforementioned gap. In contrast, the net result of the interaction-induced renormalization of different energy scales is a constant spin-wave velocity of the edge modes. However, since the particle-hole continuum is shifted to higher energies---due to the renormalization of the Fermi velocity---Landau damping is reduced. As a result, a roughly linear spin-wave-like mode at the edge spreads out through a larger part of the Brillouin zone.}
@@ -527,8 +684,8 @@
       \strng{fullhash}{0567d706633fcb4a6bbde9dcf64ffcc0}
       \strng{authornamehash}{6df7867741141bdec88cb9c3fb541baa}
       \strng{authorfullhash}{0567d706633fcb4a6bbde9dcf64ffcc0}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Transition metal dichalcogenides (TMDs) are a family of van der Waals layered materials exhibiting unique electronic, optical, magnetic and transport properties. Their technological potentials hinge critically on the ability to achieve controlled fabrication of desirable nanostructures, such as nanoribbons and nanodots. To date, nanodots/nanoislands have been regularly observed, while controlled fabrication of TMD nanoribbons remains challenging. Here we report a bottom-up fabrication of MoSe2 nanoribbons using molecular beam epitaxy, via an unexpected temperature-induced morphological phase transition from the nanodot to nanoribbon regime. Such nanoribbons are of zigzag nature, characterized by distinct chemical and electronic properties along the edges. The phase space for nanoribbon growth is narrowly defined by proper Se:Mo ratios, as corroborated experimentally using different Se fluxes, and supported theoretically using first-principles calculations that establish the crucial role of the morphological reconstruction of the bare Mo-terminated edge. The growth mechanism revealed should be applicable to other TMD systems.}
@@ -574,8 +731,8 @@
       \strng{fullhash}{f65a9702ecbbe84687dc52793003791e}
       \strng{authornamehash}{2ccdb6c0006be4c33122a9af1b6ce751}
       \strng{authorfullhash}{f65a9702ecbbe84687dc52793003791e}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The remarkable properties of graphene have renewed interest in inorganic, two-dimensional materials with unique electronic and optical attributes. Transition metal dichalcogenides (TMDCs) are layered materials with strong in-plane bonding and weak out-of-plane interactions enabling exfoliation into two-dimensional layers of single unit cell thickness. Although TMDCs have been studied for decades, recent advances in nanoscale materials characterization and device fabrication have opened up new opportunities for two-dimensional layers of thin TMDCs in nanoelectronics and optoelectronics. TMDCs such as MoS(2), MoSe(2), WS(2) and WSe(2) have sizable bandgaps that change from indirect to direct in single layers, allowing applications such as transistors, photodetectors and electroluminescent devices. We review the historical development of TMDCs, methods for preparing atomically thin layers, their electronic and optical properties, and prospects for future advances in electronics and optoelectronics.}
@@ -622,8 +779,8 @@
       \strng{fullhash}{9bce4cec6f3f5f6c9e771f1184478c92}
       \strng{authornamehash}{08f71198ce2c97cbae2a5aa79965e898}
       \strng{authorfullhash}{9bce4cec6f3f5f6c9e771f1184478c92}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We compute the valley/magnetic phase diagram of mono layers of transition metal dichalcogenides in the hole doped region where spin-orbit effects are particularly relevant. Taking into account the moderate to high local electron-electron interactions due to the presence of transition metal atoms, we show that the system is unstable to an itinerant ferromagnetic phase where all charge carriers are spin and valley polarized. This phase shows an anomalous charge Hall and anomalous spin-Hall response, and may thus be detected experimentally.}
@@ -647,8 +804,8 @@
       \strng{fullhash}{c832631f272c4d169abd3fae565dd149}
       \strng{authornamehash}{c832631f272c4d169abd3fae565dd149}
       \strng{authorfullhash}{c832631f272c4d169abd3fae565dd149}
-      \field{sortinit}{8}
-      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Magnetic materials and nanostructures based on carbon offer unique opportunities for future technological applications such as spintronics. This article reviews graphene-derived systems in which magnetic correlations emerge as a result of reduced dimensions, disorder and other possible scenarios. In particular, zero-dimensional graphene nanofragments, one-dimensional graphene nanoribbons, and defect-induced magnetism in graphene and graphite are covered. Possible physical mechanisms of the emergence of magnetism in these systems are illustrated with the help of computational examples based on simple model Hamiltonians. In addition, this review covers spin transport properties, proposed designs of graphene-based spintronic devices, magnetic ordering at finite temperatures as well as the most recent experimental achievements.}
@@ -704,8 +861,8 @@
       \strng{fullhash}{e26703082ce1d3764b14620a1bf8215a}
       \strng{authornamehash}{820792bdc4142c3fb0c3458609fec7ef}
       \strng{authorfullhash}{e26703082ce1d3764b14620a1bf8215a}
-      \field{sortinit}{9}
-      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We investigate the edge-state magnetism of graphene nanoribbons using projective quantum Monte Carlo simulations and a self-consistent mean-field approximation of the Hubbard model. The static magnetic correlations are found to be short ranged. Nevertheless, the correlation length increases with the width of the ribbon such that already for ribbons of moderate widths we observe a strong trend towards mean-field-type ferromagnetic correlations at a zigzag edge. These correlations are accompanied by a dominant low-energy peak in the local spectral function and we propose that this can be used to detect edge-state magnetism by scanning tunneling microscopy. The dynamic spin structure factor at the edge of a ribbon exhibits an approximately linearly dispersing collective magnonlike mode at low energies that decays into Stoner modes beyond the energy scale where it merges into the particle-hole continuum.}
@@ -746,8 +903,8 @@
       \strng{fullhash}{91a2338725147d198a0a035732c60259}
       \strng{authornamehash}{c24596cf1a502db47fec1177c7bbe3fe}
       \strng{authorfullhash}{91a2338725147d198a0a035732c60259}
-      \field{sortinit}{9}
-      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We investigate chiral graphene nanoribbons using projective quantum Monte Carlo simulations within the local Hubbard model description and study the effects of electron-electron interactions on the electronic and magnetic properties at the ribbon edges. Static and dynamical properties are analyzed for nanoribbons of varying width and edge chirality, and compared to a self-consistent Hartee-Fock mean-field approximation. Our results show that for chiral ribbons of sufficient width, the spin correlations exhibit exceedingly long correlation lengths, even between zigzag segments that are well separated by periodic armchair regions. Characteristic enhancements in the magnetic correlations for distinct ribbon widths and chiralities are associated with energy gaps in the tight-binding limit of such ribbons. We identify specific signatures in the local density of states and low- energy modes in the local spectral function which directly relate to enhanced electronic correlations along graphene nanoribbons and which can be accessed scanning tunneling spectroscopy.}
@@ -810,163 +967,6 @@
       \verb{eprint}
       \verb 1606.00857
       \endverb
-    \endentry
-    \entry{Ashcroft1976}{book}{}
-      \name{author}{2}{}{%
-        {{hash=0561494cb251a6b3232fc6452d305040}{%
-           family={Ashcroft},
-           familyi={A\bibinitperiod},
-           given={Neil\bibnamedelima W},
-           giveni={N\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=e57dc8e9c288c940d9bda885fdb36ca3}{%
-           family={Mermin},
-           familyi={M\bibinitperiod},
-           given={N\bibnamedelima David},
-           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \strng{namehash}{62ca54533c47b92e987d34d8f2ef9a66}
-      \strng{fullhash}{62ca54533c47b92e987d34d8f2ef9a66}
-      \strng{authornamehash}{62ca54533c47b92e987d34d8f2ef9a66}
-      \strng{authorfullhash}{62ca54533c47b92e987d34d8f2ef9a66}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Great Job in explaining this "hairy" matter. Reading the book as an theoretical Physisist there is some stuff missing when it gets to the theoretical aspects. And this is not what the authors intended. The book rather explains in "simple" words and formulas a deep physical understanding of all fields of solid state physics. It has everything a good text book needs. Great Job by the athors Fun to read.}
-      \field{booktitle}{Solid State Physics}
-      \field{isbn}{0030839939}
-      \field{issn}{00319228}
-      \field{number}{ISBN 0-471-92805-4}
-      \field{title}{{Solid State Physics}}
-      \field{volume}{2}
-      \field{year}{1976}
-      \field{pages}{848}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/0038-1101(66)90069-4
-      \endverb
-      \verb{url}
-      \verb http://www.amazon.com/Solid-State-Physics-Neil-Ashcroft/dp/0030839939
-      \endverb
-    \endentry
-    \entry{Boer1937}{article}{}
-      \name{author}{2}{}{%
-        {{hash=00a80ac359104e968711042c6d1841c6}{%
-           family={Boer},
-           familyi={B\bibinitperiod},
-           given={J\bibnamedelima H},
-           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
-           prefix={de},
-           prefixi={d\bibinitperiod}}}%
-        {{hash=20ba04de0b7444a37a8b59a5dc443cf8}{%
-           family={Verwey},
-           familyi={V\bibinitperiod},
-           given={E\bibnamedelima J\bibnamedelima W},
-           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \strng{namehash}{2b0cadb1351371e0444833c8dda59de0}
-      \strng{fullhash}{2b0cadb1351371e0444833c8dda59de0}
-      \strng{authornamehash}{2b0cadb1351371e0444833c8dda59de0}
-      \strng{authorfullhash}{2b0cadb1351371e0444833c8dda59de0}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Attention is drawn to a class of semi-conductors or insulators with incompletely filled 3 d bands. Their lack of conductivity, if the number of electrons per atom is an integer, is explained by the circumstance that a moving electron will have a large probability of being withdrawn to the initial atom, if only the potential barriers to be penetrated are sufficiently high to reduce the frequency of transition below a certain limit. This inhibiting factor disappears, if for ions of equal electronic levels the number of electrons per atom differs from an integer. In the case of NiO this condition is fulfilled if an electron is brought by thermal excitation from the lattice 3 d band into the somewhat raised and less occupied levels a, a ' (figure 1); these levels belong to Ni ions adjacent to a vacant Ni lattice point introduced by the deviations from stoichiometry, and two of these Ni ions are at the absolute zero Ni 3+ ions. An analogous conduction mechanism holds for non-stoichiometric Cu 2 O, with a completely filled 3 d band (figure 2). Photoconductivity is generally observed with substances with completely filled zones and never with substances of the NiO type. A tentative explanation is given for this fact on the basis of the model of figure 1 and figure 2. In non-stoechiometric ZnO vacant oxygen lattice points are assumed (figure 3); in that case the calculation of the lattice levels shows that at the lattice holes one Zn 2+ is converted into Zn, whereas in the lattice the additional electrons form Zn + ions, as will be the case after thermal transitions of the electrons belonging to these Zn atoms into the lattice 4 s band.}
-      \field{journaltitle}{Proceedings of the Physical Society}
-      \field{number}{4S}
-      \field{title}{Semi-conductors with partially and with completely filled 3 d -lattice bands}
-      \field{volume}{49}
-      \field{year}{1937}
-      \field{pages}{59}
-      \range{pages}{1}
-      \verb{url}
-      \verb http://stacks.iop.org/0959-5309/49/i=4S/a=307
-      \endverb
-    \endentry
-    \entry{Mott1939}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1638ef5a5e93e73733dd03c2e0aabf3b}{%
-           family={{Mott}},
-           familyi={M\bibinitperiod},
-           given={N.\bibnamedelimi F.},
-           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-        {{hash=4d8055559580656277f9ac07d17d4bf4}{%
-           family={{Peierls}},
-           familyi={P\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{d23ac3fa0b220eb6a29cc6bf3949f081}
-      \strng{fullhash}{d23ac3fa0b220eb6a29cc6bf3949f081}
-      \strng{authornamehash}{d23ac3fa0b220eb6a29cc6bf3949f081}
-      \strng{authorfullhash}{d23ac3fa0b220eb6a29cc6bf3949f081}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the Physical Society}
-      \field{month}{8}
-      \field{title}{{Discussion of the paper by de Boer and Verwey}}
-      \field{volume}{49}
-      \field{year}{1937}
-      \field{pages}{72\bibrangedash 73}
-      \range{pages}{2}
-      \verb{doi}
-      \verb 10.1088/0959-5309/49/4S/308
-      \endverb
-    \endentry
-    \entry{Mott1949}{article}{}
-      \name{author}{1}{}{%
-        {{hash=a119e0d37db44eb2842a2575e3a5eeab}{%
-           family={Mott},
-           familyi={M\bibinitperiod},
-           given={N\bibnamedelima F},
-           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \strng{namehash}{a119e0d37db44eb2842a2575e3a5eeab}
-      \strng{fullhash}{a119e0d37db44eb2842a2575e3a5eeab}
-      \strng{authornamehash}{a119e0d37db44eb2842a2575e3a5eeab}
-      \strng{authorfullhash}{a119e0d37db44eb2842a2575e3a5eeab}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{It is shown that the collective electron and London-Heitler models are not to be regarded as different approximations to the same exact wave function for solids in which, according to the former model, there is a partially filled zone of energy levels. It can thus be shown why nickel oxide in the pure state is a non-conductor, although it contains an incomplete zone. The properties of the metals nickel, palladium and platinum are discussed in the light of these results; platinum differs from nickel in that the orbital contribution to the moment of the elementary magnets is not quenched. A discussion is given of x-ray absorption edges, and it is shown why exciton lines are absent for metals.}
-      \field{journaltitle}{Proceedings of the Physical Society. Section A}
-      \field{number}{7}
-      \field{title}{The Basis of the Electron Theory of Metals, with Special Reference to the Transition Metals}
-      \field{volume}{62}
-      \field{year}{1949}
-      \field{pages}{416}
-      \range{pages}{1}
-      \verb{url}
-      \verb http://stacks.iop.org/0370-1298/62/i=7/a=303
-      \endverb
-    \endentry
-    \entry{Mila2007}{unpublished}{}
-      \name{author}{1}{}{%
-        {{hash=5ecae643825cd4b71c24d994dbd4253a}{%
-           family={Mila},
-           familyi={M\bibinitperiod},
-           given={Frédéric},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {École Polytechnique Fédérale de Lausanne}%
-      }
-      \strng{namehash}{5ecae643825cd4b71c24d994dbd4253a}
-      \strng{fullhash}{5ecae643825cd4b71c24d994dbd4253a}
-      \strng{authornamehash}{5ecae643825cd4b71c24d994dbd4253a}
-      \strng{authorfullhash}{5ecae643825cd4b71c24d994dbd4253a}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Physique du Solide III et IV}}
-      \field{year}{2007}
-      \field{pages}{1\bibrangedash 186}
-      \range{pages}{186}
     \endentry
     \entry{dummy}{article}{}
       \name{author}{1}{}{%
@@ -1105,28 +1105,6 @@
       \verb{url}
       \verb http://www.scielo.br/scielo.php?script=sci%7B%5C_%7Darttext%7B%5C&%7Dpid=S0103-97332003000100003%7B%5C&%7Dlng=en%7B%5C&%7Dnrm=iso%7B%5C&%7Dtlng=en
       \endverb
-    \endentry
-    \entry{site}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=efb6729309b6461bf37b113d7a9f09de}{%
-           family={Dummy},
-           familyi={D\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{efb6729309b6461bf37b113d7a9f09de}
-      \strng{fullhash}{efb6729309b6461bf37b113d7a9f09de}
-      \strng{authornamehash}{efb6729309b6461bf37b113d7a9f09de}
-      \strng{authorfullhash}{efb6729309b6461bf37b113d7a9f09de}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{http://www.biopsychiatry.com/misc/genetic-defects.html}}
-      \field{journaltitle}{The Latex News}
-      \field{month}{8}
-      \field{title}{{How to write a Latex Article}}
-      \field{year}{2011}
     \endentry
   \endsortlist
 \endrefsection

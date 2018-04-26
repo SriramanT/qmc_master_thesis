@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  24 APR 2018 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  25 APR 2018 23:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1318,11 +1318,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip103
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 170.
-Package hyperref Info: Option `breaklinks' set `true' on input line 170.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 170.
+Package hyperref Info: Option `colorlinks' set `false' on input line 171.
+Package hyperref Info: Option `breaklinks' set `true' on input line 171.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 171.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 170.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 171.
 
 (./00.symlist.sty
 Package: 00.symlist 2008/03/11 v1.1 Symbol List package
@@ -1374,113 +1374,11 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count358
 \@quotereset=\count359
-(./tese.aux
 
-LaTeX Warning: Label `sec:sectionb' multiply defined.
+LaTeX Warning: Unused global option(s):
+    [Arial].
 
-
-LaTeX Warning: Label `subsec:subasectionB' multiply defined.
-
-
-LaTeX Warning: Label `eq:dummyeq1' multiply defined.
-
-
-LaTeX Warning: Label `eq:dummyeq2' multiply defined.
-
-
-LaTeX Warning: Label `subsec:subbsectionB' multiply defined.
-
-
-LaTeX Warning: Label `tab:dummytable' multiply defined.
-
-
-LaTeX Warning: Label `cap:finiteTafqmc' multiply defined.
-
-
-LaTeX Warning: Label `sec:sectiona' multiply defined.
-
-
-LaTeX Warning: Label `subsec:subasectionA' multiply defined.
-
-
-LaTeX Warning: Label `subsec:afqmc' multiply defined.
-
-
-LaTeX Warning: Label `eq:zassenhaus' multiply defined.
-
-
-LaTeX Warning: Label `eq:Z_propagator' multiply defined.
-
-
-LaTeX Warning: Label `eq:discreteHS' multiply defined.
-
-
-LaTeX Warning: Label `eq:exp_quartic' multiply defined.
-
-
-LaTeX Warning: Label `eq:Z_quadratic' multiply defined.
-
-
-LaTeX Warning: Label `eq:quadraticIdentity' multiply defined.
-
-
-LaTeX Warning: Label `eq:particularIdentity' multiply defined.
-
-
-LaTeX Warning: Label `eq:identity_prod_exps' multiply defined.
-
-
-LaTeX Warning: Label `eq:changeBasis1' multiply defined.
-
-
-LaTeX Warning: Label `eq:changeBasis2' multiply defined.
-
-
-LaTeX Warning: Label `eq:LHS_identity' multiply defined.
-
-
-LaTeX Warning: Label `eq:proofAuxIdentity' multiply defined.
-
-
-LaTeX Warning: Label `eq:propagation_exps' multiply defined.
-
-
-LaTeX Warning: Label `eq:completeProof' multiply defined.
-
-
-LaTeX Warning: Label `eq:effectiveDensityMatrix' multiply defined.
-
-
-LaTeX Warning: Label `afqmcSampling' multiply defined.
-
-
-LaTeX Warning: Label `eq:efRatio' multiply defined.
-
-
-LaTeX Warning: Label `eq:traceExp' multiply defined.
-
-
-LaTeX Warning: Label `fig:dummyfigure1' multiply defined.
-
-
-LaTeX Warning: Label `sec:sectionb' multiply defined.
-
-
-LaTeX Warning: Label `subsec:subasectionB' multiply defined.
-
-
-LaTeX Warning: Label `eq:dummyeq1' multiply defined.
-
-
-LaTeX Warning: Label `eq:dummyeq2' multiply defined.
-
-
-LaTeX Warning: Label `subsec:subbsectionB' multiply defined.
-
-
-LaTeX Warning: Label `tab:dummytable' multiply defined.
-
-)
+(./tese.aux)
 \openout1 = `tese.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -1497,10 +1395,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 14.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
+
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count360
@@ -1606,536 +1501,263 @@ LaTeX Info: Redefining \nameref on input line 14.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./0.Inicio/1.cover.tex
-<Figures/Cover/istnewlogo.pdf, id=233, 502.99277pt x 195.67976pt>
-File: Figures/Cover/istnewlogo.pdf Graphic file (type pdf)
-
-<use Figures/Cover/istnewlogo.pdf>
-Package pdftex.def Info: Figures/Cover/istnewlogo.pdf used on input line 9.
-(pdftex.def)             Requested size: 142.26378pt x 55.34532pt.
-
-<Figures/Cover/coverimage.jpg, id=234, 1003.75pt x 567.11874pt>
-File: Figures/Cover/coverimage.jpg Graphic file (type jpg)
-
-<use Figures/Cover/coverimage.jpg>
-Package pdftex.def Info: Figures/Cover/coverimage.jpg used on input line 12.
-(pdftex.def)             Requested size: 251.79457pt x 142.26378pt.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 18.
- [1
-
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Figur
-es/Cover/istnewlogo.pdf> <./Figures/Cover/coverimage.jpg>] [2
-
-
-
-]) (./0.Inicio/2.citation.tex
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 4.
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <9> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 4.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <9> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 4.
- [1] [2
-
-
-
-])
-(./0.Inicio/3.Acknowledgments.tex
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 8.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 8.
- [3] [4
-
-
-
-]) (./0.Inicio/4.Abstract.tex
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
-)
-(./0.Inicio/5.Keywords.tex [5
-
-] [6
-
-
-
-]) (./0.Inicio/4.Resumo.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1.
-)
-(./0.Inicio/5.PalavrasChave.tex
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 4.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 4.
- [7
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 6.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 6.
- [8
-
-
-
-]) (./0.Inicio/6.Tables.tex
-Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM tese.toc on input line 3.
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mtc1.
-\openout5 = `tese.mtc1'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mtc2.
-\openout5 = `tese.mtc2'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mtc3.
-\openout5 = `tese.mtc3'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mtc4.
-\openout5 = `tese.mtc4'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mtc5.
-\openout5 = `tese.mtc5'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mtc6.
-\openout5 = `tese.mtc6'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mtc7.
-\openout5 = `tese.mtc7'.
-
-Package minitoc Info: I0034
-(minitoc)             PREPARING MINILOFS FROM tese.lof on input line 4.
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlf1.
-\openout5 = `tese.mlf1'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlf2.
-\openout5 = `tese.mlf2'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlf3.
-\openout5 = `tese.mlf3'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlf4.
-\openout5 = `tese.mlf4'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlf5.
-\openout5 = `tese.mlf5'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlf6.
-\openout5 = `tese.mlf6'.
-
-Package minitoc Info: I0037
-(minitoc)             PREPARING MINILOTS FROM tese.lot on input line 5.
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlt1.
-\openout5 = `tese.mlt1'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlt2.
-\openout5 = `tese.mlt2'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlt3.
-\openout5 = `tese.mlt3'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlt4.
-\openout5 = `tese.mlt4'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlt5.
-\openout5 = `tese.mlt5'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing tese.mlt6.
-\openout5 = `tese.mlt6'.
-
- (./tese.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 17.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 17.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+lasy on input line 17.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [9
-
-])
-\tf@toc=\write7
-\openout7 = `tese.toc'.
-
- [10]
-(./tese.lof)
-\tf@lof=\write8
-\openout8 = `tese.lof'.
-
- [11
-
-
-
-
-] [12
-
-
-
-] (./tese.lot)
-\tf@lot=\write9
-\openout9 = `tese.lot'.
-
- [13
-
-] [14
-
-
-
-]) (./0.Inicio/7.Acronim.tex
-[15
-
-] [16
-
-
-
-]) (./0.Inicio/8.symbols.tex (./tese.los)
-\tf@los=\write10
-\openout10 = `tese.los'.
-
- [17
-
-] [18
-
-
-
-])
 Package minitoc Info: I0017
 (minitoc)             \mtcsettitle redefines the macro 
 (minitoc)             "mtctitle" as 
-(minitoc)             "Contents" on input line 39.
-
-(./1.Introduction/main.tex
+(minitoc)             "Contents" on input line 40.
+(./3.HubbardModel/main.tex
 Chapter 1.
-LaTeX Font Info:    Try loading font information for T1+pbk on input line 4.
+LaTeX Font Info:    Try loading font information for T1+pbk on input line 8.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pbk.fd
 File: t1pbk.fd 2001/06/04 font definitions for T1/pbk.
 )
 LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <10> not available
-(Font)              Font shape `T1/pbk/db/n' tried instead on input line 4.
+(Font)              Font shape `T1/pbk/db/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <150> not available
-(Font)              Font shape `T1/pbk/db/n' tried instead on input line 4.
+(Font)              Font shape `T1/pbk/db/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `T1/pbk/bx/n' in size <150> not available
-(Font)              Font shape `T1/pbk/b/n' tried instead on input line 4.
+(Font)              Font shape `T1/pbk/b/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <150> not available
-(Font)              Font shape `T1/pbk/db/n' tried instead on input line 4.
+(Font)              Font shape `T1/pbk/db/n' tried instead on input line 8.
 \openout5 = `tese.mtc'.
 
 \openout5 = `tese.mtc'.
 
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 4.
- (./tese.mtc1)
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 8.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) (./tese.mtc1)
 [1
 
-] (./1.Introduction/1.motivation.tex) (./1.Introduction/2.state.tex)
-(./1.Introduction/3.contributions.tex) (./1.Introduction/4.outline.tex)
-[2]) (./2.HubbardModel/main.tex
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./3.HubbardModel/5.exact-solutions.tex
+
+LaTeX Warning: Reference `eq:hubbard_hamiltonian' on page 2 undefined on input 
+line 3.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+ [2] [3]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@@over' on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 111.
+
+[4] [5]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 218.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 218.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 218.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@@over' on input line 218.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 218.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\infty' on input line 218.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 218.
+
+[6] [7] [8]) [9] [10
+
+
+]) (./5.FiniteTafqmc/main.tex
 Chapter 2.
 \openout5 = `tese.mtc'.
 
 \openout5 = `tese.mtc'.
 
-(./tese.mtc2) [3
+(./tese.mtc2) [11
 
-
-
-]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 11.
- (./2.HubbardModel/1.sectiona.tex [4]
-
-LaTeX Warning: Reference `hubbQMC' on page 5 undefined on input line 13.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 19.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 19.
-
-[5]
-<Figures/2.HubbardModel/Hydrogen_Density_Plots.png, id=471, 1761.58125pt x 1190
-.4475pt>
-File: Figures/2.HubbardModel/Hydrogen_Density_Plots.png Graphic file (type png)
-
- <use Figures/2.HubbardModel/Hydrogen_Density_Plots.png>
-Package pdftex.def Info: Figures/2.HubbardModel/Hydrogen_Density_Plots.png used
- on input line 25.
-(pdftex.def)             Requested size: 233.3125pt x 157.66997pt.
- [6 <./Figures/2.HubbardModel/Hydrogen_Density_Plots.png>] [7] [8] [9] [10] [11
-]
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 224.
-
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsphv.fd
-File: omsphv.fd 
-)
-LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 224.
- [12]
-<Figures/2.HubbardModel/hubbardOneHoleOneDoublyOc.png, id=557, 250.9375pt x 248
-.93pt>
-File: Figures/2.HubbardModel/hubbardOneHoleOneDoublyOc.png Graphic file (type p
-ng)
- <use Figures/2.HubbardModel/hubbardOneHoleOneDoublyOc.png>
-Package pdftex.def Info: Figures/2.HubbardModel/hubbardOneHoleOneDoublyOc.png u
-sed on input line 234.
-(pdftex.def)             Requested size: 142.26378pt x 141.1319pt.
- [13 <./Figures/2.HubbardModel/hubbardOneHoleOneDoublyOc.png>] [14] [15] [16] [
-17]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 435.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/bbm-macros/ubbm.fd
-File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [18] [19]
-[20] [21]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 625.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 625.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 625.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 625.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 625.
-
-[22] [23]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 732.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 732.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 732.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 732.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 732.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\infty' on input line 732.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 732.
-
-[24] [25] [26]) (./2.HubbardModel/2.sectionb.tex
-LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
-) [27] [28
-
-
-])
-(./3.GSafqmc/main.tex
-Chapter 3.
-\openout5 = `tese.mtc'.
-
-\openout5 = `tese.mtc'.
-
-(./tese.mtc3) [29
-
-] (./3.GSafqmc/1.sectiona.tex
+] (./5.FiniteTafqmc/1.sectiona.tex
 Package acronym Info: Label `acro:acro' newly defined as it shall be overridden
 
 although it is yet undefined on input line 9.
- [30] [31] [32] [33] [34]
-[35] [36] [37] [38]
+
+
+Package acronym Warning: Acronym `acro' is not defined on input line 9.
+
+[12]
+
+Package acronym Warning: Acronym `acro' is not defined on input line 9.
+
+
+Package acronym Warning: Acronym `acro' is not defined on input line 12.
+
+
+Package acronym Warning: Acronym `acro' is not defined on input line 12.
+
+
+Package acronym Warning: Acronym `acro' is not defined on input line 15.
+
+
+Package acronym Warning: Acronym `acro' is not defined on input line 18.
+
+
+Package acronym Warning: Acronym `acro' is not defined on input line 21.
+
+[13] [14] [15] [16]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 259.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [17] [18]
+[19] [20]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 414.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 427.
- [39] [40] [41] [42] [43]
-<Figures/2.HubbardModel/dummy.pdf, id=934, 459.7175pt x 117.43875pt>
-File: Figures/2.HubbardModel/dummy.pdf Graphic file (type pdf)
+ [21] [22] [23] [24] [25]) (./5.FiniteTafqmc/2.sectionb.tex
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
+) [26])
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 58.
 
-<use Figures/2.HubbardModel/dummy.pdf>
-Package pdftex.def Info: Figures/2.HubbardModel/dummy.pdf used on input line 64
-4.
-(pdftex.def)             Requested size: 221.93158pt x 56.69429pt.
-) (./3.GSafqmc/2.sectionb.tex [44 <./Figures/2.HubbardModel/dummy.pdf>]) [45] [
-46
-
-
-]) (./4.FiniteTafqmc/main.tex
-Chapter 4.
-\openout5 = `tese.mtc'.
-
-\openout5 = `tese.mtc'.
-
-(./tese.mtc4) [47
-
-] (./4.FiniteTafqmc/1.sectiona.tex
-Package acronym Info: Label `acro:acro' overridden on input line 9.
- [48] [49] [50] [51]
-[52] [53] [54] [55] [56] [57] [58] [59] [60] [61]
-File: Figures/2.HubbardModel/dummy.pdf Graphic file (type pdf)
-
-<use Figures/2.HubbardModel/dummy.pdf>
-Package pdftex.def Info: Figures/2.HubbardModel/dummy.pdf used on input line 64
-4.
-(pdftex.def)             Requested size: 221.93158pt x 56.69429pt.
-) (./4.FiniteTafqmc/2.sectionb.tex
-[62]) [63] [64
-
-
-]) (./99.Conclusions/conclusions.tex
-Chapter 5.
-Package minitoc Info: I0006
-(minitoc)             tese.mtc5 is empty on input line 4.
-[65
-
-] [66])
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 53.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-[67
-
-
-
-
-
-]
-Overfull \hbox (6.4984pt too wide) in paragraph at lines 54--54
-[]\T1/phv/m/n/10 Ashcroft, N. W. & Mer-min, N. D. \T1/phv/m/sl/10 Solid State P
-hysics \T1/phv/b/n/10 ISBN 0-471-92805-4, \T1/phv/m/n/10 848. \T1/phv/m/sc/10 i
-sbn\T1/phv/m/n/10 : 0030839939.
+Overfull \hbox (9.6752pt too wide) in paragraph at lines 59--59
+[]\T1/cmr/m/n/10 Ashcroft, N. W. & Mer-min, N. D. \T1/cmr/m/it/10 Solid State P
+hysics \T1/cmr/bx/n/10 ISBN 0-471-92805-4, \T1/cmr/m/n/10 848. \T1/cmr/m/sc/10 
+isbn\T1/cmr/m/n/10 : 0030839939.
  []
 
-[68] (./Appendices/appendixA.tex
-Appendix A.
-Package minitoc Info: I0006
-(minitoc)             tese.mtc6 is empty on input line 1.
-[1
+[27
 
 
 
-]) [2
 
 
-]
+] [28]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the tese.maf file.
 \openout5 = `tese.maf'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
  (./tese.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `tese.out' has not changed.
-(rerunfilecheck)             Checksum: 57C12706038EC8B243E80752FC34E0DA;4077.
+(rerunfilecheck)             Checksum: 150F9CD7F57A396BEC83EBFCA3487715;1242.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'tese.run.xml'.
 \openout1 = `tese.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21881 strings out of 492995
- 349285 string characters out of 6132703
- 864073 words of memory out of 5000000
- 24166 multiletter control sequences out of 15000+600000
- 83785 words of font info for 126 fonts, out of 8000000 for 9000
+ 21270 strings out of 492995
+ 339124 string characters out of 6132703
+ 862210 words of memory out of 5000000
+ 23928 multiletter control sequences out of 15000+600000
+ 34967 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,26n,100p,2683b,1923s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
- </Users/franciscobrito/Library/texlive/2017/texmf-var/fonts/pk/ljfour/public/b
-bm/bbm10.600pk>{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dis
-t/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2017/texmf-dist/font
-s/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
-/urw/helvetic/uhvro8a.pfb>
-Output written on tese.pdf (90 pages, 1380712 bytes).
+ 59i,26n,100p,2683b,1736s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section.2.3} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <
+/Users/franciscobrito/Library/texlive/2017/texmf-var/fonts/pk/ljfour/public/bbm
+/bbm10.600pk>{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/public/cm-super/sftt1000.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/urw/bookman/ubkd8a.pfb>
+Output written on tese.pdf (28 pages, 604937 bytes).
 PDF statistics:
- 1433 PDF objects out of 1440 (max. 8388607)
- 1286 compressed objects within 13 object streams
- 482 named destinations out of 1000 (max. 500000)
- 482 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 660 PDF objects out of 1000 (max. 8388607)
+ 584 compressed objects within 6 object streams
+ 221 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

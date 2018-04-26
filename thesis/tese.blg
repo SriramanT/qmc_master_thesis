@@ -1,29 +1,28 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [1] Config.pm:357> INFO - Logfile is 'tese.blg'
-[76] biber-darwin:303> INFO - === Mon Apr 16, 2018, 16:00:02
-[117] Biber.pm:359> INFO - Reading 'tese.bcf'
-[227] Biber.pm:835> INFO - Found 31 citekeys in bib section 0
-[241] Biber.pm:3670> INFO - Processing section 0
-[257] Biber.pm:3840> INFO - Looking for bibtex format file '02.biblio.bib' for section 0
-[265] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[282] bibtex.pm:1292> INFO - Found BibTeX data source '02.biblio.bib'
-[289] Utils.pm:164> WARN - Duplicate entry key: 'Santos2003' in file '02.biblio.bib', skipping ...
-[321] Utils.pm:164> WARN - ISBN '1536-6065' in entry 'Bohm1953' is invalid - run biber with '--validate_datamodel' for details.
-[327] Utils.pm:164> WARN - ISBN '0080-4630' in entry 'Hubbard1958' is invalid - run biber with '--validate_datamodel' for details.
-[330] Utils.pm:164> WARN - ISBN '1745-2473' in entry 'Editorial2013' is invalid - run biber with '--validate_datamodel' for details.
-[331] Utils.pm:164> WARN - month field 'Jun' in entry 'Lieb1968' is not an integer - this will probably not sort properly.
-[341] Utils.pm:164> WARN - ISBN '2041-1723' in entry 'Chen2017' is invalid - run biber with '--validate_datamodel' for details.
-[343] Utils.pm:164> WARN - ISBN '1748-3387' in entry 'Wang2012' is invalid - run biber with '--validate_datamodel' for details.
-[351] Utils.pm:164> WARN - ISBN '0034-4885' in entry 'Yazyev2010' is invalid - run biber with '--validate_datamodel' for details.
-[356] Utils.pm:164> WARN - ISBN '0031-9007' in entry 'Feldner2011' is invalid - run biber with '--validate_datamodel' for details.
-[360] Utils.pm:164> WARN - ISBN '1098-0121' in entry 'Golor2013' is invalid - run biber with '--validate_datamodel' for details.
-[380] Utils.pm:164> WARN - ISBN '0163-1829' in entry 'Hirsch1983' is invalid - run biber with '--validate_datamodel' for details.
-[382] Utils.pm:164> WARN - ISBN '0103-9733 UL - http://www.scielo.br/scielo.php?script=sci{\_}arttext{\&}pid=S0103-97332003000100003{\&}nrm=iso' in entry 'Santos2003' is invalid - run biber with '--validate_datamodel' for details.
-[383] Utils.pm:164> WARN - month field 'August' in entry 'site' is not an integer - this will probably not sort properly.
-[406] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[406] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[406] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[406] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
-[426] bbl.pm:608> INFO - Writing 'tese.bbl' with encoding 'UTF-8'
-[435] bbl.pm:712> INFO - Output to tese.bbl
-[435] Biber.pm:109> INFO - WARNINGS: 13
+[83] biber-darwin:303> INFO - === Wed Apr 25, 2018, 23:03:44
+[109] Biber.pm:359> INFO - Reading 'tese.bcf'
+[203] Biber.pm:835> INFO - Found 30 citekeys in bib section 0
+[217] Biber.pm:3670> INFO - Processing section 0
+[234] Biber.pm:3840> INFO - Looking for bibtex format file '02.biblio.bib' for section 0
+[242] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[265] bibtex.pm:1292> INFO - Found BibTeX data source '02.biblio.bib'
+[271] Utils.pm:164> WARN - Duplicate entry key: 'Santos2003' in file '02.biblio.bib', skipping ...
+[308] Utils.pm:164> WARN - ISBN '1536-6065' in entry 'Bohm1953' is invalid - run biber with '--validate_datamodel' for details.
+[316] Utils.pm:164> WARN - ISBN '0080-4630' in entry 'Hubbard1958' is invalid - run biber with '--validate_datamodel' for details.
+[319] Utils.pm:164> WARN - ISBN '1745-2473' in entry 'Editorial2013' is invalid - run biber with '--validate_datamodel' for details.
+[320] Utils.pm:164> WARN - month field 'Jun' in entry 'Lieb1968' is not an integer - this will probably not sort properly.
+[337] Utils.pm:164> WARN - ISBN '2041-1723' in entry 'Chen2017' is invalid - run biber with '--validate_datamodel' for details.
+[340] Utils.pm:164> WARN - ISBN '1748-3387' in entry 'Wang2012' is invalid - run biber with '--validate_datamodel' for details.
+[353] Utils.pm:164> WARN - ISBN '0034-4885' in entry 'Yazyev2010' is invalid - run biber with '--validate_datamodel' for details.
+[355] Utils.pm:164> WARN - ISBN '0031-9007' in entry 'Feldner2011' is invalid - run biber with '--validate_datamodel' for details.
+[357] Utils.pm:164> WARN - ISBN '1098-0121' in entry 'Golor2013' is invalid - run biber with '--validate_datamodel' for details.
+[363] Utils.pm:164> WARN - ISBN '0163-1829' in entry 'Hirsch1983' is invalid - run biber with '--validate_datamodel' for details.
+[365] Utils.pm:164> WARN - ISBN '0103-9733 UL - http://www.scielo.br/scielo.php?script=sci{\_}arttext{\&}pid=S0103-97332003000100003{\&}nrm=iso' in entry 'Santos2003' is invalid - run biber with '--validate_datamodel' for details.
+[388] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[388] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[388] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[388] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
+[411] bbl.pm:608> INFO - Writing 'tese.bbl' with encoding 'UTF-8'
+[423] bbl.pm:712> INFO - Output to tese.bbl
+[424] Biber.pm:109> INFO - WARNINGS: 12

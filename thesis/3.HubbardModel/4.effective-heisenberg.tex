@@ -1,0 +1,257 @@
+\section{Effective Heisenberg Hamiltonian}
+
+Mott insulators allow low energy magnetic excitations (spin flips). The insulating phase corresponds to a configuration where each atom has an odd number of electrons, let's say one. This electron may have its spin up or down. In the purely atomic limit $\frac{t}{U} \rightarrow 0$, the atoms are infinitely far, and the excitation spectrum is very simple. The ground state is highly degenerate: every configuration with one electron per site is a ground state. As a matter of fact, the ground state is $2^N$-fold degenerate. The first excited state corresponds to configurations with a hole and a doubly occupied site. Let us set the energy of the ground state to zero in our conventions.  The energy of these configurations is then $U$, and there are $N(N-1)2^{N-2}$ of them. This process of generating higher energy excitations may be continued.
+
+When the atoms are brought together, the first effect is the lifting of the degeneracy of the ground state, i.e. the splitting of the subspace of energy $E = 0$ in more subspaces. The effective hamiltonian describing the lifting of the degeneracy of the lowest energy band is obtained by applying degenerate perturbation theory \cite{Mila2007} to the kinetic term of the Hubbard Hamiltonian\footnote{An alternative method would be to use a canonical transformation technique.}
+
+\begin{equation}
+\mathcal{H}_0 = - t \sum_{\left\langle i, j \right\rangle, \sigma} ( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} ) 
+\end{equation}
+
+\subsection{Two-site calculation}
+
+The effect of the hopping term is best understood in a minimal two-site example. There are four one-particle quantum states, represented by the action of the operators $c_{1,\uparrow}^\dagger$, $c_{1,\downarrow}^\dagger$, $c_{2,\uparrow}^\dagger$, $c_{2,\downarrow}^\dagger$ on the vacuum state. There are six two-particle states in the Fock space $\left| n_{1\uparrow} \,  n_{1\downarrow} \,  n_{2\uparrow} \, n_{2\downarrow} \right\rangle$:
+
+\begin{equation}
+\begin{split}
+\left| 1 \right\rangle &\equiv \left| 1, 0, 1, 0 \right\rangle = c_{1\uparrow}^\dagger c_{2\uparrow}^\dagger \left| 0 \right\rangle \\
+\left| 2 \right\rangle &\equiv \left| 0, 1, 0, 1 \right\rangle = c_{1\downarrow}^\dagger c_{2\downarrow}^\dagger \left| 0 \right\rangle \\
+\left| 3 \right\rangle &\equiv \left| 1, 0, 0, 1 \right\rangle = c_{1\uparrow}^\dagger c_{2\downarrow}^\dagger \left| 0 \right\rangle \\
+\left| 4 \right\rangle &\equiv \left| 0, 1, 1, 0 \right\rangle = c_{1\downarrow}^\dagger c_{2\uparrow}^\dagger \left| 0 \right\rangle \\
+\left| 5 \right\rangle &\equiv \left| 1, 1, 0, 0 \right\rangle = c_{1\uparrow}^\dagger c_{1\downarrow}^\dagger \left| 0 \right\rangle \\
+\left| 6 \right\rangle &\equiv \left| 0, 0, 1, 1 \right\rangle = c_{2\uparrow}^\dagger c_{2\downarrow}^\dagger \left| 0 \right\rangle \\
+\end{split}
+\end{equation}
+
+The two-site Hamiltonian
+
+\begin{equation}
+\begin{split}
+\mathcal{H}_{2} &= - t \bigg( c_{1\uparrow}^\dagger c_{2\uparrow} +  c_{2\uparrow}^\dagger c_{1\uparrow} + c_{1\downarrow}^\dagger c_{2\downarrow} +  c_{2\downarrow}^\dagger c_{1\downarrow} \bigg) \\
+& + U (n_{1\uparrow}n_{1\downarrow} + n_{2\uparrow}n_{2\downarrow} )
+\end{split}
+\end{equation}
+acts on the states of the Fock space as follows
+
+\begin{equation}
+\begin{split}
+\mathcal{H}_{2}\left| 1 \right\rangle & = 0 \\
+\mathcal{H}_{2}\left| 2 \right\rangle & = 0 \\
+\mathcal{H}_{2}\left| 3 \right\rangle & =-t \big(c_{2\uparrow}^\dagger c_{1\uparrow} + c_{1\downarrow}^\dagger c_{2\downarrow} \big)c_{1\uparrow}^\dagger  c_{2\downarrow}^\dagger \left| 0 \right\rangle = -t \big( \left| 5 \right\rangle + \left| 6 \right\rangle \big)  \\
+\mathcal{H}_{2}\left| 4 \right\rangle &=-t \big(c_{1\uparrow}^\dagger c_{2\uparrow} + c_{2\downarrow}^\dagger c_{1\downarrow} \big)c_{1\downarrow}^\dagger c_{2\uparrow}^\dagger \left| 0 \right\rangle = t \big( \left| 5 \right\rangle + \left| 6 \right\rangle \big) \\
+\mathcal{H}_{2}\left| 5 \right\rangle & =\bigg[ -t \big(c_{2\uparrow}^\dagger c_{1\uparrow} + c_{2\downarrow}^\dagger c_{1\downarrow} \big) + U n_{1\uparrow}n_{1\downarrow}  \bigg]c_{1\uparrow}^\dagger c_{1\downarrow}^\dagger \left| 0 \right\rangle \\
+&= U \left| 5 \right\rangle - t ( \left| 3 \right\rangle - \left| 4 \right\rangle )  \\
+\mathcal{H}_{2}\left| 6 \right\rangle & = \bigg[ -t \big(c_{1\uparrow}^\dagger c_{2\uparrow} + c_{1\downarrow}^\dagger c_{2\downarrow} \big) + U n_{2\uparrow}n_{2\downarrow}  \bigg]c_{2\uparrow}^\dagger c_{2\downarrow}^\dagger \left| 0 \right\rangle \\
+&= U \left| 6 \right\rangle - t ( \left| 3 \right\rangle - \left| 4 \right\rangle ) 
+\end{split}
+\end{equation}
+
+When we act on the first two states we obtain $0$ because every term of the Hamiltonian gives a term $(c^\dagger)^2$, which is $0$ due to Pauli's exclusion principle. The minus signs that appear on the hopping terms stem from the fermion anticommutation relations.
+
+Let us now diagonalize the Hamiltonian the subspace spanned by $\{\left| 3 \right\rangle, \left| 4 \right\rangle, \left| 5 \right\rangle, \left| 6 \right\rangle \}$. If we add states $\left| 3 \right\rangle$ and $\left| 4 \right\rangle $, we get $0$ when acting with the Hamiltonian. 
+
+\begin{equation}
+\mathcal{H}_{2} ( \left| 3 \right\rangle + \left| 4 \right\rangle ) = 0
+\end{equation}
+
+On the other hand, if we subtract $\left| 5 \right\rangle$ and $\left| 6 \right\rangle$, we obtain
+
+\begin{equation}
+\mathcal{H}_{2}(\left| 5 \right\rangle -\left| 6 \right\rangle) = U( \left| 5 \right\rangle - \left| 6 \right\rangle)
+\end{equation}
+
+We have found two more eigenvalues (the first two were trivially found to be zero). The others are found by subtracting $\left| 3 \right\rangle$ and $\left| 4 \right\rangle $ and adding $\left| 5 \right\rangle$ and $\left| 6 \right\rangle$.
+
+\begin{equation}
+\begin{split}
+\mathcal{H}_{2} ( \left| 3 \right\rangle + \left| 4 \right\rangle ) &= -2 t  (\left| 5 \right\rangle + \left| 6 \right\rangle) \\
+\mathcal{H}_{2}(\left| 5 \right\rangle -\left| 6 \right\rangle) &= - 2 t (\left| 3 \right\rangle - \left| 4 \right\rangle ) + U (\left| 5 \right\rangle + \left| 6 \right\rangle) 
+\end{split}
+\end{equation}
+
+The characteristic equation allowing us to find the rest of the eigenvalues in the rotated subspace spanned by $\{\left| 3 \right\rangle \pm \left| 4 \right\rangle, \left| 5 \right\rangle \pm \left| 6 \right\rangle  \}$ is
+
+\begin{equation}
+\begin{split}
+&E ( E - U ) - 4 t^2 = 0 \\
+\iff&E_{\pm} = \frac{U \pm \sqrt{U^2 + 16 t^2}}{2}
+\end{split}
+\end{equation}
+
+Taylor expanding the square root up to second order, we obtain
+
+\begin{equation}
+E_- = -\frac{4t^2}{U} \quad E_+ = U + \frac{4t^2}{U}
+\end{equation}
+
+Thus, we have obtained the complete energy spectrum. The ground state is a non-degenerate state of energy $-\frac{4t^2}{U}$, while the first excited state is a 3-fold degenerate state with energy $0$. The two other excited states have energies of the order of $U$, the first one being exactly $U$ and the second $U + \frac{4t^2}{U}$.
+
+There are four sites for which the energy would be 0 if the hopping term vanished, corresponding to the four sites with one electron per site. The effect of the hopping term is to lift the degeneracy by splitting the 4-fold degenerate zero energy state into a singlet of energy $-\frac{4t^2}{U}$ and a triplet of energy $0$. This is what we obtain my minimizing a Heisenberg Hamiltonian of the form
+
+\begin{equation}
+\mathcal{H} = \frac{4t^2}{U} \bigg( \bm S_1 \cdot \bm S_2 - \frac{1}{4} \bigg)
+\end{equation}
+for two spins-$\frac{1}{2}$.
+
+It turns out that this result is yet more general. For an arbitrary number of sites, this is is the form of the effective Hamiltonian at second order.
+
+\subsection{Degenerate perturbation theory}
+
+To first order in $\mathcal{H}$, the matrix elements of its effective Hamiltonian coincide in the ground state subspace (by definition).
+
+\begin{equation}
+\left\langle m | \mathcal{H}_{\text{eff}} | n \right\rangle = \left\langle m | \mathcal{H}_0 | n \right\rangle ,
+\end{equation}
+where $| m \rangle$, and $| n \rangle$ belong to the ground state subspace. Since we are considering the system to be at half filling in our calculations, $| m\rangle$, and $| n \rangle$ must have one electron per site. The hopping Hamiltonian $\mathcal{H}_0$ makes an electron hop, leaving its previous site empty, and the site it hops to doubly occupied. This implies that all the matrix elements in the previous equation must be 0.
+
+To second order, the matrix elements of the effective Hamiltonian are
+
+\begin{equation}
+\begin{split}
+\left \langle m | \mathcal{H}_{\text{eff}} | n \right\rangle &= \sum_{ | k \rangle} \frac{\left\langle m | \mathcal{H}_0 | k \right\rangle \left\langle k | \mathcal{H}_0 | n \right\rangle }{E_0 - E_k} \\
+&=-\frac{1}{U} \sum_{ | k \rangle} \left\langle m | \mathcal{H}_0 | k \right\rangle \left\langle k | \mathcal{H}_0 | n \right\rangle ,
+\end{split}
+\end{equation}
+where $| k \rangle$ are the states that are not in the ground state subspace. In the second equality we simply noted that $\mathcal{H}_0$ creates a doubly occupied site. The energy cost of creating a doubly occupied site is $U$. 
+
+The identity operator in the in the subspace of states with one doubly occupied site
+
+\begin{equation*}
+\sum_{ | k \rangle} | k \rangle \langle k |
+\end{equation*}
+may be written in a more convenient form in another representation:
+
+\begin{equation*}
+\sum_j n_{j,\sigma} n_{j, -\sigma}
+\end{equation*}
+so that the effective Hamiltonian becomes
+
+\begin{equation}
+\mathcal{H}_{\text{eff}} = - \mathcal{H}_0 \frac{\sum_j n_{j,\sigma} n_{j, -\sigma}}{U} \mathcal{H}_0
+\end{equation}
+
+For each element $j$ of the sum, only terms of type 
+
+\begin{equation*}
+\sum_{i(j)} c_{j\sigma}^\dagger c_{i\sigma} 
+\end{equation*}
+contribute. Here $\sum_{i(j)}$ is a sum over the set of neighbors $i$ of site $j$.
+
+A term of the effective Hamiltonian $\mathcal{H}_{\text{eff}}$ corresponding to the j-th element in the sum reads
+
+\begin{equation*}
+-\frac{t^2}{U} \sum_{i(j), \sigma_1, \sigma_2 } c_{i,\sigma_1}^\dagger c_{j,\sigma_1} n_{j,\sigma} n_{j, -\sigma} c_{j, \sigma_2}^\dagger c_{i, \sigma_2}
+\end{equation*}
+
+There are only four cases in which the contribution of a term of this type is nonzero.
+
+\begin{itemize}
+
+\item $\sigma = \sigma_1 = \sigma_2$
+
+The operator in the sum then becomes
+
+\begin{equation*}
+c_{i,\sigma}^\dagger c_{j,\sigma} n_{j,\sigma} n_{j, -\sigma} c_{j, \sigma}^\dagger c_{i, \sigma} = n_{i,\sigma} n_{j, -\sigma} c_{j,\sigma} n_{j, \sigma} c_{j, \sigma}^\dagger
+\end{equation*}
+
+Now, we use a fermionic operator identity:
+
+\begin{equation*}
+\begin{split}
+&c n = c c^\dagger c = ( 1 -  c^\dagger c ) c = c \\
+&\implies c_{j,\sigma} n_{j,\sigma} c_{j,\sigma}^\dagger = c_{j,\sigma} c_{j,\sigma}^\dagger = 1 - n_{j,\sigma}
+\end{split}
+\end{equation*}
+
+The term of the Hamiltonian corresponding to this first case then takes on the form
+
+\begin{equation*}
+n_{i,\sigma} n_{j,-\sigma} ( 1 - n_{j, \sigma} )
+\end{equation*}
+
+We can further simplify this term by noting that in the subspace where $\mathcal{H}_{\text{eff}}$ acts, every site is occupied by only a single electron so that
+
+\begin{equation*}
+n_{j,\sigma} + n_{j,-\sigma} = 1 \iff 1 - n_{j,\sigma} = n_{j,-\sigma}
+\end{equation*}
+
+Since, for fermions we have that $\hat{n} = \hat{n}^k$, whichever the power $k \in \mathbbm{N}$, the final form of the sought term of the Hamiltonian is
+
+\begin{equation*}
+n_{i,\sigma} n_{j, -\sigma}
+\end{equation*}
+
+\item $-\sigma = \sigma_1 = \sigma_2$
+
+The contribution to the Hamiltonian is exactly of the same form but making $\sigma \mapsto -\sigma$:
+
+\begin{equation*}
+n_{i,-\sigma} n_{j, \sigma}
+\end{equation*}
+
+\item $\sigma = - \sigma_1 = \sigma_2$
+
+We can use the same reasoning as we did for the first term to obtain
+
+\begin{equation*}
+\begin{split}
+&c_{i,-\sigma}^\dagger c_{j,-\sigma} n_{j,\sigma} n_{j, -\sigma} c_{j, \sigma}^\dagger c_{i, \sigma} \\
+=& c_{i, -\sigma}^\dagger c_{i,\sigma} \underbrace{c_{j,-\sigma} n_{j, -\sigma}}_{c_{j,-\sigma}} \underbrace{n_{j, \sigma} c_{j, \sigma}^\dagger}_{c_{j,\sigma}^\dagger} \\
+=& - c_{i, -\sigma}^\dagger c_{i,\sigma} c_{j, \sigma}^\dagger c_{j,-\sigma}
+\end{split}
+\end{equation*}
+
+\item $-\sigma = - \sigma_1 = \sigma_2$
+
+Analogously, the contribution to the Hamiltonian is
+
+\begin{equation*}
+\begin{split}
+&c_{i,\sigma}^\dagger c_{j,\sigma} n_{j,\sigma} n_{j, -\sigma} c_{j, -\sigma}^\dagger c_{i, -\sigma} \\
+=& - c_{i, -\sigma}^\dagger c_{i,\sigma} c_{j, \sigma}^\dagger c_{j,-\sigma}
+\end{split}
+\end{equation*}
+
+\end{itemize}
+
+Grouping all these four terms, we obtain
+
+\begin{equation}
+\mathcal{H}_{\text{eff}} = \frac{2t^2}{U} \sum_{\left\langle i, j \right\rangle, \sigma} ( - n_{i,\sigma} n_{j,-\sigma} + c_{i,-\sigma}^\dagger c_{i,\sigma} c_{j,\sigma}^\dagger c_{j,-\sigma} ) ,
+\end{equation}
+where the factor of 2 appears because for each pair of nearest neighbors $\left\langle i, j \right\rangle$, a term comes from the term $n_{j,\sigma} n_{j,-\sigma}$ of the sum $\sum_j n_{j,\sigma} n_{j,-\sigma}$, and another term from $n_{i,\sigma} n_{i,-\sigma}$.
+
+Recall the second quantized form of the spin operators:
+
+\begin{equation}
+\begin{cases}
+S_i^z = \frac{1}{2} ( n_{i,\uparrow} - n_{i,\downarrow} ) \\
+S_i^+ = c_{i,\uparrow}^\dagger c_{i,\downarrow} \\
+S_i^- = c_{i,\downarrow}^\dagger c_{i,\uparrow}, \\
+\end{cases}
+\end{equation}
+
+Using these relations and that the density operator is $n_i = n_{i,\uparrow} + n_{i,\downarrow}$, the following relations hold
+
+\begin{equation}
+\begin{split}
+S_i^z S_j^z - \frac{1}{4} n_i n_j &= -\frac{1}{2} ( n_{i,\uparrow} n_{j,\downarrow} + n_{i,\downarrow} n_{j,\uparrow} ) \\
+S_i^+ S_j^- + S_i^- S_j^+ &= c_{i,\uparrow}^\dagger c_{i,\downarrow} c_{j,\downarrow}^\dagger  c_{j,\uparrow} +  c_{i,\downarrow}^\dagger c_{i,\uparrow} c_{j,\uparrow}^\dagger  c_{j,\downarrow}
+\end{split}
+\end{equation}
+
+Thus, we may rewrite the effective Hamiltonian:
+
+\begin{equation}
+\mathcal{H}_{\text{eff}} = \frac{4t^2}{U} \sum_{\left\langle i, j \right\rangle} \bigg( S_i^z S_j^z - \frac{1}{4} n_i n_j + \frac{1}{2} ( S_i^+ S_j^- + S_i^- S_j^+ ) \bigg)
+\end{equation}
+
+But $S_i^z S_j^z + \frac{1}{2} ( S_i^+ S_j^- + S_i^- S_j^+) = \bm S_i \cdot \bm S_j$ and $n_i = n_j = 1$ in the ground state subspace, so the effective Hamiltonian becomes
+
+\begin{equation}
+\mathcal{H}_{\text{eff}} = \frac{4t^2}{U} \sum_{\left\langle i, j \right\rangle} \bigg( \bm S_i \cdot \bm S_j  - \frac{1}{4}  \bigg),
+\end{equation}
+which corresponds to the antiferromagnetic Heisenberg model: $\mathcal{H}_{\text{Heis}} = J \sum_{\left\langle i, j \right\rangle} \bm S_i \cdot \bm S_j $, with $J = 4 t^2 / U$. Since $J > 0$, the model favors configurations with antiparallel adjacent spins. There is an intuitive physical picture for this result: if two electrons on neighboring sites have parallel spins, none of the two can hop to the neighboring site due to Pauli's exclusion principle. If adjacent spins have antiparallel spins, however, it is possible for any of the two electrons to hop to the neighboring site, and this process allows the system to lower its energy.
+
+As a final remark, we note that the effective Hamiltonian we obtained corresponds to the $\frac{t}{U} \ll 1$ limit, which is consistent since the Heisenberg model couples spins on different sites, thus it is an \emph{atomic} model.
