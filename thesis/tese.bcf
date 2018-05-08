@@ -2122,24 +2122,35 @@
     <bcf:datasource type="file" datatype="bibtex">02.biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Yang2017</bcf:citekey>
-    <bcf:citekey order="1">Raczkowski2017</bcf:citekey>
-    <bcf:citekey order="1">Chen2017</bcf:citekey>
-    <bcf:citekey order="1">Wang2012</bcf:citekey>
-    <bcf:citekey order="1">Braz2017</bcf:citekey>
-    <bcf:citekey order="2">Yazyev2010</bcf:citekey>
-    <bcf:citekey order="3">Feldner2011</bcf:citekey>
-    <bcf:citekey order="3">Golor2013</bcf:citekey>
-    <bcf:citekey order="4">Hsu2017</bcf:citekey>
-    <bcf:citekey order="5">dummy</bcf:citekey>
-    <bcf:citekey order="6">wiki</bcf:citekey>
-    <bcf:citekey order="7">Bai2006</bcf:citekey>
-    <bcf:citekey order="8">Hirsch1983</bcf:citekey>
-    <bcf:citekey order="9">Bai2006</bcf:citekey>
-    <bcf:citekey order="10">Hirsch1985</bcf:citekey>
-    <bcf:citekey order="11">Bai2006</bcf:citekey>
-    <bcf:citekey order="12">Santos2003</bcf:citekey>
-    <bcf:citekey order="13">Santos2003</bcf:citekey>
+    <bcf:citekey order="1">Hubbard1963</bcf:citekey>
+    <bcf:citekey order="2">Fazekas1999</bcf:citekey>
+    <bcf:citekey order="2">Mahan2000</bcf:citekey>
+    <bcf:citekey order="2">Altland2006</bcf:citekey>
+    <bcf:citekey order="3">Hayes2009</bcf:citekey>
+    <bcf:citekey order="4">Hayes2009</bcf:citekey>
+    <bcf:citekey order="5">Bohm1953</bcf:citekey>
+    <bcf:citekey order="5">Gell-Mann1957</bcf:citekey>
+    <bcf:citekey order="5">Sawada1957</bcf:citekey>
+    <bcf:citekey order="5">Hubbard1957</bcf:citekey>
+    <bcf:citekey order="5">Hubbard1958</bcf:citekey>
+    <bcf:citekey order="5">Nozieres1958</bcf:citekey>
+    <bcf:citekey order="6">Editorial2013</bcf:citekey>
+    <bcf:citekey order="7">Lieb1968</bcf:citekey>
+    <bcf:citekey order="8">Hirsch1985</bcf:citekey>
+    <bcf:citekey order="9">Ashcroft1976</bcf:citekey>
+    <bcf:citekey order="10">Boer1937</bcf:citekey>
+    <bcf:citekey order="10">Mott1939</bcf:citekey>
+    <bcf:citekey order="10">Mott1949</bcf:citekey>
+    <bcf:citekey order="11">hydrogen</bcf:citekey>
+    <bcf:citekey order="12">hydrogen</bcf:citekey>
+    <bcf:citekey order="13">Hubbard1963</bcf:citekey>
+    <bcf:citekey order="14">Pavarini2016</bcf:citekey>
+    <bcf:citekey order="15">Pavarini2016</bcf:citekey>
+    <bcf:citekey order="16">Pavarini2016</bcf:citekey>
+    <bcf:citekey order="17">Mila2007</bcf:citekey>
+    <bcf:citekey order="18">deGennes1999</bcf:citekey>
+    <bcf:citekey order="19">Mila2007</bcf:citekey>
+    <bcf:citekey order="20">deGennes1999</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global/" type="entry" sortscheme="none" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

@@ -34,4 +34,8 @@ In this chapter the goal is to motivate the work and expose clearly some fundame
 
 ### **Outline**
 
+## 2. Hubbard model
+
+In this chapter, I would like to q
+
 

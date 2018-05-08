@@ -1,4 +1,4 @@
-\section{Mott insulators}
+\section{Mott insulators}\label{sec:mott}
 
 Band theory was found to be flawed soon after it was introduced. The picture it proposes is simple and generally works pretty well. It is based on considering the electrons to be independently moving under the constant background potential created by the ions. The solutions of the Schr\"odinger for free electrons in a periodic potential $U(\bm r)$, such that $U(\bm r) = U(\bm r + \bm R)$,
 
@@ -11,13 +11,13 @@ are given by Bloch's theorem: $\psi_{\bm k} (\bm r) = e^{i\bm k \cdot \bm r} u_{
 \item One or more of the bands are partially filled. The energy of occupied state of higher energy is named the Fermi energy $\varepsilon_F$. In this case, the separation between the ground state and the first excited state tends to $0$ in the thermodynamic limit, $N \rightarrow \infty$. The system may then respond to infinitesimal excitations, which is the  definition of a metal.
 \end{itemize}
 
-Band theory made it possible to predict whether a solid would be a metal or an insulator. However, its success rests crucially on the independent electron approximation. Thus, it is not surprising that for compounds with strongly correlated electrons the theory might fai l\cite{Mila2007}. The Coulomb interaction is in general non negligible, and the effects it leads to are not captured by a mean field approach. One must resort to many-body theory. An example of a many-body effect that band theory doesn't capture is superconductivity. However, a superconducting phase arises due to an instability of a state that is itself well described by band theory. A far greater failure of band theory is that predicts certain compounds with an odd number of electrons per unit cell, such as $NiO$ and $La_2 Cu O_4$,  to be metals, while in fact  they turn out to be (Mott) insulators. Mott devised a simple argument to justify this failure. It is based on considering the elementary electronic excitations of a solid composed by hydrogen atoms as a function of the distance between atoms.
+Band theory made it possible to predict whether a solid would be a metal or an insulator. However, its success rests crucially on the independent electron approximation. Thus, it is not surprising that for compounds with strongly correlated electrons the theory might fail \cite{Mila2007}. The Coulomb interaction is in general non negligible, and the effects it leads to are not captured by a mean field approach. One must resort to many-body theory. An example of a many-body effect that band theory doesn't capture is (conventional) superconductivity. However, this does not deem band theory useless. In fact, the superconducting phase arises due to an instability of a state that is itself well described by band theory \cite{deGennes1999}. A far greater failure of band theory is that predicts certain compounds with an odd number of electrons per unit cell, such as \chem{NiO} and \chem{La_2 Cu O_4},  to be metals, while in fact  they turn out to be (Mott) insulators. Mott devised a simple argument to justify this failure. It is based on considering the elementary electronic excitations of a solid composed by hydrogen atoms as a function of the distance between atoms.
 
 Consider a hypothetical solid consisting of a square lattice with hydrogen atoms on its points. Each unit cell has one hydrogen atom, and consequently one electron. Band theory would predict such a solid to be a metal. However, if the lattice parameter $a$ is large enough, the solid cannot remain a metal. There must be some value of the lattice parameter $a = a_c$ for which the system becomes an insulator. When current flows through a sample of this solid, electrons hop consecutively, reaching positions that can be quite far on the lattice. For a metal, this process occurs even when exciting the system with an infinitesimal amount of energy. How much energy do we need to provide for this process to occur?
 
 \begin{figure}[ht!]\label{hubbardOneHoleOneDoublyOc}
 \centering
-\includegraphics[width = 5cm]{Figures/3.HubbardModel/hubbardOneHoleOneDoublyOc.png}
+\includegraphics[width = 5cm]{Figures/HubbardModel/hubbardOneHoleOneDoublyOc.png}
 \caption{A configuration on the square lattice with a hole and a doubly occupied site.}
 \end{figure}
 
