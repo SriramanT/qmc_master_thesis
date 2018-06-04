@@ -1,25 +1,52 @@
-[0] Config.pm:354> INFO - This is Biber 2.7
-[0] Config.pm:357> INFO - Logfile is 'tese.blg'
-[43] biber-darwin:303> INFO - === Sun May  6, 2018, 11:37:39
-[66] Biber.pm:359> INFO - Reading 'tese.bcf'
-[180] Biber.pm:835> INFO - Found 22 citekeys in bib section 0
-[196] Biber.pm:3670> INFO - Processing section 0
-[213] Biber.pm:3840> INFO - Looking for bibtex format file '02.biblio.bib' for section 0
-[224] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[242] bibtex.pm:1292> INFO - Found BibTeX data source '02.biblio.bib'
-[248] Utils.pm:164> WARN - Duplicate entry key: 'Santos2003' in file '02.biblio.bib', skipping ...
-[282] Utils.pm:164> WARN - ISBN '0003-0996' in entry 'Hayes2009' is invalid - run biber with '--validate_datamodel' for details.
-[285] Utils.pm:164> WARN - ISBN '1536-6065' in entry 'Bohm1953' is invalid - run biber with '--validate_datamodel' for details.
-[292] Utils.pm:164> WARN - ISBN '0080-4630' in entry 'Hubbard1958' is invalid - run biber with '--validate_datamodel' for details.
-[295] Utils.pm:164> WARN - ISBN '1745-2473' in entry 'Editorial2013' is invalid - run biber with '--validate_datamodel' for details.
-[296] Utils.pm:164> WARN - month field 'Jun' in entry 'Lieb1968' is not an integer - this will probably not sort properly.
-[307] Utils.pm:164> WARN - month field 'Sep' in entry 'Pavarini2016' is not an integer - this will probably not sort properly.
-[308] Utils.pm:164> WARN - Overwriting field 'month' with month value from field 'date' for entry 'Pavarini2016'
-[315] Utils.pm:164> WARN - BibTeX subsystem: /var/folders/hk/5bvn_kkn3273z31p9ql5slvr0000gn/T/WkRFhinbs4/02.biblio.bib_1127.utf8, line 490, warning: 13 characters of junk seen at toplevel
-[335] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[336] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[336] Biber.pm:3499> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
-[336] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
-[349] bbl.pm:608> INFO - Writing 'tese.bbl' with encoding 'UTF-8'
-[354] bbl.pm:712> INFO - Output to tese.bbl
-[354] Biber.pm:109> INFO - WARNINGS: 9
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'tese.blg'
+[45] biber-darwin:313> INFO - === Mon May 28, 2018, 20:02:47
+[72] Biber.pm:371> INFO - Reading 'tese.bcf'
+[193] Biber.pm:857> INFO - Found 36 citekeys in bib section 0
+[209] Biber.pm:3976> INFO - Processing section 0
+[222] Biber.pm:4136> INFO - Looking for bibtex format file '/Users/franciscobrito/Dropbox/Mendeley/MScThesis.bib' for section 0
+[224] bibtex.pm:1500> INFO - LaTeX decoding ...
+[230] bibtex.pm:1316> INFO - Found BibTeX data source '/Users/franciscobrito/Dropbox/Mendeley/MScThesis.bib'
+[260] Utils.pm:193> WARN - ISBN '0163-1829' in entry 'Hirsch1983' is invalid - run biber with '--validate_datamodel' for details.
+[261] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/hk/5bvn_kkn3273z31p9ql5slvr0000gn/T/hQsvjP835k/MScThesis.bib_5348.utf8, line 6, warning: 174 characters of junk seen at toplevel
+[261] Utils.pm:193> WARN - I didn't find a database entry for 'Hubbard1963' (section 0)
+[261] Utils.pm:193> WARN - I didn't find a database entry for 'Mahan2000' (section 0)
+[261] Utils.pm:193> WARN - I didn't find a database entry for 'Altland2006' (section 0)
+[262] Utils.pm:193> WARN - I didn't find a database entry for 'Hayes2009' (section 0)
+[262] Utils.pm:193> WARN - I didn't find a database entry for 'Bohm1953' (section 0)
+[262] Utils.pm:193> WARN - I didn't find a database entry for 'Gell-Mann1957' (section 0)
+[262] Utils.pm:193> WARN - I didn't find a database entry for 'Sawada1957' (section 0)
+[262] Utils.pm:193> WARN - I didn't find a database entry for 'Hubbard1957' (section 0)
+[262] Utils.pm:193> WARN - I didn't find a database entry for 'Hubbard1958' (section 0)
+[262] Utils.pm:193> WARN - I didn't find a database entry for 'Nozieres1958' (section 0)
+[262] Utils.pm:193> WARN - I didn't find a database entry for 'Editorial2013' (section 0)
+[262] Utils.pm:193> WARN - I didn't find a database entry for 'Lieb1968' (section 0)
+[262] Utils.pm:193> WARN - I didn't find a database entry for 'Hirsch1985' (section 0)
+[262] Utils.pm:193> WARN - I didn't find a database entry for 'Ashcroft1976' (section 0)
+[263] Utils.pm:193> WARN - I didn't find a database entry for 'Boer1937' (section 0)
+[263] Utils.pm:193> WARN - I didn't find a database entry for 'Mott1939' (section 0)
+[263] Utils.pm:193> WARN - I didn't find a database entry for 'Mott1949' (section 0)
+[263] Utils.pm:193> WARN - I didn't find a database entry for 'hydrogen' (section 0)
+[263] Utils.pm:193> WARN - I didn't find a database entry for 'Pavarini2016' (section 0)
+[263] Utils.pm:193> WARN - I didn't find a database entry for 'Mila2007' (section 0)
+[263] Utils.pm:193> WARN - I didn't find a database entry for 'deGennes1999' (section 0)
+[263] Utils.pm:193> WARN - I didn't find a database entry for 'Yang2017' (section 0)
+[263] Utils.pm:193> WARN - I didn't find a database entry for 'Raczkowski2017' (section 0)
+[263] Utils.pm:193> WARN - I didn't find a database entry for 'Chen2017' (section 0)
+[264] Utils.pm:193> WARN - I didn't find a database entry for 'Wang2012' (section 0)
+[264] Utils.pm:193> WARN - I didn't find a database entry for 'Braz2017' (section 0)
+[264] Utils.pm:193> WARN - I didn't find a database entry for 'Yazyev2010' (section 0)
+[264] Utils.pm:193> WARN - I didn't find a database entry for 'Feldner2011' (section 0)
+[264] Utils.pm:193> WARN - I didn't find a database entry for 'Golor2013' (section 0)
+[264] Utils.pm:193> WARN - I didn't find a database entry for 'Hsu2017' (section 0)
+[264] Utils.pm:193> WARN - I didn't find a database entry for 'dummy' (section 0)
+[264] Utils.pm:193> WARN - I didn't find a database entry for 'wiki' (section 0)
+[264] Utils.pm:193> WARN - I didn't find a database entry for 'Bai2006' (section 0)
+[264] Utils.pm:193> WARN - I didn't find a database entry for 'Santos2003' (section 0)
+[274] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[275] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[275] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[275] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[277] bbl.pm:617> INFO - Writing 'tese.bbl' with encoding 'UTF-8'
+[279] bbl.pm:720> INFO - Output to tese.bbl
+[279] Biber.pm:110> INFO - WARNINGS: 36

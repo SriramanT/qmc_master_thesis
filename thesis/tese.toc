@@ -1,16 +1,10 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {portuguese}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {portuguese}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
@@ -26,7 +20,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Thesis Outline}{3}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Hubbard Model}{5}{chapter.2}
+\contentsline {chapter}{\numberline {2}A minimal model of electron correlations in an energy band}{5}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Introduction}{6}{section.2.1}
 \defcounter {refsection}{0}\relax 
@@ -38,21 +32,43 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.3}Particle-hole symmetry}{12}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Mott insulators}{12}{section.2.3}
+\contentsline {section}{\numberline {2.3}Mott insulators}{14}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Exact solutions for simple cases}{15}{section.2.4}
+\contentsline {section}{\numberline {2.4}Exact solutions for simple cases}{16}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}The purely atomic $\frac {t}{U} = 0$ limit}{17}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}The purely atomic $\frac {t}{U} = 0$ limit}{18}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}The non-interacting $\frac {t}{U} \rightarrow \infty $ limit}{19}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}The non-interacting $\frac {t}{U} \rightarrow \infty $ limit}{21}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Effective Heisenberg Hamiltonian}{21}{section.2.5}
+\contentsline {section}{\numberline {2.5}Effective Heisenberg Hamiltonian}{23}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Two-site calculation}{22}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.1}Two-site calculation}{23}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Degenerate perturbation theory}{24}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Degenerate perturbation theory}{25}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{29}{section*.12}
+\contentsline {chapter}{\numberline {3}Finite Temperature Auxiliary Field Quantum Monte Carlo}{29}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Section A}{31}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Subsection A}{31}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}Auxiliary field QMC}{31}{subsection.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.2.A}Hubbard-Stratonovich transformation}{31}{subsubsection.3.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.2.B}Monte Carlo sampling of the HS-field}{40}{subsubsection.3.1.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.2.C}Making measurements}{42}{subsubsection.3.1.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.2.D}Correlation functions}{45}{subsubsection.3.1.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Section B}{46}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Subsection A}{46}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Subsection B}{46}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{47}{section*.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Hartree-Fock Approximation and the Self Consistent Field Method}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 

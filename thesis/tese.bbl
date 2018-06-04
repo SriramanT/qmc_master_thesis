@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.8 $
+% $ biblatex bbl format version 2.9 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,44 +18,7 @@
 
 
 \refsection{0}
-  \sortlist[entry]{none/global/}
-    \entry{Hubbard1963}{article}{}
-      \name{author}{1}{}{%
-        {{hash=df44506ac19a4ea61bc214b80e55dc9b}{%
-           family={Hubbard},
-           familyi={H\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \strng{fullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \strng{authornamehash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \strng{authorfullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{It is pointed out that one of the main effects of correlation phenomena in d- and f-bands is to give rise to behaviour characteristic of the atomic or Heitler-London model. To investigate this situation a simple, approximate model for the interaction of electrons in narrow energy bands is introduced. The results of applying the Hartree-Fock approximation to this model are examined. Using a Green function technique an approximate solution of the correlation problem for this model is obtained. This solution has the property of reducing to the exact atomic solution in the appropriate limit and to the ordinary uncorrelated band picture in the opposite limit. The condition for ferromagnetism of this solution is discussed. To clarify the physical meaning of the solution a two-electron example is examined.}
-      \field{eprinttype}{arXiv}
-      \field{isbn}{2819631126}
-      \field{issn}{1364-5021}
-      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
-      \field{number}{1365}
-      \field{title}{{Electron Correlations in Narrow Energy Bands}}
-      \field{volume}{276}
-      \field{year}{1963}
-      \field{pages}{238\bibrangedash 257}
-      \range{pages}{20}
-      \verb{doi}
-      \verb 10.1098/rspa.1963.0204
-      \endverb
-      \verb{eprint}
-      \verb arXiv:1205.0516v2
-      \endverb
-      \verb{url}
-      \verb http://rspa.royalsocietypublishing.org/cgi/doi/10.1098/rspa.1963.0204
-      \endverb
-    \endentry
+  \datalist[entry]{none/global//global/global}
     \entry{Fazekas1999}{book}{}
       \name{author}{1}{}{%
         {{hash=6d628446b1d15a892ab0d29ab4bd9fd6}{%
@@ -69,10 +32,12 @@
       }
       \strng{namehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
       \strng{fullhash}{6d628446b1d15a892ab0d29ab4bd9fd6}
+      \strng{bibnamehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
+      \strng{authorbibnamehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
       \strng{authornamehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
       \strng{authorfullhash}{6d628446b1d15a892ab0d29ab4bd9fd6}
       \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Lecture Notes on Electron Correlation and Magnetism}}
@@ -80,667 +45,73 @@
       \field{pages}{795}
       \range{pages}{1}
     \endentry
-    \entry{Mahan2000}{book}{}
+    \entry{Hirsch1983}{article}{}
       \name{author}{1}{}{%
-        {{hash=c1d5d4e41688cfe898f810b1ed4d4270}{%
-           family={Mahan},
-           familyi={M\bibinitperiod},
-           given={Gerald\bibnamedelima D.},
-           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer US}%
-      }
-      \strng{namehash}{c1d5d4e41688cfe898f810b1ed4d4270}
-      \strng{fullhash}{c1d5d4e41688cfe898f810b1ed4d4270}
-      \strng{authornamehash}{c1d5d4e41688cfe898f810b1ed4d4270}
-      \strng{authorfullhash}{c1d5d4e41688cfe898f810b1ed4d4270}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{3}
-      \field{title}{{Many-Particle Physics}}
-      \field{year}{2000}
-      \field{pages}{XII\bibrangessep 785}
-      \range{pages}{2}
-    \endentry
-    \entry{Altland2006}{book}{}
-      \name{author}{2}{}{%
-        {{hash=e6745c48552f99e7c7afe9cb0ff36183}{%
-           family={Altland},
-           familyi={A\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-        {{hash=a536c15076e81255875567864ff290aa}{%
-           family={Simons},
-           familyi={S\bibinitperiod},
-           given={B},
-           giveni={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{b7bba4f5aa1477b91d5b07750d0d180d}
-      \strng{fullhash}{b7bba4f5aa1477b91d5b07750d0d180d}
-      \strng{authornamehash}{b7bba4f5aa1477b91d5b07750d0d180d}
-      \strng{authorfullhash}{b7bba4f5aa1477b91d5b07750d0d180d}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Field theory, born as a description of high energy physics, is also used at much lower energies, in condensed matter physics and statistical mechanics. We make a historical survey of how this usage evolved, from the Dirac equation to the present.}
-      \field{booktitle}{Book}
-      \field{isbn}{9780521769754}
-      \field{issn}{00758450}
-      \field{number}{2}
-      \field{title}{{Condensed Matter Field Theory}}
-      \field{volume}{115}
-      \field{year}{2006}
-      \field{pages}{786}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1007/BFb0120123
-      \endverb
-    \endentry
-    \entry{Hayes2009}{article}{}
-      \name{author}{1}{}{%
-        {{hash=0abf1e456f36fc58d70bb9dbdccd2b74}{%
-           family={Hayes},
-           familyi={H\bibinitperiod},
-           given={Brian},
-           giveni={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{0abf1e456f36fc58d70bb9dbdccd2b74}
-      \strng{fullhash}{0abf1e456f36fc58d70bb9dbdccd2b74}
-      \strng{authornamehash}{0abf1e456f36fc58d70bb9dbdccd2b74}
-      \strng{authorfullhash}{0abf1e456f36fc58d70bb9dbdccd2b74}
-      \field{sortinit}{3}
-      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{0003-0996}
-      \field{issn}{00030996}
-      \field{journaltitle}{American Scientist}
-      \field{number}{6}
-      \field{title}{{Hip-hop physics}}
-      \field{volume}{97}
-      \field{year}{2009}
-      \field{pages}{438\bibrangedash 442}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1511/2009.81.438
-      \endverb
-    \endentry
-    \entry{Bohm1953}{article}{}
-      \name{author}{2}{}{%
-        {{hash=f9ef65b246ff9ae37555f758f986fe69}{%
-           family={Bohm},
-           familyi={B\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=87c3b294dd6bf3aa6b54221f9c1efa91}{%
-           family={Pines},
-           familyi={P\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{d22d4cc06dfee838c20df34ac58a7545}
-      \strng{fullhash}{d22d4cc06dfee838c20df34ac58a7545}
-      \strng{authornamehash}{d22d4cc06dfee838c20df34ac58a7545}
-      \strng{authorfullhash}{d22d4cc06dfee838c20df34ac58a7545}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The behavior of the electrons in a dense electron gas is analyzed quantum-mechanically by a series of canonical transformations. The usual Hamiltonian corresponding to a system of individual electrons with Coulomb interactions is first re-expressed in such a way that the long-range part of the Coulomb interactions between the electrons is described in terms of collective fields, representing organized "plasma" oscillation of the system as a whole. The Hamiltonian then describes these collective fields plus a set of individual electrons which interact with the collective fields and with one another via short-range screened Coulomb interactions. There is, in addition, a set of subsidiary conditions on the system wave function which relate the field and particle variables. The field-particle interaction is eliminated to a high degree of approximation by a further canonical transformation to a new representation in which the Hamiltonian describes independent collective fields, with n′{<}math{>}{<}mrow{>}{<}msup{>}{<}mrow{>}{<}mi{>}n{<}/mi{>}{<}/mrow{>}{<}mrow{>}{<}mo{>}′{<}/mo{>}{<}/mrow{>}{<}/msup{>}{<}/mrow{>}{<}/math{>} degrees of freedom, plus the system of electrons interacting via screened Coulomb forces with a range of the order of the inter electronic distance. The new subsidiary conditions act only on the electronic wave functions; they strongly inhibit long wavelength electronic density fluctuations and act to reduce the number of individual electronic degrees of freedom by n′{<}math{>}{<}mrow{>}{<}msup{>}{<}mrow{>}{<}mi{>}n{<}/mi{>}{<}/mrow{>}{<}mrow{>}{<}mo{>}′{<}/mo{>}{<}/mrow{>}{<}/msup{>}{<}/mrow{>}{<}/math{>}. The general properties of this system are discussed, and the methods and results obtained are related to the classical density fluctuation approach and Tomonaga's one-dimensional treatment of the degenerate Fermi gas.}
-      \field{isbn}{1536-6065}
-      \field{issn}{0031899X}
-      \field{journaltitle}{Physical Review}
-      \field{number}{3}
-      \field{title}{{A collective description of electron interactions: III. Coulomb interactions in a degenerate electron gas}}
-      \field{volume}{92}
-      \field{year}{1953}
-      \field{pages}{609\bibrangedash 625}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1103/PhysRev.92.609
-      \endverb
-    \endentry
-    \entry{Gell-Mann1957}{article}{}
-      \name{author}{2}{}{%
-        {{hash=08ade17a88f1c8420c2a5e5f980bed7e}{%
-           family={Gell-Mann},
-           familyi={G\bibinithyphendelim M\bibinitperiod},
-           given={Murray},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c728c094304c47e93ddea6c4de00a3cd}{%
-           family={Brueckner},
-           familyi={B\bibinitperiod},
-           given={Keith\bibnamedelima A.},
-           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{efa343a1cfe1c8f601ccfc17f08329b5}
-      \strng{fullhash}{efa343a1cfe1c8f601ccfc17f08329b5}
-      \strng{authornamehash}{efa343a1cfe1c8f601ccfc17f08329b5}
-      \strng{authorfullhash}{efa343a1cfe1c8f601ccfc17f08329b5}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The quantity $\epsilon$c{<}math{>}{<}mrow{>}{<}msub{>}{<}mrow{>}{<}mi{>}$\epsilon${<}/mi{>}{<}/mrow{>}{<}mrow{>}{<}mi{>}c{<}/mi{>}{<}/mrow{>}{<}/msub{>}{<}/mrow{>}{<}/math{>} is defined as the correlation energy per particle of an electron gas expressed in rydbergs. It is a function of the conventional dimensionless parameter rs{<}math{>}{<}mrow{>}{<}msub{>}{<}mrow{>}{<}mi{>}r{<}/mi{>}{<}/mrow{>}{<}mrow{>}{<}mi{>}s{<}/mi{>}{<}/mrow{>}{<}/msub{>}{<}/mrow{>}{<}/math{>}, where rs−3{<}math{>}{<}mrow{>}{<}msup{>}{<}mrow{>}{<}mrow{>}{<}msub{>}{<}mrow{>}{<}mi{>}r{<}/mi{>}{<}/mrow{>}{<}mrow{>}{<}mi{>}s{<}/mi{>}{<}/mrow{>}{<}/msub{>}{<}/mrow{>}{<}/mrow{>}{<}mrow{>}{<}mo{>}-{<}/mo{>}{<}mn{>}3{<}/mn{>}{<}mn{>}{<}/mn{>}{<}/mrow{>}{<}/msup{>}{<}/mrow{>}{<}/math{>} is proportional to the electron density. Here $\epsilon$c{<}math{>}{<}mrow{>}{<}msub{>}{<}mrow{>}{<}mi{>}$\epsilon${<}/mi{>}{<}/mrow{>}{<}mrow{>}{<}mi{>}c{<}/mi{>}{<}/mrow{>}{<}/msub{>}{<}/mrow{>}{<}/math{>} is computed for small values of rs{<}math{>}{<}mrow{>}{<}msub{>}{<}mrow{>}{<}mi{>}r{<}/mi{>}{<}/mrow{>}{<}mrow{>}{<}mi{>}s{<}/mi{>}{<}/mrow{>}{<}/msub{>}{<}/mrow{>}{<}/math{>} (high density) and found to be given by $\epsilon$c=Alnrs+C+O(rs){<}math{>}{<}mrow{>}{<}msub{>}{<}mrow{>}{<}mi{>}$\epsilon${<}/mi{>}{<}/mrow{>}{<}mrow{>}{<}mi{>}c{<}/mi{>}{<}/mrow{>}{<}/msub{>}{<}/mrow{>}{<}mo{>}={<}/mo{>}{<}mi{>}A{<}/mi{>}{<}mi mathvariant="normal"{>}ln{<}/mi{>}{<}mrow{>}{<}msub{>}{<}mrow{>}{<}mi{>}r{<}/mi{>}{<}/mrow{>}{<}mrow{>}{<}mi{>}s{<}/mi{>}{<}/mrow{>}{<}/msub{>}{<}/mrow{>}{<}mo{>}+{<}/mo{>}{<}mi{>}C{<}/mi{>}{<}mo{>}+{<}/mo{>}{<}mi{>}O{<}/mi{>}{<}mo{>}({<}/mo{>}{<}mrow{>}{<}msub{>}{<}mrow{>}{<}mi{>}r{<}/mi{>}{<}/mrow{>}{<}mrow{>}{<}mi{>}s{<}/mi{>}{<}/mrow{>}{<}/msub{>}{<}/mrow{>}{<}mo{>}){<}/mo{>}{<}/math{>}. The value of A{<}math{>}{<}mi{>}A{<}/mi{>}{<}/math{>} is found to be 0.0622, a result that could be deduced from previous work of Wigner, Macke, and Pines. An exact formula for the constant C{<}math{>}{<}mi{>}C{<}/mi{>}{<}/math{>} is given here for the first time; earlier workers had made only approximate calculations of C{<}math{>}{<}mi{>}C{<}/mi{>}{<}/math{>}. Further, it is shown how the next correction in rs{<}math{>}{<}mrow{>}{<}msub{>}{<}mrow{>}{<}mi{>}r{<}/mi{>}{<}/mrow{>}{<}mrow{>}{<}mi{>}s{<}/mi{>}{<}/mrow{>}{<}/msub{>}{<}/mrow{>}{<}/math{>} can be computed. The method is based on summing the most highly divergent terms of the perturbation series under the integral sign to give a convergent result. The summation is performed by a technique similar to Feynman's methods in field theory.}
-      \field{issn}{0031899X}
-      \field{journaltitle}{Physical Review}
-      \field{number}{2}
-      \field{title}{{Correlation energy of an electron gas at high density}}
-      \field{volume}{106}
-      \field{year}{1957}
-      \field{pages}{364\bibrangedash 368}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1103/PhysRev.106.364
-      \endverb
-    \endentry
-    \entry{Sawada1957}{article}{}
-      \name{author}{4}{}{%
-        {{hash=461a4d6054aa7d3d034415d6e47ac5c6}{%
-           family={Sawada},
-           familyi={S\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=4711bc279e8ff3e6a856fa6fd68d5ab3}{%
-           family={Brueckner},
-           familyi={B\bibinitperiod},
-           given={K.\bibnamedelimi A.},
-           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=9c738cf05a6d6d8e81d3e2eb40310355}{%
-           family={Fukuda},
-           familyi={F\bibinitperiod},
-           given={N.},
-           giveni={N\bibinitperiod}}}%
-        {{hash=60c1f5d52b49ebe043b8c82733a0b356}{%
-           family={Brout},
-           familyi={B\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{95d2613e2827b85f3628fc4c219d13fb}
-      \strng{fullhash}{7e83115efaecadce81fb5a4a9a881ade}
-      \strng{authornamehash}{95d2613e2827b85f3628fc4c219d13fb}
-      \strng{authorfullhash}{7e83115efaecadce81fb5a4a9a881ade}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0031899X}
-      \field{journaltitle}{Physical Review}
-      \field{number}{3}
-      \field{title}{{Correlation energy of an electron gas at high density: Plasma oscillations}}
-      \field{volume}{108}
-      \field{year}{1957}
-      \field{pages}{507\bibrangedash 514}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1103/PhysRev.108.507
-      \endverb
-    \endentry
-    \entry{Hubbard1957}{article}{}
-      \name{author}{1}{}{%
-        {{hash=df44506ac19a4ea61bc214b80e55dc9b}{%
-           family={Hubbard},
-           familyi={H\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \strng{fullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \strng{authornamehash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \strng{authorfullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In this and a succeeding paper it is shown how a theory equivalent to the Bohm {\&} Pines collective motion theory of the electron plasma can be derived directly from a perturbation series which gives in principle an exact solution of the many-body problem. This result is attained by making use of a diagrammatic method of analysis of the perturbation series. By a process analogous to the elimination of photon self-energy parts from the electrodynamic S matrix it is found possible to simplify the perturbation series, introducing a modified interaction between the particles. A useful integral equation for this modified interaction can be set up, and it is shown how the energy of the system can be expressed in terms of the modified interaction. The close connexion between this approach and the dielectric theory of plasma oscillations is indicated.}
-      \field{isbn}{2819580114}
-      \field{issn}{1364-5021}
-      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
-      \field{number}{1234}
-      \field{title}{{The Description of Collective Motions in Terms of Many-Body Perturbation Theory. II. The Correlation Energy of a Free-Electron Gas}}
-      \field{volume}{243}
-      \field{year}{1958}
-      \field{pages}{336\bibrangedash 352}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1098/rspa.1958.0003
-      \endverb
-      \verb{url}
-      \verb http://rspa.royalsocietypublishing.org/cgi/doi/10.1098/rspa.1958.0003
-      \endverb
-    \endentry
-    \entry{Hubbard1958}{article}{}
-      \name{author}{1}{}{%
-        {{hash=df44506ac19a4ea61bc214b80e55dc9b}{%
-           family={Hubbard},
-           familyi={H\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \strng{fullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \strng{authornamehash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \strng{authorfullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In this paper it is assumed that the disturbing effect of turbulence$\backslash$non boundary layers is due to the pressure gradients which accompany$\backslash$nvariations of pressure in turbulent flow. When the Reynolds number$\backslash$nof turbulence is high the pressure gradient depends on the length$\backslash$nlambda which occurs in the theory of dissipation of energy in turbulent$\backslash$nmotion. The theory leads to the conclusion that the critical Reynolds$\backslash$nnumber, R}
-      \field{eprinttype}{arXiv}
-      \field{isbn}{0080-4630}
-      \field{issn}{1364-5021}
-      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
-      \field{number}{1237}
-      \field{title}{{The Description of Collective Motions in Terms of Many-Body Perturbation Theory. III. The Extension of the Theory to the Non-Uniform Gas}}
-      \field{volume}{244}
-      \field{year}{1958}
-      \field{pages}{199\bibrangedash 211}
-      \range{pages}{13}
-      \verb{doi}
-      \verb 10.1098/rspa.1958.0036
-      \endverb
-      \verb{eprint}
-      \verb arXiv:1205.0516v2
-      \endverb
-      \verb{url}
-      \verb http://rspa.royalsocietypublishing.org/cgi/doi/10.1098/rspa.1958.0036
-      \endverb
-      \keyw{hydrodynamics}
-    \endentry
-    \entry{Nozieres1958}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4161cdfea60a2be901e3c2b874332064}{%
-           family={Nozieres},
-           familyi={N\bibinitperiod},
-           given={P},
-           giveni={P\bibinitperiod}}}%
-        {{hash=ab1de5a36a85bae0e14ca2e1406f09c9}{%
-           family={Pines},
-           familyi={P\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{ee9884a1463dd74a91233626dc5a6dda}
-      \strng{fullhash}{ee9884a1463dd74a91233626dc5a6dda}
-      \strng{authornamehash}{ee9884a1463dd74a91233626dc5a6dda}
-      \strng{authorfullhash}{ee9884a1463dd74a91233626dc5a6dda}
-      \field{sortinit}{5}
-      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The limits of validity of the correla, tion-energy calculations in the regions of high density, low density, and actual metallic electron densities are discussed. Simple physical arguments are given which show that the high-density calculation of Gell-Mann and Brueckner is valid for r,{\&}1 while the low-density calculation of Wigner is valid for r, 20. For actual metallic densities it is shown that the contribution to the correlation energy from longwavelength momentum transfers (k {\&}Pko {\&}0.47r.{\&}k{\&}) may be accurately calculated in the random phase approximation. This contribution is calculated using the Bohm-Pines extended Hamiltonian, and is shown to be V4 z(yj =(—04M—+0.M—098—, rs r8 O4 +0.019—+0.706 +{\~{}} {\~{}} {\~{}} ry. r 5/2 An identical result is obtained by a suitable expansion of the result of Gell-Mann and Brueckner; the validity of the Bohm-Pines neglect of subsidiary conditions in the calculation of the groundstate energy is thereby explicitly established. The contribution to the correlation energy from suSciently high momentum transfers (k{\&}ko) will arise only from the interaction between electrons of antiparallel spin, and may be estimated using second-order perturbation theory. The contribution arising from intermediate momentum transfers (0 47r,{\&}.k k {\&}ko) cannot be calculated analytically; the interpolation procedures for this domain proposed by Pines and Hubbard are shown to be nearly identical, and their accuracy is estimated as 15'Po; The result for the over-all correlation energy using the interpolation procedure of Pines is E,=(—0.115+0.031 lnr, ) ry.}
-      \field{issn}{0031-899X}
-      \field{journaltitle}{Phys. Rev.}
-      \field{number}{2}
-      \field{title}{{Correlation Energy of a Free Electron Gas}}
-      \field{volume}{111}
-      \field{year}{1958}
-      \field{pages}{442\bibrangedash 454}
-      \range{pages}{13}
-      \verb{doi}
-      \verb 10.1103/PhysRev.111.442
-      \endverb
-    \endentry
-    \entry{Editorial2013}{article}{}
-      \name{author}{1}{}{%
-        {{hash=33be2fab88f08eabfdfcdbd13561dbeb}{%
-           family={Editorial},
-           familyi={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{33be2fab88f08eabfdfcdbd13561dbeb}
-      \strng{fullhash}{33be2fab88f08eabfdfcdbd13561dbeb}
-      \strng{authornamehash}{33be2fab88f08eabfdfcdbd13561dbeb}
-      \strng{authorfullhash}{33be2fab88f08eabfdfcdbd13561dbeb}
-      \field{sortinit}{6}
-      \field{sortinithash}{02bbed3ed82f61ae046619460488516d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Models are abundant in virtually all branches of physics, with some achieving iconic status. The Hubbard model, celebrating its golden jubilee this year, continues to be one of the most popular contrivances of theoretical condensed-matter physics.}
-      \field{isbn}{1745-2473}
-      \field{issn}{1745-2473}
-      \field{journaltitle}{Nature Physics}
-      \field{number}{9}
-      \field{title}{{The Hubbard model at half a century}}
-      \field{volume}{9}
-      \field{year}{2013}
-      \field{pages}{523\bibrangedash 523}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1038/nphys2759
-      \endverb
-      \verb{url}
-      \verb http://www.nature.com/doifinder/10.1038/nphys2759
-      \endverb
-    \endentry
-    \entry{Lieb1968}{article}{}
-      \name{author}{2}{}{%
-        {{hash=6a5ead2b42d126b86fd1b55478d0eedc}{%
-           family={Lieb},
-           familyi={L\bibinitperiod},
-           given={Elliott\bibnamedelima H.},
-           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=c364c98325fb2ac37fd894a7160b141c}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={F.\bibnamedelimi Y.},
-           giveni={F\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{a4c41d463cda06966e7cca815b7fc4c2}
-      \strng{fullhash}{a4c41d463cda06966e7cca815b7fc4c2}
-      \strng{authornamehash}{a4c41d463cda06966e7cca815b7fc4c2}
-      \strng{authorfullhash}{a4c41d463cda06966e7cca815b7fc4c2}
-      \field{sortinit}{7}
-      \field{sortinithash}{6ac7fe70cdec8cba8f65694411ce2532}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issue}{25}
-      \field{journaltitle}{Phys. Rev. Lett.}
-      \field{month}{6}
-      \field{title}{Absence of Mott Transition in an Exact Solution of the Short-Range, One-Band Model in One Dimension}
-      \field{volume}{20}
-      \field{year}{1968}
-      \field{pages}{1445\bibrangedash 1448}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.20.1445
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevLett.20.1445
-      \endverb
-    \endentry
-    \entry{Hirsch1985}{article}{}
-      \name{author}{1}{}{%
-        {{hash=537f584322a8f8159a0278d408a869d7}{%
+        {{hash=27721911a943f5ec1f064fb72073f7c6}{%
            family={Hirsch},
            familyi={H\bibinitperiod},
-           given={J\bibnamedelima E},
+           given={J.\bibnamedelimi E.},
            giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
-      \strng{namehash}{537f584322a8f8159a0278d408a869d7}
-      \strng{fullhash}{537f584322a8f8159a0278d408a869d7}
-      \strng{authornamehash}{537f584322a8f8159a0278d408a869d7}
-      \strng{authorfullhash}{537f584322a8f8159a0278d408a869d7}
-      \field{sortinit}{8}
-      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \strng{namehash}{27721911a943f5ec1f064fb72073f7c6}
+      \strng{fullhash}{27721911a943f5ec1f064fb72073f7c6}
+      \strng{bibnamehash}{27721911a943f5ec1f064fb72073f7c6}
+      \strng{authorbibnamehash}{27721911a943f5ec1f064fb72073f7c6}
+      \strng{authornamehash}{27721911a943f5ec1f064fb72073f7c6}
+      \strng{authorfullhash}{27721911a943f5ec1f064fb72073f7c6}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We have studied the two-dimensional Hubbard model on a square lattice with nearest-neighbor hopping. We first discuss the properties of the model within the mean-field approximation: Be-cause of the form of the band structure, some peculiar features are found. We then discuss the simulation algorithm used and compare simulation results with exact results for 6-site chains to test the reliability of the approach. We present results for thermodynamic properties and correlation functions for lattices up to 8{\&}{\&}8 in spatial size. The system is found to be an antiferromagnetic in-sulator for all values of the coupling constant at zero temperature in the half-filled-band case, but the long-range order is much smaller than predicted by mean-field theory. We perform a finite-size-scaling analysis to determine the character of the transition at zero coupling. For non-half-filled-band cases, our results suggest that the system is always paramagnetic, in contradiction with Hartree-Fock predictions. The system does not show tendency to ferromagnetism nor triplet super-conductivity in the parameter range studied. We also discuss some properties of the attractive Hub-bard model in the half-filled-band case.}
+      \field{abstract}{We discuss a new functional-integral formulation of interacting fermion systems on a lattice such as the Anderson or Hubbard models: the fermion-fermion interaction is eliminated by introducing auxiliary Ising variables. The resulting model for a d-dimensional quantum system is a (d+1)-dimensional Ising model with complicated interactions. The new transformation is particularly useful for performing numerical studies of these models using Monte Carlo techniques. We study its convergence properties and compare it with the usual Gaussian formulation for the case of the Hubbard model.}
+      \field{isbn}{0163-1829}
       \field{issn}{01631829}
       \field{journaltitle}{Phys. Rev. B}
       \field{number}{7}
-      \field{title}{{Two-dimensional Hubbard model: Numerical simulation study}}
-      \field{volume}{31}
-      \field{year}{1985}
-      \field{pages}{4403\bibrangedash 4419}
-      \range{pages}{17}
+      \field{title}{{Discrete Hubbard-Stratonovich transformation for fermion lattice models}}
+      \field{volume}{28}
+      \field{year}{1983}
+      \field{pages}{4059\bibrangedash 4061}
+      \range{pages}{3}
       \verb{doi}
-      \verb 10.1103/PhysRevB.31.4403
+      \verb 10.1103/PhysRevB.28.4059
       \endverb
     \endentry
-    \entry{Ashcroft1976}{book}{}
-      \name{author}{2}{}{%
-        {{hash=0561494cb251a6b3232fc6452d305040}{%
-           family={Ashcroft},
-           familyi={A\bibinitperiod},
-           given={Neil\bibnamedelima W},
-           giveni={N\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=e57dc8e9c288c940d9bda885fdb36ca3}{%
-           family={Mermin},
-           familyi={M\bibinitperiod},
-           given={N\bibnamedelima David},
-           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \strng{namehash}{62ca54533c47b92e987d34d8f2ef9a66}
-      \strng{fullhash}{62ca54533c47b92e987d34d8f2ef9a66}
-      \strng{authornamehash}{62ca54533c47b92e987d34d8f2ef9a66}
-      \strng{authorfullhash}{62ca54533c47b92e987d34d8f2ef9a66}
-      \field{sortinit}{9}
-      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Great Job in explaining this "hairy" matter. Reading the book as an theoretical Physisist there is some stuff missing when it gets to the theoretical aspects. And this is not what the authors intended. The book rather explains in "simple" words and formulas a deep physical understanding of all fields of solid state physics. It has everything a good text book needs. Great Job by the athors Fun to read.}
-      \field{booktitle}{Solid State Physics}
-      \field{isbn}{0030839939}
-      \field{issn}{00319228}
-      \field{number}{ISBN 0-471-92805-4}
-      \field{title}{{Solid State Physics}}
-      \field{volume}{2}
-      \field{year}{1976}
-      \field{pages}{848}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/0038-1101(66)90069-4
-      \endverb
-    \endentry
-    \entry{Boer1937}{article}{}
-      \name{author}{2}{}{%
-        {{hash=00a80ac359104e968711042c6d1841c6}{%
-           family={Boer},
-           familyi={B\bibinitperiod},
-           given={J\bibnamedelima H},
-           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
-           prefix={de},
-           prefixi={d\bibinitperiod}}}%
-        {{hash=20ba04de0b7444a37a8b59a5dc443cf8}{%
-           family={Verwey},
-           familyi={V\bibinitperiod},
-           given={E\bibnamedelima J\bibnamedelima W},
-           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \strng{namehash}{2b0cadb1351371e0444833c8dda59de0}
-      \strng{fullhash}{2b0cadb1351371e0444833c8dda59de0}
-      \strng{authornamehash}{2b0cadb1351371e0444833c8dda59de0}
-      \strng{authorfullhash}{2b0cadb1351371e0444833c8dda59de0}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Attention is drawn to a class of semi-conductors or insulators with incompletely filled 3 d bands. Their lack of conductivity, if the number of electrons per atom is an integer, is explained by the circumstance that a moving electron will have a large probability of being withdrawn to the initial atom, if only the potential barriers to be penetrated are sufficiently high to reduce the frequency of transition below a certain limit. This inhibiting factor disappears, if for ions of equal electronic levels the number of electrons per atom differs from an integer. In the case of NiO this condition is fulfilled if an electron is brought by thermal excitation from the lattice 3 d band into the somewhat raised and less occupied levels a, a ' (figure 1); these levels belong to Ni ions adjacent to a vacant Ni lattice point introduced by the deviations from stoichiometry, and two of these Ni ions are at the absolute zero Ni 3+ ions. An analogous conduction mechanism holds for non-stoichiometric Cu 2 O, with a completely filled 3 d band (figure 2). Photoconductivity is generally observed with substances with completely filled zones and never with substances of the NiO type. A tentative explanation is given for this fact on the basis of the model of figure 1 and figure 2. In non-stoechiometric ZnO vacant oxygen lattice points are assumed (figure 3); in that case the calculation of the lattice levels shows that at the lattice holes one Zn 2+ is converted into Zn, whereas in the lattice the additional electrons form Zn + ions, as will be the case after thermal transitions of the electrons belonging to these Zn atoms into the lattice 4 s band.}
-      \field{journaltitle}{Proceedings of the Physical Society}
-      \field{number}{4S}
-      \field{title}{Semi-conductors with partially and with completely filled 3 d -lattice bands}
-      \field{volume}{49}
-      \field{year}{1937}
-      \field{pages}{59}
-      \range{pages}{1}
-      \verb{url}
-      \verb http://stacks.iop.org/0959-5309/49/i=4S/a=307
-      \endverb
-    \endentry
-    \entry{Mott1939}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1638ef5a5e93e73733dd03c2e0aabf3b}{%
-           family={{Mott}},
-           familyi={M\bibinitperiod},
-           given={N.\bibnamedelimi F.},
-           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-        {{hash=4d8055559580656277f9ac07d17d4bf4}{%
-           family={{Peierls}},
-           familyi={P\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{d23ac3fa0b220eb6a29cc6bf3949f081}
-      \strng{fullhash}{d23ac3fa0b220eb6a29cc6bf3949f081}
-      \strng{authornamehash}{d23ac3fa0b220eb6a29cc6bf3949f081}
-      \strng{authorfullhash}{d23ac3fa0b220eb6a29cc6bf3949f081}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the Physical Society}
-      \field{month}{8}
-      \field{title}{{Discussion of the paper by de Boer and Verwey}}
-      \field{volume}{49}
-      \field{year}{1937}
-      \field{pages}{72\bibrangedash 73}
-      \range{pages}{2}
-      \verb{doi}
-      \verb 10.1088/0959-5309/49/4S/308
-      \endverb
-    \endentry
-    \entry{Mott1949}{article}{}
-      \name{author}{1}{}{%
-        {{hash=a119e0d37db44eb2842a2575e3a5eeab}{%
-           family={Mott},
-           familyi={M\bibinitperiod},
-           given={N\bibnamedelima F},
-           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \strng{namehash}{a119e0d37db44eb2842a2575e3a5eeab}
-      \strng{fullhash}{a119e0d37db44eb2842a2575e3a5eeab}
-      \strng{authornamehash}{a119e0d37db44eb2842a2575e3a5eeab}
-      \strng{authorfullhash}{a119e0d37db44eb2842a2575e3a5eeab}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{It is shown that the collective electron and London-Heitler models are not to be regarded as different approximations to the same exact wave function for solids in which, according to the former model, there is a partially filled zone of energy levels. It can thus be shown why nickel oxide in the pure state is a non-conductor, although it contains an incomplete zone. The properties of the metals nickel, palladium and platinum are discussed in the light of these results; platinum differs from nickel in that the orbital contribution to the moment of the elementary magnets is not quenched. A discussion is given of x-ray absorption edges, and it is shown why exciton lines are absent for metals.}
-      \field{journaltitle}{Proceedings of the Physical Society. Section A}
-      \field{number}{7}
-      \field{title}{The Basis of the Electron Theory of Metals, with Special Reference to the Transition Metals}
-      \field{volume}{62}
-      \field{year}{1949}
-      \field{pages}{416}
-      \range{pages}{1}
-      \verb{url}
-      \verb http://stacks.iop.org/0370-1298/62/i=7/a=303
-      \endverb
-    \endentry
-    \entry{hydrogen}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=f0758a1b6fc2f40b374e8a808e3c7727}{%
-           family={PoorLeno},
-           familyi={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{f0758a1b6fc2f40b374e8a808e3c7727}
-      \strng{fullhash}{f0758a1b6fc2f40b374e8a808e3c7727}
-      \strng{authornamehash}{f0758a1b6fc2f40b374e8a808e3c7727}
-      \strng{authorfullhash}{f0758a1b6fc2f40b374e8a808e3c7727}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://commons.wikimedia.org/wiki/File:Hydrogen_Density_Plots.png}}
-      \field{note}{Accessed: 2018-05-03}
-      \field{title}{Hydrogen Density Plots}
-    \endentry
-    \entry{Pavarini2016}{book}{}
-      \name{author}{4}{}{%
-        {{hash=3ae9b6465f77e14dc11aaaf82ac61aa5}{%
-           family={Pavarini},
-           familyi={P\bibinitperiod},
-           given={Eva},
-           giveni={E\bibinitperiod}}}%
-        {{hash=b27f8daae6a75161ced290395781b519}{%
-           family={Koch},
-           familyi={K\bibinitperiod},
-           given={Erik},
-           giveni={E\bibinitperiod}}}%
-        {{hash=7eb6621f96e35c9395015e123d3b4799}{%
-           family={Brink},
-           familyi={B\bibinitperiod},
-           given={Jeroen},
-           giveni={J\bibinitperiod},
-           prefix={van\bibnamedelima den},
-           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
-        {{hash=24422942a709a8dc1bdc3d156db16925}{%
-           family={Sawatzky},
-           familyi={S\bibinitperiod},
-           given={George},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Jülich}%
-      }
-      \list{organization}{1}{%
-        {Autumn School on Correlated Electrons, Jülich (Germany), 12 Sep 2016 - 16 Sep 2016}%
-      }
-      \list{publisher}{1}{%
-        {Forschungszentrum Jülich}%
-      }
-      \strng{namehash}{d62bdcb174a5a867cd9386ba706e990a}
-      \strng{fullhash}{0e3a7acd370df9f14466da5bb0fbaeca}
-      \strng{authornamehash}{d62bdcb174a5a867cd9386ba706e990a}
-      \strng{authorfullhash}{0e3a7acd370df9f14466da5bb0fbaeca}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Lecture notes of the Autumn-School on Correlated Electrons 2016 1. George Sawatzky: The Explicit Role of Anion States in High-Valence Metal Oxides 2. Erik Koch: Mean-Field Theory: Hartree-Fock and BCS 3. Matthew Foulkes: Tight-Binding Models and Coulomb Interaction for s, p, and d Electrons 4. Richard Scalettar: An Introduction to the Hubbard Hamiltonian 5. Robert Eder: Multiplets in Transition-Metal Ions and Introduction to Multiband Hubbard Models 6. Franca Manghi: Multi-Orbital Cluster Perturbation Theory for Transition-Metal Oxides 7. Eva Pavarini: Orbital Ordering 8. Andreas Läuchli: Studying Continuous Symmetry Breaking with Exact Diagonalization 9. Ali Alavi: Introduction to Full Configuration Interaction Quantum Monte Carlo 10. Lucia Reining: Linear Response and More: the Bethe-Salpeter Equation 11. Dirk van der Marel: Optical Properties of Correlated Electrons 12. Jeroen van den Brink: Resonant Inelastic X-ray Scattering on Elementary Excitations 13. Henri Alloul: NMR in Correlated Electron Systems: Illustration on the Cuprates 14. Christian Hess: Introduction to Scanning Tunneling Spectroscopy of Correlated Materials}
-      \field{day}{12}
-      \field{isbn}{978-3-95806-159-0}
-      \field{month}{9}
-      \field{series}{Modeling and Simulation}
-      \field{title}{{Q}uantum {M}aterials: {E}xperiments and {T}heory}
-      \field{volume}{6}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{pages}{420 p.}
-      \range{pages}{-1}
-      \verb{url}
-      \verb http://juser.fz-juelich.de/record/819465
-      \endverb
-      \warn{\item Overwriting field 'month' with month value from field 'date' for entry 'Pavarini2016'}
-    \endentry
-    \entry{Mila2007}{unpublished}{}
-      \name{author}{1}{}{%
-        {{hash=5ecae643825cd4b71c24d994dbd4253a}{%
-           family={Mila},
-           familyi={M\bibinitperiod},
-           given={Frédéric},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {École Polytechnique Fédérale de Lausanne}%
-      }
-      \strng{namehash}{5ecae643825cd4b71c24d994dbd4253a}
-      \strng{fullhash}{5ecae643825cd4b71c24d994dbd4253a}
-      \strng{authornamehash}{5ecae643825cd4b71c24d994dbd4253a}
-      \strng{authorfullhash}{5ecae643825cd4b71c24d994dbd4253a}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{Physique du Solide III et IV É}cole Polytechnique Fédérale de Lausanne Lecture Notes}
-      \field{pages}{1\bibrangedash 186}
-      \range{pages}{186}
-    \endentry
-    \entry{deGennes1999}{book}{}
-      \name{author}{1}{}{%
-        {{hash=0cc00aa2577ec70ce3da90eb039c1147}{%
-           family={Gennes},
-           familyi={G\bibinitperiod},
-           given={Pierre-Gilles},
-           giveni={P\bibinithyphendelim G\bibinitperiod},
-           prefix={de},
-           prefixi={d\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Advanced Book Program, Perseus Books}%
-      }
-      \strng{namehash}{0cc00aa2577ec70ce3da90eb039c1147}
-      \strng{fullhash}{0cc00aa2577ec70ce3da90eb039c1147}
-      \strng{authornamehash}{0cc00aa2577ec70ce3da90eb039c1147}
-      \strng{authorfullhash}{0cc00aa2577ec70ce3da90eb039c1147}
-      \field{sortinit}{1}
-      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780738201016}
-      \field{series}{Advanced book classics}
-      \field{title}{Superconductivity of Metals and Alloys}
-      \field{year}{1999}
-    \endentry
-  \endsortlist
+  \enddatalist
+  \missing{Altland2006}
+  \missing{Ashcroft1976}
+  \missing{Bai2006}
+  \missing{Boer1937}
+  \missing{Bohm1953}
+  \missing{Braz2017}
+  \missing{Chen2017}
+  \missing{Editorial2013}
+  \missing{Feldner2011}
+  \missing{Gell-Mann1957}
+  \missing{Golor2013}
+  \missing{Hayes2009}
+  \missing{Hirsch1985}
+  \missing{Hsu2017}
+  \missing{Hubbard1957}
+  \missing{Hubbard1958}
+  \missing{Hubbard1963}
+  \missing{Lieb1968}
+  \missing{Mahan2000}
+  \missing{Mila2007}
+  \missing{Mott1939}
+  \missing{Mott1949}
+  \missing{Nozieres1958}
+  \missing{Pavarini2016}
+  \missing{Raczkowski2017}
+  \missing{Santos2003}
+  \missing{Sawada1957}
+  \missing{Wang2012}
+  \missing{Yang2017}
+  \missing{Yazyev2010}
+  \missing{deGennes1999}
+  \missing{dummy}
+  \missing{hydrogen}
+  \missing{wiki}
 \endrefsection
 \endinput
 
