@@ -1,0 +1,414 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  12 JUN 2018 14:53
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**2.Citation.tex
+(./2.Citation.tex
+LaTeX2e <2018-04-01> patch level 4
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \begin{flushright}
+                      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--3
+[] 
+ []
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.4 The picture in the cover was taken from \url
+                                                {www.graphene.manchester.ac.uk}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no k in font nullfont!
+! Undefined control sequence.
+l.5 \small
+           \textit{\textbf{The behavior of large and complex aggregates of e...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (19.19421pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 The
+ []
+
+
+Overfull \hbox (14.19983pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 be-
+ []
+
+
+Overfull \hbox (21.28865pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 hav-
+ []
+
+
+Overfull \hbox (14.48322pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 ior
+ []
+
+
+Overfull \hbox (9.91106pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 of
+ []
+
+
+Overfull \hbox (23.94974pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 large
+ []
+
+
+Overfull \hbox (18.32202pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 and
+ []
+
+
+Overfull \hbox (24.23306pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 com-
+ []
+
+
+Overfull \hbox (19.80534pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 plex
+ []
+
+
+Overfull \hbox (15.37761pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 ag-
+ []
+
+
+Overfull \hbox (19.21648pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 gre-
+ []
+
+
+Overfull \hbox (25.27472pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 gates
+ []
+
+
+Overfull \hbox (9.91106pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 of
+ []
+
+
+Overfull \hbox (12.4332pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 el-
+ []
+
+
+Overfull \hbox (9.46657pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 e-
+ []
+
+
+Overfull \hbox (25.41086pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 men-
+ []
+
+
+Overfull \hbox (20.39427pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 tary
+ []
+
+
+Overfull \hbox (20.39424pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 par-
+ []
+
+
+Overfull \hbox (11.5499pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 ti-
+ []
+
+
+Overfull \hbox (22.03587pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 cles,
+ []
+
+
+Overfull \hbox (7.40549pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 it
+ []
+
+
+Overfull \hbox (26.44144pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 turns
+ []
+
+
+Overfull \hbox (19.52202pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 out,
+ []
+
+
+Overfull \hbox (8.42493pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 is
+ []
+
+
+Overfull \hbox (16.26094pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 not
+ []
+
+
+Overfull \hbox (9.761pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 to
+ []
+
+
+Overfull \hbox (10.05542pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 be
+ []
+
+
+Overfull \hbox (16.84984pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 un-
+ []
+
+
+Overfull \hbox (20.39426pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 der-
+ []
+
+
+Overfull \hbox (25.27469pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 stood
+ []
+
+
+Overfull \hbox (10.05547pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 in
+ []
+
+
+Overfull \hbox (28.50252pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 terms
+ []
+
+
+Overfull \hbox (9.91106pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 of
+ []
+
+
+Overfull \hbox (5.91104pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 a
+ []
+
+
+Overfull \hbox (22.01369pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 sim-
+ []
+
+
+Overfull \hbox (14.19983pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 ple
+ []
+
+
+Overfull \hbox (15.07208pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 ex-
+ []
+
+
+Overfull \hbox (24.2442pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 trap-
+ []
+
+
+Overfull \hbox (10.05545pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 o-
+ []
+
+
+Overfull \hbox (13.02208pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 la-
+ []
+
+
+Overfull \hbox (19.81647pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 tion
+ []
+
+
+Overfull \hbox (9.91106pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 of
+ []
+
+
+Overfull \hbox (15.08316pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 the
+ []
+
+
+Overfull \hbox (26.30528pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 prop-
+ []
+
+
+Overfull \hbox (14.48322pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 er-
+ []
+
+
+Overfull \hbox (17.59705pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 ties
+ []
+
+
+Overfull \hbox (9.91106pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 of
+ []
+
+
+Overfull \hbox (5.91104pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 a
+ []
+
+
+Overfull \hbox (16.99988pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 few
+ []
+
+
+Overfull \hbox (20.39424pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 par-
+ []
+
+
+Overfull \hbox (11.5499pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 ti-
+ []
+
+
+Overfull \hbox (22.03587pt too wide) in paragraph at lines 4--6
+ \OT1/cmr/bx/it/10 cles.
+ []
+
+! Undefined control sequence.
+l.7 \scriptsize
+                P. W. Anderson
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \clearpage
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+! Emergency stop.
+<*> 2.Citation.tex
+                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 12 strings out of 492649
+ 212 string characters out of 6129622
+ 57283 words of memory out of 5000000
+ 3991 multiletter control sequences out of 15000+600000
+ 4345 words of font info for 16 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 20i,4n,14p,239b,144s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,7 +1,7 @@
 \section{Hubbard model}\label{sec:hubbardModel}
 
 The nearly free electron gas models the conduction bands of metals and alloys fairly accurately.
-The high mobility of the electrons compared to the ions justifies two equivalent approximations, both giving essentially the same results \cite{Ashcroft1976}.
+The high mobility of the electrons compared to the ions justifies two equivalent approximations, both giving essentially the same results \cite{ashcroft_solid_1976}.
 The first idea is to treat the periodic potential created by the \emph{virtually} fixed ions (compared to the electrons) as a perturbation on the free electron gas.
 Equivalently, we may imagine the system as a collection of tightly bond atoms, in which the electrons in the higher energy band hop from atom to atom.
 Both these approaches lead to band theory, a framework which allows us to predict whether a material is a conductor or a insulator.
@@ -9,7 +9,7 @@ From the tight binding point of view, the effect of the electron mobility is the
 The partially filled band of highest energy is called the conduction band, since it is the band occupied by conduction electrons hopping from atom to atom.
 However, in transition metal and rare-earths, as in some compounds containing these elements, apart from the conduction bands there are partially filled bands: $d-$ or $f-$bands.
 The partial filling of these bands and the electron correlations within them are responsible for the characteristic properties of these solids.
-Some of these properties are not explained by band theory, namely the Mott metal-insulator transition \cite{Boer1937, Mott1939, Mott1949}.
+Some of these properties are not explained by band theory, namely the Mott metal-insulator transition \cite{h_de_boer_semiconductors_1937, mott_discussion_1937, mott_basis_1949}.
 
 \subsection{Electron correlations in narrow $d-$bands}
 
@@ -152,7 +152,7 @@ For small bandwidth, these $s-$functions form an atomic shell whose radius is sm
 Thus, the integral $U = \left\langle i i \big| e^2 / r \big| i i \right\rangle$ should be much larger than all other integrals.
 This suggests the seemingly crude approximation of neglecting all other integrals.
 It turns out that this approximation is not so radical as it could seem at first sight since the other integrals are indeed much smaller than $U$.
-In fact, for example, for $3d$ electrons of transition metals they are smaller by about two orders of magnitude \cite{Hubbard1963}.
+In fact, for example, for $3d$ electrons of transition metals they are smaller by about two orders of magnitude \cite{hubbard_electron_1963}.
 Keeping only the terms in $U$ in the interaction part, we obtain
 
 \begin{equation}
@@ -204,7 +204,7 @@ In this section we examine a particularly relevant and unique symmetry of the Hu
 The main idea is that, at half filling, the Hubbard Hamiltonian is invariant under a transformation which turns particles into holes and vice-versa.
 Particle-hole symmetry (PHS) allows us to relate the properties of the Hubbard Hamiltonian at different values of the parameters.
 Moreover, it allows us to devise a mapping between the attractive ($U < 0$) and the repulsive ($U > 0$) models.
-We will see later that this mapping is important in QMC simulations \cite{Pavarini2016}.
+We will see later that this mapping is important in QMC simulations \cite{alavi_quantum_2016}.
 
 We start our discussion with the concept of a bipartite lattice.
 A lattice is said to be bipartite if it can be divided into two sublattices $\mathcal{A}$ and $\mathcal{B}$, such that the set of neighbors of a site in sublattice $\mathcal{A}$ belongs to sublattice $\mathcal{B}$.
@@ -219,7 +219,7 @@ In contrast, AF order is frustrated on the triangular and other non bipartite la
 \caption[Bipartite lattices and antiferromagnetic order.]{On the left, we see that the square lattice is bipartite.
 The neighbors of a particular in the red sublattice all belong to the green sublattice.
 The picture on the right,is meant to give some intuition on why the bipartite lattice favors AF order.
-We represent a configuration where fermions of a given spin have as their neighbors only fermions of opposite spin (taken from \cite{Pavarini2016}). }
+We represent a configuration where fermions of a given spin have as their neighbors only fermions of opposite spin (taken from \cite{alavi_quantum_2016}). }
 \end{figure}
 
 Introducing a particle-hole transformation (PHT)

@@ -8,9 +8,11 @@
 \fancychapter{Finite Temperature Auxiliary Field Quantum Monte Carlo}
 \label{cap:finiteTafqmc}
 
+\slshape
+
 These notes aim to present the basic aspects of a numerical technique used to simulate the Hubbard model in a self-contained, tutorial form. The idea is to reduce our problem to solving a set of integrals, which we evaluate numerically through a standard stochastic procedure, known as the Monte Carlo method. These integrals are arrived at upon formulating the quantum many-body description of the system using the Schr\"odinger equation. Hence the name Quantum Monte Carlo, which is used to distinguish it from Classical Monte Carlo. In the classical version, one measures thermal averages. In the quantum version, one measures expectations of operators over the Hilbert space of the system, corresponding to physical observables that fluctuate with a dynamics given by Schr\"odinger's equation.
 
-An example of an application of a QMC technique is the simulation of electron correlations in a transition metal dichalcogenide (TMD) nanoribbon, a two-dimensional nanostructure made out of some graphene-like compound \cite{Yang2017, Raczkowski2017, Chen2017, Wang2012, Braz2017}. The structure is much longer on one direction than on the other, resembling a ribbon, hence its name. The electronic states that accumulate on the edges of this ribbon might lead to interesting magnetic behavior in these TMD nanostructures (as they do in the analogous graphene nanostructures\cite{Yazyev2010}) and this possibility remains unexplored numerically\cite{Feldner2011, Golor2013}. Moreover, there is some interest in exploring the phase diagram of these systems because recent studies point at the possibility of topological superconductivity \cite{Hsu2017}.
+An example of an application of a QMC technique is the simulation of electron correlations in a transition metal dichalcogenide (TMD) nanoribbon, a two-dimensional nanostructure made out of some graphene-like compound \cite{yang_strain-tuning_2017, raczkowski_interplay_2017, chen_fabrication_2017, wang_electronics_2012, braz_valley_2017}. The structure is much longer on one direction than on the other, resembling a ribbon, hence its name. The electronic states that accumulate on the edges of this ribbon might lead to interesting magnetic behavior in these TMD nanostructures (as they do in the analogous graphene nanostructures\cite{yazyev_emergence_2010}) and this possibility remains unexplored numerically\cite{feldner_dynamical_2011, golor_quantum_2013}. Moreover, there is some interest in exploring the phase diagram of these systems because recent studies point at the possibility of topological superconductivity \cite{hsu_topological_2017}.
 
 The interactions between the electrons in a solid give rise to effects that arise specifically due to the many-body nature of the system. The Hubbard model is a minimal model that encapsulates electron correlations. It goes beyond the periodic ionic potential perturbation to the free electron gas or tight binding approaches, which lead to band theory. One obtains the Hubbard Hamiltonian by adding the simplest possible electron-electron interaction term to a tight binding Hamiltonian: an on-site interaction term that penalises double occupancy of a site. From it, we can make predictions about properties of a strongly correlated system, namely magnetic and superconducting behavior, and metal-insulator transitions.
 
@@ -22,6 +24,7 @@ We seek a computable approximation of the projection operator $\mathcal{P}$ defi
 
 For now, let us assume half filling $\mu = 0$, so that there is no sign problem. In fact, many interesting phenomena occur at half filling, for example magnetic ordering and the Mott metal-insulator transition.
 
-\input{FiniteTafqmc/1.sectiona.tex}
-\input{FiniteTafqmc/2.sectionb.tex}
+\normalfont
+
+\input{ch-detQMC/1.theoretical_framework.tex}
 \cleardoublepage
