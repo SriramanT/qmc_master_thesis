@@ -19,6 +19,149 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{mermin_absence_1966}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7f4d283dd2e837430fdda258c66c4030}{%
+           family={Mermin},
+           familyi={M\bibinitperiod},
+           given={N.\bibnamedelimi D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=6877f3f678da831be88b6b78341b2385}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d50c581f7a33539d4b6877e2acd25218}
+      \strng{fullhash}{d50c581f7a33539d4b6877e2acd25218}
+      \strng{bibnamehash}{d50c581f7a33539d4b6877e2acd25218}
+      \strng{authorbibnamehash}{d50c581f7a33539d4b6877e2acd25218}
+      \strng{authornamehash}{d50c581f7a33539d4b6877e2acd25218}
+      \strng{authorfullhash}{d50c581f7a33539d4b6877e2acd25218}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is rigorously proved that at any nonzero temperature, a one- or two-dimensional isotropic spin-S Heisenberg model with finite-range exchange interaction can be neither ferromagnetic nor antiferromagnetic. The method of proof is capable of excluding a variety of types of ordering in one and two dimensions., This article appears in the following collection:}
+      \field{day}{28}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{11}
+      \field{number}{22}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Absence of Ferromagnetism or Antiferromagnetism in One- or Two-Dimensional Isotropic Heisenberg Models}
+      \field{urlday}{19}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{17}
+      \field{year}{1966}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1133\bibrangedash 1136}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.17.1133
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/Users/franciscobrito/Zotero/storage/VKH7XPZS/PhysRevLett.17.html:text/html;Mermin1966.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/graphene/Mermin1966.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.17.1133
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.17.1133
+      \endverb
+    \endentry
+    \entry{coleman_there_1973}{article}{}
+      \name{author}{1}{}{%
+        {{hash=482d8709754f85ef0a09f447888369c7}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={Sidney},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{fullhash}{482d8709754f85ef0a09f447888369c7}
+      \strng{bibnamehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{authorbibnamehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{authornamehash}{482d8709754f85ef0a09f447888369c7}
+      \strng{authorfullhash}{482d8709754f85ef0a09f447888369c7}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Project Euclid - mathematics and statistics online}
+      \field{issn}{0010-3616, 1432-0916}
+      \field{journaltitle}{Communications in Mathematical Physics}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{shortjournal}{Comm. Math. Phys.}
+      \field{title}{There are no Goldstone bosons in two dimensions}
+      \field{urlday}{19}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{31}
+      \field{year}{1973}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{259\bibrangedash 264}
+      \range{pages}{6}
+      \verb{file}
+      \verb Coleman1973.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/graphene/Coleman1973.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/QBAKPFQ9/1103859034.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://projecteuclid.org/euclid.cmp/1103859034
+      \endverb
+      \verb{url}
+      \verb https://projecteuclid.org/euclid.cmp/1103859034
+      \endverb
+    \endentry
+    \entry{hohenberg_existence_1967}{article}{}
+      \name{author}{1}{}{%
+        {{hash=86f34281d36cc1a8813ca3eb3fd9c803}{%
+           family={Hohenberg},
+           familyi={H\bibinitperiod},
+           given={P.\bibnamedelimi C.},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{86f34281d36cc1a8813ca3eb3fd9c803}
+      \strng{fullhash}{86f34281d36cc1a8813ca3eb3fd9c803}
+      \strng{bibnamehash}{86f34281d36cc1a8813ca3eb3fd9c803}
+      \strng{authorbibnamehash}{86f34281d36cc1a8813ca3eb3fd9c803}
+      \strng{authornamehash}{86f34281d36cc1a8813ca3eb3fd9c803}
+      \strng{authorfullhash}{86f34281d36cc1a8813ca3eb3fd9c803}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is pointed out that a rigorous inequality first proved by Bogoliubov may be used to rule out the existence of quasi-averages (or long-range order) in Bose and Fermi systems for one and two dimensions and T≠0.}
+      \field{day}{10}
+      \field{journaltitle}{Physical Review}
+      \field{month}{6}
+      \field{number}{2}
+      \field{shortjournal}{Phys. Rev.}
+      \field{title}{Existence of Long-Range Order in One and Two Dimensions}
+      \field{urlday}{19}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{158}
+      \field{year}{1967}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{383\bibrangedash 386}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRev.158.383
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/Users/franciscobrito/Zotero/storage/4VWJ8N2N/PhysRev.158.html:text/html;Hohnenberg1966.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/graphene/Hohnenberg1966.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.158.383
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.158.383
+      \endverb
+    \endentry
     \entry{anderson_more_1972}{article}{}
       \name{author}{1}{}{%
         {{hash=a09ccd02456916b723d47d652971d797}{%
@@ -33,8 +176,8 @@
       \strng{authorbibnamehash}{a09ccd02456916b723d47d652971d797}
       \strng{authornamehash}{a09ccd02456916b723d47d652971d797}
       \strng{authorfullhash}{a09ccd02456916b723d47d652971d797}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{4}
@@ -80,8 +223,8 @@
       \strng{authorbibnamehash}{f0c6dfad5189695d46a9580ccf7a0fd8}
       \strng{authornamehash}{f0c6dfad5189695d46a9580ccf7a0fd8}
       \strng{authorfullhash}{f0c6dfad5189695d46a9580ccf7a0fd8}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We study a new kind of ordering — topological order — in rigid states (the states with no local gapless excitations). We concentrate on characterization of the different topological orders. As an example we discuss in detail chiral spin states of 2 + 1 dimensional spin systems. Chiral spin states are described by the topological Chern-Simons theories in the continuum limit. We show that the topological orders can be characterized by a non-Abelian gauge structure over the moduli space which parametrizes a family of the model Hamiltonians supporting topologically ordered ground states. In 2 + 1 dimensions, the non-Abelian gauge structure determines possible fractional statistics of the quasi-particle excitations over the topologically ordered ground states. The dynamics of the low lying global excitations is shown to be independent of random spatial dependent perturbations. The ground state degeneracy and the non-Abelian gauge structures discussed in this paper are very robust, even against those perturbations that break translation symmetry. We also discuss the symmetry properties of the degenerate ground states of chiral spin states. We find that some degenerate ground states of chiral spin states on torus carry non-trivial quantum numbers of the 90° rotation.}
@@ -128,8 +271,8 @@
       \strng{authorbibnamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authornamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authorfullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{It is pointed out that one of the main effects of correlation phenomena in d- and f-bands is to give rise to behaviour characteristic of the atomic or Heitler-London model. To investigate this situation a simple, approximate model for the interaction of electrons in narrow energy bands is introduced. The results of applying the Hartree-Fock approximation to this model are examined. Using a Green function technique an approximate solution of the correlation problem for this model is obtained. This solution has the property of reducing to the exact atomic solution in the appropriate limit and to the ordinary uncorrelated band picture in the opposite limit. The condition for ferromagnetism of this solution is discussed. To clarify the physical meaning of the solution a two-electron example is examined.}
@@ -181,8 +324,8 @@
       \strng{authorbibnamehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
       \strng{authornamehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
       \strng{authorfullhash}{6d628446b1d15a892ab0d29ab4bd9fd6}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Readership: Graduate students and researchers in condensed matter physics.}
@@ -217,8 +360,8 @@
       \strng{authorbibnamehash}{c1d5d4e41688cfe898f810b1ed4d4270}
       \strng{authornamehash}{c1d5d4e41688cfe898f810b1ed4d4270}
       \strng{authorfullhash}{c1d5d4e41688cfe898f810b1ed4d4270}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The first, second, and third editions of this book seem to occur at ten year intervals. The intent is to keep the book up-to-date. Many-body theory is a field which continually evolves in time. Journals only publish new results, conferences only invite speakers to report new phenomena, and agencies only fund scientists to do new physics. Today's physics is old hat by tomorrow. Students want to learn new material, and textbooks must be modified to keep up with the times. The early chapters in this book teach the techniques of many-body theory. They are largely unchanged in format. The later chapters apply the techniques to specific problems. The third edition increases the number of applications. New sections have been added, while old sections have been modified to include recent applications. The previous editions were set in type using pre-computer technology. No computer file existed of the prior editions. The publisher scanned the second edition and gave me a disk with the contents. This scan recorded the words accurately and scrambled the equations into unintelligible form. So I retyped the equations using {LaTeX}. Although tedious, it allowed me to correct the infinite numbers of typographical errors in the previous edition. The earlier typesetting methods did not permit such corrections. The entire book was edited sentence-by­ sentence. Most old sections of the book were shortened by editing sentences and paragraphs.}
@@ -263,8 +406,8 @@
       \strng{authorbibnamehash}{6e6ab049980c79bf15521c07c4a81a53}
       \strng{authornamehash}{6e6ab049980c79bf15521c07c4a81a53}
       \strng{authorfullhash}{6e6ab049980c79bf15521c07c4a81a53}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Cambridge Core - Theoretical Physics and Mathematical Physics - Condensed Matter Field Theory - by Alexander Altland}
@@ -306,8 +449,8 @@
       \strng{authorbibnamehash}{0abf1e456f36fc58d70bb9dbdccd2b74}
       \strng{authornamehash}{0abf1e456f36fc58d70bb9dbdccd2b74}
       \strng{authorfullhash}{0abf1e456f36fc58d70bb9dbdccd2b74}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Electrons dance to a quantum beat in the Hubbard model of solid-state physics}
@@ -352,8 +495,8 @@
       \strng{authorbibnamehash}{d22d4cc06dfee838c20df34ac58a7545}
       \strng{authornamehash}{d22d4cc06dfee838c20df34ac58a7545}
       \strng{authorfullhash}{d22d4cc06dfee838c20df34ac58a7545}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The behavior of the electrons in a dense electron gas is analyzed quantum-mechanically by a series of canonical transformations. The usual Hamiltonian corresponding to a system of individual electrons with Coulomb interactions is first re-expressed in such a way that the long-range part of the Coulomb interactions between the electrons is described in terms of collective fields, representing organized "plasma" oscillation of the system as a whole. The Hamiltonian then describes these collective fields plus a set of individual electrons which interact with the collective fields and with one another via short-range screened Coulomb interactions. There is, in addition, a set of subsidiary conditions on the system wave function which relate the field and particle variables. The field-particle interaction is eliminated to a high degree of approximation by a further canonical transformation to a new representation in which the Hamiltonian describes independent collective fields, with n′ degrees of freedom, plus the system of electrons interacting via screened Coulomb forces with a range of the order of the inter electronic distance. The new subsidiary conditions act only on the electronic wave functions; they strongly inhibit long wavelength electronic density fluctuations and act to reduce the number of individual electronic degrees of freedom by n′. The general properties of this system are discussed, and the methods and results obtained are related to the classical density fluctuation approach and Tomonaga's one-dimensional treatment of the degenerate Fermi gas.}
@@ -406,8 +549,8 @@
       \strng{authorbibnamehash}{efa343a1cfe1c8f601ccfc17f08329b5}
       \strng{authornamehash}{efa343a1cfe1c8f601ccfc17f08329b5}
       \strng{authorfullhash}{efa343a1cfe1c8f601ccfc17f08329b5}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The quantity εc is defined as the correlation energy per particle of an electron gas expressed in rydbergs. It is a function of the conventional dimensionless parameter rs, where rs−3 is proportional to the electron density. Here εc is computed for small values of rs (high density) and found to be given by εc=Alnrs+C+O(rs). The value of A is found to be 0.0622, a result that could be deduced from previous work of Wigner, Macke, and Pines. An exact formula for the constant C is given here for the first time; earlier workers had made only approximate calculations of C. Further, it is shown how the next correction in rs can be computed. The method is based on summing the most highly divergent terms of the perturbation series under the integral sign to give a convergent result. The summation is performed by a technique similar to Feynman's methods in field theory.}
@@ -469,8 +612,8 @@
       \strng{authorbibnamehash}{7e83115efaecadce81fb5a4a9a881ade}
       \strng{authornamehash}{95d2613e2827b85f3628fc4c219d13fb}
       \strng{authorfullhash}{7e83115efaecadce81fb5a4a9a881ade}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The contribution from zero-point plasma oscillations to the correlation energy of an electron gas at high density is considered, using the exact high-density theory of Gell-Mann and Brueckner and of Sawada. The plasmon energy is determined as a function of q by an eigenvalue equation identical with the dispersion relation of Bohm and Pines. The plasma solutions are stable only below the energy-momentum values at which they merge with the continuum spectrum arising from particle excitation, thus introducing a natural cutoff into the theory. At high density, however, it is shown that this cutoff can be allowed to become infinite without affecting the correlation energy.}
@@ -518,8 +661,8 @@
       \strng{authorbibnamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authornamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authorfullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The theory developed in a previous paper is applied to calculate the correlation energy of a free-electron gas. The theory involves no cut-off and gives a uniform description of collective motion effects in the long-range limit and of particle motion effects in the short-range limit. It is shown that in the lowest order the theory agrees with Bohm \& Pines’s plasma oscillation theory in the long-range limit, but is inadequate in the short-range limit. The theory is approximately evaluated to the next order, which is correct in the short-range limit, and is applied to calculate the correlation energy at several gas densities; the results are in good agreement with those of Bohm \& Pines.}
@@ -567,8 +710,8 @@
       \strng{authorbibnamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authornamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authorfullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The theory previously developed and applied to calculate the correlation energy of a free-electron gas is extended in this paper to calculate the energy of an electron gas in a potential field. Two new features arise: (i) the introduction of a self-consistent field which is a generalization of the ordinary Hartree field; (ii) the occurrence of ‘local field correction’ effects. It is shown that the energy of the gas can be expressed in terms of the eigenvalues of a certain homogeneous integral equation and a stationary principle for these eigenvalues is given. The theory is applied to crystals and an approximate expression for the correlation energy of a metal is derived neglecting Lorentz-Lorenz corrections effects.}
@@ -621,8 +764,8 @@
       \strng{authorbibnamehash}{a5dd95a2bff37f4bf90e1b4c4b7bfb14}
       \strng{authornamehash}{a5dd95a2bff37f4bf90e1b4c4b7bfb14}
       \strng{authorfullhash}{a5dd95a2bff37f4bf90e1b4c4b7bfb14}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A general Hamiltonian formalism is developed to treat from first principles the motion of electrons in solids, including their mutual Coulomb interaction. By a series of canonical transformations it is shown that under suitable circumstances (which obtain in nearly all solids) plasmons (a quantized collective plasma oscillation of the electron gas) represent a well-defined elementary excitation of the solid. The "existence criterion" for plasmons is found to be a high electronic polarizability. Where plasmons exist, we are able to give a satisfactory description of their properties when the majority of the individual electron oscillator strengths correspond to transitions in which the energy change is large or small with respect to the plasmon energy, \hbar \omega p=\hbar(4{ \pi N e}2m)12. After the plasmon modes are separated out, the remaining electron interaction is found to be screened, with a range of the order of the interelectronic spacing. The usefulness of this effective Hamiltonian for the calculation of the electronic energy levels and cohesive energy in solids is discussed briefly.}
@@ -667,8 +810,8 @@
       \strng{authorbibnamehash}{33be2fab88f08eabfdfcdbd13561dbeb}
       \strng{authornamehash}{33be2fab88f08eabfdfcdbd13561dbeb}
       \strng{authorfullhash}{33be2fab88f08eabfdfcdbd13561dbeb}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Models are abundant in virtually all branches of physics, with some achieving iconic status. The Hubbard model, celebrating its golden jubilee this year, continues to be one of the most popular contrivances of theoretical condensed-matter physics.}
@@ -719,8 +862,8 @@
       \strng{authorbibnamehash}{a4c41d463cda06966e7cca815b7fc4c2}
       \strng{authornamehash}{a4c41d463cda06966e7cca815b7fc4c2}
       \strng{authorfullhash}{a4c41d463cda06966e7cca815b7fc4c2}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The short-range, one-band model for electron correlations in a narrow energy band is solved exactly in the one-dimensional case. The ground-state energy, wave function, and the chemical potentials are obtained, and it is found that the ground state exhibits no conductor-insulator transition as the correlation strength is increased.}
@@ -1115,8 +1258,8 @@
       \strng{authorbibnamehash}{5ecae643825cd4b71c24d994dbd4253a}
       \strng{authornamehash}{5ecae643825cd4b71c24d994dbd4253a}
       \strng{authorfullhash}{5ecae643825cd4b71c24d994dbd4253a}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Physique du Solide {III} et {IV}}
