@@ -49,13 +49,13 @@ Describe what were the main achievements of this work and how it contributed to 
 Explain the structure of the thesis.
 
 
-## 2. Hubbard model
+## 2. Minimal models of electron correlation in energy bands
 
-## 3. A survey of Monte Carlo Methods
+## 3. A Survey of Quantum Monte Carlo Methods
 
-## 4. Auxiliary field QMC: Theory
+## 4. Auxiliary Field QMC: Theoretical Framework
 
-## 5. Auxiliary field QMC: Algorithm
+## 5. Discussing the algorithm: Stabilization and Performance
 
 ## 6. Stably simulating models of interacting electrons
 

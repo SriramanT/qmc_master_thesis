@@ -12,19 +12,37 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{A minimal model of electron correlations in an energy band}{5}{chapter.2}
+\contentsline {xchapter}{Minimal models of electron correlations in energy bands}{5}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphical comparison between the Ising and the Hubbard model.}}{6}{figure.caption.11}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphical comparison between the Ising and the Hubbard model.}}{6}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Hydrogen atomic wave functions.}}{8}{figure.caption.12}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Hydrogen atomic wave functions.}}{8}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Bipartite lattices and antiferromagnetic order.}}{13}{figure.caption.13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Bipartite lattices and antiferromagnetic order.}}{13}{figure.caption.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{15}{figure.caption.14}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{15}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Finite Temperature Auxiliary Field Quantum Monte Carlo}{29}{chapter.3}
+\contentsline {xchapter}{A Survey of Quantum Monte Carlo Methods}{29}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{31}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Discussing the algorithm}{49}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Applications}{51}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Boundary conditions on the nanoribbon.}}{52}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Conclusions and Future Work}{55}{chapter.7}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

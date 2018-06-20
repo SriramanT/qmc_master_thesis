@@ -1,18 +1,18 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'thesis.blg'
-[50] biber-darwin:313> INFO - === Tue Jun 19, 2018, 10:42:04
-[78] Biber.pm:371> INFO - Reading 'thesis.bcf'
-[192] Biber.pm:857> INFO - Found 40 citekeys in bib section 0
-[208] Biber.pm:3976> INFO - Processing section 0
-[221] Biber.pm:4136> INFO - Looking for bibtex format file 'references.bib' for section 0
-[228] bibtex.pm:1500> INFO - LaTeX decoding ...
-[357] bibtex.pm:1316> INFO - Found BibTeX data source 'references.bib'
-[646] Utils.pm:193> WARN - ISBN '978-981-4273-25-1 978-981-4273-26-8' in entry 'hou_numerical_2009' is invalid - run biber with '--validate_datamodel' for details.
-[668] Utils.pm:193> WARN - I didn't find a database entry for 'deGennes1999' (section 0)
-[699] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[700] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[700] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[700] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[736] bbl.pm:617> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[757] bbl.pm:720> INFO - Output to thesis.bbl
-[758] Biber.pm:110> INFO - WARNINGS: 2
+[48] biber-darwin:313> INFO - === Wed Jun 20, 2018, 16:01:27
+[84] Biber.pm:371> INFO - Reading 'thesis.bcf'
+[208] Biber.pm:857> INFO - Found 40 citekeys in bib section 0
+[225] Biber.pm:3976> INFO - Processing section 0
+[238] Biber.pm:4136> INFO - Looking for bibtex format file 'references.bib' for section 0
+[245] bibtex.pm:1500> INFO - LaTeX decoding ...
+[392] bibtex.pm:1316> INFO - Found BibTeX data source 'references.bib'
+[667] Utils.pm:193> WARN - ISBN '978-981-4273-25-1 978-981-4273-26-8' in entry 'hou_numerical_2009' is invalid - run biber with '--validate_datamodel' for details.
+[689] Utils.pm:193> WARN - I didn't find a database entry for 'deGennes1999' (section 0)
+[722] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[722] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[723] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[723] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[780] bbl.pm:617> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[803] bbl.pm:720> INFO - Output to thesis.bbl
+[804] Biber.pm:110> INFO - WARNINGS: 2
