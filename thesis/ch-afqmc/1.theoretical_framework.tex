@@ -1,6 +1,10 @@
 \section{Trotter-Suzuki Decomposition}
 \label{subsec:trotter}
 
+We seek a computable approximation of the projection operator $\mathcal{P}$ defined in equation (\ref{eq:projection}). As we shall see, it is found by using a discrete Hubbard-Stratonovich transformation. This transformation introduces an auxiliary field (consisting basically of Ising spins), and we use Monte Carlo to sample configurations from the distribution corresponding to this \emph{classical} configuration space.
+
+For now, let us assume half filling $\mu = 0$, so that there is no sign problem. In fact, many interesting phenomena occur at half filling, for example magnetic ordering and the Mott metal-insulator transition.
+
 \subsection{Hubbard-Stratonovich transformation}
 
 In section \ref{exactSolutions}, we found exact solutions for particular instances of the Hubbard model by finding a closed form for the partition function \cite{hou_numerical_2009}. When devising a numerical method, a good sanity check is to verify that it satisfactorily approximates the partition function.

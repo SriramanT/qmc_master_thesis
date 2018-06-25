@@ -18,8 +18,8 @@ To see this, we may simply recall the shape of a $d-$wave function.
 In a $d-$orbital, the electron charge density is concentrated near the nucleus.
 In a solid, the electronic charge density should then also be concentrated near the nuclei, as long as the atomic description is useful, even if not completely correct\footnote{The electronic charge density is, of course, not actually defined in terms of a squared norm of the $d-$wave function for a narrow band. There is some broadening of the corresponding atomic energy level, and the wave function describing an electron is a Bloch wave function. Since the band is narrow, we assume that the atomic wave function description is still somewhat useful in a given range and we use it to provide a heuristic motivation for the non validity of the free electron assumption.}.
 It is much smaller between atoms so that electrons do seem to belong to individual atoms in some sense.
-For a $d-$band, we assume that the case should not be so different since the band is narrow.
-The fact that we may speak with some meaning of an electron belonging to a particular atom motivates a description from which the atomic characteristics of the solid emerge, in spite of the fact that the bandwidth of a $d-$band is still appreciable.
+For a $d-$band, we assume this description to hold to some extent since the band is narrow.
+Thus, the fact that we may speak with some meaning of an electron belonging to a particular atom motivates a description from which the atomic characteristics of the solid emerge, in spite of the fact that the bandwidth of a $d-$band is still appreciable.
 The point is that electrons in $d-$bands are certainly not well described by a free electron gas, which cannot possibly account for atomic-like behavior.
 
 \begin{figure}[H]\label{fig:hydrogenWF}
@@ -46,7 +46,7 @@ The correlations between electrons on different atoms are likely much weaker and
 Let us now look at an example of the aforementioned circumstance.
 Take a partially filled $d-$band of non-interacting electrons.
 The spin of any given atom in the solid is just the total spin of all electrons on that atom.
-It fluctuates both in magnitude and in direction, with a characteristic time that depends on how frequently $d-$electrons hop (in the loose quantum mechanical sense).
+It fluctuates both in magnitude and in direction, with a characteristic time that depends on how frequently $d-$electrons hop.
 We can estimate the time interval between $d-$electron hopping events between atoms as a being of the order $\hbar / \Delta$, where $\Delta$ is the $d-$electron bandwidth.
 The spin can thus be thought of as being associated to each individual (and constantly hopping) $d-$electron.
 
@@ -73,7 +73,7 @@ The extent of atomic behavior depends, of course, on the strength of the interac
 \subsection{Hubbard Hamiltonian}\label{hubbardHamiltonian}
 
 Imagine a hypothetical partially filled narrow $s-$band with $n$ electrons per atom.
-Suppose you have obtained Bloch wave functions $\psi_{\bm k}$ corresponding to energies $\varepsilon_{\bm k}$ by solving the Schr\"odinger equation for some spin-independent mean field Hartree-Fock potential that accounts for the average interaction of the $s-$band electrons with electrons on other bands, and the interaction with the other $s-$electrons.
+Suppose you have obtained Bloch wave functions $\psi_{\bm k}$ corresponding to energies $\varepsilon_{\bm k}$ by solving the Schr\"odinger equation for some spin-independent Hartree-Fock potential that accounts for the average interaction of the $s-$band electrons with electrons on other bands, and the interaction with the other $s-$electrons.
 The electrons on the band evolve according to the Hamiltonian:
 
 \begin{equation}\label{eq:startingHamiltonian}
@@ -160,9 +160,9 @@ Keeping only the terms in $U$ in the interaction part, we obtain
 \end{equation}
 where $n_{i\sigma} = c_{i\sigma}^\dagger c_{i\sigma}$.
 Note that $\nu_{i, i} = N^{-1} \sum_{\bm k} \nu_{\bm k} = n/2$, which means that the last term is constant and may be dropped.
-Now, the hopping matrix $\bm K$ can, in principle, be found by inverse Fourier transforming the dispersion relation $\varepsilon_{\bm k}$ that we can imagine to be obtained experimentally.
+Now, the hopping matrix $\bm K$ can, in principle, be found by inverse Fourier transforming the dispersion relation $\varepsilon_{\bm k}$ of the interaction free system, that we can imagine to be obtained experimentally.
 
-In general, we have a well defined crystal wavevector that depends on the symmetry of the lattice, which may be written as the Fourier transform
+For a nearly free electron gas, we have a well defined crystal wavevectors that depends on the symmetry of the lattice, which may be written as Fourier transforms
 
 \begin{equation}
 \left| \bm k \right\rangle \equiv \frac{1}{N} \sum_{\bm r} e^{i\bm k \cdot \bm r} \left| \bm r \right\rangle
@@ -202,7 +202,7 @@ The Hubbard Hamiltonian is then
 
 In this section we examine a particularly relevant and unique symmetry of the Hubbard model.
 The main idea is that, at half filling, the Hubbard Hamiltonian is invariant under a transformation which turns particles into holes and vice-versa.
-Particle-hole symmetry (PHS) allows us to relate the properties of the Hubbard Hamiltonian at different values of the parameters.
+\ac{PHS} allows us to relate the properties of the Hubbard Hamiltonian at different values of the parameters.
 Moreover, it allows us to devise a mapping between the attractive ($U < 0$) and the repulsive ($U > 0$) models.
 We will see later that this mapping is important in QMC simulations \cite{alavi_quantum_2016}.
 
@@ -210,7 +210,7 @@ We start our discussion with the concept of a bipartite lattice.
 A lattice is said to be bipartite if it can be divided into two sublattices $\mathcal{A}$ and $\mathcal{B}$, such that the set of neighbors of a site in sublattice $\mathcal{A}$ belongs to sublattice $\mathcal{B}$.
 For example, the square and honeycomb lattices are bipartite, whereas the triangular lattice is not.
 
-In a bipartite lattice, antiferromagnetic (AF) order is favored.
+In a bipartite lattice, \ac{AF} order is favored.
 In contrast, AF order is frustrated on the triangular and other non bipartite lattices.
 
 \begin{figure}[H]\label{fig:bipartite}
@@ -218,11 +218,11 @@ In contrast, AF order is frustrated on the triangular and other non bipartite la
 \includegraphics[width = 8cm]{Hubbard/bipartite}
 \caption[Bipartite lattices and antiferromagnetic order.]{On the left, we see that the square lattice is bipartite.
 The neighbors of a particular in the red sublattice all belong to the green sublattice.
-The picture on the right,is meant to give some intuition on why the bipartite lattice favors AF order.
+The picture on the right,is meant to give some intuition on why the bipartite lattice favors \ac{AF} order.
 We represent a configuration where fermions of a given spin have as their neighbors only fermions of opposite spin (taken from \cite{alavi_quantum_2016}). }
 \end{figure}
 
-Introducing a particle-hole transformation (PHT)
+Introducing a \ac{PHT},
 
 \begin{equation}\label{eq:PHT}
 d_{ i, \sigma}^\dagger = (-1)^i c_{i, \sigma} ,
@@ -232,32 +232,39 @@ we exchange the role of annihilation and creation operators.
 In fact, particles become holes and vice-versa: $d_{ i, \sigma}^\dagger d_{ i, \sigma} = 1 - c_{ i, \sigma}^\dagger c_{ i, \sigma} $, and the occupations $n = 0, 1$ are interchanged.
 
 Consider a bipartite lattice.
-Since in that case the factor $(-1)^i$ takes on $-1$ on one sublattice and $1$ on the other, the kinetic part of the Hamiltonian is invariant under a PHT:
+Since in that case the factor $(-1)^i$ takes on $-1$ on one sublattice and $1$ on the other, the kinetic part of the Hamiltonian is invariant under a \ac{PHT}:
 
 \begin{equation}
 c_{i, \sigma}^\dagger c_{j, \sigma} + c_{j, \sigma}^\dagger c_{i, \sigma} \mapsto (-1)^{i+j} ( d_{i, \sigma} d_{j, \sigma}^\dagger + d_{j, \sigma} d_{i, \sigma}^\dagger ) = d_{j, \sigma}^\dagger d_{i, \sigma} + d_{i, \sigma}^\dagger d_{j, \sigma}
 \end{equation}
 
-The PHS of the kinetic term can be incorporated into the interaction term by a shift in the chemical potential and by adding a constant to the Hamiltonian.
+The \ac{PHS} of the kinetic term can be incorporated into the interaction term by a shift in the chemical potential and by adding a constant to the Hamiltonian.
 First, note that the term
 
 \begin{equation*}
 U ( n_{i,\uparrow} - \frac{1}{2} ) ( n_{i,\downarrow} - \frac{1}{2} )
 \end{equation*}
-is unchanged under a PHT.
+is unchanged under a \ac{PHT}.
 
-Expanding this term, we obtain $U n_{i,\uparrow} n_{i,\downarrow} - \frac{U}{2} (n_{i,\uparrow} + n_{i,\downarrow}) + \frac{U}{4}$, which indeed differs by the original interaction term by a shift in the chemical potential plus a constant.
-Thus,  particle-hole symmetric form of the Hamiltonian 
+Expanding this term, we obtain $U n_{i,\uparrow} n_{i,\downarrow} - \frac{U}{2} (n_{i,\uparrow} + n_{i,\downarrow}) + \frac{U}{4}$, which indeed differs from the original interaction term by a shift in the chemical potential plus a constant.
+Thus, the particle-hole symmetric form of the Hamiltonian 
 
 \begin{equation}
 \mathcal{H} = -t \sum_{\left\langle i, j \right \rangle, \sigma} ( c_{i,\sigma} c_{j,\sigma}^\dagger + c_{j,\sigma}^\dagger c_{i,\sigma} ) + U \sum_{i} ( n_{i,\uparrow} - \frac{1}{2} ) ( n_{i,\downarrow} - \frac{1}{2} ) -\mu \sum_i ( n_{i,\uparrow} + n_{i,\downarrow} )
 \end{equation}
 is completely equivalent to the original Hamiltonian.
 
-Under a PHT, the density transforms as $\rho \mapsto 2 - \rho$.
+Under a \ac{PHT}, the density transforms as $\rho \mapsto 2 - \rho$.
 The Hamiltonian changes only in the chemical potential term: $\mu \mapsto -\mu$.
 Thus, we have that $\rho (\mu) = 2 - \rho (-\mu)$, and at $\mu = 0$, we have half filling: $\rho = 1$.
 This reasoning is valid for any $\beta$, $t$, or $U$, which implies that the phase diagram of the Hubbard model must be symmetric about half filling.
 Suppose you added next nearest neighbor (NNN) hoppings $t'$ \footnote{On the square lattice, this corresponds to connecting sites across the diagonal of each square.}.
 Then, PHS would be broken, and the phase diagram would no longer be symmetric about $\mu = 0$.
 Indeed, a modified version of the Hubbard model with NNN hoppings is often used to model cuprate superconductors, and this lack of symmetry is consistent with the fact that hole- and electron-doped cuprates have different properties. 
+
+\begin{figure}[H]\label{fig:hydrogenWF}
+\centering
+\includegraphics[width = 8.2cm]{Hubbard/Hydrogen_Density_Plots.png}
+\caption[Hydrogen atomic wave functions.]{Probability density plots for different hydrogen orbital wave functions corresponding to quantum numbers $(n, l, m)$ for $n = 3$.
+d-wave functions correspond to $l=2$. Note that the probability density is always higher in a region near the nucleus, and has a complicated shape, which will lead to a non-uniform distribution of electronic charge, as opposed to the case of the free electron gas. (adapted from \cite{hydrogen})}
+\end{figure}

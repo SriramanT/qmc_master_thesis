@@ -53,12 +53,10 @@ Explain the structure of the thesis.
 
 ## 3. A Survey of Quantum Monte Carlo Methods
 
-## 4. Auxiliary Field QMC: Theoretical Framework
+## 4. Auxiliary Field Quantum Monte Carlo
 
-## 5. Discussing the algorithm: Stabilization and Performance
+## 5. Discussion of the algorithm
 
-## 6. Stably simulating models of interacting electrons
+## 6. Applications
 
-## 7. Applications
-
-## 8. Conclusion
+## 7. Conclusion

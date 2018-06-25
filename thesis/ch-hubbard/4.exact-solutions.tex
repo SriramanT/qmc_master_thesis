@@ -1,6 +1,6 @@
 \section{Exact solutions for simple cases}\label{sec:exactSolutions}
 
-In PHS form, the Hubbard Hamiltonian may then be written as a sum of kinetic, chemical and potential energy terms, respectively:
+In \ac{PHS} form, the Hubbard Hamiltonian may then be written as a sum of kinetic, chemical and potential energy terms, respectively:
 
 \begin{equation}\label{eq:hubbard}
 \mathcal{H} = \mathcal{H}_K + \mathcal{H}_\mu + \mathcal{H}_V ,
@@ -253,11 +253,11 @@ where
 and $\bm I$ is the identity matrix.
 We also defined a matrix of zeros and ones specifying the hopping geometry, $\bm K$.
 When writing down $\bm K$, we must specify the boundary conditions.
-Periodic boundary conditions (PBCs) preserve a system's translational invariance and are advantageous because they reduce finite size effects.
+\acp{PBC} preserve a system's translational invariance and are advantageous because they reduce finite size effects.
 An example of a quantity which is measured more accurately is energy.
-In the thermodynamic limit, $N \rightarrow \infty$, the measured energy differs from the actual value by a correction of order $\mathcal{O}(\frac{1}{N^2})$ with PBCs \textcolor{red}{missing citation}, while for open boundary conditions (OBCs), the correction is of order $\mathcal{O}(\frac{1}{N})$.
-Additionally, PBCs have the property of giving site independent observables.
-For example, the electron density per site does not vary with PBCs, but it varies with the distance to the edges of the lattice when we use OBCs.
+In the thermodynamic limit, $N \rightarrow \infty$, the measured energy differs from the actual value by a correction of order $\mathcal{O}(\frac{1}{N^2})$ with \acp{PBC}, while for \acp{OBC}, the correction is of order $\mathcal{O}(\frac{1}{N})$ \cite{hou_numerical_2009}.
+Additionally, \acp{PBC} have the property of giving site independent observables.
+For example, the electron density per site does not vary with \acp{PBC}, but it varies with the distance to the edges of the lattice when we use \acp{OBC}.
 
 Consider a rectangular two-dimensional lattice with $N_x \times N_y$ sites. Then, we have $\dim(\bm K) = N_x N_y \times N_x N_y $, and
 
@@ -300,7 +300,7 @@ We present a proof of this result in appendix \ref{ap:Zquadratic}.
 
 Thus, this result suggests that if we are able to devise some approximation to transform the quartic term of the interacting Hubbard model in a quadratic form, then we can solve it.
 
-To complete the solution of the non-interacting case we apply the result of equation (\ref{eq:trace_quadratic}) to compute the partition corresponding to the quadratic Hamiltonian defined in equation (\ref{eq:quadraticH}):
+To complete the solution of the non-interacting case we apply the result of equation (\ref{eq:trace_quadratic}) to compute the partition function corresponding to the quadratic Hamiltonian defined in equation (\ref{eq:quadraticH}):
 
 \begin{equation}
 Z = \prod_k ( 1 + e^{-\beta \varepsilon_k} )
@@ -328,5 +328,5 @@ G_{lj} = \left\langle c_l c_j^\dagger \right\rangle = \frac{1}{N} \sum_k e^{ i k
 \end{equation}
 where $f_k = \big(1 + e^{\beta(\varepsilon_k - \mu)} \big)^{-1}$ is the Fermi-Dirac distribution (of course, here we consider half filling: $\mu = 0$).
 Note that the Green function, like the Hamiltonian, is translationally invariant: $G_{lj} = G_{l-j}$. 
-f we use PBCs, no site is singled out, they are all equivalent and this behavior of the Green's function should become apparent.
+If we use PBCs, no site is singled out, they are all equivalent and this behavior of the Green's function should become apparent.
 \end{enumerate}

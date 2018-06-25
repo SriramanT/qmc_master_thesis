@@ -3,6 +3,8 @@
 
 In this section, we apply our code to the case of honeycomb lattice with boundary conditions corresponding to a nanoribbon.
 
+An example of an application of a QMC technique is the simulation of electron correlations in a transition metal dichalcogenide (TMD) nanoribbon, a two-dimensional nanostructure made out of some graphene-like compound \cite{yang_strain-tuning_2017, raczkowski_interplay_2017, chen_fabrication_2017, wang_electronics_2012, braz_valley_2017}. The structure is much longer on one direction than on the other, resembling a ribbon, hence its name. The electronic states that accumulate on the edges of this ribbon might lead to interesting magnetic behavior in these TMD nanostructures (as they do in the analogous graphene nanostructures\cite{yazyev_emergence_2010}) and this possibility remains unexplored numerically\cite{feldner_dynamical_2011, golor_quantum_2013}. Moreover, there is some interest in exploring the phase diagram of these systems because recent studies point at the possibility of topological superconductivity \cite{hsu_topological_2017}.
+
 A nanoribbon is much longer on one direction than on the other, i.e. $l \gg w$. 
 This condition corresponds to taking $N_x \gg N_y$ in our conventions (see figure (\ref{fig:nanoribbon}), where this condition is, of course, not obeyed solely for the sake of giving a visual representation of the boundary conditions, and the numbering system).
 
@@ -64,10 +66,10 @@ We summarize these and the remaining cases in the following table.
 		\multicolumn{1}{|c|}{\multirow{3}{*}{$z_i = 0, y_i \neq N_y - 1, x_i = 0$}}	 &	\multicolumn{1}{c|}{\multirow{3}{*}{1}} & \multicolumn{1}{c|}{\multirow{2}{*}{$y_i$}} & 0   \\ \cline{4-4}
 	   	\multicolumn{1}{|c|}{}	& \multicolumn{1}{c|}{\multirow{3}{*}{}} & \multicolumn{1}{c|}{\multirow{2}{*}{}}& \multicolumn{1}{c|}{\multirow{2}{*}{$N_x - 1$}} \\ \cline{3-3}
 	   	\multicolumn{1}{|c|}{}	& \multicolumn{1}{c|}{} & $y_i +1$ & \multicolumn{1}{c|}{\multirow{2}{*}{}} \\ \hline
-		\multicolumn{1}{|c|}{\multirow{3}{*}{$z_i = 1$, $y_i \neq 0$, $x_i \neq N_x - 1$}}	 &	\multicolumn{1}{c|}{\multirow{3}{*}{1}} & \multicolumn{1}{c|}{\multirow{2}{*}{$y_i$}} & $x_i$   \\ \cline{4-4}
+		\multicolumn{1}{|c|}{\multirow{3}{*}{$z_i = 1$, $y_i \neq 0$, $x_i \neq N_x - 1$}}	 &	\multicolumn{1}{c|}{\multirow{3}{*}{0}} & \multicolumn{1}{c|}{\multirow{2}{*}{$y_i$}} & $x_i$   \\ \cline{4-4}
 	   	\multicolumn{1}{|c|}{}	& \multicolumn{1}{c|}{\multirow{3}{*}{}} & \multicolumn{1}{c|}{\multirow{2}{*}{}}& \multicolumn{1}{c|}{\multirow{2}{*}{$x_i + 1$}} \\ \cline{3-3}
-	   	\multicolumn{1}{|c|}{}	& \multicolumn{1}{c|}{} & $y_i +1$ & \multicolumn{1}{c|}{\multirow{2}{*}{}} \\ \hline
-		\multicolumn{1}{|c|}{\multirow{3}{*}{$z_i = 1$, $y_i \neq 0$, $x_i = N_x - 1$}}	 &	\multicolumn{1}{c|}{\multirow{3}{*}{1}} & \multicolumn{1}{c|}{\multirow{2}{*}{$y_i$}} & $N_x - 1$   \\ \cline{4-4}
+	   	\multicolumn{1}{|c|}{}	& \multicolumn{1}{c|}{} & $y_i -1$ & \multicolumn{1}{c|}{\multirow{2}{*}{}} \\ \hline
+		\multicolumn{1}{|c|}{\multirow{3}{*}{$z_i = 1$, $y_i \neq 0$, $x_i = N_x - 1$}}	 &	\multicolumn{1}{c|}{\multirow{3}{*}{0}} & \multicolumn{1}{c|}{\multirow{2}{*}{$y_i$}} & $N_x - 1$   \\ \cline{4-4}
 	   	\multicolumn{1}{|c|}{}	& \multicolumn{1}{c|}{\multirow{3}{*}{}} & \multicolumn{1}{c|}{\multirow{2}{*}{}}& \multicolumn{1}{c|}{\multirow{2}{*}{0}} \\ \cline{3-3}
 	   	\multicolumn{1}{|c|}{}	& \multicolumn{1}{c|}{} & $y_i -1$ & \multicolumn{1}{c|}{\multirow{2}{*}{}} \\ \hline
 	\end{tabular}
@@ -79,9 +81,9 @@ We summarize these and the remaining cases in the following table.
 	   	\multicolumn{1}{|c|}{}	& \multicolumn{1}{c|}{\multirow{2}{*}{}}  & \multicolumn{1}{c|}{}& $x_i - 1$ \\ \hline
 	   	\multicolumn{1}{|c|}{\multirow{2}{*}{$z_i = 0, y_i = N_y - 1, x_i = 0$}}	 &	\multicolumn{1}{c|}{\multirow{2}{*}{1}} & \multicolumn{1}{c|}{\multirow{2}{*}{$y_i$}} & 0   \\ \cline{4-4}
 	   	\multicolumn{1}{|c|}{}	& \multicolumn{1}{c|}{\multirow{2}{*}{}}  & \multicolumn{1}{c|}{}& $N_x - 1$ \\ \hline
-	   	\multicolumn{1}{|c|}{\multirow{2}{*}{$z_i = 1, y_i = 0, x_i \neq N_x - 1$}}	 &	\multicolumn{1}{c|}{\multirow{2}{*}{1}} & \multicolumn{1}{c|}{\multirow{2}{*}{$y_i$}} & $x_i$   \\ \cline{4-4}
+	   	\multicolumn{1}{|c|}{\multirow{2}{*}{$z_i = 1, y_i = 0, x_i \neq N_x - 1$}}	 &	\multicolumn{1}{c|}{\multirow{2}{*}{0}} & \multicolumn{1}{c|}{\multirow{2}{*}{$y_i$}} & $x_i$   \\ \cline{4-4}
 	   	\multicolumn{1}{|c|}{}	& \multicolumn{1}{c|}{\multirow{2}{*}{}}  & \multicolumn{1}{c|}{}& $x_i + 1$  \\ \hline
-	   	\multicolumn{1}{|c|}{\multirow{2}{*}{$z_i = 1, y_i = 0, x_i = N_x - 1$}}	 &	\multicolumn{1}{c|}{\multirow{2}{*}{1}} & \multicolumn{1}{c|}{\multirow{2}{*}{$y_i$}} & 0   \\ \cline{4-4}
+	   	\multicolumn{1}{|c|}{\multirow{2}{*}{$z_i = 1, y_i = 0, x_i = N_x - 1$}}	 &	\multicolumn{1}{c|}{\multirow{2}{*}{0}} & \multicolumn{1}{c|}{\multirow{2}{*}{$y_i$}} & 0   \\ \cline{4-4}
 	   	\multicolumn{1}{|c|}{}	& \multicolumn{1}{c|}{\multirow{2}{*}{}}  & \multicolumn{1}{c|}{}& $N_x - 1$ \\ \hline
 	\end{tabular}
 	\label{tab:dummytable}
