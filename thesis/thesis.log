@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  25 JUN 2018 11:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  25 JUN 2018 17:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1093,11 +1093,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Warning: Unused global option(s):
     [Arial].
 
-(./thesis.aux
-
-LaTeX Warning: Label `fig:hydrogenWF' multiply defined.
-
-)
+(./thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -1114,7 +1110,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
- (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count363
 \scratchdimen=\dimen186
@@ -1162,7 +1159,140 @@ Package biblatex Info: ... file 'thesis.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
+(biblatex)                Metropolis1949
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Newman1999
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                arnow
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                constrained
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                constrained2
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
 (biblatex)                deGennes1999
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                kalos
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                kosztin
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                mahan
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                optical
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                qmc
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                sugiyama
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                tao
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                troyer
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                umrigar
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                vmc
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                vmc_review
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                wiese
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                zhang
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                zphase
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -1229,13 +1359,13 @@ LaTeX Info: Redefining \nameref on input line 7.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./beg-firstFewPages/1.Cover.tex
-<all-figures/Cover/istnewlogo.pdf, id=184, 502.99277pt x 195.67976pt>
+<all-figures/Cover/istnewlogo.pdf, id=233, 502.99277pt x 195.67976pt>
 File: all-figures/Cover/istnewlogo.pdf Graphic file (type pdf)
 <use all-figures/Cover/istnewlogo.pdf>
 Package pdftex.def Info: all-figures/Cover/istnewlogo.pdf  used on input line 9
 .
 (pdftex.def)             Requested size: 142.26378pt x 55.34532pt.
-<all-figures/Cover/coverimage.jpg, id=185, 1003.75pt x 567.11874pt>
+<all-figures/Cover/coverimage.jpg, id=234, 1003.75pt x 567.11874pt>
 File: all-figures/Cover/coverimage.jpg Graphic file (type jpg)
 <use all-figures/Cover/coverimage.jpg>
 Package pdftex.def Info: all-figures/Cover/coverimage.jpg  used on input line 1
@@ -1434,7 +1564,10 @@ Package minitoc Info: I0033
 \tf@toc=\write7
 \openout7 = `thesis.toc'.
 
- [10] (./thesis.lof)
+ [10] (./thesis.lof
+Package acronym Info: Label `acro:TMD' newly defined as it shall be overridden
+although it is yet undefined on input line 15.
+)
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
@@ -1494,38 +1627,117 @@ LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <150> not available
 
 
 
-] (./ch-introduction/1.scope.tex
+] (./ch-introduction/motivation.tex
 Package acronym Info: Label `acro:2D' newly defined as it shall be overridden
 although it is yet undefined on input line 4.
-Package acronym Info: Label `acro:QMC' overridden on input line 12.
-Package acronym Info: Label `acro:TMD' newly defined as it shall be overridden
-although it is yet undefined on input line 17.
+Package acronym Info: Label `acro:QMC' overridden on input line 14.
+Package acronym Info: Label `acro:TMD' overridden on input line 20.
 )
-(./ch-introduction/2.strongly_correlated.tex [2]
+(./ch-introduction/strongly_correlated.tex [2]
 Package acronym Info: Label `acro:LG' newly defined as it shall be overridden
 although it is yet undefined on input line 15.
  [3])
-(./ch-introduction/3.state.tex) (./ch-introduction/4.contributions.tex [4])
-(./ch-introduction/5.outline.tex) [5] [6
+(./ch-introduction/state.tex [4]
+<all-figures/Introduction/graphene.png, id=518, 390.96063pt x 560.59438pt>
+File: all-figures/Introduction/graphene.png Graphic file (type png)
+<use all-figures/Introduction/graphene.png>
+Package pdftex.def Info: all-figures/Introduction/graphene.png  used on input l
+ine 25.
+(pdftex.def)             Requested size: 133.72786pt x 191.74579pt.
+<all-figures/Introduction/disp_rel.png, id=520, 494.34688pt x 412.54124pt>
+File: all-figures/Introduction/disp_rel.png Graphic file (type png)
+<use all-figures/Introduction/disp_rel.png>
+Package pdftex.def Info: all-figures/Introduction/disp_rel.png  used on input l
+ine 27.
+(pdftex.def)             Requested size: 241.84842pt x 201.82594pt.
+
+Overfull \hbox (23.73639pt too wide) in paragraph at lines 24--28
+[]  []   [] 
+ []
+
+Package acronym Info: Label `acro:AFM' newly defined as it shall be overridden
+although it is yet undefined on input line 28.
+[5 <./all-figures/Introduction/graphene.png> <./all-figures/Introduction/disp_r
+el.png>]
+Package acronym Info: Label `acro:PBC' newly defined as it shall be overridden
+although it is yet undefined on input line 43.
+Package acronym Info: Label `acro:OBC' newly defined as it shall be overridden
+although it is yet undefined on input line 44.
+<all-figures/Introduction/nanoribbons.png, id=551, 1228.08812pt x 289.08pt>
+File: all-figures/Introduction/nanoribbons.png Graphic file (type png)
+<use all-figures/Introduction/nanoribbons.png>
+Package pdftex.def Info: all-figures/Introduction/nanoribbons.png  used on inpu
+t line 48.
+(pdftex.def)             Requested size: 429.83728pt x 101.1795pt.
+<all-figures/Introduction/zigzag.png, id=565, 743.77875pt x 643.40375pt>
+File: all-figures/Introduction/zigzag.png Graphic file (type png)
+<use all-figures/Introduction/zigzag.png>
+Package pdftex.def Info: all-figures/Introduction/zigzag.png  used on input lin
+e 61.
+(pdftex.def)             Requested size: 163.63182pt x 141.54926pt.
+
+Overfull \hbox (119.2428pt too wide) in paragraph at lines 61--62
+[][] 
+ []
+
+<all-figures/Introduction/edge_states.png, id=566, 453.19313pt x 616.80438pt>
+File: all-figures/Introduction/edge_states.png Graphic file (type png)
+<use all-figures/Introduction/edge_states.png>
+Package pdftex.def Info: all-figures/Introduction/edge_states.png  used on inpu
+t line 64.
+(pdftex.def)             Requested size: 104.23222pt x 141.86201pt.
+
+Overfull \hbox (59.8432pt too wide) in paragraph at lines 64--65
+[][] 
+ []
+
+Package acronym Info: Label `acro:AF' newly defined as it shall be overridden
+although it is yet undefined on input line 66.
+[6 <./all-figures/Introduction/nanoribbons.png>] [7 <./all-figures/Introduction
+/zigzag.png> <./all-figures/Introduction/edge_states.png>] [8] [9] [10]
+[11] [12]
+LaTeX Font Info:    Try loading font information for U+bbm on input line 255.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+)
+[13]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 297.
+
+[14] [15]
+<all-figures/Introduction/constrained.png, id=691, 792.9625pt x 790.955pt>
+File: all-figures/Introduction/constrained.png Graphic file (type png)
+<use all-figures/Introduction/constrained.png>
+Package pdftex.def Info: all-figures/Introduction/constrained.png  used on inpu
+t line 366.
+(pdftex.def)             Requested size: 170.71652pt x 170.28131pt.
 
 
-]) (./ch-hubbard/main.tex
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 372.
+
+[16] [17 <./all-figures/Introduction/constrained.png>] [18])
+(./ch-introduction/contributions.tex) (./ch-introduction/outline.tex [19])
+[20]) (./ch-hubbard/main.tex
 Chapter 2.
 \openout5 = `thesis.mtc'.
 
 \openout5 = `thesis.mtc'.
 
-(./thesis.mtc2) [7
+(./thesis.mtc2) [21
 
-] (./ch-hubbard/1.introduction.tex
-<all-figures/Hubbard/IsingVsHubbard.jpeg, id=443, 961.5925pt x 374.39874pt>
+
+
+] (./ch-hubbard/modelling.tex
+<all-figures/Hubbard/IsingVsHubbard.jpeg, id=740, 961.5925pt x 374.39874pt>
 File: all-figures/Hubbard/IsingVsHubbard.jpeg Graphic file (type jpg)
 <use all-figures/Hubbard/IsingVsHubbard.jpeg>
 Package pdftex.def Info: all-figures/Hubbard/IsingVsHubbard.jpeg  used on input
  line 13.
 (pdftex.def)             Requested size: 399.47414pt x 155.53825pt.
- [8 <./all-figures/Hubbard/IsingVsHubbard.jpeg>]) (./ch-hubbard/2.motivation.te
-x [9]
+ [22 <./all-figures/Hubbard/IsingVsHubbard.jpeg>]) (./ch-hubbard/hubbard.tex [2
+3]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 14.
@@ -1534,39 +1746,28 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 14.
 
-<all-figures/Hubbard/Hydrogen_Density_Plots.png, id=479, 1761.58125pt x 1190.44
+<all-figures/Hubbard/Hydrogen_Density_Plots.png, id=772, 1761.58125pt x 1190.44
 75pt>
 File: all-figures/Hubbard/Hydrogen_Density_Plots.png Graphic file (type png)
 <use all-figures/Hubbard/Hydrogen_Density_Plots.png>
 Package pdftex.def Info: all-figures/Hubbard/Hydrogen_Density_Plots.png  used o
 n input line 27.
 (pdftex.def)             Requested size: 233.3125pt x 157.66997pt.
-[10 <./all-figures/Hubbard/Hydrogen_Density_Plots.png>] [11] [12] [13]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 194.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/bbm-macros/ubbm.fd
-File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
+[24 <./all-figures/Hubbard/Hydrogen_Density_Plots.png>] [25] [26] [27]
 Package acronym Info: Label `acro:PHS' newly defined as it shall be overridden
 although it is yet undefined on input line 205.
-Package acronym Info: Label `acro:AF' newly defined as it shall be overridden
-although it is yet undefined on input line 213.
-<all-figures/Hubbard/bipartite.png, id=537, 1263.21938pt x 525.46312pt>
+Package acronym Info: Label `acro:AF' overridden on input line 213.
+<all-figures/Hubbard/bipartite.png, id=818, 1263.21938pt x 525.46312pt>
 File: all-figures/Hubbard/bipartite.png Graphic file (type png)
 <use all-figures/Hubbard/bipartite.png>
 Package pdftex.def Info: all-figures/Hubbard/bipartite.png  used on input line 
 218.
 (pdftex.def)             Requested size: 227.62204pt x 94.6835pt.
- [14]
+ [28]
 Package acronym Info: Label `acro:PHT' newly defined as it shall be overridden
 although it is yet undefined on input line 225.
- [15 <./all-figures/Hubbard/bipartite.png>]
-File: all-figures/Hubbard/Hydrogen_Density_Plots.png Graphic file (type png)
-<use all-figures/Hubbard/Hydrogen_Density_Plots.png>
-Package pdftex.def Info: all-figures/Hubbard/Hydrogen_Density_Plots.png  used o
-n input line 267.
-(pdftex.def)             Requested size: 233.3125pt x 157.66997pt.
-) (./ch-hubbard/3.mott-insulators.tex
+)
+(./ch-hubbard/3.mott-insulators.tex [29 <./all-figures/Hubbard/bipartite.png>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
@@ -1574,8 +1775,8 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
- [16]
-<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=583, 457.71pt x 210.78
+ [30]
+<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=863, 457.71pt x 210.78
 75pt>
 File: all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png Graphic file (type pn
 g)
@@ -1583,8 +1784,8 @@ g)
 Package pdftex.def Info: all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png  u
 sed on input line 59.
 (pdftex.def)             Requested size: 256.0748pt x 117.93405pt.
- [17 <./all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png>])
-(./ch-hubbard/4.exact-solutions.tex [18] [19] [20]
+ [31 <./all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png>])
+(./ch-hubbard/4.exact-solutions.tex [32] [33]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 121.
@@ -1605,14 +1806,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 121.
 
-[21]
-<all-figures/Hubbard/rhoVsMu.png, id=635, 481.19775pt x 262.8219pt>
+[34] [35]
+<all-figures/Hubbard/rhoVsMu.png, id=914, 481.19775pt x 262.8219pt>
 File: all-figures/Hubbard/rhoVsMu.png Graphic file (type png)
 <use all-figures/Hubbard/rhoVsMu.png>
 Package pdftex.def Info: all-figures/Hubbard/rhoVsMu.png  used on input line 20
 1.
 (pdftex.def)             Requested size: 368.40724pt x 201.21849pt.
- [22 <./all-figures/Hubbard/rhoVsMu.png>]
+ [36 <./all-figures/Hubbard/rhoVsMu.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 235.
@@ -1641,59 +1842,57 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 235.
 
-Package acronym Info: Label `acro:PBC' newly defined as it shall be overridden
-although it is yet undefined on input line 256.
-Package acronym Info: Label `acro:OBC' newly defined as it shall be overridden
-although it is yet undefined on input line 258.
-[23] [24]) (./ch-hubbard/5.effective-heisenberg.tex [25] [26] [27] [28]
-[29]) [30]) (./ch-qmcSurvey/main.tex
+Package acronym Info: Label `acro:PBC' overridden on input line 256.
+Package acronym Info: Label `acro:OBC' overridden on input line 258.
+[37] [38]) (./ch-hubbard/5.effective-heisenberg.tex [39] [40] [41] [42]
+[43]) [44]) (./ch-afqmc/main.tex
 Chapter 3.
-Package minitoc Info: I0006
-(minitoc)             thesis.mtc3 is empty on input line 8.
-[31
-
-
-
-] [32]) (./ch-afqmc/main.tex
-Chapter 4.
 \openout5 = `thesis.mtc'.
 
 \openout5 = `thesis.mtc'.
 
-(./thesis.mtc4) [33
+(./thesis.mtc3) [45
 
 
 
 ] (./ch-afqmc/1.theoretical_framework.tex
 
-LaTeX Warning: Reference `exactSolutions' on page 34 undefined on input line 10
+LaTeX Warning: Reference `exactSolutions' on page 46 undefined on input line 10
 .
 
-[34]
+[46]
 
-LaTeX Warning: Reference `exactSolutions' on page 35 undefined on input line 35
+LaTeX Warning: Reference `exactSolutions' on page 47 undefined on input line 35
 .
 
-[35] [36] [37] [38] [39] [40] [41] [42]
+[47] [48] [49] [50] [51] [52] [53] [54]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 393.
- [43] [44] [45] [46] [47]) [48] [49]
-[50
+ [55] [56] [57] [58] [59]) [60] [61]
+[62
 
 
 ]) (./ch-algorithm/main.tex
+Chapter 4.
+Package minitoc Info: I0006
+(minitoc)             thesis.mtc4 is empty on input line 8.
+[63
+
+] [64]) (./ch-stabilization/main.tex
 Chapter 5.
 Package minitoc Info: I0006
 (minitoc)             thesis.mtc5 is empty on input line 8.
-[51
+[65
 
-] [52]) (./ch-applications/main.tex
+
+
+] [66]) (./ch-applications/main.tex
 Chapter 6.
 \openout5 = `thesis.mtc'.
 
 \openout5 = `thesis.mtc'.
 
-(./thesis.mtc6) [53
+(./thesis.mtc6) [67
 
 
 
@@ -1702,44 +1901,43 @@ Chapter 6.
 (./ch-applications/4.nanoribbon.tex
 Package acronym Info: Label `acro:PBC' overridden on input line 13.
 Package acronym Info: Label `acro:OBC' overridden on input line 14.
-<all-figures/Applications/nanoribbon.pdf, id=987, 1027.84pt x 770.88pt>
+<all-figures/Applications/nanoribbon.pdf, id=1266, 1027.84pt x 770.88pt>
 File: all-figures/Applications/nanoribbon.pdf Graphic file (type pdf)
 <use all-figures/Applications/nanoribbon.pdf>
 Package pdftex.def Info: all-figures/Applications/nanoribbon.pdf  used on input
  line 25.
 (pdftex.def)             Requested size: 355.09189pt x 153.27733pt.
- [54]
+ [68]
 Overfull \hbox (2.82014pt too wide) in paragraph at lines 60--90
 [][]   []
  []
 
-[55 <./all-figures/Applications/nanoribbon.pdf>]) [56])
+[69 <./all-figures/Applications/nanoribbon.pdf>]) [70])
 (./ch-conclusion/conclusions.tex
 Chapter 7.
 Package minitoc Info: I0006
 (minitoc)             thesis.mtc7 is empty on input line 4.
-[57
+[71
 
 
 
-] [58])
-Overfull \hbox (19.84595pt too wide) in paragraph at lines 45--45
+] [72]) [73
+
+
+
+
+
+] [74]
+Overfull \hbox (19.84595pt too wide) in paragraph at lines 44--44
 []\T1/cmr/m/n/10 Fazekas, P. \T1/cmr/m/it/10 Lec-ture Notes on Elec-tron Cor-re
 -la-tion and Mag-netism \T1/cmr/m/n/10 Google-Books-ID: GV5pyxX3TfMC.
  []
 
-[59
-
-
-
-
-
-] [60] [61] [62
-
-
-] (./end-appendices/appendixA.tex
+[75] [76] (./end-appendices/appendixA.tex
 Appendix A.
 [1
+
+
 
 ] [2] [3] [4]) (./end-appendices/appendixB.tex [5]
 Appendix B.
@@ -1759,32 +1957,29 @@ Package minitoc Info: I0009
 (minitoc)             Creating the thesis.maf file.
 \openout5 = `thesis.maf'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9E550D1C72FD1069B820613E019DB0C0;3190.
+(rerunfilecheck)             Checksum: 27A883988F6606592B1F643D03FAAFBC;4236.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21533 strings out of 492649
- 350461 string characters out of 6129622
- 874710 words of memory out of 5000000
- 24172 multiletter control sequences out of 15000+600000
+ 21750 strings out of 492649
+ 356443 string characters out of 6129622
+ 878901 words of memory out of 5000000
+ 24289 multiletter control sequences out of 15000+600000
  41670 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,26n,100p,1789b,2035s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,26n,100p,1789b,2880s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
  </Users/franciscobrito/Library/texlive/2018/texmf-var/fonts/pk/ljfour/public/b
 bm/bbm10.600pk>{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}
@@ -1805,41 +2000,44 @@ sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texmf-dist/
-fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texmf-dist/fo
-nts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2018/texmf-dist/font
-s/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
-1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
-public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
-ic/cm-super/sfsl0700.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
-/cm-super/sfsl1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/c
-m-super/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-
-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-su
-per/sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/bookman/ub
-kd8a.pfb>
-Output written on thesis.pdf (89 pages, 3954138 bytes).
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/cm-super/sfsl0700.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
+cm-super/sfsl1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm
+-super/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-s
+uper/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
+er/sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/bookman/ubk
+d8a.pfb>
+Output written on thesis.pdf (103 pages, 10016157 bytes).
 PDF statistics:
- 1444 PDF objects out of 1728 (max. 8388607)
- 1258 compressed objects within 13 object streams
- 424 named destinations out of 1000 (max. 500000)
- 407 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1769 PDF objects out of 2073 (max. 8388607)
+ 1543 compressed objects within 16 object streams
+ 516 named destinations out of 1000 (max. 500000)
+ 533 words of extra memory for PDF output out of 10000 (max. 10000000)
 

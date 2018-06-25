@@ -10,41 +10,47 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Graphene monolayer; graphene's dispersion relation.}}{5}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Minimal models of electron correlations in energy bands}{7}{chapter.2}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Fabrication of \ac {TMD} nanoribbons}}{6}{figure.caption.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphical comparison between the Ising and the Hubbard model.}}{8}{figure.caption.12}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Zigzag edges of a nanoribbon and magnetism.}}{7}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Hydrogen atomic wave functions.}}{10}{figure.caption.13}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Bipartite lattices and antiferromagnetic order.}}{15}{figure.caption.16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Hydrogen atomic wave functions.}}{16}{figure.caption.18}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{17}{figure.caption.19}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Contour plots of the two-fermion ground state wave function overlap $<\chi | \phi _0 >$ for a Hubbard model as obtained in \cite {constrained2}. The parameters $\theta _{1,2}$ arise from the decomposition $|\chi > = (\qopname \relax o{cos}\theta _1 c_{1\delimiter "3222378 }^\dagger + \qopname \relax o{sin}\theta _1 c_{2\delimiter "3222378 }^\dagger ) (\qopname \relax o{cos}\theta _2 c_{1\delimiter "3223379 }^\dagger + \qopname \relax o{sin}\theta _2 c_{2\delimiter "3223379 }^\dagger )$, where $c^{(\dagger )}$ are annihilation (creation) operators of two fermions with either spin up or down. Notice the varying nodal surfaces as the interaction energy-hopping parameter ratio varies. The accuracy of the constrained path QMC method depends on the shape of these surfaces (taken from \cite {constrained2}). \relax }}{17}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{A Survey of Quantum Monte Carlo Methods}{31}{chapter.3}
+\contentsline {xchapter}{Minimal models of electron correlations in energy bands}{21}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphical comparison between the Ising and the Hubbard models.}}{22}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Hydrogen atomic wave functions.}}{24}{figure.caption.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Bipartite lattices and antiferromagnetic order.}}{29}{figure.caption.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{31}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{33}{chapter.4}
+\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{45}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Discussing the algorithm}{51}{chapter.5}
+\contentsline {xchapter}{Discussing the algorithm}{63}{chapter.4}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Applications}{53}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Boundary conditions on the nanoribbon.}}{55}{figure.caption.25}
+\contentsline {xchapter}{Stabilization}{65}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Conclusions and Future Work}{57}{chapter.7}
+\contentsline {xchapter}{Applications}{67}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Boundary conditions on the nanoribbon.}}{69}{figure.caption.33}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Conclusions and Future Work}{71}{chapter.7}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

@@ -40,6 +40,10 @@ Contrast the intuitive views of Monte Carlo for classical and quantum systems: C
 
 Brief history of what was developed before, its successes and its failures.
 
+### **A Survey of Quantum Monte Carlo Methods**
+
+Summarize the existing QMC methods, and explain why we focus on detQMC
+
 ### **Original contributions**
 
 Describe what were the main achievements of this work and how it contributed to an increased physical understanding of this type of system.
@@ -51,7 +55,7 @@ Explain the structure of the thesis.
 
 ## 2. Minimal models of electron correlation in energy bands
 
-## 3. A Survey of Quantum Monte Carlo Methods
+
 
 ## 4. Auxiliary Field Quantum Monte Carlo
 
