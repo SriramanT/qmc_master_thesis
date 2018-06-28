@@ -1,1 +1,116 @@
 \section{Green's functions: Mott gap and spectral function}\label{sec:green}
+
+Green's functions are the core of the first perturbative, diagrammatic approaches to the Hubbard model.
+However, here we try do give some intuition about how they work since they are the central quantity in the \acs{QMC} method we will use.
+
+Considering the imaginary-time variable of the previous chapter $\tau = i t$, for $\tau > 0$, the (unequal-time) Green's function is defined as
+
+\begin{equation}
+G_{\bm i \bm j} ( \tau, 0 ) = \left\langle c_{\bm i} ( \tau ) c_{\bm j}^\dagger ( 0 ) \right\rangle  \, , \text{with} \,\, c_{\bm i} ( \tau ) = e^{\mathcal{H} \tau } c_{\bm i} ( 0 ) e^{- \mathcal{H} \tau } 
+\end{equation}
+
+\subsection{Non-interacting case}
+
+In this limit, we can compute $G_{\bm i \bm j} ( \tau, 0 )$ analytically by going to momentum space.
+
+\begin{equation}
+c_{\bm k} ( \tau ) = e^{ \mathcal{H} \tau } c_{\bm k} ( 0 ) e^{-\mathcal{H} \tau } = e^{-\varepsilon_{\bm k} \tau } c_{\bm k} ( 0 )
+\end{equation}
+
+This equation can be verified by acting with the left hand side and with right hand side on the states $\left| 0 \right\rangle$ and $\left| 1 \right\rangle$, and noting that the result is the same.
+Alternatively, one can use the equation of motion $\partial_\tau \hat{A}(\tau) = [ \mathcal{H}, \hat{A} (\tau) ]$.
+To generalize the result of equation (\ref{eq:eqGreenNonInt}) for the \emph{equal-time} Green's function, we transform the fermionic operators in $G$ to momentum space, and use $\left\langle c_{\bm k} c_{\bm k}^\dagger \right\rangle = 1 - f_{\bm k}$ to obtain
+
+\begin{equation}
+G_{\bm i \bm j}(\tau, 0) = \frac{1}{N} \sum_{\bm k} e^{i \bm k \cdot (\bm i - \bm j )} ( 1 - f_{\bm k} ) e^{-\varepsilon_{\bm k} \tau } ,
+\end{equation}
+which is translationally invariant corresponding to the symmetry of the Hamiltionian.
+
+We can generalize our definition of the Green's function by using the time-ordering operator $\mathcal{T}$:
+
+\begin{equation}
+G_{\bm k}(\tau, 0) = - \left\langle \mathcal{T} c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ) \right\rangle ,
+\end{equation}
+where
+
+\begin{equation}
+\mathcal{T} c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ) =
+\begin{cases}
+c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ), \,\, \tau > 0 \\
+- c_{\bm k}^\dagger ( 0 ) c_{\bm k} ( \tau) , \,\, \tau < 0
+\end{cases}
+\end{equation}
+
+An important property follows immediately from this definition: $G ( \tau + \beta, 0 ) = - G( \tau, 0 )$ for $ -\beta < \tau < 0$.
+The Matsubara frequencies $\omega_n = (2n + 1) \pi / \beta$ appear when we Fourier transform:
+
+\begin{equation}
+G ( i \omega_n ) = \int_0^\beta \frac{d\tau}{\beta} G( \tau, 0) e^{i\omega_n \tau} \quad\quad G (\tau) = \sum_n G ( i \omega_n ) e^{ - i \omega_n \tau}
+\end{equation}
+
+In momentum space, and imaginary time, the Green's function may then be obtained
+
+\begin{equation}
+G_{\bm k} (\tau, 0 ) =
+\begin{cases}
+-e^{-\varepsilon_{\bm k}} ( 1 - f_{\bm k} ) , \,\, 0 < \tau < \beta \\
+e^{-\varepsilon_{\bm k}} f_{\bm k} , \,\, -\beta < \tau < 0 ,
+\end{cases}
+\end{equation}
+which leads to
+
+\begin{equation}
+G_{\bm k} ( i \omega_n ) = \frac{1}{i\omega_n - \varepsilon_{\bm k} }
+\end{equation}
+in frequency space.This result may also be obtained by taking the partial derivative of the time-ordered Green's function written as
+
+\begin{equation}
+G_{\bm k} ( \tau, 0 ) = \left\langle c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ) \right\rangle \theta ( \tau ) - \left\langle c_{\bm k} ( 0 ) c_{\bm k}^\dagger ( \tau ) \right\rangle \theta ( -\tau )
+\end{equation}
+and Fourier transforming both sides to solve for $G ( i \omega_n )$.
+Taking a time derivative of $G$ implies computing commutators of $\mathcal{H}$ with the fermionic operators.
+The equation closes for quadratic Hamiltonians, which we, of course, know to be soluble.
+
+\subsection{Single site case}
+
+The Hubbard Hamiltonian does not distinguish between spin-up and spin-down sectors.
+Thus, let us consider the spin-up sector, and compute $G_\uparrow (\tau, 0) =  \left\langle c_{\uparrow} ( \tau) c_{\uparrow}^\dagger ( 0 ) \right\rangle$.
+Only the states $\left| n_{\uparrow} n_{\downarrow} \right\rangle = $ $\left| 0\, 0 \right\rangle$, $\left| 0\, 1 \right\rangle$ contribute to the expectation due to the creation operator on the right, which gives 0, unless there is no spin up electron already in the state it acts upon.
+
+\begin{equation}
+\begin{split}
+c_{\uparrow} ( \tau) c_{\uparrow}^\dagger ( 0 )  \left| 0\, 0 \right\rangle &= e^{\mathcal{H} \tau } c_{\uparrow} ( 0 ) e^{-\mathcal{H} \tau } c_{\uparrow}^\dagger ( 0 )  \left| 0\, 0 \right\rangle = e^{\mathcal{H} \tau } c_{\uparrow} ( 0 ) e^{-\mathcal{H} \tau } \left| 0\, 1 \right\rangle \\
+ &= e^{\mathcal{H} \tau } c_{\uparrow} ( 0 ) e^{U \tau / 4 + \mu \tau } \left| 1\, 0 \right\rangle = e^{\mathcal{H} \tau } e^{U \tau / 4 + \mu \tau } \left| 0\, 0 \right\rangle = e^{U \tau / 2 + \mu \tau } \left| 0\, 0 \right\rangle \\
+ c_{\uparrow} ( \tau) c_{\uparrow}^\dagger ( 0 )  \left| 0\, 1 \right\rangle &= e^{\mathcal{H} \tau } c_{\uparrow} ( 0 ) e^{-\mathcal{H} \tau } c_{\uparrow}^\dagger ( 0 )  \left| 0\, 1 \right\rangle = e^{\mathcal{H} \tau } c_{\uparrow} ( 0 ) e^{-\mathcal{H} \tau } \left| 1\, 1 \right\rangle \\
+ &= e^{\mathcal{H} \tau } c_{\uparrow} ( 0 ) e^{- U \tau / 4 + 2 \mu \tau } \left| 1\, 1 \right\rangle = e^{\mathcal{H} \tau } e^{- U \tau / 4 + 2 \mu \tau } \left| 0\, 1 \right\rangle = e^{U \tau / 2 + \mu \tau } \left| 0\, 1 \right\rangle
+\end{split}
+\end{equation}
+
+Using the expression for the partition function that we obtained in equation (\ref{eq:singleSitePartition}), we arrive at
+
+\begin{equation}
+G_\uparrow (\tau, 0) = \frac{ e^{\tau ( U / 2 + \mu )} e^{-\beta U / 4} + e^{-\tau ( U / 2 - \mu )} e^{\beta (U / 4 + \mu)} }{ e^{-\beta U / 4} ( 1 + 2 e^{\beta ( U /2 + \mu)} + e^{2\beta \mu} ) } ,
+\end{equation}
+which, at half filling becomes
+
+\begin{equation}
+G_\uparrow (\tau, 0) = \frac{ e^{\tau U / 2} e^{-\beta U / 4} + e^{-\tau U / 2} e^{\beta U / 4 } }{ 2 e^{-\beta U / 4}  + 2 e^{\beta U / 4} } ,
+\end{equation}
+
+There is a well known relation between the Green's function and the spectral density $A ( \omega )$, which may be regarded as a local density of states:
+
+\begin{equation}\label{eq:specDens}
+G ( \tau, 0 ) =  \int_{-\infty}^{+\infty} A ( \omega ) \frac{e^{-\omega \tau} }{ e^{-\beta \omega} + 1 } d\omega ,
+\end{equation}
+
+If we replace the following expression for the spectral density in equation (\ref{eq:specDens}), we recover the result for the half filled case.
+
+\begin{equation}
+A ( \omega ) = \frac{1}{2} \bigg( \delta ( \omega - \frac{U}{2} ) + \delta ( \omega + \frac{U}{2} ) \bigg)
+\end{equation}
+
+We could do a similar calculation for $\mu \neq 0$ by changing the spectral density adequately, but the algebra is slightly more cumbersome, and the result does not bring additional insight.
+
+The spectral density consists of two delta functions separated by $U$, which is reminiscent of our result for the Mott insulating gap.
+In the same way that the gap softens (eventually disappearing) when we introduce hopping, the spectral function for the full Hubbard Hamiltonian changes accordingly, reflecting the same information about the properties of the system as the Green's function, encoded in a different manner.
+In \acs{QMC}, we can access $G(\tau, 0)$ and deduce the properties of the system from it.

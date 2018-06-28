@@ -102,7 +102,7 @@ c_i^\dagger c_{i+1}^\dagger \begin{cases}
 
 The operator annihilates the particle at $i+1$ and creates it back at $i$, i.e. the electron hops from $i+1$ to $i$.
 
-\subsection{The purely atomic $\frac{t}{U} = 0$ limit}
+\subsection{The purely atomic ( $\frac{t}{U} = 0$ ), single site limit}
 \label{subsec:atomic}
 
 When $t = 0$, the site index may be omitted since the Hamiltonian is a sum of operators solely at site $i$.
@@ -135,7 +135,7 @@ e^{-\beta \mathcal{H} } \leadsto e^{-\beta U / 4}  \text{diag}\bigg(1,  e^{\beta
 \end{equation}
 and this is one of the rare situations in which it is possible to explicitly write down a closed form for the partition function.
 
-\begin{equation}
+\begin{equation}\label{eq:singleSitePartition}
 Z = \text{Tr} [ e^{-\beta\mathcal{H} } ] = \sum_\alpha \left\langle \psi_\alpha \left|e^{-\beta \mathcal{H} } \right| \psi_\alpha \right\rangle = e^{-\beta U / 4} \bigg(1 + 2 e^{\beta(\mu + \frac{U}{2})} + e^{2 \beta \mu} \bigg)
 \end{equation}
 
@@ -260,7 +260,7 @@ As what happens for the Mott plateau, quantum fluctuations (i.e. introducing a h
 
 \subsection{The non-interacting $\frac{t}{U} \rightarrow \infty$ limit}
 
-In the $\frac{t}{U} \rightarrow \infty$ limit, the spin spaces become independent, and they may be considered separately.
+In the $\frac{t}{U} \rightarrow \infty$ limit, the spin sectors become independent, and they may be considered separately.
 Thus, we omit the spin indices of the operators in the Hamiltonian:
 
 \begin{equation}
@@ -351,13 +351,29 @@ E = \frac{1}{N} \sum_{\bm k} \frac{\varepsilon_{\bm k} - \mu}{1 + e^{\beta(\vare
 
 \item the equal-time Green's function, which plays a key role in computing other quantities, such as correlation functions.
 
-\begin{equation}
+\begin{equation}\label{eq:eqGreenNonInt}
 G_{\bm l \bm j} = \left\langle c_{\bm l} c_{\bm j}^\dagger \right\rangle = \frac{1}{N} \sum_{\bm k} e^{ i {\bm k} \cdot ( \bm l -\bm  j ) } ( 1 - f_{\bm k} ),
 \end{equation}
 where $f_{\bm k} = \big(1 + e^{\beta(\varepsilon_{\bm k} - \mu)} \big)^{-1}$ is the Fermi-Dirac distribution (of course, here we consider half filling: $\mu = 0$).
 Note that the Green's function, like the Hamiltonian, is translationally invariant: $G_{\bm l \bm j} = G_{\bm l-\bm j}$. 
 If we use PBCs, no site is singled out, they are all equivalent and this behavior of the Green's function should become apparent in our simulations.
 \end{enumerate}
+
+The properties of a fermionic system are dominated by particles near the Fermi surface.
+On the square lattice, a unique feature appears called perfect nesting. 
+The wavevector $\bm k = (\pi , \pi)$ connects symmetric regions of the Fermi surface.
+This suggests that this wavevector could have a crucial role in the description of the model in the square lattice.
+Indeed, as we will see, a large magnetic structure factor at $\bm k = (\pi , \pi)$ signals antiferromagnetic order.
+This is a feature of the Hubbard model at half filling down to $U = 0$.
+
+\begin{figure}[H]
+\includegraphics[width=0.55\linewidth]{Hubbard/fermiEnergy1D.png}
+\hspace{-9mm}
+\includegraphics[width=0.49\linewidth]{Hubbard/fermiEnergy2D.png}
+	\caption[Dispersion relations for the \acs{1D} chain and the square lattice in the non-interacting case.]{Dispersion relations for the \acs{1D} chain and the square lattice in the non-interacting case.
+	For the square lattice, the surfaces separating the different colors are Fermi surfaces for different fillings of the lattice. In particular, for half filling ($\rho = 1, \mu = 0$, we obtain the rotated square in the white region.}
+	\label{fig:fermi1D}
+\end{figure}
 
 From our analysis, we draw an important conclusion: that solving the single-particle problem, that is obtaining $\varepsilon_{\bm k}$ gives us all the information we need about all particle sectors (any number of particles, which is controlled via the chemical potential).
 When the on-site interaction is \say{turned off}, the fermions simply occupy the one-particle states according to Pauli's exclusion principle.
