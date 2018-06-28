@@ -12,29 +12,29 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Minimal models of electron correlations in energy bands}{21}{chapter.2}
+\contentsline {xchapter}{Minimal models of electron correlations in energy bands}{19}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{45}{chapter.3}
+\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{43}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Discussing the algorithm}{63}{chapter.4}
+\contentsline {xchapter}{Discussing the algorithm}{61}{chapter.4}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Stabilization}{65}{chapter.5}
+\contentsline {xchapter}{Stabilization}{63}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Applications}{67}{chapter.6}
+\contentsline {xchapter}{Applications}{65}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.1}{\ignorespaces Nearest neighbors on the nanoribbon.\relax }}{70}{table.caption.34}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Nearest neighbors on the nanoribbon.\relax }}{68}{table.caption.37}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Conclusions and Future Work}{71}{chapter.7}
+\contentsline {xchapter}{Conclusions and Future Work}{69}{chapter.7}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -43,3 +43,7 @@
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Computing the partition function for a quadratic Hamiltonian}{B-1}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Obtaining an effective Heisenberg Hamiltonian as the $U/t \gg 1$ limit of the Hubbard model}{C-1}{appendix.C}

@@ -1,46 +1,26 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [1] Config.pm:305> INFO - Logfile is 'thesis.blg'
-[68] biber-darwin:313> INFO - === Mon Jun 25, 2018, 17:41:21
-[94] Biber.pm:371> INFO - Reading 'thesis.bcf'
-[208] Biber.pm:857> INFO - Found 85 citekeys in bib section 0
-[222] Biber.pm:3976> INFO - Processing section 0
-[235] Biber.pm:4136> INFO - Looking for bibtex format file 'references.bib' for section 0
-[254] bibtex.pm:1500> INFO - LaTeX decoding ...
-[509] bibtex.pm:1316> INFO - Found BibTeX data source 'references.bib'
-[518] Utils.pm:193> WARN - Duplicate entry key: 'wang_electronics_2012' in file 'references.bib', skipping ...
-[519] Utils.pm:193> WARN - Duplicate entry key: 'braz_valley_2017' in file 'references.bib', skipping ...
-[519] Utils.pm:193> WARN - Duplicate entry key: 'hsu_topological_2017' in file 'references.bib', skipping ...
-[519] Utils.pm:193> WARN - Duplicate entry key: 'yazyev_emergence_2010' in file 'references.bib', skipping ...
-[520] Utils.pm:193> WARN - Duplicate entry key: 'chen_fabrication_2017' in file 'references.bib', skipping ...
-[521] Utils.pm:193> WARN - Duplicate entry key: 'feldner_dynamical_2011' in file 'references.bib', skipping ...
-[521] Utils.pm:193> WARN - Duplicate entry key: 'golor_quantum_2013' in file 'references.bib', skipping ...
-[522] Utils.pm:193> WARN - Duplicate entry key: 'raczkowski_interplay_2017' in file 'references.bib', skipping ...
-[522] Utils.pm:193> WARN - Duplicate entry key: 'yang_strain-tuning_2017' in file 'references.bib', skipping ...
-[951] Utils.pm:193> WARN - ISBN '978-981-4273-25-1 978-981-4273-26-8' in entry 'hou_numerical_2009' is invalid - run biber with '--validate_datamodel' for details.
-[969] Utils.pm:193> WARN - I didn't find a database entry for 'Metropolis1949' (section 0)
-[969] Utils.pm:193> WARN - I didn't find a database entry for 'Newman1999' (section 0)
-[969] Utils.pm:193> WARN - I didn't find a database entry for 'tao' (section 0)
-[969] Utils.pm:193> WARN - I didn't find a database entry for 'umrigar' (section 0)
-[970] Utils.pm:193> WARN - I didn't find a database entry for 'mahan' (section 0)
-[970] Utils.pm:193> WARN - I didn't find a database entry for 'kosztin' (section 0)
-[970] Utils.pm:193> WARN - I didn't find a database entry for 'vmc' (section 0)
-[970] Utils.pm:193> WARN - I didn't find a database entry for 'vmc_review' (section 0)
-[970] Utils.pm:193> WARN - I didn't find a database entry for 'constrained2' (section 0)
-[970] Utils.pm:193> WARN - I didn't find a database entry for 'constrained' (section 0)
-[970] Utils.pm:193> WARN - I didn't find a database entry for 'qmc' (section 0)
-[970] Utils.pm:193> WARN - I didn't find a database entry for 'sugiyama' (section 0)
-[970] Utils.pm:193> WARN - I didn't find a database entry for 'zhang' (section 0)
-[970] Utils.pm:193> WARN - I didn't find a database entry for 'zphase' (section 0)
-[970] Utils.pm:193> WARN - I didn't find a database entry for 'troyer' (section 0)
-[971] Utils.pm:193> WARN - I didn't find a database entry for 'wiese' (section 0)
-[971] Utils.pm:193> WARN - I didn't find a database entry for 'arnow' (section 0)
-[971] Utils.pm:193> WARN - I didn't find a database entry for 'kalos' (section 0)
-[971] Utils.pm:193> WARN - I didn't find a database entry for 'optical' (section 0)
-[971] Utils.pm:193> WARN - I didn't find a database entry for 'deGennes1999' (section 0)
-[1015] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1015] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1015] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1015] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[1067] bbl.pm:617> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[1104] bbl.pm:720> INFO - Output to thesis.bbl
-[1104] Biber.pm:110> INFO - WARNINGS: 30
+[55] biber-darwin:313> INFO - === Thu Jun 28, 2018, 01:10:35
+[88] Biber.pm:371> INFO - Reading 'thesis.bcf'
+[220] Biber.pm:857> INFO - Found 69 citekeys in bib section 0
+[246] Biber.pm:3976> INFO - Processing section 0
+[266] Biber.pm:4136> INFO - Looking for bibtex format file 'references.bib' for section 0
+[286] bibtex.pm:1500> INFO - LaTeX decoding ...
+[574] bibtex.pm:1316> INFO - Found BibTeX data source 'references.bib'
+[582] Utils.pm:193> WARN - Duplicate entry key: 'wang_electronics_2012' in file 'references.bib', skipping ...
+[583] Utils.pm:193> WARN - Duplicate entry key: 'braz_valley_2017' in file 'references.bib', skipping ...
+[583] Utils.pm:193> WARN - Duplicate entry key: 'hsu_topological_2017' in file 'references.bib', skipping ...
+[583] Utils.pm:193> WARN - Duplicate entry key: 'yazyev_emergence_2010' in file 'references.bib', skipping ...
+[584] Utils.pm:193> WARN - Duplicate entry key: 'chen_fabrication_2017' in file 'references.bib', skipping ...
+[585] Utils.pm:193> WARN - Duplicate entry key: 'feldner_dynamical_2011' in file 'references.bib', skipping ...
+[585] Utils.pm:193> WARN - Duplicate entry key: 'golor_quantum_2013' in file 'references.bib', skipping ...
+[585] Utils.pm:193> WARN - Duplicate entry key: 'raczkowski_interplay_2017' in file 'references.bib', skipping ...
+[586] Utils.pm:193> WARN - Duplicate entry key: 'yang_strain-tuning_2017' in file 'references.bib', skipping ...
+[1055] Utils.pm:193> WARN - ISBN '978-981-4273-25-1 978-981-4273-26-8' in entry 'hou_numerical_2009' is invalid - run biber with '--validate_datamodel' for details.
+[1120] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1120] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1120] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1120] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[1176] bbl.pm:617> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[1218] bbl.pm:720> INFO - Output to thesis.bbl
+[1218] Biber.pm:110> INFO - WARNINGS: 10

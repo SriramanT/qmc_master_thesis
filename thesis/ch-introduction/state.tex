@@ -51,7 +51,7 @@ On the other direction, we use \acp{OBC}, effectively considering zigzag edges (
 \end{figure}
    
 A high density of low-energy electronic states is localized at the zigzag edges, decaying quickly in the bulk, which suggests the possibility of magnetic ordering.
-In fact, a mean field solution of the Hubbard model shows that magnetic moments are localized at the edges \cite{yazyev_emergence_2010} (Figure \ref{fig:nanoribbons}, right).
+In fact, a mean field solution of the Hubbard model for a graphene nanoribbon shows that magnetic moments are localized at the edges \cite{yazyev_emergence_2010} (Figure \ref{fig:nanoribbons}, right).
 QMC has been used to investigate edge-state magnetism beyond mean field in graphene \cite{feldner_dynamical_2011, golor_quantum_2013, cheng_strain-induced_2015, raczkowski_interplay_2017, yang_strain-tuning_2017}.
 However, edge magnetism in TMD nanoribbons remains unexplored \cite{davelou_nanoribbon_2017}.
  
@@ -63,7 +63,7 @@ However, edge magnetism in TMD nanoribbons remains unexplored \cite{davelou_nano
 \begin{minipage}[c]{0.1\textwidth}
 \includegraphics[scale = 0.23]{Introduction/edge_states}
 \end{minipage}
- \caption[Zigzag edges of a nanoribbon and magnetism.]{Left: Two possible terminations of a \ac{TMD} nanoribbon condensing in a honeycomb lattice. Right: Local magnetic moments exist on the zig zag edges. The area of the circles corresponds to the magnitude of the magnetic moment, while the color red corresponds to a spin up density, and blue to a spin down density. The accumulation of $e^-$ edge states leads to an \ac{AF} ground state (opposite edges with opposite magnetic moment). (taken from \cite{yazyev_emergence_2010}) \label{fig:nanoribbons}}
+ \caption[Zigzag edges of a nanoribbon and magnetism.]{Left: Two possible terminations of a \ac{TMD} nanoribbon condensing in a honeycomb lattice. Right: Local magnetic moments exist on the zig zag edges. The area of the circles corresponds to the magnitude of the magnetic moment, while the color red corresponds to a spin up density, and blue to a spin down density. The accumulation of electronic edge states leads to an \ac{AF} ground state (opposite edges with opposite magnetic moment). (taken from \cite{yazyev_emergence_2010}) \label{fig:nanoribbons}}
 \end{figure}
 
 While the zigzag graphene nanoribbon antiferromagnetic ground state is semiconducting, a state with interedge ferromagnetic orientation is a metal.
@@ -78,42 +78,65 @@ In principle, the properties of a quantum many-fermion system can all be deduced
 However, for the majority of systems the resulting integrals have no analytic solution, so we solve the problem by numerical integration.
 But there is a myriad of methods to evaluate integrals numerically.
 How do we pick the best one for this case? 
-It depends on the problem at hand, of course.
-Variational and Diffusion \ac{QMC} are the simplest \ac{QMC} methods that allow one to capture some properties of correlated systems.
-Although they already contain the main concepts used in this type of simulations, it is not always possible to use them. 
-We will discuss their flaws and show how further refinement leads to the auxiliary field \ac{QMC} method.
+Multi-dimensional integrals are plagued by the curse of dimensionality.
+Although the Newton-Cotes quadrature formulas (including, for example the Newton method, and Simpson's rules), Gaussian quadrature formulas, or Romberg's method all scale polynomially with the number of integration points, they become impractical as the dimension increases.
+To use them, one would invoke Fubini's theorem to reduce the multi-dimensional integral to a series of one-dimensional integrals.
+However, the number of function evaluations required to compute the whole integral grows exponentially with its dimension.
+Monte Carlo methods preserve the polynomial scaling, thus yielding comparable accuracy with far less function evaluations. It is natural to use them since typically the state space of our quantum system is huge, leading to high dimensional integrals.
+
+The Monte Carlo method is ubiquitous.
+Its central idea is to use randomness to produce accurate estimates of deterministic integrals.
+The term was coined by Nicolas Metropolis in 1949, first appearing in a seminal paper, in which it was described as a \say{statistical approach to the study of differential equations, or more generally, of integro-differential equations that occur in various branches of sciences}\cite{metropolis_monte_1949}.
+Although it was used as early as 1777 in an experiment known as Buffon's needle - where one obtains an estimate of the constant $\pi$ by repeatedly throwing a needle randomly onto a sheet of paper with evenly spaced lines - it was crucially developed in the Los Alamos National Laboratory during World War II where the development of the first atomic bomb was completed, the primary objective of the Manhattan Project.
+The method is particularly useful when one wants to sample from a probability distribution in an exponentially large state space.
+In fact, it can in principle be used to solve any problem allowing a probabilistic formulation.
 
 A variety of \acf{QMC} methods exists, using a sampling scheme based on the Metropolis algorithm, and variations thereof.
-However, applying them to many-fermion systems implies overcoming a significant obstacle common to all of them - the so called \emph{fermion-sign problem}.
-Pauli's exclusion principle implies that the many-fermion wave function is antisymmetric, which leads to a sign oscillation that greatly impedes the accurate evaluation of averages.
-Thus, a straightforward weight interpretation of the wave function is not possible.
-In the case of the finite temperature algorithm, the cancellations that occur when computing the average of any physical observable lead to poor statistical properties of the estimators.
-This means that a massive amount of measurements requiring enormous computer time are needed to obtain meaningful results.
+Variational and Diffusion \ac{QMC} are the simplest \ac{QMC} methods that allow one to capture some properties of correlated systems.
+Although they already contain the main concepts used in this type of simulations, it is not always possible to use them. 
+We will discuss their flaws and show how further refinement leads to the determinant, or auxiliary field method we ultimately used.
+
+Using the Monte Carlo approach to study a many-fermion system implies overcoming a significant obstacle common to all \ac{QMC} methods - the so called \emph{fermion-sign problem}.
+Pauli's exclusion principle implies that the many-fermion wave function is anti-symmetric, which leads to a sign oscillation that greatly impedes the accurate evaluation of averages of quantum observables.
+The anti-symmetry constraint implies that a  straightforward weight interpretation of the wave function is not possible.
+In the case of the finite temperature algorithm, the cancellations that occur when computing the average of any physical observable lead to poor statistical properties of the corresponding estimators.
+This means that a massive amount of samples requiring enormous computer time are needed to obtain meaningful results.
 In the case of the zero temperature algorithms, the situation is even worse.
-It might not even be possible to design a stochastic process carrying the system to its ground state, as normally is done in \say{projective} methods\footnote{Methods that project a trial wave function onto the ground state.}: the wave function that is used as an initial proposal turns out to converge to a bosonic one, and the fermionic character of the system is lost.
+It might not even be possible to design a stochastic process carrying the system to its ground state, as normally is done in \say{projective} methods\footnote{Methods that iteratively project a trial wave function onto the ground state.}: the wave function that is used as an initial proposal turns out to converge to a bosonic one, and the fermionic character of the system is lost.
 
-
-As was proven by Troyer, the \emph{fermion-sign problem} has NP \footnote{NP or nondeterministic polynomial time roughly meaning that one can devise an algorithm that verifies the "yes" answer to a decision problem in polynomial time in the system size.
+As was proven by Troyer, the \emph{fermion-sign problem} has NP\footnote{NP or nondeterministic polynomial time, meaning that one can devise an algorithm that verifies the "yes" answer to a decision problem in polynomial time in the system size.
 Note that the class $P$ - of polynomial time algorithms - is a subclass of NP.} computational complexity \cite{troyer_computational_2005}.
 One of the greatest open questions in computer science is whether $P = NP$.
-Solving the \emph{fermion-sign problem} would imply finding a solution to this problem, which would constitute a major breakthrough.
+Solving the \emph{fermion-sign problem} would imply finding a solution to $P = NP$, which would constitute a major breakthrough.
 
 \subsection{Monte Carlo Method in  Classical Statistical Physics}
 
-Monte Carlo methods form the largest and arguably most important class of numerical methods used to approach statistical physics problems. In these notes we explain what Monte Carlo techniques are and why they are useful. Statistical physics often deals with computing quantities that describe the behavior of condensed matter systems. The main difficulty one faces when doing so has to do with the collective nature of these systems. Many identical components comprise these systems, and while the equations that govern the behavior of the whole may be easy to write down, their solution is in general a remarkably laborious mathematical problem. The exponentially large number of configurations of a typical condensed matter system can be daunting. Analytical solutions are more often than not hopeless and even numerical solutions are seemingly challenging. However, they give valuable information lying between theory and experiment, and connecting them.
+Monte Carlo methods form the largest and arguably most useful class of numerical methods used to approach statistical physics problems.
+Statistical physics often deals with computing quantities that describe the behavior of condensed matter systems.
+The main difficulty one faces when doing so has to do with the collective nature of these systems.
+Many identical components comprise these systems, and while the equations that govern the behavior of the whole may be easy to write down, their solution is in general a remarkably laborious mathematical problem.
 
-Suppose you try to sample uniformly from the probability distribution of all possible configurations of one of the aforementioned systems. Changes are your algorithm will not end before the Universe does. This is the computational complexity hurdle. A related issue is that of finite size effects. We are far from being able to simulate a macroscopically sized system. At best we can simulate a system that has only a minuscule fraction of the actual size of the corresponding real world system. Amazingly there are techniques that allow us to efficiently extract elusive information out of relatively small size simulations. Nonetheless, increasing the system size consistently improves the reliability of a simulation. Thus, the more efficient the algorithm is, the larger the system we can simulate in a fixed time.
+The exponentially large number of configurations of a typical condensed matter system can be daunting.
+Analytical solutions are more often than not hopeless and even numerical solutions are seemingly challenging.
+However, they give valuable information lying between theory and experiment, and connecting them.
 
-The sheer number of equations describing a condensed matter system, and sometimes the strong coupling between them deems the task of finding an exact solution either very tough or even impossible. It is not even clear whether an analytical solution would be of any use in many cases, and a statistical and numerical treatment often allows us to study more effectively the key properties of a system. Analytical solutions are rare. Exact solutions are an even rarer accomplishment. Not only do analytical solutions rely on approximations, but also numerical methods.
+Suppose you try to sample uniformly from the probability distribution of all possible configurations of one of the aforementioned systems.
+Changes are your algorithm will not end before the Universe does.
+This is the computational complexity hurdle.
+A related issue is that of finite size effects.
+We are far from being able to simulate a macroscopically sized system. 
+At best we can simulate a system that has only a minuscule fraction of the actual size of the corresponding real world system.
+Amazingly there are techniques that allow us to efficiently extract information out of relatively small size simulations.
+Nonetheless, increasing the system size systematically improves the reliability of a simulation.
+Thus, the more efficient the algorithm is, the larger the system we can simulate in a fixed time.
 
-On the other hand, let us emphasize the striking victory of statistical mechanics. We are able to describe a system that is governed by a macroscopically large number of equations in terms of only a few variables. The loss of information in doing so is only apparent. The statistical description is so effective because most of the possible states of the system are extremely improbable when compared to the relevant very narrow part of configuration space. The success of the field is largely attributed to the averaging out that naturally occurs when we measured a property of a macroscopic system.
+The sheer number of equations describing a condensed matter system, and sometimes the strong coupling between them deems the task of finding an exact solution either very tough or even impossible.
+It is not even clear whether an analytical solution would be of any use in many cases, and a statistical and numerical treatment often allows us to study more effectively the key properties of a system.
 
-How do we set up a simulation of a physical system? We assume basic knowledge of statistical physics and focus only on the concepts that are essential for simulation purposes.
-
-A system in state $\mu$ makes transitions to state $\nu$ at a rate $R(\mu \rightarrow \nu)$
-
-
-The Monte Carlo method is ubiquitous. Its central idea is to use randomness to produce accurate estimates of deterministic integrals. The term was coined by Nicolas Metropolis in 1949, first appearing in a seminal paper, in which it was described as a \say{statistical approach to the study of differential equations, or more generally, of integro-differential equations that occur in various branches of sciences}\cite{Metropolis1949}. Although it was used as early as 1777 in an experiment known as Buffon's needle - where one obtains an estimate of the constant $\pi$ by repeatedly throwing  a needle randomly onto a sheet of paper with evenly spaced lines - it was crucially developed in the Los Alamos National Laboratory during World War II where the development of the first atomic bomb was completed, the primary objective of the Manhattan Project. The method is particularly useful when one wants to sample from a probability distribution in an exponentially large state space. In fact, it can in principle be used to solve any problem allowing a probabilistic formulation.
+Strikingly, we are able to describe a system that is governed by a macroscopically large number of equations in terms of only a few variables.
+The loss of information in doing so is only apparent.
+The statistical description is so effective because most of the possible states of the system are extremely improbable when compared to the relevant very narrow part of configuration space.
+The success of the field is largely attributed to the averaging out that naturally occurs when we measured a property of a macroscopic system.
 
 The law of large numbers affords an approximation to integrals which can be written as an expectation of a random variable. Upon drawing enough independent samples from the corresponding distribution, the sample mean gets arbitrarily close to the integral at stake.
 
@@ -133,20 +156,70 @@ which in most cases converges to the desired expectation, as long as $M$ is larg
 \text{Var}\bigg( \frac{1}{M} \sum_{k=1}^M f(x_k) \bigg) = \frac{1}{M} \text{Var}\bigg( f(x_1) \bigg) \sim \mathcal{O}\bigg(\frac{1}{M}\bigg)
 \end{equation}
 
-Thus, the correction to the sample mean is of order $\mathcal{O}(M^{-1/2})$.
+Thus, the correction to the sample mean is of order $\mathcal{O}(\frac{1}{\sqrt{M}})$ as long as $\text{Var}\big( f(x_1) \big) \sim 1$.
 
-How do we sample from an arbitrary distribution $p(X)$? The idea is to first make an educated choice of a Markov Chain with the prescribed stationary distribution from which we ultimately desire to sample from, $p(X)$. After a sufficiently high number of steps, a Markov Chain Monte Carlo (MCMC) algorithm generates samples from the target distribution. Imposing some conditions on this Markov Chain, namely that it should be irreducible, aperiodic and positive recurrent, the ergodic theorem guarantees that the empirical measures of the aforementioned sampler approach the target stationary distribution. Another important condition to impose on this Markov Chain is detailed balance. Let the transition matrix be $\bm P = [p_{ij}]$, and the state space $\Omega$ be $\{\pi_i | i=1, ..., |\Omega| \}$, where $|\Omega|$ is the total number of possible states. Then, the condition of detailed balance is defined for all $i, j$ as
+How do we sample from an arbitrary distribution $p(X)$? The idea is to first make an educated choice of a Markov Chain with the prescribed stationary distribution from which we ultimately desire to sample from, $p(X)$. After a sufficiently high number of steps, a Markov Chain Monte Carlo (MCMC) algorithm generates samples from the target distribution. Imposing some conditions on this Markov Chain, namely that it should be irreducible, aperiodic and positive recurrent, the ergodic theorem guarantees that the empirical measures of the aforementioned sampler approach the target stationary distribution. Another important condition to impose on this Markov Chain is detailed balance. Let the transition matrix be $\bm P = [P_{\mu \rightarrow \nu}]$, and the state space $\Omega$ be $\{\pi_\mu | \mu=1, ..., |\Omega| \}$, where $|\Omega|$ is the total number of possible states. Then, the condition of detailed balance is defined for all $\mu, \nu$ as
 
-\begin{equation}
-\pi_i p_{ij} = p_{ji} \pi_j 
+\begin{equation}\label{eq:detBal}
+\pi_\mu P_{\mu \rightarrow \nu} = P_{\nu \rightarrow \mu} \pi_\nu
 \end{equation}
 
-Crucially, Monte Carlo methods employ \emph{importance sampling}. It turns out that we can improve upon our estimate of $\mathbb{E} [f(X)]$ by introducing a separate distribution $q(x)$, and defining the weight function as $w(x) = p(x)/ q(x)$. Then, we can rewrite equation (\ref{eq:int_mean}):
+Consider a system in state $\mu$ that makes transitions to state $\nu$ at a rate $R_{\mu \rightarrow  \nu}$ (that specifies the system's dynamics) and vice-versa.
+The probability that a system is in state $\mu$ at time $t$, $p_\mu (t)$, such that $\sum_\mu p_\mu (t) = 1$, is given by the master equation(s):
+
+\begin{equation}\label{eq:master}
+\frac{d p_\mu}{dt} = \sum_\nu \big[ p_\nu (t) R_{\nu \rightarrow \mu} - p_\mu (t) R_{\mu \rightarrow \nu} \big] \quad \forall \mu \in \Omega
+\end{equation}
+
+The equilibrium occupation probabilities at finite temperature $T$ follow the Boltzmann distribution.
+
+\begin{equation}
+\pi_\mu = \lim_{t \rightarrow \infty} p_\mu (t) = \frac{1}{Z} e^{ - E_\mu / k_B T} ,
+\end{equation}
+where $E_\mu$ is the energy of state $\mu$, $k_B$ is Boltzmann's constant, and $Z$ is the partition function, from which we can extract thermodynamic functions in terms of expectations of physical quantities $\left\langle Q \right\rangle$, and response functions in terms of their variance $\sigma_Q^{\,\, 2}$.
+
+Imposing the condition of stationarity on equation (\ref{eq:master}), $d_t p_\mu = 0$ , and noting that $ P_{\mu\rightarrow \nu} = R_{\mu\rightarrow \nu}  dt$, we obtain the equilibrium condition
+
+\begin{equation}\label{eq:equilibrium}
+\sum_\nu \pi_\mu P_{\mu \rightarrow \nu} = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu \iff \pi_\mu \sum_\nu P_{\mu \rightarrow \nu} = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu \iff \pi_\mu = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu
+\end{equation}
+
+This condition is enough to ensure convergence to an equilibrium of the dynamics of the Markov process.
+However, it does not guarantee that the reached distribution is our desired one, $\bm \pi$, after running the process for long enough.
+The probability of a state evolves according to
+
+\begin{equation}
+\pi_\nu ( t + 1 ) = \sum_\mu P_{\mu\rightarrow\nu}  \pi_\mu ( t ) \iff \bm \pi ( t + 1 ) = \bm P \bm \pi ( t )
+\end{equation}
+
+The stationary distribution of a Markov chain obeys
+
+\begin{equation}
+\bm \pi ( \infty ) = \bm P \bm \pi ( \infty ) ,
+\end{equation}
+however, condition (\ref{eq:equilibrium}) also allows  for limit cycles of length $n$, where $\bm \pi$ rotates around a number of configurations:
+
+\begin{equation}
+\bm \pi ( \infty ) = \bm P^n \bm \pi ( \infty ) ,
+\end{equation}
+where $\bm P^n$ is the n-th power of $\bm P$.
+
+Detailed balance is a stronger requirement than the equilibrium condition, which eliminates limit cycles, thus ensuring that our sampler draws configurations from the desired distribution.
+Intuitively, detailed balance corresponds to incorporating time-reversal symmetry in a simulation.
+The condition imposes a constraint on the Markov transition probabilities:
+
+\begin{equation}\label{eq:markovCondition}
+\frac{P_{\mu\rightarrow\nu}}{P_{\nu\rightarrow\mu}} = \frac{\pi_\nu}{\pi_\mu} = e^{-\beta ( E_\nu - E_\mu ) }
+\end{equation}
+
+Crucially, Monte Carlo methods employ \emph{importance sampling}.
+It turns out that we can improve upon our estimate of $\mathbb{E} [f(X)]$ by introducing a separate distribution $q(x)$, and defining the weight function as $w(x) = p(x)/ q(x)$.
+Then, we can rewrite equation (\ref{eq:int_mean}):
 
 \begin{equation}
 \mathbb{E} [f(X)] = \int dx f(x) q(x) w(x) = \mathbb{E} [f(Y) w(Y)],
 \end{equation}
-with $Y \sim q$, i.e. the random variable $Y$ follows the distribution $q(Y)$
+with $Y \sim q$, i.e. the random variable $Y$ follows the distribution $q(Y)$.
 
 It appears as though we didn't gain anything. However, by choosing $q$ wisely, we can actually reduce the variance we computed in equation (\ref{eq:variance}):
 
@@ -154,19 +227,161 @@ It appears as though we didn't gain anything. However, by choosing $q$ wisely, w
 \text{Var}\bigg( \frac{1}{M} \sum_{k=1}^M f(y_k) w(y_k) \bigg) = \frac{1}{M} \text{Var}\bigg( f(y_1) w(y_1) \bigg)
 \end{equation}
 
-Since we didn't make any assumptions about $q(Y)$, it may be chosen so as to minimize the variance, hence the error of the Monte Carlo estimator, improving the approximation of the expectation. However, note that the error remains of order $\mathcal{O}\big(\frac{1}{\sqrt{M}}\big)$.
+Since we didn't make any assumptions about $q(Y)$, it may be chosen so as to minimize the variance, hence the error of the Monte Carlo estimator, improving the approximation of the expectation. However, note that the error remains proportional to $\frac{1}{\sqrt{M}}$.
+In practice, we devise a method to select the portion of state space which contains states contributing more significantly to the average.
+This procedure ensures that $\text{Var}\big( f(y_1) w(y_1) \big) \sim 1$, improving the efficiency of our sampler.
+The choice of the weight function translates to the averaging process by changing the estimator.
+Explicitly computing the average
 
-The idea of the Quantum (Classical) Monte Carlo method is to simulate the random quantum (thermal) fluctuations of the system, as it oscillates between states in a given time frame \cite{Newman1999}. Instead of visiting these states uniformly, the algorithm applies \emph{importance sampling}: the most relevant part of the phase space is sampled more frequently, overcoming the seemingly exponential complexity of computing a sample mean numerically. Even though only a small fraction of the system's states are sampled, we obtain an accurate estimate of physical quantities of interest, namely energy, and correlation functions.
+\begin{equation}
+\left\langle Q \right\rangle = \frac{ \sum_\mu Q_\mu e^{-\beta E_\mu} }{ \sum_\mu e^{-\beta E_\mu}}
+\end{equation}
+is only tractable for very small systems.
+In practice, we choose a subset of M states $\{\mu_1, \mu_2, ..., \mu_M \} $, and estimate the average as
 
-QMC generally provides an accurate approximation of the solution to the quantum many-body problem. When relativistic effects are negligible, which is the case of most condensed matter systems, any physical system can be described by a many-body Schr\"odinger equation. The issue is that the many-body wave function lives in the corresponding Hilbert space that is  exponentially large in the number of particles. For example, the number of possible states of a physical system whose configuration space rests on a two-dimensional lattice is exponentially large. The method described above is applied to approximate the multidimensional integrals arising upon formulating the quantum many-body problem in this space.
+\begin{equation}
+Q_M = \frac{ \sum_{i=1}^M Q_{\mu_i} \pi_{\mu_i}^{-1} e^{ -\beta E_{\mu_i} } }{ \sum_{j=1}^M \pi_{\mu_j}^{-1} e^{ -\beta E_{\mu_j} }  }
+\end{equation}
 
-One can set up a na\"ive mean field theory in which the many body wave function is approximated by an antisymmetric function of one body wave functions\footnote{This corresponds to the Hartree-Fock approximation that we used to derive the Hubbard Hamiltonian in section \ref{hubbardHamiltonian}.}. One of the drawbacks of this approach is that the effect of  correlations is not captured. Fermionic QMC goes beyond mean field theory,  capturing the phenomena occuring within strongly correlated electronic systems. For non-frustrated boson systems, a polynomially scaling algorithm leads to an exact solution. For a fermionic system, such as the TMD nanoribbon, the existing algorithms usually provide accurate yet not exact solutions, which would in general require exponential computing time. This is due to the so called sign problem. We will discuss this numerical issue later.
+The estimate improves as $N$ increases, and when $N\rightarrow \infty$, $Q_M \rightarrow \left\langle Q \right\rangle$.
+The accuracy of the estimator depends on the choice of the probabilities $\bm \pi$, which is related to the aforementioned variance.
+For example, if $\bm \pi$ corresponds to the uniform distribution, i.e. $\pi_\mu = \frac{1}{| \Omega |} \forall \mu \in \Omega$, we have
 
-\section{Variational Monte Carlo}
+\begin{equation}
+Q_M = \frac{ \sum_{i=1}^M Q_{\mu_i} e^{ -\beta E_{\mu_i} } }{ \sum_{j=1}^M e^{ -\beta E_{\mu_j} }  } ,
+\end{equation}
+which turns out to be a poor choice since most of the visited states contribute negligibly to the average, leading to an inaccurate estimate.
+The sum is dominated by a small subset of states, which we would like to access.
+The idea of the Quantum (Classical) Monte Carlo method is to simulate the random quantum (thermal) fluctuations of a system, as it oscillates between states in a given time frame \cite{newman_monte_1999}. Instead of visiting these states uniformly, the most relevant part of the phase space is sampled more frequently, overcoming the seemingly exponential complexity of computing a sample mean numerically.
+Even though only a small fraction of the system's states are sampled, we then obtain an accurate estimate of physical quantities of interest, namely energy, and correlation functions. This is implemented via a proposal-acceptance scheme.
 
-Variational techniques rely on an educated guess for the wave function of the system. One often introduces a set of variational parameters $\bm \alpha$ that are then tuned according to a variational principle. We use the optimized trial wave function to compute physical quantities of interest using Monte Carlo. Note that the method requires  prior knowledge about the system. We will see that it is natural to combine the Metropolis algorithm for quantum many-body systems with the variational principle.
+To exploit the freedom given by condition (\ref{eq:markovCondition}), we note that we can always introduce a non-zero \say{stay-at-home} probability $P_{\mu \rightarrow \mu} \in [0, 1] $.
+Regardless of its value, detailed balance is satisfied.
+Similarly, any adjustment in $P_{\mu\rightarrow \nu}$ must be compensated by changing $P_{\nu\rightarrow \mu}$ to preserve their ratio.
+Break the transition probability into a selection probability and an acceptance ratio, respectively:
 
-A particularly relevant observable is the variational energy $E_V$ associated with a given quantum state. Let $\bm r$ be the $3N$ spatial coordinates of the $N$ electrons. Given the Hamiltonian of the system $\mathcal{H}$, and a trial wave function $\psi (\bm r)$ - hopefully a good guess of the wave function representing some state of the system - one can compute the variational energy.
+\begin{equation}
+\frac{P_{\mu\rightarrow\nu}}{P_{\nu\rightarrow\mu}}= \frac{G_{ \mu\rightarrow\nu} A_{\mu\rightarrow\nu}}{G_{ \nu\rightarrow\mu} A_{\nu\rightarrow\mu}}
+\end{equation}
+
+The Markov process now consists of generating a chain of states according to $G_{ \mu\rightarrow\nu}$, which are then accepted or rejected depending on $A_{\mu\rightarrow\nu}$.
+Since we want to make the algorithm as efficient as possible, we want to make the acceptance ratio as close to one as possible to avoid useless steps.	
+The most common way to do this is to fix the largest of them to one, and ajust the other accordingly.
+The acceptance ratio will be close to one more often if $G_{ \mu\rightarrow\nu}$ includes most of the dependence of $P_{\mu\rightarrow\nu}$ on the characteristics of the states $\mu, \nu$.
+Ideally, states would always be selected with the correct transition probability, and the acceptance ratio would be fixed to unity.
+Good algorithms approach this situation, and much effort has been directed at optimizing them to do so.
+
+By far, the most common sampling scheme choice is the Metropolis-Hastings algorithm, which we now  describe.
+
+We select the transition probability to be uniform, and impose detailed balance through the choice of the acceptance ratios:
+
+\begin{equation}
+\frac{ P_{\mu\rightarrow\nu }}{ P_{\nu\rightarrow\mu }} = \frac{ A_{\mu\rightarrow\nu }}{ A_{\nu\rightarrow\mu } } = e^{-\beta ( E_\nu - E_\mu )}
+\end{equation}
+
+Suppose that $E_\mu < E_\nu $.
+Then, $A ( \nu \rightarrow \mu ) > A ( \mu \rightarrow \nu ) $, and since only the acceptance ratio is fixed, we may freely set $A ( \nu \rightarrow \mu ) = 1$, which fixes $A ( \mu \rightarrow \nu ) = e^{-\beta ( E_\nu - E_\mu ) }$.
+This choice maximizes the efficiency of the algorithm.
+In short, we propose a random new state uniformly, and then we accept it with probability $A_{\mu\rightarrow \nu} = \min (1,  e^{-\beta ( E_\nu - E_\mu )})$.
+
+Before we can use the states generated by our sampler to measure averages of physical quantities, we must reach the stationary distribution of the Markov process.
+We consider this condition to be satisfied after a time $\tau_{\text{eq}}$, measured in steps of the algorithm.
+When we consider a lattice model with a discrete set of states at each site $i = 1, 2, ..., N$, we say that a \emph{sweep} is completed whenever $N$ Monte Carlo steps are performed.
+Thus, the number of \say{warm-up} sweeps is $W = \tau_{\text{eq}} / N$.
+
+Before running a simulation, we need to decide how many sweeps we need to get an accurate estimate of the average.
+The problem is that we need uncorrelated samples to average over.
+To clarify, let us choose a specific model.
+The paradigmatic model of statistical physics is the Ising model, a classical model of a magnet, which consists of considering spins-$1/2$ on a lattice, interacting only with their nearest neighbors.
+Since each spin can only take on two values, say $\pm 1$, there are $2^N$ possible states.
+The Hamiltonian reads
+
+\begin{equation}
+H = - J \sum_{\left\langle i, j \right\rangle } s_i s_j - B \sum_i s_i ,
+\end{equation}
+where $\left\langle i, j \right\rangle$ means that $i, j $ are nearest neighbors on the lattice.
+
+A simple strategy to sample configurations of the Ising model is single-spin-flip dynamics.
+We start with a random configuration of the spins, and then propose new configurations at each step by flipping a single spin at a given site.
+A sweep is completed after we propose a spin flip at every site on the lattice.
+
+Consecutive configurations generated by this chain differ only slightly.
+Thus, it takes some time for the system to reach a configuration which is significantly different from the initial one.
+This characteristic time is called the correlation time $\tau_c$.
+A rigorous manner to estimate $\tau_c$ is through the time-displaced auto-correlation function associated to some quantity being measured.
+An example of a relevant quantity for the case of the Ising model is the magnetization per site:
+
+\begin{equation}
+m = \frac{1}{N} \sum_i s_i
+\end{equation}
+
+Its associated time-displaced auto-correlation is
+
+\begin{equation}
+\chi_m ( t ) = \int dt' \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) = \int dt' \bigg( m ( t' ) m ( t' + t ) - \left\langle m \right\rangle^2 \bigg)
+\end{equation}
+giving a measure of how correlated two measurements of the magnetization separated by a simulation time $t$ are.
+
+The typical time-scale on which $\chi_m (t)$ falls off is a measure of the correlation time of the simulation.
+In particular, at long times it falls off exponentially.
+The definition of $\tau_c$ stems from this characteristic long-time behavior: $\chi_m (t) \sim e^{-t / \tau_c}$.
+In practice, after waiting for $2\tau_c$, the measurements are virtually uncorrelated.
+Let $A$ be the number of sweeps roughly  corresponding to $2\tau_c$ steps.
+Then, if we make $S$ sweeps of the lattice during the simulation, the number of measurements (waiting for $A$ sweeps between them) is
+
+\begin{equation}
+M = \frac{S - W}{A}
+\end{equation}
+
+There are many ways to estimate $\tau_c$ from $\chi_m (t)$.
+The simplest consists of making an exponential fit in a given range of times.
+However, this might be unreliable since the estimate depends strongly on the chosen range.
+An alternative is to compute the \say{integrated} correlation time:
+
+\begin{equation}
+\int_0^\infty dt \frac{\chi_m ( t ) }{\chi_m ( 0 ) } = \int_0^\infty dt e^{-t / \tau_c} = \tau_c  ,
+\end{equation}
+which is less sensitive, but not perfect either since the error that is introduced when the assumption  that \say{long-time} behavior has been reached is arbitrary and introduces an uncontrolled error.
+Moreover, the very long-time behavior of the auto-correlation is rather noisy and must be excluded.
+
+Using measured data for the magnetization at evenly-spaced times, we may construct the time-displaced auto-correlation function up to an unimportant constant, which does not affect the estimate of the correlation time:
+
+\begin{equation}
+\chi_m (t) = \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m (t') m(t' + t) - \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m (t') \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m(t' + t) ,
+\end{equation}
+where $t_{\text{max}}$ is the total simulation time.
+
+One should be careful when using this expression at very long times.
+As $t$ approaches $t_{\text{max}}$, the upper limit of the sums decreases, and the integration interval becomes narrower.
+Since $m (t)$ fluctuates randomly at very long times, the statistical error associated to $\chi_m (t)$ becomes more prominent as $t$ approaches $t_{\text{max}}$.
+This turns out not to be problematic since typical simulations run for many correlation times.
+Thus, the tails of the auto-correlation may safely be neglected because the correlations will have already vanished, by definition.
+
+To finish our discussion on the issue of correlations, we note that if we have a total of $n_s$ samples of, for instance, magnetization data, the complexity of computing $\chi_m$ is $\mathcal{O}(n_s^2)$.
+It is possible to speed up this process by computing its Fourier transform $\tilde{\chi}_m(\omega)$, and inverting to recover $\chi_m (t)$.
+This can be done via a standard \ac{FFT} algorithm in $\mathcal{O}(2 n_s \log n_s )$ flops.
+To do this, we apply the following trick
+
+\begin{equation}
+\begin{split}
+\tilde{\chi}_m ( \omega ) &= \int dt e^{i\omega t} \int dt' \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) \\
+&= \int dt \int dt' e^{-i\omega t'} \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) e^{i\omega ( t' + t )} \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) \\
+&= \tilde{m}' (\omega) \tilde{m}' (- \omega) = | \tilde{m}' (\omega) |^2 ,
+\end{split} 
+\end{equation}
+where $\tilde{m}' (\omega)$ is the Fourier transform of $m' (t) = m(t) - \left\langle m \right\rangle$\footnote{The only difference between $\tilde{m}' (\omega)$ and $\tilde{m} (\omega)$, is that $\tilde{m}' (0) = 0$, while $\tilde{m} (0) \neq 0$. Thus, one can also compute $\tilde{m} (\omega)$ and then set its $\omega = 0$ component to zero.}.
+
+\subsection{Variational Monte Carlo}
+
+Variational techniques rely on an educated guess for the wave function of the system.
+One introduces a set of variational parameters $\bm \alpha$ that are then tuned according to a variational principle.
+Then, we may use the optimized trial wave function to compute physical quantities of interest using Monte Carlo.
+The method is used to obtain zero temperature properties of a given model.
+Note that it requires prior knowledge about the system to propose an approximate wave function in the first place.
+
+A particularly relevant observable is the variational energy $E_V$ associated to a trial ground state.
+Let $\bm r$ be the $3N$ spatial coordinates of the $N$ electrons.
+Given the Hamiltonian of the system $\mathcal{H}$, and a trial wave function $\psi (\bm r)$ - a guess of the wave function representing the ground state - one can compute the corresponding variational energy.
 
 \begin{equation}\label{eq:variational_energy}
 E_V = \frac{\left\langle \psi | \mathcal{H} | \psi \right \rangle}{\left\langle \psi | \psi \right \rangle} = \frac{ \int d\bm r |\psi (\bm r)|^2 E_L (\bm r)}{\int d\bm r | \psi (\bm r)|^2 } = \int d\bm r\rho (\bm r) E_L (\bm r) ,
@@ -182,246 +397,85 @@ and the probability distribution $\rho (\bm r)$ is defined as
 \rho (\bm r) = \frac{ | \psi (\bm r) |^2}{ \int d\bm r' | \psi (\bm r') |^2}
 \end{equation}
 
-Note that we managed to recast the variational energy as an average  of the \emph{local} energy, $< E_L > $, over the the distribution $\rho$. This is easily estimated by sampling $M$ points $\bm r_k$ from $\rho (\bm r)$:
+Note that we managed to recast the variational energy as an average of the \emph{local} energy, $\left\langle E_L \right\rangle $, over the the distribution $\rho$.
+This may be computed using the Monte Carlo method by sampling $M$ points $\bm r_k$ from distribution $\rho (\bm r)$:
 
 \begin{equation}\label{eq:average}
-E_V \approx \overline E_L = \frac{1}{M} \sum_{k= 1}^{M} E_L (\bm r_k) ,
+E_V \approx \overline{E}_L = \frac{1}{M} \sum_{k= 1}^{M} E_L (\bm r_k) ,
 \end{equation}
-where $\overline {X}$ denotes a sample mean of the random variable $X$. A common sampling scheme is the Metropolis-Hastings algorithm.
+where $\overline {X}$ denotes a sample mean of the random variable $X$.
 
-How do we optimize a variational state? Suppose we are particularly interested in the ground state energy $E_0$. Then, the variational principle reads
+Let the ground state energy be $E_0$.
+Then, states are optimized according to the variational principle:
 
 \begin{equation}
-E_{0_V}[\alpha_i] = \frac{< \psi_0 | \mathcal{H} | \psi_0 >}{<\psi_0 | \psi_0>} \ge E_0,
+E_V(\bm \alpha) = \frac{\left\langle \psi_{\bm \alpha} | \mathcal{H} | \psi_{\bm \alpha} \right\rangle}{\left\langle\psi_{\bm \alpha} | \psi_{\bm \alpha} \right\rangle} \ge E_0,
 \end{equation}
-where $\psi_0$ is the ground state wave function. By varying $\alpha$ we aim to obtain a variational energy that is as close as possible to the true ground state energy. Since $E_{0_V}(\alpha)$ is bounded from below, this is equivalent to minimizing it in the hope that $E_{0_V}(\alpha_{min}) \gtrsim E_0$ 
+where $\psi_{\bm \alpha}$ is the trial ground state wave function for the set of variational parameters ${\bm \alpha}$.
 
-The use of an approximate wave function introduces a systematic error. The finite sampling size $M$, however, introduces a statistical uncertainty common to all Monte Carlo methods. 
+By varying $\bm \alpha$ we aim to obtain a variational energy that is as close as possible to the true ground state energy.
+Since $E_V(\bm \alpha)$ is bounded from below, this is equivalent to minimizing it in the hope that $E_V(\bm \alpha_{min}) \gtrsim E_0$, i.e. the bound is tight.
 
-\subsection{Variational Techniques}
-
-It is natural to combine the Metropolis algorithm for quantum many-body systems with a variational principle. The goal is to find a variational wave function which can be optimized so that ultimately we obtain as accurate as possible an estimate of the ground state of the system \cite{tao}.\par
-
-The parameters $\bm \alpha$ of a trial wave function $\phi(\bm r)$ are optimized according to the variational principle
-
-\begin{equation}
-E[\alpha_i] = \frac{< \phi | \mathcal{H} | \phi >}{<\phi | \phi>} \ge E_0,
-\end{equation}
-where $E_0$ is the ground state energy.
-
-In fact, expanding in terms of the eigenstates of the hamiltonian $\{ \psi_n (\bm r) \}$, a complete basis set:
-
-\begin{equation}
-\phi (\bm r) = \sum_{n= 0}^{\infty} a_n \psi_n (\bm r) ,
-\end{equation}
-and plugging it back into the variational principle, subject to $E_n \ge E_0 ,\, n > 0$ and $<\psi_n | \psi_m> = \delta_{nm}$ we obtain
-
-\begin{equation}
-E[\alpha_i] = \frac{\sum_n a_n^2 E_n}{\sum_n a_n^2 } \ge E_0
-\end{equation}
-
-The expectation is the integral
-
-\begin{equation}
-E[\alpha_i] = \frac{\int \phi^\star (\bm r) \mathcal{H} \phi (\bm r) d\bm r}{\int | \phi (\bm r') |^2 d\bm r'} \equiv \int W(\bm r) E(\bm r) d\bm r ,
-\end{equation}
-where the integrand is a quantity which may be regarded as a distribution function $W(\bm r) = \frac{|\phi (\bm r)|^2}{\int |\phi(\bm r')|^2 d\bm r'}$ and a local energy of the system at configuration $\bm r$: $E(\bm r) = \frac{\mathcal{H}\phi(\bm r)}{\phi (\bm r)}$.
-
-Given $W(\bm r)$ and $E(\bm r)$, one can in principle evaluate $E[\alpha_i]$. In practice $\phi (\bm r) $ is parametrized depending on the physical model at play, and the variational parameters $\alpha_i$ in the trial wave function are optimized by minimizing $E[\alpha_i]$.\par
-
-The Metropolis algorithm is used to sample a set of points $\{\bm r_i\}$ from the configuration space, and the evaluation of the expectation value $E[\alpha_i]$ in each QMC step for each set of variational parameters is the equivalent of computing an average of a classical quantity at a given temperature in classical Monte Carlo. Systematically, we optimize the wave function based on the Euler-Lagrange equation
-
-\begin{equation}
-\frac{\delta E[\alpha_i]}{\delta \alpha_j} = 0
-\end{equation}
-
-An example of a thorough discussion on the systematic procedure to do this is given in \cite{umrigar}.\par
-
-An important aspect of the variational wave function - hopefully an already  reasonable approximation of the ground state - is that it should be stable when two particles approach each other and the interaction diverges. This divergence is commonly canceled by their relative kinetic energy when their separation goes to zero - \emph{cusp condition}\cite{mahan}. Building this condition into the variational wave function significantly reduces fluctuations in the results, yielding larger accuracy when dealing with systems with a larger number of particles.
-
+The finite sampling size $M$, of course, introduces a statistical error common to all Monte Carlo methods. 
+However, the use of an approximate wave function introduces a systematic error that is hard to control since trial wave functions are generally introduced based on approximate, or heuristic arguments.
 
 \subsection{Diffusion Monte Carlo}\label{subsec:dmc}
 
-Variational Monte Carlo is limited by the use of a trial wave function $\phi (\bm r)$: we may not have enough information to even construct a reliable variational wave function in the first place. \cite{tao}\par
+Variational Monte Carlo is severely limited by the use of a trial wave function $\psi_{\bm \alpha} (\bm r)$ because we may even not have enough information to even construct a reliable variational wave function.
 
-Diffusion QMC allows the simulation of a many-body system while having only a limited knowledge of the system's physical properties. While it is exact for many-boson systems, it is only approximate for many-fermion systems. The idea is to map the Schr\"odinger equation into  an imaginary-time diffusion equation. Excited states are then filtered out by a diffusion process as time passes. In imaginary-time $\tau = - i t$, the solution to Schr\"odinger's equation in terms of a formal series expansion in the eigenfunctions of the hamiltonian becomes a series of transients $e^{-E_n \tau}, \, n \in \mathbb{N}$. The longest lasting of these is the ground state. \cite{kosztin} \par
+Diffusion \ac{QMC} allows the simulation of a many-body system while having only a limited knowledge of the system's physical properties.
+While it is exact for many-boson systems, it is only approximate for many-fermion systems.
+The idea is to map the Schr\"odinger equation into  an imaginary-time diffusion equation.
+Excited states are then filtered out by a diffusion process as we advance in imaginary-time.
+In imaginary-time $\tau = - i t$, the solution to the Schr\"odinger equation in terms of a formal series expansion in the eigenfunctions of the hamiltonian becomes a series of transients $e^{-E_n \tau}, \, n \in \mathbb{N}$.
+The longest lasting of these is the ground state  \cite{kosztin_introduction_1996}.
 
-The idea of DQMC is to generate samples using the exact ground state wave function $\phi_0 (\bm r)$ \cite{vmc}. The associated exact energy $E_0$ is the matrix element of the hamiltonian calculated using a trial wave function and the ground state wave function.
+The idea of the diffusion method is to generate samples using the exact ground state wave function $\psi_0 (\bm r)$ \cite{toulouse_chapter_2016}.
+The associated exact energy $E_0$ is the matrix element of the hamiltonian calculated using a trial wave function and the ground state wave function.
 
 \begin{equation}
-\begin{split}
-&E_0 = \frac{ < \phi_0 |E_0 \mathbbm{1} | \phi >}{< \phi_0 | \phi >} = \\
-&= \frac{< \phi_0 | \mathcal{H} | \phi >}{ <\phi_0 | \phi >} = \frac{\int d\bm r \phi_0^\star (\bm r) \phi (\bm r) E_L (\bm r)}{\int d\bm r\phi_0^\star (\bm r) \phi (\bm r)}
-\end{split}
+E_0 = \frac{ \left\langle \psi_0 |E_0 \mathbbm{1} | \psi \right\rangle}{\left\langle \psi_0 | \psi \right\rangle} = \frac{\left\langle \psi_0 | \mathcal{H} | \psi \right\rangle}{ \left\langle\psi_0 | \psi \right\rangle} = \frac{\int d\bm r \psi_0^\star (\bm r) \psi (\bm r) E_L (\bm r)}{\int d\bm r\psi_0^\star (\bm r) \psi (\bm r)}
 \end{equation}
 
-Note that using this trick we avoid the computation of $\mathcal{H} \phi_0 = E_0 \phi_0$, that is, the ground state energy. Instead, we approximate the integral by considering $N$ configuration samples $\bm r_{k = 1,..., N}$ in a similar spirit to that of VQMC. Notice that the integral consists of a local energy of the trial wave function $E_L (\bm r) = \frac{\mathcal{H} \phi (\bm r)}{\phi (\bm r)}$ averaged over a mixed distribution from which we draw a sample of points $\bm r_{k=1,...N}$.
+Note that using this trick we avoid the computation of $\mathcal{H} \psi_0 = E_0 \psi_0$, that is, the ground state energy.
+Instead, we approximate the integral by considering $M$ configuration samples $\bm r_{k = 1,..., N}$ in a similar spirit to that of Variational \ac{QMC}.
+Notice that the integral consists of a local energy of the trial wave function $E_L (\bm r) = \frac{\mathcal{H} \psi (\bm r)}{\psi (\bm r)}$ averaged over a mixed distribution from which we draw a sample of points $\bm r_{k=1,...M}$:
 
 \begin{equation}
-f(\bm r) = \frac{\phi_0^\star (\bm r) \phi (\bm r) }{ \int d\bm r  \phi_0 (\bm r) \phi (\bm r)}
+f(\bm r) = \frac{\psi_0^\star (\bm r) \psi (\bm r) }{ \int d\bm r  \psi_0 (\bm r) \psi (\bm r)}
 \end{equation}
 
-Take a single particle in 1D. Performing a Wick rotation - effectively going to imaginary time - and shifting the energy, Schr\"odinger's equation becomes
+Although the method is, of course, aimed at probing many-body systems, let us consider a single particle in \acl{1D} for simplicity for illustrating the method.
+Performing a Wick rotation - effectively going to imaginary time - and shifting the energy, the Schr\"odinger equation becomes
 
 \begin{equation}
-\partial_\tau \psi = -\frac{1}{2m} \partial^2_x \psi - \bigg[ V(x) - E_T \bigg] \psi
+\frac{\partial \psi ( x, \tau )}{\partial\tau}  = -\frac{1}{2m}\frac{\partial^2 \psi ( x, \tau )}{\partial x^2} - \bigg[ V(x) - E_T \bigg] \psi( x, \tau ) 
 \end{equation}
 
-The exact ground state wave function $\phi_0$ is obtained as the longest lasting transient state in imaginary time; we are interested in the asymptotic behavior of the series expansion constituting the formal solution of Schr\"odinger's equation
+The exact ground state wave function $\psi_0 ( x )$ is obtained as the longest lasting transient state in imaginary time: we are interested in the asymptotic behavior of the series expansion constituting the formal solution of the Schr\"odinger equation
 
 \begin{equation}
-\psi (x, \tau) = \sum_{n=0}^{\infty} c_n \Phi_n (x) e^{-(E_n - E_T)\tau}
+\psi (x, \tau) = \sum_{n=0}^{\infty} c_n \psi_n (x) e^{-(E_n - E_T)\tau}
 \end{equation}
 
 Imaginary time evolution is governed by
 
 \begin{equation}\label{eq:im_ev}
 \begin{split}
-&| \psi (t) > = \lim_{\tau \rightarrow \infty} \sum_i e^{-(E_i - E_T) \tau} |\psi_i > <\psi_i | \psi > = \\
-&= \lim_{\tau \rightarrow \infty} e^{-(E_0 - E_T)\tau} | \phi_0 >< \phi_0 | \psi > 
+&\left| \psi (t) \right\rangle = \lim_{\tau \rightarrow \infty} \sum_i e^{-(E_i - E_T) \tau} \left|\psi_i \right\rangle \left\langle \psi_i | \psi \right\rangle = \\
+&= \lim_{\tau \rightarrow \infty} e^{-(E_0 - E_T)\tau} \left| \psi_0 \right\rangle \left\langle \psi_0 | \psi \right\rangle 
 \end{split}
 \end{equation}
 
 
-If $E_T > E_0$ the wave function diverges exponentially fast: $\lim_{\tau \rightarrow \infty} \psi ( x, \tau) = \infty$. Similarly, for $E_T < E_0$ it vanishes exponentially fast: $
-\lim_{\tau \rightarrow \infty} \psi ( x, \tau) = 0$. However, if $E_T = E_0$ the wave function converges to the ground state one up to a constant factor.
+If $E_T > E_0$ the wave function diverges exponentially fast: $\lim_{\tau \rightarrow \infty} \psi ( x, \tau) = \infty$.
+Similarly, for $E_T < E_0$ it vanishes exponentially fast: $\lim_{\tau \rightarrow \infty} \psi ( x, \tau) = 0$.
+However, if $E_T = E_0$ the wave function converges to the ground state one up to a constant factor.
 
 \begin{equation}\label{eq:dmc}
-\lim_{\tau \rightarrow \infty} \psi ( x, \tau) = c_0 \phi_0 (x) \,\,\, \text{, or} \quad \lim_{\tau \rightarrow \infty} |\psi (\tau) > \propto | \phi_0 >
+\lim_{\tau \rightarrow \infty} \psi ( x, \tau) = c_0 \psi_0 (x) \,\,\, \text{, or} \quad \lim_{\tau \rightarrow \infty} \left|\psi (\tau) \right\rangle \propto \left| \psi_0 \right\rangle
 \end{equation}
 
-DQMC makes use of equation (\ref{eq:dmc}), approximating $\phi_0(x)$ by $\psi (x, \tau)$ for sufficiently long time. The only requirement is that $\psi (x, \tau)$ and $\phi_0(x)$ overlap significantly so that $c_0$ is large enough to be numerically measurable, and we can always center a positive trial wave function in a region where $\phi_0(x)$ is large enough. This is always possible for a single particle,  but note that it might fail for a many-fermion system for which the wave function crosses a number of nodes due to its antisymmetric nature.\par
-
-\subsection{Path Integral Formulation}\paragraph{}
-
-In position representation, we may rewrite equation (\ref{eq:im_ev}) by noting that
-
-\begin{equation}\label{eq:green}
-\psi(\bm r_f, \tau) = \int d\bm r_i G( \bm r_f | \bm r_i ; \tau) \psi (\bm r_i) ,
-\end{equation}
-where we have defined the Green function $G( \bm r_f | \bm r_i ; \tau) \equiv < \bm r_f | e^{-(\mathcal{H} - E_T) \tau} | \bm r_i >$, the imaginary-time propagator. This allows for a path integral interpretation of the diffusion method. Take equation (\ref{eq:green}), multiply by $\psi (\bm r_f)$ and divide by $\psi (\bm r_i)$ to obtain the evolution equation for the mixed distribution $f(\bm r, t) = \psi (\bm r, \tau) \psi (\bm r)$:
-
-\begin{equation}
-f(\bm r_f, \tau) = \int d\bm r_i \tilde{G} ( \bm r_f | \bm r_i; \tau) \psi (\bm r_i)^2 ,
-\end{equation}
-where we have redefined an \emph{importance sampling} Green function $\tilde{G} (\bm r_f | \bm r_i; \tau) = \psi (\bm r_f) G(\bm r_f | \bm r_i ; \tau) \frac{1}{\psi(\bm r_i)}$. 
-
-The mixed distribution approaches the target stationary distribution: $f(\bm r) = \lim_{t\rightarrow \infty} f(\bm r, t) \propto \phi_0(\bm r) \psi (\bm r) $
-
-In the limit of short propagation time, the action of the $\hat T$ and $\hat V$, the kinetic and potential energy operators, does not significantly change the states acted upon separated by the short interval $t$: $| \chi (t') >$ and $|\chi (t'+t) >$. Furthermore, one can use the Trotter-Suzuki decomposition, based on the result that for a - not necessarily commuting - set of operators $\{A_i | \, i = 1,...p\}$  we can write
-
-\begin{equation}
-e^{A_1 + A_2 + ... + A_p} = \lim_{m\rightarrow \infty} ( e^{A_1/m}e^{A_2/m}...e^{A_p/m})^m
-\end{equation}
-
-In this case it allows us to rewrite $e^{-(\hat T + \hat V) t} = e^{-\hat V t/2} e^{-\hat T t} e^{-\hat V t/2} + \mathcal{O}(t^3) $. Further acting with the potential operator on the left and on the right, we find an analytical expression for the propagator.
-
-\begin{equation}
-G(\bm r_f | \bm r_i ; \tau) \approx \frac{e^{-\frac{(\bm r_f - \bm r_i)^2}{2t} -\big( \frac{V(\bm r_f) + V(\bm r_i)}{2} - E_T \big) t}}{(2\pi t)^{3N/2}} 
-\end{equation}
-
-The \emph{fermion sign problem} will shortly become apparent. The key assumption that breaks for many-fermion wave functions is that the trial wave function does not change sign so that $\psi (\bm r_f) / \psi (\bm r_i) > 0$. In the latter case, the short time \emph{importance sampling} Green function becomes
-
-\begin{equation}
-\begin{split}
-\tilde{G}(\bm r_f | \bm r_i ; \tau) \approx & \frac{1}{(2\pi t)^{3N/2}} e^{-\frac{(\bm r_f - \bm r_i - \bm v(\bm r_i)t )^2}{2t}} \\
-&e^{-\big( \frac{E_L(\bm r_f) + E_L(\bm r_i)}{2} - E_T \big) t} ,
-\end{split}
-\end{equation}
-where we introduced two quantities assumed to be constant in the short time interval: the drift velocity $\bm v(\bm r) = \nabla \psi (\bm r) / \psi (\bm r)$, and the local energy $E_L (\bm r) = \psi (\bm r)^{-1} \mathcal{H} \psi (\bm r)$. This approximation implies a finite step error that vanishes in the $t \rightarrow 0$ limit. Note that this is a solution analogous to that of a diffusion process with a drift term biasing the Brownian motion in configuration space. In practice, we obtain the stationary distribution, simulating the time evolution by iterating
-
-\begin{equation}\label{eq:it_f}
-\begin{split}
-f(\bm r) &= \lim_{N\rightarrow \infty} \int d\bm r_1 d\bm r_2 ... d\bm r_N \tilde{G}(\bm r| \bm r_N ;t) \\
-&\tilde{G}(\bm r_N| \bm r_{N-1} ;t) ... \tilde{G}(\bm r_2| \bm r_1 ;t) \psi(\bm r_1)^2 ,
-\end{split}
-\end{equation}
-but the time evolution of $f$ can equivalently be shown to be given by a diffusion equation (it is done in \cite{vmc_review}): $\partial_t f = -\mathcal{L}f - (E_L (\bm r) - E_T)f$, 
-where we have defined the Fokker-Planck operator $\mathcal{L} = -\frac{1}{2}\nabla^2 + \nabla \cdot \bm v(\bm r)$.\par
-
-The stochastic realization aiming at estimating the integral in equation (\ref{eq:it_f}) is slightly more cumbersome. The Green function $\tilde{G}(\bm r_f| \bm r_i ;t)$ is not a stochastic matrix. Probability density normalization is not preserved: $\int d\bm r_f \tilde{G} ( \bm r_f | \bm r_i ; t) \neq 1$.
-
-However, it may be written as the product of a stochastic matrix $P$ and a weight matrix $W$: $P(\bm r_f | \bm r_i) W ( \bm r_f | \bm r_i )$.
-
-\begin{equation}
-\begin{split}
-P(\bm r_f | \bm r_i) &= (2\pi t)^{\frac{-3N}{2}} \exp{\bigg[-(\bm r_f -\bm r_i - \bm v(\bm r_i)t )^2 / 2t \bigg]} \\
-W ( \bm r_f | \bm r_i ) &= \exp{\bigg[ \big[ (\, E_L (\bm r_f) + E_L (\bm r_i) \, )/2 - E_T \big] t \bigg]} , \\
-\end{split}
-\end{equation}
-corresponding to a \emph{weighted random walk}. In GFQMC, one further reformulates the diffusion process so that no systematic errors due to the finite time interval $t$ arise. At each iteration $k$, a population of $M_k$ walkers at $\bm r_{k, \alpha}$ with weights $w_{k, \alpha}$ perform random walks with a branching or birth-death process in which the weights $w_{k, \alpha}$ vary only in a small range from walker to walker over the same iteration and from iteration to iteration. Under certain conditions, sampling from the correct distribution is ensured.
-
-\subsection{Fixed-Node, Constrained Path QMC for Many-Fermion systems}
-
-For many-fermion systems the condition of antisymmetry of the wave function may not in general be satisfied due to the finite sampling in position space. If the many-fermion wave function has nodes, a bosonic state of lower energy always exists. This means that the target ground state becomes a bosonic one for which $\psi_{B}(\bm r)$ can be chosen strictly positive.\par
-
-By iteratively applying the Green function exactly, $\psi (\bm r)^2$ now converges to $\phi_0(\bm r) \psi (\bm r)$. This is because the trial wave function $\psi (\bm r) $ is antisymmetric and has zero overlap with the symmetric bosonic states. Finite sampling leads to the appearance of a growing and eventually dominating bosonic component $\psi_B$.\par
-
-Now suppose you impose antisymmetry by eliminating bosonic states, i.e. considering all electron permutations in each walker. In this fermionic subspace, different paths between the same endpoints can contribute with opposite sign: $-\phi_0 $ is also a solution of the Schr\"odinger equation. Both are sampled with approximately equal probability for large enough iteration time and positive and negative weight contributions cancel out - another manifestation of the sign problem.\par
-
-Two methods that modify DQMC to correct for the sign problem are the fixed-node approximation \cite{constrained2,vmc_review} and constrained path QMC \cite{constrained, constrained2}. The idea of the former is to force convergence to a wave function approximating the Fermionic ground state by fixing its nodes to be the same as those of the trial wave function \cite{vmc_review}. One repeats the procedure developed in the previous section for a formally defined hamiltonian $\mathcal{H}_{FN}$, which is simply the former hamiltonian with infinite potential barriers at the nodes of $\psi (\bm r)$. The energy associated with $\mathcal{H}_{FN}$ is an upper bound on the true ground state energy. Thus, the accuracy of this method depends on the shape of the nodal surface of the trial wave function. On the other hand, in constrained path QMC the ground state is represented by $|\phi_0 > = \sum_\chi c_\chi |\chi >$, where the Slater determinants $|\chi> $ are chosen so that $c_\chi > 0$. Note that this is not a unique decomposition. A constraint is placed on the random walks to account for the change to the Slater determinant basis. The two regions where the overlap $\left \langle \psi_T | \chi \right\rangle $ is either positive or negative, causing the sign problem, are not distinguishable. The approximation consists of breaking this symmetry so that the random walks are constrained to the region $\left \langle \psi_T | \chi \right\rangle > 0$.
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width = 6cm]{Introduction/constrained.png}
-\caption{ Contour plots of the two-fermion ground state wave function overlap $<\chi | \phi_0 >$ for a Hubbard model as obtained in \cite{constrained2}. The parameters $\theta_{1,2}$ arise from the decomposition $|\chi > = (\cos\theta_1 c_{1\uparrow}^\dagger + \sin\theta_1 c_{2\uparrow}^\dagger) (\cos\theta_2 c_{1\downarrow}^\dagger + \sin\theta_2 c_{2\downarrow}^\dagger)$, where $c^{(\dagger)}$ are annihilation (creation) operators of two fermions with either spin up or down. Notice the varying nodal surfaces as the interaction energy-hopping parameter ratio varies. The accuracy of the constrained path QMC method depends on the shape of these surfaces (taken from \cite{constrained2}). }
-\end{figure}
-
-\subsection{Determinantal/Auxiliary Field QMC}\paragraph{}
-
-The idea of this method is establish a mapping between quantum and classical Monte Carlo, using a suitable change of variables. The random variables are then sampled from the configuration space of the corresponding classical problem. The price to pay is that for a d-dimensional quantum problem, the corresponding classical problem is $(d+1)$-dimensional: an additional degree of freedom is added, and as we will show it corresponds to an imaginary time.
-
-The expected value of a physical observable $\mathcal{O}$ may be written as $<\mathcal{O}> = Tr (\mathcal{O}\mathcal{P})$, where we have defined a projection operator
-
-\begin{equation}
-\mathcal{P} = \frac{1}{\mathcal{Z}}e^{-\beta\mathcal{H}} \, , \mathcal{Z} = Tr (e^{-\beta \mathcal{H}}) = \sum_i < \psi_i | e^{-\beta \mathcal{H}} | \psi_i > ,
-\end{equation}
-and the trace is taken over the Hilbert space describing all possible occupations in a lattice model.\par
-
-Finding an approximation to the projection operator which is amenable to computation is done in terms of the Hubbard-Stratonovich transformation: the problem is  reformulated in terms of auxiliary variables $h_i$. The set $\{h_i\}$ is known as the Hubbard-Stratonovich field.\par
-
-In the end, we sample configurations, that is, particular realizations of the HS field, with probability $P(h)$. It is the computation of this probability that requires determinant calculations giving the name to the method. For concreteness, we state without proof that for the example of the Hubbard model we have:
-
-\begin{equation}
-P(h) = \frac{\eta_d}{Z_h} \det [ M_{+}(h) ] \det [ M_{-}(h) ] ,
-\end{equation}
-where $M_\sigma (h)$ are fermion matrices depending on the imaginary time frame, spin, and the HS field; $\eta_d$ is simply a normalization constant depending on dimension, and $Z_h$ is the partition function expressed in terms of the HS field \cite{qmc}.
-
-To move from a configuration $\{h\}$ to a new one $\{h'\}$, we vary, or flip, the value of only one variable $h_i$, leaving the rest unchanged. We use an acceptance-rejection scheme - the Metropolis-Hastings algorithm - that ensures that the accepted sample configuration follows the desired distribution. Once we reach equilibrium, i.e. the Markov Chain hits the stationary distribution, we have finished the so called warm up steps, and we may start measuring.\par
-
-Recall the reasoning that was made in section \ref{subsec:dmc}. The solution of the Schr\"odinger equation may be expressed in terms of a linear combination of stationary states, which depend on time via a factor $e^{-iE_n t}$, where $n$ labels the energy level of the quantum system under study. We choose the energy scale so that all energies are positive and perform a change of variable to imaginary time $t= -i\tau$. The solution's time dependence is now described by a sum of transients $e^{-E_n \tau}, \, n \in \mathbb{N}$, and by following the (imaginary) time evolution of the wave function long enough, we will asymptotically reach the ground state energy $E_0$, and its corresponding wave function $\phi_0$. Note that this is independent of the initial condition in which we prepare the system. Convergence speed may eventually depend on this choice, but from a mathematical point of view if we wait long enough only the ground state will survive. The imaginary time many-body propagator $U(\tau) = e^{-H\tau}$ filters a trial wave function $\phi$ to the exact ground state $\phi_0$:
-
-\begin{equation}
-E_0 = \lim_{\tau \rightarrow \infty} \frac{<\phi | HU(\tau) | \phi >}{<\phi | U(\tau) | \phi >}
-\end{equation}
-
-We impose the condition that $\phi$ mustn't be orthogonal to $\phi_0$. Additionally, we require $\phi$ to be a symmetrized (antisymmetrized) product of single-particle orbitals for bosons (fermions).\par
-
-The method can be used to treat systems with a variety of interactions. In general:
-
-\begin{equation}\label{eq:general_h}
-\mathcal{H} = \sum_{\alpha\beta} K_{\alpha\beta} \rho_{\beta\alpha} +\frac{1}{2} \sum_{\alpha\beta\gamma\delta} v_{\alpha\beta\gamma\delta} \rho_{\gamma\alpha} \rho_{\delta\beta} ,
-\end{equation}
-where $\rho_{\beta\alpha}\equiv a_\alpha^\dagger a_\beta$ and
-$K_{\alpha\beta} = T_{\alpha\beta} \pm \frac{1}{2} \sum_{\gamma} v_{\alpha\gamma\gamma\beta}$
-is the kinetic energy $T$ plus a self-interaction term for bosons or fermions, respectively. The subscripts ${\alpha, \beta, \gamma, \delta}$ represent eventually present degrees of freedom: spin, isospin, etc., as well as spatial coordinates \cite{sugiyama}.\par
-
-We introduce an auxiliary field $h$ that reduces the exponential of the two-body operator in equation (\ref{eq:general_h}) to a functional integral over an infinite set of exponentials of one-body operators. We then run Monte Carlo to approximate these integrals. A valuable property of AFQMC is that it properly treats fermions: the HS representation of the propagator affords a description in terms of single-particle exactly antisymmetrized wave functions. GFQMC and DQMC do not share this property.\par
-
-The long time behavior of a trial state: $\lim_{\tau \rightarrow \infty } e^{-\tau (\mathcal{H} - \varepsilon_0)} |\psi_T > = | \phi_0 > < \phi_0 | \psi_T >$ may be mapped onto a stochastic process in the manifold of N-particle Slater determinants $\mathcal{D}(N)$ \cite{zhang}. The mapping to a stochastic process is made possible by the discretization
-
-\begin{equation}
-e^{-\tau (\mathcal{H} - \varepsilon_0)} = (e^{-\delta \tau ( \mathcal{H} - \varepsilon_0 ) })^n \quad \text{with} \quad \delta \tau = \frac{\tau}{n}
-\end{equation}
-
-The HS transformation is in fact an operator identity that allows the establishment of a formal correspondence between a system of interacting fermions and an ensemble of non interacting fermion systems coupled to fluctuating external potentials. This leads to a random walk representation of the imaginary time evolution.\par
-
-A limitation of the straightforward numerical implementation of AFQMC is that it leads to an exponential increase in statistical errors with imaginary time. This is due to the appearance of random complex phases during the evolution. To solve this problem, S. Zhang introduced an importance sampling transformation guiding the random walk \cite{zphase}  . This is done by introducing shift parameters in terms of which we rewrite $e^{-n\delta \tau (\mathcal{H} - \varepsilon_0)} |\psi_T >$. These parameters are chosen to minimize fluctuations in the importance function to first order in $\delta \tau$.\par
-
-The aim is to solve the sign problem which arises when the overlap between one or more walkers and the trial state vanishes, yielding large fluctuations in the importance function, and generating statistical errors in AFQMC's estimates.
-
-\subsection{Computational Complexity and the Sign Problem}
-
-The sign problem afflicting many-fermion QMC causes an exponential increase of the computing time with the number of particles. A polynomially scaling algorithm would provide an unbiased and numerically exact solution (as in the case of bosons) for the problem of simulating a strongly correlated electron system. However, the problem was recently shown to be NP hard \cite{troyer}. Solving the sign problem would solve all NP problems in polynomial time (proving that $NP = P$) in what would be a major breakthrough in mathematics. This is widely believed to be unlikely, i.e. there is a conjecture that $NP \neq P$, although currently no mathematical proof exists of this impossibility.\par
-
-Specific sign problems might be solvable. This indeed happens for a restricted subclass of quantum systems, for example see \cite{wiese, arnow,kalos}. An interesting open question is that of determining which models allow a partial solution of the sign problem due to their special properties. In particular, it is relevant for this field whether the 2D fermionic Hubbard model belongs to this class or not. A promising idea to circumvent NP hardness is to use ultracold atoms in optical lattices \cite{optical}, effectively using a quantum simulator to study the phase diagrams of correlated quantum systems. Although promising, even this method may not solve the problem in general: it is also still an open question whether a quantum computer could ever solve the NP complete problem (see \cite{troyer} and references therein).
+Diffusion \ac{QMC} makes use of equation (\ref{eq:dmc}), approximating $\phi_0(x)$ by $\psi (x, \tau)$ for sufficiently long time.
+The only requirement is that $\psi (x, \tau)$ and $\psi_0(x)$ overlap significantly so that $c_0$ is large enough to be numerically measurable, and we can always center a positive trial wave function in a region where $\psi_0(x)$ is large enough.
+Of course, this is always possible for a single particle, but note that it might fail for a many-fermion system, for which the wave function crosses a number of nodes due to its anti-symmetric nature.
