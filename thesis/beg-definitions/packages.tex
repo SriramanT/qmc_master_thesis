@@ -27,6 +27,12 @@
 \usepackage{dirtytalk}
 \usepackage{setspace}
 \newcommand*\chem[1]{\ensuremath{\mathrm{#1}}}
+\def\Pm{\mathrel{\raise -1.2pt \hbox{\tiny(}\! 
+                 \raise 1.5pt \hbox{+}
+                 \settowidth {\dimen03} {+}
+                 \hskip-\dimen03
+                 \raise -2.6pt \hbox {$-$}
+                 \!\raise -1.2pt \hbox{\tiny)}}}
 
 % Defines an additional alphabet... not required in most cases
 % ------------------------------------------------------------

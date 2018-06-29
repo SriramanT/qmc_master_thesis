@@ -332,8 +332,16 @@ Actually, we explore this in the next chapter to derive the simulation method th
 To complete the solution of the non-interacting case we apply the result of equation (\ref{eq:trace_quadratic}) to compute the partition function corresponding to the quadratic Hamiltonian defined in equation (\ref{eq:quadraticH}):
 
 \begin{equation}
-Z = \prod_{\bm k} ( 1 + e^{-\beta (\varepsilon_{\bm k} - \mu )} )
+Z = \prod_{\bm k} ( 1 + e^{-\beta (\varepsilon_{\bm k} - \mu )} ) ,
 \end{equation}
+where $\varepsilon_{\bm k}$ is just the dispersion relation for a tight binding model, a standard result.
+A related quantity is the density of states, counting the number of states with a given energy:
+
+\begin{equation}
+N ( E ) = \frac{1}{N} \sum_{\bm k} \delta_{E,\varepsilon_{\bm k}} \rightarrow \frac{1}{(2\pi)^d} \int d\bm k \, \delta ( E - \varepsilon_{\bm k})\,\, \text{when}\,\, N\rightarrow \infty.
+\end{equation}
+
+In \acs{1D}, we have $\varepsilon_{k} = - 2 t \cos k$, which gives $N(E) = ( \pi \sqrt{ 4 t^2 - E^2 } )^{-1}$ (see appendix \ref{ap:dos1d}).
 
 Now that we have found a closed form solution for $Z$, it is again possible to find closed form expressions for observables of interest as well, namely:
 
