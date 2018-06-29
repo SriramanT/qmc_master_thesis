@@ -3725,6 +3725,75 @@
       \endverb
       \keyw{Quantum Monte Carlo,Numerical Methods,Determinant,Bai,Scalettar}
     \endentry
+    \entry{huang_stripe_2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=abd8c4d285f958a07a29a987db42f04e}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Edwin\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=9be36c5080ffffe9286d77b205418297}{%
+           family={Mendl},
+           familyi={M\bibinitperiod},
+           given={Christian\bibnamedelima B.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=aacb8ecc27584738be28496ffb40fa02}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Hong-Chen},
+           giveni={H\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=be1879f820c17ebdb8d138c76bd9edd4}{%
+           family={Moritz},
+           familyi={M\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=467230f6fd1cebed2f8fc07ce645f4a1}{%
+           family={Devereaux},
+           familyi={D\bibinitperiod},
+           given={Thomas\bibnamedelima P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b33ca7d9c92e6f199609c562f0a7612e}
+      \strng{fullhash}{b1ae1f30f5a1848aa9620fcdb96753e6}
+      \strng{bibnamehash}{b1ae1f30f5a1848aa9620fcdb96753e6}
+      \strng{authorbibnamehash}{b1ae1f30f5a1848aa9620fcdb96753e6}
+      \strng{authornamehash}{b33ca7d9c92e6f199609c562f0a7612e}
+      \strng{authorfullhash}{b1ae1f30f5a1848aa9620fcdb96753e6}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The phase diagram of the Hubbard model is studied numerically by varying parameters and suggests that spin stripe order can be observable at accessible temperatures. A team led by Thomas P. Devereaux from Stanford University and colleagues from {SLAC} National Accelerator Laboratory and University of North Dakota investigate emergence of spin stripe orders in the Hubbard model by tuning various parameters in the determinant quantum Monte Carlo simulations and the density matrix renormalization group calculations. They show that including the next-nearest-neighbor hopping term, which was often neglected in previous studies, in the Hubbard model leads to nearly half-filled spin stripes upon hole-doping, while no stripes upon electron-doping. The consistence of these findings with experimental results on both electron and hole-doped cuprate superconductors supports a unified description across a large portion of the cuprate phase diagram.}
+      \field{day}{20}
+      \field{issn}{2397-4648}
+      \field{journaltitle}{npj Quantum Materials}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{1}
+      \field{title}{Stripe order from the perspective of the Hubbard model}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{3}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{22}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41535-018-0097-0
+      \endverb
+      \verb{file}
+      \verb Huang2018.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/hubbard-model/Huang2018.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/8HCCYDP4/s41535-018-0097-0.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41535-018-0097-0
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41535-018-0097-0
+      \endverb
+      \keyw{hubbard,order}
+    \endentry
     \entry{santos_introduction_2003}{article}{}
       \name{author}{1}{}{%
         {{hash=3f40fc505d6d3889dcb2919659238034}{%

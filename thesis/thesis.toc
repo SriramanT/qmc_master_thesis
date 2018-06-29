@@ -44,9 +44,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Exact solutions for simple cases}{30}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}The purely atomic ( $\frac {t}{U} = 0$ ), single site limit}{32}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}The purely atomic ( $\frac {U}{t} \rightarrow \infty $ ), single site limit}{32}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}The non-interacting $\frac {t}{U} \rightarrow \infty $ limit}{36}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}The non-interacting $\frac {U}{t} = 0$ limit}{36}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Effective Heisenberg Hamiltonian}{39}{section.2.5}
 \defcounter {refsection}{0}\relax 
@@ -65,6 +65,8 @@
 \contentsline {subsection}{\numberline {2.7.1}Stoner criterion for ferromagnetism}{45}{subsection.2.7.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.7.2}Mean field theory of the Hubbard model}{46}{subsection.2.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}Variants of the Hubbard model}{48}{section.2.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Auxiliary Field Quantum Monte Carlo}{49}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -94,7 +96,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Conclusions and Future Work}{75}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{77}{section*.42}
+\contentsline {chapter}{Bibliography}{77}{section*.44}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Hartree-Fock Approximation and the Self Consistent Field Method}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 

@@ -11,7 +11,7 @@ N ( E ) = \frac{1}{N} \sum_{\bm k} \delta_{E,\varepsilon_{\bm k}} \rightarrow \f
 with $\varepsilon_k = - 2 t \cos k$, in the thermodynamic limit we obtain
 
 \begin{equation}
-N ( E ) = \frac{1}{\pi} \int d k \, \delta ( E + 2t \cos k)
+N ( E ) = \frac{1}{2\pi} \int d k \, \delta ( E + 2t \cos k)
 \end{equation}
 
 Now we use a well known property of the delta function
@@ -20,10 +20,10 @@ Now we use a well known property of the delta function
 \delta ( g(x) ) = \sum_{ \{i | g(x_i) = 0\} } \frac{\delta ( x - x_i) }{| g' ( x_i) |}
 \end{equation}
 
-Noting that $g'(k) = - 2 t \sin k$, and that the root of $g$ satisfies $\cos k_0 = - E / 2t$, so that $\sin k_0 = \pm \sqrt{1 - E^2 / 4 t^2}$, we obtain
+Noting that $g'(k) = - 2 t \sin k$, and that the roots of $g$ (there are two in the first Brillouin zone, to which the integral is restricted) satisfy $\cos k_i = - E / 2t$, so that $\sin k_i = \pm \sqrt{1 - E^2 / 4 t^2}$, we obtain
 
 \begin{equation}
-\delta ( E + 2 t \cos k) = \frac{\delta ( k - k_0 ) }{ \sqrt{4t^2 - E^2 }}
+\delta ( E + 2 t \cos k) = \frac{1 }{ \sqrt{4t^2 - E^2 }} \bigg( \delta ( k - k_1 ) + \delta ( k - k_2 ) \bigg)
 \end{equation}
 leading to the sought result
 

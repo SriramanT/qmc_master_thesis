@@ -102,7 +102,7 @@ c_i^\dagger c_{i+1}^\dagger \begin{cases}
 
 The operator annihilates the particle at $i+1$ and creates it back at $i$, i.e. the electron hops from $i+1$ to $i$.
 
-\subsection{The purely atomic ( $\frac{t}{U} = 0$ ), single site limit}
+\subsection{The purely atomic ( $\frac{U}{t} \rightarrow \infty$ ), single site limit}
 \label{subsec:atomic}
 
 When $t = 0$, the site index may be omitted since the Hamiltonian is a sum of operators solely at site $i$.
@@ -258,7 +258,7 @@ As what happens for the Mott plateau, quantum fluctuations (i.e. introducing a h
 	\label{fig:mSqVsT}
 \end{figure}
 
-\subsection{The non-interacting $\frac{t}{U} \rightarrow \infty$ limit}
+\subsection{The non-interacting $\frac{U}{t} = 0$ limit}
 
 In the $\frac{t}{U} \rightarrow \infty$ limit, the spin sectors become independent, and they may be considered separately.
 Thus, we omit the spin indices of the operators in the Hamiltonian:
@@ -335,7 +335,7 @@ To complete the solution of the non-interacting case we apply the result of equa
 Z = \prod_{\bm k} ( 1 + e^{-\beta (\varepsilon_{\bm k} - \mu )} ) ,
 \end{equation}
 where $\varepsilon_{\bm k}$ is just the dispersion relation for a tight binding model, a standard result.
-A related quantity is the density of states, counting the number of states with a given energy:
+A related quantity is the density of states, counting the number of states with a given energy. For a single spin species:
 
 \begin{equation}
 N ( E ) = \frac{1}{N} \sum_{\bm k} \delta_{E,\varepsilon_{\bm k}} \rightarrow \frac{1}{(2\pi)^d} \int d\bm k \, \delta ( E - \varepsilon_{\bm k})\,\, \text{when}\,\, N\rightarrow \infty.

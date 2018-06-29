@@ -35,7 +35,7 @@ Some spin-up levels below $\varepsilon_F$ that used to be occupied are now empty
 The global change in energy is
 
 \begin{equation}
-\delta E = \delta P + \delta K = \bigg( - U + \frac{1}{N(\varepsilon_F)} \bigg) \big( \delta n \big)^2 = ( - U N ( \varepsilon_F ) + 1) \frac{(\delta n)^2}{N(\varepsilon_F)}
+\delta E = \delta P + \delta K = \bigg( - U + \frac{1}{N(\varepsilon_F)} \bigg) \big( \delta n \big)^2 = \bigg( - U N ( \varepsilon_F ) + 1 \bigg) \frac{(\delta n)^2}{N(\varepsilon_F)}
 \end{equation}
 
 If $U N ( \varepsilon_F ) > 1$, then $\delta E < 0$, and the imbalance of spin densities actually becomes more favorable.
@@ -66,6 +66,7 @@ From equation (\ref{eq:meanFieldNop}), we obtain the mean field Hamiltonian
 
 To solve $\mathcal{H}_{\text{MF}}$, one merely has to diagonalize the corresponding matrix.
 In the ferromagnetic case, the average occupation is independent of the specific site, but can vary with the spin species: $n_{i, \uparrow(\downarrow)} = n \Pm m$, where $m$ is the magnetization, the order parameter of the transition to a ferromagnetic phase.
+Similarly, for the \acf{AF} case on a bipartite, we consider $n_{i, \uparrow(\downarrow)} = n \Pm (-1)^{i} m$, leading to a staggered potential.
 
 Now we take on a \acl{LG} theory kind of approach.
 We compute the energy $E$ for fixed $n$ as a function of $m$, and inspect the system for ferromagnetic ordering: if the minimum lies at $m = 0$, the system is paramagnetic, otherwise it is ferromagnetic.
@@ -83,6 +84,8 @@ The computational procedure to perfom mean field computations goes as follows:
 \item Set the possible densities by iterating $N_\uparrow = 0, 1, ..., N_p / 2$, and $N_\downarrow = N_p - N_\downarrow$ (we only need half the values since the values are symmetric under $ N_\uparrow \leftrightarrow N_\downarrow$), and setting $n_{\uparrow, \downarrow} = N_{\uparrow, \downarrow} / N$.
 \item Fill the lowest $N_\uparrow$, and $N_\downarrow$ energy levels, by looping over the allowes momentum states $k = \frac{2\pi}{N} \{ -\frac{N}{2} + 1, -\frac{N}{2}, ..., \frac{N}{2} \}$, and using equation (\ref{eq:meanFieldDispersion}).
 Normalize the energy to $N$ and add in the additive constant $- \left\langle n_\uparrow \right\rangle \left\langle n_\downarrow \right\rangle$.
+This step is altered for the \acs{AF} case since we are assuming the up and down densities to be identical over the whole lattice.
+In such case, we fix $n = N_p / 2$ and loop over $m = 1/ N, 2 / N,...$, staying within the first Brillouin zone.
 Out of the energies computed in this way for varying $N_{\uparrow, \downarrow}$, the lowest gives the magnetization for the chosen values of $N_p$ and $U$.
 \end{itemize}
 
@@ -95,14 +98,40 @@ Out of the energies computed in this way for varying $N_{\uparrow, \downarrow}$,
 	\label{fig:mft}
 \end{figure}
 
+Let us focus on figure (\ref{fig:mft_multiple}).
 At $U = 2$, the phase is paramagnetic since the energy is minimzed at $m = 0$. By $U = 4$, the phase transition is yet to occur but if you look at the energy scale in figure (\ref{fig:mft}), you will see that the energy of the spin polarized solutions decreased dramatically.
 	At $U = 4.2$, the large $| m | $ energies have turned down, although $m = 0$ is still the lowest energy solution.
-	At $U = 4.4$, the phase transition occurs, and $| m | = 1$ becomes the lowest energy solution: we have reached the ferromagnetic phase.
+	At $U = 4.4$, the phase transition occurs, and the solutions with $| m | = 1$ become the lowest energy solutions: we have reached the ferromagnetic phase.
 
 \begin{figure}[H]
 	\centering
-\includegraphics[trim={0 0 0 0},clip, scale = 0.38]{Hubbard/mfHubbard_multiple.png}
-	\caption[Mean field results for the \acs{1D} Hubbard model: closing in on the phase transition.]{Plots of each energy curve separately to make it easier to see the phase transition.
+\includegraphics[trim={0 0 0 0},clip, scale = 0.35]{Hubbard/mfHubbard_multiple.png}
+	\caption[Mean field results for the \acs{1D} Hubbard model: closing in on the phase transition.]{Plots of each energy curve separately giving evidence of a phase transition.
 	}
 	\label{fig:mft_multiple}
 \end{figure}
+
+Are these results consistent with Stoner's criterion: $U N ( \varepsilon_F ) > 1$?
+First, we use the density of states obtained in section (\ref{sec:exactSolutions}) to find a relation between the density $\rho$ and the Fermi energy $\varepsilon_F$:
+
+\begin{equation}
+\rho ( \varepsilon_F ) = 2 \int_{-2t}^{\varepsilon_F} dE N ( E ) \leadsto \rho_{\text{1D}} ( \varepsilon_F ) = \frac{2}{\pi} \arccos\bigg( \frac{-\varepsilon_F}{2t}\bigg) ,
+\end{equation}
+which behaves as expected, i.e. $\rho ( -2 t ) = 0$,  $\rho ( 0 ) = 1$, $\rho ( 2 t ) = 2$.
+In terms of the electron density:
+
+\begin{equation}
+N ( \rho ) = \frac{1}{2\pi t \sin(\pi \rho / 2)} ,
+\end{equation}
+and in particular we can obtain the critical value $U_c$ at which the transition to the ferromagnetic phase takes place.
+At quarter filling, we have $N( 1 / 2 ) = 1 /\sqrt{2} \pi t$, giving $U_c = \sqrt{2} \pi t \approx 4.44 t$, which is about what we obtained at the mean field level\footnote{Here, there can be finite size effects due to the finite size of the chain, $N = 1024$.}.
+
+Mean field theory can be formulated in the \ac{GCE} as well.
+One simply chooses the chemical potential $\mu$, and then computes $N_{\uparrow, \downarrow}$ by filling the levels below $\mu$.
+The density is changed by tuning $\mu$.
+In the \ac{GCE} case, the calculation is self-consistent, and is determined iteratively\footnote{One must pay attention so as not to get stuck in metastable states.}: the densities are updates until convergence occurs.
+An example of the success of mean field is the discovery of striped phases of the Hubbard model, which are crucial in cuprate superconductors.
+Recent work probes these phases by the \ac{QMC} method we shall use in this thesis \cite{huang_stripe_2018}.
+In fact, mean field theory is insightful, but uncontrolled.
+It tends to overestimate the possibility of ordering since it always predicts a phase transition.
+Even if the transition does occur, generally its details are not perfectly captured (the critical temperature, the critical exponents, ...).
