@@ -1,80 +1,20 @@
-\section{Green's functions: Mott gap and spectral function}\label{sec:green}
+\section{Green's functions and Wick's theorem}\label{sec:green}
 
 Green's functions are the core of the first perturbative, diagrammatic approaches to the Hubbard model.
-However, here we try do give some intuition about how they work since they are the central quantity in the \acs{QMC} method we will use.
+They are very useful in reducing the enormous amount of variables that come into play in correlated systems to a manageable number.
+Here we try do give some intuition about how they work since they are the central quantity in the \acs{QMC} method we will use.
+For a very complete and thorough description of the ideas in this section see \cite{fetter_quantum_2003}.
 
-Considering the imaginary-time variable of the previous chapter $\tau = i t$, for $\tau > 0$, the (unequal-time) Green's function is defined as
+Considering the imaginary-time variable of the previous chapter $\tau = i t$, for $\tau > 0$, the Green's function is defined as
 
 \begin{equation}
 G_{\bm i \bm j} ( \tau, 0 ) = \left\langle c_{\bm i} ( \tau ) c_{\bm j}^\dagger ( 0 ) \right\rangle  \, , \text{with} \,\, c_{\bm i} ( \tau ) = e^{\mathcal{H} \tau } c_{\bm i} ( 0 ) e^{- \mathcal{H} \tau } 
 \end{equation}
 
-\subsection{Non-interacting case}
-
-In this limit, we can compute $G_{\bm i \bm j} ( \tau, 0 )$ analytically by going to momentum space.
-
-\begin{equation}
-c_{\bm k} ( \tau ) = e^{ \mathcal{H} \tau } c_{\bm k} ( 0 ) e^{-\mathcal{H} \tau } = e^{-\varepsilon_{\bm k} \tau } c_{\bm k} ( 0 )
-\end{equation}
-
-This equation can be verified by acting with the left hand side and with right hand side on the states $\left| 0 \right\rangle$ and $\left| 1 \right\rangle$, and noting that the result is the same.
-Alternatively, one can use the equation of motion $\partial_\tau \hat{A}(\tau) = [ \mathcal{H}, \hat{A} (\tau) ]$.
-To generalize the result of equation (\ref{eq:eqGreenNonInt}) for the \emph{equal-time} Green's function, we transform the fermionic operators in $G$ to momentum space, and use $\left\langle c_{\bm k} c_{\bm k}^\dagger \right\rangle = 1 - f_{\bm k}$ to obtain
-
-\begin{equation}
-G_{\bm i \bm j}(\tau, 0) = \frac{1}{N} \sum_{\bm k} e^{i \bm k \cdot (\bm i - \bm j )} ( 1 - f_{\bm k} ) e^{-\varepsilon_{\bm k} \tau } ,
-\end{equation}
-which is translationally invariant corresponding to the symmetry of the Hamiltionian.
-
-We can generalize our definition of the Green's function by using the time-ordering operator $\mathcal{T}$:
-
-\begin{equation}
-G_{\bm k}(\tau, 0) = - \left\langle \mathcal{T} c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ) \right\rangle ,
-\end{equation}
-where
-
-\begin{equation}
-\mathcal{T} c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ) =
-\begin{cases}
-c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ), \,\, \tau > 0 \\
-- c_{\bm k}^\dagger ( 0 ) c_{\bm k} ( \tau) , \,\, \tau < 0
-\end{cases}
-\end{equation}
-
-An important property follows immediately from this definition: $G ( \tau + \beta, 0 ) = - G( \tau, 0 )$ for $ -\beta < \tau < 0$.
-The Matsubara frequencies $\omega_n = (2n + 1) \pi / \beta$ appear when we Fourier transform:
-
-\begin{equation}
-G ( i \omega_n ) = \int_0^\beta \frac{d\tau}{\beta} G( \tau, 0) e^{i\omega_n \tau} \quad\quad G (\tau) = \sum_n G ( i \omega_n ) e^{ - i \omega_n \tau}
-\end{equation}
-
-In momentum space, and imaginary time, the Green's function may then be obtained
-
-\begin{equation}
-G_{\bm k} (\tau, 0 ) =
-\begin{cases}
--e^{-\varepsilon_{\bm k}} ( 1 - f_{\bm k} ) , \,\, 0 < \tau < \beta \\
-e^{-\varepsilon_{\bm k}} f_{\bm k} , \,\, -\beta < \tau < 0 ,
-\end{cases}
-\end{equation}
-which leads to
-
-\begin{equation}
-G_{\bm k} ( i \omega_n ) = \frac{1}{i\omega_n - \varepsilon_{\bm k} }
-\end{equation}
-in frequency space.This result may also be obtained by taking the partial derivative of the time-ordered Green's function written as
-
-\begin{equation}
-G_{\bm k} ( \tau, 0 ) = \left\langle c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ) \right\rangle \theta ( \tau ) - \left\langle c_{\bm k} ( 0 ) c_{\bm k}^\dagger ( \tau ) \right\rangle \theta ( -\tau )
-\end{equation}
-and Fourier transforming both sides to solve for $G ( i \omega_n )$.
-Taking a time derivative of $G$ implies computing commutators of $\mathcal{H}$ with the fermionic operators.
-The equation closes for quadratic Hamiltonians, which we, of course, know to be soluble.
-
 \subsection{Single site case}
 
 The Hubbard Hamiltonian does not distinguish between spin-up and spin-down sectors.
-Thus, let us consider the spin-up sector, and compute $G_\uparrow (\tau, 0) =  \left\langle c_{\uparrow} ( \tau) c_{\uparrow}^\dagger ( 0 ) \right\rangle$.
+Thus, without loss of generality, let us consider the spin-up sector, and compute $G_\uparrow (\tau, 0) =  \left\langle c_{\uparrow} ( \tau) c_{\uparrow}^\dagger ( 0 ) \right\rangle$.
 Only the states $\left| n_{\uparrow} n_{\downarrow} \right\rangle = $ $\left| 0\, 0 \right\rangle$, $\left| 0\, 1 \right\rangle$ contribute to the expectation due to the creation operator on the right, which gives 0, unless there is no spin up electron already in the state it acts upon.
 
 \begin{equation}
@@ -114,3 +54,66 @@ We could do a similar calculation for $\mu \neq 0$ by changing the spectral dens
 The spectral density consists of two delta functions separated by $U$, which is reminiscent of our result for the Mott insulating gap.
 In the same way that the gap softens (eventually disappearing) when we introduce hopping, the spectral function for the full Hubbard Hamiltonian changes accordingly, reflecting the same information about the properties of the system as the Green's function, encoded in a different manner.
 In \acs{QMC}, we can access $G(\tau, 0)$ and deduce the properties of the system from it.
+
+\subsection{Non-interacting case}
+
+In this limit, we can compute $G_{\bm i \bm j} ( \tau, 0 )$ analytically by going to momentum space.
+
+\begin{equation}
+c_{\bm k} ( \tau ) = e^{ \mathcal{H} \tau } c_{\bm k} ( 0 ) e^{-\mathcal{H} \tau } = e^{-\varepsilon_{\bm k} \tau } c_{\bm k} ( 0 )
+\end{equation}
+
+This equation can be verified by acting with the left hand side and with right hand side on the states $\left| 0 \right\rangle$ and $\left| 1 \right\rangle$, and noting that the result is the same.
+Alternatively, one can use the equation of motion $\partial_\tau \hat{A}(\tau) = [ \mathcal{H}, \hat{A} (\tau) ]$.
+To generalize the result of equation (\ref{eq:eqGreenNonInt}) for the \emph{equal-time} Green's function to  \emph{unequal-time} we transform the fermionic operators in $G$ to momentum space, and use $\left\langle c_{\bm k} c_{\bm k}^\dagger \right\rangle = 1 - f_{\bm k}$ to obtain
+
+\begin{equation}
+G_{\bm i \bm j}(\tau, 0) = \frac{1}{N} \sum_{\bm k} e^{i \bm k \cdot (\bm i - \bm j )} ( 1 - f_{\bm k} ) e^{-\varepsilon_{\bm k} \tau } ,
+\end{equation}
+which is translationally invariant corresponding to the symmetry of the Hamiltionian.
+
+We can generalize our definition of the Green's function by using the time-ordering operator $\mathcal{T}$:
+
+\begin{equation}
+G_{\bm k}(\tau, 0) = - \left\langle \mathcal{T} c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ) \right\rangle ,
+\end{equation}
+where
+
+\begin{equation}
+\mathcal{T} c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ) =
+\begin{cases}
+c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ), \,\, \tau > 0 \\
+- c_{\bm k}^\dagger ( 0 ) c_{\bm k} ( \tau) , \,\, \tau < 0
+\end{cases}
+\end{equation}
+
+An important property follows immediately from this definition: $G ( \tau + \beta, 0 ) = - G( \tau, 0 )$ for $ -\beta < \tau < 0$.
+The imaginary-time periodicity constraint implies that the frequencies that appear when we Fourier transform are the so called (fermionic) Matsubara frequencies $\omega_n = \frac{(2n + 1) \pi}{\beta}$\footnote{Analogously, for bosons, imaginary-time anti-periodicity implies that $\omega_n = 2n \pi / \beta$}.
+
+\begin{equation}
+G ( i \omega_n ) = \int_0^\beta \frac{d\tau}{\beta} G( \tau, 0) e^{i\omega_n \tau} \quad\quad G (\tau) = \sum_n G ( i \omega_n ) e^{ - i \omega_n \tau}
+\end{equation}
+
+In momentum space, and imaginary time, the Green's function then become
+
+\begin{equation}
+G_{\bm k} (\tau, 0 ) =
+\begin{cases}
+-e^{-\varepsilon_{\bm k}} ( 1 - f_{\bm k} ) , \,\, 0 < \tau < \beta \\
+e^{-\varepsilon_{\bm k}} f_{\bm k} , \,\, -\beta < \tau < 0 ,
+\end{cases}
+\end{equation}
+which leads to
+
+\begin{equation}
+G_{\bm k} ( i \omega_n ) = \frac{1}{i\omega_n - \varepsilon_{\bm k} }
+\end{equation}
+in frequency space. This result may also be obtained by taking the partial derivative of the time-ordered Green's function written in the form $
+G_{\bm k} ( \tau, 0 ) = \left\langle c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ) \right\rangle \theta ( \tau ) - \left\langle c_{\bm k} ( 0 ) c_{\bm k}^\dagger ( \tau ) \right\rangle \theta ( -\tau )
+$
+ and Fourier transforming both sides to solve for $G ( i \omega_n )$.
+Taking a time derivative of $G$ implies computing commutators of $\mathcal{H}$ with the fermionic operators.
+The equation closes for quadratic Hamiltonians, which we, of course, know to be soluble.
+
+\subsection{Finite temperature Wick's theorem for fermions}
+\label{subsec:wick}

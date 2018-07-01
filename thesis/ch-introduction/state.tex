@@ -22,9 +22,9 @@ Since then, numerous studies have been made due to the promising properties of t
 
 \begin{figure}[H]
 \hspace{1cm}
-\includegraphics[width = 4.7cm]{Introduction/graphene.png}
+\includegraphics[width = 4.2cm]{Introduction/graphene.png}
 \hspace{2cm}
-\includegraphics[width = 8.5cm]{Introduction/disp_rel.png}
+\includegraphics[width = 7cm]{Introduction/disp_rel.png}
 \caption[Graphene monolayer; graphene's dispersion relation.]{Left: \acf{AFM} picture of a graphene monolayer. The black area is a substrate used for fabrication purposes. The dark orange area is a monolayer of graphene. Right: Dispersion relation of graphene. The black line represents the Fermi energy. Close to it, the dispersion relation is linear, corresponding to massless excitations (taken from \cite{noauthor_nobel_nodate}). }
 \label{fig:graphene}
 \end{figure}	
@@ -109,7 +109,7 @@ Note that the class $P$ - of polynomial time algorithms - is a subclass of NP.} 
 One of the greatest open questions in computer science is whether $P = NP$.
 Solving the \emph{fermion-sign problem} would imply finding a solution to $P = NP$, which would constitute a major breakthrough.
 
-\subsection{Monte Carlo Method in  Classical Statistical Physics}
+\subsection{Monte Carlo Method in Statistical Physics}
 
 Monte Carlo methods form the largest and arguably most useful class of numerical methods used to approach statistical physics problems.
 Statistical physics often deals with computing quantities that describe the behavior of condensed matter systems.
@@ -419,7 +419,7 @@ Since $E_V(\bm \alpha)$ is bounded from below, this is equivalent to minimizing 
 The finite sampling size $M$, of course, introduces a statistical error common to all Monte Carlo methods. 
 However, the use of an approximate wave function introduces a systematic error that is hard to control since trial wave functions are generally introduced based on approximate, or heuristic arguments.
 
-\subsection{Diffusion Monte Carlo}\label{subsec:dmc}
+\subsection{Diffusion Monte Carlo and projective methods}\label{subsec:dmc}
 
 Variational Monte Carlo is severely limited by the use of a trial wave function $\psi_{\bm \alpha} (\bm r)$ because we may even not have enough information to even construct a reliable variational wave function.
 
@@ -479,3 +479,6 @@ However, if $E_T = E_0$ the wave function converges to the ground state one up t
 Diffusion \ac{QMC} makes use of equation (\ref{eq:dmc}), approximating $\phi_0(x)$ by $\psi (x, \tau)$ for sufficiently long time.
 The only requirement is that $\psi (x, \tau)$ and $\psi_0(x)$ overlap significantly so that $c_0$ is large enough to be numerically measurable, and we can always center a positive trial wave function in a region where $\psi_0(x)$ is large enough.
 Of course, this is always possible for a single particle, but note that it might fail for a many-fermion system, for which the wave function crosses a number of nodes due to its anti-symmetric nature.
+
+\subsection{Drawbacks of variational and projective methods and  Auxiliary Field \acs{QMC}}
+\label{subsec:introAFQMC}

@@ -1,7 +1,7 @@
 \section{Magnetism and mean field theory}\label{sec:magMFT}
 
 In this section we will build a picture of magnetism in the Hubbard model in increasing level of sophistication.
-As our degenerate perturbation theory  calculation of section (\ref{sec:effectiveHeisenber}) showed, the on-site interaction favors the situation in which neighboring fermions have opposite spins through an Heisenberg type interaction.
+As our degenerate perturbation theory  calculation of section (\ref{sec:effectiveHeisenberg}) showed, the on-site interaction favors the situation in which neighboring fermions have opposite spins through an Heisenberg type interaction.
 A different approach leads to the Stoner criterion for ferromagnetism.
 The argument is based on creating an imbalance between the numbers of spin-up and spin-down fermions, and analyzing the interplay between the resulting increase in kinetic energy, and decrease in potential energy.
 Finally, we formulate a (static) mean field theory for the Hubbard model, and discuss how it relates to the non-interacting case.
@@ -17,17 +17,17 @@ Otherwise, there is an energy cost, since we are obliged to fill higher energy l
 An unequal number of spin-up and spin-down electrons also decreases the potential energy.
 An extreme example is a completely polarized lattice.
 In that case, the potential energy is zero.
-Partial spin polarization makes double occupation unlikely, lowering the potential energy.
+More generally, partial spin polarization makes double occupation unlikely, lowering the potential energy.
 
 \begin{figure}[H]
 	\centering
-\hspace{12mm}\includegraphics[trim={0 3cm 0 2cm},clip, width=0.7\linewidth]{Hubbard/DOS.pdf}
+\hspace{12mm}\includegraphics[trim={0 7.5cm 0 7.5cm},clip, width=1 \linewidth]{Hubbard/dos.pdf}
 	\caption[Density of states of the \acs{1D} tight-binding model.]{Density of states of the \acs{1D} tight-binding model.
 	Here we represent a polarization of the spins, which leads to an increase in kinetic energy, since the imbalance of spins forces higher energy levels to be filled.}
 	\label{fig:dos}
 \end{figure}
 
-A system with density of states $N(E)$ has the density of spin-up and spin-down electrons, n, filling the energy levels up to the Fermi energy, $\varepsilon_F$.
+A system with density of states $N(E)$ has equal densities of spin-up and spin-down electrons, $n$, filling the energy levels up to the Fermi energy, $\varepsilon_F$.
 When we reduce, say the spin-up electron density by $\delta n$, the potential energy is lowered by $\delta P = U ( n + \delta n ) ( n - \delta n ) - U n^2 = - U (\delta n)^2$.
 
 The extra density of electrons $\delta n$ that is added to the down sector will occupy levels with energy greater than $\varepsilon_F$, so that $\delta n = N ( \varepsilon_F ) \delta E$.
@@ -58,7 +58,7 @@ n_\uparrow n_\downarrow &= \bigg[ \left\langle n_\uparrow \right\rangle + ( n_\u
 
 We consider a \say{mean field} in the sense that the average density of spin-up electrons interacts with the spin-down electrons and vice-versa.
 The last term subtracts the overcounted original single interaction term.
-From equation (\ref{eq:meanFieldNop}), we obtain the mean field Hamiltonian
+From equation (\ref{eq:meanFieldNop}), we obtain the quadratic mean field Hamiltonian
 
 \begin{equation}
 \mathcal{H}_{\text{MF}} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} \bigg) + U \sum_i \bigg( n_{i,\uparrow} \left\langle n_{i, \downarrow} \right\rangle + n_{i, \downarrow} \left\langle n_{i, \uparrow} \right\rangle - \left\langle n_{i, \uparrow} \right\rangle \left\langle n_{i, \downarrow} \right\rangle \bigg)
@@ -66,7 +66,7 @@ From equation (\ref{eq:meanFieldNop}), we obtain the mean field Hamiltonian
 
 To solve $\mathcal{H}_{\text{MF}}$, one merely has to diagonalize the corresponding matrix.
 In the ferromagnetic case, the average occupation is independent of the specific site, but can vary with the spin species: $n_{i, \uparrow(\downarrow)} = n \Pm m$, where $m$ is the magnetization, the order parameter of the transition to a ferromagnetic phase.
-Similarly, for the \acf{AF} case on a bipartite, we consider $n_{i, \uparrow(\downarrow)} = n \Pm (-1)^{i} m$, leading to a staggered potential.
+Similarly, for the \acs{AF} case on a bipartite, we consider $n_{i, \uparrow(\downarrow)} = n \Pm (-1)^{i} m$, leading to a staggered potential.
 
 Now we take on a \acl{LG} theory kind of approach.
 We compute the energy $E$ for fixed $n$ as a function of $m$, and inspect the system for ferromagnetic ordering: if the minimum lies at $m = 0$, the system is paramagnetic, otherwise it is ferromagnetic.

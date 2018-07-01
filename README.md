@@ -2,7 +2,22 @@
 
 This folder contains all the files needed to compile the code that builds the .pdf file with the thesis itself.
 
-# planning the thesis
+## To do list
+
+- Section on Wick's theorem
+- Variants of the Hubbard model
+- Conclude state of the art
+- Write ouline and original contributions
+- Fix what's already written on the auxField QMC section
+- Write keywords and summary
+- Benchmark 1D QMC Hubbard
+- Extend MFT
+- Use MFT for the nanoribbon
+- Quantify the matrix blow-up
+- Flat-histogram, ..., DOS of || B B ... B ||
+- Sign problem, sigma / < X > >> 1$
+
+## **Planning the thesis**
 
 ## 1. Introduction
 
