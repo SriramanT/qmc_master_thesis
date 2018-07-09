@@ -3,9 +3,8 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}State of The Art}{\reset@font\mtcSfont 5}{section.1.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.1}Beyond graphene: TMD nanoribbons}{\reset@font\mtcSSfont 5}{subsection.1.3.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.2}Introduction to \acl {QMC}}{\reset@font\mtcSSfont 7}{subsection.1.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.3}Monte Carlo Method in Statistical Physics}{\reset@font\mtcSSfont 9}{subsection.1.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.4}Variational Monte Carlo}{\reset@font\mtcSSfont 15}{subsection.1.3.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.5}Diffusion Monte Carlo and projective methods}{\reset@font\mtcSSfont 16}{subsection.1.3.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.6}Drawbacks of variational and projective methods and Auxiliary Field \acs {QMC}}{\reset@font\mtcSSfont 17}{subsection.1.3.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Original Contributions}{\reset@font\mtcSfont 17}{section.1.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Outline}{\reset@font\mtcSfont 18}{section.1.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.3}Variational Monte Carlo}{\reset@font\mtcSSfont 9}{subsection.1.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.4}Diffusion Monte Carlo and projective methods}{\reset@font\mtcSSfont 10}{subsection.1.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.3.5}Drawbacks of variational and projective methods. Auxiliary Field and the Sign Problem \acs {QMC}}{\reset@font\mtcSSfont 11}{subsection.1.3.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Original Contributions}{\reset@font\mtcSfont 12}{section.1.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Outline}{\reset@font\mtcSfont 12}{section.1.5}}

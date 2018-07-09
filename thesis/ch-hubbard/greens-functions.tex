@@ -88,7 +88,7 @@ c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ), \,\, \tau > 0 \\
 \end{equation}
 
 An important property follows immediately from this definition: $G ( \tau + \beta, 0 ) = - G( \tau, 0 )$ for $ -\beta < \tau < 0$.
-The imaginary-time periodicity constraint implies that the frequencies that appear when we Fourier transform are the so called (fermionic) Matsubara frequencies $\omega_n = \frac{(2n + 1) \pi}{\beta}$\footnote{Analogously, for bosons, imaginary-time anti-periodicity implies that $\omega_n = 2n \pi / \beta$}.
+The imaginary-time anti-periodicity constraint implies that the frequencies that appear when we Fourier transform are the so called (fermionic) Matsubara frequencies $\omega_n = \frac{(2n + 1) \pi}{\beta}$.\footnote{Analogously, for bosons, imaginary-time periodicity implies that $\omega_n = 2n \pi / \beta$}
 
 \begin{equation}
 G ( i \omega_n ) = \int_0^\beta \frac{d\tau}{\beta} G( \tau, 0) e^{i\omega_n \tau} \quad\quad G (\tau) = \sum_n G ( i \omega_n ) e^{ - i \omega_n \tau}
@@ -117,3 +117,66 @@ The equation closes for quadratic Hamiltonians, which we, of course, know to be 
 
 \subsection{Finite temperature Wick's theorem for fermions}
 \label{subsec:wick}
+
+As was emphasized in section \ref{sec:exactSolutions}, the key concept that will be used in deriving the auxiliary field method is a mapping to a single-particle problem defined in terms of a quadratic Hamiltonian.
+Thus, Wick's theorem may be applied to simplify products of fermionic operators.
+In \cite{fetter_quantum_2003}, the theorem is rigorously proven for both the ground state and the finite temperature cases.
+Here, we summarize the elements that will be useful in the next chapter by following the discussion of \cite{molinari_notes_2017}, and leave a more detailed discussion to appendix \ref{ap:wick}.
+
+A product of operators containing $k$ factors $c_i^\dagger$ and $n - k$ factors $c_i$ is brought into \emph{normal ordering} by the operator $\mathcal{N}$ (also written $: \,\,:$) defined as
+
+\begin{equation}
+\mathcal{N} [ c_1^{(\dagger)} c_2^{(\dagger)} ... c_n^{(\dagger)} ] = :  c_1^{(\dagger)} c_2^{(\dagger)} ... c_n^{(\dagger)}  : \, \equiv ( - 1 )^P c_{i_1}^{\dagger} c_{i_2}^{\dagger} ... c_{i_k}^{\dagger} c_{i_{k+1}} ... c_{i_n} ,
+\end{equation}
+where $P$ is the parity of the permutation $1, 2, ..., n \mapsto i_1, i_2, ..., i_n$.
+
+It is straightforward to simplify a product of two operators: $C_1 C_2 = \mathcal{N} [ C_1 C_2 ] + \{ C_1^- , C_2^+ \} $, using the anti-commutation rules.
+The last term is a c-number by assumption.
+Defining a contraction as $\contraction{}{C}{ {}_1 }{C_2}
+C_1 C_2 \equiv C_1 C_2 - \mathcal{N}[ C_1 C_2 ]$, we obtain $\contraction{}{C}{ {}_1 }{C_2}
+C_1 C_2 =  \{ C_1^- , C_2^+ \}  $.
+The definition of a contraction holds even there are other operators between the two contracted ones $C_{1, 2}$.
+Wick's theorem generalizes the resullt for a product of two operators, giving an expression for the product of an arbitrary number of operators.
+
+Let us state the ground state version of Wick's theorem for generic operators $C_i= C_i^+ + C_i^-$, where $C_i^{\Pm}$ is a combination of fermionic creation (annihilation) operators. 
+
+\begin{equation}
+C_1 C_2 ... C_n = \mathcal{N} [ C_1 C_2 ... C_n ] + \sum_{(ij)} \mathcal{N} [ C_1 C_2 ...
+\contraction{}{C_i}{...}{C_j}
+C_i ... C_j ... C_n ]
++ \sum_{(ij), (lm)} \mathcal{N} [ C_1 C_2 ...
+\contraction{}{C}{ {}_i ... C_l ... }{C_j}
+C_i ... 
+\contraction[2ex]{}{C}{ {}_l ... C_j ... }{C_m}C_l ... C_j ... C_m ... C_n ] + ... ,
+\end{equation}
+where the first sum is over single contractions of pairs, the second one on double contractions, and so on.
+For odd $n$, the last term contains single unpaired operators.
+Otherwise, they are just products of contractions, which are c-numbers.
+
+A general rule follows from the fact that the average of a normally ordered operator vanishes in the ground state.
+Two-point correlation functions determine all $n$-point correlation functions.
+In particular, for the case of 4 operators, using a self-explanatory abbreviated notation:
+
+\begin{equation}
+\left\langle gs | 1234 | gs \right\rangle = \left\langle 12 \right\rangle \left\langle 34 \right\rangle - \left\langle 13 \right\rangle \left\langle 24 \right\rangle + \left\langle 14 \right\rangle \left\langle 23 \right\rangle
+\end{equation}
+
+Of course, in the finite temperature case, Wick's theorem is not an operator identity because there is no non ambiguous way of defining normal ordering.
+However, for non-interacting particles, the thermal average of a product of one-particle operators is still a sum over all possible contractions of pairs.
+All that changes is the definition of the contraction, which is now defined in terms of the thermal average of the product of a pair of operators.
+Additionally, the theorem generalizes for time-ordered products, simply by replacing the thermal averages of the pair products by time-ordered pair averages.
+
+Our main point is that for a free theory, the $n$-particle Green's function
+
+\begin{equation}
+i^n \mathcal{G} ( x_1, x_2, ..., x_n; y_1, y_2, ... y_n ) \equiv \left\langle \mathcal{T} \psi ( x_1 ) \psi ( x_2 ) ... \psi ( x_n ) \psi^\dagger ( y_1 ) \psi^\dagger ( y_2 ) ... \psi^\dagger ( y_n ) \right\rangle
+\end{equation}
+is determined solely by the set of all one-particle Green's functions.
+Here $x$ and $y$ denote both the complete set of quantum numbers describing the system's degrees of freedom, and imaginary time.
+
+Applying Wick's theorem to the set of non-interacting (and thus independent) particles, we obtain
+
+\begin{equation}
+\mathcal{G} ( x_1, x_2, ... x_n; y_1, y_2,... y_n ) = \sum_P (- 1 )^P \mathcal{G}^0 ( x_1; y_{i_1} ) \mathcal{G}^0 ( x_2; y_{i_2} ) ... \mathcal{G}^0 ( x_n; y_{i_n} ) ,
+\end{equation}
+which corresponds to evaluating the determinant of the matrix $\bm G$, defined as $G_{ij} \equiv \mathcal{G}^0 ( x_i ; x_j )$ for $i, j = 1, 2, ..., n$.

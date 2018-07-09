@@ -2575,47 +2575,6 @@
       \endverb
       \keyw{Sign problem}
     \endentry
-    \entry{newman_monte_1999}{book}{}
-      \name{author}{2}{}{%
-        {{hash=e10496a046558ed6c27e3a9373727f7f}{%
-           family={Newman},
-           familyi={N\bibinitperiod},
-           given={M.\bibnamedelimi E.\bibnamedelimi J.},
-           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=19d09decb538e706f9ddd56a585045da}{%
-           family={Barkema},
-           familyi={B\bibinitperiod},
-           given={G.\bibnamedelimi T.},
-           giveni={G\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Clarendon Press}%
-      }
-      \strng{namehash}{9527a3795fb8705f8b732c41ba299bc0}
-      \strng{fullhash}{9527a3795fb8705f8b732c41ba299bc0}
-      \strng{bibnamehash}{9527a3795fb8705f8b732c41ba299bc0}
-      \strng{authorbibnamehash}{9527a3795fb8705f8b732c41ba299bc0}
-      \strng{authornamehash}{9527a3795fb8705f8b732c41ba299bc0}
-      \strng{authorfullhash}{9527a3795fb8705f8b732c41ba299bc0}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This book provides an introduction to Monte Carlo simulations in classical statistical physics and is aimed both at students beginning work in the field and at more experienced researchers who wish to learn more about Monte Carlo methods. The material covered includes methods for both equilibrium and out of equilibrium systems, and common algorithms like the Metropolis and heat-bath algorithms are discussed in detail, as well as more sophisticated ones such as continuous time Monte Carlo, cluster algorithms, multigrid methods, entropic sampling and simulated tempering. Data analysis techniques are also explained starting with straightforward measurement and error-estimation techniques and progressing to topics such as the single and multiple histogram methods and finite size scaling. The last few chapters of the book are devoted to implementation issues, including discussions of such topics as lattice representations, efficient implementation of data structures, multispin coding, parallelization of Monte Carlo algorithms, and random number generation. At the end of the book the authors give a number of example programmes demonstrating the applications of these techniques to a variety of well-known models.}
-      \field{day}{11}
-      \field{isbn}{978-0-19-851797-9}
-      \field{langid}{english}
-      \field{month}{2}
-      \field{note}{Google-Books-{ID}: J5aLdDN4uFwC}
-      \field{pagetotal}{500}
-      \field{title}{Monte Carlo Methods in Statistical Physics}
-      \field{year}{1999}
-      \field{dateera}{ce}
-      \verb{file}
-      \verb Newman1999.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/monte-carlo-books/Newman1999.pdf:application/pdf
-      \endverb
-      \keyw{Science / Physics / General,Computers / Desktop Applications / Design \& Graphics,Mathematics / Probability \& Statistics / General,Science / Mechanics / General,Monte Carlo}
-    \endentry
     \entry{kosztin_introduction_1996}{article}{}
       \name{author}{3}{}{%
         {{hash=c3691697b082b2e69d55f72f11728420}{%
@@ -2748,6 +2707,90 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0065327615000386
       \endverb
       \keyw{Quantum Monte Carlo,Electronic structure calculations,Fixed-node approximation,Metropolis–Hastings algorithm,Statistical methods,quantum monte carlo,diffusion,variational}
+    \endentry
+    \entry{hou_numerical_2009}{inbook}{}
+      \name{author}{4}{}{%
+        {{hash=1152022ae21c42723dbd02ef3e840663}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Zhaojun},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=2853def73650dc0f9dd85279b83aceaf}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wenbin},
+           giveni={W\bibinitperiod}}}%
+        {{hash=93a057e341d8b26f54ff6384b86c79d6}{%
+           family={Scalettar},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2e502740fbdacb1962a23f142035aa9a}{%
+           family={Yamazaki},
+           familyi={Y\bibinitperiod},
+           given={Ichitaro},
+           giveni={I\bibinitperiod}}}%
+      }
+      \name{bookauthor}{3}{}{%
+        {{hash=6976afb820819676e2bbe811cdbdf875}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima Y},
+           giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=4ec3e9c8301de4f687edbaef543e2206}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chun},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c94eab2fe25997199aafe2200d3f000f}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jian-Guo},
+           giveni={J\bibinithyphendelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{CO}-{PUBLISHED} {WITH} {HIGHER} {EDUCATION} {PRESS}}%
+      }
+      \strng{namehash}{528a3fda56821a6a9fe15e44f335246a}
+      \strng{fullhash}{c6c119e9b6a3cf31eb500001fb291f2b}
+      \strng{bibnamehash}{c6c119e9b6a3cf31eb500001fb291f2b}
+      \strng{authorbibnamehash}{c6c119e9b6a3cf31eb500001fb291f2b}
+      \strng{authornamehash}{528a3fda56821a6a9fe15e44f335246a}
+      \strng{authorfullhash}{c6c119e9b6a3cf31eb500001fb291f2b}
+      \strng{bookauthorbibnamehash}{cc75efbd1597c7be39a3f9144ecbace3}
+      \strng{bookauthornamehash}{7674bf3ba25bba5570b5deacbefb504d}
+      \strng{bookauthorfullhash}{cc75efbd1597c7be39a3f9144ecbace3}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Series in Contemporary Applied Mathematics}
+      \field{isbn}{978-981-4273-25-1 978-981-4273-26-8}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{Numerical Methods for Quantum Monte Carlo Simulations of the Hubbard Model}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{12}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 110}
+      \range{pages}{110}
+      \verb{doi}
+      \verb 10.1142/9789814273268_0001
+      \endverb
+      \verb{file}
+      \verb Bai2009.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Bai2009.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.worldscientific.com/doi/abs/10.1142/9789814273268_0001
+      \endverb
+      \verb{url}
+      \verb http://www.worldscientific.com/doi/abs/10.1142/9789814273268_0001
+      \endverb
+      \keyw{Quantum Monte Carlo,Numerical Methods,Determinant,Bai,Scalettar}
     \endentry
     \entry{fazekas_lecture_1999}{book}{}
       \name{author}{1}{}{%
@@ -3641,90 +3684,6 @@
       \endverb
       \keyw{superconductivity,Science / General,Technology \& Engineering / Engineering (General),Technology \& Engineering / Superconductors \& Superconductivity,hartree fock,mean field}
     \endentry
-    \entry{hou_numerical_2009}{inbook}{}
-      \name{author}{4}{}{%
-        {{hash=1152022ae21c42723dbd02ef3e840663}{%
-           family={Bai},
-           familyi={B\bibinitperiod},
-           given={Zhaojun},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=2853def73650dc0f9dd85279b83aceaf}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Wenbin},
-           giveni={W\bibinitperiod}}}%
-        {{hash=93a057e341d8b26f54ff6384b86c79d6}{%
-           family={Scalettar},
-           familyi={S\bibinitperiod},
-           given={Richard},
-           giveni={R\bibinitperiod}}}%
-        {{hash=2e502740fbdacb1962a23f142035aa9a}{%
-           family={Yamazaki},
-           familyi={Y\bibinitperiod},
-           given={Ichitaro},
-           giveni={I\bibinitperiod}}}%
-      }
-      \name{bookauthor}{3}{}{%
-        {{hash=6976afb820819676e2bbe811cdbdf875}{%
-           family={Hou},
-           familyi={H\bibinitperiod},
-           given={Thomas\bibnamedelima Y},
-           giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=4ec3e9c8301de4f687edbaef543e2206}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Chun},
-           giveni={C\bibinitperiod}}}%
-        {{hash=c94eab2fe25997199aafe2200d3f000f}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Jian-Guo},
-           giveni={J\bibinithyphendelim G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {{CO}-{PUBLISHED} {WITH} {HIGHER} {EDUCATION} {PRESS}}%
-      }
-      \strng{namehash}{528a3fda56821a6a9fe15e44f335246a}
-      \strng{fullhash}{c6c119e9b6a3cf31eb500001fb291f2b}
-      \strng{bibnamehash}{c6c119e9b6a3cf31eb500001fb291f2b}
-      \strng{authorbibnamehash}{c6c119e9b6a3cf31eb500001fb291f2b}
-      \strng{authornamehash}{528a3fda56821a6a9fe15e44f335246a}
-      \strng{authorfullhash}{c6c119e9b6a3cf31eb500001fb291f2b}
-      \strng{bookauthorbibnamehash}{cc75efbd1597c7be39a3f9144ecbace3}
-      \strng{bookauthornamehash}{7674bf3ba25bba5570b5deacbefb504d}
-      \strng{bookauthorfullhash}{cc75efbd1597c7be39a3f9144ecbace3}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Series in Contemporary Applied Mathematics}
-      \field{isbn}{978-981-4273-25-1 978-981-4273-26-8}
-      \field{langid}{english}
-      \field{month}{6}
-      \field{title}{Numerical Methods for Quantum Monte Carlo Simulations of the Hubbard Model}
-      \field{urlday}{7}
-      \field{urlmonth}{6}
-      \field{urlyear}{2018}
-      \field{volume}{12}
-      \field{year}{2009}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1\bibrangedash 110}
-      \range{pages}{110}
-      \verb{doi}
-      \verb 10.1142/9789814273268_0001
-      \endverb
-      \verb{file}
-      \verb Bai2009.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Bai2009.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://www.worldscientific.com/doi/abs/10.1142/9789814273268_0001
-      \endverb
-      \verb{url}
-      \verb http://www.worldscientific.com/doi/abs/10.1142/9789814273268_0001
-      \endverb
-      \keyw{Quantum Monte Carlo,Numerical Methods,Determinant,Bai,Scalettar}
-    \endentry
     \entry{fetter_quantum_2003}{book}{}
       \name{author}{2}{}{%
         {{hash=e09fdf848e6504238c704382c231798f}{%
@@ -3766,6 +3725,50 @@
       \endverb
       \keyw{Science / Physics / General,Science / Physics / Quantum Theory,Science / Waves \& Wave Mechanics,Green's functions}
     \endentry
+    \entry{molinari_notes_2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f74cc63462bf27b659e7b1a6d448796d}{%
+           family={Molinari},
+           familyi={M\bibinitperiod},
+           given={Luca\bibnamedelima Guido},
+           giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f74cc63462bf27b659e7b1a6d448796d}
+      \strng{fullhash}{f74cc63462bf27b659e7b1a6d448796d}
+      \strng{bibnamehash}{f74cc63462bf27b659e7b1a6d448796d}
+      \strng{authorbibnamehash}{f74cc63462bf27b659e7b1a6d448796d}
+      \strng{authornamehash}{f74cc63462bf27b659e7b1a6d448796d}
+      \strng{authorfullhash}{f74cc63462bf27b659e7b1a6d448796d}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In these pedagogical notes I introduce the operator form of Wick's theorem, i.e. a procedure to bring to normal order a product of 1-particle creation and destruction operators, with respect to some reference many-body state. Both the static and the time- ordered cases are presented.}
+      \field{day}{25}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{{arXiv}:1710.09248 [cond-mat, physics:math-ph]}
+      \field{month}{10}
+      \field{title}{Notes on Wick's theorem in many-body theory}
+      \field{urlday}{2}
+      \field{urlmonth}{7}
+      \field{urlyear}{2018}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 1710.09248
+      \endverb
+      \verb{file}
+      \verb arXiv.org Snapshot:/Users/franciscobrito/Zotero/storage/A3VE8IRQ/1710.html:text/html;Molinari2016.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/many-body-theory/Molinari2016.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1710.09248
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1710.09248
+      \endverb
+      \keyw{Condensed Matter - Strongly Correlated Electrons,Mathematical Physics}
+    \endentry
     \entry{huang_stripe_2018}{article}{}
       \name{author}{5}{}{%
         {{hash=abd8c4d285f958a07a29a987db42f04e}{%
@@ -3800,8 +3803,8 @@
       \strng{authorbibnamehash}{b1ae1f30f5a1848aa9620fcdb96753e6}
       \strng{authornamehash}{b33ca7d9c92e6f199609c562f0a7612e}
       \strng{authorfullhash}{b1ae1f30f5a1848aa9620fcdb96753e6}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The phase diagram of the Hubbard model is studied numerically by varying parameters and suggests that spin stripe order can be observable at accessible temperatures. A team led by Thomas P. Devereaux from Stanford University and colleagues from {SLAC} National Accelerator Laboratory and University of North Dakota investigate emergence of spin stripe orders in the Hubbard model by tuning various parameters in the determinant quantum Monte Carlo simulations and the density matrix renormalization group calculations. They show that including the next-nearest-neighbor hopping term, which was often neglected in previous studies, in the Hubbard model leads to nearly half-filled spin stripes upon hole-doping, while no stripes upon electron-doping. The consistence of these findings with experimental results on both electron and hole-doped cuprate superconductors supports a unified description across a large portion of the cuprate phase diagram.}
@@ -3834,6 +3837,47 @@
       \verb https://www.nature.com/articles/s41535-018-0097-0
       \endverb
       \keyw{hubbard,order}
+    \endentry
+    \entry{newman_monte_1999}{book}{}
+      \name{author}{2}{}{%
+        {{hash=e10496a046558ed6c27e3a9373727f7f}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={M.\bibnamedelimi E.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=19d09decb538e706f9ddd56a585045da}{%
+           family={Barkema},
+           familyi={B\bibinitperiod},
+           given={G.\bibnamedelimi T.},
+           giveni={G\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Clarendon Press}%
+      }
+      \strng{namehash}{9527a3795fb8705f8b732c41ba299bc0}
+      \strng{fullhash}{9527a3795fb8705f8b732c41ba299bc0}
+      \strng{bibnamehash}{9527a3795fb8705f8b732c41ba299bc0}
+      \strng{authorbibnamehash}{9527a3795fb8705f8b732c41ba299bc0}
+      \strng{authornamehash}{9527a3795fb8705f8b732c41ba299bc0}
+      \strng{authorfullhash}{9527a3795fb8705f8b732c41ba299bc0}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This book provides an introduction to Monte Carlo simulations in classical statistical physics and is aimed both at students beginning work in the field and at more experienced researchers who wish to learn more about Monte Carlo methods. The material covered includes methods for both equilibrium and out of equilibrium systems, and common algorithms like the Metropolis and heat-bath algorithms are discussed in detail, as well as more sophisticated ones such as continuous time Monte Carlo, cluster algorithms, multigrid methods, entropic sampling and simulated tempering. Data analysis techniques are also explained starting with straightforward measurement and error-estimation techniques and progressing to topics such as the single and multiple histogram methods and finite size scaling. The last few chapters of the book are devoted to implementation issues, including discussions of such topics as lattice representations, efficient implementation of data structures, multispin coding, parallelization of Monte Carlo algorithms, and random number generation. At the end of the book the authors give a number of example programmes demonstrating the applications of these techniques to a variety of well-known models.}
+      \field{day}{11}
+      \field{isbn}{978-0-19-851797-9}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{note}{Google-Books-{ID}: J5aLdDN4uFwC}
+      \field{pagetotal}{500}
+      \field{title}{Monte Carlo Methods in Statistical Physics}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Newman1999.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/monte-carlo-books/Newman1999.pdf:application/pdf
+      \endverb
+      \keyw{Science / Physics / General,Computers / Desktop Applications / Design \& Graphics,Mathematics / Probability \& Statistics / General,Science / Mechanics / General,Monte Carlo}
     \endentry
     \entry{santos_introduction_2003}{article}{}
       \name{author}{1}{}{%

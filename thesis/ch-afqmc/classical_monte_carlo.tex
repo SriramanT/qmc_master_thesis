@@ -1,0 +1,262 @@
+\section{Monte Carlo Method in Statistical Physics}
+\label{sec:classical_mc}
+
+Monte Carlo methods form the largest and arguably most useful class of numerical methods used to approach statistical physics problems.
+Statistical physics often deals with computing quantities that describe the behavior of condensed matter systems.
+The main difficulty one faces when doing so has to do with the collective nature of these systems.
+Many identical components comprise these systems, and while the equations that govern the behavior of the whole may be easy to write down, their solution is in general a remarkably laborious mathematical problem.
+
+The exponentially large number of configurations of a typical condensed matter system can be daunting.
+Analytical solutions are more often than not hopeless and even numerical solutions are seemingly challenging.
+However, they give valuable information lying between theory and experiment, and connecting them.
+
+Suppose you try to sample uniformly from the probability distribution of all possible configurations of one of the aforementioned systems.
+Changes are your algorithm will not end before the Universe does.
+This is the computational complexity hurdle.
+A related issue is that of finite size effects.
+We are far from being able to simulate a macroscopically sized system. 
+At best we can simulate a system that has only a minuscule fraction of the actual size of the corresponding real world system.
+Amazingly there are techniques that allow us to efficiently extract information out of relatively small size simulations.
+Nonetheless, increasing the system size systematically improves the reliability of a simulation.
+Thus, the more efficient the algorithm is, the larger the system we can simulate in a fixed time.
+
+The sheer number of equations describing a condensed matter system, and sometimes the strong coupling between them deems the task of finding an exact solution either very tough or even impossible.
+It is not even clear whether an analytical solution would be of any use in many cases, and a statistical and numerical treatment often allows us to study more effectively the key properties of a system.
+
+Strikingly, we are able to describe a system that is governed by a macroscopically large number of equations in terms of only a few variables.
+The loss of information in doing so is only apparent.
+The statistical description is so effective because most of the possible states of the system are extremely improbable when compared to the relevant very narrow part of configuration space.
+The success of the field is largely attributed to the averaging out that naturally occurs when we measured a property of a macroscopic system.
+
+The law of large numbers affords an approximation to integrals which can be written as an expectation of a random variable. Upon drawing enough independent samples from the corresponding distribution, the sample mean gets arbitrarily close to the integral at stake.
+
+\begin{equation}\label{eq:int_mean}
+\mathbb{E} [f(X)] = \int dx f(x) p(x),
+\end{equation}
+where $p(x)$ is the distribution of $X$. 
+
+We could simply draw $M$ independent and identically distributed samples $x_{1,...M}$ from $p(x)$ and approximate the integral as
+
+\begin{equation}
+\frac{1}{M} \sum_{k=1}^M f (x_k) , 
+\end{equation}
+which in most cases converges to the desired expectation, as long as $M$ is large enough. How large?
+
+\begin{equation}\label{eq:variance}
+\text{Var}\bigg( \frac{1}{M} \sum_{k=1}^M f(x_k) \bigg) = \frac{1}{M} \text{Var}\bigg( f(x_1) \bigg) \sim \mathcal{O}\bigg(\frac{1}{M}\bigg)
+\end{equation}
+
+Thus, the correction to the sample mean is of order $\mathcal{O}(\frac{1}{\sqrt{M}})$ as long as $\text{Var}\big( f(x_1) \big) \sim 1$.
+
+How do we sample from an arbitrary distribution $p(X)$? The idea is to first make an educated choice of a Markov Chain with the prescribed stationary distribution from which we ultimately desire to sample from, $p(X)$. After a sufficiently high number of steps, a Markov Chain Monte Carlo (MCMC) algorithm generates samples from the target distribution. Imposing some conditions on this Markov Chain, namely that it should be irreducible, aperiodic and positive recurrent, the ergodic theorem guarantees that the empirical measures of the aforementioned sampler approach the target stationary distribution. Another important condition to impose on this Markov Chain is detailed balance. Let the transition matrix be $\bm P = [P_{\mu \rightarrow \nu}]$, and the state space $\Omega$ be $\{\pi_\mu | \mu=1, ..., |\Omega| \}$, where $|\Omega|$ is the total number of possible states. Then, the condition of detailed balance is defined for all $\mu, \nu$ as
+
+\begin{equation}\label{eq:detBal}
+\pi_\mu P_{\mu \rightarrow \nu} = P_{\nu \rightarrow \mu} \pi_\nu
+\end{equation}
+
+Consider a system in state $\mu$ that makes transitions to state $\nu$ at a rate $R_{\mu \rightarrow  \nu}$ (that specifies the system's dynamics) and vice-versa.
+The probability that a system is in state $\mu$ at time $t$, $p_\mu (t)$, such that $\sum_\mu p_\mu (t) = 1$, is given by the master equation(s):
+
+\begin{equation}\label{eq:master}
+\frac{d p_\mu}{dt} = \sum_\nu \big[ p_\nu (t) R_{\nu \rightarrow \mu} - p_\mu (t) R_{\mu \rightarrow \nu} \big] \quad \forall \mu \in \Omega
+\end{equation}
+
+The equilibrium occupation probabilities at finite temperature $T$ follow the Boltzmann distribution.
+
+\begin{equation}
+\pi_\mu = \lim_{t \rightarrow \infty} p_\mu (t) = \frac{1}{Z} e^{ - E_\mu / k_B T} ,
+\end{equation}
+where $E_\mu$ is the energy of state $\mu$, $k_B$ is Boltzmann's constant, and $Z$ is the partition function, from which we can extract thermodynamic functions in terms of expectations of physical quantities $\left\langle Q \right\rangle$, and response functions in terms of their variance $\sigma_Q^{\,\, 2}$.
+
+Imposing the condition of stationarity on equation (\ref{eq:master}), $d_t p_\mu = 0$ , and noting that $ P_{\mu\rightarrow \nu} = R_{\mu\rightarrow \nu}  dt$, we obtain the equilibrium condition
+
+\begin{equation}\label{eq:equilibrium}
+\sum_\nu \pi_\mu P_{\mu \rightarrow \nu} = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu \iff \pi_\mu \sum_\nu P_{\mu \rightarrow \nu} = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu \iff \pi_\mu = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu
+\end{equation}
+
+This condition is enough to ensure convergence to an equilibrium of the dynamics of the Markov process.
+However, it does not guarantee that the reached distribution is our desired one, $\bm \pi$, after running the process for long enough.
+The probability of a state evolves according to
+
+\begin{equation}
+\pi_\nu ( t + 1 ) = \sum_\mu P_{\mu\rightarrow\nu}  \pi_\mu ( t ) \iff \bm \pi ( t + 1 ) = \bm P \bm \pi ( t )
+\end{equation}
+
+The stationary distribution of a Markov chain obeys
+
+\begin{equation}
+\bm \pi ( \infty ) = \bm P \bm \pi ( \infty ) ,
+\end{equation}
+however, condition (\ref{eq:equilibrium}) also allows  for limit cycles of length $n$, where $\bm \pi$ rotates around a number of configurations:
+
+\begin{equation}
+\bm \pi ( \infty ) = \bm P^n \bm \pi ( \infty ) ,
+\end{equation}
+where $\bm P^n$ is the n-th power of $\bm P$.
+
+Detailed balance is a stronger requirement than the equilibrium condition, which eliminates limit cycles, thus ensuring that our sampler draws configurations from the desired distribution.
+Intuitively, detailed balance corresponds to incorporating time-reversal symmetry in a simulation.
+The condition imposes a constraint on the Markov transition probabilities:
+
+\begin{equation}\label{eq:markovCondition}
+\frac{P_{\mu\rightarrow\nu}}{P_{\nu\rightarrow\mu}} = \frac{\pi_\nu}{\pi_\mu} = e^{-\beta ( E_\nu - E_\mu ) }
+\end{equation}
+
+Crucially, Monte Carlo methods employ \emph{importance sampling}.
+It turns out that we can improve upon our estimate of $\mathbb{E} [f(X)]$ by introducing a separate distribution $q(x)$, and defining the weight function as $w(x) = p(x)/ q(x)$.
+Then, we can rewrite equation (\ref{eq:int_mean}):
+
+\begin{equation}
+\mathbb{E} [f(X)] = \int dx f(x) q(x) w(x) = \mathbb{E} [f(Y) w(Y)],
+\end{equation}
+with $Y \sim q$, i.e. the random variable $Y$ follows the distribution $q(Y)$.
+
+It appears as though we didn't gain anything. However, by choosing $q$ wisely, we can actually reduce the variance we computed in equation (\ref{eq:variance}):
+
+\begin{equation}
+\text{Var}\bigg( \frac{1}{M} \sum_{k=1}^M f(y_k) w(y_k) \bigg) = \frac{1}{M} \text{Var}\bigg( f(y_1) w(y_1) \bigg)
+\end{equation}
+
+Since we didn't make any assumptions about $q(Y)$, it may be chosen so as to minimize the variance, hence the error of the Monte Carlo estimator, improving the approximation of the expectation. However, note that the error remains proportional to $\frac{1}{\sqrt{M}}$.
+In practice, we devise a method to select the portion of state space which contains states contributing more significantly to the average.
+This procedure ensures that $\text{Var}\big( f(y_1) w(y_1) \big) \sim 1$, improving the efficiency of our sampler.
+The choice of the weight function translates to the averaging process by changing the estimator.
+Explicitly computing the average
+
+\begin{equation}
+\left\langle Q \right\rangle = \frac{ \sum_\mu Q_\mu e^{-\beta E_\mu} }{ \sum_\mu e^{-\beta E_\mu}}
+\end{equation}
+is only tractable for very small systems.
+In practice, we choose a subset of M states $\{\mu_1, \mu_2, ..., \mu_M \} $, and estimate the average as
+
+\begin{equation}
+Q_M = \frac{ \sum_{i=1}^M Q_{\mu_i} \pi_{\mu_i}^{-1} e^{ -\beta E_{\mu_i} } }{ \sum_{j=1}^M \pi_{\mu_j}^{-1} e^{ -\beta E_{\mu_j} }  }
+\end{equation}
+
+The estimate improves as $N$ increases, and when $N\rightarrow \infty$, $Q_M \rightarrow \left\langle Q \right\rangle$.
+The accuracy of the estimator depends on the choice of the probabilities $\bm \pi$, which is related to the aforementioned variance.
+For example, if $\bm \pi$ corresponds to the uniform distribution, i.e. $\pi_\mu = \frac{1}{| \Omega |} \forall \mu \in \Omega$, we have
+
+\begin{equation}
+Q_M = \frac{ \sum_{i=1}^M Q_{\mu_i} e^{ -\beta E_{\mu_i} } }{ \sum_{j=1}^M e^{ -\beta E_{\mu_j} }  } ,
+\end{equation}
+which turns out to be a poor choice since most of the visited states contribute negligibly to the average, leading to an inaccurate estimate.
+The sum is dominated by a small subset of states, which we would like to access.
+The idea of the Quantum (Classical) Monte Carlo method is to simulate the random quantum (thermal) fluctuations of a system, as it oscillates between states in a given time frame \cite{newman_monte_1999}. Instead of visiting these states uniformly, the most relevant part of the phase space is sampled more frequently, overcoming the seemingly exponential complexity of computing a sample mean numerically.
+Even though only a small fraction of the system's states are sampled, we then obtain an accurate estimate of physical quantities of interest, namely energy, and correlation functions. This is implemented via a proposal-acceptance scheme.
+
+To exploit the freedom given by condition (\ref{eq:markovCondition}), we note that we can always introduce a non-zero \say{stay-at-home} probability $P_{\mu \rightarrow \mu} \in [0, 1] $.
+Regardless of its value, detailed balance is satisfied.
+Similarly, any adjustment in $P_{\mu\rightarrow \nu}$ must be compensated by changing $P_{\nu\rightarrow \mu}$ to preserve their ratio.
+Break the transition probability into a selection probability and an acceptance ratio, respectively:
+
+\begin{equation}
+\frac{P_{\mu\rightarrow\nu}}{P_{\nu\rightarrow\mu}}= \frac{G_{ \mu\rightarrow\nu} A_{\mu\rightarrow\nu}}{G_{ \nu\rightarrow\mu} A_{\nu\rightarrow\mu}}
+\end{equation}
+
+The Markov process now consists of generating a chain of states according to $G_{ \mu\rightarrow\nu}$, which are then accepted or rejected depending on $A_{\mu\rightarrow\nu}$.
+Since we want to make the algorithm as efficient as possible, we want to make the acceptance ratio as close to one as possible to avoid useless steps.	
+The most common way to do this is to fix the largest of them to one, and ajust the other accordingly.
+The acceptance ratio will be close to one more often if $G_{ \mu\rightarrow\nu}$ includes most of the dependence of $P_{\mu\rightarrow\nu}$ on the characteristics of the states $\mu, \nu$.
+Ideally, states would always be selected with the correct transition probability, and the acceptance ratio would be fixed to unity.
+Good algorithms approach this situation, and much effort has been directed at optimizing them to do so.
+
+By far, the most common sampling scheme choice is the Metropolis-Hastings algorithm, which we now  describe.
+
+We select the transition probability to be uniform, and impose detailed balance through the choice of the acceptance ratios:
+
+\begin{equation}
+\frac{ P_{\mu\rightarrow\nu }}{ P_{\nu\rightarrow\mu }} = \frac{ A_{\mu\rightarrow\nu }}{ A_{\nu\rightarrow\mu } } = e^{-\beta ( E_\nu - E_\mu )}
+\end{equation}
+
+Suppose that $E_\mu < E_\nu $.
+Then, $A ( \nu \rightarrow \mu ) > A ( \mu \rightarrow \nu ) $, and since only the acceptance ratio is fixed, we may freely set $A ( \nu \rightarrow \mu ) = 1$, which fixes $A ( \mu \rightarrow \nu ) = e^{-\beta ( E_\nu - E_\mu ) }$.
+This choice maximizes the efficiency of the algorithm.
+In short, we propose a random new state uniformly, and then we accept it with probability $A_{\mu\rightarrow \nu} = \min (1,  e^{-\beta ( E_\nu - E_\mu )})$.
+
+Before we can use the states generated by our sampler to measure averages of physical quantities, we must reach the stationary distribution of the Markov process.
+We consider this condition to be satisfied after a time $\tau_{\text{eq}}$, measured in steps of the algorithm.
+When we consider a lattice model with a discrete set of states at each site $i = 1, 2, ..., N$, we say that a \emph{sweep} is completed whenever $N$ Monte Carlo steps are performed.
+Thus, the number of \say{warm-up} sweeps is $W = \tau_{\text{eq}} / N$.
+
+Before running a simulation, we need to decide how many sweeps we need to get an accurate estimate of the average.
+The problem is that we need uncorrelated samples to average over.
+To clarify, let us choose a specific model.
+The paradigmatic model of statistical physics is the Ising model, a classical model of a magnet, which consists of considering spins-$1/2$ on a lattice, interacting only with their nearest neighbors.
+Since each spin can only take on two values, say $\pm 1$, there are $2^N$ possible states.
+The Hamiltonian reads
+
+\begin{equation}
+H = - J \sum_{\left\langle i, j \right\rangle } s_i s_j - B \sum_i s_i ,
+\end{equation}
+where $\left\langle i, j \right\rangle$ means that $i, j $ are nearest neighbors on the lattice.
+
+A simple strategy to sample configurations of the Ising model is single-spin-flip dynamics.
+We start with a random configuration of the spins, and then propose new configurations at each step by flipping a single spin at a given site.
+A sweep is completed after we propose a spin flip at every site on the lattice.
+
+Consecutive configurations generated by this chain differ only slightly.
+Thus, it takes some time for the system to reach a configuration which is significantly different from the initial one.
+This characteristic time is called the correlation time $\tau_c$.
+A rigorous manner to estimate $\tau_c$ is through the time-displaced auto-correlation function associated to some quantity being measured.
+An example of a relevant quantity for the case of the Ising model is the magnetization per site:
+
+\begin{equation}
+m = \frac{1}{N} \sum_i s_i
+\end{equation}
+
+Its associated time-displaced auto-correlation is
+
+\begin{equation}
+\chi_m ( t ) = \int dt' \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) = \int dt' \bigg( m ( t' ) m ( t' + t ) - \left\langle m \right\rangle^2 \bigg)
+\end{equation}
+giving a measure of how correlated two measurements of the magnetization separated by a simulation time $t$ are.
+
+The typical time-scale on which $\chi_m (t)$ falls off is a measure of the correlation time of the simulation.
+In particular, at long times it falls off exponentially.
+The definition of $\tau_c$ stems from this characteristic long-time behavior: $\chi_m (t) \sim e^{-t / \tau_c}$.
+In practice, after waiting for $2\tau_c$, the measurements are virtually uncorrelated.
+Let $A$ be the number of sweeps roughly  corresponding to $2\tau_c$ steps.
+Then, if we make $S$ sweeps of the lattice during the simulation, the number of measurements (waiting for $A$ sweeps between them) is
+
+\begin{equation}
+M = \frac{S - W}{A}
+\end{equation}
+
+There are many ways to estimate $\tau_c$ from $\chi_m (t)$.
+The simplest consists of making an exponential fit in a given range of times.
+However, this might be unreliable since the estimate depends strongly on the chosen range.
+An alternative is to compute the \say{integrated} correlation time:
+
+\begin{equation}
+\int_0^\infty dt \frac{\chi_m ( t ) }{\chi_m ( 0 ) } = \int_0^\infty dt e^{-t / \tau_c} = \tau_c  ,
+\end{equation}
+which is less sensitive, but not perfect either since the error that is introduced when the assumption  that \say{long-time} behavior has been reached is arbitrary and introduces an uncontrolled error.
+Moreover, the very long-time behavior of the auto-correlation is rather noisy and must be excluded.
+
+Using measured data for the magnetization at evenly-spaced times, we may construct the time-displaced auto-correlation function up to an unimportant constant, which does not affect the estimate of the correlation time:
+
+\begin{equation}
+\chi_m (t) = \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m (t') m(t' + t) - \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m (t') \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m(t' + t) ,
+\end{equation}
+where $t_{\text{max}}$ is the total simulation time.
+
+One should be careful when using this expression at very long times.
+As $t$ approaches $t_{\text{max}}$, the upper limit of the sums decreases, and the integration interval becomes narrower.
+Since $m (t)$ fluctuates randomly at very long times, the statistical error associated to $\chi_m (t)$ becomes more prominent as $t$ approaches $t_{\text{max}}$.
+This turns out not to be problematic since typical simulations run for many correlation times.
+Thus, the tails of the auto-correlation may safely be neglected because the correlations will have already vanished, by definition.
+
+To finish our discussion on the issue of correlations, we note that if we have a total of $n_s$ samples of, for instance, magnetization data, the complexity of computing $\chi_m$ is $\mathcal{O}(n_s^2)$.
+It is possible to speed up this process by computing its Fourier transform $\tilde{\chi}_m(\omega)$, and inverting to recover $\chi_m (t)$.
+This can be done via a standard \ac{FFT} algorithm in $\mathcal{O}(2 n_s \log n_s )$ flops.
+To do this, we apply the following trick
+
+\begin{equation}
+\begin{split}
+\tilde{\chi}_m ( \omega ) &= \int dt e^{i\omega t} \int dt' \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) \\
+&= \int dt \int dt' e^{-i\omega t'} \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) e^{i\omega ( t' + t )} \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) \\
+&= \tilde{m}' (\omega) \tilde{m}' (- \omega) = | \tilde{m}' (\omega) |^2 ,
+\end{split} 
+\end{equation}
+where $\tilde{m}' (\omega)$ is the Fourier transform of $m' (t) = m(t) - \left\langle m \right\rangle$\footnote{The only difference between $\tilde{m}' (\omega)$ and $\tilde{m} (\omega)$, is that $\tilde{m}' (0) = 0$, while $\tilde{m} (0) \neq 0$. Thus, one can also compute $\tilde{m} (\omega)$ and then set its $\omega = 0$ component to zero.}.

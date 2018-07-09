@@ -12,7 +12,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Minimal models of electron correlations in energy bands}{19}{chapter.2}
+\contentsline {xchapter}{Minimal models of electron correlations in energy bands}{15}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -20,21 +20,13 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Discussing the algorithm}{67}{chapter.4}
+\contentsline {xchapter}{Applications}{73}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.1}{\ignorespaces Nearest neighbors on the nanoribbon.\relax }}{76}{table.caption.43}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Stabilization}{69}{chapter.5}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Applications}{71}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.1}{\ignorespaces Nearest neighbors on the nanoribbon.\relax }}{74}{table.caption.43}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Conclusions and Future Work}{75}{chapter.7}
+\contentsline {xchapter}{Conclusions and Future Work}{77}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -51,3 +43,7 @@
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Obtaining an effective Heisenberg Hamiltonian as the $U/t \gg 1$ limit of the Hubbard model}{D-1}{appendix.D}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{On the finite temperature Wick's theorem}{E-1}{appendix.E}

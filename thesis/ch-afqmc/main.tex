@@ -10,13 +10,10 @@
 
 \slshape
 
-The interactions between the electrons in a solid give rise to effects that arise specifically due to the many-body nature of the system. The Hubbard model is a minimal model that encapsulates electron correlations. It goes beyond the periodic ionic potential perturbation to the free electron gas or tight binding approaches, which lead to band theory. As we have seen, one obtains the Hubbard Hamiltonian by adding the simplest possible electron-electron interaction term to a tight binding Hamiltonian: an on-site interaction term that penalizes double occupancy of a site. From it, we can make predictions about properties of a strongly correlated system, namely magnetic and superconducting behavior, and metal-insulator transitions.
-
-Auxiliary-field, or Determinant Quantum Monte Carlo \footnote{AFQMC or DQMC, respectively.} is a simulation method that is commonly used to simulate the Hubbard model, allowing one to capture the elusive effects of electron correlations, for example in the two-dimensional graphene-like nanostructures we are concerned with.
-
-Among the various methods belonging to the family of QMC methods, AFQMC has the advantage of  allowing us to circumvent the sign problem for the half filled Hubbard model. The sign problem is an uncontrolled numerical error due to the antisymmetry of the many-electron wave function, leading to oscillations in the sign of the quantities that we are interested in measuring. These oscillations deem the algorithm exponentially complex in the size of the system, in general, but it is possible to overcome this hurdle for a class of models, namely the Hubbard model at half filling. The difficulty lies in computing averages of a quantity $X$ that is very close to zero, on average, but has a large variance, i.e. $\sigma_X / \left\langle X \right\rangle \gg 1$.
+Explain the method
 
 \normalfont
 
-\input{ch-afqmc/1.theoretical_framework.tex}
+\input{ch-afqmc/classical_monte_carlo.tex}
+\input{ch-afqmc/theoretical_framework.tex}
 \cleardoublepage

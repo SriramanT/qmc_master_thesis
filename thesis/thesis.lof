@@ -18,29 +18,29 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Minimal models of electron correlations in energy bands}{19}{chapter.2}
+\contentsline {xchapter}{Minimal models of electron correlations in energy bands}{15}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphical comparison between the Ising and the Hubbard models.}}{20}{figure.caption.22}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphical comparison between the Ising and the Hubbard models.}}{17}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Hydrogen atomic wave functions.}}{22}{figure.caption.23}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Hydrogen atomic wave functions.}}{19}{figure.caption.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Bipartite lattices and antiferromagnetic order.}}{26}{figure.caption.26}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Bipartite lattices and antiferromagnetic order.}}{23}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{29}{figure.caption.28}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{25}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Electron density in the purely atomic limit of the Hubbard model}}{34}{figure.caption.29}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Electron density in the purely atomic limit of the Hubbard model}}{30}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Magnetization as a function of the on-site interaction $\left \delimiter "426830A m^2 \right \delimiter "526930B (U)$ in the single site Hubbard model for varying temperature $T$.}}{35}{figure.caption.30}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Magnetization as a function of the on-site interaction $\left \delimiter "426830A m^2 \right \delimiter "526930B (U)$ in the single site Hubbard model for varying temperature $T$.}}{32}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Magnetization as a function of temperature $\left \delimiter "426830A m^2 \right \delimiter "526930B (T)$ in the single site Hubbard model for varying chemical potential $\mu $.}}{35}{figure.caption.31}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Magnetization as a function of temperature $\left \delimiter "426830A m^2 \right \delimiter "526930B (T)$ in the single site Hubbard model for varying chemical potential $\mu $.}}{32}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Dispersion relations for the \acs {1D} chain and the square lattice in the non-interacting case.}}{38}{figure.caption.34}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Dispersion relations for the \acs {1D} chain and the square lattice in the non-interacting case.}}{35}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Density of states of the \acs {1D} tight-binding model.}}{45}{figure.caption.35}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Density of states of the \acs {1D} tight-binding model.}}{43}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Mean field results for the \acs {1D} Hubbard model.}}{47}{figure.caption.36}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Mean field results for the \acs {1D} Hubbard model.}}{45}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Mean field results for the \acs {1D} Hubbard model: closing in on the phase transition.}}{48}{figure.caption.37}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Mean field results for the \acs {1D} Hubbard model: closing in on the phase transition.}}{46}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -48,21 +48,13 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Discussing the algorithm}{67}{chapter.4}
+\contentsline {xchapter}{Applications}{73}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Boundary conditions on the nanoribbon.}}{75}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Stabilization}{69}{chapter.5}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Applications}{71}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Boundary conditions on the nanoribbon.}}{73}{figure.caption.42}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Conclusions and Future Work}{75}{chapter.7}
+\contentsline {xchapter}{Conclusions and Future Work}{77}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -79,3 +71,7 @@
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Obtaining an effective Heisenberg Hamiltonian as the $U/t \gg 1$ limit of the Hubbard model}{D-1}{appendix.D}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{On the finite temperature Wick's theorem}{E-1}{appendix.E}
