@@ -17,14 +17,14 @@ In the classical version, one measures thermal averages, while in the quantum ve
 
 \subsection{Beyond graphene: TMD nanoribbons}
 
-\ac{2D} materials have steadily been attracting more and more attention since graphene was experimentally isolated from a graphite sample by mechanical exfoliation, yielding a system constituted by a single layer of atoms (Figure \ref{fig:graphene}, left).
+\ac{2D} materials have steadily been drawing the attention of the community since graphene was experimentally isolated from a graphite sample by mechanical exfoliation, yielding a system constituted by a single layer of atoms (Figure \ref{fig:graphene}, left).
 Since then, numerous studies have been made due to the promising properties of these materials, and the interesting as-yet-unseen phenomena occurring within them, for example: unconventional quantum Hall effect, absence of localization, and electrons behaving like massless relativistic particles (Figure \ref{fig:graphene}, right), providing a bridge between condensed matter physics and quantum electrodynamics \cite{katsnelson_graphene:_2007}.
 
 \begin{figure}[H]
 \hspace{1cm}
-\includegraphics[width = 4.2cm]{Introduction/graphene.png}
-\hspace{2cm}
-\includegraphics[width = 7cm]{Introduction/disp_rel.png}
+\includegraphics[width = 3.6cm]{Introduction/graphene.png}
+\hspace{3cm}
+\includegraphics[width = 6.5cm]{Introduction/disp_rel.png}
 \caption[Graphene monolayer; graphene's dispersion relation.]{Left: \acf{AFM} picture of a graphene monolayer. The black area is a substrate used for fabrication purposes. The dark orange area is a monolayer of graphene. Right: Dispersion relation of graphene. The black line represents the Fermi energy. Close to it, the dispersion relation is linear, corresponding to massless excitations (taken from \cite{noauthor_nobel_nodate}). }
 \label{fig:graphene}
 \end{figure}	
@@ -82,7 +82,8 @@ Multi-dimensional integrals are plagued by the curse of dimensionality.
 Although the Newton-Cotes quadrature formulas (including, for example the Newton method, and Simpson's rules), Gaussian quadrature formulas, or Romberg's method all scale polynomially with the number of integration points, they become impractical as the dimension increases.
 To use them, one would invoke Fubini's theorem to reduce the multi-dimensional integral to a series of one-dimensional integrals.
 However, the number of function evaluations required to compute the whole integral grows exponentially with its dimension.
-Monte Carlo methods preserve the polynomial scaling, thus yielding comparable accuracy with far less function evaluations. It is natural to use them since typically the state space of our quantum system is huge, leading to high dimensional integrals.
+The Monte Carlo method preserves the polynomial scaling, thus yielding comparable accuracy with far less function evaluations.
+It is natural to use it since typically the state space of our quantum system is huge, leading to high dimensional integrals.
 
 The Monte Carlo method is ubiquitous.
 Its central idea is to use randomness to produce accurate estimates of deterministic integrals.
@@ -167,7 +168,7 @@ Diffusion \ac{QMC} allows the simulation of a many-body system while having only
 While it is exact for many-boson systems, it is only approximate for many-fermion systems.
 The idea is to map the Schr\"odinger equation into  an imaginary-time diffusion equation.
 Excited states are then filtered out by a diffusion process as we advance in imaginary-time.
-In imaginary-time $\tau = - i t$, the solution to the Schr\"odinger equation in terms of a formal series expansion in the eigenfunctions of the hamiltonian becomes a series of transients $e^{-E_n \tau}, \, n \in \mathbb{N}$.
+In imaginary-time $\tau = i t$, the solution to the Schr\"odinger equation in terms of a formal series expansion in the eigenfunctions of the hamiltonian becomes a series of transients $e^{-E_n \tau}, \, n \in \mathbb{N}$.
 The longest lasting of these is the ground state  \cite{kosztin_introduction_1996}.
 
 The idea of the diffusion method is to generate samples using the exact ground state wave function $\psi_0 (\bm r)$ \cite{toulouse_chapter_2016}.
@@ -185,7 +186,7 @@ Notice that the integral consists of a local energy of the trial wave function $
 f(\bm r) = \frac{\psi_0^\star (\bm r) \psi (\bm r) }{ \int d\bm r  \psi_0 (\bm r) \psi (\bm r)}
 \end{equation}
 
-Although the method is, of course, aimed at probing many-body systems, let us consider a single particle in \acl{1D} for simplicity for illustrating the method.
+Although the method is, of course, aimed at probing many-body systems, let us consider a single particle in \acs{1D} for simplicity for illustrating the method.
 Performing a Wick rotation - effectively going to imaginary time - and shifting the energy, the Schr\"odinger equation becomes
 
 \begin{equation}
@@ -216,22 +217,22 @@ However, if $E_T = E_0$ the wave function converges to the ground state one up t
 \lim_{\tau \rightarrow \infty} \psi ( x, \tau) = c_0 \psi_0 (x) \,\,\, \text{, or} \quad \lim_{\tau \rightarrow \infty} \left|\psi (\tau) \right\rangle \propto \left| \psi_0 \right\rangle
 \end{equation}
 
-Diffusion \ac{QMC} makes use of equation (\ref{eq:dmc}), approximating $\phi_0(x)$ by $\psi (x, \tau)$ for sufficiently long time.
+Diffusion \ac{QMC} makes use of Eq. (\ref{eq:dmc}), approximating $\psi_0(x)$ by $\psi (x, \tau)$ for sufficiently long time.
 The only requirement is that $\psi (x, \tau)$ and $\psi_0(x)$ overlap significantly so that $c_0$ is large enough to be numerically measurable, and we can always center a positive trial wave function in a region where $\psi_0(x)$ is large enough and positive.
 If the latter condition does not hold, the wave function converges to a bosonic, instead of a fermionic one.
-Of course, thiese conditions can always be met for a single particle, but note that they might fail for a many-fermion system, for which the wave function crosses a number of nodes due to its anti-symmetric nature.
+Of course, these conditions can always be met for a single particle, but note that they might fail for a many-fermion system, for which the wave function crosses a number of nodes due to its anti-symmetric nature.
 
-\subsection{Drawbacks of variational and projective methods. Auxiliary Field and the Sign Problem \acs{QMC}}
+\subsection{Drawbacks of variational and projective methods. Auxiliary Field \acs{QMC}. The Fermion Sign Problem.}
 \label{subsec:introAFQMC}
 
 As we have seen, the major drawback of the variational method was that it demanded \emph{a priori} knowledge of a reasonable variational wave function describing, at least partly, some of the physics of the problem.
-In this sense, the Monte Carlo algorithm didn't do most of the work.
 Diffusion \acs{QMC} demands less: we need only propose a trial wave function that overlaps with the ground state.
 However, none of these methods allow us to probe systems at finite temperature.
-Moreover, they both require some prior knowledge about the system; this is not always available.
+Moreover, they both require some prior knowledge about the system, which may not always be available.
 
 An alternative method is based on introducing an additional lattice bosonic field that mediates the electron-electron interaction.
-The interacting problem then becomes a problem of independent fermions coupled to an external field, so the fermionic part of the partition function can be traced out explicitly, leaving the contribution of a \emph{discrete}\footnote{Although, there is a finite number of field configurations, the number grows exponentially with the number of sites on the lattice.} bosonic field which is computed numerically by employing importance sampling.
+The interacting problem then becomes a problem of independent fermions coupled to an external field, and the fermionic part of the partition function can be traced out explicitly, leaving the contribution of a \emph{discrete}\footnote{Although, there is a finite number of field configurations, the number grows exponentially with the number of sites on the lattice.} bosonic field.
+This contribution can be evaluated numerically by employing importance sampling over the field configurations.
 Auxiliary field \acs{QMC} relies on a mapping to a classical system:
 
 \begin{equation}
@@ -245,16 +246,18 @@ The negative weight problem may easily be circumvented when computing averages o
 \begin{equation}\label{eq:signSampling}
 \left\langle A \right\rangle = \frac{\sum_c A ( c ) p ( c )}{\sum_c p ( c ) } = \frac{\sum_c A ( c )|  p ( c ) | \text{sign}[p(c)] / \sum_c | p ( c ) | }{\sum_c  |  p ( c ) | \text{sign}[p(c)] /  \sum_c | p ( c ) |} \equiv \frac{\left\langle A s \right\rangle_{|p|}}{\left\langle s \right\rangle_{|p|}} ,
 \end{equation}
-where $s(c) = \text{sign} [ p ( c ) ]$, and $| p ( c ) | $ corresponds to an auxiliary bosonic system used for sampling.
+where $s(c) = \text{sign} [ p ( c ) ]$, and $| p ( c ) | $ corresponds to an auxiliary bosonic system (also coupled to the bosonic field) corresponding to the original fermionic system, and for which there is no sign problem.
 
 The relative error $\Delta s / \left\langle s \right\rangle$ increases exponentially with the number of particles, with inverse temperature, and possibly with other parameters of the specific model to be studied \cite{troyer_computational_2005, hou_numerical_2009}.
 To see this, we start by noting that the average sign is the ratio between the partition functions of the fermionic ($Z = \sum_c p(c)$) and bosonic systems ($Z = \sum_c | p ( c ) |$).
-In terms of the difference in free energy densities, $\left\langle s \right\rangle = Z / Z' = e^{-\beta N_p \Delta f}$, implying that for $M$ samples, the error of the denominator of equation (\ref{eq:signSampling}) becomes
+In terms of the difference in free energy densities, $\left\langle s \right\rangle = Z / Z' = e^{-\beta N_p \Delta f}$, implying that for $M$ samples, the error of the denominator of Eq. (\ref{eq:signSampling}) becomes
 
 \begin{equation}
 \frac{\Delta s}{\left\langle s \right\rangle} = \frac{\sqrt{(\left\langle s^2 \right\rangle - \left\langle s \right\rangle^2 )/ M }}{\left\langle s \right\rangle} = \frac{ \sqrt{ 1 - \left\langle s \right\rangle^2}  }{\sqrt{M} \left\langle s \right\rangle} \propto \frac{e^{\beta N_p \Delta f}}{\sqrt{M}} ,
 \end{equation}
-and similarly for the numerator of equation (\ref{eq:signSampling}).
+and similarly for the numerator of Eq. (\ref{eq:signSampling}).
 
 Auxiliary field \acs{QMC} can also be formulated to probe ground state properties, and a sign problem arises similarly.
 Apart from this problem, which plagues all \acs{QMC} methods, this method is one of the most robust, unbiased, and reliable methods, hence we choose it to carry out our simulations.
+Note that, in particular, it is certainly more powerful than the variational and diffusion methods outlined before since it requires much less \emph{a priori} information about the system.
+Perhaps more importantly, given some recent findings, it can be used in conjunction with neural networks to discover quantum phase transitions in correlated systems  \cite{broecker_machine_2017}.

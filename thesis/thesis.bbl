@@ -2792,6 +2792,69 @@
       \endverb
       \keyw{Quantum Monte Carlo,Numerical Methods,Determinant,Bai,Scalettar}
     \endentry
+    \entry{broecker_machine_2017}{article}{}
+      \name{author}{4}{}{%
+        {{hash=95f1d3812e2e89da150778cb73eafe47}{%
+           family={Broecker},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cb5e0d185d66df725ae13199d38f4265}{%
+           family={Carrasquilla},
+           familyi={C\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=baa18ba9d06976f9483dd567c059910f}{%
+           family={Melko},
+           familyi={M\bibinitperiod},
+           given={Roger\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=ad5ab690973fbea48a10a5b4d5fba1a5}{%
+           family={Trebst},
+           familyi={T\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{213f1a90511755d0e5c4df102f86bdcd}
+      \strng{fullhash}{07d3781c8fdde86417c698a6620acac6}
+      \strng{bibnamehash}{07d3781c8fdde86417c698a6620acac6}
+      \strng{authorbibnamehash}{07d3781c8fdde86417c698a6620acac6}
+      \strng{authornamehash}{213f1a90511755d0e5c4df102f86bdcd}
+      \strng{authorfullhash}{07d3781c8fdde86417c698a6620acac6}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{State-of-the-art machine learning techniques promise to become a powerful tool in statistical mechanics via their capacity to distinguish different phases of matter in an automated way. Here we demonstrate that convolutional neural networks ({CNN}) can be optimized for quantum many-fermion systems such that they correctly identify and locate quantum phase transitions in such systems. Using auxiliary-field quantum Monte Carlo ({QMC}) simulations to sample the many-fermion system, we show that the Green’s function holds sufficient information to allow for the distinction of different fermionic phases via a {CNN}. We demonstrate that this {QMC} + machine learning approach works even for systems exhibiting a severe fermion sign problem where conventional approaches to extract information from the Green’s function, e.g. in the form of equal-time correlation functions, fail.}
+      \field{day}{18}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{Machine learning quantum phases of matter beyond the fermion sign problem}
+      \field{urlday}{9}
+      \field{urlmonth}{7}
+      \field{urlyear}{2018}
+      \field{volume}{7}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{8823}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41598-017-09098-0
+      \endverb
+      \verb{file}
+      \verb Broecker2017.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Broecker2017.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/XBEIJPEF/s41598-017-09098-0.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41598-017-09098-0
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41598-017-09098-0
+      \endverb
+    \endentry
     \entry{fazekas_lecture_1999}{book}{}
       \name{author}{1}{}{%
         {{hash=6d628446b1d15a892ab0d29ab4bd9fd6}{%
@@ -2934,8 +2997,8 @@
       \strng{authorbibnamehash}{0abf1e456f36fc58d70bb9dbdccd2b74}
       \strng{authornamehash}{0abf1e456f36fc58d70bb9dbdccd2b74}
       \strng{authorfullhash}{0abf1e456f36fc58d70bb9dbdccd2b74}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Electrons dance to a quantum beat in the Hubbard model of solid-state physics}
@@ -3739,8 +3802,8 @@
       \strng{authorbibnamehash}{f74cc63462bf27b659e7b1a6d448796d}
       \strng{authornamehash}{f74cc63462bf27b659e7b1a6d448796d}
       \strng{authorfullhash}{f74cc63462bf27b659e7b1a6d448796d}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In these pedagogical notes I introduce the operator form of Wick's theorem, i.e. a procedure to bring to normal order a product of 1-particle creation and destruction operators, with respect to some reference many-body state. Both the static and the time- ordered cases are presented.}
@@ -3878,6 +3941,60 @@
       \verb Newman1999.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/monte-carlo-books/Newman1999.pdf:application/pdf
       \endverb
       \keyw{Science / Physics / General,Computers / Desktop Applications / Design \& Graphics,Mathematics / Probability \& Statistics / General,Science / Mechanics / General,Monte Carlo}
+    \endentry
+    \entry{muller-krumbhaar_dynamic_1973}{article}{}
+      \name{author}{2}{}{%
+        {{hash=70b5fbff014eb46e7007720fccca8a6b}{%
+           family={Müller-Krumbhaar},
+           familyi={M\bibinithyphendelim K\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=523475000cf69fec8f2d64698d5dff0e}{%
+           family={Binder},
+           familyi={B\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{85294e88c3889bcbec8c4634c84f7650}
+      \strng{fullhash}{85294e88c3889bcbec8c4634c84f7650}
+      \strng{bibnamehash}{85294e88c3889bcbec8c4634c84f7650}
+      \strng{authorbibnamehash}{85294e88c3889bcbec8c4634c84f7650}
+      \strng{authornamehash}{85294e88c3889bcbec8c4634c84f7650}
+      \strng{authorfullhash}{85294e88c3889bcbec8c4634c84f7650}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{By means of the Monte Carlo sampling technique the equilibrium thermodynamics of fluids and magnets can be calculated numerically. We show that the questions of convergence and accuracy of this method can be understood in terms of the dynamics of the appropriate stochastic model. Also, we discuss to what extent various choices of transition probabilities lead to different dynamic properties of the system. As examples of applications, we consider Ising and Heisenberg spin systems. The numerical results about the dynamic correlation functions are compared to simple approximations taken from the theory of the kinetic Ising model.}
+      \field{day}{1}
+      \field{issn}{0022-4715, 1572-9613}
+      \field{journaltitle}{Journal of Statistical Physics}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{1}
+      \field{shortjournal}{J Stat Phys}
+      \field{title}{Dynamic properties of the Monte Carlo method in statistical mechanics}
+      \field{urlday}{10}
+      \field{urlmonth}{7}
+      \field{urlyear}{2018}
+      \field{volume}{8}
+      \field{year}{1973}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1007/BF01008440
+      \endverb
+      \verb{file}
+      \verb Binder1973.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/monte-carlo/Binder1973.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/BLQPWJIP/BF01008440.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/BF01008440
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/BF01008440
+      \endverb
     \endentry
     \entry{santos_introduction_2003}{article}{}
       \name{author}{1}{}{%

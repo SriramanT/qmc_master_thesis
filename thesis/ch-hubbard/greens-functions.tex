@@ -166,10 +166,10 @@ However, for non-interacting particles, the thermal average of a product of one-
 All that changes is the definition of the contraction, which is now defined in terms of the thermal average of the product of a pair of operators.
 Additionally, the theorem generalizes for time-ordered products, simply by replacing the thermal averages of the pair products by time-ordered pair averages.
 
-Our main point is that for a free theory, the $n$-particle Green's function
+In particular, for a free theory, the $n$-particle Green's function, defined by the field operators $\hat{\psi} ( x )$,
 
 \begin{equation}
-i^n \mathcal{G} ( x_1, x_2, ..., x_n; y_1, y_2, ... y_n ) \equiv \left\langle \mathcal{T} \psi ( x_1 ) \psi ( x_2 ) ... \psi ( x_n ) \psi^\dagger ( y_1 ) \psi^\dagger ( y_2 ) ... \psi^\dagger ( y_n ) \right\rangle
+\mathcal{G} ( x_1, x_2, ..., x_n; y_1, y_2, ... y_n ) \equiv \left\langle \mathcal{T} \hat{\psi} ( x_1 ) \hat{\psi} ( x_2 ) ... \hat{\psi} ( x_n ) \hat{\psi}^\dagger ( y_1 ) \hat{\psi}^\dagger ( y_2 ) ... \hat{\psi}^\dagger ( y_n ) \right\rangle
 \end{equation}
 is determined solely by the set of all one-particle Green's functions.
 Here $x$ and $y$ denote both the complete set of quantum numbers describing the system's degrees of freedom, and imaginary time.
@@ -179,4 +179,4 @@ Applying Wick's theorem to the set of non-interacting (and thus independent) par
 \begin{equation}
 \mathcal{G} ( x_1, x_2, ... x_n; y_1, y_2,... y_n ) = \sum_P (- 1 )^P \mathcal{G}^0 ( x_1; y_{i_1} ) \mathcal{G}^0 ( x_2; y_{i_2} ) ... \mathcal{G}^0 ( x_n; y_{i_n} ) ,
 \end{equation}
-which corresponds to evaluating the determinant of the matrix $\bm G$, defined as $G_{ij} \equiv \mathcal{G}^0 ( x_i ; x_j )$ for $i, j = 1, 2, ..., n$.
+which corresponds to evaluating the determinant of the matrix $\bm G$, defined as $G_{ij} \equiv \mathcal{G}^0 ( x_i ; x_j )$ for $i, j = 1, 2, ..., n$, where the $\mathcal{G}^0$ are the free-particle Green's functions, also called propagators.

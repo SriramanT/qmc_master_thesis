@@ -1,4 +1,4 @@
-\section{Monte Carlo Method in Statistical Physics}
+\section{Monte Carlo Method in Classical Statistical Physics}
 \label{sec:classical_mc}
 
 Monte Carlo methods form the largest and arguably most useful class of numerical methods used to approach statistical physics problems.
@@ -6,27 +6,27 @@ Statistical physics often deals with computing quantities that describe the beha
 The main difficulty one faces when doing so has to do with the collective nature of these systems.
 Many identical components comprise these systems, and while the equations that govern the behavior of the whole may be easy to write down, their solution is in general a remarkably laborious mathematical problem.
 
-The exponentially large number of configurations of a typical condensed matter system can be daunting.
+Strikingly, we are able to describe a system that is governed by a macroscopically large number of equations in terms of only a few variables.
+The loss of information in doing so is only apparent.
+The statistical description is so effective because most of the possible states of the system are extremely improbable when compared to the relevant very narrow part of configuration space.
+The success of the field is largely attributed to the averaging out that naturally occurs when measuring a property of a macroscopic system.
+
+The sheer number of equations describing a condensed matter system, and possibly the strong coupling between them deems the task of finding an exact solution either very tough or even impossible.
+The resulting exponentially large number of possible configurations of the typical condensed matter system can be daunting.
 Analytical solutions are more often than not hopeless and even numerical solutions are seemingly challenging.
 However, they give valuable information lying between theory and experiment, and connecting them.
+It is not even clear whether an analytical solution would be of any use in many cases, and a statistical treatment often allows us to study more effectively the key properties of a system.
+Numerically, this is done using Monte Carlo.
 
 Suppose you try to sample uniformly from the probability distribution of all possible configurations of one of the aforementioned systems.
 Changes are your algorithm will not end before the Universe does.
 This is the computational complexity hurdle.
 A related issue is that of finite size effects.
 We are far from being able to simulate a macroscopically sized system. 
-At best we can simulate a system that has only a minuscule fraction of the actual size of the corresponding real world system.
-Amazingly there are techniques that allow us to efficiently extract information out of relatively small size simulations.
+At best we can simulate a system that has only a minuscule fraction of the size of a real system.
+Amazingly there are techniques that allow us to efficiently extract information out of relatively small scale simulations.
 Nonetheless, increasing the system size systematically improves the reliability of a simulation.
-Thus, the more efficient the algorithm is, the larger the system we can simulate in a fixed time.
-
-The sheer number of equations describing a condensed matter system, and sometimes the strong coupling between them deems the task of finding an exact solution either very tough or even impossible.
-It is not even clear whether an analytical solution would be of any use in many cases, and a statistical and numerical treatment often allows us to study more effectively the key properties of a system.
-
-Strikingly, we are able to describe a system that is governed by a macroscopically large number of equations in terms of only a few variables.
-The loss of information in doing so is only apparent.
-The statistical description is so effective because most of the possible states of the system are extremely improbable when compared to the relevant very narrow part of configuration space.
-The success of the field is largely attributed to the averaging out that naturally occurs when we measured a property of a macroscopic system.
+Thus, it is important to design efficient algorithms to probe larger  systems in a fixed computer time frame.
 
 The law of large numbers affords an approximation to integrals which can be written as an expectation of a random variable. Upon drawing enough independent samples from the corresponding distribution, the sample mean gets arbitrarily close to the integral at stake.
 
@@ -43,10 +43,10 @@ We could simply draw $M$ independent and identically distributed samples $x_{1,.
 which in most cases converges to the desired expectation, as long as $M$ is large enough. How large?
 
 \begin{equation}\label{eq:variance}
-\text{Var}\bigg( \frac{1}{M} \sum_{k=1}^M f(x_k) \bigg) = \frac{1}{M} \text{Var}\bigg( f(x_1) \bigg) \sim \mathcal{O}\bigg(\frac{1}{M}\bigg)
+\text{Var}\bigg( \frac{1}{M} \sum_{k=1}^M f(x_k) \bigg) = \frac{1}{M} \text{Var}\bigg( f(x_1) \bigg) \propto \mathcal{O}\bigg(\frac{1}{M}\bigg)
 \end{equation}
 
-Thus, the correction to the sample mean is of order $\mathcal{O}(\frac{1}{\sqrt{M}})$ as long as $\text{Var}\big( f(x_1) \big) \sim 1$.
+Thus, the correction to the sample mean is of order $\mathcal{O}(\frac{1}{\sqrt{M}})$ as long as $\text{Var}\big( f(x_1) \big) \sim 1$, which can be achieved by using importance sampling, a variance reduction technique we will shortly discuss.
 
 How do we sample from an arbitrary distribution $p(X)$? The idea is to first make an educated choice of a Markov Chain with the prescribed stationary distribution from which we ultimately desire to sample from, $p(X)$. After a sufficiently high number of steps, a Markov Chain Monte Carlo (MCMC) algorithm generates samples from the target distribution. Imposing some conditions on this Markov Chain, namely that it should be irreducible, aperiodic and positive recurrent, the ergodic theorem guarantees that the empirical measures of the aforementioned sampler approach the target stationary distribution. Another important condition to impose on this Markov Chain is detailed balance. Let the transition matrix be $\bm P = [P_{\mu \rightarrow \nu}]$, and the state space $\Omega$ be $\{\pi_\mu | \mu=1, ..., |\Omega| \}$, where $|\Omega|$ is the total number of possible states. Then, the condition of detailed balance is defined for all $\mu, \nu$ as
 
@@ -103,8 +103,7 @@ The condition imposes a constraint on the Markov transition probabilities:
 \end{equation}
 
 Crucially, Monte Carlo methods employ \emph{importance sampling}.
-It turns out that we can improve upon our estimate of $\mathbb{E} [f(X)]$ by introducing a separate distribution $q(x)$, and defining the weight function as $w(x) = p(x)/ q(x)$.
-Then, we can rewrite equation (\ref{eq:int_mean}):
+It turns out that we can improve upon our estimate of $\mathbb{E} [f(X)]$ by reducing the variance of the estimator. If we introduce a separate distribution $q(x)$, and define a weight function as $w(x) = p(x)/ q(x)$, we can rewrite equation (\ref{eq:int_mean}):
 
 \begin{equation}
 \mathbb{E} [f(X)] = \int dx f(x) q(x) w(x) = \mathbb{E} [f(Y) w(Y)],
@@ -156,11 +155,10 @@ Break the transition probability into a selection probability and an acceptance 
 
 The Markov process now consists of generating a chain of states according to $G_{ \mu\rightarrow\nu}$, which are then accepted or rejected depending on $A_{\mu\rightarrow\nu}$.
 Since we want to make the algorithm as efficient as possible, we want to make the acceptance ratio as close to one as possible to avoid useless steps.	
-The most common way to do this is to fix the largest of them to one, and ajust the other accordingly.
+The most common way to do this is to fix the largest of them to one, and adjust the other accordingly.
 The acceptance ratio will be close to one more often if $G_{ \mu\rightarrow\nu}$ includes most of the dependence of $P_{\mu\rightarrow\nu}$ on the characteristics of the states $\mu, \nu$.
 Ideally, states would always be selected with the correct transition probability, and the acceptance ratio would be fixed to unity.
 Good algorithms approach this situation, and much effort has been directed at optimizing them to do so.
-
 By far, the most common sampling scheme choice is the Metropolis-Hastings algorithm, which we now  describe.
 
 We select the transition probability to be uniform, and impose detailed balance through the choice of the acceptance ratios:
@@ -217,9 +215,9 @@ In particular, at long times it falls off exponentially.
 The definition of $\tau_c$ stems from this characteristic long-time behavior: $\chi_m (t) \sim e^{-t / \tau_c}$.
 In practice, after waiting for $2\tau_c$, the measurements are virtually uncorrelated.
 Let $A$ be the number of sweeps roughly  corresponding to $2\tau_c$ steps.
-Then, if we make $S$ sweeps of the lattice during the simulation, the number of measurements (waiting for $A$ sweeps between them) is
+Then, if we make $S$ sweeps of the lattice during the simulation, the number of independent measurements (i.e. with $A$ sweeps between them) is
 
-\begin{equation}
+\begin{equation}\label{eq:nMeas}
 M = \frac{S - W}{A}
 \end{equation}
 
@@ -239,7 +237,7 @@ Using measured data for the magnetization at evenly-spaced times, we may constru
 \begin{equation}
 \chi_m (t) = \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m (t') m(t' + t) - \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m (t') \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m(t' + t) ,
 \end{equation}
-where $t_{\text{max}}$ is the total simulation time.
+where $t_{\text{max}}$ is the total simulation time in MC steps.
 
 One should be careful when using this expression at very long times.
 As $t$ approaches $t_{\text{max}}$, the upper limit of the sums decreases, and the integration interval becomes narrower.
@@ -247,16 +245,47 @@ Since $m (t)$ fluctuates randomly at very long times, the statistical error asso
 This turns out not to be problematic since typical simulations run for many correlation times.
 Thus, the tails of the auto-correlation may safely be neglected because the correlations will have already vanished, by definition.
 
-To finish our discussion on the issue of correlations, we note that if we have a total of $n_s$ samples of, for instance, magnetization data, the complexity of computing $\chi_m$ is $\mathcal{O}(n_s^2)$.
+To finish our discussion on the issue of computing the time-displaced correlator, we note that if we have a total of $N_s$ samples of, for instance, magnetization data, the complexity of computing $\chi_m$ is $\mathcal{O}(N_s^2)$.
 It is possible to speed up this process by computing its Fourier transform $\tilde{\chi}_m(\omega)$, and inverting to recover $\chi_m (t)$.
-This can be done via a standard \ac{FFT} algorithm in $\mathcal{O}(2 n_s \log n_s )$ flops.
+This can be done via a standard \ac{FFT} algorithm in $\mathcal{O}(2 N_s \log N_s )$ flops.
 To do this, we apply the following trick
 
 \begin{equation}
 \begin{split}
 \tilde{\chi}_m ( \omega ) &= \int dt e^{i\omega t} \int dt' \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) \\
-&= \int dt \int dt' e^{-i\omega t'} \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) e^{i\omega ( t' + t )} \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) \\
-&= \tilde{m}' (\omega) \tilde{m}' (- \omega) = | \tilde{m}' (\omega) |^2 ,
+&= \int dt \int dt' e^{-i\omega t'} \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) e^{i\omega ( t' + t )} \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) = \tilde{m}' (\omega) \tilde{m}' (- \omega) = | \tilde{m}' (\omega) |^2 ,
 \end{split} 
 \end{equation}
 where $\tilde{m}' (\omega)$ is the Fourier transform of $m' (t) = m(t) - \left\langle m \right\rangle$\footnote{The only difference between $\tilde{m}' (\omega)$ and $\tilde{m} (\omega)$, is that $\tilde{m}' (0) = 0$, while $\tilde{m} (0) \neq 0$. Thus, one can also compute $\tilde{m} (\omega)$ and then set its $\omega = 0$ component to zero.}.
+
+In practice, when implementing a MC algorithm, we take a measurement say every sweep (which can be less than a correlation time), and then compute the time-displaced correlator at the end of the simulation to estimate the correlation time.
+Thus, how can we estimate the error in the mean of the $N_s$ correlated samples without knowing $\tau_c$ in advance?
+Take again magnetization measurements.
+The standard deviation of the mean of $N_s$ independent samples is well known:
+
+\begin{equation}\label{eq:errorUncorr}
+\sigma = \sqrt{ \frac{ \frac{1}{N_s} \sum_{i=0}^{N_s} ( m_i - \overline{m} )^2 }{N_s - 1} } = \sqrt{ \frac{1}{N_s - 1} ( \overline{m^2} - \overline{m}^2 } )
+\end{equation}
+so we could simply replace $N_s$ by $M$, as computed in Eq.(\ref{eq:nMeas}).
+But that would only work provided that the mean didn't change when including the correlated samples.
+Of course, it should not change very much, since heavily correlated samples give rise to nearly the same magnetization.
+
+As shown in \cite{muller-krumbhaar_dynamic_1973}, if the samples are separated by a time interval $\Delta t$,  the correct expression is
+
+\begin{equation}\label{eq:errorCorr}
+\sigma = \sqrt{ \frac{1 + 2\tau_c / \Delta t}{N_s - 1} ( \overline{m^2} - \overline{m}^2 )  } ,
+\end{equation}
+which reduces to Eq.(\ref{eq:errorUncorr}) when $\Delta t \gg \tau_c$, since then the samples are uncorrelated.
+Also, we now have a rigorous justification for estimating the amount of time between uncorrelated samples as $2\tau_c$.
+Often, our we work with heavily correlated samples, so that instead we have $\Delta t \ll \tau_c$.
+In this limit, the 1 in the numerator of Eq.(\ref{eq:errorCorr}) can be neglected, and noting that the number of sweeps between measurements corresponding to $\Delta t$ is $\Delta S = (S - W ) / N_s$, we have
+
+\begin{equation}\label{eq:errorMC}
+\sigma \approx \sqrt{ \frac{A}{S - W} ( \overline{m^2} - \overline{m}^2 )  }  ,
+\end{equation}
+the same result we would obtain by simply replacing $N_s$ by $M$.
+What we found, in rigorous terms, was that the presence of many correlated samples does not significantly change the sample mean if $\Delta t \ll \tau_c$.
+If we take enough correlated samples, their influence on the sample mean averages out.
+
+Eq.(\ref{eq:errorMC}) has the advantage of being independent of $\Delta t$, which allows us to choose $\Delta t$ freely, without affecting the final error.
+This is handy since it allows us to choose $\Delta t$ small so as not to lose data.
