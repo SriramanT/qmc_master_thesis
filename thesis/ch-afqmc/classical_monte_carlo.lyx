@@ -1,0 +1,1310 @@
+#LyX file created by tex2lyx 2.3
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /Users/franciscobrito/Physics/MScEngPhysics2018/qmc_master_thesis/thesis/ch-afqmc/
+\textclass article
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Monte Carlo Method in Classical Statistical Physics
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:classical_mc"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Monte Carlo methods form the largest and arguably most useful class of numerical methods used to approach statistical physics problems. Statistical physics often deals with computing quantities that describe the behavior of condensed matter systems. The main difficulty one faces when doing so has to do with the collective nature of these systems. Many identical components comprise these systems, and while the equations that govern the behavior of the whole may be easy to write down, their solution is in general a remarkably laborious mathematical problem.
+\end_layout
+
+\begin_layout Standard
+Strikingly, we are able to describe a system that is governed by a macroscopically large number of equations in terms of only a few variables. The loss of information in doing so is only apparent. The statistical description is so effective because most of the possible states of the system are extremely improbable when compared to the relevant very narrow part of configuration space. The success of the field is largely attributed to the averaging out that naturally occurs when measuring a property of a macroscopic system.
+\end_layout
+
+\begin_layout Standard
+The sheer number of equations describing a condensed matter system, and possibly the strong coupling between them deems the task of finding an exact solution either very tough or even impossible. The resulting exponentially large number of possible configurations of the typical condensed matter system can be daunting. Analytical solutions are more often than not hopeless and even numerical solutions are seemingly challenging. However, they give valuable information lying between theory and experiment, and connecting them. It is not even clear whether an analytical solution would be of any use in many cases, and a statistical treatment often allows us to study more effectively the key properties of a system. Numerically, this is done using Monte Carlo.
+\end_layout
+
+\begin_layout Standard
+Suppose you try to sample uniformly from the probability distribution of all possible configurations of one of the aforementioned systems. Changes are your algorithm will not end before the Universe does. This is the computational complexity hurdle. A related issue is that of finite size effects. We are far from being able to simulate a macroscopically sized system. At best we can simulate a system that has only a minuscule fraction of the size of a real system. Amazingly there are techniques that allow us to efficiently extract information out of relatively small scale simulations. Nonetheless, increasing the system size systematically improves the reliability of a simulation. Thus, it is important to design efficient algorithms to probe larger systems in a fixed computer time frame.
+\end_layout
+
+\begin_layout Standard
+The law of large numbers affords an approximation to integrals which can be written as an expectation of a random variable. Upon drawing enough independent samples from the corresponding distribution, the sample mean gets arbitrarily close to the integral at stake.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}\label{eq:int_mean}
+\mathbb{E} [f(X)] = \int dx f(x) p(x),
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $p(x)$
+\end_inset
+
+ is the distribution of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We could simply draw 
+\begin_inset Formula $M$
+\end_inset
+
+ independent and identically distributed samples 
+\begin_inset Formula $x_{1,...M}$
+\end_inset
+
+ from 
+\begin_inset Formula $p(x)$
+\end_inset
+
+ and approximate the integral as
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\frac{1}{M} \sum_{k=1}^M f (x_k) , 
+\end{equation}
+\end_inset
+
+which in most cases converges to the desired expectation, as long as 
+\begin_inset Formula $M$
+\end_inset
+
+ is large enough. How large?
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}\label{eq:variance}
+\text{Var}\bigg( \frac{1}{M} \sum_{k=1}^M f(x_k) \bigg) = \frac{1}{M} \text{Var}\bigg( f(x_1) \bigg) \propto \mathcal{O}\bigg(\frac{1}{M}\bigg)
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, the correction to the sample mean is of order 
+\begin_inset Formula $\mathcal{O}(\frac{1}{\sqrt{M}})$
+\end_inset
+
+ as long as 
+\begin_inset Formula $\text{Var}\big( f(x_1) \big) \sim 1$
+\end_inset
+
+, which can be achieved by using importance sampling, a variance reduction technique we will shortly discuss.
+\end_layout
+
+\begin_layout Standard
+How do we sample from an arbitrary distribution 
+\begin_inset Formula $p(X)$
+\end_inset
+
+? The idea is to first make an educated choice of a Markov Chain with the prescribed stationary distribution from which we ultimately desire to sample from, 
+\begin_inset Formula $p(X)$
+\end_inset
+
+. After a sufficiently high number of steps, a Markov Chain Monte Carlo (MCMC) algorithm generates samples from the target distribution. Imposing some conditions on this Markov Chain, namely that it should be irreducible, aperiodic and positive recurrent, the ergodic theorem guarantees that the empirical measures of the aforementioned sampler approach the target stationary distribution. Another important condition to impose on this Markov Chain is detailed balance. Let the transition matrix be 
+\begin_inset Formula $\bm P = [P_{\mu \rightarrow \nu}]$
+\end_inset
+
+, and the state space 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ be 
+\begin_inset Formula $\{\pi_\mu | \mu=1, ..., |\Omega| \}$
+\end_inset
+
+, where 
+\begin_inset Formula $|\Omega|$
+\end_inset
+
+ is the total number of possible states. Then, the condition of detailed balance is defined for all 
+\begin_inset Formula $\mu, \nu$
+\end_inset
+
+ as
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}\label{eq:detBal}
+\pi_\mu P_{\mu \rightarrow \nu} = P_{\nu \rightarrow \mu} \pi_\nu
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider a system in state 
+\begin_inset Formula $\mu$
+\end_inset
+
+ that makes transitions to state 
+\begin_inset Formula $\nu$
+\end_inset
+
+ at a rate 
+\begin_inset Formula $R_{\mu \rightarrow  \nu}$
+\end_inset
+
+ (that specifies the system's dynamics) and vice-versa. The probability that a system is in state 
+\begin_inset Formula $\mu$
+\end_inset
+
+ at time 
+\begin_inset Formula $t$
+\end_inset
+
+, 
+\begin_inset Formula $p_\mu (t)$
+\end_inset
+
+, such that 
+\begin_inset Formula $\sum_\mu p_\mu (t) = 1$
+\end_inset
+
+, is given by the master equation(s):
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}\label{eq:master}
+\frac{d p_\mu}{dt} = \sum_\nu \big[ p_\nu (t) R_{\nu \rightarrow \mu} - p_\mu (t) R_{\mu \rightarrow \nu} \big] \quad \forall \mu \in \Omega
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The equilibrium occupation probabilities at finite temperature 
+\begin_inset Formula $T$
+\end_inset
+
+ follow the Boltzmann distribution.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\pi_\mu = \lim_{t \rightarrow \infty} p_\mu (t) = \frac{1}{Z} e^{ - E_\mu / k_B T} ,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $E_\mu$
+\end_inset
+
+ is the energy of state 
+\begin_inset Formula $\mu$
+\end_inset
+
+, 
+\begin_inset Formula $k_B$
+\end_inset
+
+ is Boltzmann's constant, and 
+\begin_inset Formula $Z$
+\end_inset
+
+ is the partition function, from which we can extract thermodynamic functions in terms of expectations of physical quantities 
+\begin_inset Formula $\left\langle Q \right\rangle$
+\end_inset
+
+, and response functions in terms of their variance 
+\begin_inset Formula $\sigma_Q^{\,\, 2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Imposing the condition of stationarity on equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:master"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), 
+\begin_inset Formula $d_t p_\mu = 0$
+\end_inset
+
+ , and noting that 
+\begin_inset Formula $ P_{\mu\rightarrow \nu} = R_{\mu\rightarrow \nu}  dt$
+\end_inset
+
+, we obtain the equilibrium condition
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}\label{eq:equilibrium}
+\sum_\nu \pi_\mu P_{\mu \rightarrow \nu} = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu \iff \pi_\mu \sum_\nu P_{\mu \rightarrow \nu} = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu \iff \pi_\mu = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This condition is enough to ensure convergence to an equilibrium of the dynamics of the Markov process. However, it does not guarantee that the reached distribution is our desired one, 
+\begin_inset Formula $\bm \pi$
+\end_inset
+
+, after running the process for long enough. The probability of a state evolves according to
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\pi_\nu ( t + 1 ) = \sum_\mu P_{\mu\rightarrow\nu}  \pi_\mu ( t ) \iff \bm \pi ( t + 1 ) = \bm P \bm \pi ( t )
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The stationary distribution of a Markov chain obeys
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\bm \pi ( \infty ) = \bm P \bm \pi ( \infty ) ,
+\end{equation}
+\end_inset
+
+however, condition (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:equilibrium"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) also allows for limit cycles of length 
+\begin_inset Formula $n$
+\end_inset
+
+, where 
+\begin_inset Formula $\bm \pi$
+\end_inset
+
+ rotates around a number of configurations:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\bm \pi ( \infty ) = \bm P^n \bm \pi ( \infty ) ,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\bm P^n$
+\end_inset
+
+ is the n-th power of 
+\begin_inset Formula $\bm P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Detailed balance is a stronger requirement than the equilibrium condition, which eliminates limit cycles, thus ensuring that our sampler draws configurations from the desired distribution. Intuitively, detailed balance corresponds to incorporating time-reversal symmetry in a simulation. The condition imposes a constraint on the Markov transition probabilities:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}\label{eq:markovCondition}
+\frac{P_{\mu\rightarrow\nu}}{P_{\nu\rightarrow\mu}} = \frac{\pi_\nu}{\pi_\mu} = e^{-\beta ( E_\nu - E_\mu ) }
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Crucially, Monte Carlo methods employ 
+\emph on
+importance sampling
+\emph default
+. It turns out that we can improve upon our estimate of 
+\begin_inset Formula $\mathbb{E} [f(X)]$
+\end_inset
+
+ by reducing the variance of the estimator. If we introduce a separate distribution 
+\begin_inset Formula $q(x)$
+\end_inset
+
+, and define a weight function as 
+\begin_inset Formula $w(x) = p(x)/ q(x)$
+\end_inset
+
+, we can rewrite equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:int_mean"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\mathbb{E} [f(X)] = \int dx f(x) q(x) w(x) = \mathbb{E} [f(Y) w(Y)],
+\end{equation}
+\end_inset
+
+with 
+\begin_inset Formula $Y \sim q$
+\end_inset
+
+, i.e. the random variable 
+\begin_inset Formula $Y$
+\end_inset
+
+ follows the distribution 
+\begin_inset Formula $q(Y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+It appears as though we didn't gain anything. However, by choosing 
+\begin_inset Formula $q$
+\end_inset
+
+ wisely, we can actually reduce the variance we computed in equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:variance"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\text{Var}\bigg( \frac{1}{M} \sum_{k=1}^M f(y_k) w(y_k) \bigg) = \frac{1}{M} \text{Var}\bigg( f(y_1) w(y_1) \bigg)
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since we didn't make any assumptions about 
+\begin_inset Formula $q(Y)$
+\end_inset
+
+, it may be chosen so as to minimize the variance, hence the error of the Monte Carlo estimator, improving the approximation of the expectation. However, note that the error remains proportional to 
+\begin_inset Formula $\frac{1}{\sqrt{M}}$
+\end_inset
+
+. In practice, we devise a method to select the portion of state space which contains states contributing more significantly to the average. This procedure ensures that 
+\begin_inset Formula $\text{Var}\big( f(y_1) w(y_1) \big) \sim 1$
+\end_inset
+
+, improving the efficiency of our sampler. The choice of the weight function translates to the averaging process by changing the estimator. Explicitly computing the average
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\left\langle Q \right\rangle = \frac{ \sum_\mu Q_\mu e^{-\beta E_\mu} }{ \sum_\mu e^{-\beta E_\mu}}
+\end{equation}
+\end_inset
+
+is only tractable for very small systems. In practice, we choose a subset of M states 
+\begin_inset Formula $\{\mu_1, \mu_2, ..., \mu_M \} $
+\end_inset
+
+, and estimate the average as
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+Q_M = \frac{ \sum_{i=1}^M Q_{\mu_i} \pi_{\mu_i}^{-1} e^{ -\beta E_{\mu_i} } }{ \sum_{j=1}^M \pi_{\mu_j}^{-1} e^{ -\beta E_{\mu_j} }  }
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The estimate improves as 
+\begin_inset Formula $N$
+\end_inset
+
+ increases, and when 
+\begin_inset Formula $N\rightarrow \infty$
+\end_inset
+
+, 
+\begin_inset Formula $Q_M \rightarrow \left\langle Q \right\rangle$
+\end_inset
+
+. The accuracy of the estimator depends on the choice of the probabilities 
+\begin_inset Formula $\bm \pi$
+\end_inset
+
+, which is related to the aforementioned variance. For example, if 
+\begin_inset Formula $\bm \pi$
+\end_inset
+
+ corresponds to the uniform distribution, i.e. 
+\begin_inset Formula $\pi_\mu = \frac{1}{| \Omega |} \forall \mu \in \Omega$
+\end_inset
+
+, we have
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+Q_M = \frac{ \sum_{i=1}^M Q_{\mu_i} e^{ -\beta E_{\mu_i} } }{ \sum_{j=1}^M e^{ -\beta E_{\mu_j} }  } ,
+\end{equation}
+\end_inset
+
+which turns out to be a poor choice since most of the visited states contribute negligibly to the average, leading to an inaccurate estimate. The sum is dominated by a small subset of states, which we would like to access. The idea of the Quantum (Classical) Monte Carlo method is to simulate the random quantum (thermal) fluctuations of a system, as it oscillates between states in a given time frame 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "newman_monte_1999"
+literal "true"
+
+\end_inset
+
+. Instead of visiting these states uniformly, the most relevant part of the phase space is sampled more frequently, overcoming the seemingly exponential complexity of computing a sample mean numerically. Even though only a small fraction of the system's states are sampled, we then obtain an accurate estimate of physical quantities of interest, namely energy, and correlation functions. This is implemented via a proposal-acceptance scheme.
+\end_layout
+
+\begin_layout Standard
+To exploit the freedom given by condition (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:markovCondition"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), we note that we can always introduce a non-zero 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+say
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+stay-at-home
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ probability 
+\begin_inset Formula $P_{\mu \rightarrow \mu} \in [0, 1] $
+\end_inset
+
+. Regardless of its value, detailed balance is satisfied. Similarly, any adjustment in 
+\begin_inset Formula $P_{\mu\rightarrow \nu}$
+\end_inset
+
+ must be compensated by changing 
+\begin_inset Formula $P_{\nu\rightarrow \mu}$
+\end_inset
+
+ to preserve their ratio. Break the transition probability into a selection probability and an acceptance ratio, respectively:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\frac{P_{\mu\rightarrow\nu}}{P_{\nu\rightarrow\mu}}= \frac{G_{ \mu\rightarrow\nu} A_{\mu\rightarrow\nu}}{G_{ \nu\rightarrow\mu} A_{\nu\rightarrow\mu}}
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Markov process now consists of generating a chain of states according to 
+\begin_inset Formula $G_{ \mu\rightarrow\nu}$
+\end_inset
+
+, which are then accepted or rejected depending on 
+\begin_inset Formula $A_{\mu\rightarrow\nu}$
+\end_inset
+
+. Since we want to make the algorithm as efficient as possible, we want to make the acceptance ratio as close to one as possible to avoid useless steps. The most common way to do this is to fix the largest of them to one, and adjust the other accordingly. The acceptance ratio will be close to one more often if 
+\begin_inset Formula $G_{ \mu\rightarrow\nu}$
+\end_inset
+
+ includes most of the dependence of 
+\begin_inset Formula $P_{\mu\rightarrow\nu}$
+\end_inset
+
+ on the characteristics of the states 
+\begin_inset Formula $\mu, \nu$
+\end_inset
+
+. Ideally, states would always be selected with the correct transition probability, and the acceptance ratio would be fixed to unity. Good algorithms approach this situation, and much effort has been directed at optimizing them to do so. By far, the most common sampling scheme choice is the Metropolis-Hastings algorithm, which we now describe.
+\end_layout
+
+\begin_layout Standard
+We select the transition probability to be uniform, and impose detailed balance through the choice of the acceptance ratios:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\frac{ P_{\mu\rightarrow\nu }}{ P_{\nu\rightarrow\mu }} = \frac{ A_{\mu\rightarrow\nu }}{ A_{\nu\rightarrow\mu } } = e^{-\beta ( E_\nu - E_\mu )}
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Formula $E_\mu < E_\nu $
+\end_inset
+
+. Then, 
+\begin_inset Formula $A ( \nu \rightarrow \mu ) > A ( \mu \rightarrow \nu ) $
+\end_inset
+
+, and since only the acceptance ratio is fixed, we may freely set 
+\begin_inset Formula $A ( \nu \rightarrow \mu ) = 1$
+\end_inset
+
+, which fixes 
+\begin_inset Formula $A ( \mu \rightarrow \nu ) = e^{-\beta ( E_\nu - E_\mu ) }$
+\end_inset
+
+. This choice maximizes the efficiency of the algorithm. In short, we propose a random new state uniformly, and then we accept it with probability 
+\begin_inset Formula $A_{\mu\rightarrow \nu} = \min (1,  e^{-\beta ( E_\nu - E_\mu )})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Before we can use the states generated by our sampler to measure averages of physical quantities, we must reach the stationary distribution of the Markov process. We consider this condition to be satisfied after a time 
+\begin_inset Formula $\tau_{\text{eq}}$
+\end_inset
+
+, measured in steps of the algorithm. When we consider a lattice model with a discrete set of states at each site 
+\begin_inset Formula $i = 1, 2, ..., N$
+\end_inset
+
+, we say that a 
+\emph on
+sweep
+\emph default
+ is completed whenever 
+\begin_inset Formula $N$
+\end_inset
+
+ Monte Carlo steps are performed. Thus, the number of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+say
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+warm-up
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ sweeps is 
+\begin_inset Formula $W = \tau_{\text{eq}} / N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Before running a simulation, we need to decide how many sweeps we need to get an accurate estimate of the average. The problem is that we need uncorrelated samples to average over. To clarify, let us choose a specific model. The paradigmatic model of statistical physics is the Ising model, a classical model of a magnet, which consists of considering spins-
+\begin_inset Formula $1/2$
+\end_inset
+
+ on a lattice, interacting only with their nearest neighbors. Since each spin can only take on two values, say 
+\begin_inset Formula $\pm 1$
+\end_inset
+
+, there are 
+\begin_inset Formula $2^N$
+\end_inset
+
+ possible states. The Hamiltonian reads
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+H = - J \sum_{\left\langle i, j \right\rangle } s_i s_j - B \sum_i s_i ,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\left\langle i, j \right\rangle$
+\end_inset
+
+ means that 
+\begin_inset Formula $i, j $
+\end_inset
+
+ are nearest neighbors on the lattice.
+\end_layout
+
+\begin_layout Standard
+A simple strategy to sample configurations of the Ising model is single-spin-flip dynamics. We start with a random configuration of the spins, and then propose new configurations at each step by flipping a single spin at a given site. A sweep is completed after we propose a spin flip at every site on the lattice.
+\end_layout
+
+\begin_layout Standard
+Consecutive configurations generated by this chain differ only slightly. Thus, it takes some time for the system to reach a configuration which is significantly different from the initial one. This characteristic time is called the correlation time 
+\begin_inset Formula $\tau_c$
+\end_inset
+
+. A rigorous manner to estimate 
+\begin_inset Formula $\tau_c$
+\end_inset
+
+ is through the time-displaced auto-correlation function associated to some quantity being measured. An example of a relevant quantity for the case of the Ising model is the magnetization per site:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+m = \frac{1}{N} \sum_i s_i
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Its associated time-displaced auto-correlation is
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\chi_m ( t ) = \int dt' \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) = \int dt' \bigg( m ( t' ) m ( t' + t ) - \left\langle m \right\rangle^2 \bigg)
+\end{equation}
+\end_inset
+
+giving a measure of how correlated two measurements of the magnetization separated by a simulation time 
+\begin_inset Formula $t$
+\end_inset
+
+ are.
+\end_layout
+
+\begin_layout Standard
+The typical time-scale on which 
+\begin_inset Formula $\chi_m (t)$
+\end_inset
+
+ falls off is a measure of the correlation time of the simulation. In particular, at long times it falls off exponentially. The definition of 
+\begin_inset Formula $\tau_c$
+\end_inset
+
+ stems from this characteristic long-time behavior: 
+\begin_inset Formula $\chi_m (t) \sim e^{-t / \tau_c}$
+\end_inset
+
+. In practice, after waiting for 
+\begin_inset Formula $2\tau_c$
+\end_inset
+
+, the measurements are virtually uncorrelated. Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be the number of sweeps roughly corresponding to 
+\begin_inset Formula $2\tau_c$
+\end_inset
+
+ steps. Then, if we make 
+\begin_inset Formula $S$
+\end_inset
+
+ sweeps of the lattice during the simulation, the number of independent measurements (i.e. with 
+\begin_inset Formula $A$
+\end_inset
+
+ sweeps between them) is
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}\label{eq:nMeas}
+M = \frac{S - W}{A}
+\end{equation}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are many ways to estimate 
+\begin_inset Formula $\tau_c$
+\end_inset
+
+ from 
+\begin_inset Formula $\chi_m (t)$
+\end_inset
+
+. The simplest consists of making an exponential fit in a given range of times. However, this might be unreliable since the estimate depends strongly on the chosen range. An alternative is to compute the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+say
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+integrated
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ correlation time:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\int_0^\infty dt \frac{\chi_m ( t ) }{\chi_m ( 0 ) } = \int_0^\infty dt e^{-t / \tau_c} = \tau_c  ,
+\end{equation}
+\end_inset
+
+which is less sensitive, but not perfect either since the error that is introduced when the assumption that 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+say
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+long-time
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ behavior has been reached is arbitrary and introduces an uncontrolled error. Moreover, the very long-time behavior of the auto-correlation is rather noisy and must be excluded.
+\end_layout
+
+\begin_layout Standard
+Using measured data for the magnetization at evenly-spaced times, we may construct the time-displaced auto-correlation function up to an unimportant constant, which does not affect the estimate of the correlation time:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\chi_m (t) = \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m (t') m(t' + t) - \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m (t') \frac{1}{ t_{\text{max}} - t } \sum_{t' = 0}^{t_{\text{max}} - t } m(t' + t) ,
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $t_{\text{max}}$
+\end_inset
+
+ is the total simulation time in MC steps.
+\end_layout
+
+\begin_layout Standard
+One should be careful when using this expression at very long times. As 
+\begin_inset Formula $t$
+\end_inset
+
+ approaches 
+\begin_inset Formula $t_{\text{max}}$
+\end_inset
+
+, the upper limit of the sums decreases, and the integration interval becomes narrower. Since 
+\begin_inset Formula $m (t)$
+\end_inset
+
+ fluctuates randomly at very long times, the statistical error associated to 
+\begin_inset Formula $\chi_m (t)$
+\end_inset
+
+ becomes more prominent as 
+\begin_inset Formula $t$
+\end_inset
+
+ approaches 
+\begin_inset Formula $t_{\text{max}}$
+\end_inset
+
+. This turns out not to be problematic since typical simulations run for many correlation times. Thus, the tails of the auto-correlation may safely be neglected because the correlations will have already vanished, by definition.
+\end_layout
+
+\begin_layout Standard
+To finish our discussion on the issue of computing the time-displaced correlator, we note that if we have a total of 
+\begin_inset Formula $N_s$
+\end_inset
+
+ samples of, for instance, magnetization data, the complexity of computing 
+\begin_inset Formula $\chi_m$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathcal{O}(N_s^2)$
+\end_inset
+
+. It is possible to speed up this process by computing its Fourier transform 
+\begin_inset Formula $\tilde{\chi}_m(\omega)$
+\end_inset
+
+, and inverting to recover 
+\begin_inset Formula $\chi_m (t)$
+\end_inset
+
+. This can be done via a standard 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+ac
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+FFT
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ algorithm in 
+\begin_inset Formula $\mathcal{O}(2 N_s \log N_s )$
+\end_inset
+
+ flops. To do this, we apply the following trick
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}
+\begin{split}
+\tilde{\chi}_m ( \omega ) &= \int dt e^{i\omega t} \int dt' \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) \\
+&= \int dt \int dt' e^{-i\omega t'} \bigg( m ( t' ) - \left\langle m \right\rangle \bigg) e^{i\omega ( t' + t )} \bigg( m ( t' + t ) - \left\langle m \right\rangle \bigg) = \tilde{m}' (\omega) \tilde{m}' (- \omega) = | \tilde{m}' (\omega) |^2 ,
+\end{split} 
+\end{equation}
+\end_inset
+
+where 
+\begin_inset Formula $\tilde{m}' (\omega)$
+\end_inset
+
+ is the Fourier transform of 
+\begin_inset Formula $m' (t) = m(t) - \left\langle m \right\rangle$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+The only difference between 
+\begin_inset Formula $\tilde{m}' (\omega)$
+\end_inset
+
+ and 
+\begin_inset Formula $\tilde{m} (\omega)$
+\end_inset
+
+, is that 
+\begin_inset Formula $\tilde{m}' (0) = 0$
+\end_inset
+
+, while 
+\begin_inset Formula $\tilde{m} (0) \neq 0$
+\end_inset
+
+. Thus, one can also compute 
+\begin_inset Formula $\tilde{m} (\omega)$
+\end_inset
+
+ and then set its 
+\begin_inset Formula $\omega = 0$
+\end_inset
+
+ component to zero.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In practice, when implementing a MC algorithm, we take a measurement say every sweep (which can be less than a correlation time), and then compute the time-displaced correlator at the end of the simulation to estimate the correlation time. Thus, how can we estimate the error in the mean of the 
+\begin_inset Formula $N_s$
+\end_inset
+
+ correlated samples without knowing 
+\begin_inset Formula $\tau_c$
+\end_inset
+
+ in advance? Take again magnetization measurements. The standard deviation of the mean of 
+\begin_inset Formula $N_s$
+\end_inset
+
+ independent samples is well known:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}\label{eq:errorUncorr}
+\sigma = \sqrt{ \frac{ \frac{1}{N_s} \sum_{i=0}^{N_s} ( m_i - \overline{m} )^2 }{N_s - 1} } = \sqrt{ \frac{1}{N_s - 1} ( \overline{m^2} - \overline{m}^2 } )
+\end{equation}
+\end_inset
+
+so we could simply replace 
+\begin_inset Formula $N_s$
+\end_inset
+
+ by 
+\begin_inset Formula $M$
+\end_inset
+
+, as computed in Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:nMeas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+). But that would only work provided that the mean didn't change when including the correlated samples. Of course, it should not change very much, since heavily correlated samples give rise to nearly the same magnetization.
+\end_layout
+
+\begin_layout Standard
+As shown in 
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "muller-krumbhaar_dynamic_1973"
+literal "true"
+
+\end_inset
+
+, if the samples are separated by a time interval 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+, the correct expression is
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}\label{eq:errorCorr}
+\sigma = \sqrt{ \frac{1 + 2\tau_c / \Delta t}{N_s - 1} ( \overline{m^2} - \overline{m}^2 )  } ,
+\end{equation}
+\end_inset
+
+which reduces to Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:errorUncorr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) when 
+\begin_inset Formula $\Delta t \gg \tau_c$
+\end_inset
+
+, since then the samples are uncorrelated. Also, we now have a rigorous justification for estimating the amount of time between uncorrelated samples as 
+\begin_inset Formula $2\tau_c$
+\end_inset
+
+. Often, our we work with heavily correlated samples, so that instead we have 
+\begin_inset Formula $\Delta t \ll \tau_c$
+\end_inset
+
+. In this limit, the 1 in the numerator of Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:errorCorr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) can be neglected, and noting that the number of sweeps between measurements corresponding to 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ is 
+\begin_inset Formula $\Delta S = (S - W ) / N_s$
+\end_inset
+
+, we have
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \begin{equation}\label{eq:errorMC}
+\sigma \approx \sqrt{ \frac{A}{S - W} ( \overline{m^2} - \overline{m}^2 )  }  ,
+\end{equation}
+\end_inset
+
+the same result we would obtain by simply replacing 
+\begin_inset Formula $N_s$
+\end_inset
+
+ by 
+\begin_inset Formula $M$
+\end_inset
+
+. What we found, in rigorous terms, was that the presence of many correlated samples does not significantly change the sample mean if 
+\begin_inset Formula $\Delta t \ll \tau_c$
+\end_inset
+
+. If we take enough correlated samples, their influence on the sample mean averages out.
+\end_layout
+
+\begin_layout Standard
+Eq.(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:errorMC"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) has the advantage of being independent of 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+, which allows us to choose 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ freely, without affecting the final error. This is handy since it allows us to choose 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ small so as not to lose data. 
+\end_layout
+
+\end_body
+\end_document
