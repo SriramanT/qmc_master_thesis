@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  20 JUL 2018 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  23 JUL 2018 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1515,7 +1515,7 @@ although it is yet undefined on input line 4.
 Package acronym Info: Label `acro:QMC' overridden on input line 14.
 Package acronym Info: Label `acro:BSS' newly defined as it shall be overridden
 although it is yet undefined on input line 16.
-Package acronym Info: Label `acro:TMD' overridden on input line 20.
+Package acronym Info: Label `acro:TMD' overridden on input line 21.
 )
 (./ch-introduction/strongly_correlated.tex [2]
 Package acronym Info: Label `acro:LG' newly defined as it shall be overridden
@@ -1572,10 +1572,10 @@ Overfull \hbox (59.8432pt too wide) in paragraph at lines 64--65
  []
 
 Package acronym Info: Label `acro:AF' newly defined as it shall be overridden
-although it is yet undefined on input line 66.
+although it is yet undefined on input line 70.
 [7 <./all-figures/Introduction/nanoribbons.png> <./all-figures/Introduction/zig
 zag.png> <./all-figures/Introduction/edge_states.png>] [8] [9]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 178.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 182.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
@@ -1973,7 +1973,7 @@ lic/cm-super/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
 c/cm-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
 cm-super/sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/bookm
 an/ubkd8a.pfb>
-Output written on thesis.pdf (118 pages, 11139300 bytes).
+Output written on thesis.pdf (118 pages, 11139311 bytes).
 PDF statistics:
  2145 PDF objects out of 2487 (max. 8388607)
  1862 compressed objects within 19 object streams

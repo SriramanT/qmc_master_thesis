@@ -73,16 +73,13 @@ Describe what were the main achievements of this work and how it contributed to 
 
 Explain the structure of the thesis.
 
-
 ### 2. Minimal models of electron correlation in energy bands
 
-### 4. Auxiliary Field Quantum Monte Carlo
+### 3. Auxiliary Field Quantum Monte Carlo
 
-### 5. Discussion of the algorithm
+### 4. Applications
 
-### 6. Applications
-
-### 7. Conclusion
+### 5. Conclusions and Future Work
 
 ## Thesis
 
