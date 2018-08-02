@@ -1,10 +1,9 @@
 \section{Motivation}
 \label{sec:motivation}
 
-The isolation of graphene in 2004 has led to a growing interest of the scientific community in \ac{2D} materials revealing extraordinary properties.
 It might seem surprising that \ac{2D} systems were not considered as a real possibility before since they are often idealized in thought experiments, for example when investigating toy models of more complex higher dimensional systems.
 In fact, their very existence was not expected \emph{a priori} because at first sight they seem to violate the Mermin-Wagner-Hohenberg theorem \cite{mermin_absence_1966, coleman_there_1973, hohenberg_existence_1967}, a no-go theorem that forbids ordering below three dimensions at finite temperature\footnote{\ac{2D} materials are stable because not all the conditions of Mermin-Wagner-Hohenberg theorem are verified, namely the condition of short-ranged interactions. The issue is quite subtle, and is beyond the scope of this work.}.
-Graphene paved the way for the search for similarly stable \ac{2D} materials, and since it was isolated, a plethora of these has been discovered.
+The discovery of graphene paved the way for the search for similarly stable \ac{2D} materials, and since it was isolated, a plethora of these has been discovered.
 A vast set of open problems remains to be solved within the realm of the fascinating and counterintuitive properties of the now huge variety of existing \ac{2D} systems.
 In particular, in some of these, the effect of electron interactions is non negligible, leading to emergent phenomena.
 These are collective effects that emerge as a result of the interactions between the individual components of a system.
@@ -18,4 +17,6 @@ As a result, the field is currently very active.
 Method optimization can prove crucial in applications to widely studied physical models of electron interactions.
 In particular, recent computational and algorithmic developments opened the door to the study of both larger and lower temperature systems.
 
-In this work, an implementation of determinant \acs{QMC} based on the \ac{BSS} algorithm is used to simulate a \ac{TMD} nanoribbon, a nanostructure made of this recent member of the \acs{2D} materials family.
+In this work, an implementation of determinant \acs{QMC} based on the \ac{BSS} algorithm is used to simulate a \ac{TMD} zigzag-edged nanoribbon, a nanostructure made of this recent member of the \acs{2D} materials family.
+Preliminary mean field studies show that this type of nanostructures have a tendency towards magnetism \cite{yazyev_emergence_2010}, which makes them good candidates for use in nanospintronics.
+\acs{QMC} is a complementary, more accurate approach that can shed light upon these and other phenomena, like the formation of charge density waves and superconductivity.

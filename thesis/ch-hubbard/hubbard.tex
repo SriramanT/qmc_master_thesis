@@ -29,7 +29,7 @@ The point is that electrons in $d-$bands are certainly not well described by a f
 d-wave functions correspond to $l=2$. Note that the probability density is always higher in a region near the nucleus, and has a complicated shape, which will lead to a non-uniform distribution of electronic charge, as opposed to the case of the free electron gas. (adapted from \cite{hydrogen})}
 \end{figure}
 
-Experimentally, $d-$electrons of transition metals show a hybrid behavior: sometimes they are accurately described by an ordinary band model, but there are occasions in which the atomic model is better.
+Experimentally, $d-$electrons of transition metals show hybrid behavior: sometimes they are accurately described by an ordinary band model, but there are occasions in which the atomic model is better.
 For example, we see spin wave phenomena in ferromagnetic transition metals, and the susceptibilities of some of these metals depend strongly on temperature.
 This is characteristic of an atomic (Heisenberg) model.
 On the other hand, the $d-$electrons contribute significantly to the low temperature specific heat and sometimes the magnetic moments per atom of some transition metal ferromagnets are not integer multiples of the Bohr magneton.
@@ -40,7 +40,7 @@ The atomic picture of a solid consists of an electron gas where ions are immerse
 The ions then interact in much the same way as they do in salts.
 This extreme scenario is surely not even close to the true state of affairs since the number of $d-$electrons per atom is in general not an integer.
 This motivates us to introduce a less restrictive model, which is not too far from the atomic model.
-We shall assume that while $d-$electrons still have some band motion, they are strongly correlated with each other so that the metal retains some atomic-like behavior.
+We shall assume that while $d-$electrons still have some band motion, they are strongly correlated with each other so that the solid retains some atomic-like behavior.
 The correlations between electrons on different atoms are likely much weaker and we neglect them.
 
 Let us now look at an example of the aforementioned circumstance.
@@ -89,8 +89,7 @@ V^{\bm k_1 \bm k_2}_{\bm k_1' \bm k_2'} \equiv \left\langle \bm k_1 \bm k_2 \big
 \end{equation}
 
 The first term represents the band energies of the electrons minus their potential energy in the part of the Hartree-Fock field due to the electrons of the $s-$band itself.
-The latter ensures that we do not overestimate the magnitude of the interactions between the electrons of the band: the Hartree-Fock field that specifies $\varepsilon_{\bm k}$ is computed taking into account these interactions, so if we didn't subtract it, we would count the energy of these interactions twice since they reappear in the last term.
-The last term represents the interactions among all electrons in the system.
+The latter ensures that we do not overestimate the magnitude of the interactions between the electrons of the band: the Hartree-Fock field that specifies $\varepsilon_{\bm k}$ is computed taking into account these interactions, so if we didn't subtract it, we would count the energy of these interactions twice since they reappear in the last term, which  represents the interactions among all electrons in the system.
 Furthermore, we assume that up and down spins are occupied equally, and $\nu_{\bm k}$ are the occupation numbers of the states of the band in the Hartree-Fock calculation. 
 
 The term that we subtract in equation ($\ref{eq:startingHamiltonian}$) corresponds to the part of the interaction term which is already accounted for by the first diagonal \say{mean field} term.
@@ -100,9 +99,8 @@ A generic way of writing the interaction term by gathering the $\bm k, \sigma$ i
 \begin{equation}\label{eq:vInt}
 V_{\text{int}} = \frac{1}{2} V^{\nu\mu}_{\nu'\mu'} c_\nu^\dagger c_\mu^\dagger c_{\mu'} c_{\nu'} ,
 \end{equation}
-where the summation over repeated indexes is implied. 
-
-In appendix \ref{ap:hartree-fock}, we obtain the mean field form of $V_{\text{int}}$ in the Hartree-Fock approximation.
+where the summation over repeated indexes is implied.
+In appendix \ref{ap:hubbardObSol}, we obtain the mean field form of $V_{\text{int}}$ in the Hartree-Fock approximation.
 
 Now consider the Wannier functions
 
@@ -110,14 +108,12 @@ Now consider the Wannier functions
 \phi(\bm x) = N^{-1/2} \sum_{\bm k} \psi_{\bm k} (\bm x) , 
 \end{equation}
 where $N$ is the number of atoms.
-
 We may write $\psi_{\bm k}$ as a combination of Wannier functions localized at each atom.
 
 \begin{equation}
 \psi_{\bm k} (\bm x) = N^{-1/2} \sum_i e^{i \bm k \cdot \bm R_i} \phi (\bm x - \bm R_i) ,
 \end{equation}
 where the sum runs over all atomic positions $\bm R_i$. 
-
 Introducting the annihilation (creation) operators of an electron of spin $\sigma$ in the Wannier state $\phi (\bm x - \bm R_i)$ localized at site $i$, $c_{i\sigma}^{(\dagger)}$, we may write
 
 \begin{equation}
@@ -150,7 +146,7 @@ Keeping only the terms in $U$ in the interaction part, we obtain
 \end{equation}
 where $n_{i\sigma} = c_{i\sigma}^\dagger c_{i\sigma}$.
 Note that $\nu_{i, i} = N^{-1} \sum_{\bm k} \nu_{\bm k} = n/2$, where $n$ is the electron density, which means that the last term is constant and may be dropped.
-Now, the hopping matrix $\bm K$ can, in principle, be found by inverse Fourier transforming the dispersion relation $\varepsilon_{\bm k}$ of the equivalent interaction-free system, that we can imagine to be obtained experimentally.
+Now, the hopping matrix $\bm K$ can, in principle, be found by inverse Fourier transforming the dispersion relation $\varepsilon_{\bm k}$ of the equivalent interaction-free system, that we can assumed to be obtained experimentally or numerically.
 
 In the purely tight binding view (with no $U$-term), we have a well defined crystal wavevectors that depends on the symmetry of the lattice, which may be written as Fourier transforms
 
@@ -181,8 +177,9 @@ Going back to equation (\ref{eq:hopping_matrix}), and recalling that the sum on 
 The Hubbard Hamiltonian is then
 
 \begin{equation}\label{eq:hubbard_hamiltonian}
-\mathcal{H} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg(c_{i,\sigma} c_{j,\sigma}^\dagger + c_{j,\sigma} c_{i,\sigma}^\dagger \bigg) + U \sum_{i} n_{i,\uparrow} n_{i\downarrow}
+\mathcal{H} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg(c_{i,\sigma} c_{j,\sigma}^\dagger + c_{j,\sigma} c_{i,\sigma}^\dagger \bigg) + U \sum_{i} n_{i,\uparrow} n_{i\downarrow} -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg) ,
 \end{equation}
+where, for generality, we included an arbitrary chemical potential, so that we use the \ac{GCE}.
 
 \subsection{Particle-hole symmetry}
 
@@ -195,7 +192,6 @@ We will see later that this mapping is important in QMC simulations \cite{alavi_
 We start our discussion with the concept of a bipartite lattice.
 A lattice is said to be bipartite if it can be divided into two sublattices $\mathcal{A}$ and $\mathcal{B}$, such that the set of neighbors of a site in sublattice $\mathcal{A}$ belongs to sublattice $\mathcal{B}$.
 For example, the square and honeycomb lattices are bipartite, whereas the triangular lattice is not.
-
 In a bipartite lattice, \ac{AF} order is favored.
 In contrast, AF order is frustrated on the triangular and other non bipartite lattices.
 
@@ -224,15 +220,14 @@ Since in that case the factor $(-1)^i$ takes on $-1$ on one sublattice and $1$ o
 c_{i, \sigma}^\dagger c_{j, \sigma} + c_{j, \sigma}^\dagger c_{i, \sigma} \mapsto (-1)^{i+j} ( d_{i, \sigma} d_{j, \sigma}^\dagger + d_{j, \sigma} d_{i, \sigma}^\dagger ) = d_{j, \sigma}^\dagger d_{i, \sigma} + d_{i, \sigma}^\dagger d_{j, \sigma}
 \end{equation}
 
-The \ac{PHS} of the kinetic term can be incorporated into the interaction term by a shift in the chemical potential and by adding a constant to the Hamiltonian.
+The \ac{PHS} form of the kinetic term can be incorporated into the interaction term by a shift in the chemical potential and by adding a constant to the Hamiltonian.
 First, note that the term
 
 \begin{equation*}
 U \bigg( n_{i,\uparrow} - \frac{1}{2} \bigg) \bigg( n_{i,\downarrow} - \frac{1}{2} \bigg)
 \end{equation*}
 is unchanged under a \ac{PHT}.
-
-Expanding this term, we obtain $U n_{i,\uparrow} n_{i,\downarrow} - \frac{U}{2} (n_{i,\uparrow} + n_{i,\downarrow}) + \frac{U}{4}$, which indeed differs from the original interaction term by a shift in the chemical potential plus a constant.
+Expanding this term, we obtain $U n_{i,\uparrow} n_{i,\downarrow} - \frac{U}{2} (n_{i,\uparrow} + n_{i,\downarrow}) + \frac{U}{4}$, which indeed differs from the original interaction term by a shift in the chemical potential ($\mu \rightarrow \mu + U / 2$) plus a constant.
 Thus, the particle-hole symmetric form of the Hamiltonian 
 
 \begin{equation}
@@ -240,7 +235,7 @@ Thus, the particle-hole symmetric form of the Hamiltonian
 \end{equation}
 is completely equivalent to the original Hamiltonian.
 
-Under a \ac{PHT}, the density transforms as $\rho \mapsto 2 - \rho$.
+Under a \ac{PHT}, the density, $\rho = \left\langle n_\uparrow + n_\downarrow \right\rangle$, transforms as $\rho \mapsto 2 - \rho$.
 The Hamiltonian changes only in the chemical potential term: $\mu \mapsto -\mu$.
 Thus, we have that $\rho (\mu) = 2 - \rho (-\mu)$, and at $\mu = 0$, we have half filling: $\rho = 1$.
 This reasoning is valid for any $\beta$, $t$, or $U$, which implies that the phase diagram of the Hubbard model must be symmetric about half filling.

@@ -16,34 +16,22 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{49}{chapter.3}
+\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{47}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Applications}{73}{chapter.4}
+\contentsline {xchapter}{Applications}{71}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces Nearest neighbors on the nanoribbon.\relax }}{76}{table.caption.43}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Conclusions and Future Work}{77}{chapter.5}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Nearest neighbors on the nanoribbon.\relax }}{74}{table.caption.44}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Hartree-Fock Approximation and the Self Consistent Field Method}{A-1}{appendix.A}
+\contentsline {xchapter}{Conclusions and Future Work}{75}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Computing the partition function for a quadratic Hamiltonian}{B-1}{appendix.B}
+\contentsline {xchapter}{Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Density of states for a 1D tight binding model}{C-1}{appendix.C}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Obtaining an effective Heisenberg Hamiltonian as the $U/t \gg 1$ limit of the Hubbard model}{D-1}{appendix.D}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{On the finite temperature Wick's theorem}{E-1}{appendix.E}
+\contentsline {xchapter}{On the finite temperature Wick's theorem}{B-1}{appendix.B}

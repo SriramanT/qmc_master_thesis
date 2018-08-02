@@ -10,23 +10,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Motivation}{2}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Strongly correlated electron systems}{2}{section.1.2}
+\contentsline {section}{\numberline {1.2}Strongly correlated electron systems}{3}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}State of The Art}{5}{section.1.3}
+\contentsline {section}{\numberline {1.3}Beyond graphene: TMD nanoribbons}{5}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Beyond graphene: TMD nanoribbons}{5}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.4}Introduction to \acl {QMC}}{7}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Introduction to \acl {QMC}}{7}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.4.1}Variational Monte Carlo}{9}{subsection.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}Variational Monte Carlo}{9}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.4.2}Diffusion Monte Carlo and projective methods}{10}{subsection.1.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.4}Diffusion Monte Carlo and projective methods}{10}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.4.3}Auxiliary Field \acs {QMC} and the Fermion Sign Problem.}{11}{subsection.1.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.5}Drawbacks of variational and projective methods. Auxiliary Field \acs {QMC}. The Fermion Sign Problem.}{11}{subsection.1.3.5}
+\contentsline {section}{\numberline {1.5}Original Contributions}{12}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Original Contributions}{12}{section.1.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Outline}{13}{section.1.5}
+\contentsline {section}{\numberline {1.6}Outline}{13}{section.1.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Minimal models of electron correlations in energy bands}{15}{chapter.2}
 \defcounter {refsection}{0}\relax 
@@ -40,70 +38,72 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.3}Particle-hole symmetry}{23}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Mott insulators}{24}{section.2.3}
+\contentsline {section}{\numberline {2.3}Exact solutions for simple cases}{24}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Exact solutions for simple cases}{26}{section.2.4}
+\contentsline {subsection}{\numberline {2.3.1}The purely atomic ( $\frac {U}{t} \rightarrow \infty $ ), single site limit}{26}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}The purely atomic ( $\frac {U}{t} \rightarrow \infty $ ), single site limit}{28}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.3.2}The non-interacting ($\frac {U}{t} = 0$) limit}{30}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}The non-interacting ($\frac {U}{t} = 0$) limit}{32}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.4}Exact Diagonalization and the Heisenberg Hamiltonian as the Effective $\frac {U}{t} \gg 1$ Model }{33}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Exact Diagonalization and the Heisenberg Hamiltonian as the Effective $\frac {U}{t} \gg 1$ Model }{36}{section.2.5}
+\contentsline {subsection}{\numberline {2.4.1}Two-site calculation}{34}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Two-site calculation}{36}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.4.2}Degenerate perturbation theory}{36}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Degenerate perturbation theory}{38}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.5}Green's functions and Wick's theorem}{37}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Green's functions and Wick's theorem}{39}{section.2.6}
+\contentsline {subsection}{\numberline {2.5.1}Single site case}{37}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}Single site case}{40}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.5.2}Non-interacting case}{38}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}Non-interacting case}{41}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.5.3}Finite temperature Wick's theorem for fermions}{39}{subsection.2.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.3}Finite temperature Wick's theorem for fermions}{42}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.6}Magnetism and mean field theory}{40}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Magnetism and mean field theory}{43}{section.2.7}
+\contentsline {subsection}{\numberline {2.6.1}Stoner criterion for ferromagnetism}{41}{subsection.2.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.1}Stoner criterion for ferromagnetism}{43}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.6.2}Mean field theory of the Hubbard model}{42}{subsection.2.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.2}Mean field theory of the Hubbard model}{44}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.7}Variants of the Hubbard model}{44}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Variants of the Hubbard model}{47}{section.2.8}
+\contentsline {chapter}{\numberline {3}Auxiliary Field Quantum Monte Carlo}{47}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Auxiliary Field Quantum Monte Carlo}{49}{chapter.3}
+\contentsline {section}{\numberline {3.1}Monte Carlo Method in Classical Statistical Physics}{48}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Monte Carlo Method in Classical Statistical Physics}{50}{section.3.1}
+\contentsline {section}{\numberline {3.2}Theoretical framework}{54}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Theoretical framework}{56}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Trotter-Suzuki Decomposition}{55}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Trotter-Suzuki Decomposition}{57}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.A}Monte Carlo sampling of the HS-field}{64}{subsubsection.3.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1.A}Monte Carlo sampling of the HS-field}{66}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.B}Making measurements}{66}{subsubsection.3.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1.B}Making measurements}{68}{subsubsection.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.1.C}Correlation functions}{69}{subsubsection.3.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1.C}Correlation functions}{71}{subsubsection.3.2.1.3}
+\contentsline {chapter}{\numberline {4}Applications}{71}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Applications}{73}{chapter.4}
+\contentsline {section}{\numberline {4.1}One-dimensional Hubbard Chain}{72}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}One-dimensional Hubbard Chain}{74}{section.4.1}
+\contentsline {section}{\numberline {4.2}Square lattice}{72}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Square lattice}{74}{section.4.2}
+\contentsline {section}{\numberline {4.3}Honeycomb lattice}{72}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Honeycomb lattice}{74}{section.4.3}
+\contentsline {section}{\numberline {4.4}Nanoribbon}{72}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Nanoribbon}{74}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{75}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{77}{chapter.5}
+\contentsline {chapter}{Bibliography}{77}{section*.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{79}{section*.44}
+\contentsline {chapter}{Appendix \numberline {A}Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix \numberline {A}Hartree-Fock Approximation and the Self Consistent Field Method}{A-1}{appendix.A}
+\contentsline {section}{\numberline {A.1}Hartree-Fock Approximation and the Self Consistent Field Method}{A-2}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix \numberline {B}Computing the partition function for a quadratic Hamiltonian}{B-1}{appendix.B}
+\contentsline {section}{\numberline {A.2}Mott insulators}{A-5}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix \numberline {C}Density of states for a 1D tight binding model}{C-1}{appendix.C}
+\contentsline {section}{\numberline {A.3}Computing the partition function for a quadratic Hamiltonian}{A-8}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix \numberline {D}Obtaining an effective Heisenberg Hamiltonian as the $U/t \gg 1$ limit of the Hubbard model}{D-1}{appendix.D}
+\contentsline {section}{\numberline {A.4}Density of states for a 1D tight binding model}{A-9}{section.A.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix \numberline {E}On the finite temperature Wick's theorem}{E-1}{appendix.E}
+\contentsline {section}{\numberline {A.5}Obtaining an effective Heisenberg Hamiltonian as the atomic, $U/t \gg 1$ limit of the Hubbard model}{A-9}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Appendix \numberline {B}On the finite temperature Wick's theorem}{B-1}{appendix.B}

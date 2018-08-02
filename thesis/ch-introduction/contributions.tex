@@ -1,11 +1,9 @@
 \section{Original Contributions}
 \label{sec:int_contributions}
 
-The major contribution of this work has been the development of a general auxiliary \ac{QMC} code in \texttt{C++}, which can be used to simulate low-dimensional Hubbard-like models with different geometries.
+The major contribution of this work has been the study of the properties of a \ac{TMD} nanoribbon, in particular providing insight into its magnetic properties.
+The results were compared with those obtained in the mean field approximation and benchmarked against existing, more efficient implementations (namely \texttt{ALF} \cite{bercx_alf_2017} and \texttt{QUEST} \cite{noauthor_quest_2012}), and early seminal studies \cite{hirsch_discrete_1983,white_numerical_1989}.
 
-The code was then applied to study the properties of a \ac{TMD} nanoribbon, in particular providing insight into its magnetic properties.
-The results were compared with those obtained in the mean field approximation.
-
-Additionaly, we characterized and compared different options to stabilize the matrix products needed to perform the simulations.
-
+To carry out this study, we implemented a general auxiliary \ac{QMC} code in \texttt{C++}, which can be used to simulate low-dimensional Hubbard-like models with different geometries.
+Additionaly, using our code, we characterized and compared different options to stabilize the matrix products needed to perform the simulations.
 Lastly, we gave a contribution to circumvent the fermion sign problem in an attempt to extract the maximum amount of information out of the Monte Carlo measurements.
