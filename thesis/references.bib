@@ -1484,3 +1484,112 @@ Ulmke, Ichitaro Yamazaki and Gergely Zimanyi. This work was supported by the Nat
 	keywords = {hubbard, simulation, 2D},
 	file = {APS Snapshot:/Users/franciscobrito/Zotero/storage/E2W3A3F2/PhysRevB.40.html:text/html;White1989.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/hubbard-simulations/White1989.pdf:application/pdf}
 }
+
+
+@article{bai_stable_2011,
+	title = {Stable solutions of linear systems involving long chain of matrix multiplications},
+	volume = {435},
+	issn = {0024-3795},
+	url = {http://www.sciencedirect.com/science/article/pii/S0024379510003198},
+	doi = {10.1016/j.laa.2010.06.023},
+	series = {Special Issue: Dedication to Pete Stewart on the occasion of his 70th birthday},
+	abstract = {This paper is concerned with solving linear system (In+{BL}⋯B2B1)x=b arising from the Green’s function calculation in the quantum Monte Carlo simulation of interacting electrons. The order of the system and integer L are adjustable. Also adjustable is the conditioning of the coefficient matrix to give rise an extreme ill-conditioned system. Two numerical methods based on the {QR} decomposition with column pivoting and the singular value decomposition, respectively, are studied in this paper. It is proved that the computed solution x∼ by each of the methods is weakly backward stable in the sense that the computed x∼ is close to the exact solution of a nearby linear system[In+({BL}+Δ{BL})⋯(B2+ΔB2)(B1+ΔB1)]x∼=bwith each ΔBi small in norm relatively to Bi.},
+	pages = {659--673},
+	number = {3},
+	journaltitle = {Linear Algebra and its Applications},
+	shortjournal = {Linear Algebra and its Applications},
+	author = {Bai, Zhaojun and Lee, Cherung and Li, Ren-Cang and Xu, Shufang},
+	urldate = {2018-06-07},
+	date = {2011-08-01},
+	keywords = {Condition number, Graded {QR} decomposition, Numerical stability, Quantum Monte Carlo, Singular value decomposition},
+	file = {Bai2010.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Bai2010.pdf:application/pdf;ScienceDirect Snapshot:/Users/franciscobrito/Zotero/storage/3JJSU3EE/S0024379510003198.html:text/html}
+}
+
+@article{chang_recent_2015,
+	title = {Recent advances in determinant quantum Monte Carlo},
+	volume = {95},
+	issn = {1478-6435},
+	url = {https://doi.org/10.1080/14786435.2013.845314},
+	doi = {10.1080/14786435.2013.845314},
+	abstract = {Determinant quantum Monte Carlo is a method for studying magnetic, transport and thermodynamic properties of interacting fermions on a lattice. It is widely used to explore the physics of strongly correlated quantum systems, from cuprate superconductors to ultracold atoms trapped on optical lattices. This paper contains a description of recent algorithmic advances in the determinant quantum Monte Carlo technique. Focus will be on algorithms developed for hybrid multicore processor and {GPU} platforms. The resulting speed-up of the simulations will be quantified. Simulations’ results will also be presented, with an emphasis on physical quantities that can now be computed for large numbers of sites.},
+	pages = {1260--1281},
+	number = {12},
+	journaltitle = {Philosophical Magazine},
+	author = {Chang, Chia-Chen and Gogolenko, Sergiy and Perez, Jeffrey and Bai, Zhaojun and Scalettar, Richard T.},
+	urldate = {2018-06-07},
+	date = {2015-04-23},
+	keywords = {Hubbard model, Monte-Carlo, Mott insulators, multilayers},
+	file = {Chang2015.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Chang2015.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/SL4CRZIM/14786435.2013.html:text/html}
+}
+
+@inproceedings{lee_parallelization_2010,
+	title = {Parallelization of {DQMC} simulation for strongly correlated electron systems},
+	doi = {10.1109/IPDPS.2010.5470484},
+	abstract = {Determinant Quantum Monte Carlo ({DQMC}) simulation has been widely used to reveal macroscopic properties of strong correlated materials. However, parallelization of the {DQMC} simulation is extremely challenging duo to the serial nature of underlying Markov chain and numerical stability issues. We extend previous work with novelty by presenting a hybrid granularity parallelization ({HGP}) scheme that combines algorithmic and implementation techniques to speed up the {DQMC} simulation. From coarse-grained parallel Markov chain and task decompositions to fine-grained parallelization methods for matrix computations and Green's function calculations, the {HGP} scheme explores the parallelism on different levels and maps the underlying algorithms onto different computational components that are suitable for modern high performance heterogeneous computer systems. Practical techniques, such as communication and computation overlapping, message compression and load balancing are also considered in the proposed {HGP} scheme. We have implemented the {DQMC} simulation with the {HGP} scheme on an {IBM} Blue Gene/P system. The effectiveness of the new scheme is demonstrated through both theoretical analysis and performance results. Experiments have shown over a factor of 80 speedups on an {IBM} Blue Gene/P system with 1,014 computational processors.},
+	eventtitle = {2010 {IEEE} International Symposium on Parallel Distributed Processing ({IPDPS})},
+	pages = {1--9},
+	booktitle = {2010 {IEEE} International Symposium on Parallel Distributed Processing ({IPDPS})},
+	author = {Lee, C. R. and Chung, I. H. and Bai, Z.},
+	date = {2010-04},
+	keywords = {Numerical stability, Hubbard model, coarse-grained parallel Markov chain, communication overlapping, computation overlapping, Computational modeling, Concurrent computing, determinant quantum Monte Carlo simulation parallelization, Electrons, fine-grained parallelization methods, Green's function calculations, Green's function methods, Heterogenenous system, heterogeneous computer systems, High performance computing, hybrid granularity parallelization scheme, {IBM} Blue Gene/P system, load balancing, Load management, macroscopic property, Markov processes, matrix algebra, matrix computations, Matrix decomposition, message compression, Monte Carlo methods, numerical stability, parallel processing, Parallel processing, Parallelization, physics computing, Quantum Monte Carlo simulation, resource allocation, strong correlated materials, strongly correlated electron system, strongly correlated electron systems, task decompositions},
+	file = {IEEE Xplore Abstract Record:/Users/franciscobrito/Zotero/storage/QEFGVHQ3/5470484.html:text/html;Lee2010.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Lee2010.pdf:application/pdf}
+}
+
+@inproceedings{jiang_fast_2016,
+	title = {A Fast Selected Inversion Algorithm for Green's Function Calculation in Many-Body Quantum Monte Carlo Simulations},
+	doi = {10.1109/IPDPS.2016.69},
+	abstract = {The Hubbard Hamiltonian provides a theoretical framework for describing electron interactions of quantum many-body systems in condensed matter physics. Determinant Quantum Monte Carlo ({DQMC}) simulations of the Hubbard Hamiltonian have contributed greatly to understanding important properties of materials. Physical measurements such as superconductivity and magnetic susceptibility are based on selected entries of a large set of Green's functions. The computations of Green's functions are equivalent to computing selected blocks of the inverses of large p-cyclic matrices. The performance of the state-of-art algorithm for computing Green's functions is around 100 Gflops on a 12-core Intel "Ivy Bridge" processor. In this paper, we describe a fast selected inversion ({FSI}) algorithm for computing selected entries of Green's functions and present a parallel implementation using hybrid {MPI}/{OpenMP} programming. The {FSI} algorithm rests on three ideas: (1) applying a block cyclic reduction for a structure-preserving reduction, (2) computing the inverse of the reduced block p-cyclic matrix by a structured orthogonal factorization, (3) using the block entries of the inverse of the reduced block p-cyclic matrix as seeds to rapidly form the selected inversion in parallel. Performance results of the new {FSI} algorithm on Edison, National Energy Research Scientific Computing Center ({NERSC})'s Cray {XC}30 supercomputer, show an 80\% improvement to 180 Gflops on the Intel "Ivy Bridge" processor. The parallel applications of the {FSI} algorithm for computing selected entries of multiple Green's functions reach to 20 – 30 Tflops on 100 compute nodes with 2400 cores. The preliminary results show that the {FSI} algorithm speeds up a full {DQMC} simulation of the Hubbard Hamiltonian by a factor of five, reducing from three and a half hours down to only forty minutes on the l2-core processor.},
+	eventtitle = {2016 {IEEE} International Parallel and Distributed Processing Symposium ({IPDPS})},
+	pages = {463--472},
+	booktitle = {2016 {IEEE} International Parallel and Distributed Processing Symposium ({IPDPS})},
+	author = {Jiang, C. and Bai, Z. and Scalettar, R.},
+	date = {2016-05},
+	keywords = {Hubbard model, superconductivity, Computational modeling, Green's function methods, Monte Carlo methods, parallel processing, 12-core Intel Ivy Bridge processor, block cyclic reduction, block p-cyclic matrix, condensed matter physics, Cray computers, determinant quantum Monte Carlo simulations, {DQMC} simulations, electron interactions, fast selected inversion algorithm, {FSI} algorithm, Green functions, Green's functions, Hubbard Hamiltonian, Hybrid {MPI}/{OpenMP}, hybrid {MPI}/{OpenMP} programming, l2-core processor, large p-cyclic matrices, Lattices, magnetic susceptibility, many-body quantum Monte Carlo simulations, Mathematical model, matrix decomposition, message passing, multiprocessing systems, National Energy Research Scientific Computing Center, {NERSC} Cray {XC}30 supercomputer, p-cyclic matrix, parallel applications, physical measurements, Physics, quantum computing, Quantum computing, quantum many-body systems, Quantum Monte Carlo simulations, Sparse matrices, structure-preserving reduction, structured orthogonal factorization},
+	file = {IEEE Xplore Abstract Record:/Users/franciscobrito/Zotero/storage/RX6KFE8N/7516042.html:text/html;Jiang2016.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/numerical-methods/Jiang2016.pdf:application/pdf}
+}
+
+
+@article{manzeli_2d_2017,
+	title = {2D transition metal dichalcogenides},
+	volume = {2},
+	doi = {10.1038/natrevmats.2017.33},
+	abstract = {Graphene is very popular because of its many fascinating properties, but its lack of an electronic bandgap has stimulated the search for 2D materials with semiconducting character. Transition metal dichalcogenides ({TMDCs}), which are semiconductors of the type {MX} 2, where M is a transition metal atom (such as Mo or W) and X is a chalcogen atom (such as S, Se or Te), provide a promising alternative. Because of its robustness, {MoS} 2 is the most studied material in this family. {TMDCs} exhibit a unique combination of atomic-scale thickness, direct bandgap, strong spin-orbit coupling and favourable electronic and mechanical properties, which make them interesting for fundamental studies and for applications in high-end electronics, spintronics, optoelectronics, energy harvesting, flexible electronics, {DNA} sequencing and personalized medicine. In this Review, the methods used to synthesize {TMDCs} are examined and their properties are discussed, with particular attention to their charge density wave, superconductive and topological phases. The use of {TMCDs} in nanoelectronic devices is also explored, along with strategies to improve charge carrier mobility, high frequency operation and the use of strain engineering to tailor their properties. © 2017 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.},
+	journaltitle = {Nature Reviews Materials},
+	author = {Manzeli, Sajedeh and Ovchinnikov, Dmitry and Pasquier, Diego and V. Yazyev, Oleg and Kis, Andras},
+	date = {2017-06-13},
+	keywords = {2D, tmd},
+	file = {Manzeli2017.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Manzeli2017.pdf:application/pdf}
+}
+
+
+@article{castro_neto_electronic_2009,
+	title = {The electronic properties of graphene},
+	volume = {81},
+	url = {https://link.aps.org/doi/10.1103/RevModPhys.81.109},
+	doi = {10.1103/RevModPhys.81.109},
+	abstract = {This article reviews the basic theoretical aspects of graphene, a one-atom-thick allotrope of carbon, with unusual two-dimensional Dirac-like electronic excitations. The Dirac electrons can be controlled by application of external electric and magnetic fields, or by altering sample geometry and/or topology. The Dirac electrons behave in unusual ways in tunneling, confinement, and the integer quantum Hall effect. The electronic properties of graphene stacks are discussed and vary with stacking order and number of layers. Edge (surface) states in graphene depend on the edge termination (zigzag or armchair) and affect the physical properties of nanoribbons. Different types of disorder modify the Dirac equation leading to unusual spectroscopic and transport properties. The effects of electron-electron and electron-phonon interactions in single layer and multilayer graphene are also presented.},
+	pages = {109--162},
+	number = {1},
+	journaltitle = {Reviews of Modern Physics},
+	shortjournal = {Rev. Mod. Phys.},
+	author = {Castro Neto, A. H. and Guinea, F. and Peres, N. M. R. and Novoselov, K. S. and Geim, A. K.},
+	urldate = {2018-08-05},
+	date = {2009-01-14},
+	file = {APS Snapshot:/Users/franciscobrito/Zotero/storage/J4XSMQTK/RevModPhys.81.html:text/html;Neto2009.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/graphene/Neto2009.pdf:application/pdf}
+}
+
+
+@article{splendiani_emerging_2010,
+	title = {Emerging photoluminescence in monolayer {MoS}2},
+	volume = {10},
+	issn = {1530-6992},
+	doi = {10.1021/nl903868w},
+	abstract = {Novel physical phenomena can emerge in low-dimensional nanomaterials. Bulk {MoS}(2), a prototypical metal dichalcogenide, is an indirect bandgap semiconductor with negligible photoluminescence. When the {MoS}(2) crystal is thinned to monolayer, however, a strong photoluminescence emerges, indicating an indirect to direct bandgap transition in this d-electron system. This observation shows that quantum confinement in layered d-electron materials like {MoS}(2) provides new opportunities for engineering the electronic structure of matter at the nanoscale.},
+	pages = {1271--1275},
+	number = {4},
+	journaltitle = {Nano Letters},
+	shortjournal = {Nano Lett.},
+	author = {Splendiani, Andrea and Sun, Liang and Zhang, Yuanbo and Li, Tianshu and Kim, Jonghwan and Chim, Chi-Yung and Galli, Giulia and Wang, Feng},
+	date = {2010-04-14},
+	pmid = {20229981}
+}

@@ -1,9 +1,9 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}Motivation}{\reset@font\mtcSfont 2}{section.1.1}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}Strongly correlated electron systems}{\reset@font\mtcSfont 3}{section.1.2}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}Beyond graphene: TMD nanoribbons}{\reset@font\mtcSfont 5}{section.1.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Introduction to \acl {QMC}}{\reset@font\mtcSfont 7}{section.1.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.1}Variational Monte Carlo}{\reset@font\mtcSSfont 9}{subsection.1.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.2}Diffusion Monte Carlo and projective methods}{\reset@font\mtcSSfont 10}{subsection.1.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.3}Auxiliary Field \acs {QMC} and the Fermion Sign Problem.}{\reset@font\mtcSSfont 11}{subsection.1.4.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Original Contributions}{\reset@font\mtcSfont 12}{section.1.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Outline}{\reset@font\mtcSfont 13}{section.1.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}Introduction to \acl {QMC}}{\reset@font\mtcSfont 9}{section.1.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.1}Variational Monte Carlo}{\reset@font\mtcSSfont 10}{subsection.1.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.2}Diffusion Monte Carlo and projective methods}{\reset@font\mtcSSfont 11}{subsection.1.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {1.4.3}Auxiliary Field \acs {QMC} and the Fermion Sign Problem}{\reset@font\mtcSSfont 13}{subsection.1.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.5}Original Contributions}{\reset@font\mtcSfont 14}{section.1.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.6}Outline}{\reset@font\mtcSfont 14}{section.1.6}}

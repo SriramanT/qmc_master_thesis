@@ -14,7 +14,7 @@
 \BOOKMARK [1][]{section.1.4}{1.4 Introduction to Quantum Monte Carlo}{chapter.1}% 14
 \BOOKMARK [2][]{subsection.1.4.1}{1.4.1 Variational Monte Carlo}{section.1.4}% 15
 \BOOKMARK [2][]{subsection.1.4.2}{1.4.2 Diffusion Monte Carlo and projective methods}{section.1.4}% 16
-\BOOKMARK [2][]{subsection.1.4.3}{1.4.3 Auxiliary Field QMC and the Fermion Sign Problem.}{section.1.4}% 17
+\BOOKMARK [2][]{subsection.1.4.3}{1.4.3 Auxiliary Field QMC and the Fermion Sign Problem}{section.1.4}% 17
 \BOOKMARK [1][]{section.1.5}{1.5 Original Contributions}{chapter.1}% 18
 \BOOKMARK [1][]{section.1.6}{1.6 Outline}{chapter.1}% 19
 \BOOKMARK [0][]{chapter.2}{2 Minimal models of electron correlations in energy bands}{}% 20
@@ -50,7 +50,7 @@
 \BOOKMARK [1][]{section.4.3}{4.3 Honeycomb lattice}{chapter.4}% 50
 \BOOKMARK [1][]{section.4.4}{4.4 Nanoribbon}{chapter.4}% 51
 \BOOKMARK [0][]{chapter.5}{5 Conclusions and Future Work}{}% 52
-\BOOKMARK [0][]{section*.45}{Bibliography}{}% 53
+\BOOKMARK [0][]{section*.47}{Bibliography}{}% 53
 \BOOKMARK [0][]{appendix.A}{Appendix A Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{}% 54
 \BOOKMARK [1][]{section.A.1}{A.1 Hartree-Fock Approximation and the Self Consistent Field Method}{appendix.A}% 55
 \BOOKMARK [1][]{section.A.2}{A.2 Mott insulators}{appendix.A}% 56
