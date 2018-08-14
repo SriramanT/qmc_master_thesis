@@ -1,12 +1,16 @@
 # qmc_master_thesis
 
-This repository is part of a MSc Physics Engineering final project consisting of applying Quantum Monte Carlo (QMC) to a problem of interacting fermions.
+This repository is part of a MSc in Physics Engineering final project consisting of applying Quantum Monte Carlo (QMC) to a problem of interacting fermions. We refer the interested reader to the thesis available at
+
+[Thesis](https://github.com/fmonteir/qmc_master_thesis/blob/master/thesis/thesis.pdf)
+
+The aim of this work was to carry out a theoretical study (with particular emphasis on numerical aspects) of the properties of a TMD (transition metal dichalcogenide) nanoribbon - a graphene-like 2D nanostructure where electron interactions are particularly relevant - using a QMC method.
 
 ## Getting started
 
 This folder contains all the files needed to compile the LaTeX code that builds the .pdf file with the thesis itself.
 
-In this 'read me' file, I include a to do list, and a plan that I prepared while writing the thesis itself.
+In this README file, I include a to do list, and a plan that I prepared while writing the thesis itself.
 
 ## To do list
 
@@ -51,7 +55,7 @@ Mention the thermodynamic limit, importance sampling, and finite size correction
 
 #### **Monte Carlo sampling is an appropriate method to compute these integrals**
 
-Point out that Monte Carlo methods become more efficiente as the dimensionality grows and that they are a natural choice to tackle this problem.
+Point out that Monte Carlo methods become more efficient as the dimensionality grows and that they are a natural choice to tackle this problem.
 
 #### **Classical vs Quantum Monte Carlo**
 
@@ -63,7 +67,7 @@ Brief history of what was developed before, its successes and its failures.
 
 #### **A Survey of Quantum Monte Carlo Methods**
 
-Summarize the existing QMC methods, and explain why we focus on detQMC
+Summarize the existing QMC methods, and explain why we focus on detQMC.
 
 #### **Original contributions**
 
@@ -101,7 +105,7 @@ This repository was based on a template for the thesis struture as specified by 
 
 ## Versioning
 
-v1 - latest update 23.07.2018
+v1 - latest update 14.08.2018
 
 ## Authors
 
