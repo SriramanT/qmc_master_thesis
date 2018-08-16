@@ -43,7 +43,7 @@ Thus, magnetism is favored by a large on-site interaction and a large density of
 
 \subsection{Mean field theory of the Hubbard model}
 
-We have already encountered an example of a mean field theory when deriving the Hubbard Hamiltonian (see appendix \ref{ap:hartree-fock}, where we provide motivation both heuristically and via a more rigorous variational approach).
+We have already encountered an example of a mean field theory when deriving the Hubbard Hamiltonian (see appendix \ref{ap:hubbardObSol}, where we provide motivation both heuristically and via a more rigorous variational approach).
 In mean field theory, we give a systematic procedure to derive the most plausible quadratic Hamiltonian (which, as we know by now, is soluble) capturing some of the physics of our sytem.
 In the case of the Hubbard model, to find the best possible approximation for the quartic term we start by expressing the number operators in terms of an average plus fluctuations: $n = \left\langle n \right\rangle + ( n - \left\langle n \right\rangle ) \equiv \left\langle n \right\rangle + \delta n$.
 Then, we make this substitution in the interaction term and neglect the term that is second order in the fluctuations to obtain
@@ -66,7 +66,7 @@ From equation (\ref{eq:meanFieldNop}), we obtain the quadratic mean field Hamilt
 
 To solve $\mathcal{H}_{\text{MF}}$, one merely has to diagonalize the corresponding matrix.
 In the ferromagnetic case, the average occupation is independent of the specific site, but can vary with the spin species: $n_{i, \uparrow(\downarrow)} = n \Pm m$, where $m$ is the magnetization, the order parameter of the transition to a ferromagnetic phase.
-Similarly, for the \acs{AF} case on a bipartite, we consider $n_{i, \uparrow(\downarrow)} = n \Pm (-1)^{i} m$, leading to a staggered potential.
+Similarly, for the \acs{AF} case on a bipartite lattice, we consider $n_{i, \uparrow(\downarrow)} = n \Pm (-1)^{i} m$, leading to a staggered potential.
 
 Now we take on a \acl{LG} theory kind of approach.
 We compute the energy $E$ for fixed $n$ as a function of $m$, and inspect the system for ferromagnetic ordering: if the minimum lies at $m = 0$, the system is paramagnetic, otherwise it is ferromagnetic.
@@ -99,7 +99,7 @@ Out of the energies computed in this way for varying $N_{\uparrow, \downarrow}$,
 \end{figure}
 
 Let us focus on figure (\ref{fig:mft_multiple}).
-At $U = 2$, the phase is paramagnetic since the energy is minimzed at $m = 0$. By $U = 4$, the phase transition is yet to occur but if you look at the energy scale in figure (\ref{fig:mft}), you will see that the energy of the spin polarized solutions decreased dramatically.
+At $U = 2$, the phase is paramagnetic since the energy is minimized at $m = 0$. By $U = 4$, the phase transition is yet to occur but if you look at the energy scale in figure (\ref{fig:mft}), you will see that the energy of the spin polarized solutions decreased dramatically.
 	At $U = 4.2$, the large $| m | $ energies have turned down, although $m = 0$ is still the lowest energy solution.
 	At $U = 4.4$, the phase transition occurs, and the solutions with $| m | = 1$ become the lowest energy solutions: we have reached the ferromagnetic phase.
 
@@ -129,9 +129,9 @@ At quarter filling, we have $N( 1 / 2 ) = 1 /\sqrt{2} \pi t$, giving $U_c = \sqr
 Mean field theory can be formulated in the \ac{GCE} as well.
 One simply chooses the chemical potential $\mu$, and then computes $N_{\uparrow, \downarrow}$ by filling the levels below $\mu$.
 The density is changed by tuning $\mu$.
-In the \ac{GCE} case, the calculation is self-consistent, and is determined iteratively\footnote{One must pay attention so as not to get stuck in metastable states.}: the densities are updates until convergence occurs.
+In the \ac{GCE} case, the calculation is self-consistent, and is determined iteratively\footnote{One must pay attention so as not to get stuck in metastable states.}: the densities are updated until convergence occurs.
 An example of the success of mean field is the discovery of striped phases of the Hubbard model, which are crucial in cuprate superconductors.
-Recent work probes these phases by the \ac{QMC} method we shall use in this thesis \cite{huang_stripe_2018}.
+Recently, these phases have been probed by the \ac{QMC} method we shall use in this thesis \cite{huang_stripe_2018}.
 In fact, mean field theory is insightful, but uncontrolled.
 It tends to overestimate the possibility of ordering since it always predicts a phase transition.
 Even if the transition does occur, generally its details are not perfectly captured (the critical temperature, the critical exponents, ...).

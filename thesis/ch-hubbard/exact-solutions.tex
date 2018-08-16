@@ -1,29 +1,16 @@
 \section{Exact solutions for simple cases}\label{sec:exactSolutions}
 
-In \ac{PHS} form, the Hubbard Hamiltonian may then be written as a sum of kinetic, chemical and potential energy terms, respectively:
-
-\begin{equation}\label{eq:hubbard}
-\mathcal{H} = \mathcal{H}_K + \mathcal{H}_\mu + \mathcal{H}_V ,
-\end{equation}
+In \ac{PHS} form, the Hubbard Hamiltonian may then be written as a sum of kinetic and chemical, and potential energy terms 
+$
+\mathcal{H} = \mathcal{H}_K + \mathcal{H}_V ,
+$
 defined as
 
 \begin{equation}\label{eq:def_energies}
-\mathcal{H}_K = -t \sum_{\left\langle i, j \right \rangle, \sigma} \bigg( c_{i,\sigma} c_{j,\sigma}^\dagger + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) , \,\,\,
-\mathcal{H}_\mu = -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg) , \,\,\,
+\mathcal{H}_K = -t \sum_{\left\langle i, j \right \rangle, \sigma} \bigg( c_{i,\sigma} c_{j,\sigma}^\dagger + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg) , \,\,\,
 \mathcal{H}_V = U \sum_{i} \bigg( n_{i,\uparrow} - \frac{1}{2} \bigg) \bigg( n_{i,\downarrow} - \frac{1}{2} \bigg) ,
 \end{equation}
-where:
-
-\begin{itemize}
-\item $i$ and $j$ label sites on the lattice.
-\item $c_{i,\sigma}^{(\dagger)}$ is an operator that annihilates (creates) an electron with spin $\sigma$ on site $i$.
-\item $n_{i,\sigma}$ is the number operator counting the number of electrons of spin $\sigma$ on site $i$ (either 0 or 1).
-\item $t$ is the hopping parameter related to the kinetic energy of the electrons.
-It is determined by the overlap of the atomic wave functions on neighboring sites $\left\langle i, j \right\rangle$.
-\item $U$ is the on-site Coulomb repulsion between electrons.
-Whenever a site $i$ has two electrons, there is a local repulsion between them corresponding to an energy cost $U n_{i \uparrow} n_{i \downarrow}$ (up to an additive constant).
-\item $\mu$ is the chemical potential controlling the electron number (or density).
-\end{itemize}
+where $i$ and $j$ label sites on the lattice; $c_{i,\sigma}^{(\dagger)}$ is an operator that annihilates (creates) an electron with spin $\sigma$ on site $i$; $n_{i,\sigma}$ is the number operator counting the number of electrons of spin $\sigma$ on site $i$ (either 0 or 1); $t$ is the hopping parameter related to the kinetic energy of the electrons: it is determined by the overlap of the atomic wave functions on neighboring sites $\left\langle i, j \right\rangle$; $U$ is the on-site Coulomb repulsion between electrons: whenever a site $i$ has two electrons, there is a local repulsion between them corresponding to an energy cost $U n_{i \uparrow} n_{i \downarrow}$ (up to an additive constant); $\mu$ is the chemical potential controlling the electron number (or density).
 
 A given physical observable of interest $\mathcal{O}$, such as the spin-spin correlation, or the magnetic susceptibility may be computed formally by
 
@@ -78,7 +65,6 @@ For example, one such state is
 \left| 0 \right\rangle_{1, \uparrow} \left| 1 \right\rangle_{1, \downarrow} \left| 1 \right\rangle_{2, \uparrow} \left| 1 \right\rangle_{2, \downarrow} \left| 0 \right\rangle_{3, \uparrow} \left| 0 \right\rangle_{3, \downarrow} ... \left| 1 \right\rangle_{N, \uparrow} \left| 0 \right\rangle_{N, \downarrow}  ,
 \end{equation}
 where $N$ is the number of sites on the lattice. Site $1$ has a single spin-down electron, while site $2$ is doubly occupied, site $3$ is unoccupied, and so on, until we reach site $N$, which has a single spin-up electron.
-
 The creation and annihilation operators act as follows
 
 \begin{equation}
@@ -86,10 +72,10 @@ c \left| 0 \right\rangle = 0 \quad c^\dagger \left| 0 \right\rangle = \left| 1 \
 \end{equation}
 
 Thus, the eigenstates of the number operator are $\left| 0 \right\rangle, \left| 1 \right\rangle$: $
-n \left| 0 \right\rangle = 0 , \quad n \left| 1 \right\rangle = \left| 1 \right\rangle
+n \left| 0 \right\rangle = 0 , \, n \left| 1 \right\rangle = \left| 1 \right\rangle
 $.
-
-Moreover, the operator $c_i^\dagger c_{i+1}^\dagger$, corresponding to the hopping from site $i+1$ to $i$, i.e. to the kinetic energy of the electrons on neighboring sites, acts as follows (ignoring spin):
+Moreover, the operator $c_i^\dagger c_{i+1}^\dagger$, corresponding to the hopping from site $i+1$ to $i$, i.e. to the kinetic energy of the electrons on neighboring sites, annihilates the particle at $i+1$ and creates it back at $i$, i.e. the electron hops from $i+1$ to $i$.
+Ignoring spin:
 
 \begin{equation}
 c_i^\dagger c_{i+1}^\dagger \begin{cases}
@@ -99,8 +85,6 @@ c_i^\dagger c_{i+1}^\dagger \begin{cases}
 \left|1 1 \right\rangle =  c_i^\dagger \left| 1 0  \right\rangle = 0 \\
 \end{cases}
 \end{equation}
-
-The operator annihilates the particle at $i+1$ and creates it back at $i$, i.e. the electron hops from $i+1$ to $i$.
 
 \subsection{The purely atomic ( $\frac{U}{t} \rightarrow \infty$ ), single site limit}
 \label{subsec:atomic}
@@ -172,24 +156,21 @@ The bottom line is that we are able to obtain \emph{exact} expressions for
 Note that when there is no chemical potential $\mu = 0$, we have $\rho = 1$ for any $U$, or $\beta$.
 This corresponds to half filling: the density of electrons is half its maximum possible value.
 
-In figure (\ref{fig:rhoVsMu}), we plot $\rho(\mu)$ for varying temperature, and fixed on-site interaction.
+In Fig. (\ref{fig:rhoVsMu}), we plot $\rho(\mu)$ for varying temperature, and fixed on-site interaction.
 It allows us to get some insight into the Mott insulating gap.
 At $T = 0.25$, the curve owes its step-like shape to the small thermal fluctuations.
 As $T$ increases, the curve starts losing this tendency, and by $T = 2.0$, it is no longer possible to identify it.
 This is a consequence of the now larger thermal fluctuations that are present at higher temperature.
-
 We denote the flat region between $\mu = - U / 2 $ and $\mu =  U / 2 $  \say{Mott Plateau}.
 As the chemical potential is increased, the density remains small until a threshold is exceeded at $\mu = - \frac{U}{2}$. 
 Then, it rises very rapidly to $\rho = 1$ (half filling), and again stays almost constant.
 It is not until $\mu$ jumps by $U$ that we fill the site ($\rho = 2$).
-This Mott insulating gap appears because the presence of a fermion in the site blocks the addition of a second due to the on-site interaction.
+This Mott insulating gap appears because the presence of a fermion in the site blocks the addition of a second one due to the on-site interaction.
 One needs a sufficiently large chemical potential to overcome this effect.
 As we shall see, this feature of the model remains present as the number of sites increases.
-Note that in the Mott gap, the compressibility vanishes: $\kappa = \frac{\partial \rho}{\partial \mu} = 0$.
-
+Note that in the Mott gap, the compressibility vanishes: $\kappa = \frac{\partial \rho}{\partial \mu} = 0$, leading to the appearance of the Mott Plateau.
 Just as thermal fluctuations can destroy the sharp jumps corresponding to the gap, so can quantum fluctuations.
-The hopping term in the Hamiltonian introduces such fluctuations, leading to an effect similar to that of figure (\ref{fig:rhoVsMu}).
-
+The hopping term in the Hamiltonian introduces such fluctuations, leading to an effect similar to that of Fig.  (\ref{fig:rhoVsMu}).
 \begin{figure}[H]
 	\centering
 \hspace{12mm}\includegraphics[width=0.7\linewidth]{Hubbard/rhoVsMu.png}
@@ -232,7 +213,7 @@ For the Hubbard model, the relevant quantity is the local moment
 \left\langle m^2 \right\rangle = \left\langle ( n_\uparrow - n_\downarrow )^2 \right\rangle = \left\langle n_\uparrow - n_\downarrow \right\rangle - 2  \left\langle n_\uparrow n_\downarrow \right\rangle = \rho - 2  \left\langle n_\uparrow n_\downarrow \right\rangle
 \end{equation}
 
-In figures (\ref{fig:mSqVsU}, \ref{fig:mSqVsT}), we show how $\left\langle m^2 \right\rangle$ varies as a function of $U$ for different temperatures, and how $\left\langle m^2 \right\rangle$ varies with $T$, for different values of the chemical potential, respectively.
+In Figs. (\ref{fig:mSqVsU}, \ref{fig:mSqVsT}), we show how $\left\langle m^2 \right\rangle$ varies as a function of $U$ for different temperatures, and how $\left\langle m^2 \right\rangle$ varies with $T$, for different values of the chemical potential, respectively.
 At low temperature or for large on-site interaction, local moments tend to develop, which leads to magnetic ordering: $\left\langle m^2 \right\rangle \rightarrow 1$ (in the half-filled case).
 Since the double occupancy is zero in this case, if we do not consider thermal fluctuations, the magnetization corresponds to the spin of the electron occupying the site.
 
@@ -244,7 +225,7 @@ Since the double occupancy is zero in this case, if we do not consider thermal f
 	\label{fig:mSqVsU}
 \end{figure}
 
-In figure (\ref{fig:mSqVsU}), we see thermal fluctuations destroying magnetic ordering.
+In Fig. (\ref{fig:mSqVsU}), we see thermal fluctuations destroying magnetic ordering.
 As what happens for the Mott plateau, quantum fluctuations (i.e. introducing a hopping term in the Hamiltonian) change the behavior of the magnetization, and perfect moments ($\left\langle m^2 \right\rangle =1$) do not form anymore at zero temperature for finite on-site interaction.
 
 \begin{figure}[H]
@@ -286,7 +267,6 @@ For concreteness, let us consider a rectangular two-dimensional lattice with $N_
 \bm K = \bm I_y \otimes \bm K_x + \bm I_x \otimes \bm K_y ,
 \end{equation}
 where $\bm I_{x, y}$ are identity matrices of dimension $N_{x, y} \times N_{x, y}$, respectively, and $\bm K_{x, y}$ are the hopping matrices in the $x$ and $y$-directions.
-
 For lattices in \acs{1D} or \acs{2D}, it is possible to find an exact eigendecomposition
 
 \begin{equation}
@@ -308,24 +288,22 @@ This is equivalent to performing a canonical transformation on the annihilation 
 Finding the eigendecomposition is equivalent to changing to Fourier space:
 
 \begin{equation}
-\tilde{c}_{\bm k}^\dagger = \frac{1}{\sqrt{N}} \sum_{\bm j} e^{i \bm k \cdot \bm j} c_{\bm j}^\dagger ,
+\tilde{c}_{\bm k}^\dagger = \frac{1}{\sqrt{N}} \sum_{} e^{i \bm k \cdot \bm R_j} c_j^\dagger ,
 \end{equation}
-a transformation which indeed preserves the anti-commutation relations, and the total number operator, i.e., $n = \sum_{\bm j} n_{\bm j} = \tilde{n} = \sum_{\bm k} n_{\bm k}$.
-
-The $\tilde{c}$-operators are equally valid electron creation/annihilation operators, obeying the same anticommutation relations as the original operators $c_i$, and the total number operator is unchanged under our transformation.
+a transformation which indeed preserves the anti-commutation relations, and the total number operator, i.e., $n = \sum_j n_j = \tilde{n} = \sum_{\bm k} n_{\bm k}$.
+The $\tilde{c}_{\bm k}$-operators are equally valid electron creation/annihilation operators, obeying the same anticommutation relations as the original operators $c_i$, and the total number operator is unchanged under our transformation.
 However, while the original operators create/annihilate particles at specific (spatial) sites, the new ones create/annihilate particles with momentum ${\bm k}$.
 Both sets of operators describe the same physics.
 Why can't this procedure be applied to the interacting case?
-Well, for instance, the interaction term in the Hubbard model is fairly complex to write in momentum space so it is not possible to apply a similar transformation to diagonalize it.
+Well, for instance, the interaction term in the Hubbard model takes on a fairly complex form in momentum space so it is not possible to apply a similar transformation to diagonalize it.
 
 Now, it turns out that it is easy to evaluate the partition function for quadratic Hamiltonians. If $\mathcal{H} = \bm c^\dagger \bm H \bm c$, where $\bm H$ is a $N \times N$ Hermitian matrix, then we have that
 
 \begin{equation}\label{eq:trace_quadratic}
 \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \prod_{i=1}^N ( 1 + e^{-\beta \lambda_i } ) ,
 \end{equation}
-where $\lambda_i$ are the eigenvalues of $\bm H$. We present a proof of this result in appendix \ref{ap:Zquadratic}.
-
-This result suggests that if we are able to devise some approximation to transform the quartic term of the interacting Hubbard model in a quadratic form, then we can solve it.
+where $\lambda_i$ are the eigenvalues of $\bm H$. We present a proof of this result in appendix \ref{ap:hubbardObSol}.
+It suggests that if we are able to devise some approximation to transform the quartic term of the interacting Hubbard model in a quadratic form, then we can solve it.
 While this idea is essentially correct, the procedure is not straightforward.
 Actually, we explore this in the next chapter to derive the simulation method that is at the basis of this work.
 
@@ -341,7 +319,7 @@ A related quantity is the density of states, counting the number of states with 
 N ( E ) = \frac{1}{N} \sum_{\bm k} \delta_{E,\varepsilon_{\bm k}} \rightarrow \frac{1}{(2\pi)^d} \int d\bm k \, \delta ( E - \varepsilon_{\bm k})\,\, \text{when}\,\, N\rightarrow \infty.
 \end{equation}
 
-In \acs{1D}, we have $\varepsilon_{k} = - 2 t \cos k$, which gives $N(E) = ( \pi \sqrt{ 4 t^2 - E^2 } )^{-1}$ (see appendix \ref{ap:dos1d}).
+In \acs{1D}, we have $\varepsilon_{k} = - 2 t \cos k$, which gives $N(E) = ( \pi \sqrt{ 4 t^2 - E^2 } )^{-1}$ (see appendix \ref{ap:hubbardObSol}).
 
 Now that we have found a closed form solution for $Z$, it is again possible to find closed form expressions for observables of interest as well, namely:
 
@@ -351,7 +329,7 @@ Now that we have found a closed form solution for $Z$, it is again possible to f
 \begin{equation}
 \rho = \left\langle n \right\rangle = \left\langle \tilde{n} \right\rangle = \frac{1}{N} \sum_{{\bm k}} \left\langle \tilde{n}_{\bm k} \right\rangle  = \frac{1}{N} \sum_{\bm k}  \frac{1}{1 + e^{\beta (\varepsilon_{\bm k} - \mu)}} = \frac{1}{N} \sum_{\bm k}  f_{\bm k} ,
 \end{equation}
-where $f_{\bm k} = \big(1 + e^{\beta(\varepsilon_{\bm k} - \mu)} \big)^{-1}$ is the Fermi-Dirac distribution (of course, here we consider half filling: $\mu = 0$).
+where $f_{\bm k} = \big(1 + e^{\beta(\varepsilon_{\bm k} - \mu)} \big)^{-1}$ is the Fermi-Dirac distribution (at half filling: $\mu = 0$).
 
 \item the energy $E = \left\langle \mathcal{H} \right\rangle$.
 \begin{equation}

@@ -15,19 +15,20 @@ Some of these properties are not explained by band theory, namely the Mott metal
 
 First, note that the effects of correlations cannot possibly be the same in narrow energy bands and in the free electron gas.
 To see this, we may simply recall the shape of a $d-$wave function.
+
+\begin{figure}[H]\label{fig:hydrogenWF}
+\centering
+\includegraphics[width = 9cm]{Hubbard/Hydrogen_Density_Plots.png}
+\caption[Hydrogen atomic wave functions.]{Probability density plots for different hydrogen orbital wave functions corresponding to quantum numbers $(n, l, m)$ for $n = 3$.
+d-wave functions correspond to $l=2$. Note that the probability density is always higher in a region near the nucleus, and has a complicated shape, which will lead to a non-uniform distribution of electronic charge, as opposed to the case of the free electron gas. (adapted from \cite{hydrogen})}
+\end{figure}
+
 In a $d-$orbital, the electron charge density is concentrated near the nucleus.
 In a solid, the electronic charge density should then also be concentrated near the nuclei, as long as the atomic description is useful, even if not completely correct\footnote{The electronic charge density is, of course, not actually defined in terms of a squared norm of the $d-$wave function for a narrow band. There is some broadening of the corresponding atomic energy level, and the wave function describing an electron is a Bloch wave function. Since the band is narrow, we assume that the atomic wave function description is still somewhat useful in a given range and we use it to provide a heuristic motivation for the non validity of the free electron assumption.}.
 It is much smaller between atoms so that electrons do seem to belong to individual atoms in some sense.
 For a $d-$band, we assume this description to hold to some extent since the band is narrow.
 Thus, the fact that we may speak with some meaning of an electron belonging to a particular atom motivates a description from which the atomic characteristics of the solid emerge, in spite of the fact that the bandwidth of a $d-$band is still appreciable.
 The point is that electrons in $d-$bands are certainly not well described by a free electron gas, which cannot possibly account for atomic-like behavior.
-
-\begin{figure}[H]\label{fig:hydrogenWF}
-\centering
-\includegraphics[width = 8.2cm]{Hubbard/Hydrogen_Density_Plots.png}
-\caption[Hydrogen atomic wave functions.]{Probability density plots for different hydrogen orbital wave functions corresponding to quantum numbers $(n, l, m)$ for $n = 3$.
-d-wave functions correspond to $l=2$. Note that the probability density is always higher in a region near the nucleus, and has a complicated shape, which will lead to a non-uniform distribution of electronic charge, as opposed to the case of the free electron gas. (adapted from \cite{hydrogen})}
-\end{figure}
 
 Experimentally, $d-$electrons of transition metals show hybrid behavior: sometimes they are accurately described by an ordinary band model, but there are occasions in which the atomic model is better.
 For example, we see spin wave phenomena in ferromagnetic transition metals, and the susceptibilities of some of these metals depend strongly on temperature.
@@ -55,8 +56,7 @@ We start by recalling Hund's rule: the nature of the  interactions between atoms
 Since the atomic picture seems to prevail in our metal, we have reason to expect a similar effect to occur.
 An atom with a total spin in some direction at a given time will tend to attract electrons with the spin on that direction and repel those with opposite spin.
 This mechanism makes it unlikely for the spin of an atom to change much over time.
-
-If the interactions between atoms are strong enough, the correlations become considerable, and to state it more precisely, the total spin of an atom will persist for a time that is long compared with the $d-$electron hopping time.
+If the interactions between atoms are strong enough, the correlations become considerable and, making our statement  more precise, the total spin of an atom will persist for a time that is long compared with the $d-$electron hopping time.
 Note that it is not the localization of the electrons that causes the spin state of the atom to persist.
 The specific electrons belonging to a given atom change all the time as long as their spin is consistent with the total spin requirement imposed by Hund's rule.
 For strong enough correlations, we may think of the spin as being associated to each atom, which opens up the possibility to describe the system using an atomic (Heisenberg) model, as we shall see later.
@@ -147,7 +147,6 @@ Keeping only the terms in $U$ in the interaction part, we obtain
 where $n_{i\sigma} = c_{i\sigma}^\dagger c_{i\sigma}$.
 Note that $\nu_{i, i} = N^{-1} \sum_{\bm k} \nu_{\bm k} = n/2$, where $n$ is the electron density, which means that the last term is constant and may be dropped.
 Now, the hopping matrix $\bm K$ can, in principle, be found by inverse Fourier transforming the dispersion relation $\varepsilon_{\bm k}$ of the equivalent interaction-free system, that we can assumed to be obtained experimentally or numerically.
-
 In the purely tight binding view (with no $U$-term), we have a well defined crystal wavevectors that depends on the symmetry of the lattice, which may be written as Fourier transforms
 
 \begin{equation}
@@ -210,9 +209,7 @@ Introducing a \ac{PHT},
 d_{ i, \sigma}^\dagger = (-1)^i c_{i, \sigma} ,
 \end{equation}
 we exchange the role of annihilation and creation operators.
-
 In fact, particles become holes and vice-versa: $d_{ i, \sigma}^\dagger d_{ i, \sigma} = 1 - c_{ i, \sigma}^\dagger c_{ i, \sigma} $, and the occupations $n = 0, 1$ are interchanged.
-
 Consider a bipartite lattice.
 Since in that case the factor $(-1)^i$ takes on $-1$ on one sublattice and $1$ on the other, the kinetic part of the Hamiltonian is invariant under a \ac{PHT}:
 
@@ -240,5 +237,6 @@ The Hamiltonian changes only in the chemical potential term: $\mu \mapsto -\mu$.
 Thus, we have that $\rho (\mu) = 2 - \rho (-\mu)$, and at $\mu = 0$, we have half filling: $\rho = 1$.
 This reasoning is valid for any $\beta$, $t$, or $U$, which implies that the phase diagram of the Hubbard model must be symmetric about half filling.
 Suppose you added next nearest neighbor (NNN) hoppings $t'$\footnote{On the square lattice, this corresponds to connecting sites across the diagonal of each square.}.
-Then, PHS would be broken, and the phase diagram would no longer be symmetric about $\mu = 0$.
+Then, \ac{PHS} would be broken, and the phase diagram would no longer be symmetric about $\mu = 0$.
 Indeed, a modified version of the Hubbard model with NNN hoppings is often used to model cuprate superconductors, and this lack of symmetry is consistent with the fact that hole- and electron-doped cuprates have different properties. 
+\ac{PHS} is also broken for the triangular lattice with non uniform hoppings we shall consider later when modelling \acp{TMD}.

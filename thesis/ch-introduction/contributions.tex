@@ -4,7 +4,10 @@
 In this work we focus mainly on the study of the magnetic properties of \ac{TMD} nanoribbons.
 We compare our \ac{QMC} results with those obtained in the mean field approximation and benchmark them  against existing, \say{tried and true}  implementations (namely \texttt{ALF} \cite{bercx_alf_2017} and \texttt{QUEST} \cite{noauthor_quest_2012}), and early seminal studies \cite{hirsch_discrete_1983,white_numerical_1989}.
 
-To carry out this study, we use \texttt{QUEST} and our own original implementation of the auxiliary field \ac{QMC} algorithm in \texttt{C++}.
-The code we wrote can be used to simulate low-dimensional Hubbard-like models with different geometries to extend this work.
-Additionaly, using our code, we characterize and compare different options to stabilize the matrix products needed to perform the simulations.
-Lastly, we give a contribution to circumvent the fermion sign problem in an attempt to extract the maximum amount of information out of the Monte Carlo measurements.
+To carry out this study, we use our own original implementation of the auxiliary field \ac{QMC} algorithm in \texttt{C++}.
+The code we wrote can be used to simulate low-dimensional Hubbard-like models with different geometries to extend this work further.
+Additionaly, using our code, we characterize and compare different options to stabilize the matrix products needed to perform the simulations, and characterize the fermion sign problem.
+This last step is needed to extract the maximum amount of information out of the Monte Carlo measurements, since the fermion sign problem may become relevant for specific combinations of parameters of a given model.
+
+In the context of this work, we extend a minimal three-band tight binding model of \acp{TMD} \cite{liu_three-band_2013} to the interacting case.
+We characterize \ac{TMD} nanoribbons via original mean field and \ac{QMC} calculations.

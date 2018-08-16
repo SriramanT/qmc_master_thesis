@@ -15,7 +15,7 @@ Hence the name \acl{QMC}, which is used to distinguish it from Classical Monte C
 In the classical version, one measures thermal averages, while in the quantum version, one measures expectations of operators over the Hilbert space of the system, corresponding to physical observables that fluctuate with a dynamics given by the Schr\"odinger equation.
 
 The dynamics of a quantum system are encoded in the Hamiltonian operator.
-In the case of graphene-like \acl{2D} materials, one usually uses a tight-binding type of model.
+In the case of graphene-like \ac{2D} materials, one usually uses a tight-binding type of model.
 It is found that the dynamics given by the tight-binding Hamiltonian is sufficient to describe most properties of graphene.
 However, in other materials, such as \acp{TMD}, electron-electron interactions are stronger, and we must consider  Hubbard-type models.
 
@@ -65,15 +65,15 @@ Note that it requires prior knowledge about the system to propose an approximate
 A particularly relevant observable is the variational energy $E_V$ associated to a trial ground state.
 Let $\bm r$ be the $3N$ spatial coordinates of the $N$ electrons.
 For simplicity, let us ignore all other degrees of freedom, such as spin.
-Given the Hamiltonian of the system $\mathcal{H}$, and a trial wave function $\psi (\bm r)$ - a guess of the wave function representing the ground state - one can compute the corresponding variational energy.
+Given the Hamiltonian of the system $\mathcal{H}$, and a trial wave function $\psi_T (\bm r)$ - a guess of the wave function representing the ground state - one can compute the corresponding variational energy.
 
 \begin{equation}\label{eq:variational_energy}
-E_V = \frac{\left\langle \psi | \mathcal{H} | \psi \right \rangle}{\left\langle \psi | \psi \right \rangle} = \frac{ \int d\bm r |\psi (\bm r)|^2 E_L (\bm r)}{\int d\bm r | \psi (\bm r)|^2 } = \int d\bm r\rho (\bm r) E_L (\bm r) ,
+E_V = \frac{\left\langle \psi_T | \mathcal{H} | \psi_T \right \rangle}{\left\langle \psi_T | \psi_T \right \rangle} = \frac{ \int d\bm r |\psi_T (\bm r)|^2 E_L (\bm r)}{\int d\bm r | \psi_T (\bm r)|^2 } = \int d\bm r\rho (\bm r) E_L (\bm r) ,
 \end{equation}
 where
 
 \begin{equation}\label{eq:local_energy}
-E_L = \frac{\mathcal{H} \psi (\bm r) }{\psi (\bm r)}   \quad \text{and} \quad \rho (\bm r) = \frac{ | \psi (\bm r) |^2}{ \int d\bm r' | \psi (\bm r') |^2}
+E_L = \frac{\mathcal{H} \psi_T (\bm r) }{\psi_T (\bm r)}   \quad \text{and} \quad \rho (\bm r) = \frac{ | \psi_T (\bm r) |^2}{ \int d\bm r' | \psi_T (\bm r') |^2}
 \end{equation}
 
 Note that we managed to recast the variational energy as an average of the \emph{local} energy, $\left\langle E_L \right\rangle $, over the the distribution $\rho$.
@@ -99,18 +99,18 @@ However, the use of an approximate wave function introduces a systematic error t
 
 \subsection{Diffusion Monte Carlo and projective methods}\label{subsec:dmc}
 
-Variational Monte Carlo is severely limited by the use of a trial wave function $\psi_{\bm \alpha} (\bm r)$ because we may even not have enough information to even construct a reliable variational wave function in the first place.
+Variational Monte Carlo is severely limited by the use of a trial wave function $\psi_T (\bm r)$ because we may not even have enough information to even construct a reliable variational wave function in the first place.
 Diffusion \ac{QMC} allows the simulation of a many-body system while having only a limited knowledge of the system's physical properties.
 While it is exact for many-boson systems, it is only approximate for many-fermion systems.
-The idea is to map the Schr\"odinger equation into  an imaginary-time diffusion equation.
+The idea is to map the Schr\"odinger equation onto an imaginary-time diffusion equation.
 Excited states are then filtered out by a diffusion process as we advance in imaginary-time.
 In imaginary-time $\tau = i t$, the solution to the Schr\"odinger equation in terms of a formal series expansion in the eigenfunctions of the Hamiltonian becomes a series of \say{transient} wavefunctions weighted by $e^{-E_n \tau}, \, n \in \mathbb{N}$.
 Within precision and accuracy constraints, the longest lasting of these is the ground state \cite{kosztin_introduction_1996}.
 Thus, the idea of the diffusion method is to generate samples using the exact ground state wave function $\psi_0 (\bm r)$ \cite{toulouse_chapter_2016}.
-The associated exact energy $E_0$ is the matrix element of the hamiltonian calculated using a trial wave function and the ground state wave function.
+The associated exact energy $E_0$ is the matrix element of the hamiltonian calculated using a trial wave function and the ground state.
 
 \begin{equation}
-E_0 = \frac{ \left\langle \psi_0 |E_0 \mathbbm{1} | \psi \right\rangle}{\left\langle \psi_0 | \psi \right\rangle} = \frac{\left\langle \psi_0 | \mathcal{H} | \psi \right\rangle}{ \left\langle\psi_0 | \psi \right\rangle} = \frac{\int d\bm r \psi_0^\star (\bm r) \psi (\bm r) E_L (\bm r)}{\int d\bm r\psi_0^\star (\bm r) \psi (\bm r)}
+E_0 = \frac{ \left\langle \psi_0 |E_0 \mathbbm{1} | \psi_T \right\rangle}{\left\langle \psi_0 | \psi_T \right\rangle} = \frac{\left\langle \psi_0 | \mathcal{H} | \psi_T \right\rangle}{ \left\langle\psi_0 | \psi_T \right\rangle} = \frac{\int d\bm r \psi_0^\star (\bm r) \psi_T (\bm r) E_L (\bm r)}{\int d\bm r\psi_0^\star (\bm r) \psi_T (\bm r)}
 \end{equation}
 
 Note that using this trick we avoid the computation of $\mathcal{H} \psi_0 = E_0 \psi_0$, that is, the ground state energy.
@@ -118,39 +118,39 @@ Instead, we approximate the integral by considering $M$ configuration samples $\
 Notice that the integral consists of a local energy of the trial wave function $E_L (\bm r) = \frac{\mathcal{H} \psi (\bm r)}{\psi (\bm r)}$ averaged over a mixed distribution from which we draw a sample:
 
 \begin{equation}
-f(\bm r) = \frac{\psi_0^\star (\bm r) \psi (\bm r) }{ \int d\bm r  \psi_0 (\bm r) \psi (\bm r)}
+f(\bm r) = \frac{\psi_0^\star (\bm r) \psi_T (\bm r) }{ \int d\bm r  \psi_0 (\bm r) \psi_T (\bm r)}
 \end{equation}
 
 Although the method is, of course, aimed at probing many-body systems, let us consider a single particle in \acs{1D}, for simplicity, to illustrate the method.
 Performing a Wick rotation - effectively going to imaginary time - and shifting the energy, the Schr\"odinger equation becomes (with $\hbar = 1$)
 
 \begin{equation}
-\frac{\partial \psi ( x, \tau )}{\partial\tau}  = -\frac{1}{2m}\frac{\partial^2 \psi ( x, \tau )}{\partial x^2} - \bigg[ V(x) - E_T \bigg] \psi( x, \tau ) 
+\frac{\partial \psi_T ( x, \tau )}{\partial\tau}  = -\frac{1}{2m}\frac{\partial^2 \psi_T ( x, \tau )}{\partial x^2} - \bigg[ V(x) - E_T \bigg] \psi_T( x, \tau ) 
 \end{equation}
 
 The exact ground state wave function $\psi_0 ( x )$ is obtained as the longest lasting transient state in imaginary time: we are interested in the asymptotic behavior of the series expansion constituting the formal solution of the Schr\"odinger equation
 
 \begin{equation}
-\psi (x, \tau) = \sum_{n=0}^{\infty} c_n \psi_n (x) e^{-(E_n - E_T)\tau}
+\psi_T (x, \tau) = \sum_{n=0}^{\infty} c_n \psi_n (x) e^{-(E_n - E_T)\tau}
 \end{equation}
 
 Imaginary time evolution is governed by
 
 \begin{equation}\label{eq:im_ev}
-\left| \psi (t) \right\rangle = \lim_{\tau \rightarrow \infty} \sum_n e^{-(E_n - E_T) \tau} \left|\psi_n \right\rangle \left\langle \psi_n | \psi \right\rangle = \lim_{\tau \rightarrow \infty} e^{-(E_0 - E_T)\tau} \left| \psi_0 \right\rangle \left\langle \psi_0 | \psi \right\rangle 
+\left| \psi_T (t) \right\rangle = \lim_{\tau \rightarrow \infty} \sum_n e^{-(E_n - E_T) \tau} \left|\psi_n \right\rangle \left\langle \psi_n | \psi_T \right\rangle = \lim_{\tau \rightarrow \infty} e^{-(E_0 - E_T)\tau} \left| \psi_0 \right\rangle \left\langle \psi_0 | \psi_T \right\rangle 
 \end{equation}
 
 
-If $E_T > E_0$ the wave function diverges exponentially fast: $\lim_{\tau \rightarrow \infty} \psi ( x, \tau) = \infty$.
-Similarly, for $E_T < E_0$ it vanishes exponentially fast: $\lim_{\tau \rightarrow \infty} \psi ( x, \tau) = 0$.
-However, if $E_T = E_0$ the wave function converges to the ground state one up to a constant factor, $c_0 = \left\langle \psi_0 | \psi \right\rangle$.
+If $E_T > E_0$ the wave function diverges exponentially fast: $\lim_{\tau \rightarrow \infty} \psi_T ( x, \tau) = \infty$.
+Similarly, for $E_T < E_0$ it vanishes exponentially fast: $\lim_{\tau \rightarrow \infty} \psi_T ( x, \tau) = 0$.
+However, if $E_T = E_0$ the wave function converges to the ground state one up to a constant factor, $c_0 = \left\langle \psi_0 | \psi_T \right\rangle$.
 
 \begin{equation}\label{eq:dmc}
-\lim_{\tau \rightarrow \infty} \psi ( x, \tau) = c_0 \psi_0 (x) \quad \text{or} \quad \lim_{\tau \rightarrow \infty} \left|\psi (\tau) \right\rangle \propto \left| \psi_0 \right\rangle
+\lim_{\tau \rightarrow \infty} \psi_T ( x, \tau) = c_0 \psi_0 (x) \quad \text{or} \quad \lim_{\tau \rightarrow \infty} \left|\psi_T (\tau) \right\rangle \propto \left| \psi_0 \right\rangle
 \end{equation}
 
-Diffusion \ac{QMC} makes use of Eq. (\ref{eq:dmc}), approximating $\psi_0(x)$ by $\psi (x, \tau)$ for sufficiently long time.
-The only requirement is that $\psi (x, \tau)$ and $\psi_0(x)$ overlap significantly so that $c_0$ is large enough to be numerically measurable, and we can always center a positive trial wave function in a region where $\psi_0(x)$ is large enough and positive.
+Diffusion \ac{QMC} makes use of Eq. (\ref{eq:dmc}), approximating $\psi_0(x)$ by $\psi_T (x, \tau)$ for sufficiently long time.
+The only requirement is that $\psi_T (x, \tau)$ and $\psi_0(x)$ overlap significantly so that $c_0$ is large enough to be numerically measurable, and we can always center a positive trial wave function in a region where $\psi_0(x)$ is large enough and positive.
 If the latter condition does not hold, the wave function converges to a bosonic, instead of a fermionic one.
 Of course, these conditions can always be met for a single particle, but note that they might fail for a many-fermion system, for which the wave function crosses a number of nodes due to its anti-symmetric nature.
 
@@ -163,15 +163,18 @@ However, none of these methods allow us to probe systems at finite temperature.
 Moreover, they both require some prior knowledge about the system, which may not always be available.
 
 An alternative method is based on introducing an additional lattice bosonic field that mediates the electron-electron interaction.
-The interacting problem then becomes a problem of independent fermions coupled to an external field, and the fermionic part of the partition function can be traced out explicitly, leaving the contribution of a \emph{discrete}\footnote{Although, there is a finite number of field configurations, the number grows exponentially with the number of sites on the lattice.} bosonic field.
+The interacting problem then becomes a problem of independent fermions coupled to an external field, and the fermionic part of the partition function can be traced out explicitly, leaving the contribution of a \emph{discrete}\footnote{Although, there is a finite number of field configurations, the number grows exponentially with the number of sites on the lattice.} bosonic field, $\bm h$.
 This contribution can be evaluated numerically by employing importance sampling over the field configurations.
 Auxiliary field \acs{QMC} relies on a mapping to a \say{classical} system (in quotes because there is no actual classical analogue):
 
 \begin{equation}
-Z = \Tr [ e^{-\beta \mathcal{H} } ] = \sum_c p_c ,
+Z = \Tr [ e^{-\beta \mathcal{H} } ] = \sum_{\{ \bm h\} } \sum_{\text{fermionic}} e^{-S} = \sum_c p_c ,
 \end{equation}
 but some of the \say{probabilities} can actually be negative $p_c < 0$.
 This occurs due to the antisymmetry of the many-electron wavefunction under electron exchange, and is at the root of the sign problem.
+Here, $S$ is a fermion-boson action that we shall write out explicitly later.
+For a fixed configuration of the bosonic field, we sum over the fermionic part exactly to obtain the weight of each configuration $p_c$.
+The sum over $\bm h$ is carried out stochastically.
 
 The negative weight problem may easily be circumvented when computing averages of observables:
 
@@ -189,8 +192,18 @@ In terms of the difference in free energy densities, $\left\langle s \right\rang
 \end{equation}
 and similarly for the numerator of Eq. (\ref{eq:signSampling}).
 
-Auxiliary field \acs{QMC} can also be formulated to probe ground state properties, and a sign problem arises similarly.
-In fact, this problem plagues all \acs{QMC} methods, even though we showed it only for auxiliary field \acs{QMC}.
+Auxiliary field, or determinant \acs{QMC} can also be formulated to probe ground state properties, and a sign problem arises similarly.
+In fact, this problem plagues all \acs{QMC} methods, even though we showed it only for the determinant method\footnote{So called because, as we shall show later, $p_c$ boils down to a product of determinants that depends on the energy scales of the problem.}.
 The latter is the most robust, unbiased, and reliable method, with a generally modest sign problem, hence we choose it to carry out our simulations.
-Note that, in particular, it is certainly more powerful than the variational and diffusion methods outlined before since it requires much less \emph{a priori} information about the system.
-Perhaps more importantly, recent findings suggest that it can be used in conjunction with neural networks to discover quantum phase transitions in correlated systems  \cite{broecker_machine_2017} in what could be a revolution in the field.
+
+Furthermore, in general, it suffices to use the finite temperature auxiliary field  method with $\beta$ large enough to probe ground state properties (for example, this is shown numerically for the Hubbard model in the square lattice in \cite{white_numerical_1989}).
+In this case, the inverse temperature may be regarded as being analogous to a  projective parameter $\Theta$, characterizing convergence to the ground state, within statistical uncertainty.
+Projector \ac{QMC}, the zero temperature version of auxiliary field \ac{QMC} is based on an equation similar to Eq. (\ref{eq:dmc}).
+Any observable $A$ is computed by use of a trial wave function with some overlap with the ground state $\left\langle \psi_T | \psi_0 \right\rangle \neq 0$ (see \cite{f._assaad_quantum_2002} for more details on the projector method; in this work we focus on the finite temperature version since it is more general):
+
+\begin{equation}
+\left\langle A \right\rangle = \lim_{\Theta \rightarrow \infty} \frac{\left\langle \psi_T | e^{-\Theta \mathcal{H} } A e^{-\Theta \mathcal{H} } | \psi_T \right\rangle }{\left\langle \psi_T | e^{- 2 \Theta \mathcal{H} } | \psi_T \right\rangle}
+\end{equation}
+
+Note that auxiliary field \ac{QMC} is more powerful than the variational and diffusion methods outlined before since it requires much less \emph{a priori} information about the system.
+Perhaps more importantly, recent work suggests that it can be used in conjunction with neural networks to discover quantum phase transitions in correlated systems  \cite{broecker_machine_2017} in what could be a revolution in the field.

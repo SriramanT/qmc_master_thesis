@@ -2892,8 +2892,8 @@
       \strng{authorbibnamehash}{c934f479d57b4c43a1d4c06ef5d6d255}
       \strng{authornamehash}{c934f479d57b4c43a1d4c06ef5d6d255}
       \strng{authorfullhash}{c934f479d57b4c43a1d4c06ef5d6d255}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We shall present here the motivation and a general description of a method dealing with a class of problems in mathematical physics. The method is, essentially, a statistical approach to the study of differential equations, or more generally, of integro-differential equations that occur in various branches of the natural sciences.}
@@ -3194,6 +3194,121 @@
       \endverb
       \keyw{Quantum Monte Carlo,Numerical Methods,Determinant,Bai,Scalettar}
     \endentry
+    \entry{white_numerical_1989}{article}{}
+      \name{author}{6}{}{%
+        {{hash=71a6e7abbc94103a7d00b0c465968e06}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={S.\bibnamedelimi R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=6b7ac62347cc0b36e9c0f70fa928a967}{%
+           family={Scalapino},
+           familyi={S\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3661f00d410e7dba28d71a085f8edd4e}{%
+           family={Sugar},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=8fdf441848f3aa2e7b12d786ab3d6dad}{%
+           family={Loh},
+           familyi={L\bibinitperiod},
+           given={E.\bibnamedelimi Y.},
+           giveni={E\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=d046779dd3822256f9d8865d0e0ab4d2}{%
+           family={Gubernatis},
+           familyi={G\bibinitperiod},
+           given={J.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=6a5c5397b446c7d60f574b58d3ba3deb}{%
+           family={Scalettar},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{0533170cc52e97a4e95978fc1ec0a0c0}
+      \strng{fullhash}{8b7a5ac6359947264ac63486640b92c3}
+      \strng{bibnamehash}{0533170cc52e97a4e95978fc1ec0a0c0}
+      \strng{authorbibnamehash}{0533170cc52e97a4e95978fc1ec0a0c0}
+      \strng{authornamehash}{0533170cc52e97a4e95978fc1ec0a0c0}
+      \strng{authorfullhash}{8b7a5ac6359947264ac63486640b92c3}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We report on a numerical study of the two-dimensional Hubbard model and describe two new algorithms for the simulation of many-electron systems. These algorithms allow one to carry out simulations within the grand canonical ensemble at significantly lower temperatures than had previously been obtained and to calculate ground-state properties with fixed numbers of electrons. We present results for the two-dimensional Hubbard model with half- and quarter-filled bands. Our results support the existence of long-range antiferromagnetic order in the ground state at half-filling and its absence at quarter-filling. Results for the magnetic susceptibility and the momentum occupation along with an upper bound to the spin-wave spectrum are given. We find evidence for an attractive effective d-wave pairing interaction near half-filling but have not found evidence for a phase transition to a superconducting state.}
+      \field{day}{1}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{7}
+      \field{number}{1}
+      \field{shortjournal}{Phys. Rev. B}
+      \field{title}{Numerical study of the two-dimensional Hubbard model}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{40}
+      \field{year}{1989}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{506\bibrangedash 516}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.40.506
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/Users/franciscobrito/Zotero/storage/E2W3A3F2/PhysRevB.40.html:text/html;White1989.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/hubbard-simulations/White1989.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.40.506
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.40.506
+      \endverb
+      \keyw{hubbard,simulation,2D}
+    \endentry
+    \entry{f._assaad_quantum_2002}{book}{}
+      \name{author}{4}{}{%
+        {{hash=73db19ae3125e4a5f5ce261656d5c278}{%
+           family={F.\bibnamedelimi Assaad},
+           familyi={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Fahker},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2c254d79f52cdb7296697a1e1efd5a47}{%
+           family={Grotendorst},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=905a968405348170ebf121ab16fb1515}{%
+           family={Marx},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5d46e6d3312abab28562155c2114dfa4}{%
+           family={Muramatsu\bibnamedelima (Eds.)},
+           familyi={M\bibinitperiod\bibinitdelim (\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c9f5a135406b41ca6ec4d95dcab18cc7}
+      \strng{fullhash}{503da1af287f708dab5895d482d6beb5}
+      \strng{bibnamehash}{503da1af287f708dab5895d482d6beb5}
+      \strng{authorbibnamehash}{503da1af287f708dab5895d482d6beb5}
+      \strng{authornamehash}{c9f5a135406b41ca6ec4d95dcab18cc7}
+      \strng{authorfullhash}{503da1af287f708dab5895d482d6beb5}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{shorttitle}{Quantum Simulations of Complex Many-Body Systems}
+      \field{title}{Quantum Simulations of Complex Many-Body Systems: From Theory to Algorithms. Quantum Monte Carlo Methods on Lattices: The Determinantal Approach (Lecture Notes)}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Assad2002.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/im-time-disp_corr_AF/Assad2002.pdf:application/pdf;Citeseer - Snapshot:/Users/franciscobrito/Zotero/storage/HWGBLALF/summary.html:text/html
+      \endverb
+      \keyw{Quantum Monte Carlo,Imaginary time displaced Green's function,Chapter by Assaad}
+    \endentry
     \entry{broecker_machine_2017}{article}{}
       \name{author}{4}{}{%
         {{hash=95f1d3812e2e89da150778cb73eafe47}{%
@@ -3331,78 +3446,72 @@
       \verb manual.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/software-documentation/quest/manual.pdf:application/pdf
       \endverb
     \endentry
-    \entry{white_numerical_1989}{article}{}
-      \name{author}{6}{}{%
-        {{hash=71a6e7abbc94103a7d00b0c465968e06}{%
-           family={White},
-           familyi={W\bibinitperiod},
-           given={S.\bibnamedelimi R.},
-           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=6b7ac62347cc0b36e9c0f70fa928a967}{%
-           family={Scalapino},
-           familyi={S\bibinitperiod},
-           given={D.\bibnamedelimi J.},
-           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=3661f00d410e7dba28d71a085f8edd4e}{%
-           family={Sugar},
-           familyi={S\bibinitperiod},
-           given={R.\bibnamedelimi L.},
-           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=8fdf441848f3aa2e7b12d786ab3d6dad}{%
-           family={Loh},
+    \entry{liu_three-band_2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fcc911878c164d26085ea1f484fd4eb9}{%
+           family={Liu},
            familyi={L\bibinitperiod},
-           given={E.\bibnamedelimi Y.},
-           giveni={E\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=d046779dd3822256f9d8865d0e0ab4d2}{%
-           family={Gubernatis},
-           familyi={G\bibinitperiod},
-           given={J.\bibnamedelimi E.},
-           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=6a5c5397b446c7d60f574b58d3ba3deb}{%
-           family={Scalettar},
+           given={Gui-Bin},
+           giveni={G\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=b545fc883aea552017ca0f5a772c6855}{%
+           family={Shan},
            familyi={S\bibinitperiod},
-           given={R.\bibnamedelimi T.},
-           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+           given={Wen-Yu},
+           giveni={W\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=ed543cfa89de1fe2082396131703241e}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Yugui},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bca84b8be8dfdf75206a80fe59c55e35}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Wang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=cc1352d1711338afe7b3f3b971e85c13}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Di},
+           giveni={D\bibinitperiod}}}%
       }
-      \strng{namehash}{0533170cc52e97a4e95978fc1ec0a0c0}
-      \strng{fullhash}{8b7a5ac6359947264ac63486640b92c3}
-      \strng{bibnamehash}{0533170cc52e97a4e95978fc1ec0a0c0}
-      \strng{authorbibnamehash}{0533170cc52e97a4e95978fc1ec0a0c0}
-      \strng{authornamehash}{0533170cc52e97a4e95978fc1ec0a0c0}
-      \strng{authorfullhash}{8b7a5ac6359947264ac63486640b92c3}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \strng{namehash}{254db7dc0f171cd260a16b0dd24c846a}
+      \strng{fullhash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \strng{bibnamehash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \strng{authorbibnamehash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \strng{authornamehash}{254db7dc0f171cd260a16b0dd24c846a}
+      \strng{authorfullhash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We report on a numerical study of the two-dimensional Hubbard model and describe two new algorithms for the simulation of many-electron systems. These algorithms allow one to carry out simulations within the grand canonical ensemble at significantly lower temperatures than had previously been obtained and to calculate ground-state properties with fixed numbers of electrons. We present results for the two-dimensional Hubbard model with half- and quarter-filled bands. Our results support the existence of long-range antiferromagnetic order in the ground state at half-filling and its absence at quarter-filling. Results for the magnetic susceptibility and the momentum occupation along with an upper bound to the spin-wave spectrum are given. We find evidence for an attractive effective d-wave pairing interaction near half-filling but have not found evidence for a phase transition to a superconducting state.}
-      \field{day}{1}
+      \field{abstract}{We present a three-band tight-binding ({TB}) model for describing the low-energy physics in monolayers of group-{VIB} transition metal dichalcogenides {MX}2 (M=Mo, W; X=S, Se, Te). As the conduction- and valence-band edges are predominantly contributed by the dz2, dxy, and dx2−y2 orbitals of M atoms, the {TB} model is constructed using these three orbitals based on the symmetries of the monolayers. Parameters of the {TB} model are fitted from the first-principles energy bands for all {MX}2 monolayers. The {TB} model involving only the nearest-neighbor M-M hoppings is sufficient to capture the band-edge properties in the ±K valleys, including the energy dispersions as well as the Berry curvatures. The {TB} model involving up to the third-nearest-neighbor M-M hoppings can well reproduce the energy bands in the entire Brillouin zone. Spin-orbit coupling in valence bands is well accounted for by including the on-site spin-orbit interactions of M atoms. The conduction band also exhibits a small valley-dependent spin splitting which has an overall sign difference between {MoX}2 and {WX}2. We discuss the origins of these corrections to the three-band model. The three-band {TB} model developed here is efficient to account for low-energy physics in {MX}2 monolayers, and its simplicity can be particularly useful in the study of many-body physics and physics of edge states.}
+      \field{day}{26}
       \field{journaltitle}{Physical Review B}
-      \field{month}{7}
-      \field{number}{1}
+      \field{month}{8}
+      \field{number}{8}
       \field{shortjournal}{Phys. Rev. B}
-      \field{title}{Numerical study of the two-dimensional Hubbard model}
-      \field{urlday}{7}
-      \field{urlmonth}{6}
+      \field{title}{Three-band tight-binding model for monolayers of group-{VIB} transition metal dichalcogenides}
+      \field{urlday}{14}
+      \field{urlmonth}{8}
       \field{urlyear}{2018}
-      \field{volume}{40}
-      \field{year}{1989}
+      \field{volume}{88}
+      \field{year}{2013}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{506\bibrangedash 516}
-      \range{pages}{11}
+      \field{pages}{085433}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.1103/PhysRevB.40.506
+      \verb 10.1103/PhysRevB.88.085433
       \endverb
       \verb{file}
-      \verb APS Snapshot:/Users/franciscobrito/Zotero/storage/E2W3A3F2/PhysRevB.40.html:text/html;White1989.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/hubbard-simulations/White1989.pdf:application/pdf
+      \verb APS Snapshot:/Users/franciscobrito/Zotero/storage/7PYF872E/PhysRevB.88.html:text/html;Liu2013-erratum.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Liu2013-erratum.pdf:application/pdf;Liu2013.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Liu2013.pdf:application/pdf
       \endverb
       \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevB.40.506
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.88.085433
       \endverb
       \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevB.40.506
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.88.085433
       \endverb
-      \keyw{hubbard,simulation,2D}
     \endentry
     \entry{fazekas_lecture_1999}{book}{}
       \name{author}{1}{}{%
@@ -3421,8 +3530,8 @@
       \strng{authorbibnamehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
       \strng{authornamehash}{6d628446b1d15a892ab0d29ab4bd9fd6}
       \strng{authorfullhash}{6d628446b1d15a892ab0d29ab4bd9fd6}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Readership: Graduate students and researchers in condensed matter physics.}
@@ -3457,8 +3566,8 @@
       \strng{authorbibnamehash}{c1d5d4e41688cfe898f810b1ed4d4270}
       \strng{authornamehash}{c1d5d4e41688cfe898f810b1ed4d4270}
       \strng{authorfullhash}{c1d5d4e41688cfe898f810b1ed4d4270}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The first, second, and third editions of this book seem to occur at ten year intervals. The intent is to keep the book up-to-date. Many-body theory is a field which continually evolves in time. Journals only publish new results, conferences only invite speakers to report new phenomena, and agencies only fund scientists to do new physics. Today's physics is old hat by tomorrow. Students want to learn new material, and textbooks must be modified to keep up with the times. The early chapters in this book teach the techniques of many-body theory. They are largely unchanged in format. The later chapters apply the techniques to specific problems. The third edition increases the number of applications. New sections have been added, while old sections have been modified to include recent applications. The previous editions were set in type using pre-computer technology. No computer file existed of the prior editions. The publisher scanned the second edition and gave me a disk with the contents. This scan recorded the words accurately and scrambled the equations into unintelligible form. So I retyped the equations using {LaTeX}. Although tedious, it allowed me to correct the infinite numbers of typographical errors in the previous edition. The earlier typesetting methods did not permit such corrections. The entire book was edited sentence-by­ sentence. Most old sections of the book were shortened by editing sentences and paragraphs.}
@@ -3503,8 +3612,8 @@
       \strng{authorbibnamehash}{6e6ab049980c79bf15521c07c4a81a53}
       \strng{authornamehash}{6e6ab049980c79bf15521c07c4a81a53}
       \strng{authorfullhash}{6e6ab049980c79bf15521c07c4a81a53}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Cambridge Core - Theoretical Physics and Mathematical Physics - Condensed Matter Field Theory - by Alexander Altland}
@@ -3963,8 +4072,8 @@
       \strng{authorbibnamehash}{78b6982805e175b54838c8cd59adca5e}
       \strng{authornamehash}{78b6982805e175b54838c8cd59adca5e}
       \strng{authorfullhash}{78b6982805e175b54838c8cd59adca5e}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This book provides an introduction to the field of solid state physics for undergraduate students in physics, chemistry, engineering, and materials science.}
@@ -3999,8 +4108,8 @@
       \strng{authorbibnamehash}{455822c633709a66fd571d29e8916811}
       \strng{authornamehash}{455822c633709a66fd571d29e8916811}
       \strng{authorfullhash}{455822c633709a66fd571d29e8916811}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Attention is drawn to a class of semi-conductors or insulators with incompletely filled 3d bands. Their lack of conductivity, if the number of electrons per atom is an integer, is explained by the circumstance that a moving electron will have a large probability of being withdrawn to the initial atom, if only the potential barriers to be penetrated are sufficiently high to reduce the frequency of transition below a certain limit. This inhibiting factor disappears, if for ions of equal electronic levels the number of electrons per atom differs from an integer. In the case of {NiO} this condition is fulfilled if an electron is brought by thermal excitation from the lattice 3d band into the somewhat raised and less occupied levels a, a' (figure 1); these levels belong to Ni ions adjacent to a vacant Ni lattice point introduced by the deviations from stoichiometry, and two of these Ni ions are at the absolute zero Ni3+ ions. An analogous conduction mechanism holds for non-stoichiometric Cu2O, with a completely filled 3d band (figure 2). Photoconductivity is generally observed with substances with completely filled zones and never with substances of the {NiO} type. A tentative explanation is given for this fact on the basis of the model of figure 1 and figure 2. In non-stoechiometric {ZnO} vacant oxygen lattice points are assumed (figure 3); in that case the calculation of the lattice levels shows that at the lattice holes one Zn2+ is converted into Zn, whereas in the lattice the additional electrons form Zn+ ions, as will be the case after thermal transitions of the electrons belonging to these Zn atoms into the lattice 4s band.}
@@ -4038,8 +4147,8 @@
       \strng{authorbibnamehash}{d23ac3fa0b220eb6a29cc6bf3949f081}
       \strng{authornamehash}{d23ac3fa0b220eb6a29cc6bf3949f081}
       \strng{authorfullhash}{d23ac3fa0b220eb6a29cc6bf3949f081}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0959-5309}
@@ -4085,8 +4194,8 @@
       \strng{authorbibnamehash}{1638ef5a5e93e73733dd03c2e0aabf3b}
       \strng{authornamehash}{1638ef5a5e93e73733dd03c2e0aabf3b}
       \strng{authorfullhash}{1638ef5a5e93e73733dd03c2e0aabf3b}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{It is shown that the collective electron and London-Heitler models are not to be regarded as different approximations to the same exact wave function for solids in which, according to the former model, there is a partially filled zone of energy levels. It can thus be shown why nickel oxide in the pure state is a non-conductor, although it contains an incomplete zone. The properties of the metals nickel, palladium and platinum are discussed in the light of these results; platinum differs from nickel in that the orbital contribution to the moment of the elementary magnets is not quenched. A discussion is given of x-ray absorption edges, and it is shown why exciton lines are absent for metals.}
@@ -4130,8 +4239,8 @@
       \strng{authorbibnamehash}{f0758a1b6fc2f40b374e8a808e3c7727}
       \strng{authornamehash}{f0758a1b6fc2f40b374e8a808e3c7727}
       \strng{authorfullhash}{f0758a1b6fc2f40b374e8a808e3c7727}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://commons.wikimedia.org/wiki/File:Hydrogen_Density_Plots.png}}
@@ -4284,8 +4393,8 @@
       \strng{authorbibnamehash}{bce5fdfb5072703d9ca68aae0958d1b5}
       \strng{authornamehash}{bce5fdfb5072703d9ca68aae0958d1b5}
       \strng{authorfullhash}{bce5fdfb5072703d9ca68aae0958d1b5}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{'Singlemindedly devoted to its job of educating potential many-particle theorists…deserves to become the standard text in the field.';— Physics Today. 'The most comprehensive textbook yet published in its field and every postgraduate student or teacher in this field should own or have access to a copy.' — Endeavor. A self-contained, unified treatment of nonrelativistic many-particle systems, this text offers a solid introduction to procedures in a manner that enables students to adopt techniques for their own use. Its discussions of formalism and applications move easily between general theory and direct use by offering illustrations of principles to specific cases. Chapters on second quantization and statistical mechanics introduce students to ground-state (zero-temperature) formalism, which is explored by way of Green’s functions and field theory (fermions), Fermi systems, linear response and collective modes, and Bose systems. Finite-temperature formalism is examined through field theory at finite temperature, physical systems at finite temperature, and real-time Green’s functions and linear response. Additional topics cover canonical transformations and applications to physical systems in terms of nuclear matter, phonons and electrons, superconductivity, and superfluid helium as well as applications to finite systems. Graduate students will find this text enormously practical in making the transition from taking courses in quantum mechanics to interpreting the vast quantity of literature concerning the many-body problem.}
@@ -4317,8 +4426,8 @@
       \strng{authorbibnamehash}{f74cc63462bf27b659e7b1a6d448796d}
       \strng{authornamehash}{f74cc63462bf27b659e7b1a6d448796d}
       \strng{authorfullhash}{f74cc63462bf27b659e7b1a6d448796d}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In these pedagogical notes I introduce the operator form of Wick's theorem, i.e. a procedure to bring to normal order a product of 1-particle creation and destruction operators, with respect to some reference many-body state. Both the static and the time- ordered cases are presented.}
@@ -4381,8 +4490,8 @@
       \strng{authorbibnamehash}{b1ae1f30f5a1848aa9620fcdb96753e6}
       \strng{authornamehash}{b33ca7d9c92e6f199609c562f0a7612e}
       \strng{authorfullhash}{b1ae1f30f5a1848aa9620fcdb96753e6}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The phase diagram of the Hubbard model is studied numerically by varying parameters and suggests that spin stripe order can be observable at accessible temperatures. A team led by Thomas P. Devereaux from Stanford University and colleagues from {SLAC} National Accelerator Laboratory and University of North Dakota investigate emergence of spin stripe orders in the Hubbard model by tuning various parameters in the determinant quantum Monte Carlo simulations and the density matrix renormalization group calculations. They show that including the next-nearest-neighbor hopping term, which was often neglected in previous studies, in the Hubbard model leads to nearly half-filled spin stripes upon hole-doping, while no stripes upon electron-doping. The consistence of these findings with experimental results on both electron and hole-doped cuprate superconductors supports a unified description across a large portion of the cuprate phase diagram.}
@@ -4525,8 +4634,8 @@
       \strng{authorbibnamehash}{3f40fc505d6d3889dcb2919659238034}
       \strng{authornamehash}{3f40fc505d6d3889dcb2919659238034}
       \strng{authorfullhash}{3f40fc505d6d3889dcb2919659238034}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0103-9733}

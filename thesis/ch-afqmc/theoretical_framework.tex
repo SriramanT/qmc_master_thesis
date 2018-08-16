@@ -82,9 +82,9 @@ Actually, this arises naturally by writing the matrix elements of the projection
 Then, the partition function only selects paths that are periodic in imaginary time:
 
 \begin{equation}
-Z = \text{Tr} \big( e^{-\beta \mathcal{H} } \big) = \sum_{\left| \psi_0 \right\rangle} \left\langle \psi_0 | e^{-\beta \mathcal{H} } | \psi_0 \right\rangle = \sum_{\{ \left| \psi_l \right\rangle \}} \prod_{l = 0}^{L - 1} \left\langle \psi_{l} | e^{-\Delta \tau \mathcal{H} } | \psi_{l+1} \right\rangle = \Tr \bigg( \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg) ,
+Z = \text{Tr} \big( e^{-\beta \mathcal{H} } \big) = \sum_{\left| \psi_0 \right\rangle} \left\langle \psi_0 | e^{-\beta \mathcal{H} } | \psi_0 \right\rangle = \sum_{\{ \left| \psi_l \right\rangle \}} \prod_{l = 0}^{L - 1} \left\langle \psi_{l} | e^{-\Delta \tau \mathcal{H} } | \psi_{l+1} \right\rangle \delta_{0, L} = \Tr \bigg( \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg) ,
 \end{equation}
-where we define $\left| \psi_L \right\rangle = \left| \psi_0 \right\rangle$, and we  recover the result of Eq.(\ref{eq:partBreak}) by simply reorganizing the terms of the sums over $\{ \left| \psi_l \right\rangle \}$.
+where we have $\left| \psi_L \right\rangle = \left| \psi_0 \right\rangle$, and we  recover the result of Eq.(\ref{eq:partBreak}) by simply reorganizing the summations over $\{ \left| \psi_l \right\rangle \}$, so as to make appear closure relations, resulting in unit operators.
 
 The \say{Trotter breakup} follows from truncating equation (\ref{eq:zassenhaus}), and keeping only the first order term in $\Delta \tau$.
 
@@ -548,50 +548,6 @@ The equal time Green's function is a fermion average for a given HS-field config
 B_{l, \downarrow}(\bm h_l) \bigg],
 \end{split}
 \end{equation}
-
-The density matrix $e^{-\beta\mathcal{H} }$ may be written as a trace over HS-field configurations of a product of L factors corresponding to each imaginary time slice. Recall equation (\ref{eq:Z_quadratic}): the partition function Z is just the trace over the Hilbert space of the aforementioned density matrix. Equivalently, it may be thought of as a trace over HS-field configurations of the effective density matrix $\hat{\rho}_{\text{eff}}(\bm h)$ defined in equation (\ref{eq:effectiveDensityMatrix}).
-
-The Green's function is defined for fixed $\bm h$. Omitting the spin index $\sigma$, without loss of generality, we obtain 
-
-\begin{equation}
-\begin{split}
-G_{ij}&\equiv \left\langle c_i c_j^\dagger \right\rangle_{\bm h} = \frac{\Tr[\bm B_L(h_l) \bm B_{L-1}(h_{l-1}) ... \bm B_1 (h_1) c_i c_j^\dagger]}{\tilde{\rho}_{\text{eff}}} \\
-&= \frac{\Tr[\bm B_L \bm B_{L-1} ... \bm B_1 c_i c_j^\dagger] }{\Tr[\bm B_L \bm B_{L-1} ... \bm B_1] }
-\end{split}
-\end{equation}
-
-The trace is evaluated by changing to a basis $\{\left|\alpha\right\rangle\}$, where $c_i$ is diagonal and then repeating the procedure for $c_j^\dagger$, now changing again to a basis $\{\left|\beta\right\rangle\}$, where $c_j^\dagger$ is diagonal. Using equation (\ref{eq:changeBasis2}), we obtain
-
-\begin{equation}
-\left\langle c_i c_j^\dagger \right\rangle_{\bm h} = \frac{\sum_{\alpha, \beta} \left\langle i | \alpha \right\rangle \left\langle \beta | j \right\rangle \Tr[c_{\alpha} c_\beta^\dagger \bm B_L \bm B_{L-1} ... \bm B_1] }{\Tr [\bm B_L \bm B_{L-1} ... \bm B_1] } 
-\end{equation}
-
-After taking the trace, (on the diagonal basis) the only nonzero contribution will be for $\alpha = \beta$. When $c_\alpha c_\beta^\dagger$ acts on the bra to its left, only that term survives in the sum since $c_\alpha$ is a diagonal operator in the basis $\{\left|\alpha\right\rangle\}$. On the other hand, the second equality in equation (\ref{eq:completeProof}) gives the contribution to the trace of the exponential of $c_\alpha^\dagger c_\alpha$ appearing in the $\bm B$-matrices. 
-
-\begin{equation}\label{eq:traceExp}
-\Tr [\bm B_L \bm B_{L-1} ... \bm B_1] = \prod_{\nu} ( 1 + e^{-\rho_\nu} ) ,
-\end{equation}f
-where $\{\left|\nu\right\rangle\}$ is the basis in which the product of the $\bm B$'s is diagonal.
-
-\begin{equation}
-\begin{split}
-&\left\langle c_i c_j^\dagger \right\rangle_{\bm h} =\sum_{\alpha} | \alpha \rangle \langle i | \frac{ \Tr[c_{\alpha} c_\alpha^\dagger \bm B_L \bm B_{L-1} ... \bm B_1] }{\Tr [\bm B_L \bm B_{L-1} ... \bm B_1] } | j \rangle \langle \alpha | \\
-&=\sum_{\alpha} | \alpha \rangle \langle i | \frac{ \Tr [( \mathbbm{1} - c_{\alpha}^\dagger c_\alpha) \bm B_L \bm B_{L-1} ... \bm B_1] }{\Tr [\bm B_L \bm B_{L-1} ... \bm B_1] } | j \rangle \langle \alpha | \\
-&= \sum_{\alpha} | \alpha \rangle \langle i | 1 -  \frac{ \Tr [c_{\alpha}^\dagger c_\alpha e^{-\Delta \tau \hat{h}}]}{\Tr [e^{-\Delta \tau \hat{h}}] } | j \rangle \langle \alpha | \\
-&= \sum_{\alpha} | \alpha \rangle \langle i | 1 -  \frac{1}{1 + e^{\Delta\tau \varepsilon_\alpha}} | j \rangle \langle \alpha | \\
-&= \sum_{\alpha} | \alpha \rangle \langle i | \frac{e^{\Delta\tau \varepsilon_\alpha}}{1 + e^{\Delta\tau \varepsilon_\alpha}} | j \rangle \langle \alpha | \\
-&= \sum_{\alpha} | \alpha \rangle \langle i | \frac{1}{1 + e^{-\Delta\tau \varepsilon_\alpha}} | j \rangle \langle \alpha | \\
-&= \bigg[ \frac{1}{\bm B_L \bm B_{L-1} ... \bm B_{1}} \bigg]_{ij} ,
-\end{split}
-\end{equation}
-where in the fourth equality we used an analogy with the Fermi function defined as 
-
-\begin{equation}
-f_\alpha = \frac{\Tr[e^{-\beta\mathcal{H}} \hat{n}_\alpha]}{\Tr[e^{-\beta\mathcal{H}} ]} = \big(1 + e^{\beta\varepsilon_\alpha} \big)^{-1}
-\end{equation}
-for $\mu = 0$ and with $\beta \mapsto \Delta \tau$. The product of $\bm B$-matrices was written as the exponential $e^{-\Delta \tau \hat{h}}$, which can be done because we have shown before that it is possible to diagonalize the product in a basis in which the trace amounts to the simple form of equation (\ref{eq:traceExp}).
-
-An alternative way of arriving to this result is to note that in the expression we obtain in the second equality, only the term $\nu = \alpha$ from equation (\ref{eq:traceExp}) contributes \cite{santos_introduction_2003}, leading to the final result with $\rho_\alpha = \Delta\tau \varepsilon_\alpha$.
 
 The electron density may be obtained from the Green function
 

@@ -10,26 +10,26 @@ Although the Hubbard model was initially applied to transition metal monoxides l
 
 \begin{figure}[H]
 	\centering
-\includegraphics[width=0.9\linewidth]{Hubbard/IsingVsHubbard.jpeg}
+\includegraphics[width=0.9\linewidth]{Hubbard/IsingVsHubbard.png}
 	\caption[Graphical comparison between the Ising and the Hubbard models.]{Unlike the Ising model, where either an up or a down spin live at each site, in the Hubbard model, there are four possible states at each site: a "hole" (absence of an electron), either an up spin electron or a down spin electron, or two electrons of opposite spins.
 	The idea behind the model is to consider that the electrons interact, repelling each other, only when they are on the same site (taken from \cite{hayes_hip-hop_2009}).}
 	\label{fig:IsingVsHubbard}
 \end{figure}
 
-Of course, Figure (\ref{fig:IsingVsHubbard}) is only a simplified view presented for the sake of analogy.
+Of course, Fig. (\ref{fig:IsingVsHubbard}) is only a simplified view presented for the sake of analogy.
 The Hubbard model is actually defined in terms of a Hamiltonian acting on electron wave functions centered in the sites of a lattice.
 Ultimately, we wish to determine, or at least approximate, the wave function describing the full electronic system.
 To do so, we must consider a Hamiltonian that allows simultaneous charge and spin fluctuations.
-It turns out that the \emph{many-body} wave function we seek is not, in general, a simple combination of products of one electron wave functions, as in the interaction-free case.
+It turns out that the wave function we seek is not, in general, a simple combination of products of one electron wave functions (a Slater determinant), as in the interaction-free case.
 
 When Hubbard's seminal paper came out, it followed a trend that arose in the 1950's when people were working on a theory of correlation effects in the free electron gas \cite{bohm_collective_1953, gell-mann_correlation_1957, sawada_correlation_1957, hubbard_description_1958, hubbard_description_1958_2, nozieres_electron_1958}.
 Hubbard devised a simple model for the (at the time) seemingly intractable problem of interacting electrons in a band.
 His work explained qualitatively some properties of compounds containing transition metals, in which electron correlations are non negligible.
 It turns out that the mathematical formulation of the interaction problem for correlated electrons in a band is not prohibitively complicated, and is relatively amenable to both analytical and numerical computations after some controlled approximations are introduced.
-Notably, the model is particularly adapted to computer simulations because of its simple approximate Hamiltonian.
+Notably, the model is particularly adapted to computer simulations because of the simple form of its Hamiltonian.
 Moreover, it has been shown to be very relevant in the description of Mott insulators, and high $T_c$  superconductors\footnote{In this context, $T_c$ is the critical temperature associated with the transition to a superconducting phase.}.
 In fact, the Hubbard model has found many applications, describing successfully a variety of quantum systems \cite{editorial_hubbard_2013}; nonetheless, even the simplified picture it offers is in general difficult to approach analytically.
 There exists an exact, albeit not very transparent solution in one dimension via Bethe ansatz \cite{lieb_absence_1968}, however the more general higher dimensional case is often solved numerically.
-An example of particular relevance for the work of this thesis is the study carried out by Hirsch \cite{hirsch_two-dimensional_1985}.
+An example of particular relevance for this work is the study carried out by Hirsch \cite{hirsch_two-dimensional_1985}.
 In the following chapters, we will discuss how to simulate the Hubbard model using a numerical approach that is based on this seminal paper, and essentially follows the ideas introduced in it.
 

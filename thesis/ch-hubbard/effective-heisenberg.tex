@@ -1,9 +1,9 @@
 \section{Exact Diagonalization and the Heisenberg Hamiltonian as the Effective $\frac{U}{t} \gg 1$ Model }\label{sec:effectiveHeisenberg}
 
-As we have already seen, Mott insulators allow low energy magnetic excitations (spin flips) without energy cost.
-We concluded that their insulating phase corresponds to a configuration where each atom has an odd number of electrons, let's say one.
+In appendix \ref{ap:hubbardObSol}, we argue that Mott insulators allow low energy magnetic excitations (spin flips) without incurring into any energy cost whatsoever.
+Their insulating phase corresponds to a configuration where each atom has an odd number of electrons, let's say one.
 This electron may have its spin up or down.
-In the purely atomic limit $\frac{t}{U} \rightarrow 0$, the atoms are infinitely far, and the excitation spectrum is very simple.
+In the purely atomic limit $\frac{U}{t} \rightarrow \infty$, the atoms are infinitely far, and the excitation spectrum is very simple.
 The ground state is highly degenerate: every configuration with one electron per site is a ground state.
 As a matter of fact, the ground state is $2^N$-fold degenerate.
 The first excited state corresponds to configurations with a hole and a doubly occupied site.
@@ -11,8 +11,8 @@ Let us set the energy of the ground state to zero in our conventions.
 The energy of these configurations is then $U$, and there are $N(N-1)2^{N-2}$ of them.
 This process of generating higher energy excitations may be continued.
 
-When the atoms are brought together, the first effect is the lifting of the degeneracy of the ground state, i.e. the splitting of the subspace of energy $E = 0$ in more subspaces.
-The effective hamiltonian describing the lifting of the degeneracy of the lowest energy band is obtained by applying degenerate perturbation theory \cite{mila_physique_2007} to the kinetic term of the Hubbard Hamiltonian\footnote{An alternative method would be to use a canonical transformation technique.}
+When the atoms are brought together, the first effect is the lifting of the degeneracy of the ground state, i.e. the splitting of the subspace of energy $E = 0$.
+The effective Hamiltonian describing the lifting of the degeneracy of the lowest energy band is obtained by applying degenerate perturbation theory \cite{mila_physique_2007} to the kinetic term of the Hubbard Hamiltonian\footnote{An alternative method would be to use a canonical transformation technique.}
 
 \begin{equation}
 \mathcal{H}_0 = - t \sum_{\left\langle i, j \right\rangle, \sigma} ( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} ) 
@@ -22,7 +22,7 @@ The effective hamiltonian describing the lifting of the degeneracy of the lowest
 
 The effect of the hopping term is best understood in a minimal two-site example.
 There are four one-particle quantum states, represented by the action of the operators $c_{1,\uparrow}^\dagger$, $c_{1,\downarrow}^\dagger$, $c_{2,\uparrow}^\dagger$, $c_{2,\downarrow}^\dagger$ on the vacuum state.
-There are six two-particle states in the Fock space $\left| n_{1\uparrow} \,  n_{1\downarrow} \,  n_{2\uparrow} \, n_{2\downarrow} \right\rangle$:
+There are six two-particle states in the Fock space represented by $\left| n_{1\uparrow} \,  n_{1\downarrow} \,  n_{2\uparrow} \, n_{2\downarrow} \right\rangle$:
 
 \begin{equation}
 \begin{split}
@@ -104,19 +104,19 @@ This is what we obtain my minimizing a Heisenberg Hamiltonian of the form
 \end{equation}
 for two spins-$\frac{1}{2}$.
 However, it turns out that this result is yet more general.
-For an arbitrary number of sites, this is is the form of the effective Hamiltonian at second order (see appendix (\ref{ap:heisenberg}) for details).
+For an arbitrary number of sites, this is is the form of the effective Hamiltonian at second order (see appendix (\ref{ap:hubbardObSol}) for details).
 
 It is easy to extend this analysis beyond half filling  to compare it to our solution for the single site case.
 The latter gave us some insight into how the on-site interaction gives rise to magnetic ordering, and about the development of the Mott plateau.
 Adding in the hopping we can understand the interplay between kinetic and potential energy, and the magnetic correlations between sites.
-In fact, we will outline the simplest nontrivial method to solve Hubbard-type Hamiltonians: \emph{exact diagonalization}, which is a competitor of \acs{QMC}.
+In fact, we will outline the simplest nontrivial method to solve Hubbard-type Hamiltonians: \emph{exact diagonalization}, which is a competitor of \acs{QMC}, but is limited to very small system sizes.
 
 Since the two-site Hamiltonian of equation (\ref{eq:twoSite}) commutes with $n_\sigma$, it conserves the number of up and down fermions, and the $2^4 = 16$ states can be divided into 9 sectors of varying dimension $d$: $(n_\uparrow, n_\downarrow, d) = (0, 0, 1), (1, 0, 2), (2, 0, 1), (0, 1, 2), (1, 1, 4), (2, 1, 2), (0, 2, 1), (1, 2, 2), (2,2, 1)$.
 There are four sectors of dimension 1: the empty lattice, the fully filled lattice, and the lattices with two-like spin fermions.
 All these sectors have zero kinetic energy: in the first, there are no electrons present to hop, and in the second Pauli's exclusion principle blocks hopping.
 The sectors with $n_\sigma = 2$ have energy $- U / 2$, while the ones with $n_\uparrow = n_\downarrow$ have energy $U / 2$.
 
-The four sectors of dimension are also simple.
+The four sectors of dimension 2 are also simple.
 One and three particle sectors must have the same energy spectrum due to \acf{PHS}.
 They have eigenenergies $\pm t$.
 A single fermion can hop between sites, while out of the three fermions, the two with like-spin are blocked and can't hop to the same site, leaving a single fermion free to hop.
@@ -150,22 +150,20 @@ In the second equality we simply noted that $\mathcal{H}_0$ creates a doubly occ
 The energy cost of creating a doubly occupied site is $U$. 
 
 The identity operator in the in the subspace of states with one doubly occupied site
-
-\begin{equation*}
+$
 \sum_{ | k \rangle} | k \rangle \langle k |
-\end{equation*}
+$
 may be written in a more convenient form in another representation:
-
-\begin{equation*}
+$
 \sum_j n_{j,\sigma} n_{j, -\sigma}
-\end{equation*}
+$, 
 so that the effective Hamiltonian becomes
 
 \begin{equation}\label{eq:degPert}
 \mathcal{H}_{\text{eff}} = - \mathcal{H}_0 \frac{\sum_j n_{j,\sigma} n_{j, -\sigma}}{U} \mathcal{H}_0
 \end{equation}
 
-In appendix (\ref{ap:heisenberg}), we find the Heisenberg model as the effective Hamiltonian in this $\frac{U}{t} \gg 1$ limit.
+In appendix (\ref{ap:hubbardObSol}), we find the Heisenberg model as the effective Hamiltonian in this $\frac{U}{t} \gg 1$ limit.
 This is consistent since the Heisenberg model couples spins on different sites, thus it is an \emph{atomic} model.
 
 \begin{equation}
