@@ -41,7 +41,7 @@ Variational and Diffusion \ac{QMC} are the simplest \ac{QMC} methods that allow 
 Although they already contain the main concepts used in this type of simulations, it is not always ideal or even possible to use them. 
 We will discuss their flaws and show how further refinement leads to the auxiliary field method we ultimately used.
 
-Using the Monte Carlo approach to study a many-fermion system implies overcoming a significant obstacle common to all \ac{QMC} methods - the so called \emph{fermion-sign problem}.
+Using the Monte Carlo approach to study a many-fermion system implies overcoming a significant obstacle common to all \ac{QMC} methods - the so called \emph{fermion sign problem}.
 Pauli's exclusion principle implies that the many-fermion wave function is anti-symmetric, which leads to a sign oscillation that greatly impedes the accurate evaluation of averages of quantum observables.
 The anti-symmetry constraint implies that a  straightforward weight interpretation of the wave function is not possible.
 In the case of the finite temperature algorithm, the cancellations that occur when computing the average of any physical observable lead to poor statistical properties of the corresponding estimators.
@@ -49,10 +49,10 @@ This means that a massive amount of samples requiring enormous computer time are
 In the case of the zero temperature algorithms, the situation is even worse.
 It might not even be possible to design a stochastic process carrying the system to its ground state, as normally is done in \say{projective} methods\footnote{Methods that iteratively project a trial wave function onto the ground state.}: the wave function that is used as an initial proposal turns out to converge to a bosonic one, and the fermionic character of the system is lost.
 
-As was proven by Troyer, the \emph{fermion-sign problem} has NP\footnote{NP or nondeterministic polynomial time, meaning that one can devise an algorithm that verifies the "yes" answer to a decision problem in polynomial time in the system size.
+As was proven by Troyer, the \emph{fermion sign problem} has NP\footnote{NP or nondeterministic polynomial time, meaning that one can devise an algorithm that verifies the "yes" answer to a decision problem in polynomial time in the system size.
 Note that the class $P$ - of polynomial time algorithms - is a subclass of NP.} computational complexity \cite{troyer_computational_2005}.
 One of the greatest open questions in computer science is whether $P = NP$.
-Solving the \emph{fermion-sign problem} would imply finding a solution to $P = NP$, which would constitute a major breakthrough.
+Solving the \emph{fermion sign problem} would imply finding a solution to $P = NP$, which would constitute a major breakthrough.
 
 \subsection{Variational Monte Carlo}
 
@@ -184,7 +184,7 @@ The negative weight problem may easily be circumvented when computing averages o
 where $s(c) = \text{sign} [ p ( c ) ]$, and $| p ( c ) | $ corresponds to an auxiliary bosonic system (also coupled to the bosonic field) corresponding to the original fermionic system, and for which there is no sign problem.
 
 The relative error $\Delta s / \left\langle s \right\rangle$ increases exponentially with the number of particles, with inverse temperature, and possibly with other parameters of the specific model to be studied \cite{troyer_computational_2005, hou_numerical_2009}.
-To see this, we start by noting that the average sign is the ratio between the partition functions of the fermionic ($Z = \sum_c p(c)$) and bosonic systems ($Z = \sum_c | p ( c ) |$).
+To see this, we start by noting that the average sign is the ratio between the partition functions of the fermionic ($Z = \sum_c p(c)$) and bosonic systems ($Z' = \sum_c | p ( c ) |$).
 In terms of the difference in free energy densities, $\left\langle s \right\rangle = Z / Z' = e^{-\beta N_p \Delta f}$, implying that for $M$ samples, the error of the denominator of Eq. (\ref{eq:signSampling}) becomes
 
 \begin{equation}

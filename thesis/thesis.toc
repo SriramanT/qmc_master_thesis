@@ -64,7 +64,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.6.2}Mean field theory of the Hubbard model}{43}{subsection.2.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Variants of the Hubbard model}{45}{section.2.7}
+\contentsline {section}{\numberline {2.7}Variants of the Hubbard model and their simulation}{45}{section.2.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Auxiliary Field Quantum Monte Carlo}{47}{chapter.3}
 \defcounter {refsection}{0}\relax 
