@@ -4620,6 +4620,61 @@
       \verb https://link.springer.com/article/10.1007/BF01008440
       \endverb
     \endentry
+    \entry{hanke_electronic_nodate}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3e0be49e7c85784b10295a1885fb540b}{%
+           family={Hanke},
+           familyi={H\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ae776f6c73b22e799afa7f0295ba067d}{%
+           family={Kopaev},
+           familyi={K\bibinitperiod},
+           given={Yu\bibnamedelima V.},
+           giveni={Y\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=d327989563589ea50c31a72c13168843}{%
+           family={John},
+           familyi={J\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b9dee27a94840db8a9460974f985700}
+      \strng{fullhash}{e90eb16cd2f4b23ec0d8e29159f6e062}
+      \strng{bibnamehash}{e90eb16cd2f4b23ec0d8e29159f6e062}
+      \strng{authorbibnamehash}{e90eb16cd2f4b23ec0d8e29159f6e062}
+      \strng{authornamehash}{9b9dee27a94840db8a9460974f985700}
+      \strng{authorfullhash}{e90eb16cd2f4b23ec0d8e29159f6e062}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1521-4079}
+      \field{journaltitle}{Crystal Research and Technology}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{shorttitle}{Electronic Phase Transitions. Modern Problems in Condensed Matter Sciences Vol. 32. North Holland}
+      \field{title}{Electronic Phase Transitions. Modern Problems in Condensed Matter Sciences Vol. 32. North Holland: Amsterdam, London, New York, Tokio 1992; 336 Seiten, {ISBN} 0-444-88885-3}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{28}
+      \field{urldateera}{ce}
+      \field{pages}{28\bibrangedash 28}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/crat.2170280106
+      \endverb
+      \verb{file}
+      \verb Hanke1992.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/strongy-correlated-electrons/numerics/Hanke1992.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/DJ47D5H8/crat.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/crat.2170280106
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/crat.2170280106
+      \endverb
+      \keyw{Hubbard-Stratonovich,stabilization,interacting electrons,loh,gubernatis,sign problem}
+    \endentry
     \entry{santos_introduction_2003}{article}{}
       \name{author}{1}{}{%
         {{hash=3f40fc505d6d3889dcb2919659238034}{%

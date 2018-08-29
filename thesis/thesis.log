@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  28 AUG 2018 19:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  29 AUG 2018 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1229,13 +1229,13 @@ LaTeX Info: Redefining \nameref on input line 7.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./beg-firstFewPages/1.Cover.tex
-<all-figures/Cover/istnewlogo.pdf, id=245, 502.99277pt x 195.67976pt>
+<all-figures/Cover/istnewlogo.pdf, id=265, 502.99277pt x 195.67976pt>
 File: all-figures/Cover/istnewlogo.pdf Graphic file (type pdf)
 <use all-figures/Cover/istnewlogo.pdf>
 Package pdftex.def Info: all-figures/Cover/istnewlogo.pdf  used on input line 9
 .
 (pdftex.def)             Requested size: 142.26378pt x 55.34532pt.
-<all-figures/Cover/coverimage.jpg, id=246, 1003.75pt x 567.11874pt>
+<all-figures/Cover/coverimage.jpg, id=266, 1003.75pt x 567.11874pt>
 File: all-figures/Cover/coverimage.jpg Graphic file (type jpg)
 <use all-figures/Cover/coverimage.jpg>
 Package pdftex.def Info: all-figures/Cover/coverimage.jpg  used on input line 1
@@ -1340,6 +1340,10 @@ Package minitoc Info: I0033
 (minitoc)             Writing thesis.mtc7.
 \openout5 = `thesis.mtc7'.
 
+Package minitoc Info: I0033
+(minitoc)             Writing thesis.mtc8.
+\openout5 = `thesis.mtc8'.
+
 Package minitoc Info: I0034
 (minitoc)             PREPARING MINILOFS FROM thesis.lof on input line 4.
 Package minitoc Info: I0033
@@ -1365,6 +1369,10 @@ Package minitoc Info: I0033
 Package minitoc Info: I0033
 (minitoc)             Writing thesis.mlf6.
 \openout5 = `thesis.mlf6'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing thesis.mlf7.
+\openout5 = `thesis.mlf7'.
 
 Package minitoc Info: I0037
 (minitoc)             PREPARING MINILOTS FROM thesis.lot on input line 5.
@@ -1392,35 +1400,42 @@ Package minitoc Info: I0033
 (minitoc)             Writing thesis.mlt6.
 \openout5 = `thesis.mlt6'.
 
+Package minitoc Info: I0033
+(minitoc)             Writing thesis.mlt7.
+\openout5 = `thesis.mlt7'.
+
  (./thesis.toc [9
 
 ]
-Overfull \hbox (0.33324pt too wide) detected at line 99
+Package acronym Info: Label `acro:TMD' newly defined as it shall be overridden
+although it is yet undefined on input line 95.
+
+Overfull \hbox (0.33324pt too wide) detected at line 103
  []\T1/cmr/m/n/10 A-2
  []
 
 
-Overfull \hbox (0.33324pt too wide) detected at line 101
+Overfull \hbox (0.33324pt too wide) detected at line 105
  []\T1/cmr/m/n/10 A-5
  []
 
 
-Overfull \hbox (0.33324pt too wide) detected at line 103
+Overfull \hbox (0.33324pt too wide) detected at line 107
  []\T1/cmr/m/n/10 A-8
  []
 
 
-Overfull \hbox (0.33324pt too wide) detected at line 105
+Overfull \hbox (0.33324pt too wide) detected at line 109
  []\T1/cmr/m/n/10 A-9
  []
 
 
-Overfull \hbox (0.33324pt too wide) detected at line 107
+Overfull \hbox (0.33324pt too wide) detected at line 111
  []\T1/cmr/m/n/10 A-9
  []
 
 
-Overfull \hbox (5.33202pt too wide) detected at line 109
+Overfull \hbox (5.33202pt too wide) detected at line 113
  []\T1/cmr/m/n/10 A-12
  []
 
@@ -1429,8 +1444,7 @@ Overfull \hbox (5.33202pt too wide) detected at line 109
 \openout7 = `thesis.toc'.
 
  [10] (./thesis.lof
-Package acronym Info: Label `acro:TMD' newly defined as it shall be overridden
-although it is yet undefined on input line 15.
+Package acronym Info: Label `acro:TMD' overridden on input line 15.
 
 Overfull \hbox (0.33324pt too wide) detected at line 67
  []\T1/cmr/m/n/10 A-7
@@ -1509,13 +1523,13 @@ Package acronym Info: Label `acro:LG' newly defined as it shall be overridden
 although it is yet undefined on input line 15.
  [3] [4])
 (./ch-introduction/state.tex
-<all-figures/Introduction/graphene.png, id=577, 390.96063pt x 560.59438pt>
+<all-figures/Introduction/graphene.png, id=605, 390.96063pt x 560.59438pt>
 File: all-figures/Introduction/graphene.png Graphic file (type png)
 <use all-figures/Introduction/graphene.png>
 Package pdftex.def Info: all-figures/Introduction/graphene.png  used on input l
 ine 11.
 (pdftex.def)             Requested size: 91.04872pt x 130.55069pt.
-<all-figures/Introduction/dispGraphene.png, id=579, 1019.81pt x 552.0625pt>
+<all-figures/Introduction/dispGraphene.png, id=607, 1019.81pt x 552.0625pt>
 File: all-figures/Introduction/dispGraphene.png Graphic file (type png)
 <use all-figures/Introduction/dispGraphene.png>
 Package pdftex.def Info: all-figures/Introduction/dispGraphene.png  used on inp
@@ -1525,14 +1539,14 @@ Package acronym Info: Label `acro:AFM' newly defined as it shall be overridden
 although it is yet undefined on input line 14.
  [5 <./all-figures/Introduction/graphene.png> <./all-figures/Introduction/dispG
 raphene.png>]
-<all-figures/Introduction/tmd2.png, id=609, 998.73125pt x 517.935pt>
+<all-figures/Introduction/tmd2.png, id=638, 998.73125pt x 517.935pt>
 File: all-figures/Introduction/tmd2.png Graphic file (type png)
 <use all-figures/Introduction/tmd2.png>
 Package pdftex.def Info: all-figures/Introduction/tmd2.png  used on input line 
 32.
 (pdftex.def)             Requested size: 249.68219pt x 129.48343pt.
  [6 <./all-figures/Introduction/tmd2.png>]
-<all-figures/Introduction/tmdProp.png, id=646, 1109.14375pt x 638.88687pt>
+<all-figures/Introduction/tmdProp.png, id=674, 1109.14375pt x 638.88687pt>
 File: all-figures/Introduction/tmdProp.png Graphic file (type png)
 <use all-figures/Introduction/tmdProp.png>
 Package pdftex.def Info: all-figures/Introduction/tmdProp.png  used on input li
@@ -1542,14 +1556,14 @@ Package acronym Info: Label `acro:PBC' newly defined as it shall be overridden
 although it is yet undefined on input line 70.
 Package acronym Info: Label `acro:OBC' newly defined as it shall be overridden
 although it is yet undefined on input line 71.
-<all-figures/Introduction/nanoribbons.png, id=660, 1228.08812pt x 289.08pt>
+<all-figures/Introduction/nanoribbons.png, id=688, 1228.08812pt x 289.08pt>
 File: all-figures/Introduction/nanoribbons.png Graphic file (type png)
 <use all-figures/Introduction/nanoribbons.png>
 Package pdftex.def Info: all-figures/Introduction/nanoribbons.png  used on inpu
 t line 75.
 (pdftex.def)             Requested size: 343.86234pt x 80.94183pt.
  [7 <./all-figures/Introduction/tmdProp.png>]
-<all-figures/Introduction/grapheneNanoribbons.jpg, id=678, 703.62875pt x 295.10
+<all-figures/Introduction/grapheneNanoribbons.jpg, id=706, 703.62875pt x 295.10
 25pt>
 File: all-figures/Introduction/grapheneNanoribbons.jpg Graphic file (type jpg)
 <use all-figures/Introduction/grapheneNanoribbons.jpg>
@@ -1559,7 +1573,7 @@ Package pdftex.def Info: all-figures/Introduction/grapheneNanoribbons.jpg  used
 Package acronym Info: Label `acro:TMDNR' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 91.
-<all-figures/Introduction/zigzag.png, id=688, 743.77875pt x 643.40375pt>
+<all-figures/Introduction/zigzag.png, id=716, 743.77875pt x 643.40375pt>
 File: all-figures/Introduction/zigzag.png Graphic file (type png)
 <use all-figures/Introduction/zigzag.png>
 Package pdftex.def Info: all-figures/Introduction/zigzag.png  used on input lin
@@ -1570,7 +1584,7 @@ Overfull \hbox (111.80911pt too wide) in paragraph at lines 97--98
 [][] 
  []
 
-<all-figures/Introduction/comparisonMF.pdf, id=689, 1027.84pt x 770.88pt>
+<all-figures/Introduction/comparisonMF.pdf, id=717, 1027.84pt x 770.88pt>
 File: all-figures/Introduction/comparisonMF.pdf Graphic file (type pdf)
 <use all-figures/Introduction/comparisonMF.pdf>
 Package pdftex.def Info: all-figures/Introduction/comparisonMF.pdf  used on inp
@@ -1604,7 +1618,7 @@ Chapter 2.
 (./thesis.mtc2) [17
 
 ] (./ch-hubbard/modelling.tex
-<all-figures/Hubbard/IsingVsHubbard.png, id=876, 986.68625pt x 381.425pt>
+<all-figures/Hubbard/IsingVsHubbard.png, id=905, 986.68625pt x 381.425pt>
 File: all-figures/Hubbard/IsingVsHubbard.png Graphic file (type png)
 <use all-figures/Hubbard/IsingVsHubbard.png>
 Package pdftex.def Info: all-figures/Hubbard/IsingVsHubbard.png  used on input 
@@ -1620,7 +1634,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 14.
 
-<all-figures/Hubbard/Hydrogen_Density_Plots.png, id=909, 1761.58125pt x 1190.44
+<all-figures/Hubbard/Hydrogen_Density_Plots.png, id=937, 1761.58125pt x 1190.44
 75pt>
 File: all-figures/Hubbard/Hydrogen_Density_Plots.png Graphic file (type png)
 <use all-figures/Hubbard/Hydrogen_Density_Plots.png>
@@ -1634,7 +1648,7 @@ Package acronym Info: Label `acro:PHS' newly defined as it shall be overridden
 although it is yet undefined on input line 187.
  [24]
 Package acronym Info: Label `acro:AF' overridden on input line 194.
-<all-figures/Hubbard/bipartite.png, id=968, 1263.21938pt x 525.46312pt>
+<all-figures/Hubbard/bipartite.png, id=996, 1263.21938pt x 525.46312pt>
 File: all-figures/Hubbard/bipartite.png Graphic file (type png)
 <use all-figures/Hubbard/bipartite.png>
 Package pdftex.def Info: all-figures/Hubbard/bipartite.png  used on input line 
@@ -1676,20 +1690,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 89.
 
 [28]
-<all-figures/Hubbard/rhoVsMu.png, id=1027, 481.19775pt x 262.8219pt>
+<all-figures/Hubbard/rhoVsMu.png, id=1055, 481.19775pt x 262.8219pt>
 File: all-figures/Hubbard/rhoVsMu.png Graphic file (type png)
 <use all-figures/Hubbard/rhoVsMu.png>
 Package pdftex.def Info: all-figures/Hubbard/rhoVsMu.png  used on input line 17
 6.
 (pdftex.def)             Requested size: 310.70287pt x 169.70128pt.
  [29] [30 <./all-figures/Hubbard/rhoVsMu.png>]
-<all-figures/Hubbard/mSqVsU.png, id=1051, 477.58424pt x 262.8219pt>
+<all-figures/Hubbard/mSqVsU.png, id=1079, 477.58424pt x 262.8219pt>
 File: all-figures/Hubbard/mSqVsU.png Graphic file (type png)
 <use all-figures/Hubbard/mSqVsU.png>
 Package pdftex.def Info: all-figures/Hubbard/mSqVsU.png  used on input line 222
 .
 (pdftex.def)             Requested size: 310.70287pt x 170.9886pt.
-<all-figures/Hubbard/mSqVsT.png, id=1053, 476.982pt x 262.8219pt>
+<all-figures/Hubbard/mSqVsT.png, id=1081, 476.982pt x 262.8219pt>
 File: all-figures/Hubbard/mSqVsT.png Graphic file (type png)
 <use all-figures/Hubbard/mSqVsT.png>
 Package pdftex.def Info: all-figures/Hubbard/mSqVsT.png  used on input line 233
@@ -1721,13 +1735,13 @@ Package acronym Info: Label `acro:PBC' overridden on input line 258.
 Package acronym Info: Label `acro:OBC' overridden on input line 260.
 
 [32] [33]
-<all-figures/Hubbard/fermiEnergy1D.png, id=1105, 433.62pt x 289.08pt>
+<all-figures/Hubbard/fermiEnergy1D.png, id=1133, 433.62pt x 289.08pt>
 File: all-figures/Hubbard/fermiEnergy1D.png Graphic file (type png)
 <use all-figures/Hubbard/fermiEnergy1D.png>
 Package pdftex.def Info: all-figures/Hubbard/fermiEnergy1D.png  used on input l
 ine 358.
 (pdftex.def)             Requested size: 244.1261pt x 162.75266pt.
-<all-figures/Hubbard/fermiEnergy2D.png, id=1106, 368.21565pt x 263.18324pt>
+<all-figures/Hubbard/fermiEnergy2D.png, id=1134, 368.21565pt x 263.18324pt>
 File: all-figures/Hubbard/fermiEnergy2D.png Graphic file (type png)
 <use all-figures/Hubbard/fermiEnergy2D.png>
 Package pdftex.def Info: all-figures/Hubbard/fermiEnergy2D.png  used on input l
@@ -1761,7 +1775,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [34 <./all-figures/Hubbard/fermiEnergy1D.png> <./all-figures/Hubbard/fermiEnerg
 y2D.png>] [35] [36] [37]) (./ch-hubbard/greens-functions.tex [38] [39] [40])
 (./ch-hubbard/magnetism-mft.tex [41]
-<all-figures/Hubbard/dos.pdf, id=1202, 1027.84pt x 770.88pt>
+<all-figures/Hubbard/dos.pdf, id=1230, 1027.84pt x 770.88pt>
 File: all-figures/Hubbard/dos.pdf Graphic file (type pdf)
 <use all-figures/Hubbard/dos.pdf>
 Package pdftex.def Info: all-figures/Hubbard/dos.pdf  used on input line 24.
@@ -1775,13 +1789,13 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
  [43]
-<all-figures/Hubbard/mfHubbard.png, id=1314, 493.24275pt x 277.87814pt>
+<all-figures/Hubbard/mfHubbard.png, id=1342, 493.24275pt x 277.87814pt>
 File: all-figures/Hubbard/mfHubbard.png Graphic file (type png)
 <use all-figures/Hubbard/mfHubbard.png>
 Package pdftex.def Info: all-figures/Hubbard/mfHubbard.png  used on input line 
 94.
 (pdftex.def)             Requested size: 310.70287pt x 175.04718pt.
-<all-figures/Hubbard/mfHubbard_multiple.png, id=1318, 1258.76273pt x 372.00983p
+<all-figures/Hubbard/mfHubbard_multiple.png, id=1346, 1258.76273pt x 372.00983p
 t>
 File: all-figures/Hubbard/mfHubbard_multiple.png Graphic file (type png)
 <use all-figures/Hubbard/mfHubbard_multiple.png>
@@ -1802,66 +1816,60 @@ Chapter 3.
 
 
 
-] (./ch-afqmc/classical_monte_carlo.tex [48] [49] [50]
+]
+Package acronym Info: Label `acro:TMDNR' overridden on input line 12.
+ (./ch-afqmc/classical_monte_carlo.tex [48] [49] [50]
 [51] [52]
 Package acronym Info: Label `acro:FFT' newly defined as it shall be overridden
-although it is yet undefined on input line 250.
- [53]) (./ch-afqmc/theoretical_framework.tex [54] [55]
-
-LaTeX Warning: Reference `eq:hubbard' on page 56 undefined on input line 61.
-
-[56] [57] [58] [59] [60] [61] [62] [63]
+although it is yet undefined on input line 249.
+ [53]) (./ch-afqmc/theoretical_framework.tex [54] [55] [56] [57]
+[58]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 420.
- [64] [65] [66] [67]) [68])
-(./ch-applications/main.tex
+put line 254.
+ [59] [60]) [61] [62]) (./ch-applications/main.tex
 Chapter 4.
 \openout5 = `thesis.mtc'.
 
 \openout5 = `thesis.mtc'.
 
-(./thesis.mtc4) [69
+(./thesis.mtc4) [63
 
 
 
 ] (./ch-applications/1.1d-chain.tex)
 (./ch-applications/2.square-lattice.tex) (./ch-applications/3.honeycomb.tex)
 (./ch-applications/4.nanoribbon.tex
-Package acronym Info: Label `acro:PBC' overridden on input line 13.
-Package acronym Info: Label `acro:OBC' overridden on input line 14.
-<all-figures/Applications/nanoribbon.pdf, id=1646, 1027.84pt x 770.88pt>
+Package acronym Info: Label `acro:TMD' overridden on input line 5.
+Package acronym Info: Label `acro:PBC' overridden on input line 14.
+Package acronym Info: Label `acro:OBC' overridden on input line 15.
+<all-figures/Applications/nanoribbon.pdf, id=1606, 1027.84pt x 770.88pt>
 File: all-figures/Applications/nanoribbon.pdf Graphic file (type pdf)
 <use all-figures/Applications/nanoribbon.pdf>
 Package pdftex.def Info: all-figures/Applications/nanoribbon.pdf  used on input
- line 25.
-(pdftex.def)             Requested size: 355.09189pt x 153.27733pt.
- [70]
-Overfull \hbox (2.82014pt too wide) in paragraph at lines 59--89
-[][]   []
- []
+ line 26.
+(pdftex.def)             Requested size: 355.09189pt x 163.10701pt.
+ [64]) [65 <./all-figures/Applications/nanoribbon.pdf>] [66
 
-[71 <./all-figures/Applications/nanoribbon.pdf>]) [72])
-(./ch-conclusion/conclusions.tex
+
+]) (./ch-conclusion/conclusions.tex
 Chapter 5.
 Package minitoc Info: I0006
 (minitoc)             thesis.mtc5 is empty on input line 4.
-[73
+[67
 
-
-
-] [74]) [75
-
+] [68]) [69
 
 
 
 
-] [76] [77]
+
+] [70] [71]
 Overfull \hbox (19.84595pt too wide) in paragraph at lines 43--43
 []\T1/cmr/m/n/10 Fazekas, P. \T1/cmr/m/it/10 Lec-ture Notes on Elec-tron Cor-re
 -la-tion and Mag-netism \T1/cmr/m/n/10 Google-Books-ID: GV5pyxX3TfMC.
  []
 
-[78] [79] [80
+[72] [73] [74
 
 
 ] (./end-appendices/hubbardObSol.tex
@@ -1869,7 +1877,7 @@ Appendix A.
 [1
 
 ] [2] [3] [4] [5]
-<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=1870, 457.71pt x 210.7
+<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=1869, 457.71pt x 210.7
 875pt>
 File: all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png Graphic file (type pn
 g)
@@ -1895,38 +1903,35 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 336.
 
-[9] [10] [11] [12]) [13] [14
+[9] [10] [11] [12]) (./end-appendices/afqmcCalc.tex [13]
+Appendix B.
+[1
 
-
-]
+] [2] [3] [4] [5]) [6]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the thesis.maf file.
 \openout5 = `thesis.maf'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E69F5FDA11FD1921C6036FFE7ECAF3BF;4788.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 9EE08D7C2DB37CA8D14FAF722632291B;5178.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22117 strings out of 492649
- 366428 string characters out of 6129622
- 896468 words of memory out of 5000000
- 24556 multiletter control sequences out of 15000+600000
+ 22143 strings out of 492649
+ 366914 string characters out of 6129622
+ 893812 words of memory out of 5000000
+ 24574 multiletter control sequences out of 15000+600000
  43547 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,26n,100p,2020b,2040s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,24n,100p,2020b,2040s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
  </Users/franciscobrito/Library/texlive/2018/texmf-var/fonts/pk/ljfour/public/b
 bm/bbm10.600pk>{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}
@@ -1984,10 +1989,10 @@ e1/public/cm-super/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
 /public/cm-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw
 /bookman/ubkd8a.pfb>
-Output written on thesis.pdf (112 pages, 12264272 bytes).
+Output written on thesis.pdf (111 pages, 12403523 bytes).
 PDF statistics:
- 2239 PDF objects out of 2487 (max. 8388607)
- 1942 compressed objects within 20 object streams
- 608 named destinations out of 1000 (max. 500000)
- 620 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2297 PDF objects out of 2487 (max. 8388607)
+ 1993 compressed objects within 20 object streams
+ 610 named destinations out of 1000 (max. 500000)
+ 660 words of extra memory for PDF output out of 10000 (max. 10000000)
 

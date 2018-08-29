@@ -1,16 +1,15 @@
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Dummy Chapter:
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The Introduction:
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \fancychapter{Auxiliary Field Quantum Monte Carlo}
 \label{cap:afqmc}
 
 \slshape
 
-Explain the method
+We start with a brief review of the Monte Carlo method in statistical physics, and then explain how the fundamental concepts we present can be generalized to study quantum-many fermion systems.
+Focusing on the auxiliary field method, we discuss the mapping to the free-fermion problem that reduces the problem to the evaluation of determinants, and show how an efficient algorithm can be designed by successive global updates of the free-fermion Green's functions.
+Then, we explain how to control the instabilities in this update scheme.
+In particular, we explain how to circumvent low temperature instabilities due to the ill-conditioning of the matrices representing the free-fermion propagators.
+We also show that this problem has to do with the coexistence of significantly different energy scales, and tends to get worse as the size increases.
+Finally, we compute the estimators allowing the measurement of some relevant observables for \acp{TMDNR}.
 
 \normalfont
 

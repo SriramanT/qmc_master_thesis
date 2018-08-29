@@ -2086,20 +2086,15 @@
     <bcf:citekey order="68">hirsch_monte_1983</bcf:citekey>
     <bcf:citekey order="69">hou_numerical_2009</bcf:citekey>
     <bcf:citekey order="70">hirsch_two-dimensional_1985</bcf:citekey>
-    <bcf:citekey order="71">hou_numerical_2009</bcf:citekey>
-    <bcf:citekey order="72">santos_introduction_2003</bcf:citekey>
-    <bcf:citekey order="73">yang_strain-tuning_2017</bcf:citekey>
-    <bcf:citekey order="73">raczkowski_interplay_2017</bcf:citekey>
-    <bcf:citekey order="73">chen_fabrication_2017</bcf:citekey>
-    <bcf:citekey order="73">wang_electronics_2012</bcf:citekey>
-    <bcf:citekey order="73">braz_valley_2017</bcf:citekey>
+    <bcf:citekey order="71">hanke_electronic_nodate</bcf:citekey>
+    <bcf:citekey order="72">hou_numerical_2009</bcf:citekey>
+    <bcf:citekey order="73">santos_introduction_2003</bcf:citekey>
     <bcf:citekey order="74">yazyev_emergence_2010</bcf:citekey>
     <bcf:citekey order="75">feldner_dynamical_2011</bcf:citekey>
     <bcf:citekey order="75">golor_quantum_2013</bcf:citekey>
-    <bcf:citekey order="76">hsu_topological_2017</bcf:citekey>
-    <bcf:citekey order="77">gennes_superconductivity_1999</bcf:citekey>
-    <bcf:citekey order="78">mila_physique_2007</bcf:citekey>
-    <bcf:citekey order="79">gennes_superconductivity_1999</bcf:citekey>
+    <bcf:citekey order="76">gennes_superconductivity_1999</bcf:citekey>
+    <bcf:citekey order="77">mila_physique_2007</bcf:citekey>
+    <bcf:citekey order="78">gennes_superconductivity_1999</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

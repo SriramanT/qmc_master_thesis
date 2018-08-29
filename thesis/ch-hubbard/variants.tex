@@ -7,7 +7,7 @@ In fact, all the methodology we shall present in the next chapter generalizes fo
 \begin{equation}\label{eq:variantsForm}
 \mathcal{H} = - \sum_{i, j, \sigma} K_{ij} \bigg( c_{i, \sigma}^\dagger c_{j, \sigma} + c_{j, \sigma}^\dagger c_{i, \sigma} \bigg) + \sum_{i, j} V_{ij} n_i n_j ,
 \end{equation}
-where all the notation has the usual meaning, the $V_{ij}$ included in the term that models the Coulomb repulsion already includes the effects of screening, and $n_i = c_{i,\uparrow}^\dagger c_{i,\uparrow} + c_{i,\downarrow}^\dagger c_{i,\downarrow}$.
+where all the notation has the usual meaning, and $V_{ij}$, included in the functional of the charge density that models the Coulomb repulsion, already includes the effects of screening, and $n_i = c_{i,\uparrow}^\dagger c_{i,\uparrow} + c_{i,\downarrow}^\dagger c_{i,\downarrow}$.
 
 This generic form includes standard condensed matter models, such as the Hubbard model, its multi-orbital, and extended variants, and the Anderson model.
 There is a huge variety of approximation methods at both zero and finite temperature devised specifically to study these models.
@@ -15,7 +15,7 @@ We have seen some examples of such methods for the specific case of the Hubbard 
 The methods aim at studying magnetism, superconductivity, and other low-temperature phase transitions.
 \ac{QMC} methods follow a different route, allowing the exploration of a more vast range of parameter space.
 
-The first step is to resort to a mathematical trick to eliminate the \emph{direct} electron-electron interaction.
+In auxiliary field \ac{QMC}, the first step is to resort to a mathematical trick to eliminate the \emph{direct} electron-electron interaction.
 In the same way that photon fields mediate the electromagnetic interaction, there are fields mediating our simplified screened interaction.
 In the context of a path integral formulation, we will introduce these so called Hubbard Stratonovich fields to eliminate the electron-electron interactions.
 The complexity of the problem is transferred to the degrees of freedom of the interaction of each electron with the external bosonic field that mediates their interactions.
@@ -36,8 +36,8 @@ These explicitly separate the exponentially diverging numerical scales associate
 Thus, simulations can be stabilized at lower temperature, potentially allowing the study of a larger spectrum of phases.
 
 The case of interest for this work comes from considering a particular multi-orbital form of the very general Hamiltonian of Eq.(\ref{eq:variantsForm}).
-It ignores inter-orbital interactions, yet is still numerically more expensive to simulate than the simple Hubbard model since the orbital space increases the overall dimensionality of the problem.
-Additional (greek) indexes are added to represent Wannier states on the same site, but corresponding to different orbitals (in the atomic view), and we consider interactions only between electrons on the same site and on the same orbital:
+It ignores inter-orbital interactions, yet is still numerically more expensive to simulate than the simple Hubbard model since the orbital space increases the overall dimensionality of the problem, and the hopping matrix is less sparse.
+Additional (greek) indexes are added to represent Wannier states on the same site, but corresponding to different \say{orbitals}, and we consider interactions only between electrons on the same site and on the same orbital:
 
 \begin{equation}\label{eq:variantTMD}
 \mathcal{H} = - \sum_{x, y, \alpha, \beta,  \sigma} K_{xy\alpha\beta} \bigg( c_{x\alpha, \sigma}^\dagger c_{\beta y, \sigma} + c_{\beta y, \sigma}^\dagger c_{\alpha x, \sigma} \bigg) + U \sum_{x \alpha} n_{x\alpha, \uparrow} n_{x\alpha, \downarrow} ,
@@ -46,5 +46,5 @@ Additional (greek) indexes are added to represent Wannier states on the same sit
 While these models describe fundamentally different physics than the Hubbard model, they do not require a different formulation than the one used in simulations of the Hubbard model.
 This is easily seen by considering the change of variable $i = N_{\text{orb}} x + \alpha$, where $N_{\text{orb}}$ is the number of orbitals in the model.
 It clearly collapses site and orbital indexes into the same index, bringing us back to a typical Hubbard-type model in a higher dimensional space.
-Additionaly, the hopping matrix contains both the geometry, which specifies the  structure of the material, and potentially non-uniform transition amplitudes related to the specific material at hand.
+Additionaly, the hopping matrix contains both the geometry, which specifies the  structure of the class of materials, and potentially non-uniform transition amplitudes related to the specific one at hand.
 A general form for these in \acp{TMD} is derived by symmetry arguments in \cite{liu_three-band_2013}, and their specific values for different materials are obtained by fitting to the results of  density functional theory (DFT), using the minimal model obtained by symmetry.

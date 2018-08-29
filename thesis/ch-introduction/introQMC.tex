@@ -167,7 +167,7 @@ The interacting problem then becomes a problem of independent fermions coupled t
 This contribution can be evaluated numerically by employing importance sampling over the field configurations.
 Auxiliary field \acs{QMC} relies on a mapping to a \say{classical} system (in quotes because there is no actual classical analogue):
 
-\begin{equation}
+\begin{equation}\label{eq:Zsign}
 Z = \Tr [ e^{-\beta \mathcal{H} } ] = \sum_{\{ \bm h\} } \sum_{\text{fermionic}} e^{-S} = \sum_c p_c ,
 \end{equation}
 but some of the \say{probabilities} can actually be negative $p_c < 0$.

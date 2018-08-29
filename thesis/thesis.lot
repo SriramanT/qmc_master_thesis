@@ -20,14 +20,18 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Applications}{69}{chapter.4}
+\contentsline {xchapter}{Applications}{63}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces Nearest neighbors on the nanoribbon.\relax }}{72}{table.caption.47}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Nearest neighbors on the graphene nanoribbon. The neighbors in red are only for sites that are not on the edges.\relax }}{65}{table.caption.50}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Conclusions and Future Work}{73}{chapter.5}
+\contentsline {xchapter}{Conclusions and Future Work}{67}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{A-1}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Theoretical Formulation of Auxiliary Field Quantum Monte Carlo}{B-1}{appendix.B}

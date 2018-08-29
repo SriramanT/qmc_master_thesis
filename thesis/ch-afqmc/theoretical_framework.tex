@@ -22,44 +22,43 @@ Z_\beta = \text{Tr} \big( e^{-\beta \mathcal{H} } \big) = \sum_{\alpha} \left\la
 \end{equation}
 is equivalent to studying its \emph{imaginary} time evolution.
 The inverse temperature $\beta$ represents the imaginary time $\tau = it$, and $Z_\beta$ may be simply thought of as the wave function of the analogous quantum system at imaginary time $\beta$.
-To see this, recall that quantum states evolve according to
-
-\begin{equation}
-\left| \psi (t) \right\rangle = e^{-i \mathcal{H} t } \left| \psi (0) \right\rangle \iff \left| \psi (\tau) \right\rangle = e^{-\tau \mathcal{H} } \left| \psi (0) \right\rangle,
-\end{equation}
-
-Taking the scalar product with a position eigenstate $ \left\langle \bm x \right|$, we obtain $\psi (\bm x, \beta) = \left\langle \bm x | \psi (\beta) \right\rangle$.
-Using the closure relation $\int d\bm y \left| \bm y \right\rangle  \left\langle \bm y \right| = 1$, we get
-
-\begin{equation}
-\psi ( \bm x , \tau ) = \int d\bm y \left\langle \bm x | e^{-\tau \mathcal{H}} | \bm y \right\rangle \psi (\bm y, 0)
-\end{equation}
-
-The wave function at position $\bm x$ and time $\tau$ may be obtained by this equation as long as we know the wave function at $\tau = 0$, $\psi (\bm y, 0)$ for all points in space $\bm y$. The Green's function
-
-\begin{equation}
-G ( \bm x, \tau | \bm y, 0 ) \equiv \left\langle \bm x | e^{-\tau \mathcal{H}} | \bm y \right\rangle ,
-\end{equation}
-satisfies the Schr\"odinger equation, subject to the initial condition $\psi (\bm y, 0) = \delta (\bm y - \bm x )$. Thus, it corresponds to the probability of presence at $\bm x, \tau$ of a wave packet centered at $\bm y$ at $\tau = 0$. Thus, solving the Schr\"odinger equation is  analogous to solving the diffusion equation (that in turn one may obtain as the continuum limit of a random walk). We may write $G$ as a linear combination of the eigenstates of the Hamiltonian
-
-\begin{equation}
-G (\bm x, \tau | \bm y, 0) = \sum_\alpha \psi_\alpha^\star (\bm y) \psi_\alpha (\bm x) e^{-E_\alpha \tau}  ,
-\end{equation}
-so that
-
-\begin{equation}\label{eq:psiZ}
-\psi ( \bm x, \tau ) = \sum_\alpha \int d\bm y \, \psi_\alpha^\star (\bm y) \psi_\alpha (\bm x) e^{-E_\alpha \tau} \delta ( \bm y - \bm x ) = \sum_\alpha \psi_\alpha^\star (\bm x) \psi_\alpha (\bm x) e^{-E_\alpha \tau} = \sum_{\alpha} \left\langle \psi_\alpha | e^{-\tau \mathcal{H} } | \psi_\alpha \right\rangle
-\end{equation}
-where we immediately notice a striking similarity with equation (\ref{eq:z_asEigen}), by making $\psi (\bm x, \tau) \mapsto Z_\beta$.
-
+%To see this, recall that quantum states evolve according to
+%
+%\begin{equation}
+%\left| \psi (t) \right\rangle = e^{-i \mathcal{H} t } \left| \psi (0) \right\rangle \iff \left| \psi (\tau) \right\rangle = e^{-\tau \mathcal{H} } \left| \psi (0) \right\rangle,
+%\end{equation}
+%
+%Taking the scalar product with a position eigenstate $ \left\langle \bm x \right|$, we obtain $\psi (\bm x, \beta) = \left\langle \bm x | \psi (\beta) \right\rangle$.
+%Using the closure relation $\int d\bm y \left| \bm y \right\rangle  \left\langle \bm y \right| = 1$, we get
+%
+%\begin{equation}
+%\psi ( \bm x , \tau ) = \int d\bm y \left\langle \bm x | e^{-\tau \mathcal{H}} | \bm y \right\rangle \psi (\bm y, 0)
+%\end{equation}
+%
+%The wave function at position $\bm x$ and time $\tau$ may be obtained by this equation as long as we know the wave function at $\tau = 0$, $\psi (\bm y, 0)$ for all points in space $\bm y$. The Green's function
+%
+%\begin{equation}
+%G ( \bm x, \tau | \bm y, 0 ) \equiv \left\langle \bm x | e^{-\tau \mathcal{H}} | \bm y \right\rangle ,
+%\end{equation}
+%satisfies the Schr\"odinger equation, subject to the initial condition $\psi (\bm y, 0) = \delta (\bm y - \bm x )$. Thus, it corresponds to the probability of presence at $\bm x, \tau$ of a wave packet centered at $\bm y$ at $\tau = 0$. Thus, solving the Schr\"odinger equation is  analogous to solving the diffusion equation (that in turn one may obtain as the continuum limit of a random walk). We may write $G$ as a linear combination of the eigenstates of the Hamiltonian
+%
+%\begin{equation}
+%G (\bm x, \tau | \bm y, 0) = \sum_\alpha \psi_\alpha^\star (\bm y) \psi_\alpha (\bm x) e^{-E_\alpha \tau}  ,
+%\end{equation}
+%so that
+%
+%\begin{equation}\label{eq:psiZ}
+%\psi ( \bm x, \tau ) = \sum_\alpha \int d\bm y \, \psi_\alpha^\star (\bm y) \psi_\alpha (\bm x) e^{-E_\alpha \tau} \delta ( \bm y - \bm x ) = \sum_\alpha \psi_\alpha^\star (\bm x) \psi_\alpha (\bm x) e^{-E_\alpha \tau} = \sum_{\alpha} \left\langle \psi_\alpha | e^{-\tau \mathcal{H} } | \psi_\alpha \right\rangle
+%\end{equation}
+%where we immediately notice a striking similarity with equation (\ref{eq:z_asEigen}), by making $\psi (\bm x, \tau) \mapsto Z_\beta$.
 In fact, for a zero temperature system, projective methods use this same principle to find the ground state.
-In that case, the partition function strictly corresponds to the ground state wave function when $\tau \rightarrow \infty$.
-As we can see from Eq.(\ref{eq:psiZ}), the higher energy states are exponentially suppressed in this limit, so that $\psi (\bm x, \tau) \rightarrow |\psi_0 (x)|^2 e^{-E_0 \tau}$.
-The initial condition does not even have to be $\psi ( \bm y, 0) = \delta ( \bm y - \bm x )$.
-More generally, as we saw for diffusion \acs{QMC}, we only require $\int d\bm y \, \psi_0^\star ( \bm y ) \psi ( \bm y, 0 ) = C \neq 0$, and we obtain $\psi (\bm x, \tau\rightarrow \infty) \rightarrow C \psi_0 (x) e^{-E_0 \tau}$.
+In that case, the partition function strictly corresponds to the ground state wave function when $\tau \rightarrow \infty$ (in practice, one takes $\tau = \Theta$ large enough).
+%As we can see from Eq.(\ref{eq:psiZ}), the higher energy states are exponentially suppressed in this limit, so that $\psi (\bm x, \tau) \rightarrow |\psi_0 (x)|^2 e^{-E_0 \tau}$.
+%The initial condition does not even have to be $\psi ( \bm y, 0) = \delta ( \bm y - \bm x )$.
+%More generally, as we saw for diffusion \acs{QMC}, we only require $\int d\bm y \, \psi_0^\star ( \bm y ) \psi ( \bm y, 0 ) = C \neq 0$, and we obtain $\psi (\bm x, \tau\rightarrow \infty) \rightarrow C \psi_0 (x) e^{-E_0 \tau}$.
  
-Eq.(\ref{eq:partitionBeta}) is not very amenable to numerical computation since it contains an exponential of a sum of operators $e^{-\beta (\mathcal{H}_K + \mathcal{H}_V)}$ as per Eq.(\ref{eq:hubbard}). 
-The exponential is not factorizable and involves computing an infinite number of commutators containing these two operators, as per the Zassenhaus formula, valid for any two generic operators $X$ and $Y$:
+Eq.(\ref{eq:partitionBeta}) is not very amenable to numerical computation since it contains an exponential of a sum of non-commuting operators $e^{-\beta (\mathcal{H}_K + \mathcal{H}_V)}$ as per Eq.(\ref{eq:def_energies}). 
+The exponential is not factorizable and involves computing an infinite number of commutators containing these two operators, as per the Zassenhaus formula, valid for any two generic operators $X$ and $Y$\footnote{This is just the inverse of the well known Baker–Campbell–Hausdorff formula commonly used in quantum mechanics.}:
 
 \begin{equation}\label{eq:zassenhaus}
 e^{\delta (X+Y)}=e^{\delta X} e^{\delta Y} e^{-{\frac {\delta^{2}}{2}}[X,Y]} e^{{\frac {\delta^{3}}{6}}(2[Y,[X,Y]]+[X,[X,Y]])}  e^{{\frac {-\delta^{4}}{24}}([[[X,Y],X],X]+3[[[X,Y],X],Y]+3[[[X,Y],Y],Y])} \, ... , 
@@ -72,8 +71,7 @@ Dividing the imaginary time interval $[0, \beta ]$ into $L$ equal sub-intervals 
 Z = \Tr \bigg( \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg) ,
 \end{equation}
 which is now a product of exponentials of operators multiplied by a constant that can be made small by increasing $L$, leading to an error that can be controlled.
-
-Actually, this arises naturally by writing the matrix elements of the projection operator $\mathcal{P}$ as path integrals:
+Actually, this also arises naturally by writing the matrix elements of the projection operator $\mathcal{P}$ as path integrals:
 
 \begin{equation}
 \left\langle \psi | e^{-\beta \mathcal{H} } | \psi' \right\rangle = \sum_{\left| \psi_1 \right\rangle, \left| \psi_2 \right\rangle,..., \left| \psi_{L-1} \right\rangle }  \left\langle \psi | e^{-\Delta \tau \mathcal{H} } | \psi_1 \right\rangle \left\langle \psi_1 | e^{-\Delta \tau \mathcal{H} } | \psi_2 \right\rangle ... \left\langle \psi_{L - 1} | e^{-\Delta \tau \mathcal{H} } | \psi' \right\rangle 
@@ -115,22 +113,20 @@ where $c_U = \frac{1}{2} e^{-\frac{U\Delta \tau}{4}}$ and $\nu = \text{arcosh} (
 To prove this identity, let us write down how the operators  $(n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )$ and $(n_{i\uparrow} - n_{i\downarrow} )$ act on a state on a given site.
 
 \begin{equation}
-\begin{split}
-(n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )&
+(n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )
 \begin{cases}
 \left| \, \, \right\rangle = \frac{1}{4} \left| \, \, \right\rangle \\
 \left| \uparrow \right\rangle = -\frac{1}{4} \left| \uparrow \right\rangle \\
 \left| \downarrow \right\rangle = -\frac{1}{4} \left| \downarrow \right\rangle \\
 \left| \uparrow \downarrow \right\rangle = \frac{1}{4} \left| \uparrow \downarrow \right\rangle
-\end{cases}\\
-(n_{i\uparrow} - n_{i\downarrow} )&
+\end{cases} \quad
+(n_{i\uparrow} - n_{i\downarrow} )
 \begin{cases}
 \left| \, \, \right\rangle = 0\left| \, \, \right\rangle \\
 \left| \uparrow \right\rangle = \left| \uparrow \right\rangle \\
 \left| \downarrow \right\rangle = \left| \downarrow \right\rangle \\
 \left| \uparrow \downarrow \right\rangle = 0 \left| \uparrow \downarrow \right\rangle
 \end{cases}
-\end{split}
 \end{equation}
 
 Now we simply compare the action of the operators on the left hand side and on the right hand side of equation (\ref{eq:discreteHS}) and find the desired relation by defining
@@ -159,12 +155,9 @@ which can be manipulated to arrive at a more compact form.
 
 \begin{equation}\label{eq:exp_quartic}
 \begin{split}
-&e^{-\Delta\tau \mathcal{H}_V} =  (c_U)^N \sum_{h_i = \pm 1} e^{\nu h_i ( n_{1\uparrow} - n_{1\downarrow} )} \sum_{h_i = \pm 1} e^{\nu h_i ( n_{2\uparrow} - n_{2\downarrow} )}  \\
-&... \sum_{h_i = \pm 1} e^{\nu h_i ( n_{N\uparrow} - n_{N\downarrow} )} \\
-&= (c_U)^N \sum_{h_i = \pm 1} e^{\sum_{i=1}^N [(\nu h_i ( n_{i\uparrow} - n_{i\downarrow} ) ]} \\
-&\equiv (c_U)^N \text{Tr}_h e^{\sum_{i=1}^N [(\nu h_i ( n_{i\uparrow} - n_{i\downarrow} ) ]} \\
-&= (c_U)^N \text{Tr}_h e^{\sum_{i=1}^N \nu h_i n_{i\uparrow}} e^{-\sum_{i=1}^N \nu h_i n_{i\uparrow}} \\
-&= (c_U)^N \text{Tr}_h ( e^{\mathcal{H}_{V_\uparrow}} e^{\mathcal{H}_{V_\downarrow}} ) ,
+e^{-\Delta\tau \mathcal{H}_V} &=  (c_U)^N \sum_{h_i = \pm 1} e^{\nu h_i ( n_{1\uparrow} - n_{1\downarrow} )} \sum_{h_i = \pm 1} e^{\nu h_i ( n_{2\uparrow} - n_{2\downarrow} )} ... \sum_{h_i = \pm 1} e^{\nu h_i ( n_{N\uparrow} - n_{N\downarrow} )} \\
+&= (c_U)^N \sum_{h_i = \pm 1} e^{\sum_{i=1}^N [(\nu h_i ( n_{i\uparrow} - n_{i\downarrow} ) ]} \equiv (c_U)^N \text{Tr}_h e^{\sum_{i=1}^N [(\nu h_i ( n_{i\uparrow} - n_{i\downarrow} ) ]} \\
+&= (c_U)^N \text{Tr}_h e^{\sum_{i=1}^N \nu h_i n_{i\uparrow}} e^{-\sum_{i=1}^N \nu h_i n_{i\uparrow}} = (c_U)^N \text{Tr}_h ( e^{\mathcal{H}_{V_\uparrow}} e^{\mathcal{H}_{V_\downarrow}} ) ,
 \end{split}
 \end{equation}
 where the spin up and spin down operators $\mathcal{H}_{V_\sigma}$ are defined as follows
@@ -174,21 +167,16 @@ where the spin up and spin down operators $\mathcal{H}_{V_\sigma}$ are defined a
 \end{equation}
 with $\bm V(\bm h)$ being simply the HS-field put into a diagonal $N\times N$ matrix: $\bm V(\bm h) \equiv \text{diag}(h_1, h_2, ..., h_N)$.
 
-For each imaginary time slice $l$ (where $l \in [1, L]$) we may define a HS-field $\bm h_l$, which in turn specifies $\bm V_l$ and $\mathcal{H}_{V_\sigma}^l$. We may now replace the result of equation (\ref{eq:exp_quartic}) in equation (\ref{eq:Z_propagator}), and exchange the traces to obtain
+For each imaginary time slice $l$, we may define a HS-field $\bm h_l$, which in turn specifies $\bm V_l$ and $\mathcal{H}_{V_\sigma}^l$.
+We may now replace the result of equation (\ref{eq:exp_quartic}) in equation (\ref{eq:Z_propagator}), and exchange the traces to obtain
 
 \begin{equation}\label{eq:Z_quadratic}
-\begin{split}
-&Z_h = (c_U)^{NL} \text{Tr}_{\bm h} \Tr \bigg[ \prod_{l=1}^L \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\uparrow}} e^{\mathcal{H}_{V_\uparrow}^l} \bigg)}_{B_{l, \uparrow}(\bm h_l)} \\
-&\underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\downarrow}} e^{\mathcal{H}_{V_\downarrow}^l} \bigg)}_{B_{l, \downarrow}(\bm h_l)} \bigg],
-\end{split}
+Z_h = (c_U)^{NL} \text{Tr}_{\bm h} \Tr \bigg[ \prod_{l=0}^{L-1} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\uparrow}} e^{\mathcal{H}_{V_\uparrow}^l} \bigg)}_{B_{l, \uparrow}(\bm h_l)} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\downarrow}} e^{\mathcal{H}_{V_\downarrow}^l} \bigg)}_{B_{l, \downarrow}(\bm h_l)} \bigg],
 \end{equation}
 where all operators are now quadratic in the fermion operators:
 
 \begin{equation}
-\begin{split}
-&\mathcal{H}_{K_\sigma} = - t \bm c_\sigma^\dagger \bm K \bm c_\sigma \\
-&\mathcal{H}_{V_\sigma}^l = \sigma \nu \bm c_\sigma^\dagger \bm V_l (\bm h_l) \bm c_\sigma
-\end{split}
+\mathcal{H}_{K_\sigma} = - t \bm c_\sigma^\dagger \bm K \bm c_\sigma \quad \mathcal{H}_{V_\sigma}^l = \sigma \nu \bm c_\sigma^\dagger \bm V_l (\bm h_l) \bm c_\sigma
 \end{equation}
 for $\sigma = \pm 1$ and $\bm V_l ( \bm h_l ) = \text{diag} ( h_{l, 1} , h_{l, 2}, ... , h_{l, N} )$.
 
@@ -207,217 +195,63 @@ Let $\mathcal{H}_l$ be quadratic forms of the fermion operators:
 \begin{equation}
 \mathcal{H}_l = c_i^\dagger (H_l)_{ij} c_j,
 \end{equation}
-where the summation is implied, and where $H_l$ are real matrices. Then, the following identity holds
+where the summation is implied, and where $H_l$ are real matrices.
+Then, the following identity holds
 
 \begin{equation}\label{eq:quadraticIdentity}
 \Tr \big[ e^{-\mathcal{H}_1 } e^{-\mathcal{H}_2 } ... e^{-\mathcal{H}_L } \big] = \text{det} ( \bm I + e^{-H_L} e^{-H_{L-1}} ... e^{-H_1} )
 \end{equation}
 
-For simplicity, we present the proof for a simpler case, corresponding to a single $\bm B$-matrix, i.e. a product of exponentials of two quadratic operators \cite{hirsch_two-dimensional_1985}. It could then be easily extended to the more general case. Let the two arbitrary real matrices be $\bm M$ and $\bm N$. Then, a particular case of the previous identity is
+For simplicity, in appendix \ref{ap:theoAFQMC}, we present the proof for a simpler case, corresponding to a single $\bm B$-matrix, i.e. a product of exponentials of two quadratic operators \cite{hirsch_two-dimensional_1985}.
+It could then be easily extended to the more general case (see \cite{hanke_electronic_nodate}, chapter 4).
 
-\begin{equation}\label{eq:particularIdentity}
-\Tr \big[ e^{-c_i^\dagger M_{ij} c_j} e^{-c_i^\dagger N_{ij} c_j} \big] = \text{det} ( \bm I + e^{-{\bm M}} e^{-{\bm N}} ) ,
-\end{equation}
-where a summation over repeated indices is implied, as it wil be throughout this proof.
-
-To prove this identity, we start by proving that
-
-\begin{equation}\label{eq:identity_prod_exps}
-e^{-c_i^\dagger M_{ij} c_j}  e^{-c_i^\dagger N_{ij} c_j} = e^{-\sum_\nu c_\nu^\dagger \rho_\nu c_\nu} ,
-\end{equation}
-where $\lambda_\nu = e^{-\rho_\nu}$ are the eigenvalues of the matrix $e^{-{\bm M}} e^{-{\bm N}}$.
-
-The proof consists of showing that any many-particle state are propagated in the same way when acted upon by any of these two operators, i.e. the LHS operator leads the system to the same state as the RHS operator.
-
-A generic single-particle state reads
-
-\begin{equation}
-\left| \phi \right\rangle = \sum_j a_j c_j^\dagger \left| 0 \right\rangle ,
-\end{equation}
-where $a_j$ are arbitrary coefficients, and $\left| 0 \right\rangle$ is the vacuum state.
-
-Let $\{\left| \mu \right\rangle \}$ be the basis in which the matrix $\bm N$ is diagonal. Using Dirac notation, we then have
-
-\begin{equation}
-\bm N = \sum_{\mu} \left| \mu \right\rangle n_\mu \left\langle \mu \right|
-\end{equation}
-
-Defining new fermionic operators
-
-\begin{equation}\label{eq:changeBasis1}
-\begin{split}
-c_\mu &= \sum_j \left\langle \mu | j \right\rangle c_j \\
-c_\mu^\dagger &= \sum_j \left\langle j | \mu \right\rangle c_j^\dagger ,
-\end{split}
-\end{equation}
-which may be inverted to obtain
-
-\begin{equation}\label{eq:changeBasis2}
-\begin{split}
-c_j &= \sum_\mu \left\langle j | \mu \right\rangle c_\mu \\
-c_j^\dagger &= \sum_\mu \left\langle \mu | j \right\rangle c_\mu^\dagger ,
-\end{split}
-\end{equation}
-
-Now we prove yet another identity that goes into proving equation (\ref{eq:identity_prod_exps}).
-
-\begin{equation}\label{eq:LHS_identity}
-e^{-c_i^\dagger N_{ij} c_j} = \prod_\mu \big[ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\mu^\dagger c_\mu \big]
-\end{equation}
-
-\begin{equation*}
-\begin{split}
-&\exp({-c_i^\dagger N_{ij} c_j}) = \exp({ - \sum_{\mu\nu} \left\langle \mu | i \right\rangle c_\mu^\dagger N_{ij} \left\langle j | \nu \right\rangle c_\nu }) \\
-&= \exp({-\sum_{ij}\sum_{ \mu\nu\sigma} \left\langle \mu | i \right\rangle  \left\langle i | \sigma \right\rangle c_\mu^\dagger n_\sigma \left\langle \sigma | j \right\rangle \left\langle j | \nu \right\rangle c_\nu }) , \\
-& \text{(using the closure relation} \sum_i \left| i \right\rangle \left\langle i \right|= \mathbbm{1} \text{)} \\
-&= \exp({-\sum_{ \mu\nu\sigma} \overbrace{\left\langle \mu | \sigma \right\rangle}^{\delta_{\mu\sigma}}  c_\mu^\dagger n_\sigma \overbrace{\left\langle \sigma | \nu \right\rangle}^{\delta_{\sigma\nu}} c_\nu }) \\
-&= \exp({-\sum_\mu c_\mu^\dagger n_\mu c_\mu}) \\
-&= \prod_\mu e^{-n_\mu \hat{n}_\mu} \\
-&= \prod_\mu [ \mathbbm{1} + ( - n_\mu \hat{n}_\mu + \frac{n_\mu^2}{2!} \hat{n}_\mu^2 - \frac{n_\mu^3}{3!} \hat{n}_\mu^3 + ... ] \\
-&= \prod_\mu [ \mathbbm{1} + ( - n_\mu + \frac{n_\mu^2}{2!} - \frac{n_\mu^3}{3!} + ... ) \hat{n}_\mu ] \\
-& \text{(since  } \hat{n} = \hat{n}^k \text{  for all  } k \in \mathbb{N} \text{  for fermions since  } n = 0, 1 ) \\
-&= \prod_\mu [ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\mu^\dagger c_\mu ] \quad\quad \qedsymbol
-\end{split}
-\end{equation*}
-
-Let
-
-\begin{equation}
-\left| \phi \right\rangle = \sum_j a_j c_j^\dagger \left| 0 \right\rangle
-\end{equation}
-be an arbitrary many-particle state. 
-
-Now we use the previous identity to prove that applying the operator of equation (\ref{eq:LHS_identity}) to $\left| \phi \right\rangle$ we obtain
-
-\begin{equation}
-e^{-c_i^\dagger N_{ij} c_j} \left| \phi \right\rangle = \sum_j a_j' c_j^\dagger \left| 0 \right\rangle , 
-\end{equation}
-with
-\begin{equation}
-a_j' = \sum_{i} (e^{-B})_{ji} a_i
-\end{equation}
-
-We start by writing $\left| \phi \right\rangle$ in the basis $\{ \left| \mu \right\rangle \}$ (in which $\bm N$ is diagonal).
-
-\begin{equation}
-\left| \phi \right\rangle = \sum_{i,\mu} a_i \left\langle \mu | i \right\rangle c_\mu^\dagger \left| 0 \right\rangle
-\end{equation}
-
-Then, we apply the RHS of equation (\ref{eq:LHS_identity}) to $\left| \phi \right\rangle$ written in this basis.
-
-\begin{equation}\label{eq:proofAuxIdentity}
-\begin{split}
-&\sum_\nu \bigg[ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\nu^\dagger c_\nu \bigg] c_\mu^\dagger \left| 0 \right\rangle \\
-=&\bigg[ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\mu^\dagger c_\mu \bigg] c_\mu^\dagger \left| 0 \right\rangle \\
-=& c_\mu^\dagger \left| 0 \right\rangle + (e^{-n_\mu - 1} - 1) c_\mu^\dagger \left| 0 \right\rangle \\
-=& c_\mu^\dagger e^{-n_\mu} \left| 0 \right\rangle
-\end{split}
-\end{equation}
-
-\begin{equation}
-\begin{split}
-&\sum_\nu \bigg[ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\nu^\dagger c_\nu \bigg] \left| \phi \right\rangle \\
-=& \sum_{i\mu} \left\langle \mu | i \right\rangle a_i e^{-n_\mu} c_\mu^\dagger \\
-=& \sum_{j\mu i} \left\langle j | \mu \right\rangle e^{-n_\mu} \left\langle \mu | i \right\rangle a_i \left| j \right\rangle \\
-=& \sum_{j i} \underbrace{\sum_{\mu\nu} \left\langle j | \mu \right\rangle e^{-N_{\mu\nu}} \left\langle \nu | i \right\rangle}_{(e^{-\bm N})_{ji}} a_i \left| j \right\rangle \\
-=& \sum_j a_j' c_j^\dagger \left| 0 \right\rangle
-\end{split}
-\end{equation}
-
-Similarly, by repeating the procedure performing a change of basis to the eigenbasis of $\bm M$, we obtain the more general relation
-
-\begin{equation}\label{eq:propagation_exps}
-\begin{split}
-&e^{-c_i^\dagger M_{ij} c_j} e^{-c_i^\dagger N_{ij} c_j} \left| \phi \right\rangle = \sum_j a_j'' c_j^\dagger \left| 0 \right\rangle \\
-& a_j'' = \sum_i ( e^{-\bm M} e^{-\bm N} )_{ji} a_i
-\end{split}
-\end{equation}
-
-The amplitude of a propagated state is given by multiplying the initial amplitude by the matrix $e^{-\bm M} e^{-\bm N}$, whichever the basis we choose. Then, since equation (\ref{eq:propagation_exps}) holds in particular for the choice of the eigenbasis of $e^{-\bm M}e^{-\bm N}$ as our basis of single-particle states, if we start with an eigenstate
-
-\begin{equation}
-\left| \phi \right\rangle = c_\nu^\dagger \left| 0 \right\rangle ,
-\end{equation}
-then the amplitude of the propagated state will be given by
-
-\begin{equation}
-(e^{-\bm M} e^{-\bm N} )_{\nu\nu} = e^{-\rho_\nu} ,
-\end{equation}
-the same as we would obtain from equation (\ref{eq:identity_prod_exps}). Clearly, if we start with a state that is an arbitrary combination of states of the eigenbasis, we would obtain the identity (\ref{eq:identity_prod_exps}).
-
-The identity was proven for a single-particle state. Does it generalize to more than one particle? As we did before, we start with propagation by a single factor $e^{-\bm N}$. Take a two-particle state
-
-\begin{equation}
-\left| \phi \right\rangle = c_{\mu_1}^\dagger c_{\mu_2}^\dagger \left| 0 \right\rangle
-\end{equation}
-
-Now propagate it with $\bm N$, i.e. 
-
-\begin{equation}
-\begin{split}
-&e^{-c_i^\dagger N_{ij} c_j} \left| \phi \right\rangle = \prod_\mu \bigg[ 1 + (e^{-n_\mu} -1 ) c_\mu^\dagger c_\mu \bigg] c_{\mu_1}^\dagger c_{\mu_2}^\dagger \left| 0 \right\rangle \\
-&= e^{-n_{\mu_1}} e^{-n_{\mu_2}} c_{\mu_1}^\dagger c_{\mu_2}^\dagger \left| 0 \right\rangle ,
-\end{split}
-\end{equation}
-where we simply note that by similar reasoning to the previous case, we would in equation (\ref{eq:proofAuxIdentity}) keep two terms corresponding to $\mu_1 \neq \mu_2$. If $\mu_1 = \mu_2$, then both sides are equal to zero due to Pauli's exclusion principle and the equality holds trivially. This reasoning clearly generalizes to an arbitrary superposition of many-particle states. Moreover, we proved the result for a product of two factors $e^{-\bm M} e^{-\bm N}$, but it is also easy to see that by successive changes of basis, we could extend our result to an arbitrary number of factors.
-
-To complete our proof of the identity (\ref{eq:particularIdentity}) that is so crucial in formulating AFQMC, we use the auxiliar identity we just proved (\ref{eq:identity_prod_exps}).
-
-\begin{equation}\label{eq:completeProof}
-\begin{split}
-&\Tr \bigg[ e^{-\sum_\nu c_\nu^\dagger \rho_\nu c_\nu} \bigg] = \Tr \bigg[ \prod_\nu e^{-c_\nu^\dagger \rho_\nu c_\nu } \bigg] \text{  since  } [\hat{n}_\mu, \hat{n}_\nu] = 0 \\
-&= \prod_\nu ( 1 + e^{-\rho_\nu} ) = \text{det} [ \bm I + e^{-\bm M} e^{-\bm N} ], \quad\quad \qedsymbol
-\end{split}
-\end{equation}
-where the last equality stems from the fact that the determinant of a diagonal matrix is just the product of the eigenvalues.
-
-When applied to our problem, equation (\ref{eq:quadraticIdentity}) essentially makes the computation of the trace possible! Note that if we were to compute it na\"ively, we would soon run out of computer memory. The dimension of the Hilbert space of the Hubbard model is exponential in N (actually $4^N$), where $N$ is the number of lattice sites. The determinant is calculated for a matrix whose size is polynomial in $N$. 
-
-Equation (\ref{eq:quadraticIdentity}) allows us to write the partition function (\ref{eq:Z_quadratic}) in computable form
+When applied to our problem, Eq.(\ref{eq:quadraticIdentity}) essentially makes the computation of the trace possible! Note that if we were to compute it na\"ively, we would soon run out of computer memory.
+The dimension of the Hilbert space of the Hubbard model is exponential in the number of sites N (actually $4^N$). The determinant can be calculated in $\mathcal{O}(N^3)$ flops for a matrix whose size is polynomial in $N$. 
+Thus, the computable form of the partition function (\ref{eq:Z_quadratic}) is
 
 \begin{equation}\label{eq:effectiveDensityMatrix}
-\begin{split}
-Z_{\bm h} &=  \Tr_{\bm h} \bigg[ (c_U)^{NL} \text{det} [ \bm M_\uparrow (\bm h)] \text{det} [  \bm M_\downarrow (\bm h) ] \bigg] \\
-&\equiv  \Tr_{\bm h} \bigg[  \tilde{\rho}_{\text{eff}} (\bm h) \bigg] ,
-\end{split}
+Z_{\bm h} =  \Tr_{\bm h} \bigg[ (c_U)^{NL} \text{det} [ \bm M_\uparrow (\bm h)] \text{det} [  \bm M_\downarrow (\bm h) ] \bigg] = \sum_{\{ \bm h \} } P ( \bm h ) \equiv \sum_c p_c
 \end{equation}
-where the fermion matrices $\bm M_\sigma$ are defined in terms of the $\bm B$-matrices for a given spin $\sigma$ and a given HS-field $\bm h$:
+where the fermion matrices $\bm M_\sigma$ are defined in terms of the $\bm B$-matrices that depend on the HS-field $\bm h$:
 
 \begin{equation}
-\bm M_\sigma (\bm h) = \bm I + \bm B_{L,\sigma} ( h_L) \bm B_{L-1,\sigma} ( h_{L-1}) ... \bm B_{1\sigma} ( h_1)
+\bm M_\sigma (\bm h) = \bm I + \bm B_{L,\sigma} ( \bm h_L) \bm B_{L-1,\sigma} ( \bm h_{L-1}) ... \bm B_{1\sigma} ( \bm h_1) = \bm I + \prod_{l= L -1}^0 \bm B_{l,\sigma} ( \bm h_l )
 \end{equation}
 
-Equation (\ref{eq:effectiveDensityMatrix}) defines an effective density matrix (now a function!) $\tilde{\rho}_{\text{eff}} (\bm h)$ in the HS-field space.
-
-The computable approximation of the distribution operator $\mathcal{P}$ corresponding to this partition function is
+By casting the fermionic trace as a product of determinants, we obtained the computable approximation of the distribution operator $\mathcal{P}$ corresponding to $Z_{\beta}$ as advertised in Eq.(\ref{eq:Zsign}).
 
 \begin{equation}
-P(\bm h) = \frac{A}{Z_h} \det [ \bm M_{\uparrow}(\bm h) ] \det [ \bm M_{\downarrow}(\bm h) ] ,
+P(\bm h) = \frac{A}{Z_{\bm h}} \det [ \bm M_{\uparrow}(\bm h) ] \det [ \bm M_{\downarrow}(\bm h) ] ,
 \end{equation}
-where $A = (c_U)^{NL}$ is a normalization constant. This is now a distribution function over configurations $\bm h$ since the problem is classical!
+where $A = (c_U)^{NL}$ is a normalization constant.
+This is now a distribution function over configurations $c$ of the field $\bm h$ since the problem is \say{classical} (the quotes serve to emphasize that $p_c$ can be negative)!
 
-For the particular case of no interactions $U = 0$, we have that $\nu = 0$, and $\bm M_\sigma (\bm h)$ are constant matrices, independent of the HS-field. The Trotter-Suzuki approximation then becomes exact and the Hubbard Hamiltonian may be simulated exactly after evaluating $\bm M_\sigma (\bm h)$ a single time. No updates are required.
+For the particular case of no interactions $U = 0$, we have that $\nu = 0$, and $\bm M_\sigma (\bm h)$ are independent of the HS-field. 
+The Trotter-Suzuki approximation then becomes exact and the Hubbard Hamiltonian may be simulated exactly after evaluating $\bm M_\sigma (\bm h)$ a single time.
+No updates are required.
 
-As a final remark, note that we managed to map a quantum problem to a classical problem in higher dimension. The degrees of freedom of the quantum problem correspond to the $i$ indices  of the $c$-operators. In our formulation, an additional imaginary time slice index $l$ was introduced, leading to a mapping that is not specific to the Hubbard model, but that actually applies very generally for any quantum system.
+We mapped a quantum problem to a \say{classical} problem with an extra imaginary-time dimension.
+Note that the size of the state space might have been increased to $2^{NL}$ (assuming that $L > 2$), and even if it didn't, it still remains exponential.
+However, it can be now be probed more easily: while we might have increased the number of possible configurations by introducing the mapping, we arrived at a form which is tractable by a standard Monte Carlo method, as described in the previous section.
+This is because we may now efficiently navigate through the exponentially large state space of the system using importance sampling.
 
-\subsubsection{Monte Carlo sampling of the HS-field}
+Schematically, the degrees of freedom of the quantum problem correspond to the $i$-indices of the $c$-operators.
+In our formulation, an additional imaginary time slice index $l$ was introduced, leading to a mapping that is not specific to the Hubbard model, but that actually applies very generally for any quantum system.
 
-The computational problem is now that of sampling configurations of the $\bm h$ field drawn from the distribution $P(\bm h)$ using \emph{Classical} Monte Carlo. The size of the state space has been (hopefully) reduced to $2^{NL}$ (assuming that $L < N$).
+\subsection{Monte Carlo sampling of the HS-field}
+\label{subsec:mc_hs}
 
-It remains to choose a dynamics and a sampling scheme. The simplest strategy to change from a configuration $\bm h$ to a new one $\bm h'$ is single spin-flip dynamics. We choose a random point $(l, i)$, and we flip the spin at that \say{site}
-
-\begin{equation}
+The computational problem is now that of sampling configurations of the $\bm h$ field drawn from the distribution $P(\bm h)$ using \emph{Classical} Monte Carlo.
+It remains to choose a dynamics and a sampling scheme. The simplest strategy to change from a configuration $\bm h$ to a new one $\bm h'$ is single spin-flip dynamics. We choose a random point $(l, i)$, and we flip the spin at that space-time  \say{site}:
+$
 h_{l, i}' = - h_{l, i},
-\end{equation}
+$
 keeping all others unchanged.
-
 The most common scheme to ensure that the distribution of the accepted sample is $P(\bm h)$ is the Metropolis-Hastings algorithm.
-
-After the warm-up steps, i.e. after we ensure that we are correctly sampling from the required distribution, we may perform measurements, waiting for some (Monte Carlo) time before each of them to ensure that the correlations within the sample are negligible. Let the total number of Monte Carlo steps (warm-up $W$ + measurement $M$) be $S = W + M$. The idea is that we run the algorithm for $W$ steps, before starting the measurements. Then we measure the state of the system every $2\tau$ steps, where $\tau$ is the correlation time, i.e. the time it takes for some representative correlation function to drop to $e^{-1}$ its original value.
-
+After the warm-up steps, i.e. after we ensure that we are correctly sampling from the required distribution, we may perform measurements.
 
 \begin{algorithm}
-\caption{Auxiliary Field Quantum Monte Carlo}
+\caption{Auxiliary Field Quantum Monte Carlo Sampling Scheme}
 \label{afqmcSampling}
 \begin{algorithmic}[5]
   \STATE Initialize HS field $\bm h$  \\
@@ -428,7 +262,7 @@ After the warm-up steps, i.e. after we ensure that we are correctly sampling fro
   \STATE \footnotesize{Propose new configuration by flipping a spin} \\ \normalsize{$h_{l, i}' = - h_{l, i}$} 
   \STATE \footnotesize{Compute the acceptance ratio $a_{l, i}$} \\
   \normalsize{$\frac{\text{det}[\bm M_\uparrow (\bm h')]\text{det}[\bm M_\downarrow (\bm h')]}{\text{det}[\bm M_\uparrow (\bm h)]\text{det}[\bm M_\downarrow (\bm h)]}$}
-  \STATE \normalsize{Metropolis step}
+  \STATE \textbf{\normalsize{Metropolis step}}
   \STATE \footnotesize{Draw random number $r \in [0,1]$}
   \IF{$r \le \min(1, a_{l, i})$}
   \STATE $\bm h = \bm h'$
@@ -450,153 +284,68 @@ After the warm-up steps, i.e. after we ensure that we are correctly sampling fro
 \end{algorithmic}
 \end{algorithm}
 
-The Metropolis acceptance/rejection scheme leads to a rank-one update of the matrices $\bm M_\sigma (\bm h)$, which affords an efficient evaluation of the acceptance ratio $a_{l, i}$ \cite{hou_numerical_2009}.
+The Metropolis acceptance/rejection scheme leads to a rank-one update of the matrices $\bm M_\sigma (\bm h)$, which affords an efficient evaluation of the acceptance ratio $a_{l, i}$ \cite{hou_numerical_2009} (see appendix \ref{ap:theoAFQMC}).
 
-Consider two matrices $\bm A_1$, $\bm A_2$ written in the form
-
-\begin{equation}
-\bm A_{1,2} = \bm I + \bm F \bm V_{1,2} ,
-\end{equation}
-where $\bm F$ is some matrix. $\bm V_{1,2}$ are diagonal and non-singular and differ only in the $(1,1)$ entry, so that
-
-\begin{equation}
-\bm V_1^{-1} \bm V_2 = \bm I + \alpha_1 \bm e_1 \bm e_1^T ,
-\end{equation}
-where $\bm e_1$ is a vector corresponding to the first column of the identity matrix $\bm I$, and
-
-\begin{equation*}
-\alpha_1 = \frac{V_2(1,1)}{V_1(1,1)} - 1
-\end{equation*}
-
-Then, $\bm A_2$ is clearly a rank-one update of $\bm A_1$.
-
-\begin{equation*}
-\begin{split}
-\bm A_2 &= \bm I + \bm F \bm V_1 + \bm F \bm V_1 ( \bm V_1^{-1} \bm V_2 - \bm I ) \\
-&= \bm A_1 + \alpha_1 ( \bm A_1 - \bm I ) \bm e_1 \bm e_1^T \\
-&= \bm A_1 [ \bm I + \alpha_1 ( \bm I - \bm A_1^{-1} )\bm e_1 \bm e_1^T ]
-\end{split}
-\end{equation*}
-
-Using the identity $\text{det}[\bm I + \bm x \bm y^T] = 1 + \bm y^T \bm x$ for any two column vectors, we may write the ratio of the determinants of matrices $\bm A_1$ and $\bm A_2$ as
-
-\begin{equation}\label{eq:efRatio}
-r_1 = \frac{\text{det}[\bm A_2]}{\text{det}[\bm A_1]} = 1 + \alpha_1 ( 1 - \bm e_1^T \bm A_1^{-1} \bm e_1 ) ,
-\end{equation}
-which reduces the computation of the ratio $r_1$ to computing the $(1,1)$ entry of $\bm A^{-1}$.
-
-Now we generalize this idea for a sequence of matrices $\bm A_1, \bm A_2, ..., \bm A_i, ..., \bm A_n$ generated by successive rank-one updates: $\bm A_{i+1} = \bm I + \bm F \bm V_{i+1}, \, i = 1, 2, ..., n-1$, with
-
-\begin{equation}
-\bm V_i^{-1} \bm V_{i+1} = \bm I + \alpha_i \bm e_i \bm e_i^T \quad \alpha_i = \frac{\bm V_{i+1}(1,1)}{\bm V_i (1,1)} -1
-\end{equation}
-
-The Sherman-Morrison-Woodbury formula gives an expression for the inverse of $\bm A_2$ as a rank-one update of $\bm A_1^{-1}$.
-
-\begin{equation}
-\begin{split}
-\bm A_2^{-1} &= \bigg[ \bm I - \frac{\alpha_1}{r_1} ( \bm I - \bm A_1^{-1} ) \bm e_1 \bm e_1^T  \bigg] \bm A_1^T \\
-&= \bm A_1^{-1} - \frac{\alpha_1}{r_1} \bm u_1 \bm w_1^T ,
-\end{split}
-\end{equation}
-where
-
-\begin{equation*}
-\bm u_1 = (\bm I - \bm A_1^{-1} ) \bm e_1 \quad \bm w_1 = (\bm A_1^{-1})^T \bm e_1
-\end{equation*}
-
-Using equation (\ref{eq:efRatio}), we find the updates
-
-\begin{equation}
-\begin{split}
-r_i &= \frac{\text{det}[\bm M_{i+1}]}{\text{det}[\bm M_{i}]} = 1 + \alpha_i ( 1 - \bm e_i^T \bm A_i^{-1}  \bm e_i ) , \,\, \text{and} \\
-\bm M_{i+1}^{-1} &= \bm M_i^{-1} - \frac{\alpha_i}{r_i} \bm u_i \bm w_i^T ,
-\end{split}
-\end{equation}
-where $\bm u_i = (\bm I - \bm A_i^{-1} ) \bm e_i$ and $\bm w_i = (\bm A_i^{-1})^T \bm e_i$.
-
-It is possible to generalize this procedure to compute the inverse of $\bm M_k$ as a rank$-(k-1)$ update of $\bm A_1^{-1}$:
-
-\begin{equation}
-\bm M_k^{-1} = \bm M_1^{-1} - \bm U_{k-1} \bm D_k \bm W_{k-1}^T ,
-\end{equation}
-where
-
-\begin{equation}
-\bm U_k = [ \bm u_1 , \bm u_2, ..., \bm u_{k-1} ] \quad \text{and} \quad \bm W = [ \bm w_1, \bm w_2, ..., \bm w_{k-1} ] ,
-\end{equation}
-and $\bm D_k = \text{diag}(\alpha_1 / r_1, \alpha_2 / r_2, ..., \alpha_{k-1} / r_{k-1})$.
-
-\subsubsection{Making measurements}
+\subsection{Making measurements}
 
 In QMC simulations, physical observables are extracted by measuring them directly over the course of the sampling of the  configuration space. The single-particle (equal time) Green's Function is useful to obtain quantities such as density and kinetic energy. It turns out that it is simply the inverse of the $\bm M$-matrix that we already compute to obtain the acceptance ratio at each step.
 
 \begin{equation}
-\begin{split}
-G_{ij}^\sigma &= \left\langle c_{i\sigma} c_{j\sigma}^\dagger \right\rangle_{\bm h} \\
-&= \bigg( M_\sigma^{-1} (\bm h) \bigg)_{ij} \\
-&= \bigg( [\bm I + \bm B_{L,\sigma} ( h_L ) \bm B_{L-1,\sigma} ( h_{L-1} ) ... \bm B_{1,\sigma} ( h_1 ) ]^{-1} \bigg)_{ij}
-\end{split}
+G_{ij}^\sigma = \left\langle c_{i,\sigma} c_{j,\sigma}^\dagger \right\rangle_{\bm h} = \bigg( \bm M_\sigma^{-1} (\bm h) \bigg)_{ij} = \bigg( [\bm I + \prod_{l= L -1}^0 \bm B_{l,\sigma} ( \bm h_l ) ]^{-1} \bigg)_{ij}
 \end{equation}
 
-The equal time Green's function is a fermion average for a given HS-field configuration \cite{santos_introduction_2003}. The corresponding thermal average is given by
-
-\begin{equation}
-\begin{split}
-&\left\langle c_i c_j^\dagger \right\rangle = \frac{1}{Z} \Tr \bigg[ e^{-\beta \mathcal{H}} c_i c_j^\dagger \bigg] \\
-&= \frac{1}{Z} \Tr_{\bm h} \Tr \bigg[ c_{i\sigma} c_{j\sigma}^\dagger \prod_{l=1}^L  B_{l, \uparrow}(\bm h_l) 
-B_{l, \downarrow}(\bm h_l) \bigg],
-\end{split}
-\end{equation}
+The equal time Green's function is a fermion average for a given HS-field configuration \cite{santos_introduction_2003}.
 
 The electron density may be obtained from the Green function
 
 \begin{equation}
-\rho_{i\sigma} = \left\langle c_{i\sigma}^\dagger c_{i\sigma} \right\rangle = 1 - \left\langle c_{i\sigma} c_{i\sigma}^\dagger \right\rangle = 1 - G_{ii}^\sigma ,
+\rho_{i, \sigma} = \left\langle c_{i,\sigma}^\dagger c_{i,\sigma} \right\rangle = 1 - \left\langle c_{i,\sigma} c_{i,\sigma}^\dagger \right\rangle = 1 - G_{ii}^\sigma ,
 \end{equation}
 
-It is natural to think of averaging this over the lattice, and over the spins. This is justified by the fact that the Hubbard Hamiltonian is translationally invariant. Thus, $\rho_{i\sigma}$ should be independent of the spatial site. This statement is strict when exactly solving the model, but it becomes only approximate, i.e. valid only on average in our simulations. Thus, we take the average
+It is natural to think of averaging this over the lattice.
+This is justified by the fact that the Hubbard Hamiltonian is translationally invariant.
+Thus, $\rho_{i\sigma}$ should be independent of the spatial site.
+This statement is strict when exactly solving the model, but it becomes only approximate, i.e. valid only on average in our simulations.
+Thus, we take the average
 
 \begin{equation}
-\rho = \frac{1}{2N} \sum_\sigma \sum_{i=1}^N \rho_{i\sigma}
+\rho = \frac{1}{N} \sum_\sigma \sum_{i=1}^N \rho_{i, \sigma} = 2 - \frac{1}{N} \sum_\sigma \sum_{i=1}^N G_{ii}^\sigma
 \end{equation}
 in an attempt to reduce statistical errors.
 
-One must pay attention to the symmetry of the model at hand, since a similar model for a disordered system including randomness would not be translationally invariant anymore. Moreover, it is implicit that $\rho_{i\sigma}$ is already averaged over the HS-field configurations that were sampled through the simulation.
+One must pay attention to the symmetry of the model at hand, since a similar model for a disordered system including randomness would not be translationally invariant anymore.
+Moreover, it is implicit that $\rho_{i\sigma}$ is already averaged over the HS-field configurations that were sampled through the simulation.
 
 The average kinetic energy is similarly obtained.
 
 \begin{equation}
-\begin{split}
-\left\langle \mathcal{H}_K \right\rangle &= - t  \sum_{\left\langle i, j \right\rangle , \sigma} \left\langle ( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} ) \right\rangle \\
-&= t \sum_{\left\langle i, j \right\rangle , \sigma} ( G_{ij}^\sigma + G_{ji}^\sigma ) ,
-\end{split}
+\left\langle \mathcal{H}_K \right\rangle = - t  \sum_{\left\langle i, j \right\rangle , \sigma} \left\langle ( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} ) \right\rangle = t \sum_{\left\langle i, j \right\rangle , \sigma} ( G_{ij}^\sigma + G_{ji}^\sigma ) = t \sum_{ i, j , \sigma} K_{ij} ( G_{ij}^\sigma + G_{ji}^\sigma )  ,
 \end{equation}
 where the minus sign is due to the switching of the order of the operators bringing the $c^\dagger$ to the right.
 
-\subsubsection{Correlation functions}
+\subsection{Correlation functions}
 
 One of the most important goals of QMC simulations is to inspect the system for order of various types, and to find  associated phase transitions. This is done by computing correlation functions $C (j) $, measuring how correlated two sites separated by a distance $j$ are.
 
 \begin{equation}
 C(j) = \big\langle \mathcal{O}_{i+j} \mathcal{O}_{i}^\dagger \big\rangle - \langle \mathcal{O}_{i+j} \big\rangle\big\langle\mathcal{O}_{i}^\dagger \big\rangle ,
 \end{equation}
-where $\mathcal{O}$ is an operator corresponding to the order parameter of the phase transition. For example, we might be looking for magnetic order, in which case the relevant operators are $\mathcal{O}_i = n_{i\uparrow} - n_{i\downarrow} \, , \, \mathcal{O}_i^\dagger = n_{i\uparrow} - n_{i\downarrow}$, or superconductivity, where we would like to measure correlations in fermion pair formation: $\mathcal{O}_i = c_{i\downarrow} c_{i\uparrow} \, , \, \mathcal{O}_i^\dagger = c_{i\uparrow}^\dagger c_{i\downarrow}^\dagger$.
+where $\mathcal{O}$ is an operator corresponding to the order parameter of the phase transition. For example, we might be looking for magnetic order, in which case the relevant operators are $S^z_i$, i.e. $\mathcal{O}_i = n_{i\uparrow} - n_{i\downarrow} \, , \, \mathcal{O}_i^\dagger = n_{i\uparrow} - n_{i\downarrow}$, or superconductivity, where we would like to measure correlations in fermion pair formation: $\mathcal{O}_i = c_{i\downarrow} c_{i\uparrow} \, , \, \mathcal{O}_i^\dagger = c_{i\uparrow}^\dagger c_{i\downarrow}^\dagger$.
 
 In general, we expect a high temperature disordered phase, for which correlations decay exponentially $C(j) \propto e^{-j/\xi}$, where $\xi$ is a characteristic length called the correlation length. At some point, there can be a transition to a low temperature phase, where $C(j) \propto m^2$, where $m$ is the order parameter for the transition. Right at the transition, that is at $T = T_c$, there might be singular behavior. In continuous phase transitions, the correlation length diverges $\xi \propto (T-T_c)^{-\nu}$, and the correlations decay slower (in fact algebraically): $C(j) \propto j^{-\eta}$, in an intermediate behavior between exponential decay and a constant. The \emph{critical} exponents $\nu$, and $\eta$ are characteristic of the transition, or more accurately, of the universality class it belongs to.
 
 The behavior of all these quantities on finite lattices does not precisely correspond to the infinite system behavior. The tails of the functions, i.e. the $j\rightarrow \infty$ limit is not well captured. Finite-size scaling is a method to improve on these predictions.
 
-To evaluate correlation functions we use Wick's theorem. Expectations of more than two fermion creation and annihilation operators reduce to products of expectations of pairs of creation and annihilation operators. For example, for pair order:
+To evaluate correlation functions we use Wick's theorem. Expectations of more than two fermion creation and annihilation operators reduce to products of expectations of pairs of creation and annihilation operators. For example, for spin order in $x/y$ direction:
 
 \begin{equation}
-\big\langle C(j) \big\rangle = \big\langle c_{i+j, \downarrow} c_{i+j, \uparrow} c_{i, \uparrow}^\dagger c_{i, \downarrow}^\dagger \big\rangle
+\big\langle C(j) \big\rangle = \big\langle c_{i+j, \downarrow}^\dagger c_{i+j, \uparrow} c_{i, \uparrow}^\dagger c_{i, \downarrow} \big\rangle = G_{i+j, i}^\uparrow G_{i, i + j}^\downarrow
 \end{equation}
 
 How would one measure a correlation function experimentally? Fortunately, there is a quantity that is easy to measure called structure factor, which is just the Fourier transform of the correlation function
 
 \begin{equation}
-S(q) = \sum_j e^{iqj} C(j) 
+S(\bm q) = \sum_j e^{i\bm q \cdot \bm R_j} C(j) 
 \end{equation}
 
-The accuracy of QMC simulations can be evaluated by comparing the results for correlation functions with the corresponding structure factors, which can be measured experimentally.
+The accuracy of QMC simulations can be evaluated by comparing the results for the Fourier transformed correlation functions with the corresponding experimentally measured structure factors.

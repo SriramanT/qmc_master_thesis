@@ -4,19 +4,18 @@
 Monte Carlo methods form the largest and arguably most useful class of numerical methods used to approach statistical physics problems.
 Statistical physics often deals with computing quantities that describe the behavior of condensed matter systems.
 The main difficulty one faces when doing so has to do with the collective nature of these systems.
-Many identical components comprise these systems, and while the equations that govern the behavior of the whole may be easy to write down, their solution is in general a remarkably laborious mathematical problem.
-
-Strikingly, we are able to describe a system that is governed by a macroscopically large number of equations in terms of only a few variables.
+Many identical components comprise them, and while the equations that govern the behavior of the whole may be easy to write down, their solution is in general a remarkably laborious mathematical problem.
+It is both the sheer number of equations and the coupling between them that deems the task of finding an exact solution either very tough or even impossible.
+Concomitantly, the exponentially large number of possible configurations of the typical condensed matter system can be daunting.
+Thus, it is rather striking that we are able to describe a system that is governed by a macroscopically large number of equations in terms of only a few variables.
 The loss of information in doing so is only apparent.
+
 The statistical description is so effective because most of the possible states of the system are extremely improbable when compared to the relevant very narrow part of configuration space.
 The success of the field is largely attributed to the averaging out that naturally occurs when measuring a property of a macroscopic system.
-
-The sheer number of equations describing a condensed matter system, and possibly the strong coupling between them deems the task of finding an exact solution either very tough or even impossible.
-The resulting exponentially large number of possible configurations of the typical condensed matter system can be daunting.
-Analytical solutions are more often than not hopeless and even numerical solutions are seemingly challenging.
-However, they give valuable information lying between theory and experiment, and connecting them.
-It is not even clear whether an analytical solution would be of any use in many cases, and a statistical treatment often allows us to study more effectively the key properties of a system.
-Numerically, this is done using Monte Carlo.
+%Since analytical solutions are more often than not hopeless, these problems are solved numerically.
+%Numerical results give valuable information lying between theory and experiment, and connecting them.
+%It is not even clear whether an analytical solution would be of any use in many cases, and a statistical treatment often allows us to study more effectively the key properties of a system.
+%Numerically, this is done using Monte Carlo.
 
 Suppose you try to sample uniformly from the probability distribution of all possible configurations of one of the aforementioned systems.
 Changes are your algorithm will not end before the Universe does.
@@ -48,7 +47,7 @@ which in most cases converges to the desired expectation, as long as $M$ is larg
 
 Thus, the correction to the sample mean is of order $\mathcal{O}(\frac{1}{\sqrt{M}})$ as long as $\text{Var}\big( f(x_1) \big) \sim 1$, which can be achieved by using importance sampling, a variance reduction technique we will shortly discuss.
 
-How do we sample from an arbitrary distribution $p(X)$? The idea is to first make an educated choice of a Markov Chain with the prescribed stationary distribution from which we ultimately desire to sample from, $p(X)$. After a sufficiently high number of steps, a Markov Chain Monte Carlo (MCMC) algorithm generates samples from the target distribution. Imposing some conditions on this Markov Chain, namely that it should be irreducible, aperiodic and positive recurrent, the ergodic theorem guarantees that the empirical measures of the aforementioned sampler approach the target stationary distribution. Another important condition to impose on this Markov Chain is detailed balance. Let the transition matrix be $\bm P = [P_{\mu \rightarrow \nu}]$, and the state space $\Omega$ be $\{\pi_\mu | \mu=1, ..., |\Omega| \}$, where $|\Omega|$ is the total number of possible states. Then, the condition of detailed balance is defined for all $\mu, \nu$ as
+But how do we sample from an arbitrary distribution $p(X)$? The idea is to first make an educated choice of a Markov Chain with the prescribed stationary distribution from which we ultimately desire to sample from, $p(X)$. After a sufficiently high number of steps, a Markov Chain Monte Carlo (MCMC) algorithm generates samples from the target distribution. Imposing some conditions on this Markov Chain, namely that it should be irreducible, aperiodic and positive recurrent, the ergodic theorem guarantees that the empirical measures of the aforementioned sampler approach the target stationary distribution. Another important condition to impose on this Markov Chain is detailed balance. Let the transition matrix be $\bm P = [P_{\mu \rightarrow \nu}]$, and the state space $\Omega$ be $\{\pi_\mu | \mu=1, ..., |\Omega| \}$, where $|\Omega|$ is the total number of possible states. Then, the condition of detailed balance is defined for all $\mu, \nu$ as
 
 \begin{equation}\label{eq:detBal}
 \pi_\mu P_{\mu \rightarrow \nu} = P_{\nu \rightarrow \mu} \pi_\nu
@@ -68,7 +67,7 @@ The equilibrium occupation probabilities at finite temperature $T$ follow the Bo
 \end{equation}
 where $E_\mu$ is the energy of state $\mu$, $k_B$ is Boltzmann's constant, and $Z$ is the partition function, from which we can extract thermodynamic functions in terms of expectations of physical quantities $\left\langle Q \right\rangle$, and response functions in terms of their variance $\sigma_Q^{\,\, 2}$.
 
-Imposing the condition of stationarity on equation (\ref{eq:master}), $d_t p_\mu = 0$ , and noting that $ P_{\mu\rightarrow \nu} = R_{\mu\rightarrow \nu}  dt$, we obtain the equilibrium condition
+Imposing the condition of stationarity on Eq.(\ref{eq:master}), $d_t p_\mu = 0$ , and noting that $ P_{\mu\rightarrow \nu} = R_{\mu\rightarrow \nu}  dt$, we obtain the equilibrium condition
 
 \begin{equation}\label{eq:equilibrium}
 \sum_\nu \pi_\mu P_{\mu \rightarrow \nu} = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu \iff \pi_\mu \sum_\nu P_{\mu \rightarrow \nu} = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu \iff \pi_\mu = \sum_\nu P_{\nu \rightarrow \mu} \pi_\nu
@@ -110,7 +109,7 @@ It turns out that we can improve upon our estimate of $\mathbb{E} [f(X)]$ by red
 \end{equation}
 with $Y \sim q$, i.e. the random variable $Y$ follows the distribution $q(Y)$.
 
-It appears as though we didn't gain anything. However, by choosing $q$ wisely, we can actually reduce the variance we computed in equation (\ref{eq:variance}):
+It appears as though we didn't gain anything. However, by choosing $q$ wisely, we can actually reduce the variance we computed in Eq.(\ref{eq:variance}):
 
 \begin{equation}
 \text{Var}\bigg( \frac{1}{M} \sum_{k=1}^M f(y_k) w(y_k) \bigg) = \frac{1}{M} \text{Var}\bigg( f(y_1) w(y_1) \bigg)
@@ -175,7 +174,7 @@ In short, we propose a random new state uniformly, and then we accept it with pr
 Before we can use the states generated by our sampler to measure averages of physical quantities, we must reach the stationary distribution of the Markov process.
 We consider this condition to be satisfied after a time $\tau_{\text{eq}}$, measured in steps of the algorithm.
 When we consider a lattice model with a discrete set of states at each site $i = 1, 2, ..., N$, we say that a \emph{sweep} is completed whenever $N$ Monte Carlo steps are performed.
-Thus, the number of \say{warm-up} sweeps is $W = \tau_{\text{eq}} / N$.
+Thus, the number of \say{warm-up} sweeps is of order $W \sim \tau_{\text{eq}} / N$.
 
 Before running a simulation, we need to decide how many sweeps we need to get an accurate estimate of the average.
 The problem is that we need uncorrelated samples to average over.
@@ -259,25 +258,28 @@ To do this, we apply the following trick
 where $\tilde{m}' (\omega)$ is the Fourier transform of $m' (t) = m(t) - \left\langle m \right\rangle$\footnote{The only difference between $\tilde{m}' (\omega)$ and $\tilde{m} (\omega)$, is that $\tilde{m}' (0) = 0$, while $\tilde{m} (0) \neq 0$. Thus, one can also compute $\tilde{m} (\omega)$ and then set its $\omega = 0$ component to zero.}.
 
 In practice, when implementing a MC algorithm, we take a measurement say every sweep (which can be less than a correlation time), and then compute the time-displaced correlator at the end of the simulation to estimate the correlation time.
-Thus, how can we estimate the error in the mean of the $N_s$ correlated samples without knowing $\tau_c$ in advance?
+How can we estimate the error in the mean of the $N_s$ correlated samples without knowing $\tau_c$ in advance?
 Take again magnetization measurements.
-The standard deviation of the mean of $N_s$ independent samples is well known:
+Suppose your $N_s$ samples were  independent.
+The standard deviation of their mean would be well known:
 
 \begin{equation}\label{eq:errorUncorr}
 \sigma = \sqrt{ \frac{ \frac{1}{N_s} \sum_{i=0}^{N_s} ( m_i - \overline{m} )^2 }{N_s - 1} } = \sqrt{ \frac{1}{N_s - 1} ( \overline{m^2} - \overline{m}^2 } )
 \end{equation}
-so we could simply replace $N_s$ by $M$, as computed in Eq.(\ref{eq:nMeas}).
-But that would only work provided that the mean didn't change when including the correlated samples.
-Of course, it should not change very much, since heavily correlated samples give rise to nearly the same magnetization.
+
+Intuitively, to get the correct result, we could simply replace $N_s$ by $M$, as computed in Eq.(\ref{eq:nMeas}), in the last step.
+This is because the mean shouldn't change very much when including the correlated configurations with nearly the same magnetization.
+However, the number of uncorrelated samples is certainly smaller than $N_s$, and can be estimated to be $M$ by auto-correlation studies.
 
 As shown in \cite{muller-krumbhaar_dynamic_1973}, if the samples are separated by a time interval $\Delta t$,  the correct expression is
 
 \begin{equation}\label{eq:errorCorr}
 \sigma = \sqrt{ \frac{1 + 2\tau_c / \Delta t}{N_s - 1} ( \overline{m^2} - \overline{m}^2 )  } ,
 \end{equation}
-which reduces to Eq.(\ref{eq:errorUncorr}) when $\Delta t \gg \tau_c$, since then the samples are uncorrelated.
-Also, we now have a rigorous justification for estimating the amount of time between uncorrelated samples as $2\tau_c$.
-Often, our we work with heavily correlated samples, so that instead we have $\Delta t \ll \tau_c$.
+which reduces to Eq.(\ref{eq:errorUncorr})  when $\Delta t \gg \tau_c$, since in that case the samples are virtually  uncorrelated.
+Also, we now have a rigorous justification for estimating the amount of time between uncorrelated samples as $2\tau_c$, since for much longer times, the samples become uncorrelated.
+
+Often, we work with heavily correlated samples, so that instead we have $\Delta t \ll \tau_c$.
 In this limit, the 1 in the numerator of Eq.(\ref{eq:errorCorr}) can be neglected, and noting that the number of sweeps between measurements corresponding to $\Delta t$ is $\Delta S = (S - W ) / N_s$, we have
 
 \begin{equation}\label{eq:errorMC}
