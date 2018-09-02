@@ -882,7 +882,7 @@
       \field{month}{11}
       \field{number}{18}
       \field{shortjournal}{Phys. Rev. B}
-      \field{title}{Determinant quantum Monte Carlo study of the enhancement of \$d\$-wave pairing by charge inhomogeneity}
+      \field{title}{Determinant quantum Monte Carlo study of the enhancement of $d$-wave pairing by charge inhomogeneity}
       \field{urlday}{7}
       \field{urlmonth}{6}
       \field{urlyear}{2018}
@@ -3539,7 +3539,6 @@
       \field{isbn}{978-981-02-2474-5}
       \field{langid}{english}
       \field{month}{1}
-      \field{note}{Google-Books-{ID}: {GV}5pyxX3TfMC}
       \field{pagetotal}{798}
       \field{title}{Lecture Notes on Electron Correlation and Magnetism}
       \field{year}{1999}
@@ -4079,7 +4078,6 @@
       \field{abstract}{This book provides an introduction to the field of solid state physics for undergraduate students in physics, chemistry, engineering, and materials science.}
       \field{isbn}{978-0-03-083993-1}
       \field{langid}{english}
-      \field{note}{Google-Books-{ID}: 1C9HAQAAIAAJ}
       \field{pagetotal}{856}
       \field{title}{Solid State Physics}
       \field{year}{1976}
@@ -4402,7 +4400,6 @@
       \field{isbn}{978-0-486-42827-7}
       \field{langid}{english}
       \field{month}{6}
-      \field{note}{Google-Books-{ID}: 0wekf1s83b0C}
       \field{pagetotal}{646}
       \field{title}{Quantum Theory of Many-particle Systems}
       \field{year}{2003}
@@ -4525,6 +4522,61 @@
       \endverb
       \keyw{hubbard,order}
     \endentry
+    \entry{hanke_electronic_nodate}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3e0be49e7c85784b10295a1885fb540b}{%
+           family={Hanke},
+           familyi={H\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ae776f6c73b22e799afa7f0295ba067d}{%
+           family={Kopaev},
+           familyi={K\bibinitperiod},
+           given={Yu\bibnamedelima V.},
+           giveni={Y\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=d327989563589ea50c31a72c13168843}{%
+           family={John},
+           familyi={J\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b9dee27a94840db8a9460974f985700}
+      \strng{fullhash}{e90eb16cd2f4b23ec0d8e29159f6e062}
+      \strng{bibnamehash}{e90eb16cd2f4b23ec0d8e29159f6e062}
+      \strng{authorbibnamehash}{e90eb16cd2f4b23ec0d8e29159f6e062}
+      \strng{authornamehash}{9b9dee27a94840db8a9460974f985700}
+      \strng{authorfullhash}{e90eb16cd2f4b23ec0d8e29159f6e062}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1521-4079}
+      \field{journaltitle}{Crystal Research and Technology}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{shorttitle}{Electronic Phase Transitions. Modern Problems in Condensed Matter Sciences Vol. 32. North Holland}
+      \field{title}{Electronic Phase Transitions. Modern Problems in Condensed Matter Sciences Vol. 32. North Holland: Amsterdam, London, New York, Tokio 1992; 336 Seiten, {ISBN} 0-444-88885-3}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{28}
+      \field{urldateera}{ce}
+      \field{pages}{28\bibrangedash 28}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/crat.2170280106
+      \endverb
+      \verb{file}
+      \verb Hanke1992.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/strongy-correlated-electrons/numerics/Hanke1992.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/DJ47D5H8/crat.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/crat.2170280106
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/crat.2170280106
+      \endverb
+      \keyw{Hubbard-Stratonovich,stabilization,interacting electrons,loh,gubernatis,sign problem}
+    \endentry
     \entry{newman_monte_1999}{book}{}
       \name{author}{2}{}{%
         {{hash=e10496a046558ed6c27e3a9373727f7f}{%
@@ -4620,61 +4672,6 @@
       \verb https://link.springer.com/article/10.1007/BF01008440
       \endverb
     \endentry
-    \entry{hanke_electronic_nodate}{article}{}
-      \name{author}{3}{}{%
-        {{hash=3e0be49e7c85784b10295a1885fb540b}{%
-           family={Hanke},
-           familyi={H\bibinitperiod},
-           given={W.},
-           giveni={W\bibinitperiod}}}%
-        {{hash=ae776f6c73b22e799afa7f0295ba067d}{%
-           family={Kopaev},
-           familyi={K\bibinitperiod},
-           given={Yu\bibnamedelima V.},
-           giveni={Y\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=d327989563589ea50c31a72c13168843}{%
-           family={John},
-           familyi={J\bibinitperiod},
-           given={W.},
-           giveni={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{9b9dee27a94840db8a9460974f985700}
-      \strng{fullhash}{e90eb16cd2f4b23ec0d8e29159f6e062}
-      \strng{bibnamehash}{e90eb16cd2f4b23ec0d8e29159f6e062}
-      \strng{authorbibnamehash}{e90eb16cd2f4b23ec0d8e29159f6e062}
-      \strng{authornamehash}{9b9dee27a94840db8a9460974f985700}
-      \strng{authorfullhash}{e90eb16cd2f4b23ec0d8e29159f6e062}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{issn}{1521-4079}
-      \field{journaltitle}{Crystal Research and Technology}
-      \field{langid}{english}
-      \field{number}{1}
-      \field{shorttitle}{Electronic Phase Transitions. Modern Problems in Condensed Matter Sciences Vol. 32. North Holland}
-      \field{title}{Electronic Phase Transitions. Modern Problems in Condensed Matter Sciences Vol. 32. North Holland: Amsterdam, London, New York, Tokio 1992; 336 Seiten, {ISBN} 0-444-88885-3}
-      \field{urlday}{7}
-      \field{urlmonth}{6}
-      \field{urlyear}{2018}
-      \field{volume}{28}
-      \field{urldateera}{ce}
-      \field{pages}{28\bibrangedash 28}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1002/crat.2170280106
-      \endverb
-      \verb{file}
-      \verb Hanke1992.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/strongy-correlated-electrons/numerics/Hanke1992.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/DJ47D5H8/crat.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/crat.2170280106
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/crat.2170280106
-      \endverb
-      \keyw{Hubbard-Stratonovich,stabilization,interacting electrons,loh,gubernatis,sign problem}
-    \endentry
     \entry{santos_introduction_2003}{article}{}
       \name{author}{1}{}{%
         {{hash=3f40fc505d6d3889dcb2919659238034}{%
@@ -4745,7 +4742,6 @@
       \field{abstract}{Drawn from the author’s introductory course at the University of Orsay, Superconductivity of Metals and Alloys is intended to explain the basic knowledge of superconductivity for both experimentalists and theoreticians. These notes begin with an elementary discussion of magnetic properties of Type I and Type {II} superconductors. The microscopic theory is then built up in the Bogolubov language of self-consistent fields. This text provides the classic, fundamental basis for any work in the field of superconductivity.}
       \field{isbn}{978-0-7382-0101-6}
       \field{langid}{english}
-      \field{note}{Google-Books-{ID}: {xacsAAAAYAAJ}}
       \field{pagetotal}{292}
       \field{title}{Superconductivity of Metals and Alloys}
       \field{year}{1999}
@@ -4754,6 +4750,54 @@
       \verb deGennes1966.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/general-cmp-books/deGennes1966.pdf:application/pdf
       \endverb
       \keyw{superconductivity,Science / General,Technology \& Engineering / Engineering (General),Technology \& Engineering / Superconductors \& Superconductivity,hartree fock,mean field}
+    \endentry
+    \entry{yip_note_1986}{article}{}
+      \name{author}{1}{}{%
+        {{hash=61fb909bff1ded8930c5c15e1fc5b6cf}{%
+           family={Yip},
+           familyi={Y\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{61fb909bff1ded8930c5c15e1fc5b6cf}
+      \strng{fullhash}{61fb909bff1ded8930c5c15e1fc5b6cf}
+      \strng{bibnamehash}{61fb909bff1ded8930c5c15e1fc5b6cf}
+      \strng{authorbibnamehash}{61fb909bff1ded8930c5c15e1fc5b6cf}
+      \strng{authornamehash}{61fb909bff1ded8930c5c15e1fc5b6cf}
+      \strng{authorfullhash}{61fb909bff1ded8930c5c15e1fc5b6cf}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we address the stability of the Sherman–Morrison–Woodbury formula. Our main result states that if the original matrices, A and B, are well conditioned, then there exists matrices U and V such that the Sherman–Morrison–Woodbury formula is stable when applied to \$A = B - {UV}{^}T \$.}
+      \field{day}{1}
+      \field{issn}{0196-5204}
+      \field{journaltitle}{{SIAM} Journal on Scientific and Statistical Computing}
+      \field{month}{4}
+      \field{number}{2}
+      \field{shortjournal}{{SIAM} J. Sci. and Stat. Comput.}
+      \field{title}{A Note on the Stability of Solving a Rank-p Modification of a Linear System by the Sherman–Morrison–Woodbury Formula}
+      \field{urlday}{2}
+      \field{urlmonth}{9}
+      \field{urlyear}{2018}
+      \field{volume}{7}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{507\bibrangedash 513}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1137/0907034
+      \endverb
+      \verb{file}
+      \verb Snapshot:/Users/franciscobrito/Zotero/storage/QNI4VNXG/0907034.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://epubs.siam.org/doi/abs/10.1137/0907034
+      \endverb
+      \verb{url}
+      \verb https://epubs.siam.org/doi/abs/10.1137/0907034
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

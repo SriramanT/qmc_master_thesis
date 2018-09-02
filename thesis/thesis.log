@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  29 AUG 2018 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  3 SEP 2018 00:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1818,66 +1818,60 @@ Chapter 3.
 
 ]
 Package acronym Info: Label `acro:TMDNR' overridden on input line 12.
- (./ch-afqmc/classical_monte_carlo.tex [48] [49] [50]
+ (./ch-afqmc/classical-monte-carlo.tex [48] [49] [50]
 [51] [52]
 Package acronym Info: Label `acro:FFT' newly defined as it shall be overridden
 although it is yet undefined on input line 249.
- [53]) (./ch-afqmc/theoretical_framework.tex [54] [55] [56] [57]
+ [53]) (./ch-afqmc/theoretical-framework.tex [54] [55] [56] [57]
 [58]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 254.
- [59] [60]) [61] [62]) (./ch-applications/main.tex
+put line 253.
+ [59] [60] [61] [62]) [63] [64
+
+
+]) (./ch-applications/main.tex
 Chapter 4.
 \openout5 = `thesis.mtc'.
 
 \openout5 = `thesis.mtc'.
 
-(./thesis.mtc4) [63
+(./thesis.mtc4) [65
 
-
-
-] (./ch-applications/1.1d-chain.tex)
-(./ch-applications/2.square-lattice.tex) (./ch-applications/3.honeycomb.tex)
-(./ch-applications/4.nanoribbon.tex
+] (./ch-applications/1d-chain.tex)
+(./ch-applications/square-lattice.tex) (./ch-applications/honeycomb.tex)
+(./ch-applications/nanoribbon.tex
 Package acronym Info: Label `acro:TMD' overridden on input line 5.
 Package acronym Info: Label `acro:PBC' overridden on input line 14.
 Package acronym Info: Label `acro:OBC' overridden on input line 15.
-<all-figures/Applications/nanoribbon.pdf, id=1606, 1027.84pt x 770.88pt>
+<all-figures/Applications/nanoribbon.pdf, id=1626, 1027.84pt x 770.88pt>
 File: all-figures/Applications/nanoribbon.pdf Graphic file (type pdf)
 <use all-figures/Applications/nanoribbon.pdf>
 Package pdftex.def Info: all-figures/Applications/nanoribbon.pdf  used on input
  line 26.
 (pdftex.def)             Requested size: 355.09189pt x 163.10701pt.
- [64]) [65 <./all-figures/Applications/nanoribbon.pdf>] [66
+ [66]) [67 <./all-figures/Applications/nanoribbon.pdf>] [68
 
 
 ]) (./ch-conclusion/conclusions.tex
 Chapter 5.
 Package minitoc Info: I0006
 (minitoc)             thesis.mtc5 is empty on input line 4.
-[67
+[69
 
-] [68]) [69
-
-
+] [70]) [71
 
 
 
-] [70] [71]
-Overfull \hbox (19.84595pt too wide) in paragraph at lines 43--43
-[]\T1/cmr/m/n/10 Fazekas, P. \T1/cmr/m/it/10 Lec-ture Notes on Elec-tron Cor-re
--la-tion and Mag-netism \T1/cmr/m/n/10 Google-Books-ID: GV5pyxX3TfMC.
- []
-
-[72] [73] [74
 
 
-] (./end-appendices/hubbardObSol.tex
+] [72] [73] [74] [75] [76] (./end-appendices/hubbardObSol.tex
 Appendix A.
 [1
 
+
+
 ] [2] [3] [4] [5]
-<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=1869, 457.71pt x 210.7
+<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=1890, 457.71pt x 210.7
 875pt>
 File: all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png Graphic file (type pn
 g)
@@ -1907,7 +1901,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Appendix B.
 [1
 
-] [2] [3] [4] [5]) [6]
+] [2] [3] [4] [5] [6]) [7] [8
+
+
+]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the thesis.maf file.
@@ -1919,19 +1916,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9EE08D7C2DB37CA8D14FAF722632291B;5178.
+(rerunfilecheck)             Checksum: CB84BFE186250B77EB24A7802B244692;5159.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22143 strings out of 492649
- 366914 string characters out of 6129622
- 893812 words of memory out of 5000000
- 24574 multiletter control sequences out of 15000+600000
+ 22165 strings out of 492649
+ 367242 string characters out of 6129622
+ 894697 words of memory out of 5000000
+ 24579 multiletter control sequences out of 15000+600000
  43547 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,24n,100p,2020b,2040s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,27n,100p,2020b,2040s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
  </Users/franciscobrito/Library/texlive/2018/texmf-var/fonts/pk/ljfour/public/b
 bm/bbm10.600pk>{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}
@@ -1989,10 +1990,10 @@ e1/public/cm-super/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
 /public/cm-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
 ublic/cm-super/sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw
 /bookman/ubkd8a.pfb>
-Output written on thesis.pdf (111 pages, 12403523 bytes).
+Output written on thesis.pdf (115 pages, 12418261 bytes).
 PDF statistics:
- 2297 PDF objects out of 2487 (max. 8388607)
- 1993 compressed objects within 20 object streams
- 610 named destinations out of 1000 (max. 500000)
+ 2342 PDF objects out of 2487 (max. 8388607)
+ 2033 compressed objects within 21 object streams
+ 628 named destinations out of 1000 (max. 500000)
  660 words of extra memory for PDF output out of 10000 (max. 10000000)
 

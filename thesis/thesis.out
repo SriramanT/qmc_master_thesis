@@ -36,9 +36,9 @@
 \BOOKMARK [1][]{section.2.6}{2.6 Magnetism and mean field theory}{chapter.2}% 36
 \BOOKMARK [2][]{subsection.2.6.1}{2.6.1 Stoner criterion for ferromagnetism}{section.2.6}% 37
 \BOOKMARK [2][]{subsection.2.6.2}{2.6.2 Mean field theory of the Hubbard model}{section.2.6}% 38
-\BOOKMARK [1][]{section.2.7}{2.7 Variants of the Hubbard model and their simulation}{chapter.2}% 39
+\BOOKMARK [1][]{section.2.7}{2.7 Simulatable variants of the Hubbard model}{chapter.2}% 39
 \BOOKMARK [0][]{chapter.3}{3 Auxiliary Field Quantum Monte Carlo}{}% 40
-\BOOKMARK [1][]{section.3.1}{3.1 Monte Carlo Method in Classical Statistical Physics}{chapter.3}% 41
+\BOOKMARK [1][]{section.3.1}{3.1 Monte Carlo Method in Statistical Physics}{chapter.3}% 41
 \BOOKMARK [1][]{section.3.2}{3.2 Theoretical framework}{chapter.3}% 42
 \BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Trotter-Suzuki Decomposition}{section.3.2}% 43
 \BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Monte Carlo sampling of the HS-field}{section.3.2}% 44

@@ -174,21 +174,90 @@ where $\bm F$ is some matrix. $\bm V_{1,2}$ are diagonal and non-singular and di
 \end{equation}
 where $\bm e_1$ is a vector corresponding to the first column of the identity matrix $\bm I$, and
 
-\begin{equation*}
+\begin{equation}
 \alpha_1 = \frac{V_2(1,1)}{V_1(1,1)} - 1
-\end{equation*}
+\end{equation}
 
 Then, $\bm A_2$ is clearly a rank-one update of $\bm A_1$.
 
-\begin{equation*}
+\begin{equation}\label{eq:a2}
 \begin{split}
 \bm A_2 &= \bm I + \bm F \bm V_1 + \bm F \bm V_1 ( \bm V_1^{-1} \bm V_2 - \bm I ) \\
 &= \bm A_1 + \alpha_1 ( \bm A_1 - \bm I ) \bm e_1 \bm e_1^T \\
 &= \bm A_1 [ \bm I + \alpha_1 ( \bm I - \bm A_1^{-1} )\bm e_1 \bm e_1^T ]
 \end{split}
-\end{equation*}
+\end{equation}
 
-Using the identity $\text{det}[\bm I + \bm x \bm y^T] = 1 + \bm y^T \bm x$ for any two column vectors, we may write the ratio of the determinants of matrices $\bm A_1$ and $\bm A_2$ as
+To find an expression for the ratio of the determinants of $\bm A_1$ and $\bm A_2$, we shall need to make use of the Sylvester's determinant identity $\det(\bm I + \bm A \bm B ) = \det (\bm I + \bm B \bm A )$.
+To prove it, consider the matrices
+
+\begin{equation}
+\bm P =
+\begin{pmatrix}
+\bm I & - \bm A \\
+\bm B & \bm I 
+\end{pmatrix}
+\begin{pmatrix}
+\bm I &  \bm A \\
+\bm 0 & \bm I 
+\end{pmatrix}
+\quad
+\bm Q =
+\begin{pmatrix}
+\bm I &  \bm A \\
+\bm 0 & \bm I 
+\end{pmatrix}
+\begin{pmatrix}
+\bm I &  -\bm A \\
+\bm B & \bm I 
+\end{pmatrix}
+\end{equation}
+
+Using the identity $\det ( \bm A \bm B ) = \det ( \bm A ) \det ( \bm B )$ applied to these two matrices, we can clearly see that the determinants of the two matrices coincide, i.e.
+
+\begin{equation}
+\det ( \bm P) = \det
+\begin{pmatrix}
+\bm I & -\bm A \\
+\bm B & \bm I
+\end{pmatrix}
+\det
+\begin{pmatrix}
+\bm I & \bm A \\
+\bm 0 & \bm I
+\end{pmatrix}
+\quad
+\det (\bm Q) = \det
+\begin{pmatrix}
+\bm I & \bm A \\
+\bm 0 & \bm I
+\end{pmatrix}
+\det
+\begin{pmatrix}
+\bm I & -\bm A \\
+\bm B & \bm I
+\end{pmatrix}
+\end{equation}
+
+The sought identity is obtained by computing the determinants explicitly.
+
+\begin{equation}
+\det ( \bm P ) = \det
+\begin{pmatrix}
+\bm I & \bm 0 \\
+\bm B & \bm I + \bm B \bm A 
+\end{pmatrix}
+= \bm I + \bm B \bm A 
+\quad
+\det ( \bm Q ) = \det
+\begin{pmatrix}
+\bm I + \bm A \bm B & \bm 0 \\
+\bm B & \bm I
+\end{pmatrix}
+= \bm I + \bm A \bm B
+\end{equation}
+
+A corollary of Sylvester's identity for any two column vectors: $\text{det}[\bm I + \bm x \bm y^T] = 1 + \bm y^T \bm x$ may be used with $x \mapsto ( \bm I - \bm A_1^{-1} ) \bm e_1$, $y \mapsto \bm e_1$ to write the ratio of the determinants of matrices $\bm A_1$ and $\bm A_2$ as
 
 \begin{equation}\label{eq:efRatio}
 r_1 = \frac{\text{det}[\bm A_2]}{\text{det}[\bm A_1]} = 1 + \alpha_1 ( 1 - \bm e_1^T \bm A_1^{-1} \bm e_1 ) ,
@@ -201,26 +270,50 @@ Now we generalize this idea for a sequence of matrices $\bm A_1, \bm A_2, ..., \
 \bm V_i^{-1} \bm V_{i+1} = \bm I + \alpha_i \bm e_i \bm e_i^T \quad \alpha_i = \frac{\bm V_{i+1}(1,1)}{\bm V_i (1,1)} -1
 \end{equation}
 
-The Sherman-Morrison-Woodbury formula gives an expression for the inverse of $\bm A_2$ as a rank-one update of $\bm A_1^{-1}$.
+That is accomplished by use of the  Sherman-Morrison-Woodbury formula, or simply Woodbury matrix identity:
+
+\begin{equation}
+( \bm A + \bm B \bm C \bm D )^{-1} = \bm A^{-1} - \bm A^{-1} \bm B ( \bm C^{-1} + \bm D \bm A^{-1} \bm B )^{-1} \bm D \bm A^{-1} ,
+\end{equation}
+where $\text{dim}(\bm A) = N \times N $, $\text{dim}(\bm B) = N \times K $, $\text{dim}(\bm C) = K \times K $, $\text{dim}(\bm D) = K \times N $, and $N$ and $K$ are integers.
+To prove the identity, we use two simple identities, from which the proof easily follows.
+
+\begin{equation}
+\bm B + \bm B \bm C \bm D \bm A^{-1} \bm B = ( \bm A + \bm B \bm C \bm D ) \bm A^{-1} \bm B
+\quad\,\,
+( \bm A + \bm B \bm C \bm D )^{-1} \bm B \bm C = \bm A^{-1} \bm B ( \bm C^{-1} + \bm D \bm A^{-1} \bm B )^{-1}
+\end{equation}
 
 \begin{equation}
 \begin{split}
-\bm A_2^{-1} &= \bigg[ \bm I - \frac{\alpha_1}{r_1} ( \bm I - \bm A_1^{-1} ) \bm e_1 \bm e_1^T  \bigg] \bm A_1^T \\
+\bm A^{-1} &= ( \bm A + \bm B \bm C \bm D )^{-1} ( \bm A + \bm B \bm C \bm D ) \bm A^{-1} = ( \bm A + \bm B \bm C \bm D )^{-1} ( \bm I + \bm B \bm C \bm D \bm A^{-1} ) \\
+&= ( \bm A + \bm B \bm C \bm D )^{-1} + ( \bm A + \bm B \bm C \bm D )^{-1} \bm B \bm C \bm D \bm A^{-1} \\
+&= ( \bm A + \bm B \bm C \bm D )^{-1} + \bm A^{-1} \bm B ( \bm C^{-1} + \bm D \bm A^{-1} \bm B ) \bm D \bm A^{-1}
+\quad
+\qed
+\end{split}
+\end{equation}
+
+The Woodbury identity applied to Eq.(\ref{eq:a2}) gives an expression for $\bm A_2^{-1}$ as a rank-one update of $\bm A_1^{-1}$.
+
+\begin{equation}\label{eq:greenUpdate}
+\begin{split}
+\bm A_2^{-1} &= \bm A_1^{-1} - \alpha_1 ( \bm I - \bm A_1^{-1} ) {\underbrace{\bigg[ \bm e_1 + \bm e_1^T \bm A_1^{-1} \alpha_1 (  \bm A_1 - \bm I ) \bigg]}_{\bm e_1 \times, \times \bm e_1 \text{(multiply left and right)}}}^{-1} \bm e_1^T \bm A_1^{-1} \\
+&= \bm A_1^{-1} - \alpha_1 ( \bm I - \bm A_1^{-1} ) \bm e_1 \bigg[ 1 + \alpha_1 ( 1 - \bm e_1^T \bm A_1^{-1} \bm e_1 ) \bigg]^{-1} \bm e_1^T \bm A_1^{-1}  \\
 &= \bm A_1^{-1} - \frac{\alpha_1}{r_1} \bm u_1 \bm w_1^T ,
 \end{split}
 \end{equation}
-where
-
-\begin{equation*}
+where the operation on the first step does not affect the term in parentheses, and we defined
+$
 \bm u_1 = (\bm I - \bm A_1^{-1} ) \bm e_1 \quad \bm w_1 = (\bm A_1^{-1})^T \bm e_1
-\end{equation*}
+$.
 
-Using equation (\ref{eq:efRatio}), we find the updates
+Using Eqs.(\ref{eq:efRatio},\ref{eq:greenUpdate}) successively, we find the updates
 
 \begin{equation}
 \begin{split}
-r_i &= \frac{\text{det}[\bm M_{i+1}]}{\text{det}[\bm M_{i}]} = 1 + \alpha_i ( 1 - \bm e_i^T \bm A_i^{-1}  \bm e_i ) , \,\, \text{and} \\
-\bm M_{i+1}^{-1} &= \bm M_i^{-1} - \frac{\alpha_i}{r_i} \bm u_i \bm w_i^T ,
+r_i &= \frac{\text{det}[\bm A_{i+1}]}{\text{det}[\bm A_{i}]} = 1 + \alpha_i ( 1 - \bm e_i^T \bm A_i^{-1}  \bm e_i ) , \,\, \text{and} \\
+\bm A_{i+1}^{-1} &= \bm A_i^{-1} - \frac{\alpha_i}{r_i} \bm u_i \bm w_i^T ,
 \end{split}
 \end{equation}
 where $\bm u_i = (\bm I - \bm A_i^{-1} ) \bm e_i$ and $\bm w_i = (\bm A_i^{-1})^T \bm e_i$.
@@ -236,3 +329,7 @@ where
 \bm U_k = [ \bm u_1 , \bm u_2, ..., \bm u_{k-1} ] \quad \text{and} \quad \bm W = [ \bm w_1, \bm w_2, ..., \bm w_{k-1} ] ,
 \end{equation}
 and $\bm D_k = \text{diag}(\alpha_1 / r_1, \alpha_2 / r_2, ..., \alpha_{k-1} / r_{k-1})$.
+
+In \cite{yip_note_1986}, precise bounds are given on the conditioning of the matrices obtained via such type of Sherman-Morrison updates.
+In practice, if the Green's functions are sufficiently well-conditioned, no precision-related issues arise.
+Numerical instabilities may arise when the Green's matrices comprise divergent energy scales, and care must be taken to ensure that the algorithm converges.

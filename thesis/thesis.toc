@@ -64,11 +64,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.6.2}Mean field theory of the Hubbard model}{43}{subsection.2.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Variants of the Hubbard model and their simulation}{45}{section.2.7}
+\contentsline {section}{\numberline {2.7}Simulatable variants of the Hubbard model}{45}{section.2.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Auxiliary Field Quantum Monte Carlo}{47}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Monte Carlo Method in Classical Statistical Physics}{48}{section.3.1}
+\contentsline {section}{\numberline {3.1}Monte Carlo Method in Statistical Physics}{48}{section.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Theoretical framework}{55}{section.3.2}
 \defcounter {refsection}{0}\relax 
@@ -76,27 +76,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}Monte Carlo sampling of the HS-field}{59}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Making measurements}{59}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Making measurements}{61}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Correlation functions}{61}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Correlation functions}{62}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Applications}{63}{chapter.4}
+\contentsline {chapter}{\numberline {4}Applications}{65}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}One-dimensional Hubbard Chain}{64}{section.4.1}
+\contentsline {section}{\numberline {4.1}One-dimensional Hubbard Chain}{66}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Square lattice}{64}{section.4.2}
+\contentsline {section}{\numberline {4.2}Square lattice}{66}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Honeycomb lattice}{64}{section.4.3}
+\contentsline {section}{\numberline {4.3}Honeycomb lattice}{66}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Nanoribbons}{64}{section.4.4}
+\contentsline {section}{\numberline {4.4}Nanoribbons}{66}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Graphene}{64}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}Graphene}{66}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}\acp {TMD}}{65}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}\acp {TMD}}{67}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{67}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{69}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{69}{section*.51}
+\contentsline {chapter}{Bibliography}{71}{section*.51}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 

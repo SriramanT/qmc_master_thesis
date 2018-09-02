@@ -1,8 +1,8 @@
-\section{Variants of the Hubbard model and their simulation}\label{sec:variants}
+\section{Simulatable variants of the Hubbard model}\label{sec:variants}
 
 It is possible to think of more general  models than the one considered so far.
 Notwithstanding, a limited basis of single-electron orbitals allows one to describe the essential electronic degrees of freedom.
-In fact, all the methodology we shall present in the next chapter generalizes for Hamiltonians belonging to a particular class:
+In fact, all the methodology we shall present in the next chapter generalizes for Hamiltonians belonging to a particular class \cite{hanke_electronic_nodate}.
 
 \begin{equation}\label{eq:variantsForm}
 \mathcal{H} = - \sum_{i, j, \sigma} K_{ij} \bigg( c_{i, \sigma}^\dagger c_{j, \sigma} + c_{j, \sigma}^\dagger c_{i, \sigma} \bigg) + \sum_{i, j} V_{ij} n_i n_j ,
@@ -12,9 +12,8 @@ where all the notation has the usual meaning, and $V_{ij}$, included in the func
 This generic form includes standard condensed matter models, such as the Hubbard model, its multi-orbital, and extended variants, and the Anderson model.
 There is a huge variety of approximation methods at both zero and finite temperature devised specifically to study these models.
 We have seen some examples of such methods for the specific case of the Hubbard model.
-The methods aim at studying magnetism, superconductivity, and other low-temperature phase transitions.
+The methods aim at studying magnetism, superconductivity, and other low-temperature phase transitions perturbatively or by considering a  simplified version of the model at hand.
 \ac{QMC} methods follow a different route, allowing the exploration of a more vast range of parameter space.
-
 In auxiliary field \ac{QMC}, the first step is to resort to a mathematical trick to eliminate the \emph{direct} electron-electron interaction.
 In the same way that photon fields mediate the electromagnetic interaction, there are fields mediating our simplified screened interaction.
 In the context of a path integral formulation, we will introduce these so called Hubbard Stratonovich fields to eliminate the electron-electron interactions.
