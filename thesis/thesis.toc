@@ -74,11 +74,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Trotter-Suzuki Decomposition}{55}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Monte Carlo sampling of the HS-field}{59}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Monte Carlo sampling of the HS-field}{60}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Making measurements}{61}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Making measurements}{62}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Correlation functions}{62}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Correlation functions}{63}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Applications}{65}{chapter.4}
 \defcounter {refsection}{0}\relax 
@@ -96,7 +96,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusions and Future Work}{69}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{71}{section*.51}
+\contentsline {chapter}{Bibliography}{71}{section*.54}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 

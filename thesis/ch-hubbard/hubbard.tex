@@ -176,7 +176,7 @@ Going back to equation (\ref{eq:hopping_matrix}), and recalling that the sum on 
 The Hubbard Hamiltonian is then
 
 \begin{equation}\label{eq:hubbard_hamiltonian}
-\mathcal{H} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg(c_{i,\sigma} c_{j,\sigma}^\dagger + c_{j,\sigma} c_{i,\sigma}^\dagger \bigg) + U \sum_{i} n_{i,\uparrow} n_{i\downarrow} -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg) ,
+\mathcal{H} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg(c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) + U \sum_{i} n_{i,\uparrow} n_{i\downarrow} -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg) ,
 \end{equation}
 where, for generality, we included an arbitrary chemical potential, so that we use the \ac{GCE}.
 
@@ -228,7 +228,7 @@ Expanding this term, we obtain $U n_{i,\uparrow} n_{i,\downarrow} - \frac{U}{2} 
 Thus, the particle-hole symmetric form of the Hamiltonian 
 
 \begin{equation}
-\mathcal{H} = -t \sum_{\left\langle i, j \right \rangle, \sigma} \bigg( c_{i,\sigma} c_{j,\sigma}^\dagger + c_{i,\sigma} c_{j,\sigma}^\dagger \bigg) + U \sum_{i} \bigg( n_{i,\uparrow} - \frac{1}{2} \bigg) \bigg( n_{i,\downarrow} - \frac{1}{2} \bigg) -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg)
+\mathcal{H} = -t \sum_{\left\langle i, j \right \rangle, \sigma} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{i,\sigma}^\dagger c_{j,\sigma} \bigg) + U \sum_{i} \bigg( n_{i,\uparrow} - \frac{1}{2} \bigg) \bigg( n_{i,\downarrow} - \frac{1}{2} \bigg) -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg)
 \end{equation}
 is completely equivalent to the original Hamiltonian.
 

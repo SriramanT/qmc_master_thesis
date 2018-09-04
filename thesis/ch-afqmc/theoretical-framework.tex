@@ -1,14 +1,30 @@
 \section{Theoretical framework}
 \label{subsec:theoreticalFramework}
 
-Auxiliary-field, or Determinant \acs{QMC} is a simulation method that is commonly used to simulate the Hubbard model, allowing one to capture the elusive effects of electron correlations, for example in the two-dimensional graphene-like nanostructures we are concerned with.
-In general, the sign problem deems the algorithm exponentially complex in the size of the system and in inverse temperature, but it is possible to overcome this hurdle for a class of models, namely the Hubbard model on a bipartite lattice at half filling ($\mu = 0$ in our conventions).
+Auxiliary-field, or Determinant \acs{QMC} is a simulation method that is commonly used to simulate the Hubbard model, allowing one to capture the elusive effects of electron correlations in the two-dimensional graphene-like nanostructures we are concerned with.
+The sign problem may deem the algorithm exponentially complex in the size of the system and in inverse temperature, but it is possible to overcome this hurdle for a class of models, namely the Hubbard model on a bipartite lattice at half filling ($\mu = 0$ in our conventions).
 In fact, many interesting phenomena occur at half filling, for example magnetic ordering and the Mott metal-insulator transition.
 The difficulty lies in computing the nearly vanishing average of a random variable $X$ with comparatively large variance, i.e. $\sigma_X / \left\langle X \right\rangle \gg 1$.
 
 Ultimately, we seek a computable approximation of the projection operator $\mathcal{P}$ defined in equation (\ref{eq:projection}).
 As we shall see, it is found by using a discrete Hubbard-Stratonovich transformation.
 This transformation introduces an auxiliary field (consisting basically of Ising spins), and we use Monte Carlo to sample configurations from the distribution corresponding to this \emph{classical} configuration space.
+This approach is equivalent to an exact solution of the mean field problem, an observation which motivates us to compare our results with the mean field ones.
+
+Mean field theory may be formulated by applying the Hubbard Stratonovich (HS)  transformation to transform an interacting problem into a one-body problem, and then apply the saddle-point approximation to solve the resulting integrals.
+In the \ac{GCE} (where we make $\mathcal{H} \mapsto \mathcal{H} - \mu \mathcal{N}$, $\mathcal{N}$ being the total particle number), the partition function may be written in terms of a functional integral\footnote{In the case of a discrete HS transformation, as the one we shall use in what follows, we actually have a sum instead of a functional integral. We use the notation $\Tr$ to refer to both cases depending on the context.} over a space-time dependent field of the exponential of a one-body action
+
+\begin{equation}
+Z = \Tr ( e^{-\beta \mathcal{H} } ) = \int \mathcal{D} \bm h \, e^{-S(\bm h) }  \equiv \Tr_{\bm h} [ e^{-S(\bm h)} ],
+\end{equation}
+which may be computed by Monte Carlo sampling.
+In mean field, we approximate the integral by replacing the functional integral by a constant times the exponential action itself evaluated at a single field $\bm h^\star$, for which the action has a minimum: $\partial_{\bm h} S( \bm h ) |_{\bm h = \bm h^\star} = 0$, and $\partial_{\bm h}^2 S( \bm h ) |_{\bm h = \bm h^\star} > 0$.
+
+The integral is evaluated exactly in the auxiliary field \ac{QMC} method, which avoids the bias introduced by the specific choice of the HS decoupling.
+The nature of the analytical mean field solution depends on this choice, while the \ac{QMC} approach relies on a numerical solution that scales with the cubic volume of the system, and linearly with inverse temperature.
+
+The sign problem may be seen as an inherent difficulty that arises from taking all possible fluctuations around the mean field solution.
+An advantage of the determinant method is that certain symmetries of the model at hand, such as \ac{PHS} in the Hubbard model, may be used to avoid the sign problem.
 
 \subsection{Trotter-Suzuki Decomposition}
 \label{subsec:trotter}
@@ -70,7 +86,7 @@ Dividing the imaginary time interval $[0, \beta ]$ into $L$ equal sub-intervals 
 Z =  \Tr \bigg( \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg) ,
 \end{equation}
 we obtain a form that is more amenable to computation.
-Actually, it also arises naturally by writing the matrix elements of the projection operator $\mathcal{P}$ as path integrals:
+Actually, it also arises naturally by writing the matrix elements of the projection operator $\mathcal{P}$ as path integrals (here, time ordering is implicit \cite{hirsch_discrete_1983}):
 
 \begin{equation}
 \left\langle \psi | e^{-\beta \mathcal{H} } | \psi' \right\rangle = \sum_{\left| \psi_1 \right\rangle, \left| \psi_2 \right\rangle,..., \left| \psi_{L-1} \right\rangle }  \left\langle \psi | e^{-\Delta \tau \mathcal{H} } | \psi_1 \right\rangle \left\langle \psi_1 | e^{-\Delta \tau \mathcal{H} } | \psi_2 \right\rangle ... \left\langle \psi_{L - 1} | e^{-\Delta \tau \mathcal{H} } | \psi' \right\rangle 
@@ -81,9 +97,8 @@ Then, the partition function only selects paths that are periodic in imaginary t
 \begin{equation}
 Z = \text{Tr} \big( e^{-\beta \mathcal{H} } \big) = \sum_{\left| \psi_0 \right\rangle} \left\langle \psi_0 | e^{-\beta \mathcal{H}} | \psi_0 \right\rangle = \sum_{\{ \left| \psi_l \right\rangle \}} \prod_{l = 0}^{L - 1} \left\langle \psi_{l} | e^{-\Delta \tau \mathcal{H} } | \psi_{l+1} \right\rangle \delta_{0, L} = \Tr \bigg( \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg) ,
 \end{equation}
-where we have $\left| \psi_L \right\rangle = \left| \psi_0 \right\rangle$, and we  recover the result of Eq.(\ref{eq:partBreak}) by simply reorganizing the summations over $\{ \left| \psi_l \right\rangle \}$, so as to make appear closure relations, resulting in unit operators.
-
-The \say{Trotter breakup} follows from truncating equation (\ref{eq:zassenhaus}), and keeping only the first order term in $\Delta \tau$.
+where we have $\left| \psi_L \right\rangle = \left| \psi_0 \right\rangle$, and we  recover the result of Eq.(\ref{eq:partBreak}) by simply reorganizing the summations over $\{ \left| \psi_l \right\rangle \}$, so as to make appear closure relations, resulting in unit operators in the Hilbert space of each slice.
+The \say{Trotter breakup} follows from truncating Eq.(\ref{eq:zassenhaus}), and keeping only the first order term in $\Delta \tau$.
 
 \begin{equation}\label{eq:Z_propagator}
 Z = \Tr \bigg( \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H}_{K} } e^{-\Delta\tau \mathcal{H}_{V} } \bigg) + \mathcal{O}(\Delta \tau^2) 
@@ -97,19 +112,20 @@ e^{-\Delta\tau \mathcal{H}_K} = e^{-\Delta\tau \mathcal{H}_{K_\uparrow}} e^{-\De
 where $\mathcal{H}_{K_\sigma} = \bm c_\sigma^\dagger (-t_\sigma \bm K_\sigma - \mu_\sigma \bm I )  \bm c_\sigma$, and we allow spin-dependent hoppings and chemical potential.
 
 The potential energy term, however, is quartic.
-Fortunately, it is possible to express it in quadratic form by introducing an extra degree of freedom, the so called \emph{Hubbard-Stratonovich (HS) field} $\bm h \equiv (h_i)_{i=1}^N$, in which each element is essentially an Ising spin.
-First, note that number operators on different sites commute, so that we have
+Fortunately, it is possible to express it in quadratic form by introducing an extra degree of freedom, the so called \emph{Hubbard-Stratonovich (HS) field} $\bm h \equiv (h_{l, i})_{i=0,\, l= 0}^{N-1, \, L - 1}$, in which each element is essentially an Ising spin.
+At each slice, the interaction is eliminated by an $N$-dimensional HS field $\widetilde{\bm h}$.
+Number operators on different sites commute, so that
 
 \begin{equation}
 e^{-\Delta\tau \mathcal{H}_V} = e^{-U \Delta\tau \sum_{i=1}^N (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} = \prod_i e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )}
 \end{equation}
 
-Now we introduce the discrete Hubbard Stratonovich transformation for $U > 0$ that allows us to recast the equation above in terms of a non-interacting quadratic term $n_{i\uparrow} - n_{i\downarrow} $.
+Now we introduce the discrete HS transformation for $U > 0$ that allows us to recast the equation above in terms of a non-interacting quadratic term $n_{i\uparrow} - n_{i\downarrow} $ (at each imaginary-time slice, since the operators live on the Hilbert space of that specific slice).
+Let $c_U = \frac{1}{2} e^{-\frac{U\Delta \tau}{4}}$ and $\nu = \text{arcosh} ( e^{\frac{U\Delta\tau}{2}})$.
 
 \begin{equation}\label{eq:discreteHS}
-e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} = c_U \sum_{h_i = \pm 1} e^{\nu h_i (n_{i\uparrow} - n_{i\downarrow} )},
+e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} = c_U \sum_{\widetilde{h}_i = \pm 1} e^{\nu \widetilde{h}_i (n_{i\uparrow} - n_{i\downarrow} )}
 \end{equation}
-where $c_U = \frac{1}{2} e^{-\frac{U\Delta \tau}{4}}$ and $\nu = \text{arcosh} ( e^{\frac{U\Delta\tau}{2}})$.
 
 To prove this identity, let us write down how the operators  $(n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )$ and $(n_{i\uparrow} - n_{i\downarrow} )$ act on a state on a given site.
 
@@ -130,64 +146,68 @@ To prove this identity, let us write down how the operators  $(n_{i\uparrow} - 1
 \end{cases}
 \end{equation}
 
-Now we simply compare the action of the operators on the left hand side and on the right hand side of equation (\ref{eq:discreteHS}) and find the desired relation by defining
-
-\begin{equation}
-\cosh \nu =  \frac{e^\nu + e^{-\nu} }{2} \equiv e^{\frac{U\Delta \tau}{2}}
-\end{equation}
+We can now compare the action of the operators on the LHS and on the RHS of Eq.(\ref{eq:discreteHS}) and find the desired relation by defining
+$
+\cosh \nu =  \frac{1}{2} ( e^\nu + e^{-\nu} ) \equiv e^{\frac{U\Delta \tau}{2}}
+$.
 
 \begin{equation}
 \begin{split}
 &e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} \left| \psi \right\rangle = e^{-\frac{U\Delta \tau}{4}} \left| \psi \right\rangle \, , \left| \psi \right\rangle = \left| \, \, \right\rangle, \left| \uparrow \downarrow \right\rangle \\
 &e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} \left| \uparrow (\downarrow) \right\rangle = e^{\frac{U\Delta \tau}{4}} \left| \uparrow (\downarrow) \right\rangle \\
-&c_U \sum_{h_i = \pm 1} e^{\nu h_i (n_{i\uparrow} - n_{i\downarrow} )} \left| \psi \right\rangle = e^{-\frac{U\Delta \tau}{4}} \left| \psi \right\rangle \, , \left| \psi \right\rangle = \left| \, \, \right\rangle, \left| \uparrow \downarrow \right\rangle \\
-&c_U \sum_{h_i = \pm 1} e^{\nu h_i (n_{i\uparrow} - n_{i\downarrow} )} \left| \uparrow (\downarrow) \right\rangle= \frac{e^\nu + e^{-\nu}}{2} e^{-\frac{U\Delta \tau}{4}}  \left| \uparrow (\downarrow) \right\rangle
+&c_U \sum_{\widetilde{h}_i = \pm 1} e^{\nu \widetilde{h}_i (n_{i\uparrow} - n_{i\downarrow} )} \left| \psi \right\rangle = e^{-\frac{U\Delta \tau}{4}} \left| \psi \right\rangle \, , \left| \psi \right\rangle = \left| \, \, \right\rangle, \left| \uparrow \downarrow \right\rangle \\
+&c_U \sum_{\widetilde{h}_i = \pm 1} e^{\nu \widetilde{h}_i (n_{i\uparrow} - n_{i\downarrow} )} \left| \uparrow (\downarrow) \right\rangle= \frac{e^\nu + e^{-\nu}}{2} e^{-\frac{U\Delta \tau}{4}}  \left| \uparrow (\downarrow) \right\rangle
 \end{split}
 \end{equation}
 
-Note that we require $U > 0$ so that there exists $\nu \in \mathbb{R}$ such that $\cosh \nu = e^{U\Delta \tau / 2}$. A similar reasoning could be made for $U < 0$. Additionaly, other transformations that recast other types of quartic terms in terms of quadratic ones exist, but we shall not need them in what follows \cite{hirsch_monte_1983}. The transformation we derived is the one we will use throughout.
-
-We have now made progress. At the expense of introducing an extra $N$-dimensional HS-field $\bm h$, we obtained an \emph{exact} representation of the quartic term in terms of quadratic terms \cite{hou_numerical_2009}.
+Note that we require $U > 0$ so that there exists $\nu \in \mathbb{R}$ such that $\cosh \nu = e^{U\Delta \tau / 2}$. A similar reasoning could be made for $U < 0$.
+Similar transformations that recast other types of quartic terms in terms of quadratic ones exist, but we shall not need them in what follows \cite{hirsch_monte_1983}.
+The transformation we derived is the one we will use throughout.
+We have made progress at the expense of introducing $L$ fields $\widetilde{\bm h}$ to each fermions are coupled to at each slice. 
+Our representation of the interacting problem is \emph{exact}, and is encoded in the configurations of the $NL$-dimensional HS field $\bm h$  \cite{hou_numerical_2009}.
+The interacting term
 
 \begin{equation} 
- e^{-\Delta\tau \mathcal{H}_V} = \prod_{i=0}^{N-1} \bigg( c_U \sum_{h_i = \pm 1} e^{\nu h_i ( n_{i\uparrow} - n_{i\downarrow} )} \bigg),
+ e^{-\Delta\tau \mathcal{H}_V} = \prod_{i=0}^{N-1} \bigg( c_U \sum_{\widetilde{h}_i = \pm 1} e^{\nu \widetilde{h_i} ( n_{i\uparrow} - n_{i\downarrow} )} \bigg),
 \end{equation} 
-which can be manipulated to arrive at a more compact form.
+can be manipulated to arrive at a more compact form.
 
 \begin{equation}\label{eq:exp_quartic}
 \begin{split}
-e^{-\Delta\tau \mathcal{H}_V} &=  (c_U)^N \sum_{h_i = \pm 1} e^{\nu h_i ( n_{1\uparrow} - n_{1\downarrow} )} \sum_{h_i = \pm 1} e^{\nu h_i ( n_{2\uparrow} - n_{2\downarrow} )} ... \sum_{h_i = \pm 1} e^{\nu h_i ( n_{N\uparrow} - n_{N\downarrow} )} \\
-&= (c_U)^N \sum_{h_i = \pm 1} e^{\sum_{i=0}^{N-1} [(\nu h_i ( n_{i\uparrow} - n_{i\downarrow} ) ]} \equiv (c_U)^N \text{Tr}_{\bm h} e^{\sum_{i=0}^{N-1} [(\nu h_i ( n_{i\uparrow} - n_{i\downarrow} ) ]} \\
-&= (c_U)^N \text{Tr}_{\bm h} e^{\sum_{i=0}^{N-1} \nu h_i n_{i\uparrow}} e^{-\sum_{i=0}^{N-1} \nu h_i n_{i\uparrow}} = (c_U)^N \text{Tr}_{\bm h} ( e^{\mathcal{H}_{V_\uparrow}} e^{\mathcal{H}_{V_\downarrow}} ) ,
+e^{-\Delta\tau \mathcal{H}_V} &=  (c_U)^N \sum_{\widetilde{h}_0 = \pm 1} e^{\nu \widetilde{h}_0 ( n_{0\uparrow} - n_{0\downarrow} )} \sum_{\widetilde{h}_1 = \pm 1} e^{\nu \widetilde{h}_1 ( n_{1\uparrow} - n_{1\downarrow} )} ... \sum_{\widetilde{h}_{N-1} = \pm 1} e^{\nu \widetilde{h}_{N-1} ( n_{N-1\uparrow} - n_{N-1\downarrow} )} \\
+&= (c_U)^N \sum_{ \{ \widetilde{h}_i = \pm 1 \}} e^{\sum_{i=0}^{N-1} [(\nu \widetilde{h}_i ( n_{i\uparrow} - n_{i\downarrow} ) ]} \equiv (c_U)^N \text{Tr}_{\widetilde{\bm h}} \bigg[ e^{\sum_{i=0}^{N-1} [(\nu \widetilde{h}_i ( n_{i\uparrow} - n_{i\downarrow} ) ]} \bigg] \\
+&= (c_U)^N \text{Tr}_{\widetilde{\bm h}} \bigg[ e^{\sum_{i=0}^{N-1} \nu \widetilde{h}_i n_{i\uparrow}} e^{-\sum_{i=0}^{N-1} \nu \widetilde{h}_i n_{i\downarrow}} \bigg] = (c_U)^N \text{Tr}_{\widetilde{\bm h}} \bigg[ e^{\mathcal{H}_{V_\uparrow}} e^{\mathcal{H}_{V_\downarrow}} \bigg] ,
 \end{split}
 \end{equation}
 where the spin up and spin down operators $\mathcal{H}_{V_\sigma}$ are defined as follows
 
 \begin{equation}
-\mathcal{H}_{V\sigma} = \sum_{i=0}^{N-1} \nu h_i n_{i\sigma} = \sigma \nu \bm c_\sigma^\dagger \bm V(\bm h) \bm c_\sigma,
+\mathcal{H}_{V\sigma} = \sum_{i=0}^{N-1} \nu \widetilde{h}_i n_{i\sigma} = \sigma \nu \bm c_\sigma^\dagger \bm V(\widetilde{\bm h}) \bm c_\sigma,
 \end{equation}
-with $\bm V(\bm h)$ being simply the HS-field put into a diagonal $N\times N$ matrix: $\bm V(\bm h) \equiv \text{diag}(h_0, h_1, ..., h_{N-1})$.
+with $\bm V(\widetilde{\bm h})$ being simply the HS-field put into a diagonal $N\times N$ matrix: $\bm V(\widetilde{\bm h}) \equiv \text{diag}(\widetilde{h}_0, \widetilde{h}_1, ..., \widetilde{h}_{N-1})$.
 
-For each imaginary time slice $l$, we may define a HS-field $\bm h_l$, which in turn specifies $\bm V_l$ and $\mathcal{H}_{V_\sigma}^l$.
+For each imaginary time slice $l$, we may define a HS-field $\widetilde{\bm h_l}$, which in turn specifies $\bm V_l$ and $\mathcal{H}_{V_\sigma}^l$.
+Note that the Hamiltonian has acquired a \say{ficticious} imaginary-time dependence that merely serves to enforce (imaginary-)time ordering, and independent Hilbert spaces at each slice.
 We may now replace the result of equation (\ref{eq:exp_quartic}) in equation (\ref{eq:Z_propagator}), and exchange the traces to obtain
 
 \begin{equation}\label{eq:Z_quadratic}
-Z  = \Tr_{\bm h} \Tr [ e^{-\int_0^\beta S_{\bm h}(\tau) d\tau } ] \approx (c_U)^{NL} \text{Tr}_{\bm h} \Tr \bigg[ \prod_{l=0}^{L-1} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\uparrow}} e^{\mathcal{H}_{V_\uparrow}^l} \bigg)}_{B_{l, \uparrow}(\bm h_l)} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\downarrow}} e^{\mathcal{H}_{V_\downarrow}^l} \bigg)}_{B_{l, \downarrow}(\bm h_l)} \bigg] ,
+Z  = (c_U)^{NL} \text{Tr}_{\bm h} \Tr \bigg[ \prod_{l=0}^{L-1} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\uparrow}} e^{\mathcal{H}_{V_\uparrow}^l} \bigg)}_{B_{l, \uparrow}(\widetilde{\bm h_l)}} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\downarrow}} e^{\mathcal{H}_{V_\downarrow}^l} \bigg)}_{B_{l, \downarrow}(\widetilde{\bm h_l)}} \bigg] ,
 \end{equation}
 where all operators are now quadratic in the fermion operators:
 
 \begin{equation}
-\mathcal{H}_{K_\sigma} = \bm c_\sigma^\dagger ( - t_\sigma \bm K_\sigma -\mu_\sigma \bm I ) \bm c_\sigma \quad \mathcal{H}_{V_\sigma}^l = \sigma \nu \bm c_\sigma^\dagger \bm V_l (\bm h_l) \bm c_\sigma
+\mathcal{H}_{K_\sigma} = \bm c_\sigma^\dagger ( - t_\sigma \bm K_\sigma -\mu_\sigma \bm I ) \bm c_\sigma \quad \mathcal{H}_{V_\sigma}^l = \sigma \nu \bm c_\sigma^\dagger \bm V_l (\widetilde{\bm h_l}) \bm c_\sigma
 \end{equation}
-for $\sigma = \pm 1$ and $\bm V_l ( \bm h_l ) = \text{diag} ( h_{l, 0} , h_{l, 1}, ... , h_{l, N-1} )$.
+for $\sigma = \pm 1$ and $\bm V_l ( \widetilde{\bm h_l} ) = \text{diag} ( h_{l, 0} , h_{l, 1}, ... , h_{l, N-1} )$.
 
 Furthermore, we have defined the $\bm B$-matrices
 
 \begin{equation}
-\bm B_{l, \sigma} ( \bm h_l ) = e^{\Delta \tau ( t_\sigma \bm K_\sigma + \mu_\sigma \bm I)} e^{\sigma \nu \bm V_l (\bm h_l)}
+\bm B_{l, \sigma} ( \widetilde{\bm h}_l ) = e^{\Delta \tau ( t_\sigma \bm K_\sigma + \mu_\sigma \bm I)} e^{\sigma \nu \bm V_l (\widetilde{\bm h_l)}}
 \end{equation}
 
-The problem of computing the partition function has been reduced to computing the trace of a product of exponentials of quadratic forms. Thus, we may still rewrite equation (\ref{eq:Z_quadratic}) by making use of the following identity.
+The problem of computing the partition function has been reduced to computing the trace of a product of exponentials of quadratic forms.
+Thus, we may still rewrite equation (\ref{eq:Z_quadratic}) by making use of the following identity.
 
 Let $\mathcal{H}_l$ be quadratic forms of the fermion operators:
 
@@ -206,16 +226,17 @@ It could then be easily extended to the more general case \cite{hanke_electronic
 The products of up and down spin $\bm B$-matrices give rise to a product of two such determinants, which may easily be deduced from the proof of appendix \ref{ap:theoAFQMC}.
 
 When applied to our problem, Eq.(\ref{eq:quadraticIdentity}) essentially makes the computation of the trace possible! Note that if we were to compute it naively, we would soon run out of computer memory.
-The dimension of the Hilbert space of the Hubbard model is exponential in the number of sites N (actually $4^N$). At worst, the determinant can be calculated in $\mathcal{O}(N^3)$ flops for a matrix whose size is polynomial in $N$. 
-Thus, the computable form of the partition function (\ref{eq:Z_quadratic}) is
+The dimension of the Hilbert space of the Hubbard model is exponential in the number of sites N (actually $4^N$).
+At worst, the determinant can be calculated in $\mathcal{O}(N^3)$ flops for a matrix whose size is polynomial in $N$, leading to a naive $\mathcal{O}(N^4)$ algorithm.
+The computable form of the partition function (\ref{eq:Z_quadratic}) is
 
 \begin{equation}\label{eq:effectiveDensityMatrix}
-Z =  \Tr_{\bm h} \bigg[ (c_U)^{NL} \text{det} [ \bm M_\uparrow (\bm h)] \text{det} [  \bm M_\downarrow (\bm h) ] \bigg] = \sum_{\{ \bm h \} } P ( \bm h ) \equiv \sum_c p_c
+Z =  \Tr_{\bm h} \bigg[ (c_U)^{NL} \text{det} [ \bm M_\uparrow (\bm h)] \text{det} [  \bm M_\downarrow (\bm h) ] \bigg] = \sum_{\{ \bm h \} } P ( \bm h ) \equiv \Tr_{\bm h} [ e^{-S(\bm h) } ]
 \end{equation}
 where the fermion matrices $\bm M_\sigma$ are defined in terms of the $\bm B$-matrices that depend on the HS-field $\bm h$:
 
 \begin{equation}
-\bm M_\sigma (\bm h) = \bm I + \bm B_{L,\sigma} ( \bm h_L) \bm B_{L-1,\sigma} ( \bm h_{L-1}) ... \bm B_{1\sigma} ( \bm h_1) = \bm I + \prod_{l= L -1}^0 \bm B_{l,\sigma} ( \bm h_l )
+\bm M_\sigma (\bm h) = \bm I + \bm B_{L-1,\sigma} ( \widetilde{\bm h}_{L-1}) \bm B_{L-2,\sigma} ( \widetilde{\bm h}_{L-2}) ... \bm B_{0,\sigma} ( \widetilde{\bm h}_0) = \bm I + \prod_{l= L -1}^0 \bm B_{l,\sigma} ( \widetilde{\bm h}_l )
 \end{equation}
 
 By casting the fermionic trace as a product of determinants, we obtained the computable approximation of the distribution operator $\mathcal{P}$ corresponding to $Z_{\beta}$ as advertised in Eq.(\ref{eq:Zsign}).
@@ -224,15 +245,15 @@ By casting the fermionic trace as a product of determinants, we obtained the com
 P(\bm h) = \frac{A}{Z_{\bm h}} \det [ \bm M_{\uparrow}(\bm h) ] \det [ \bm M_{\downarrow}(\bm h) ] ,
 \end{equation}
 where $A = (c_U)^{NL}$ is a normalization constant.
-This is now a distribution function over configurations $c$ of the field $\bm h$ since the problem is \say{classical} (the quotes serve to emphasize that $p_c$ can be negative)!
+This is now a distribution function over configurations of the field $\bm h$ since the problem is \say{classical} (the quotes serve to emphasize that $P (\bm h )$ can be negative)!
 
 For the particular case of no interactions $U = 0$, we have that $\nu = 0$, and $\bm M_\sigma (\bm h)$ are independent of the HS-field. 
 The Trotter-Suzuki approximation then becomes exact and the Hubbard Hamiltonian may be simulated exactly after evaluating $\bm M_\sigma (\bm h)$ a single time.
-No updates are required.
+Monte Carlo sampling is not required.
 
-We mapped a quantum problem to a \say{classical} problem with an extra imaginary-time dimension.
+We mapped a $d$-dimensional quantum problem to a $(d+1)$-dimensional \say{classical} problem with an extra imaginary-time dimension.
 Note that the size of the state space might have been increased to $2^{NL}$ (assuming that $L > 2$), and even if it didn't, it still remains exponential.
-However, it can be now be probed more easily: while we might have increased the number of possible configurations by introducing the mapping, we arrived at a form which is tractable by a standard Monte Carlo method, as described in the previous section.
+However, it can now be probed more easily: while we might have increased the number of possible configurations by introducing the mapping, we arrived at a form which is tractable by a standard Monte Carlo method, as described in the previous section.
 This is because we may now efficiently navigate through the exponentially large state space of the system using importance sampling.
 Schematically, the degrees of freedom of the quantum problem correspond to the $i$-indices of the $c$-operators.
 In our formulation, an additional imaginary time slice index $l$ was introduced, leading to a mapping that is not specific to the Hubbard model, but applies generally for any quantum system.
@@ -268,7 +289,7 @@ After the warm-up steps, we are correctly sampling from the required distributio
   \ELSE
   \STATE $\bm h = \bm h$
   \ENDIF
-  \STATE Next space-time \say{site}
+  \STATE \textbf{Next space-time \say{site}}
   \IF{$i < N - 1$}
   \STATE $l = l$ , $i = i +1 $
   \ELSE
@@ -298,7 +319,7 @@ r_{0 0} = \bigg[ 1 + \alpha_{0, \uparrow} ( 1 - \bm e_0^T \bm M_\uparrow^{-1} ( 
 where we defined the unit vectors $\bm e_0, \bm e_1, ..., \bm e_{N-1}$, and the ratios of determinants
 
 \begin{equation*}
-d_{i, \sigma} = 1 + \alpha_{i, \sigma} ( 1 - G^\sigma_{i i} ) \quad \text{with} \quad \alpha_{i, \sigma} = e^{-2 \sigma \nu h_{i, i}} - 1
+d_{i, \sigma} = 1 + \alpha_{i, \sigma} ( 1 - G^\sigma_{i i} ) \quad \text{with} \quad \alpha_{i, \sigma} = e^{-2 \sigma \nu h_{l i}} - 1
 \end{equation*}
 
 The most expensive operation is the computation of the $(0, 0)$ entry of $G^\sigma (\bm h)$.
@@ -306,7 +327,7 @@ However, this object is always computed in advance (it is the main object of the
 Whenever a step is accepted, the Green's matrices are updated in $\mathcal{O}(N^2)$ flops, and the acceptance ratio is recomputed as our notation suggests
 
 \begin{equation}
-\bm G^\sigma ( \bm h ) \leftarrow \bm G^\sigma ( \bm h ) - \frac{\alpha_{i, \sigma}}{r_{i, i}} \bm u_{i, \sigma} \bm w_{i, \sigma}^T \quad \quad r_{l i} = d_{i, \uparrow} d_{i, \downarrow} ,
+\bm G^\sigma ( \bm h ) \leftarrow \bm G^\sigma ( \bm h ) - \frac{\alpha_{i, \sigma}}{r_{l, i}} \bm u_{i, \sigma} \bm w_{i, \sigma}^T \quad \quad r_{l,i} = d_{i, \uparrow} d_{i, \downarrow} ,
 \end{equation}
 where $\bm u_{i, \sigma} = ( \bm I - \bm G^\sigma ( \bm h ) ) \bm e_i$, and $\bm w_{i, \sigma} = [ \bm G^\sigma (\bm h) ]^T \bm e_i$.
 
@@ -316,22 +337,22 @@ This block high rank update is a  \say{delayed update} in the sense that we avoi
 
 This procedure generalizes for all other time slices.
 First, note that the order of the operators in Eq.(\ref{eq:quadraticIdentity}) may be changed by using the cyclic property of the trace.
-Concomitantly, for example, when we advance to $l = 1$, we may write the $\bm M$-matrices by wrapping the equivalent $\widetilde{\bm M}$ matrices.
+Concomitantly, for example, when we advance to $l = 1$, we may write the $\bm M$-matrices by wrapping the equivalent $\widehat{\bm M}$ matrices:
 
 \begin{equation}
-\bm M_\sigma ( \bm h ) = \bm B_{0, \sigma}^{-1} ( \bm h_0 ) \widetilde{\bm M}_\sigma (\bm h) \bm B_{0, \sigma} ( \bm h_0 )  \, \quad \widetilde{\bm M}_\sigma (\bm h) = \bm I + \bm B_{0, \sigma} ( \bm h_0 ) \bm B_{L-1, \sigma} ( \bm h_{L-1} ) \bm B_{L-2, \sigma} ( \bm h_{L-2} ) ... \bm B_{1, \sigma} ( \bm h_1 )
+\bm M_\sigma ( \bm h ) = \bm B_{0, \sigma}^{-1} ( \widetilde{\bm h}_0 ) \widehat{\bm M}_\sigma (\bm h) \bm B_{0, \sigma} ( \widetilde{\bm h}_0 )  \, \quad \widehat{\bm M}_\sigma (\bm h) = \bm I + \bm B_{0, \sigma} ( \widetilde{\bm h}_0 ) \bm B_{L-1, \sigma} ( \widetilde{\bm h}_{L-1} ) \bm B_{L-2, \sigma} ( \widetilde{\bm h}_{L-2} ) ... \bm B_{1, \sigma} ( \widetilde{\bm h}_1 )
 \end{equation}
 
-The Metropolis ratio can be computed with $\widetilde{\bm M}$, and the Green's functions are also wrapped :
+The Metropolis ratio can be computed with $\widehat{\bm M}$, and the Green's functions are also wrapped :
 
 \begin{equation}
-r = \frac{\det[\bm M_\uparrow (\bm h'] \det[\bm M_\downarrow ( \bm h')]}{\det[\bm M_\uparrow (\bm h)] \det[\bm M_\downarrow ( \bm h)} = \frac{\det[\widetilde{\bm M}_\uparrow (\bm h'] \det[\widetilde{\bm M}_\downarrow ( \bm h')]}{\det[\widetilde{\bm M}_\uparrow (\bm h)] \det[\widetilde{\bm M}_\downarrow ( \bm h)} 
+r = \frac{\det[\bm M_\uparrow (\bm h')] \det[\bm M_\downarrow ( \bm h')]}{\det[\bm M_\uparrow (\bm h)] \det[\bm M_\downarrow ( \bm h)]} = \frac{\det[\widehat{\bm M}_\uparrow (\bm h')] \det[\widehat{\bm M}_\downarrow ( \bm h')]}{\det[\widehat{\bm M}_\uparrow (\bm h)] \det[\widehat{\bm M}_\downarrow ( \bm h)]} 
 \quad\quad
-\widetilde{\bm G^\sigma} ( \bm h_0) \leftarrow \bm B_{0, \sigma}( \bm h_0 ) \widetilde{\bm G}^\sigma (\bm h) \bm B_{0, \sigma}^{-1}  ( \bm h_0 )
+\widehat{\bm G}^\sigma ( \widetilde{\bm h}_0) = \bm B_{0, \sigma}( \widetilde{\bm h}_0 ) {\bm G}^\sigma (\bm h) \bm B_{0, \sigma}^{-1}  ( \widetilde{\bm h}_0 )
 \end{equation}
 
-The wrapping trick makes $B_{1, \sigma} ( \bm h_1)$ appear at the position of the $\widetilde{\bm M}$-matrix where $\bm B_{0, \sigma} ( \bm h_0)$ appeared for $l = 0$.
-Thus, we can use everything that was derived for $l = 0$ with the wrapped Green's functions $\widetilde{\bm G}$.
+The wrapping trick makes $B_{1, \sigma} ( \widetilde{\bm h}_1)$ appear at the position of the $\widehat{\bm M}$-matrix where $\bm B_{0, \sigma} ( \widetilde{\bm h}_0)$ appeared for $l = 0$.
+Thus, we can use everything that was derived for $l = 0$ with the wrapped Green's functions $\widehat{\bm G}^\sigma$.
 This is repeated consecutively as we advance in imaginary-time.
 
 Since the cost of wrapping is $\mathcal{O}(N^3)$, the cost of computing $r$ is essentially that of updating the Green's matrices.
@@ -342,13 +363,40 @@ When doing so, the stability of the product of the (potentially large) chain of 
 
 \subsection{Making measurements}
 
-In QMC simulations, physical observables are extracted by measuring them directly over the course of the sampling of the  configuration space. The single-particle (equal time) Green's Function is useful to obtain quantities such as density and kinetic energy. It turns out that it is simply the inverse of the $\bm M$-matrix that we already compute to obtain the acceptance ratio at each step.
+In QMC simulations, physical observables are extracted by measuring them directly over the course of the sampling of the  configuration space. The single-particle (equal time) Green's Function is useful to obtain quantities such as density and kinetic energy, and is simply the inverse of the $\bm M$-matrix that we already compute to obtain the acceptance ratio at each step.
+At imaginary-time $\tau = \Delta \tau \lambda$: 
 
-\begin{equation}
-G_{ij}^\sigma = \left\langle c_{i,\sigma} c_{j,\sigma}^\dagger \right\rangle_{\bm h} = \bigg( \bm M_\sigma^{-1} (\bm h) \bigg)_{ij} = \bigg( [\bm I + \prod_{l= L -1}^0 \bm B_{l,\sigma} ( \bm h_l ) ]^{-1} \bigg)_{ij}
+\begin{equation}\label{eq:eqG}
+G_{ij}^\sigma ( \tau, \tau) = \left\langle c_{i,\sigma} c_{j,\sigma}^\dagger \right\rangle_{\bm h} = \bigg( [\bm I + \prod_{l= \lambda - 1}^0 \bm B_{l,\sigma} ( \widetilde{\bm h}_l ) \prod_{l= L -1}^\lambda \bm B_{l,\sigma} ( \widetilde{\bm h}_l )  ]^{-1} \bigg)_{ij} \equiv \bigg( [\bm I + \bm B_{\bm h}^\sigma (\tau, 0) \bm B_{\bm h, }^\sigma (\beta, \tau)  ]^{-1} \bigg)_{ij}
 \end{equation}
 
-The equal time Green's function is a fermion average for a given HS-field configuration \cite{santos_introduction_2003}.
+The equal time Green's function is a fermion average for a given HS field configuration \cite{santos_introduction_2003}.
+For a fixed HS field, the problem becomes a free fermion problem, and one may use Wick's theorem to write down expressions for more complex observables.
+Eq.(\ref{eq:eqG}) is easily shown, and the proof offers some insight into how other observables are written in terms of $G_{ij}^\sigma (\tau, \tau)$ through Wick's theorem.
+In auxiliary field \ac{QMC}, we wish to compute averages of observables $O$ by sampling $\bm h$ configurations, and then averaging $O$ for fixed $\bm h$ (which is computed throughout the simulation) over these.
+Ignoring spin,
+
+\begin{equation}
+\begin{split}
+\left\langle O \right\rangle &= \frac{1}{Z} \Tr [ e^{-\beta \mathcal{H} } O ] = \sum_{\bm h} P (\bm h) \left\langle O \right\rangle_{\bm h} + \mathcal{O}(\Delta \tau^2 ) , \,\,
+\text{where} \\
+P ( \bm h ) &= \frac{C(\bm h) \det [ \bm I + \bm B_{\bm h} ( \beta, 0 ) ] }{\sum_{\bm h} C(\bm h) \det [ \bm I + \bm B_{\bm h} ( \beta, 0 )} \quad
+\left\langle O \right\rangle_{\bm h} = \frac{\Tr[ U_{\bm h} (\beta, \tau) O U_{\bm h} (\tau, 0)]}{\Tr [ U_{\bm h} (\beta, 0) ] } \\
+\end{split}
+\end{equation}
+and $U_{\bm h} ( \tau', \tau)$ is the imaginary-time evolution operator between $\tau$ and $\tau'$.
+Introducing a ficticious coupling $\eta$ to a one-body operator $O = \bm c^\dagger \bm A \bm c$ that can be taken back to zero later, we obtain 
+
+\begin{equation}
+\begin{split}
+\left\langle O \right\rangle_{\bm h} &= \partial_\eta \ln \Tr [ U_{\bm h} (\beta, \tau ) e^{\eta O} U_{\bm h} (\tau, 0) ] |_{\eta = 0} = \partial_\eta \ln \det [ \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta \bm A} \bm B_{\bm h} (\tau, 0)  ] |_{\eta = 0} \\
+&= \Tr \bigg[ \partial_\eta \ln  [ \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta \bm A} \bm B_{\bm h} (\tau, 0)  ] |_{\eta = 0} \bigg] = \Tr \bigg[ \bm B_{\bm h} (\tau, 0) ( \bm I + \bm B_{\bm h} ( \beta, 0 ) )^{-1} \bm B_{\bm h} ( \beta, \tau ) \bm A \bigg] \\
+&= \Tr \bigg[  \bigg( \bm I - ( \bm I + \bm B_{\bm h} ( \tau, 0 ) \bm B_{\bm h} (\beta, \tau) )^{-1} \bigg) \bm A \bigg]
+\end{split}
+\end{equation}
+
+In particular, for the case of the Green's function, i.e. $O = c_i c_j^\dagger$, $A_{xy} = \delta_{xj} \delta_{yi}$, leading to Eq.(\ref{eq:eqG}).
+
 
 The electron density may be obtained from the Green function
 
