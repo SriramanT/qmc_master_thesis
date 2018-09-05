@@ -15,19 +15,19 @@ where $i$ and $j$ label sites on the lattice; $c_{i,\sigma}^{(\dagger)}$ is an o
 A given physical observable of interest $\mathcal{O}$, such as the spin-spin correlation, or the magnetic susceptibility may be computed formally by
 
 \begin{equation}
-\left\langle \mathcal{O} \right\rangle = \text{Tr} ( \mathcal{O} \mathcal{P} )
+\left\langle \mathcal{O} \right\rangle = \text{Tr} [ \mathcal{O} \mathcal{P} ]
 \end{equation}
 where
 
 \begin{equation}\label{eq:projection}
-\mathcal{P} \equiv \frac{1}{Z} e^{-\beta \mathcal{H} } , \text{ with } Z = \text{Tr} ( e^{-\beta \mathcal{H} } )
+\mathcal{P} \equiv \frac{1}{Z} e^{-\beta \mathcal{H} } , \text{ with } Z = \text{Tr} [ e^{-\beta \mathcal{H} } ]
 \end{equation}
 
 The trace is taken over the Hilbert space corresponding to all possible configurations of the lattice occupation.
 Defining an orthonormal basis of this Hilbert space $\{ | \psi_\alpha \rangle | \alpha = 1, ... D \} $, where $D$ is the dimension of the Hilbert space, the partition function reads
 
 \begin{equation}\label{eq:z_asEigen}
-\Tr ( e^{-\beta \mathcal{H} } )= \sum_\alpha \left\langle \psi_\alpha | e^{-\beta \mathcal{H} } | \psi_\alpha \right\rangle
+\Tr [ e^{-\beta \mathcal{H} } ]= \sum_\alpha \left\langle \psi_\alpha | e^{-\beta \mathcal{H} } | \psi_\alpha \right\rangle
 \end{equation}
 
 There are four possible states at each site in the Hubbard model: $\left| \,\, \right\rangle$, $\left|\uparrow \right\rangle$, $\left|\downarrow\right \rangle$, $\left|\uparrow \downarrow \right\rangle $, corresponding, respectively, to no electron, a spin up or spin down electron, and two electrons of opposite spin occupying the site.

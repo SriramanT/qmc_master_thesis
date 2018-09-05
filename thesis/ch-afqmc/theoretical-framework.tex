@@ -15,7 +15,7 @@ Mean field theory may be formulated by applying the Hubbard Stratonovich (HS)  t
 In the \ac{GCE} (where we make $\mathcal{H} \mapsto \mathcal{H} - \mu \mathcal{N}$, $\mathcal{N}$ being the total particle number), the partition function may be written in terms of a functional integral\footnote{In the case of a discrete HS transformation, as the one we shall use in what follows, we actually have a sum instead of a functional integral. We use the notation $\Tr$ to refer to both cases depending on the context.} over a space-time dependent field of the exponential of a one-body action
 
 \begin{equation}
-Z = \Tr ( e^{-\beta \mathcal{H} } ) = \int \mathcal{D} \bm h \, e^{-S(\bm h) }  \equiv \Tr_{\bm h} [ e^{-S(\bm h)} ],
+Z = \Tr [ e^{-\beta \mathcal{H} } ] = \int \mathcal{D} \bm h \, e^{-S(\bm h) }  \equiv \Tr_{\bm h} [ e^{-S(\bm h)} ],
 \end{equation}
 which may be computed by Monte Carlo sampling.
 In mean field, we approximate the integral by replacing the functional integral by a constant times the exponential action itself evaluated at a single field $\bm h^\star$, for which the action has a minimum: $\partial_{\bm h} S( \bm h ) |_{\bm h = \bm h^\star} = 0$, and $\partial_{\bm h}^2 S( \bm h ) |_{\bm h = \bm h^\star} > 0$.
@@ -33,7 +33,7 @@ In section \ref{sec:exactSolutions}, we found exact solutions for particular ins
 Computing the partition function of a quantum system in equilibrium
 
 \begin{equation}\label{eq:partitionBeta}
-Z_\beta = \text{Tr} \big( e^{-\beta \mathcal{H} } \big) = \sum_{\alpha} \left\langle \psi_\alpha | e^{-\beta \mathcal{H} } | \psi_\alpha \right\rangle
+Z_\beta = \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \sum_{\alpha} \left\langle \psi_\alpha | e^{-\beta \mathcal{H} } | \psi_\alpha \right\rangle
 \end{equation}
 is equivalent to studying its \emph{imaginary} time evolution.
 The inverse temperature $\beta$ represents the imaginary time $\tau = it$, and $Z_\beta$ may be simply thought of as the wave function of the analogous quantum system at imaginary time $\beta$.
@@ -83,7 +83,7 @@ The Trotter-Suzuki decomposition leads to the sought approximate factorization t
 Dividing the imaginary time interval $[0, \beta ]$ into $L$ equal sub-intervals of small width $\Delta \tau = \beta / L$:
 
 \begin{equation}\label{eq:partBreak}
-Z =  \Tr \bigg( \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg) ,
+Z =  \Tr \bigg[ \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg] ,
 \end{equation}
 we obtain a form that is more amenable to computation.
 Actually, it also arises naturally by writing the matrix elements of the projection operator $\mathcal{P}$ as path integrals (here, time ordering is implicit \cite{hirsch_discrete_1983}):
@@ -95,13 +95,13 @@ Actually, it also arises naturally by writing the matrix elements of the project
 Then, the partition function only selects paths that are periodic in imaginary time:
 
 \begin{equation}
-Z = \text{Tr} \big( e^{-\beta \mathcal{H} } \big) = \sum_{\left| \psi_0 \right\rangle} \left\langle \psi_0 | e^{-\beta \mathcal{H}} | \psi_0 \right\rangle = \sum_{\{ \left| \psi_l \right\rangle \}} \prod_{l = 0}^{L - 1} \left\langle \psi_{l} | e^{-\Delta \tau \mathcal{H} } | \psi_{l+1} \right\rangle \delta_{0, L} = \Tr \bigg( \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg) ,
+Z = \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \sum_{\left| \psi_0 \right\rangle} \left\langle \psi_0 | e^{-\beta \mathcal{H}} | \psi_0 \right\rangle = \sum_{\{ \left| \psi_l \right\rangle \}} \prod_{l = 0}^{L - 1} \left\langle \psi_{l} | e^{-\Delta \tau \mathcal{H} } | \psi_{l+1} \right\rangle \delta_{0, L} = \Tr \bigg[ \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg] ,
 \end{equation}
 where we have $\left| \psi_L \right\rangle = \left| \psi_0 \right\rangle$, and we  recover the result of Eq.(\ref{eq:partBreak}) by simply reorganizing the summations over $\{ \left| \psi_l \right\rangle \}$, so as to make appear closure relations, resulting in unit operators in the Hilbert space of each slice.
 The \say{Trotter breakup} follows from truncating Eq.(\ref{eq:zassenhaus}), and keeping only the first order term in $\Delta \tau$.
 
 \begin{equation}\label{eq:Z_propagator}
-Z = \Tr \bigg( \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H}_{K} } e^{-\Delta\tau \mathcal{H}_{V} } \bigg) + \mathcal{O}(\Delta \tau^2) 
+Z = \Tr \bigg[ \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H}_{K} } e^{-\Delta\tau \mathcal{H}_{V} } \bigg] + \mathcal{O}(\Delta \tau^2) 
 \end{equation}
 
 The kinetic energy term is quadratic in the fermion operators, and is spin-independent and thus may be separated into spin up and spin down components
@@ -212,13 +212,13 @@ Thus, we may still rewrite equation (\ref{eq:Z_quadratic}) by making use of the 
 Let $\mathcal{H}_l$ be quadratic forms of the fermion operators:
 
 \begin{equation}
-\mathcal{H}_l = c_i^\dagger (H_l)_{ij} c_j,
+\mathcal{H}_l = c_i^\dagger (\bm H_l)_{ij} c_j,
 \end{equation}
-where the summation is implied, and where $H_l$ are real matrices.
+where the summation is implied, and where $\bm H_l$ are real matrices.
 Then, the following identity holds
 
 \begin{equation}\label{eq:quadraticIdentity}
-\Tr \big[ e^{-\mathcal{H}_1 } e^{-\mathcal{H}_2 } ... e^{-\mathcal{H}_L } \big] = \text{det} ( \bm I + e^{-H_L} e^{-H_{L-1}} ... e^{-H_1} )
+\Tr \big[ e^{-\mathcal{H}_1 } e^{-\mathcal{H}_2 } ... e^{-\mathcal{H}_L } \big] = \text{det} ( \bm I + e^{-\bm H_L} e^{-\bm H_{L-1}} ... e^{-\bm H_1} )
 \end{equation}
 
 For simplicity, in appendix \ref{ap:theoAFQMC}, we present the proof for a simpler case, corresponding to a single $\bm B$-matrix, i.e. a product of exponentials of two quadratic operators \cite{hirsch_two-dimensional_1985}.
@@ -330,6 +330,7 @@ Whenever a step is accepted, the Green's matrices are updated in $\mathcal{O}(N^
 \bm G^\sigma ( \bm h ) \leftarrow \bm G^\sigma ( \bm h ) - \frac{\alpha_{i, \sigma}}{r_{l, i}} \bm u_{i, \sigma} \bm w_{i, \sigma}^T \quad \quad r_{l,i} = d_{i, \uparrow} d_{i, \downarrow} ,
 \end{equation}
 where $\bm u_{i, \sigma} = ( \bm I - \bm G^\sigma ( \bm h ) ) \bm e_i$, and $\bm w_{i, \sigma} = [ \bm G^\sigma (\bm h) ]^T \bm e_i$.
+Notice that here, $\bm G^\sigma$ is the Green's matrix at slice $l$.
 
 Notice that only one entry of each of the Green's matrices is used at each step for sampling.
 To improve the efficiency of our implementation, we can compute only the relevant entry that is required for sampling until a sweep of the space lattice is completed, at which point we need to update the entire Green's function (since this final update has complexity $\mathcal{O}(N^3)$, the complexity of the algorithm does not change, although some speed-up is expected).
@@ -367,7 +368,7 @@ In QMC simulations, physical observables are extracted by measuring them directl
 At imaginary-time $\tau = \Delta \tau \lambda$: 
 
 \begin{equation}\label{eq:eqG}
-G_{ij}^\sigma ( \tau, \tau) = \left\langle c_{i,\sigma} c_{j,\sigma}^\dagger \right\rangle_{\bm h} = \bigg( [\bm I + \prod_{l= \lambda - 1}^0 \bm B_{l,\sigma} ( \widetilde{\bm h}_l ) \prod_{l= L -1}^\lambda \bm B_{l,\sigma} ( \widetilde{\bm h}_l )  ]^{-1} \bigg)_{ij} \equiv \bigg( [\bm I + \bm B_{\bm h}^\sigma (\tau, 0) \bm B_{\bm h, }^\sigma (\beta, \tau)  ]^{-1} \bigg)_{ij}
+G_{ij}^\sigma ( \tau, \tau) = \left\langle c_{i,\sigma} c_{j,\sigma}^\dagger \right\rangle_{\bm h} = \bigg( (\bm I + \prod_{l= \lambda - 1}^0 \bm B_{l,\sigma} ( \widetilde{\bm h}_l ) \prod_{l= L -1}^\lambda \bm B_{l,\sigma} ( \widetilde{\bm h}_l )  )^{-1} \bigg)_{ij} \equiv \bigg( (\bm I + \bm B_{\bm h}^\sigma (\tau, 0) \bm B_{\bm h, }^\sigma (\beta, \tau)  )^{-1} \bigg)_{ij}
 \end{equation}
 
 The equal time Green's function is a fermion average for a given HS field configuration \cite{santos_introduction_2003}.
@@ -387,16 +388,43 @@ P ( \bm h ) &= \frac{C(\bm h) \det [ \bm I + \bm B_{\bm h} ( \beta, 0 ) ] }{\sum
 and $U_{\bm h} ( \tau', \tau)$ is the imaginary-time evolution operator between $\tau$ and $\tau'$.
 Introducing a ficticious coupling $\eta$ to a one-body operator $O = \bm c^\dagger \bm A \bm c$ that can be taken back to zero later, we obtain 
 
-\begin{equation}
+\begin{equation}\label{eq:connected}
 \begin{split}
-\left\langle O \right\rangle_{\bm h} &= \partial_\eta \ln \Tr [ U_{\bm h} (\beta, \tau ) e^{\eta O} U_{\bm h} (\tau, 0) ] |_{\eta = 0} = \partial_\eta \ln \det [ \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta \bm A} \bm B_{\bm h} (\tau, 0)  ] |_{\eta = 0} \\
-&= \Tr \bigg[ \partial_\eta \ln  [ \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta \bm A} \bm B_{\bm h} (\tau, 0)  ] |_{\eta = 0} \bigg] = \Tr \bigg[ \bm B_{\bm h} (\tau, 0) ( \bm I + \bm B_{\bm h} ( \beta, 0 ) )^{-1} \bm B_{\bm h} ( \beta, \tau ) \bm A \bigg] \\
+\left\langle O \right\rangle_{\bm h} &= \partial_\eta \bigg( \ln \Tr \big[ U_{\bm h} (\beta, \tau ) e^{\eta O} U_{\bm h} (\tau, 0) \big] \bigg) \bigg|_{\eta = 0} = \partial_\eta \bigg( \ln \det [ \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta \bm A} \bm B_{\bm h} (\tau, 0)  ] \bigg) \bigg|_{\eta = 0} \\
+&=  \partial_\eta \bigg( \Tr \big[  \ln  ( \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta \bm A} \bm B_{\bm h} (\tau, 0)  ) \big] \bigg) \bigg|_{\eta = 0} = \Tr \big[ \bm B_{\bm h} (\tau, 0) ( \bm I + \bm B_{\bm h} ( \beta, 0 ) )^{-1} \bm B_{\bm h} ( \beta, \tau ) \bm A \big] \\
+&= \Tr \bigg[ ( \bm B^{-1} (\beta, \tau) \bm B^{-1} (\tau, 0) + \bm I )^{-1} ( \bm B (\tau, 0) \bm B (\beta, \tau) )^{-1} ( \bm B (\tau, 0) \bm B (\beta, \tau) ) \bm A \bigg]  \\
+&= \Tr \bigg[ ( \bm I + \bm B ( \tau, 0 ) \bm B ( \beta, \tau ) )^{-1} ( \bm I +  \bm B ( \tau, 0 ) \bm B ( \beta, \tau ) - \bm I ) \bm A \bigg] \\
 &= \Tr \bigg[  \bigg( \bm I - ( \bm I + \bm B_{\bm h} ( \tau, 0 ) \bm B_{\bm h} (\beta, \tau) )^{-1} \bigg) \bm A \bigg]
 \end{split}
 \end{equation}
 
-In particular, for the case of the Green's function, i.e. $O = c_i c_j^\dagger$, $A_{xy} = \delta_{xj} \delta_{yi}$, leading to Eq.(\ref{eq:eqG}).
+In particular, for the case of the Green's function: $O = c_i c_j^\dagger$, $A_{xy} = \delta_{i j} - \delta_{xj} \delta_{yi}$, leading to Eq.(\ref{eq:eqG}).
+A generalization of Eq.(\ref{eq:connected}) for higher order derivatives allows us to obtain the connected correlation functions, or cumulants (denoted $\left\langle\langle \quad \right\rangle\rangle_{\bm h}$), revealing a connection with Wick's theorem.
+Let
 
+\begin{equation}
+\left\langle\langle O_n O_{n-1}... O_1  \right\rangle\rangle_{\bm h} = \partial_{\eta_n} \partial_{\eta_{n-1}} ... \partial_{\eta_1} \ln \Tr [ U_{\bm h} (\beta, \tau ) e^{\eta_n O_n} e^{\eta_{n-1} O_{n-1}} ... e^{\eta_1 O_1} U_{\bm h} (\tau, 0) ] |_{\eta_n = \eta_{n-1} =...= \eta_1 = 0}
+\end{equation}
+we see a pattern emerging, relating multi-point correlators and cumulants.
+Omitting the subscript $\bm h$:
+
+\begin{equation}
+\begin{split}
+\left\langle\langle O_1  \right\rangle\rangle &= \left\langle O_1  \right\rangle \\
+\left\langle\langle O_2 O_1  \right\rangle\rangle &= \left\langle O_2 O_1  \right\rangle - \left\langle O_2  \right\rangle \left\langle O_1  \right\rangle \\
+\left\langle\langle O_3 O_2 O_1  \right\rangle\rangle &= \left\langle O_3 O_2 O_1  \right\rangle - \left\langle O_3  \right\rangle \left\langle\langle O_2 O_1  \right\rangle\rangle - \left\langle O_2  \right\rangle \left\langle\langle O_3 O_1  \right\rangle\rangle - \left\langle O_1  \right\rangle \left\langle\langle O_3 O_2  \right\rangle\rangle - \left\langle O_1  \right\rangle \left\langle O_2  \right\rangle \left\langle O_3  \right\rangle \\
+\left\langle O_n O_{n-1} ... O_1  \right\rangle &= \left\langle \left\langle O_n O_{n-1} ... O_1  \right\rangle\right\rangle + \sum_{j=1}^n  \big\langle \big\langle O_n ... \widehat{O_j} ... O_1  \big\rangle\big\rangle  \big\langle \big\langle O_j \big\rangle\big\rangle \\
+&+ \sum_{j >i} \big\langle \big\langle O_n ... \widehat{O_j} ... \widehat{O_i} ... O_1  \big\rangle\big\rangle  \big\langle \big\langle O_j O_i \big\rangle\big\rangle + ... + \left\langle\langle O_n  \right\rangle\rangle \left\langle\langle O_{n-1}  \right\rangle\rangle ... \left\langle\langle O_1  \right\rangle\rangle ,
+\end{split}
+\end{equation}
+where the operators with a hat $\widehat{O_j}$ are excluded from the sum.
+This is equivalent to the zero temperature version of Wick's theorem that we state in appendix \ref{ap:hubbardObSol}, Eq.(\ref{eq:wickState}).
+
+We can now compute the cumulants order by order.
+In particular, we can show that operators of the type 
+$\left\langle \left\langle c_{x_n}^\dagger c_{y_n} c_{x_{n-1}}^\dagger c_{y_{n-1}} ... c_{x_1}^\dagger c_{y_1}  \right\rangle\right\rangle_{\bm h}$
+can always be written in terms of a linear combination of products of pair averages of the type $\left\langle c^\dagger c \right\rangle$.
+A case of particular relevance for auxiliary field \ac{QMC} is obtained by doing so for a four operator average, i.e. $n = 2$.
 
 The electron density may be obtained from the Green function
 
