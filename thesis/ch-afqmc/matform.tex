@@ -403,4 +403,11 @@ When doing so, the stability of the product of the (potentially large) chain of 
 \subsection{Checkerboard Breakup}
 \label{subsec:checkerboard}
 
-In this section, we focus on computing the matrix exponential $\bm B = e^{t \Delta \tau \bm K}$.
+In this section, we focus on the computation of the matrix exponential $\bm B = e^{t \Delta \tau \bm K}$.
+Although the cost of computing it is small, and it is done only once in the initialization phase of the algorithm, if it is done naively, the resulting matrix is dense.
+This is undesired since it is multiplied repeatedly by other matrices throughout the algorithm, which has a high cost of order $\mathcal{O}(N^3)$.
+Diagonalizing and exponentiating $\bm K$ results in a dense matrix of $N^2$ elements.
+For uniform hoppings, we can use the \ac{FFT} and apply the kinetic energy $e^{\Delta \tau \bm K }$ in momentum space, in which $\bm K$ is diagonal.
+The drawback of this approach is two-fold: first, the system size becomes constrained to powers of 2, so that the \ac{FFT} can be applied efficiently, and, more importantly, we cannot apply it to nonuniform hoppings (which is precisely the case we are interested in in this work).
+
+A convenient, and sparse approximation of $\bm B$ in real space is available, and it is obtained simply by appling the Trotter breakup.

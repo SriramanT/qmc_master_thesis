@@ -8,9 +8,9 @@ This motivated the community to study other more complex graphene-like materials
 
 \begin{figure}[H]
 \hspace{1.5cm}
-\includegraphics[width = 3.2cm]{Introduction/graphene.png}
-\hspace{2cm}
-\includegraphics[width = 8cm]{Introduction/dispGraphene.png}
+\includegraphics[width = 2.8cm]{Introduction/graphene.png}
+\hspace{2.5cm}
+\includegraphics[width = 7cm]{Introduction/dispGraphene.png}
 \caption[Graphene monolayer; graphene's dispersion relation.]{Left: \acf{AFM} picture of a graphene monolayer. The black area is a substrate used for fabrication purposes. The dark orange area is a monolayer of graphene. Right: Dispersion relation of graphene. The Fermi energy is set to zero. Close to it, the dispersion relation is linear, corresponding to massless excitations (taken from \cite{castro_neto_electronic_2009}). }
 \label{fig:graphene}
 \end{figure}	
@@ -30,7 +30,7 @@ Valence bands arise out of the hybridization of the $d_{xy}$ and $d_{x^2 - y^2}$
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale = 0.25]{Introduction/tmd2.png}
+\includegraphics[scale = 0.28]{Introduction/tmd2.png}
  \caption[\ac{TMD} monolayer condensing in its 2H phase.
  $M-X$ honeycomb lattice.
  Unit cell of the trigonal prismatic (2H) phase of a \ac{TMD} monolayer.
@@ -41,7 +41,13 @@ Valence bands arise out of the hybridization of the $d_{xy}$ and $d_{x^2 - y^2}$
 
 \ac{2D} \acp{TMD} have been attracting interest because they seem to overcome some of the drawbacks of graphene in technological applications.
 For example, monolayer graphene is gapless, while its bilayer counterpart has a tunable, but small gap of the order of a tenth of an $eV$.
-Contrastingly, monolayer \acp{TMD} have an intrinsic gap in excess of $1 \, eV$, lying at the inequivalent $K$ points of the hexagonal Brillouin zone, being more promising in designing, for example, transistors.
+Contrastingly, monolayer \acp{TMD} are semiconductors, having an intrinsic gap in excess of $1 \, eV$, which lies at the inequivalent $K$ points of the hexagonal Brillouin zone.
+Thus, \acp{TMD} are more promising for designing, for example, transistors.
+More generally, since the direct band gap lies in the visible frequency range, and room temperature mobility is good, these semiconducting analogues of graphene are promising for electronic and optoelectronic applications.
+Perhaps even more striking is the appearance of an extra so called \emph{valley} degree of freedom.
+Since the valence and conduction band edges both lie at the two corners ($\pm K$) of the first Brillouin zone, electrons and holes can acquire a novel degree of freedom which can be used to encode and process information.
+Additionally, the presence of giant spin-orbit coupling and the lack of inversion symmetry lead to a strong coupling between valley and spin, suggesting that \acp{TMD} could allow the integration of spintronics and valleytronics.
+ 
 Hole-doped \acp{TMD} are expected to show topological superconductivity \cite{hsu_topological_2017}, while the superconducting phase of graphene has been predicted, but is not easily attained.
 Superconductivity in graphene-like \ac{2D} materials is important because it could boost high speed nanoelectronics.
 Moreover, the presence of transition metal atoms in \acp{TMD} suggests the possibility of magnetic ordering \cite{braz_valley_2017}, which could be very relevant in nanospintronics applications.
@@ -56,17 +62,18 @@ In particular, for the 2H phase, they may ultimately be attributed to the lack o
 This leads to spin splitting of the electronic bands driven by spin-orbit coupling.
 Because $K$ and $K'$ (or $-K$) no longer correspond to time reversal invariant momenta, the spin degeneracy of the valence and conduction bands is lifted at these points.
 Time reversal symmetry implies that the splitting is opposite at the $K$ and $K'$ points, leading to the band structure of Fig. (\ref{fig:tmdProp}d) (we show the part relevant for realistic charge-carrier concentrations).
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.37]{Introduction/tmdProp}
+ \caption[Structure and electronic properties of \ac{TMD} monolayers.]{(a) Examples of some of the possible structural phases of \ac{TMD} monolayers: trigonal prismatic (2H) with ABA stacking, distorted octahedral (1T), and dimerized octahedral (1T'), showing ABC stacking. (b) A periodic table of known \ac{TMD} layers. Shown are the transition metals involved, the existing phases (2H and/or 1T), and the possible electronic phases. (c) Calculated band structure (from density functional theory \cite{splendiani_emerging_2010} ) of $2H-\text{Mo}\text{S}_2$ for samples of decreasing thickness. (d) Representation of the band structure of monolayer $2H-\text{Mo}\text{S}_2$, showing the spin splitting (red for spin-up and blue for spin-down) of the bands near the corners of the Brillouin zone (K and K') points. \label{fig:tmdProp}}
+\end{figure}
+
 This property, known as spin-valley coupling, implies that the valley polarization of charge carriers directly translates into spin polarization, leading to an intrinsic property of \acp{TMD} that could allow one to design spintronic devices without resorting to magnetic materials \cite{manzeli_2d_2017}.
 More broadly, the possibilities afforded by the different compositions and structural phases listed in Fig.(\ref{fig:tmdProp}) lead to a vast array of electronic properties.
 On the one hand, the band structure and its metallic/insulating character vary quite substantially among \acp{TMD}.
 On the other hand, both highly nontrivial  correlated and topological phases arise within these materials.
 In this work, we investigate the properties of correlated phases in zigzag edged \ac{TMD} nanoribbons.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale = 0.35]{Introduction/tmdProp}
- \caption[Structure and electronic properties of \ac{TMD} monolayers.]{(a) Examples of some of the possible structural phases of \ac{TMD} monolayers: trigonal prismatic (2H) with ABA stacking, distorted octahedral (1T), and dimerized octahedral (1T'), showing ABC stacking. (b) A periodic table of known \ac{TMD} layers. Shown are the transition metals involved, the existing phases (2H and/or 1T), and the possible electronic phases. (c) Calculated band structure (from density functional theory \cite{splendiani_emerging_2010} ) of $2H-\text{Mo}\text{S}_2$ for samples of decreasing thickness. (d) Representation of the band structure of monolayer $2H-\text{Mo}\text{S}_2$, showing the spin splitting (red for spin-up and blue for spin-down) of the bands near the corners of the Brillouin zone (K and K') points. \label{fig:tmdProp}}
-\end{figure}
 
 \subsection{Nanoribbons}\label{subsec:nanoribbons}
 
@@ -77,7 +84,7 @@ On the other direction, we use \acp{OBC}, effectively considering zigzag edges (
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale = 0.35]{Introduction/nanoribbons}
+\includegraphics[scale = 0.3]{Introduction/nanoribbons}
 \caption[Fabrication of \ac{TMD} nanoribbons]{Fabrication of \ac{TMD} nanoribbons. From left to right, we see \ac{AFM} images showing the appeareance of nanostructures ranging from \ac{2D} nanoislands to nanoribbons, as the temperature of the substrate is increased. The nanoribbons are grown by taking advantage of the temperature dependence of shape transformations occuring during the nonequilibrium growth of surface-based nanostructures (taken from \cite{chen_fabrication_2017}).}
 \label{fig:fabrication}
 \end{figure}
@@ -85,7 +92,7 @@ On the other direction, we use \acp{OBC}, effectively considering zigzag edges (
 \begin{figure}[H]
 \vspace{-0.5cm}
 \centering
-\includegraphics[scale = 0.42]{Introduction/grapheneNanoribbons.jpg}
+\includegraphics[scale = 0.38]{Introduction/grapheneNanoribbons.jpg}
 \caption[(TEM) images of graphene nanoribbons.]{(a) to (d) - Transmission electron microscopy (TEM) images of graphene nanoribbons (GNRs) of widths 15, 30, 40, and 60 $nm$, respectively (adapted from \cite{mohanty_nanotomy-based_2012}).}
 \label{fig:graphNano}
 \end{figure}
@@ -122,9 +129,20 @@ The particular arrangement of the electronic edge states leads to an \ac{AF} gro
 \subsection{Effective three-band minimal tight-binding model}\label{subsec:threeband}
 
 In this section, we present a minimal model describing the low energy physics of group 6 \acs{TMD} monolayers \cite{liu_three-band_2013}.
-To obtain this tight-binding model, one uses the symmetries of the monolayers, and the fact that conduction and valence band edges have major contributions from $d_{z^2}$, $d_{xy}$, and $d_{x^2 - y^2}$ orbitals of $M$-atoms.
+To obtain this tight-binding model, one uses the symmetries of the monolayers, and the fact that conduction and valence band edges have major contributions from $d_{z^2}$, $d_{xy}$, and $d_{x^2 - y^2}$ orbitals of M-atoms at the $K$ points.
 This is illustrated for $\text{Mo}\text{S}_2$ in Fig.(\ref{fig:energiesTMDs}).
-Near the Fermi energy, the $\text{Mo}$ $d$-orbitals are clearly more populated at the $K$ point (circled in orange), hence these states contribute more to the energy dispersion near the $K$ points.
+Near the Fermi energy, the $\text{Mo}$ $d$-orbitals are clearly more populated at the $K$ point (circled in orange), hence these Bloch  states contribute more to the energy dispersion near that point.
+
+One of the members of the $D_{3h}$ point-group describing the symmetry of \ac{TMD} monolayers is the reflection operator by the $x-y$ plane (see Fig.(\ref{fig:tmdHex})).
+This imposes the restriction that hybridization occurs only between the $d_{z^2}$, $d_{xy}$, and $d_{x^2 - y^2}$ orbitals\footnote{$d_{yz}$ and $d_{xz}$ orbitals are not symmetric under reflection upon the $x-y$ plane.}, which motivates us to construct a three-band model.
+Moreover, the dimension of the irreducible representation of $D_{3h}$ imposes a constraint on the number of independent hopping parameters.
+By fitting to first principles results obtained from density functional theory (using both the local-density and the generalized gradient approximations - LDA and GCA) for the materials' energy bands, we obtain the hopping parameters.
+The strategy that is chosen to do the fit in \cite{liu_three-band_2013} is to fit the band energies at the high-symmetry $\bm k$-points $\Gamma$, $K$, and $M$, and the energies of the valence and conduction bands near $K$ by least-squares.
+This procedure leads to a non-uniform nearest neighbor (NN) hopping matrix on the M-atom triangular lattice.
+
+Note that since the argument is purely based on symmetry, in general, the $d-d$ hoppings include both direct $d-d$ interactions of M atoms, and indirect ones, mediated by $X-p$ orbitals.
+These M-M hoppings suffice to describe the band-edge properties near the $\pm K$ valleys.
+By including third nearest neighbor hoppings, one can reproduce the energy dispersion in  the entire first Brillouin zone.
 
 \begin{figure}[H]
 \centering
@@ -135,21 +153,33 @@ The panels represent the contributions from: (a) $\text{Mo}$ $d$-orbitals; (b) A
 \label{fig:energiesTMDs}
 \end{figure}	
 
-By fitting to first principles results obtained from density functional theory for the materials' energy bands, we obtain the hopping parameters.
-This procedure leads to a non-uniform nearest neighbor (NN) hopping matrix on the $M$-atom triangular lattice.
-Since the argument is purely based on symmetry, in general, the $d-d$ hoppings include both direct $d-d$ interactions of $M$ atoms, and indirect ones, mediated by $X-p$ orbitals.
-These $M$-$M$ hoppings suffice to describe the band-edge properties near the $\pm K$ valleys.
-By including third nearest neighbor hoppings, one can reproduce the energy dispersion in  the entire first Brillouin zone.
-
-We start by introducing the spinless model, and then generalize it to include spin-orbit coupling.
-Let the greek indices represent orbital space, and, for now, ignore spin.
+We start by introducing the \say{spinless} model, and then generalize it to include spin-orbit coupling.
+Let the greek indices represent orbital space, except for $\sigma$, meaning spin.
 Then, the Hamiltonian reads
 
 \begin{equation}
-\mathcal{H} = \sum_{i, j} \sum_{\alpha, \beta} c_{i,\alpha}^\dagger t_{\alpha \beta} ( \bm R_i - \bm R_j ) c_{j, \beta}
+\mathcal{H} = \sum_{i, j, \sigma} \sum_{\alpha, \beta} c_{i,\alpha}^\dagger t_{\alpha \beta}^\sigma ( \bm R_i - \bm R_j ) c_{j, \beta} = \sum_{i, j} \sum_{\alpha, \beta} c_{i,\alpha}^\dagger t_{\alpha \beta} ( \bm R_i - \bm R_j ) c_{j, \beta} , \, \text{since} \,  t_{\alpha \beta}^\uparrow ( \bm R )  = t_{\alpha \beta}^\downarrow ( \bm R ) \equiv \frac{1}{2} t_{\alpha \beta} ( \bm R )
+\end{equation}
+where we consider the basis set $\{ \left| \alpha \right\rangle \}_{\alpha = 1}^3 = \{ (d_{z^2}) , (d_{x y}, d_{ x^2 - y^2 }) \} $.
+Here, we split the basis into two orbital categories based on which irreducible representation of the $D_{3h}$ group they belong to.
+Let index $j$ run through the orbital categories, and $\mu$ through the basis elements, so that the orbitals $\left| \phi_\mu^j \right\rangle$ are
+
+\begin{equation}
+\left| \phi_1^1 \right\rangle = d_{z^2} \quad \left| \phi_1^2 \right\rangle = d_{xy} \quad \left| \phi_2^2 \right\rangle = d_{x^2 - y^2} 
 \end{equation}
 
-Considering the basis set $\{ d_{z^2} , d_{x y}, d_{ x^2 - y^2 } \} $, the on-site energies $\varepsilon_j$ corresponding to the atomic orbitals $\left| \phi_\mu^j \right\rangle$ appear through $\bm t ( \bm 0 ) = \text{diag} ( \varepsilon_1, \varepsilon_2, \varepsilon_2 )$, while the NN hoppings are (see Fig.(\ref{fig:tmdHex}))
+By symmetry, there are eight independent parameters, which we choose as some of the hopping integrals $t_{\mu \nu}^{j k} ( \bm R_i ) = \left\langle \phi_\mu^j ( \bm r ) | \mathcal{H} | \phi_{\nu}^k ( \bm r - \bm R_i ) \right\rangle$.
+The remaining ones can be obtained from $t^{jk} ( \bm G_n \bm R_i ) = \bm D^j ( \bm G_n ) t^{j k} ( \bm R_i ) [ \bm D^k ( \bm G_n ) ]^\dagger$, where $\bm D_j ( \bm G_n )$ is the $N_j \times N_j$ matrix of the j-th irreducible representation, and the $\bm G$-matrices are a subset of the symmetry operations of the $D_{3h}$ group \cite{braz_electronic_2015,liu_three-band_2013}.
+Let 
+
+\begin{equation}
+\begin{split}
+\varepsilon_1 &= t_{11}^{11} ( \bm 0 ) \quad \varepsilon_2 = t_{22}^{11} ( \bm 0 ) = t_{22}^{22} ( \bm 0 ) \quad t_0 = t_{11}^{11} ( \bm R_1 ) \quad t_1 = t_{11}^{12} ( \bm R_1 ) \\
+t_2 &= t_{12}^{12} ( \bm R_1 ) \quad t_{11} = t_{11}^{22} ( \bm R_1 ) \quad t_{12} = t_{12}^{22} ( \bm R_1 ) \quad t_{22} = t_{22}^{22} ( \bm R_1 )
+\end{split}
+\end{equation}
+
+The on-site energies $\varepsilon_j$ corresponding to the atomic orbitals $\left| \phi_\mu^j \right\rangle$ appear through a diagonal hopping matrix in orbital space $\bm t ( \bm 0 ) = \text{diag} ( \varepsilon_1, \varepsilon_2, \varepsilon_2 )$, while the NN hoppings are (see Fig.(\ref{fig:tmdHex}))
 
 \begin{equation}
 \bm t ( \bm R_{1, 4} ) =
@@ -168,3 +198,26 @@ t_0 & \Pm \bigg( \pm \frac{1}{2} t_1 - \frac{\sqrt{3}}{2} t_2 \bigg) & \mp \frac
 \pm \frac{\sqrt{3}}{2} t_1 - \frac{1}{2} t_2 & \Pm \bigg( \frac{\sqrt{3}}{4} ( t_{22} - t_{11} ) \pm t_{12} \bigg) & \frac{1}{4} ( 3 t_{11} + t_{22} )
 \end{pmatrix}
 \end{equation}
+
+The heavy transition metal $\text{M}$-atoms have large spin-orbit coupling, which persists in $\text{M}\text{X}_2$ monolayers.
+We model it by a minimal on-site term $\lambda \bm L \cdot \bm S$ for $\text{M}$-atoms that does not mix up and down-spins.
+Thus, the \say{on-site matrices} become spin-dependent, while the $t_{\alpha \beta}^\sigma ( \bm R_i \neq \bm 0 ) $ remain unchanged.
+This is shown by acting with $\lambda \bm L \cdot \bm S$ upon our basis states explicitly.
+Although this produces states outside of the Hilbert space, these can be safely projected out since they are not allowed by symmetry \cite{liu_three-band_2013,braz_electronic_2015}.
+
+\begin{equation}
+t_{\alpha \beta}^\sigma ( \bm 0 ) \rightarrow t_{\alpha \beta}^\sigma ( \bm 0 ) + \frac{\sigma \lambda}{2} \bm L_0 , \, \bm L_0 =
+\begin{pmatrix}
+0 & 0 & 0 \\
+0 & 0 & 2i \\
+0 & -2i & 0 
+\end{pmatrix}
+, \,\, \text{where} \,\,  \sigma = \pm 1
+\end{equation}
+
+Spin-orbit coupling is important because it is responsible for the splitting of the valence band maximum by $\Delta_{\text{SOC}}^v = 2 \lambda$.
+The conduction band minimum remains degenerate (although a finite small splitting $\Delta_{\text{SOC}}^c$ arises when considering perturbations due to the $d$ orbitals that are not considered in our minimal model).
+
+The minimal model we presented is very rich, and can be used to study many-body physics, for example by adding Hubbard-type interaction terms.
+Moreover, it can be used to study edge state physics by imposing appropriate boundary conditions on the hopping matrix.
+We will follow this route by numerically solving  an interacting extension of the model for a nanoribbon using \ac{QMC}.

@@ -2873,6 +2873,105 @@
       \endverb
       \keyw{nanoribbons,tmd}
     \endentry
+    \entry{liu_three-band_2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fcc911878c164d26085ea1f484fd4eb9}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Gui-Bin},
+           giveni={G\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=b545fc883aea552017ca0f5a772c6855}{%
+           family={Shan},
+           familyi={S\bibinitperiod},
+           given={Wen-Yu},
+           giveni={W\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=ed543cfa89de1fe2082396131703241e}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Yugui},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bca84b8be8dfdf75206a80fe59c55e35}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Wang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=cc1352d1711338afe7b3f3b971e85c13}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Di},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{254db7dc0f171cd260a16b0dd24c846a}
+      \strng{fullhash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \strng{bibnamehash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \strng{authorbibnamehash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \strng{authornamehash}{254db7dc0f171cd260a16b0dd24c846a}
+      \strng{authorfullhash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a three-band tight-binding ({TB}) model for describing the low-energy physics in monolayers of group-{VIB} transition metal dichalcogenides {MX}2 (M=Mo, W; X=S, Se, Te). As the conduction- and valence-band edges are predominantly contributed by the dz2, dxy, and dx2−y2 orbitals of M atoms, the {TB} model is constructed using these three orbitals based on the symmetries of the monolayers. Parameters of the {TB} model are fitted from the first-principles energy bands for all {MX}2 monolayers. The {TB} model involving only the nearest-neighbor M-M hoppings is sufficient to capture the band-edge properties in the ±K valleys, including the energy dispersions as well as the Berry curvatures. The {TB} model involving up to the third-nearest-neighbor M-M hoppings can well reproduce the energy bands in the entire Brillouin zone. Spin-orbit coupling in valence bands is well accounted for by including the on-site spin-orbit interactions of M atoms. The conduction band also exhibits a small valley-dependent spin splitting which has an overall sign difference between {MoX}2 and {WX}2. We discuss the origins of these corrections to the three-band model. The three-band {TB} model developed here is efficient to account for low-energy physics in {MX}2 monolayers, and its simplicity can be particularly useful in the study of many-body physics and physics of edge states.}
+      \field{day}{26}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{8}
+      \field{number}{8}
+      \field{shortjournal}{Phys. Rev. B}
+      \field{title}{Three-band tight-binding model for monolayers of group-{VIB} transition metal dichalcogenides}
+      \field{urlday}{14}
+      \field{urlmonth}{8}
+      \field{urlyear}{2018}
+      \field{volume}{88}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{085433}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.88.085433
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/Users/franciscobrito/Zotero/storage/7PYF872E/PhysRevB.88.html:text/html;Liu2013-erratum.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Liu2013-erratum.pdf:application/pdf;Liu2013.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Liu2013.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.88.085433
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.88.085433
+      \endverb
+    \endentry
+    \entry{braz_electronic_2015}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=08dfacdcb98662ad4c4db3878155585c}{%
+           family={Braz},
+           familyi={B\bibinitperiod},
+           given={João\bibnamedelimb Eduardo\bibnamedelima Henriques},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {{IST} Lisbon}%
+      }
+      \strng{namehash}{08dfacdcb98662ad4c4db3878155585c}
+      \strng{fullhash}{08dfacdcb98662ad4c4db3878155585c}
+      \strng{bibnamehash}{08dfacdcb98662ad4c4db3878155585c}
+      \strng{authorbibnamehash}{08dfacdcb98662ad4c4db3878155585c}
+      \strng{authornamehash}{08dfacdcb98662ad4c4db3878155585c}
+      \strng{authorfullhash}{08dfacdcb98662ad4c4db3878155585c}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The now decade-old discovery of two-dimensional materials has originated a wealth of new physics to explore and apply. Although the star of this discovery has been graphene, other materials have accompanied it since the beginning of the isolation and study of these novel sys- tems. A class of such materials are the transition metal dichalcogenides, sharing features such as a honeycomb lattice and topologically non-trivial Dirac cones. These materials, however, possess a band gap and, due to the high atomic number of transition metals, display sizeable effects of spin-orbit coupling. The research work presented here has been an effort to further understand the nature and con- sequences of electronic interactions to the single-electron description and the existence of a possible broken symmetry phase. To that end, the study and review of an established efctive band model for these systems has been carried out, from which a low-energy description was derived. Using this theory, the self-energy correction to the bare propagator in the Hartree-Fock approx- imation was computed. Due to the expectedly feeble screening in a gapped 2D material, a long-range Coulomb interaction was considered. A renormalization of the gap was estimated for both the undoped and the hole doped system. A Hubbard model for this theory was then used to predict the possible existence of a spin and valley polarized phase in the hole doped system. It is shown that this phase displays an anoma- lous Hall response.}
+      \field{month}{11}
+      \field{title}{Electronic Properties of Single-layered Transition Metal Dichalcogenides}
+      \field{type}{phdthesis}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Braz2015.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/thesis-examples/Braz2015.pdf:application/pdf
+      \endverb
+      \keyw{tmd}
+    \endentry
     \entry{metropolis_monte_1949}{article}{}
       \name{author}{2}{}{%
         {{hash=2b73f47a1a84dd52f45fe57c381c3786}{%
@@ -3401,8 +3500,8 @@
       \strng{authorbibnamehash}{6db5d9f5c09df251f82e8451c3698053}
       \strng{authornamehash}{23a435461d7a906bbe96c6a5f6702b06}
       \strng{authorfullhash}{6db5d9f5c09df251f82e8451c3698053}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{16}
@@ -3435,8 +3534,8 @@
       \endverb
     \endentry
     \entry{noauthor_quest_2012}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labeltitlesource}{title}
       \field{month}{4}
       \field{title}{{QUEST} User’s Manual}
@@ -3444,73 +3543,6 @@
       \field{dateera}{ce}
       \verb{file}
       \verb manual.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/software-documentation/quest/manual.pdf:application/pdf
-      \endverb
-    \endentry
-    \entry{liu_three-band_2013}{article}{}
-      \name{author}{5}{}{%
-        {{hash=fcc911878c164d26085ea1f484fd4eb9}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Gui-Bin},
-           giveni={G\bibinithyphendelim B\bibinitperiod}}}%
-        {{hash=b545fc883aea552017ca0f5a772c6855}{%
-           family={Shan},
-           familyi={S\bibinitperiod},
-           given={Wen-Yu},
-           giveni={W\bibinithyphendelim Y\bibinitperiod}}}%
-        {{hash=ed543cfa89de1fe2082396131703241e}{%
-           family={Yao},
-           familyi={Y\bibinitperiod},
-           given={Yugui},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=bca84b8be8dfdf75206a80fe59c55e35}{%
-           family={Yao},
-           familyi={Y\bibinitperiod},
-           given={Wang},
-           giveni={W\bibinitperiod}}}%
-        {{hash=cc1352d1711338afe7b3f3b971e85c13}{%
-           family={Xiao},
-           familyi={X\bibinitperiod},
-           given={Di},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{254db7dc0f171cd260a16b0dd24c846a}
-      \strng{fullhash}{bbf60e1dea0d2d070519a2826b2b44df}
-      \strng{bibnamehash}{bbf60e1dea0d2d070519a2826b2b44df}
-      \strng{authorbibnamehash}{bbf60e1dea0d2d070519a2826b2b44df}
-      \strng{authornamehash}{254db7dc0f171cd260a16b0dd24c846a}
-      \strng{authorfullhash}{bbf60e1dea0d2d070519a2826b2b44df}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{We present a three-band tight-binding ({TB}) model for describing the low-energy physics in monolayers of group-{VIB} transition metal dichalcogenides {MX}2 (M=Mo, W; X=S, Se, Te). As the conduction- and valence-band edges are predominantly contributed by the dz2, dxy, and dx2−y2 orbitals of M atoms, the {TB} model is constructed using these three orbitals based on the symmetries of the monolayers. Parameters of the {TB} model are fitted from the first-principles energy bands for all {MX}2 monolayers. The {TB} model involving only the nearest-neighbor M-M hoppings is sufficient to capture the band-edge properties in the ±K valleys, including the energy dispersions as well as the Berry curvatures. The {TB} model involving up to the third-nearest-neighbor M-M hoppings can well reproduce the energy bands in the entire Brillouin zone. Spin-orbit coupling in valence bands is well accounted for by including the on-site spin-orbit interactions of M atoms. The conduction band also exhibits a small valley-dependent spin splitting which has an overall sign difference between {MoX}2 and {WX}2. We discuss the origins of these corrections to the three-band model. The three-band {TB} model developed here is efficient to account for low-energy physics in {MX}2 monolayers, and its simplicity can be particularly useful in the study of many-body physics and physics of edge states.}
-      \field{day}{26}
-      \field{journaltitle}{Physical Review B}
-      \field{month}{8}
-      \field{number}{8}
-      \field{shortjournal}{Phys. Rev. B}
-      \field{title}{Three-band tight-binding model for monolayers of group-{VIB} transition metal dichalcogenides}
-      \field{urlday}{14}
-      \field{urlmonth}{8}
-      \field{urlyear}{2018}
-      \field{volume}{88}
-      \field{year}{2013}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{085433}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevB.88.085433
-      \endverb
-      \verb{file}
-      \verb APS Snapshot:/Users/franciscobrito/Zotero/storage/7PYF872E/PhysRevB.88.html:text/html;Liu2013-erratum.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Liu2013-erratum.pdf:application/pdf;Liu2013.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Liu2013.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://link.aps.org/doi/10.1103/PhysRevB.88.085433
-      \endverb
-      \verb{url}
-      \verb https://link.aps.org/doi/10.1103/PhysRevB.88.085433
       \endverb
     \endentry
     \entry{fazekas_lecture_1999}{book}{}
@@ -4360,8 +4392,8 @@
       \strng{authorbibnamehash}{5ecae643825cd4b71c24d994dbd4253a}
       \strng{authornamehash}{5ecae643825cd4b71c24d994dbd4253a}
       \strng{authorfullhash}{5ecae643825cd4b71c24d994dbd4253a}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Physique du Solide {III} et {IV}}
