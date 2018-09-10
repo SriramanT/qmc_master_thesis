@@ -14,17 +14,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Beyond graphene: TMD nanoribbons}{5}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Introduction to \acl {QMC}}{9}{section.1.4}
+\contentsline {subsection}{\numberline {1.3.1}Electronic properties}{7}{subsection.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}Variational Monte Carlo}{11}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.3.2}Nanoribbons}{8}{subsection.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Diffusion Monte Carlo and projective methods}{11}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.3.3}Effective three-band minimal tight-binding model}{9}{subsection.1.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}Auxiliary Field \acs {QMC} and the Fermion Sign Problem}{13}{subsection.1.4.3}
+\contentsline {section}{\numberline {1.4}Introduction to \acl {QMC}}{10}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Original Contributions}{14}{section.1.5}
+\contentsline {subsection}{\numberline {1.4.1}Variational Monte Carlo}{12}{subsection.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Outline}{15}{section.1.6}
+\contentsline {subsection}{\numberline {1.4.2}Diffusion Monte Carlo and projective methods}{13}{subsection.1.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.3}Auxiliary Field \acs {QMC} and the Fermion Sign Problem}{14}{subsection.1.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Original Contributions}{16}{section.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Outline}{16}{section.1.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Minimal models of electron correlations in energy bands}{17}{chapter.2}
 \defcounter {refsection}{0}\relax 
@@ -64,39 +70,51 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.6.2}Mean field theory of the Hubbard model}{43}{subsection.2.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Simulatable variants of the Hubbard model and }{45}{section.2.7}
+\contentsline {subsection}{\numberline {2.6.3}Self-consistent solution in the \ac {GCE}}{45}{subsection.2.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Auxiliary Field Quantum Monte Carlo}{47}{chapter.3}
+\contentsline {section}{\numberline {2.7}Simulatable variants of the Hubbard model}{46}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Monte Carlo Method in Statistical Physics}{48}{section.3.1}
+\contentsline {chapter}{\numberline {3}Auxiliary Field Quantum Monte Carlo}{49}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Theoretical framework}{55}{section.3.2}
+\contentsline {section}{\numberline {3.1}Monte Carlo Method in Statistical Physics}{50}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Trotter-Suzuki Decomposition}{55}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.2}Theoretical Framework and Mathematical Formulation}{57}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Monte Carlo sampling of the HS-field}{60}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.1}Trotter-Suzuki Decomposition}{57}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Making measurements}{62}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.2}Hubbard-Stratonovich transformation}{59}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Correlation functions}{64}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.3}Single-particle propagators and the fermionic trace}{61}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Applications}{67}{chapter.4}
+\contentsline {subsection}{\numberline {3.2.4}Monte Carlo sampling of the HS-field}{62}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}One-dimensional Hubbard Chain}{68}{section.4.1}
+\contentsline {subsection}{\numberline {3.2.5}Checkerboard Breakup}{64}{subsection.3.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Square lattice}{68}{section.4.2}
+\contentsline {section}{\numberline {3.3}Measurements}{65}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Honeycomb lattice}{68}{section.4.3}
+\contentsline {subsection}{\numberline {3.3.1}Obtaining observables in terms of Green's functions}{67}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Nanoribbons}{68}{section.4.4}
+\contentsline {subsection}{\numberline {3.3.2}Correlation functions}{67}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Graphene}{68}{subsection.4.4.1}
+\contentsline {section}{\numberline {3.4}Stabilization}{68}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}\acp {TMD}}{69}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {4}Applications}{69}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{71}{chapter.5}
+\contentsline {section}{\numberline {4.1}One-dimensional Chain}{70}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{73}{section*.54}
+\contentsline {section}{\numberline {4.2}Square lattice}{70}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Honeycomb lattice}{70}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Nanoribbons}{70}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Graphene}{71}{subsection.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.2}\acp {TMD}}{72}{subsection.4.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{73}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{75}{section*.56}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
@@ -112,7 +130,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.6}On the finite temperature Wick's theorem}{A-12}{section.A.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix \numberline {B}Theoretical Formulation of Auxiliary Field Quantum Monte Carlo}{B-1}{appendix.B}
+\contentsline {chapter}{Appendix \numberline {B}Formulating Auxiliary Field Quantum Monte Carlo}{B-1}{appendix.B}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {B.1}Casting the fermionic trace as a determinant}{B-2}{section.B.1}
 \defcounter {refsection}{0}\relax 

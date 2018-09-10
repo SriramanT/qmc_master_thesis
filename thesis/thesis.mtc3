@@ -1,6 +1,11 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Monte Carlo Method in Statistical Physics}{\reset@font\mtcSfont 48}{section.3.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Theoretical framework}{\reset@font\mtcSfont 55}{section.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Trotter-Suzuki Decomposition}{\reset@font\mtcSSfont 55}{subsection.3.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Monte Carlo sampling of the HS-field}{\reset@font\mtcSSfont 60}{subsection.3.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Making measurements}{\reset@font\mtcSSfont 62}{subsection.3.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.4}Correlation functions}{\reset@font\mtcSSfont 64}{subsection.3.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Monte Carlo Method in Statistical Physics}{\reset@font\mtcSfont 50}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Mathematical formulation of Auxiliary Field \acs {QMC}}{\reset@font\mtcSfont 57}{section.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Trotter-Suzuki Decomposition}{\reset@font\mtcSSfont 57}{subsection.3.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Hubbard-Stratonovich transformation}{\reset@font\mtcSSfont 59}{subsection.3.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Single-particle propagators and the fermionic trace}{\reset@font\mtcSSfont 61}{subsection.3.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.4}Monte Carlo sampling of the HS-field}{\reset@font\mtcSSfont 62}{subsection.3.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.5}Checkerboard Breakup}{\reset@font\mtcSSfont 64}{subsection.3.2.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Measurements}{\reset@font\mtcSfont 65}{section.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Obtaining observables in terms of Green's functions}{\reset@font\mtcSSfont 67}{subsection.3.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}Correlation functions}{\reset@font\mtcSSfont 67}{subsection.3.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Stabilization}{\reset@font\mtcSfont 68}{section.3.4}}

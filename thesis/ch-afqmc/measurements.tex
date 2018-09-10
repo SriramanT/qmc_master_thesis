@@ -1,0 +1,139 @@
+\section{Measurements}
+\label{subsec:measurements}
+
+In QMC simulations, physical observables are extracted by measuring them directly over the course of the sampling of the  configuration space. The single-particle (equal time) Green's Function is useful to obtain quantities such as density and kinetic energy, and is simply the inverse of the $\bm M$-matrix that we already compute to obtain the acceptance ratio at each step.
+At imaginary-time $\tau = \Delta \tau \lambda$: 
+
+\begin{equation}\label{eq:eqG}
+G_{ij}^\sigma ( \tau, \tau) = \left\langle c_{i,\sigma} c_{j,\sigma}^\dagger \right\rangle_{\bm h} = \bigg( (\bm I + \prod_{l= \lambda - 1}^0 \bm B_{l,\sigma} ( \widetilde{\bm h}_l ) \prod_{l= L -1}^\lambda \bm B_{l,\sigma} ( \widetilde{\bm h}_l )  )^{-1} \bigg)_{ij} \equiv \bigg( (\bm I + \bm B_{\bm h}^\sigma (\tau, 0) \bm B_{\bm h, }^\sigma (\beta, \tau)  )^{-1} \bigg)_{ij}
+\end{equation}
+
+The equal time Green's function is a fermion average for a given HS field configuration \cite{santos_introduction_2003}.
+For a fixed HS field, the problem becomes a free fermion problem, and one may use Wick's theorem to write down expressions for more complex observables.
+Eq.(\ref{eq:eqG}) is easily shown, and the proof offers some insight into how other observables are written in terms of $G_{ij}^\sigma (\tau, \tau)$ through Wick's theorem.
+In auxiliary field \ac{QMC}, we wish to compute averages of observables $O$ by sampling $\bm h$ configurations, and then averaging $O$ for fixed $\bm h$ (which is computed throughout the simulation) over these.
+Ignoring spin,
+
+\begin{equation}
+\begin{split}
+\left\langle O \right\rangle &= \frac{1}{Z} \Tr [ e^{-\beta \mathcal{H} } O ] = \sum_{\bm h} P (\bm h) \left\langle O \right\rangle_{\bm h} + \mathcal{O}(\Delta \tau^2 ) , \,\,
+\text{where} \\
+P ( \bm h ) &= \frac{C(\bm h) \det [ \bm I + \bm B_{\bm h} ( \beta, 0 ) ] }{\sum_{\bm h} C(\bm h) \det [ \bm I + \bm B_{\bm h} ( \beta, 0 )} \quad
+\left\langle O \right\rangle_{\bm h} = \frac{\Tr[ U_{\bm h} (\beta, \tau) O U_{\bm h} (\tau, 0)]}{\Tr [ U_{\bm h} (\beta, 0) ] } \\
+\end{split}
+\end{equation}
+and $U_{\bm h} ( \tau', \tau)$ is the imaginary-time evolution operator between $\tau$ and $\tau'$.
+Introducing a ficticious coupling $\eta$ to a one-body operator $O = \bm c^\dagger \bm A \bm c$ that can be taken back to zero later, we obtain 
+
+\begin{equation}\label{eq:connected}
+\begin{split}
+\left\langle O \right\rangle_{\bm h} &= \partial_\eta \bigg( \ln \Tr \big[ U_{\bm h} (\beta, \tau ) e^{\eta O} U_{\bm h} (\tau, 0) \big] \bigg) \bigg|_{\eta = 0} = \partial_\eta \bigg( \ln \det [ \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta \bm A} \bm B_{\bm h} (\tau, 0)  ] \bigg) \bigg|_{\eta = 0} \\
+&=  \partial_\eta \bigg( \Tr \big[  \ln  ( \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta \bm A} \bm B_{\bm h} (\tau, 0)  ) \big] \bigg) \bigg|_{\eta = 0} = \Tr \big[ \bm B_{\bm h} (\tau, 0) ( \bm I + \bm B_{\bm h} ( \beta, 0 ) )^{-1} \bm B_{\bm h} ( \beta, \tau ) \bm A \big] \\
+&= \Tr \bigg[ ( \bm B^{-1} (\beta, \tau) \bm B^{-1} (\tau, 0) + \bm I )^{-1} ( \bm B (\tau, 0) \bm B (\beta, \tau) )^{-1} ( \bm B (\tau, 0) \bm B (\beta, \tau) ) \bm A \bigg]  \\
+&= \Tr \bigg[ ( \bm I + \bm B ( \tau, 0 ) \bm B ( \beta, \tau ) )^{-1} ( \bm I +  \bm B ( \tau, 0 ) \bm B ( \beta, \tau ) - \bm I ) \bm A \bigg] \\
+&= \Tr \bigg[  \bigg( \bm I - ( \bm I + \bm B_{\bm h} ( \tau, 0 ) \bm B_{\bm h} (\beta, \tau) )^{-1} \bigg) \bm A \bigg]
+\end{split}
+\end{equation}
+
+In particular, for the case of the Green's function: $O = c_i c_j^\dagger$, $A_{xy} = \delta_{i j} - \delta_{xj} \delta_{yi}$, leading to Eq.(\ref{eq:eqG}).
+A generalization of Eq.(\ref{eq:connected}) for higher order derivatives allows us to obtain the connected correlation functions, or cumulants (denoted $\left\langle\langle \quad \right\rangle\rangle_{\bm h}$), revealing a connection with Wick's theorem.
+Let
+
+\begin{equation}
+\left\langle\langle O_n O_{n-1}... O_1  \right\rangle\rangle_{\bm h} = \partial_{\eta_n} \partial_{\eta_{n-1}} ... \partial_{\eta_1} \ln \Tr [ U_{\bm h} (\beta, \tau ) e^{\eta_n O_n} e^{\eta_{n-1} O_{n-1}} ... e^{\eta_1 O_1} U_{\bm h} (\tau, 0) ] |_{\eta_n = \eta_{n-1} =...= \eta_1 = 0}
+\end{equation}
+we see a pattern emerging, relating multi-point correlators and cumulants.
+Omitting the subscript $\bm h$:
+
+\begin{equation}\label{eq:allOrderCumulants}
+\begin{split}
+\left\langle\langle O_1  \right\rangle\rangle &= \left\langle O_1  \right\rangle \\
+\left\langle\langle O_2 O_1  \right\rangle\rangle &= \left\langle O_2 O_1  \right\rangle - \left\langle O_2  \right\rangle \left\langle O_1  \right\rangle \\
+\left\langle\langle O_3 O_2 O_1  \right\rangle\rangle &= \left\langle O_3 O_2 O_1  \right\rangle - \left\langle O_3  \right\rangle \left\langle\langle O_2 O_1  \right\rangle\rangle - \left\langle O_2  \right\rangle \left\langle\langle O_3 O_1  \right\rangle\rangle - \left\langle O_1  \right\rangle \left\langle\langle O_3 O_2  \right\rangle\rangle - \left\langle O_1  \right\rangle \left\langle O_2  \right\rangle \left\langle O_3  \right\rangle \\
+\left\langle O_n O_{n-1} ... O_1  \right\rangle &= \left\langle \left\langle O_n O_{n-1} ... O_1  \right\rangle\right\rangle + \sum_{j=1}^n  \big\langle \big\langle O_n ... \widehat{O_j} ... O_1  \big\rangle\big\rangle  \big\langle \big\langle O_j \big\rangle\big\rangle \\
+&+ \sum_{j >i} \big\langle \big\langle O_n ... \widehat{O_j} ... \widehat{O_i} ... O_1  \big\rangle\big\rangle  \big\langle \big\langle O_j O_i \big\rangle\big\rangle + ... + \left\langle\langle O_n  \right\rangle\rangle \left\langle\langle O_{n-1}  \right\rangle\rangle ... \left\langle\langle O_1  \right\rangle\rangle ,
+\end{split}
+\end{equation}
+where the operators with a hat $\widehat{O_j}$ are excluded from the sum.
+This is equivalent to the zero temperature version of Wick's theorem that we state in appendix \ref{ap:hubbardObSol}, Eq.(\ref{eq:wickState}).
+
+We can now compute the cumulants order by order.
+In particular, one can show that operators of the type 
+$\left\langle \left\langle c_{x_n}^\dagger c_{y_n} c_{x_{n-1}}^\dagger c_{y_{n-1}} ... c_{x_1}^\dagger c_{y_1}  \right\rangle\right\rangle_{\bm h}$
+can always be written in terms of a linear combination of products of pair averages of the type $\left\langle c^\dagger c \right\rangle$ \cite{f._assaad_quantum_2002}
+A case of particular relevance for the observables we shall be interested in is obtained by doing so for a four $c$-operator average, i.e. $n = 2$, and $A_{x y}^{(i)} = \delta_{x, x_i} \delta_{y, y_i}$..
+
+Before proceeding, recall that, for an invertible matrix $\bm A$, the derivative of its inverse with respect to a parameter $\eta$ can be  obtained in terms of the derivative of the matrix itself and its inverse.
+The sought identity is easy to show by using $\bm A^{-1} \bm A = \bm I$ and differentiating both the LHS and the RHS: $\partial_{\eta} ( \bm A^{-1} \bm A ) = 0 \iff ( \partial_\eta \bm A ) \bm A^{-1} + \bm A \partial_\eta \bm A^{-1} = 0 \iff \partial_\eta \bm A^{-1} = - \bm A^{-1} ( \partial_\eta \bm A ) \bm A^{-1}$.
+
+\begin{equation}
+\begin{split}
+&\left\langle \left\langle c_{x_2}^\dagger c_{y_2} c_{x_1}^\dagger c_{y_1}  \right\rangle\right\rangle_{\bm h} = \partial_{\eta_2} \partial_{\eta_1} \bigg( \Tr \bigg[ \ln ( \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta_2 \bm A_2} e^{\eta_1 \bm A_1} \bm B_{\bm h} ( \tau, 0) ) \bigg] \bigg|_{\bm \eta = \bm 0 } \\
+&= \partial_{\eta_2} \Tr \bigg[ ( \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta_2 \bm A_2} e^{\eta_1 \bm A_1} \bm B_{\bm h} ( \tau, 0) )^{-1} \bm B_{\bm h} ( \beta, \tau ) e^{\eta_2 \bm A_2} e^{\eta_1 \bm A_1} \bm A_1 \bm B ( \tau, 0 ) \bigg] \bigg|_{\bm \eta = \bm 0 } \\
+&= \Tr \bigg [ \bm B_{\bm h} ( \tau, 0 ) ( \bm I + \bm B_{\bm h} ( \beta, \tau ) \bm B_{\bm h} ( \tau, 0) )^{-1} \bm B_{\bm h} ( \beta, \tau ) \bm A_2 \bm A_1  \bigg] \\
+&- \Tr \bigg [ \bm B_{\bm h} ( \tau, 0 ) ( \bm I + \bm B_{\bm h} ( \beta, \tau ) \bm B_{\bm h} ( \tau, 0) )^{-1} \bm B_{\bm h} ( \beta, \tau ) \bm A_2 \bm B_{\bm h} ( \tau, 0 ) ( \bm I + \bm B_{\bm h} ( \beta, \tau ) \bm B_{\bm h} ( \tau, 0) )^{-1} \bm B_{\bm h} ( \beta, \tau ) \bm A_1  \bigg] \\
+&= \Tr [ ( \bm I - \bm G ) \bm A_2 \bm A_1 ] - \Tr [ ( \bm I - \bm G ) \bm A_2 ( \bm I - \bm G ) \bm A_1 ] = \Tr [ ( \bm I - \bm G ) \bm A_2 \bm G \bm A_1 ] = \left\langle c_{x_2}^\dagger c_{y_1} \right\rangle_{\bm h} \left\langle c_{y_2} c_{x_1}^\dagger \right\rangle_{\bm h} ,
+\end{split}
+\end{equation}
+where, in the last step, we simply identify the only element of the matrix  $( \bm I - \bm G ) \bm A_2 \bm G \bm A_1$ that is on the diagonal, which is the only one that is picked up by the trace.
+By comparison with Eq.(\ref{eq:allOrderCumulants}), we obtain an important relation we will use repeatedly:
+
+\begin{equation}
+\left\langle c_{x_2}^\dagger c_{y_2} c_{x_1}^\dagger c_{y_1} \right\rangle_{\bm h} = \left\langle c_{x_2}^\dagger c_{y_2} \right\rangle_{\bm h} \left\langle c_{x_1}^\dagger c_{y_1} \right\rangle_{\bm h} + \left\langle c_{x_2}^\dagger c_{y_1} \right\rangle_{\bm h} \left\langle  c_{y_2} c_{x_1}^\dagger \right\rangle_{\bm h}
+\end{equation}
+
+\subsection{Obtaining observables in terms of Green's functions}
+\label{subsec:observablesGreen}
+
+The simplest observable that can be obtained from the Green's function is the (site-dependent) electron density
+
+\begin{equation}
+\rho_{i, \sigma} = \left\langle c_{i,\sigma}^\dagger c_{i,\sigma} \right\rangle = 1 - \left\langle c_{i,\sigma} c_{i,\sigma}^\dagger \right\rangle = 1 - G_{ii}^\sigma ,
+\end{equation}
+
+It is natural to think of averaging it over the lattice, which is justified by the fact that the Hubbard Hamiltonian is translationally invariant.
+Thus, $\rho_{i\sigma}$ should be independent of the spatial site.
+This statement is strict when exactly solving the model, but it becomes only approximate, i.e. valid only on average in our simulations.
+Thus, we take the average
+
+\begin{equation}
+\rho = \frac{1}{N} \sum_\sigma \sum_{i=0}^{N-1} \rho_{i, \sigma} = 2 - \frac{1}{N} \sum_\sigma \sum_{i=0}^{N-1} G_{ii}^\sigma
+\end{equation}
+in an attempt to reduce statistical errors.
+
+One must pay attention to the symmetry of the model at hand, since a similar model for a disordered system including randomness would not be translationally invariant anymore.
+Moreover, it is implicit that $\rho_{i\sigma}$ is already averaged over the HS-field configurations that were sampled through the simulation.
+
+The average kinetic energy is similarly obtained.
+
+\begin{equation}
+\left\langle \mathcal{H}_K \right\rangle = - t  \sum_{\left\langle i, j \right\rangle , \sigma} \left\langle ( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} ) \right\rangle = t \sum_{\left\langle i, j \right\rangle , \sigma} ( G_{ij}^\sigma + G_{ji}^\sigma ) = t \sum_{ i, j , \sigma} K_{ij} ( G_{ij}^\sigma + G_{ji}^\sigma )  ,
+\end{equation}
+where the minus sign is due to the switching of the order of the operators bringing the $c^\dagger$ to the right.
+
+\subsection{Correlation functions}
+
+One of the most important goals of QMC simulations is to inspect the system for order of various types, and to find  associated phase transitions. This is done by computing correlation functions $C (j) $, measuring how correlated two sites separated by a distance $j$ are.
+
+\begin{equation}
+C(j) = \big\langle \mathcal{O}_{i+j} \mathcal{O}_{i}^\dagger \big\rangle - \langle \mathcal{O}_{i+j} \big\rangle\big\langle\mathcal{O}_{i}^\dagger \big\rangle ,
+\end{equation}
+where $\mathcal{O}$ is an operator corresponding to the order parameter of the phase transition. For example, we might be looking for magnetic order, in which case the relevant operators are $S^z_i$, i.e. $\mathcal{O}_i = n_{i\uparrow} - n_{i\downarrow} \, , \, \mathcal{O}_i^\dagger = n_{i\uparrow} - n_{i\downarrow}$, or superconductivity, where we would like to measure correlations in fermion pair formation: $\mathcal{O}_i = c_{i\downarrow} c_{i\uparrow} \, , \, \mathcal{O}_i^\dagger = c_{i\uparrow}^\dagger c_{i\downarrow}^\dagger$.
+
+In general, we expect a high temperature disordered phase, for which correlations decay exponentially $C(j) \propto e^{-j/\xi}$, where $\xi$ is a characteristic length called the correlation length. At some point, there can be a transition to a low temperature phase, where $C(j) \propto m^2$, where $m$ is the order parameter for the transition. Right at the transition, that is at $T = T_c$, there might be singular behavior. In continuous phase transitions, the correlation length diverges $\xi \propto (T-T_c)^{-\nu}$, and the correlations decay slower (in fact algebraically): $C(j) \propto j^{-\eta}$, in an intermediate behavior between exponential decay and a constant. The \emph{critical} exponents $\nu$, and $\eta$ are characteristic of the transition, or more accurately, of the universality class it belongs to.
+
+The behavior of all these quantities on finite lattices does not precisely correspond to the infinite system behavior. The tails of the functions, i.e. the $j\rightarrow \infty$ limit is not well captured. Finite-size scaling is a method to improve on these predictions.
+
+To evaluate correlation functions we use Wick's theorem. Expectations of more than two fermion creation and annihilation operators reduce to products of expectations of pairs of creation and annihilation operators. For example, for spin order in $x/y$ direction:
+
+\begin{equation}
+\big\langle C(j) \big\rangle = \big\langle c_{i+j, \downarrow}^\dagger c_{i+j, \uparrow} c_{i, \uparrow}^\dagger c_{i, \downarrow} \big\rangle = G_{i+j, i}^\uparrow G_{i, i + j}^\downarrow
+\end{equation}
+
+How would one measure a correlation function experimentally? Fortunately, there is a quantity that is easy to measure called structure factor, which is just the Fourier transform of the correlation function
+
+\begin{equation}
+S(\bm q) = \sum_j e^{i\bm q \cdot \bm R_j} C(j) 
+\end{equation}
+
+The accuracy of QMC simulations can be evaluated by comparing the results for the Fourier transformed correlation functions with the corresponding experimentally measured structure factors.

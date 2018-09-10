@@ -11,55 +11,64 @@
 \BOOKMARK [1][]{section.1.1}{1.1 Motivation}{chapter.1}% 11
 \BOOKMARK [1][]{section.1.2}{1.2 Strongly correlated electron systems}{chapter.1}% 12
 \BOOKMARK [1][]{section.1.3}{1.3 Beyond graphene: TMD nanoribbons}{chapter.1}% 13
-\BOOKMARK [1][]{section.1.4}{1.4 Introduction to Quantum Monte Carlo}{chapter.1}% 14
-\BOOKMARK [2][]{subsection.1.4.1}{1.4.1 Variational Monte Carlo}{section.1.4}% 15
-\BOOKMARK [2][]{subsection.1.4.2}{1.4.2 Diffusion Monte Carlo and projective methods}{section.1.4}% 16
-\BOOKMARK [2][]{subsection.1.4.3}{1.4.3 Auxiliary Field QMC and the Fermion Sign Problem}{section.1.4}% 17
-\BOOKMARK [1][]{section.1.5}{1.5 Original Contributions}{chapter.1}% 18
-\BOOKMARK [1][]{section.1.6}{1.6 Outline}{chapter.1}% 19
-\BOOKMARK [0][]{chapter.2}{2 Minimal models of electron correlations in energy bands}{}% 20
-\BOOKMARK [1][]{section.2.1}{2.1 Modelling electron correlations}{chapter.2}% 21
-\BOOKMARK [1][]{section.2.2}{2.2 Hubbard model}{chapter.2}% 22
-\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 Electron correlations in narrow d-bands}{section.2.2}% 23
-\BOOKMARK [2][]{subsection.2.2.2}{2.2.2 Hubbard Hamiltonian}{section.2.2}% 24
-\BOOKMARK [2][]{subsection.2.2.3}{2.2.3 Particle-hole symmetry}{section.2.2}% 25
-\BOOKMARK [1][]{section.2.3}{2.3 Exact solutions for simple cases}{chapter.2}% 26
-\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 The purely atomic \( Ut \040\), single site limit}{section.2.3}% 27
-\BOOKMARK [2][]{subsection.2.3.2}{2.3.2 The non-interacting \(Ut = 0\) limit}{section.2.3}% 28
-\BOOKMARK [1][]{section.2.4}{2.4 Exact Diagonalization and the Heisenberg Hamiltonian as the Effective Ut 1 Model }{chapter.2}% 29
-\BOOKMARK [2][]{subsection.2.4.1}{2.4.1 Two-site calculation}{section.2.4}% 30
-\BOOKMARK [2][]{subsection.2.4.2}{2.4.2 Degenerate perturbation theory}{section.2.4}% 31
-\BOOKMARK [1][]{section.2.5}{2.5 Green's functions and Wick's theorem}{chapter.2}% 32
-\BOOKMARK [2][]{subsection.2.5.1}{2.5.1 Single site case}{section.2.5}% 33
-\BOOKMARK [2][]{subsection.2.5.2}{2.5.2 Non-interacting case}{section.2.5}% 34
-\BOOKMARK [2][]{subsection.2.5.3}{2.5.3 Finite temperature Wick's theorem for fermions}{section.2.5}% 35
-\BOOKMARK [1][]{section.2.6}{2.6 Magnetism and mean field theory}{chapter.2}% 36
-\BOOKMARK [2][]{subsection.2.6.1}{2.6.1 Stoner criterion for ferromagnetism}{section.2.6}% 37
-\BOOKMARK [2][]{subsection.2.6.2}{2.6.2 Mean field theory of the Hubbard model}{section.2.6}% 38
-\BOOKMARK [1][]{section.2.7}{2.7 Simulatable variants of the Hubbard model and }{chapter.2}% 39
-\BOOKMARK [0][]{chapter.3}{3 Auxiliary Field Quantum Monte Carlo}{}% 40
-\BOOKMARK [1][]{section.3.1}{3.1 Monte Carlo Method in Statistical Physics}{chapter.3}% 41
-\BOOKMARK [1][]{section.3.2}{3.2 Theoretical framework}{chapter.3}% 42
-\BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Trotter-Suzuki Decomposition}{section.3.2}% 43
-\BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Monte Carlo sampling of the HS-field}{section.3.2}% 44
-\BOOKMARK [2][]{subsection.3.2.3}{3.2.3 Making measurements}{section.3.2}% 45
-\BOOKMARK [2][]{subsection.3.2.4}{3.2.4 Correlation functions}{section.3.2}% 46
-\BOOKMARK [0][]{chapter.4}{4 Applications}{}% 47
-\BOOKMARK [1][]{section.4.1}{4.1 One-dimensional Hubbard Chain}{chapter.4}% 48
-\BOOKMARK [1][]{section.4.2}{4.2 Square lattice}{chapter.4}% 49
-\BOOKMARK [1][]{section.4.3}{4.3 Honeycomb lattice}{chapter.4}% 50
-\BOOKMARK [1][]{section.4.4}{4.4 Nanoribbons}{chapter.4}% 51
-\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Graphene}{section.4.4}% 52
-\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 TMDs}{section.4.4}% 53
-\BOOKMARK [0][]{chapter.5}{5 Conclusions and Future Work}{}% 54
-\BOOKMARK [0][]{section*.54}{Bibliography}{}% 55
-\BOOKMARK [0][]{appendix.A}{Appendix A Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{}% 56
-\BOOKMARK [1][]{section.A.1}{A.1 Hartree-Fock Approximation and the Self Consistent Field Method}{appendix.A}% 57
-\BOOKMARK [1][]{section.A.2}{A.2 Mott insulators}{appendix.A}% 58
-\BOOKMARK [1][]{section.A.3}{A.3 Computing the partition function for a quadratic Hamiltonian}{appendix.A}% 59
-\BOOKMARK [1][]{section.A.4}{A.4 Density of states for a 1D tight binding model}{appendix.A}% 60
-\BOOKMARK [1][]{section.A.5}{A.5 Obtaining an effective Heisenberg Hamiltonian as the atomic, U/t 1 limit of the Hubbard model}{appendix.A}% 61
-\BOOKMARK [1][]{section.A.6}{A.6 On the finite temperature Wick's theorem}{appendix.A}% 62
-\BOOKMARK [0][]{appendix.B}{Appendix B Theoretical Formulation of Auxiliary Field Quantum Monte Carlo}{}% 63
-\BOOKMARK [1][]{section.B.1}{B.1 Casting the fermionic trace as a determinant}{appendix.B}% 64
-\BOOKMARK [1][]{section.B.2}{B.2 Rank-one updates of the Green's function}{appendix.B}% 65
+\BOOKMARK [2][]{subsection.1.3.1}{1.3.1 Electronic properties}{section.1.3}% 14
+\BOOKMARK [2][]{subsection.1.3.2}{1.3.2 Nanoribbons}{section.1.3}% 15
+\BOOKMARK [2][]{subsection.1.3.3}{1.3.3 Effective three-band minimal tight-binding model}{section.1.3}% 16
+\BOOKMARK [1][]{section.1.4}{1.4 Introduction to Quantum Monte Carlo}{chapter.1}% 17
+\BOOKMARK [2][]{subsection.1.4.1}{1.4.1 Variational Monte Carlo}{section.1.4}% 18
+\BOOKMARK [2][]{subsection.1.4.2}{1.4.2 Diffusion Monte Carlo and projective methods}{section.1.4}% 19
+\BOOKMARK [2][]{subsection.1.4.3}{1.4.3 Auxiliary Field QMC and the Fermion Sign Problem}{section.1.4}% 20
+\BOOKMARK [1][]{section.1.5}{1.5 Original Contributions}{chapter.1}% 21
+\BOOKMARK [1][]{section.1.6}{1.6 Outline}{chapter.1}% 22
+\BOOKMARK [0][]{chapter.2}{2 Minimal models of electron correlations in energy bands}{}% 23
+\BOOKMARK [1][]{section.2.1}{2.1 Modelling electron correlations}{chapter.2}% 24
+\BOOKMARK [1][]{section.2.2}{2.2 Hubbard model}{chapter.2}% 25
+\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 Electron correlations in narrow d-bands}{section.2.2}% 26
+\BOOKMARK [2][]{subsection.2.2.2}{2.2.2 Hubbard Hamiltonian}{section.2.2}% 27
+\BOOKMARK [2][]{subsection.2.2.3}{2.2.3 Particle-hole symmetry}{section.2.2}% 28
+\BOOKMARK [1][]{section.2.3}{2.3 Exact solutions for simple cases}{chapter.2}% 29
+\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 The purely atomic \( Ut \040\), single site limit}{section.2.3}% 30
+\BOOKMARK [2][]{subsection.2.3.2}{2.3.2 The non-interacting \(Ut = 0\) limit}{section.2.3}% 31
+\BOOKMARK [1][]{section.2.4}{2.4 Exact Diagonalization and the Heisenberg Hamiltonian as the Effective Ut 1 Model }{chapter.2}% 32
+\BOOKMARK [2][]{subsection.2.4.1}{2.4.1 Two-site calculation}{section.2.4}% 33
+\BOOKMARK [2][]{subsection.2.4.2}{2.4.2 Degenerate perturbation theory}{section.2.4}% 34
+\BOOKMARK [1][]{section.2.5}{2.5 Green's functions and Wick's theorem}{chapter.2}% 35
+\BOOKMARK [2][]{subsection.2.5.1}{2.5.1 Single site case}{section.2.5}% 36
+\BOOKMARK [2][]{subsection.2.5.2}{2.5.2 Non-interacting case}{section.2.5}% 37
+\BOOKMARK [2][]{subsection.2.5.3}{2.5.3 Finite temperature Wick's theorem for fermions}{section.2.5}% 38
+\BOOKMARK [1][]{section.2.6}{2.6 Magnetism and mean field theory}{chapter.2}% 39
+\BOOKMARK [2][]{subsection.2.6.1}{2.6.1 Stoner criterion for ferromagnetism}{section.2.6}% 40
+\BOOKMARK [2][]{subsection.2.6.2}{2.6.2 Mean field theory of the Hubbard model}{section.2.6}% 41
+\BOOKMARK [2][]{subsection.2.6.3}{2.6.3 Self-consistent solution in the GCE}{section.2.6}% 42
+\BOOKMARK [1][]{section.2.7}{2.7 Simulatable variants of the Hubbard model}{chapter.2}% 43
+\BOOKMARK [0][]{chapter.3}{3 Auxiliary Field Quantum Monte Carlo}{}% 44
+\BOOKMARK [1][]{section.3.1}{3.1 Monte Carlo Method in Statistical Physics}{chapter.3}% 45
+\BOOKMARK [1][]{section.3.2}{3.2 Theoretical Framework and Mathematical Formulation}{chapter.3}% 46
+\BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Trotter-Suzuki Decomposition}{section.3.2}% 47
+\BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Hubbard-Stratonovich transformation}{section.3.2}% 48
+\BOOKMARK [2][]{subsection.3.2.3}{3.2.3 Single-particle propagators and the fermionic trace}{section.3.2}% 49
+\BOOKMARK [2][]{subsection.3.2.4}{3.2.4 Monte Carlo sampling of the HS-field}{section.3.2}% 50
+\BOOKMARK [2][]{subsection.3.2.5}{3.2.5 Checkerboard Breakup}{section.3.2}% 51
+\BOOKMARK [1][]{section.3.3}{3.3 Measurements}{chapter.3}% 52
+\BOOKMARK [2][]{subsection.3.3.1}{3.3.1 Obtaining observables in terms of Green's functions}{section.3.3}% 53
+\BOOKMARK [2][]{subsection.3.3.2}{3.3.2 Correlation functions}{section.3.3}% 54
+\BOOKMARK [1][]{section.3.4}{3.4 Stabilization}{chapter.3}% 55
+\BOOKMARK [0][]{chapter.4}{4 Applications}{}% 56
+\BOOKMARK [1][]{section.4.1}{4.1 One-dimensional Chain}{chapter.4}% 57
+\BOOKMARK [1][]{section.4.2}{4.2 Square lattice}{chapter.4}% 58
+\BOOKMARK [1][]{section.4.3}{4.3 Honeycomb lattice}{chapter.4}% 59
+\BOOKMARK [1][]{section.4.4}{4.4 Nanoribbons}{chapter.4}% 60
+\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Graphene}{section.4.4}% 61
+\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 TMDs}{section.4.4}% 62
+\BOOKMARK [0][]{chapter.5}{5 Conclusions and Future Work}{}% 63
+\BOOKMARK [0][]{section*.56}{Bibliography}{}% 64
+\BOOKMARK [0][]{appendix.A}{Appendix A Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{}% 65
+\BOOKMARK [1][]{section.A.1}{A.1 Hartree-Fock Approximation and the Self Consistent Field Method}{appendix.A}% 66
+\BOOKMARK [1][]{section.A.2}{A.2 Mott insulators}{appendix.A}% 67
+\BOOKMARK [1][]{section.A.3}{A.3 Computing the partition function for a quadratic Hamiltonian}{appendix.A}% 68
+\BOOKMARK [1][]{section.A.4}{A.4 Density of states for a 1D tight binding model}{appendix.A}% 69
+\BOOKMARK [1][]{section.A.5}{A.5 Obtaining an effective Heisenberg Hamiltonian as the atomic, U/t 1 limit of the Hubbard model}{appendix.A}% 70
+\BOOKMARK [1][]{section.A.6}{A.6 On the finite temperature Wick's theorem}{appendix.A}% 71
+\BOOKMARK [0][]{appendix.B}{Appendix B Formulating Auxiliary Field Quantum Monte Carlo}{}% 72
+\BOOKMARK [1][]{section.B.1}{B.1 Casting the fermionic trace as a determinant}{appendix.B}% 73
+\BOOKMARK [1][]{section.B.2}{B.2 Rank-one updates of the Green's function}{appendix.B}% 74

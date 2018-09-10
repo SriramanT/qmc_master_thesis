@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  5 SEP 2018 21:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  10 SEP 2018 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1229,13 +1229,13 @@ LaTeX Info: Redefining \nameref on input line 7.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./beg-firstFewPages/1.Cover.tex
-<all-figures/Cover/istnewlogo.pdf, id=265, 502.99277pt x 195.67976pt>
+<all-figures/Cover/istnewlogo.pdf, id=301, 502.99277pt x 195.67976pt>
 File: all-figures/Cover/istnewlogo.pdf Graphic file (type pdf)
 <use all-figures/Cover/istnewlogo.pdf>
 Package pdftex.def Info: all-figures/Cover/istnewlogo.pdf  used on input line 9
 .
 (pdftex.def)             Requested size: 142.26378pt x 55.34532pt.
-<all-figures/Cover/coverimage.jpg, id=266, 1003.75pt x 567.11874pt>
+<all-figures/Cover/coverimage.jpg, id=302, 1003.75pt x 567.11874pt>
 File: all-figures/Cover/coverimage.jpg Graphic file (type jpg)
 <use all-figures/Cover/coverimage.jpg>
 Package pdftex.def Info: all-figures/Cover/coverimage.jpg  used on input line 1
@@ -1407,35 +1407,37 @@ Package minitoc Info: I0033
  (./thesis.toc [9
 
 ]
+Package acronym Info: Label `acro:GCE' newly defined as it shall be overridden
+although it is yet undefined on input line 73.
 Package acronym Info: Label `acro:TMD' newly defined as it shall be overridden
-although it is yet undefined on input line 95.
+although it is yet undefined on input line 113.
 
-Overfull \hbox (0.33324pt too wide) detected at line 103
+Overfull \hbox (0.33324pt too wide) detected at line 121
  []\T1/cmr/m/n/10 A-2
  []
 
 
-Overfull \hbox (0.33324pt too wide) detected at line 105
+Overfull \hbox (0.33324pt too wide) detected at line 123
  []\T1/cmr/m/n/10 A-5
  []
 
 
-Overfull \hbox (0.33324pt too wide) detected at line 107
+Overfull \hbox (0.33324pt too wide) detected at line 125
  []\T1/cmr/m/n/10 A-8
  []
 
 
-Overfull \hbox (0.33324pt too wide) detected at line 109
+Overfull \hbox (0.33324pt too wide) detected at line 127
  []\T1/cmr/m/n/10 A-9
  []
 
 
-Overfull \hbox (0.33324pt too wide) detected at line 111
+Overfull \hbox (0.33324pt too wide) detected at line 129
  []\T1/cmr/m/n/10 A-9
  []
 
 
-Overfull \hbox (5.33202pt too wide) detected at line 113
+Overfull \hbox (5.33202pt too wide) detected at line 131
  []\T1/cmr/m/n/10 A-12
  []
 
@@ -1443,10 +1445,14 @@ Overfull \hbox (5.33202pt too wide) detected at line 113
 \tf@toc=\write7
 \openout7 = `thesis.toc'.
 
- [10] (./thesis.lof
+ [10] [11] [12
+
+
+
+] (./thesis.lof
 Package acronym Info: Label `acro:TMD' overridden on input line 15.
 
-Overfull \hbox (0.33324pt too wide) detected at line 67
+Overfull \hbox (0.33324pt too wide) detected at line 71
  []\T1/cmr/m/n/10 A-7
  []
 
@@ -1454,12 +1460,9 @@ Overfull \hbox (0.33324pt too wide) detected at line 67
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [11
+ [13
 
-
-
-
-] [12
+] [14
 
 
 
@@ -1467,16 +1470,16 @@ Overfull \hbox (0.33324pt too wide) detected at line 67
 \tf@lot=\write9
 \openout9 = `thesis.lot'.
 
- [13
+ [15
 
-] [14
+] [16
 
 
 
 ]) (./beg-firstFewPages/7.Acronym.tex
-[15
+[17
 
-] [16
+] [18
 
 
 
@@ -1513,7 +1516,7 @@ LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <150> not available
 Package acronym Info: Label `acro:2D' newly defined as it shall be overridden
 although it is yet undefined on input line 7.
 Package acronym Info: Label `acro:TMD' overridden on input line 8.
-Package acronym Info: Label `acro:QMC' overridden on input line 10.
+Package acronym Info: Label `acro:QMC' overridden on input line 11.
  (./ch-introduction/motivation.tex
 Package acronym Info: Label `acro:BSS' newly defined as it shall be overridden
 although it is yet undefined on input line 16.
@@ -1523,13 +1526,13 @@ Package acronym Info: Label `acro:LG' newly defined as it shall be overridden
 although it is yet undefined on input line 15.
  [3] [4])
 (./ch-introduction/state.tex
-<all-figures/Introduction/graphene.png, id=605, 390.96063pt x 560.59438pt>
+<all-figures/Introduction/graphene.png, id=668, 390.96063pt x 560.59438pt>
 File: all-figures/Introduction/graphene.png Graphic file (type png)
 <use all-figures/Introduction/graphene.png>
 Package pdftex.def Info: all-figures/Introduction/graphene.png  used on input l
 ine 11.
 (pdftex.def)             Requested size: 91.04872pt x 130.55069pt.
-<all-figures/Introduction/dispGraphene.png, id=607, 1019.81pt x 552.0625pt>
+<all-figures/Introduction/dispGraphene.png, id=670, 1019.81pt x 552.0625pt>
 File: all-figures/Introduction/dispGraphene.png Graphic file (type png)
 <use all-figures/Introduction/dispGraphene.png>
 Package pdftex.def Info: all-figures/Introduction/dispGraphene.png  used on inp
@@ -1539,77 +1542,82 @@ Package acronym Info: Label `acro:AFM' newly defined as it shall be overridden
 although it is yet undefined on input line 14.
  [5 <./all-figures/Introduction/graphene.png> <./all-figures/Introduction/dispG
 raphene.png>]
-<all-figures/Introduction/tmd2.png, id=638, 998.73125pt x 517.935pt>
+<all-figures/Introduction/tmd2.png, id=701, 998.73125pt x 517.935pt>
 File: all-figures/Introduction/tmd2.png Graphic file (type png)
 <use all-figures/Introduction/tmd2.png>
 Package pdftex.def Info: all-figures/Introduction/tmd2.png  used on input line 
-32.
+33.
 (pdftex.def)             Requested size: 249.68219pt x 129.48343pt.
  [6 <./all-figures/Introduction/tmd2.png>]
-<all-figures/Introduction/tmdProp.png, id=674, 1109.14375pt x 638.88687pt>
+<all-figures/Introduction/tmdProp.png, id=737, 1109.14375pt x 638.88687pt>
 File: all-figures/Introduction/tmdProp.png Graphic file (type png)
 <use all-figures/Introduction/tmdProp.png>
 Package pdftex.def Info: all-figures/Introduction/tmdProp.png  used on input li
-ne 64.
+ne 67.
 (pdftex.def)             Requested size: 388.20613pt x 223.61375pt.
 Package acronym Info: Label `acro:PBC' newly defined as it shall be overridden
-although it is yet undefined on input line 70.
+although it is yet undefined on input line 75.
 Package acronym Info: Label `acro:OBC' newly defined as it shall be overridden
-although it is yet undefined on input line 71.
-<all-figures/Introduction/nanoribbons.png, id=688, 1228.08812pt x 289.08pt>
+although it is yet undefined on input line 76.
+ [7 <./all-figures/Introduction/tmdProp.png>]
+<all-figures/Introduction/nanoribbons.png, id=757, 1228.08812pt x 289.08pt>
 File: all-figures/Introduction/nanoribbons.png Graphic file (type png)
 <use all-figures/Introduction/nanoribbons.png>
 Package pdftex.def Info: all-figures/Introduction/nanoribbons.png  used on inpu
-t line 75.
-(pdftex.def)             Requested size: 343.86234pt x 80.94183pt.
- [7 <./all-figures/Introduction/tmdProp.png>]
-<all-figures/Introduction/grapheneNanoribbons.jpg, id=706, 703.62875pt x 295.10
+t line 80.
+(pdftex.def)             Requested size: 429.83728pt x 101.1795pt.
+<all-figures/Introduction/grapheneNanoribbons.jpg, id=766, 703.62875pt x 295.10
 25pt>
 File: all-figures/Introduction/grapheneNanoribbons.jpg Graphic file (type jpg)
 <use all-figures/Introduction/grapheneNanoribbons.jpg>
 Package pdftex.def Info: all-figures/Introduction/grapheneNanoribbons.jpg  used
- on input line 83.
-(pdftex.def)             Requested size: 253.30615pt x 106.2368pt.
+ on input line 88.
+(pdftex.def)             Requested size: 295.52205pt x 123.94218pt.
 Package acronym Info: Label `acro:TMDNR' newly defined as it shall be overridde
 n
-although it is yet undefined on input line 91.
-<all-figures/Introduction/zigzag.png, id=716, 743.77875pt x 643.40375pt>
+although it is yet undefined on input line 96.
+<all-figures/Introduction/zigzag.png, id=777, 743.77875pt x 643.40375pt>
 File: all-figures/Introduction/zigzag.png Graphic file (type png)
 <use all-figures/Introduction/zigzag.png>
 Package pdftex.def Info: all-figures/Introduction/zigzag.png  used on input lin
-e 97.
+e 107.
 (pdftex.def)             Requested size: 156.19814pt x 135.11877pt.
 
-Overfull \hbox (111.80911pt too wide) in paragraph at lines 97--98
+Overfull \hbox (111.80911pt too wide) in paragraph at lines 107--108
 [][] 
  []
 
-<all-figures/Introduction/comparisonMF.pdf, id=717, 1027.84pt x 770.88pt>
+<all-figures/Introduction/comparisonMF.pdf, id=778, 1027.84pt x 770.88pt>
 File: all-figures/Introduction/comparisonMF.pdf Graphic file (type pdf)
 <use all-figures/Introduction/comparisonMF.pdf>
 Package pdftex.def Info: all-figures/Introduction/comparisonMF.pdf  used on inp
-ut line 101.
+ut line 111.
 (pdftex.def)             Requested size: 246.68663pt x 185.01498pt.
 
-Overfull \hbox (202.2976pt too wide) in paragraph at lines 101--102
+Overfull \hbox (202.2976pt too wide) in paragraph at lines 111--112
 [][] 
  []
 
 Package acronym Info: Label `acro:AF' newly defined as it shall be overridden
-although it is yet undefined on input line 109.
-) (./ch-introduction/introQMC.tex [8 <./all-figures/Introduction/nanoribbons.pn
-g> <./all-figures/Introduction/grapheneNanoribbons.jpg> <./all-figures/Introduc
-tion/zigzag.png> <./all-figures/Introduction/comparisonMF.pdf>] [9] [10]
-[11]
+although it is yet undefined on input line 119.
+[8 <./all-figures/Introduction/nanoribbons.png> <./all-figures/Introduction/gra
+pheneNanoribbons.jpg>]
+<all-figures/Introduction/energiesTMDs.png, id=802, 945.5325pt x 594.72188pt>
+File: all-figures/Introduction/energiesTMDs.png Graphic file (type png)
+<use all-figures/Introduction/energiesTMDs.png>
+Package pdftex.def Info: all-figures/Introduction/energiesTMDs.png  used on inp
+ut line 131.
+(pdftex.def)             Requested size: 284.52756pt x 178.96242pt.
+ [9 <./all-figures/Introduction/zigzag.png> <./all-figures/Introduction/compari
+sonMF.pdf> <./all-figures/Introduction/energiesTMDs.png>]) (./ch-introduction/i
+ntroQMC.tex [10] [11] [12]
 LaTeX Font Info:    Try loading font information for U+bbm on input line 113.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [12]
-[13]) (./ch-introduction/contributions.tex [14]) (./ch-introduction/outline.tex
-) [15] [16
-
-
-]) (./ch-hubbard/main.tex
+) [13] [14])
+(./ch-introduction/contributions.tex [15]) (./ch-introduction/outline.tex)
+[16]) (./ch-hubbard/main.tex
 Chapter 2.
 \openout5 = `thesis.mtc'.
 
@@ -1617,8 +1625,10 @@ Chapter 2.
 
 (./thesis.mtc2) [17
 
+
+
 ] (./ch-hubbard/modelling.tex
-<all-figures/Hubbard/IsingVsHubbard.png, id=905, 986.68625pt x 381.425pt>
+<all-figures/Hubbard/IsingVsHubbard.png, id=979, 986.68625pt x 381.425pt>
 File: all-figures/Hubbard/IsingVsHubbard.png Graphic file (type png)
 <use all-figures/Hubbard/IsingVsHubbard.png>
 Package pdftex.def Info: all-figures/Hubbard/IsingVsHubbard.png  used on input 
@@ -1634,21 +1644,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 14.
 
-<all-figures/Hubbard/Hydrogen_Density_Plots.png, id=937, 1761.58125pt x 1190.44
-75pt>
+<all-figures/Hubbard/Hydrogen_Density_Plots.png, id=1010, 1761.58125pt x 1190.4
+475pt>
 File: all-figures/Hubbard/Hydrogen_Density_Plots.png Graphic file (type png)
 <use all-figures/Hubbard/Hydrogen_Density_Plots.png>
 Package pdftex.def Info: all-figures/Hubbard/Hydrogen_Density_Plots.png  used o
 n input line 21.
 (pdftex.def)             Requested size: 256.0748pt x 173.03734pt.
 [20 <./all-figures/Hubbard/Hydrogen_Density_Plots.png>] [21] [22] [23]
-Package acronym Info: Label `acro:GCE' newly defined as it shall be overridden
-although it is yet undefined on input line 181.
+Package acronym Info: Label `acro:GCE' overridden on input line 181.
 Package acronym Info: Label `acro:PHS' newly defined as it shall be overridden
 although it is yet undefined on input line 187.
  [24]
 Package acronym Info: Label `acro:AF' overridden on input line 194.
-<all-figures/Hubbard/bipartite.png, id=996, 1263.21938pt x 525.46312pt>
+<all-figures/Hubbard/bipartite.png, id=1071, 1263.21938pt x 525.46312pt>
 File: all-figures/Hubbard/bipartite.png Graphic file (type png)
 <use all-figures/Hubbard/bipartite.png>
 Package pdftex.def Info: all-figures/Hubbard/bipartite.png  used on input line 
@@ -1690,20 +1699,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 89.
 
 [28]
-<all-figures/Hubbard/rhoVsMu.png, id=1055, 481.19775pt x 262.8219pt>
+<all-figures/Hubbard/rhoVsMu.png, id=1128, 481.19775pt x 262.8219pt>
 File: all-figures/Hubbard/rhoVsMu.png Graphic file (type png)
 <use all-figures/Hubbard/rhoVsMu.png>
 Package pdftex.def Info: all-figures/Hubbard/rhoVsMu.png  used on input line 17
 6.
 (pdftex.def)             Requested size: 310.70287pt x 169.70128pt.
  [29] [30 <./all-figures/Hubbard/rhoVsMu.png>]
-<all-figures/Hubbard/mSqVsU.png, id=1079, 477.58424pt x 262.8219pt>
+<all-figures/Hubbard/mSqVsU.png, id=1154, 477.58424pt x 262.8219pt>
 File: all-figures/Hubbard/mSqVsU.png Graphic file (type png)
 <use all-figures/Hubbard/mSqVsU.png>
 Package pdftex.def Info: all-figures/Hubbard/mSqVsU.png  used on input line 222
 .
 (pdftex.def)             Requested size: 310.70287pt x 170.9886pt.
-<all-figures/Hubbard/mSqVsT.png, id=1081, 476.982pt x 262.8219pt>
+<all-figures/Hubbard/mSqVsT.png, id=1156, 476.982pt x 262.8219pt>
 File: all-figures/Hubbard/mSqVsT.png Graphic file (type png)
 <use all-figures/Hubbard/mSqVsT.png>
 Package pdftex.def Info: all-figures/Hubbard/mSqVsT.png  used on input line 233
@@ -1735,13 +1744,13 @@ Package acronym Info: Label `acro:PBC' overridden on input line 258.
 Package acronym Info: Label `acro:OBC' overridden on input line 260.
 
 [32] [33]
-<all-figures/Hubbard/fermiEnergy1D.png, id=1133, 433.62pt x 289.08pt>
+<all-figures/Hubbard/fermiEnergy1D.png, id=1206, 433.62pt x 289.08pt>
 File: all-figures/Hubbard/fermiEnergy1D.png Graphic file (type png)
 <use all-figures/Hubbard/fermiEnergy1D.png>
 Package pdftex.def Info: all-figures/Hubbard/fermiEnergy1D.png  used on input l
 ine 358.
 (pdftex.def)             Requested size: 244.1261pt x 162.75266pt.
-<all-figures/Hubbard/fermiEnergy2D.png, id=1134, 368.21565pt x 263.18324pt>
+<all-figures/Hubbard/fermiEnergy2D.png, id=1207, 368.21565pt x 263.18324pt>
 File: all-figures/Hubbard/fermiEnergy2D.png Graphic file (type png)
 <use all-figures/Hubbard/fermiEnergy2D.png>
 Package pdftex.def Info: all-figures/Hubbard/fermiEnergy2D.png  used on input l
@@ -1775,7 +1784,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [34 <./all-figures/Hubbard/fermiEnergy1D.png> <./all-figures/Hubbard/fermiEnerg
 y2D.png>] [35] [36] [37]) (./ch-hubbard/greens-functions.tex [38] [39] [40])
 (./ch-hubbard/magnetism-mft.tex [41]
-<all-figures/Hubbard/dos.pdf, id=1230, 1027.84pt x 770.88pt>
+<all-figures/Hubbard/dos.pdf, id=1304, 1027.84pt x 770.88pt>
 File: all-figures/Hubbard/dos.pdf Graphic file (type pdf)
 <use all-figures/Hubbard/dos.pdf>
 Package pdftex.def Info: all-figures/Hubbard/dos.pdf  used on input line 24.
@@ -1789,13 +1798,13 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
  [43]
-<all-figures/Hubbard/mfHubbard.png, id=1342, 493.24275pt x 277.87814pt>
+<all-figures/Hubbard/mfHubbard.png, id=1414, 493.24275pt x 277.87814pt>
 File: all-figures/Hubbard/mfHubbard.png Graphic file (type png)
 <use all-figures/Hubbard/mfHubbard.png>
 Package pdftex.def Info: all-figures/Hubbard/mfHubbard.png  used on input line 
 94.
 (pdftex.def)             Requested size: 310.70287pt x 175.04718pt.
-<all-figures/Hubbard/mfHubbard_multiple.png, id=1346, 1258.76273pt x 372.00983p
+<all-figures/Hubbard/mfHubbard_multiple.png, id=1418, 1258.76273pt x 372.00983p
 t>
 File: all-figures/Hubbard/mfHubbard_multiple.png Graphic file (type png)
 <use all-figures/Hubbard/mfHubbard_multiple.png>
@@ -1805,77 +1814,100 @@ put line 108.
  [44 <./all-figures/Hubbard/mfHubbard.png> <./all-figures/Hubbard/mfHubbard_mul
 tiple.png>]
 Package acronym Info: Label `acro:QMC' overridden on input line 134.
-)
-(./ch-hubbard/variants.tex [45]) [46]) (./ch-afqmc/main.tex
+
+[45]) (./ch-hubbard/variants.tex [46]) [47] [48
+
+
+]) (./ch-afqmc/main.tex
 Chapter 3.
 \openout5 = `thesis.mtc'.
 
 \openout5 = `thesis.mtc'.
 
-(./thesis.mtc3) [47
-
-
+(./thesis.mtc3) [49
 
 ]
 Package acronym Info: Label `acro:TMDNR' overridden on input line 12.
- (./ch-afqmc/classical-monte-carlo.tex [48] [49] [50]
-[51] [52]
+ (./ch-afqmc/classical-monte-carlo.tex [50] [51] [52]
+[53] [54]
 Package acronym Info: Label `acro:FFT' newly defined as it shall be overridden
 although it is yet undefined on input line 249.
- [53]) (./ch-afqmc/theoretical-framework.tex [54]
+ [55]) (./ch-afqmc/matform.tex [56]
 Package acronym Info: Label `acro:GCE' overridden on input line 15.
-Package acronym Info: Label `acro:QMC' overridden on input line 23.
-Package acronym Info: Label `acro:PHS' overridden on input line 27.
- [55] [56] [57]
-[58] [59]
+ [57] [58] [59] [60] [61]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 274.
- [60] [61] [62] [63]) [64] [65] [66
-
-
-]) (./ch-applications/main.tex
+put line 312.
+ [62]
+[63]) (./ch-afqmc/measurements.tex [64]
+Package acronym Info: Label `acro:QMC' overridden on input line 14.
+ [65] [66] [67])
+(./ch-afqmc/stabilization.tex) [68]) (./ch-applications/main.tex
 Chapter 4.
 \openout5 = `thesis.mtc'.
 
 \openout5 = `thesis.mtc'.
 
-(./thesis.mtc4) [67
+(./thesis.mtc4) [69
+
+
 
 ] (./ch-applications/1d-chain.tex)
-(./ch-applications/square-lattice.tex) (./ch-applications/honeycomb.tex)
-(./ch-applications/nanoribbon.tex
+(./ch-applications/square-lattice.tex) (./ch-applications/honeycomb.tex
 Package acronym Info: Label `acro:TMD' overridden on input line 5.
+)
+(./ch-applications/nanoribbon.tex
 Package acronym Info: Label `acro:PBC' overridden on input line 14.
 Package acronym Info: Label `acro:OBC' overridden on input line 15.
-<all-figures/Applications/nanoribbon.pdf, id=1657, 1027.84pt x 770.88pt>
+ [70]
+<all-figures/Applications/nanoribbon.pdf, id=1766, 1027.84pt x 770.88pt>
 File: all-figures/Applications/nanoribbon.pdf Graphic file (type pdf)
 <use all-figures/Applications/nanoribbon.pdf>
 Package pdftex.def Info: all-figures/Applications/nanoribbon.pdf  used on input
  line 26.
 (pdftex.def)             Requested size: 355.09189pt x 163.10701pt.
- [68]) [69 <./all-figures/Applications/nanoribbon.pdf>] [70
+ [71 <./all-figures/Applications/nanoribbon.pdf>]
+<all-figures/Applications/fillingVsE.png, id=1873, 291.85036pt x 148.1535pt>
+File: all-figures/Applications/fillingVsE.png Graphic file (type png)
+<use all-figures/Applications/fillingVsE.png>
+Package pdftex.def Info: all-figures/Applications/fillingVsE.png  used on input
+ line 88.
+(pdftex.def)             Requested size: 233.48059pt x 118.52295pt.
+<all-figures/Applications/fillingVsEnanoribbon.png, id=1874, 291.36855pt x 150.
+5625pt>
+File: all-figures/Applications/fillingVsEnanoribbon.png Graphic file (type png)
 
+<use all-figures/Applications/fillingVsEnanoribbon.png>
+Package pdftex.def Info: all-figures/Applications/fillingVsEnanoribbon.png  use
+d on input line 89.
+(pdftex.def)             Requested size: 233.09514pt x 120.45015pt.
 
-]) (./ch-conclusion/conclusions.tex
+Overfull \hbox (24.93423pt too wide) in paragraph at lines 88--91
+[][] [] 
+ []
+
+) [72 <./all-figures/Applications/fillingVsE.png> <./all-figures/Applications/f
+illingVsEnanoribbon.png>]) (./ch-conclusion/conclusions.tex
 Chapter 5.
 Package minitoc Info: I0006
 (minitoc)             thesis.mtc5 is empty on input line 4.
-[71
-
-] [72]) [73
+[73
 
 
 
+] [74]) [75
 
 
-] [74] [75] [76] [77] [78] (./end-appendices/hubbardObSol.tex
+
+
+
+] [76] [77] [78] [79] [80] (./end-appendices/hubbardObSol.tex
 Appendix A.
 [1
 
 
 
 ] [2] [3] [4] [5]
-<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=1920, 457.71pt x 210.7
+<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=2030, 457.71pt x 210.7
 875pt>
 File: all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png Graphic file (type pn
 g)
@@ -1919,81 +1951,92 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: BDD44518DA1A621954EB81939921B609;5164.
+
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: D5CBBD8C92F37F6F62AD99BB700930DD;5953
+(rerunfilecheck)             After:  60437A74C8D23A31E3141AFD50BE0554;5956.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22178 strings out of 492649
- 367397 string characters out of 6129622
- 894906 words of memory out of 5000000
- 24582 multiletter control sequences out of 15000+600000
+ 22249 strings out of 492649
+ 368923 string characters out of 6129622
+ 896056 words of memory out of 5000000
+ 24619 multiletter control sequences out of 15000+600000
  43547 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,27n,100p,2020b,2040s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,27n,100p,2020b,2035s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
  </Users/franciscobrito/Library/texlive/2018/texmf-var/fonts/pk/ljfour/public/b
 bm/bbm10.600pk>{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmm
-ib9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/cm-super/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/cm-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
-ublic/cm-super/sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw
-/bookman/ubkd8a.pfb>
-Output written on thesis.pdf (117 pages, 12435543 bytes).
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib
+9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/cm-super/sfsl1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/cm-super/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/cm-super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/cm-super/sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/b
+ookman/ubkd8a.pfb>
+Output written on thesis.pdf (121 pages, 13210788 bytes).
 PDF statistics:
- 2373 PDF objects out of 2487 (max. 8388607)
- 2062 compressed objects within 21 object streams
- 638 named destinations out of 1000 (max. 500000)
- 660 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2492 PDF objects out of 2984 (max. 8388607)
+ 2168 compressed objects within 22 object streams
+ 663 named destinations out of 1000 (max. 500000)
+ 747 words of extra memory for PDF output out of 10000 (max. 10000000)
 

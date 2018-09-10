@@ -1,0 +1,15 @@
+\section{Stabilization}
+\label{subsec:stabilization}
+
+The Green's function is needed both to perform importance sampling and to make measurements.
+Naively, its computation would involve multiplying a long chain of $\bm B$-matrices, adding the identity, and then taking the inverse.
+We saw that this costly procedure can be substituted by a more efficient update scheme, which involves wrapping the Green's function as one sweeps between imaginary time slices.
+
+The stability of this procedure depends on the conditioning of the matrices at hand.
+As the temperature is lowered, or the system size increased, round-off errors accumulate and precision is gradually lost.
+Thus, we must compute the Green's function from scratch \say{naively}.
+
+As $\beta$ increases more and more, the problem becomes so severe that the Green's function cannot be computed at all!
+This is an effect due to finite-precision in computers.
+$\bm B$-matrices potentially contain largely different energy scales.
+As more and more of them are multiplied together, the condition number of the product increases, and the situation worsens, with the energy scales becoming exponentially divergent.

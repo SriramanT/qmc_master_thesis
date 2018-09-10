@@ -135,3 +135,40 @@ Recently, these phases have been probed by the \ac{QMC} method we shall use in t
 In fact, mean field theory is insightful, but uncontrolled.
 It tends to overestimate the possibility of ordering since it always predicts a phase transition.
 Even if the transition does occur, generally its details are not perfectly captured (the critical temperature, the critical exponents, ...).
+
+\subsection{Self-consistent solution in the \ac{GCE}}\label{subsec:selfconsistent}
+
+In this section, we solve the mean field Hamiltonian in an iterative, self-consistent manner.
+
+\begin{equation}
+\mathcal{H}_{\text{MF}} = \mathcal{H}_\uparrow + \mathcal{H}_\downarrow + \mathcal{C} , \,\, \mathcal{H}_\sigma = - t \sum_{\left\langle i, j \right\rangle} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) + U \sum_i n_{i,\sigma} \left\langle n_{i,-\sigma} \right\rangle , \,\, \mathcal{C} = - U \sum_i \left\langle n_{i,\uparrow} \right\rangle \left\langle n_{i,\downarrow} \right\rangle
+\end{equation}
+
+Since the interacting problem is turned into a single particle problem, the solution basically consists of diagonalizing two $N \times N$ matrices, where $N$ is the size of the system.
+By varying the $2N$ mean field parameters, which are essentially the average local densities $\left\langle n_{i,\sigma} \right\rangle$, we can find the ground state, or other excited states, at the mean field level.
+The mean field approach has several advantages: the Hilbert space is reduced from exponential to linear in the system size, which allows the study of relatively large systems; we can do the computation in real space; we can arbitrarily change the system geometry (introducing \acp{OBC}, defects, nonuniform hoppings); the model is flexible: tight-binding, and interaction terms are easily added to the Hamiltonian.
+However, $SU(2)$ symmetry is broken, and electron correlations are neglected.
+Only long range order is captured and its stability is often overestimated.
+While the mean field solution approaches the exact solution at weak coupling $U$, it can give only qualitative behavior at best, when $U$ increases significantly.
+
+The iterative method starts with the initialization of the mean field parameters.
+This initial condition cannot be completely arbitrary because it affects convergence.
+Typical choices are the random initial condition or the paramagnetic state.
+
+Then, we repeat the following steps until convergence:
+
+\begin{itemize}
+\item Diagonalize $\mathcal{H}_\sigma$, obtaining the one-particle spectrum $\varepsilon_{\alpha, \sigma}$ and the corresponding eigenvectors.
+
+\begin{equation}
+\mathcal{H}_{\text{MF}} = \sum_{\alpha, \sigma} \varepsilon_{\alpha, \sigma} d_{\alpha, \sigma}^\dagger d_{\alpha, \sigma} + \mathcal{C} , \,\, d_{\alpha, \sigma} = \sum_i Q_{\alpha i, \sigma}^\star c_{i,\sigma}
+\end{equation}
+
+\item Recompute mean field parameters, and check for convergence: at iteration $I$, $\left\langle n_{i,\sigma} \right\rangle_I \approx \left\langle n_{i,\sigma} \right\rangle_{I - 1}$.
+
+\begin{equation}
+\left\langle n_{i,\sigma} \right\rangle = \sum_\alpha | Q_{\alpha i, \sigma} |^2 ( 1 + e^ { \beta ( \varepsilon_{\alpha, \sigma} - \mu )} )^{-1}
+\end{equation}
+
+\end{itemize}
+
