@@ -72,7 +72,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.6.3}Self-consistent solution in the \ac {GCE}}{47}{subsection.2.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Simulatable variants of the Hubbard model}{48}{section.2.7}
+\contentsline {section}{\numberline {2.7}Simulatable variants of the Hubbard model}{49}{section.2.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Auxiliary Field Quantum Monte Carlo}{51}{chapter.3}
 \defcounter {refsection}{0}\relax 

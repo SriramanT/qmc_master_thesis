@@ -144,7 +144,7 @@ Notice that while $\bm Q$ and $\bm T$ are well conditioned, $\kappa ( \bm Q^T \b
 
 Then, how does this procedure work?
 We gave an intuitive picture which we now make mathematically precise.
-One may safely assume that $\bm Q^T T^{-1}$ has moderate magnitude and condition number, so that when we add the first many elements of the diagonal $\bm D$, which are typically huge, we end up with diagonally dominant matrix.
+One may safely assume that $\bm Q^T \bm T^{-1}$ has moderate magnitude and condition number, so that when we add the first many elements of the diagonal $\bm D$, which are typically huge, we end up with diagonally dominant matrix.
 Its first many rows are essentially a diagonal matrix plus a zero block on the right.
 The remaining rows determine the effective condition number, so that $\kappa ( \bm Q^T \bm T^{-1} + \bm D )$ is actually reduced and the matrix becomes better conditioned.
 

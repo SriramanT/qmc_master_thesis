@@ -172,6 +172,22 @@ Then, we repeat the following steps until convergence:
 
 \end{itemize}
 
+To compare with the results of our \ac{QMC} simulations, we may compute other observables, such as the spin-spin correlation, by inverting the transformation above: $c_{i, \sigma} = \sum_{\alpha} Q_{\alpha i, \sigma} d_{\alpha, \sigma}$, yielding $\left\langle c_{i,\sigma}^\dagger c_{j,\sigma} \right\rangle = \sum_{\alpha, \beta} Q_{\beta i, \sigma}^\star Q_{\alpha j, \sigma} \underbrace{\left\langle d_{\beta,\sigma}^\dagger d_{\alpha,\sigma} \right\rangle}_{\delta_{\alpha\beta} \rho (\varepsilon_\alpha)} = \sum_\alpha Q_{\alpha i, \sigma}^\star Q_{\alpha j, \sigma} \rho ( \varepsilon_\alpha ) $, where $\rho (\varepsilon_\alpha)$ is the Fermi function.
+
+\begin{equation}
+\begin{split}
+&\left\langle S_i^z S_j^z \right\rangle = \left\langle ( n_{i,\uparrow} -  n_{i,\downarrow} ) ( n_{j,\uparrow} -  n_{j,\downarrow} )  \right\rangle = \sum_{\sigma} \left( \left\langle c_{i,\sigma}^\dagger c_{i,\sigma} c_{j,\sigma}^\dagger c_{j,\sigma} \right\rangle - \left\langle c_{i,-\sigma}^\dagger c_{i,-\sigma} c_{j,\sigma}^\dagger c_{j,\sigma} \right\rangle \right) \\
+&=\sum_{\sigma} \left( \left\langle n_{i,\sigma} \right\rangle \left\langle n_{j,\sigma} \right\rangle - \left\langle n_{i,-\sigma} \right\rangle \left\langle n_{j,\sigma} \right\rangle + \left\langle c_{i,\sigma}^\dagger c_{j,\sigma}  \right\rangle \left\langle c_{i,\sigma} c_{j,\sigma}^\dagger \right\rangle \right) , \, \text{by Wick's theorem} \\
+&=
+\begin{cases}
+\sum_{\sigma, \alpha, \beta} \rho ( \varepsilon_\alpha ) \rho ( \varepsilon_\beta ) \left( | Q_{\alpha i, \sigma} |^2 | Q_{\beta j, \sigma} |^2  - | Q_{\alpha i, -\sigma} |^2 | Q_{\beta j, \sigma} |^2  - Q_{\alpha i, \sigma}^\star Q_{\alpha j, 
+\sigma}  Q_{\beta j, \sigma}^\star Q_{\beta i, 
+\sigma} \right) \,\, i \neq j \\
+\sum_{\alpha,\sigma} | Q_{\alpha i, \sigma} |^2 \rho (\varepsilon_\alpha) - \sum_{\alpha,\beta} | Q_{\alpha i, \uparrow} |^2 \rho (\varepsilon_\alpha) | Q_{\beta i, \downarrow} |^2 \rho (\varepsilon_\beta) \,\, i = j
+\end{cases}
+\end{split}
+\end{equation}
+
 As we explain in appendix \ref{ap:hubbardObSol}, a self-consistent solution is not necessarily the mean field one, thus one must continually check if the functional $F$ of Eq.(\ref{eq:gibbs2}) is being minimized.
 Moreover, we must repeat the calculation above several times by varying the initial conditions, and then select the lowest energy solution that minimizes $F$ as the mean field one.
 
@@ -181,7 +197,7 @@ First, there are many possible initial conditions, most notably: the random one,
 In some cases, the symmetry of the system dramatically slows down convergence.
 By starting the procedure at a higher temperature than the desired one, we can improve convergence.
 The temperature is then gradually lowered until the desired one is achieved, and this procedure is applied at that temperature.
-There are a lot of possible annealing schemes, namely keeping $\beta$ fixed for some iterations and then adjusting it to the desired $\beta = \beta_0$, and smoothly reducing $\beta$ until it reaches $\beta_0$.
+There are a lot of possible annealing schemes, namely keeping $\beta$ fixed for some iterations and then adjusting it to the desired $\beta = \beta_0$, or smoothly reducing $\beta$ until it reaches $\beta_0$.
 
 A common convergence issue is the oscillation between two configurations $\left\langle n_{i,\sigma}\right\rangle_I \leftrightarrow \left\langle n_{i,\sigma}\right\rangle_{I+1}$.
 This is solved by averaging the values obtained at the current and previous iterations: $\left\langle n_{i,\sigma}\right\rangle_I \leftarrow \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_I + \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_{I+1}$
