@@ -133,7 +133,63 @@ To evaluate correlation functions we use Wick's theorem. Expectations of more th
 How would one measure a correlation function experimentally? Fortunately, there is a quantity that is easy to measure called structure factor, which is just the Fourier transform of the correlation function
 
 \begin{equation}
-S(\bm q) = \sum_j e^{i\bm q \cdot \bm R_j} C(j) 
+S(\bm q) = \frac{1}{N} \sum_j e^{i\bm q \cdot \bm R_j} C(j) 
 \end{equation}
 
 The accuracy of QMC simulations can be evaluated by comparing the results for the Fourier transformed correlation functions with the corresponding experimentally measured structure factors.
+
+\subsection{Imaginary-time displaced Green's functions and susceptibilities}
+\label{subsec:imtimedisp}
+
+By applying Wick's theorem, any \say{equal-time observable} may written in terms of a combination of products of certain elements of the single-particle equal-time Green's matrices $\bm G ( \tau, \tau )$.
+Other \say{unequal-time} quantities, such as susceptibilities are time dependent.
+
+\begin{equation}
+\chi_{\mathcal{O}} ( i \omega_n ) = \int_0^\beta \left\langle \mathcal{O}^\dagger ( \tau ) \mathcal{O} ( 0 ) \right\rangle e^{i\omega_n \tau} d\tau ,
+\end{equation}
+which are commonly also Fourier transformed, and represented in $\bm q$-space. 
+
+\begin{equation}
+\chi ( \bm q ) = \frac{1}{N} \sum_j e^{i\bm q \cdot \bm R_j} \int_0^\beta \left\langle \mathcal{O}_{i + j}^\dagger ( \tau ) \mathcal{O}_i ( 0 ) \right\rangle d\tau
+\end{equation}
+
+When we apply Wick's theorem to this case, contractions between fermion operators at different time slices arise, and thus we require matrix elements of the \emph{unequal}-time Green's function
+
+\begin{equation}
+\bm G ( \tau' , \tau ) = \bm B ( \tau', \tau ) ( \bm I + \bm B ( \tau, 0 ) \bm B ( \beta, \tau ) )^{-1}
+\end{equation}
+
+The Green's function can also be propagated to obtain these matrices: $\bm G ( \tau_2, \tau_1) = \bm B ( \tau_2, \tau') \bm G ( \tau', \tau_1)$ , $\tau_2 > \tau_1$, or $\bm G ( \tau_1, \tau_2) =  \bm G ( \tau', \tau_1) \bm B^{-1} ( \tau_2, \tau') , \, \tau_2 < \tau_1$, but the procedure becomes unstable as $\beta$ or $N$ increase, as we will discuss later.
+
+The unequal time Green's function is defined as 
+$
+G_{ij} ( \tau_1, \tau_2 ) = \left\langle \mathcal{T} c_i ( \tau_1 ) c_j^\dagger ( \tau_2 ) \right\rangle_{\bm h}
+$, 
+i.e. for $\tau_1 > \tau_2$:
+
+\begin{equation}
+\left\langle \mathcal{T} c_i ( \tau_1 ) c_j^\dagger ( \tau_2 ) \right\rangle_{\bm h} = \frac{\Tr [ U_{\bm h} (\beta, \tau_2 ) U_{\bm h}^{-1} (\tau_1, \tau_2) c_i U_{\bm h} (\tau_1, \tau_2 ) c_j^\dagger U_{\bm h} (\tau_2, 0) ]}{\Tr[ U_{\bm h}(\beta, 0) ]}
+\end{equation}
+
+Computing $U_{\bm h}^{-1} (\tau_1, \tau_2) c_i U_{\bm h} (\tau_1, \tau_2 )$ involves computing $c_i ( \tau ) = e^{\tau \bm c^\dagger \bm A \bm c} c_i e^{-\tau \bm c^\dagger \bm A \bm c}$ by using the Heisenberg equation:
+$
+\partial_\tau c_i ( \tau ) = e^{\tau \bm c^\dagger \bm A \bm c} [ \bm c^\dagger \bm A \bm c, c_i ] e^{-\tau \bm c^\dagger \bm A \bm c} = - \bm A \bm c ( \tau ) \rightsquigarrow c_i (\tau ) = ( e^{-\bm A} \bm c )_i , \, c_i ^\dagger(\tau ) = ( \bm c^\dagger e^{\bm A}  )_i 
+$.
+
+Since $\bm A$ is an arbitrary matrix, and the $\bm B$-matrices are matrix exponentials, we can define $\bm B = e^{-\bm A}$:
+
+\begin{equation}
+\begin{split}
+U_{\bm h}^{-1} (\tau_1, \tau_2) c_i U_{\bm h} (\tau_1, \tau_2 ) &= ( \bm B_{\bm h} ( \tau_1 , \tau_2 ) \bm c )_i \\
+U_{\bm h}^{-1} (\tau_1, \tau_2) c_i^\dagger U_{\bm h} (\tau_1, \tau_2 ) &= ( \bm c^\dagger \bm B_{\bm h}^{-1} ( \tau_1 , \tau_2 )  )_i
+\end{split} ,
+\end{equation}
+and since the $\bm B$'s are matrices, not operators, they can come out of the trace.
+This leads to a Wick's theorem for time-displaced Green's functions that stems directly from the equal-time version.
+
+\begin{equation}
+\begin{split}
+G_{ij} ( \tau_1 , \tau_2 ) &= \left\langle  c_i ( \tau_1 ) c_j^\dagger ( \tau_2 ) \right\rangle_{\bm h} = [ \bm B_{\bm h} (\tau_1, \tau_2 ) \bm G (\tau_2, \tau_2 ) ]_{ij} , \tau_1 > \tau_2 \\
+G_{ij} ( \tau_1 , \tau_2 ) &= -\left\langle  c_j^\dagger ( \tau_2 ) c_i ( \tau_1 )  \right\rangle_{\bm h} = - [ ( \bm I - \bm G (\tau_1, \tau_1 ) ) \bm B_{\bm h}^{-1} (\tau_1, \tau_2 ) ]_{ij} , \tau_1 < \tau_2
+\end{split}
+\end{equation}

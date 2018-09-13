@@ -364,13 +364,14 @@ The most expensive operation is the computation of the $(0, 0)$ entry of $G^\sig
 However, this object is always computed in advance (it is the main object of the simulation!), so the computation of the acceptance ratio is essentially free.
 Whenever a step is accepted, the Green's matrices are updated in $\mathcal{O}(N^2)$ flops, and the acceptance ratio is recomputed as our notation suggests
 
-\begin{equation}
+\begin{equation}\label{eq:updates}
 \bm G^\sigma ( \bm h ) \leftarrow \bm G^\sigma ( \bm h ) - \frac{\alpha_{i, \sigma}}{r_{l, i}} \bm u_{i, \sigma} \bm w_{i, \sigma}^T \quad \quad r_{l,i} = d_{i, \uparrow} d_{i, \downarrow} ,
 \end{equation}
 where $\bm u_{i, \sigma} = ( \bm I - \bm G^\sigma ( \bm h ) ) \bm e_i$, and $\bm w_{i, \sigma} = [ \bm G^\sigma (\bm h) ]^T \bm e_i$.
 Notice that here, $\bm G^\sigma$ is the Green's matrix at slice $l$.
+If the step is accepted, the $i$-th column of the $\bm B_l ( \widetilde{\bm h_l} )$-matrix is multiplied by $e^{-2 \sigma \nu h_{l i}}$.
 
-Notice that only one entry of each of the Green's matrices is used at each step for sampling.
+Only one entry of each of the Green's matrices is used at each step for sampling.
 To improve the efficiency of our implementation, we can compute only the relevant entry that is required for sampling until a sweep of the space lattice is completed, at which point we need to update the entire Green's function (since this final update has complexity $\mathcal{O}(N^3)$, the complexity of the algorithm does not change, although some speed-up is expected).
 This block high rank update is a  \say{delayed update} in the sense that we avoid unnecessary computations until they are absolutely needed.
 
@@ -384,7 +385,7 @@ Concomitantly, for example, when we advance to $l = 1$, we may write the $\bm M$
 
 The Metropolis ratio can be computed with $\widehat{\bm M}$, and the Green's functions are also wrapped :
 
-\begin{equation}
+\begin{equation}\label{eq:wrap}
 r = \frac{\det[\bm M_\uparrow (\bm h')] \det[\bm M_\downarrow ( \bm h')]}{\det[\bm M_\uparrow (\bm h)] \det[\bm M_\downarrow ( \bm h)]} = \frac{\det[\widehat{\bm M}_\uparrow (\bm h')] \det[\widehat{\bm M}_\downarrow ( \bm h')]}{\det[\widehat{\bm M}_\uparrow (\bm h)] \det[\widehat{\bm M}_\downarrow ( \bm h)]} 
 \quad\quad
 \widehat{\bm G}^\sigma ( \widetilde{\bm h}_0) = \bm B_{0, \sigma}( \widetilde{\bm h}_0 ) {\bm G}^\sigma (\bm h) \bm B_{0, \sigma}^{-1}  ( \widetilde{\bm h}_0 )
@@ -407,7 +408,31 @@ In this section, we focus on the computation of the matrix exponential $\bm B = 
 Although the cost of computing it is small, and it is done only once in the initialization phase of the algorithm, if it is done naively, the resulting matrix is dense.
 This is undesired since it is multiplied repeatedly by other matrices throughout the algorithm, which has a high cost of order $\mathcal{O}(N^3)$.
 Diagonalizing and exponentiating $\bm K$ results in a dense matrix of $N^2$ elements.
-For uniform hoppings, we can use the \ac{FFT} and apply the kinetic energy $e^{\Delta \tau \bm K }$ in momentum space, in which $\bm K$ is diagonal.
+For uniform hoppings, we can use the \ac{FFT} and apply the exponential of the kinetic term $e^{t \Delta \tau \bm K }$ in momentum space, in which $\bm K$ is diagonal.
 The drawback of this approach is two-fold: first, the system size becomes constrained to powers of 2, so that the \ac{FFT} can be applied efficiently, and, more importantly, we cannot apply it to nonuniform hoppings (which is precisely the case we are interested in in this work).
 
-A convenient, and sparse approximation of $\bm B$ in real space is available, and it is obtained simply by appling the Trotter breakup.
+A convenient, and sparse approximation of $\bm B$ in real space is available, and it is obtained simply by appling the Trotter breakup to the exponential of the hopping matrix:
+
+\begin{equation}
+e^{t \Delta \tau \bm K } = e^{t \Delta \tau \sum_{\left\langle i, j \right\rangle} \bm K^{(ij)} } = \prod_{\left\langle i, j \right\rangle} e^{t \Delta \tau\bm K^{(ij)}} + \mathcal{O} ( (t \Delta \tau)^2 ) ,
+\end{equation}
+where the sparse matrices $\bm K^{(ij)}$ have only two nonzero elements: $K_{ij}^{(ij)} = K_{ji}^{(ij)} = K_{ij}$, such that the exponential may easily be computed:
+
+\begin{equation}
+e^{t\Delta\tau \bm K^{(ij)} } = \exp \left[ t\Delta\tau
+\begin{pmatrix}
+1 & \dots & 0 & \dots & 0 & \dots 0 \\
+\vdots & & \vdots & & \vdots & & \vdots \\
+0 & \dots & \cosh (  t\Delta\tau K_{ij} ) & \dots & \sinh (  t\Delta\tau K_{ij} ) & \dots 0 \\
+\vdots & & \vdots & & \vdots & & \vdots \\
+0 & \dots & \sinh (  t\Delta\tau K_{ij} ) & \dots & \cosh (  t\Delta\tau K_{ij} ) & \dots 0 \\
+\vdots & & \vdots & & \vdots & & \vdots \\
+0 & \dots & 0 & \dots & 0 & \dots 1 \\
+\end{pmatrix}
+\right] ,
+\end{equation}
+and it is also a sparse matrix with only the $ii$, $ij$, $ji$, $jj$ elements differing from the identity.
+Thus, the dense matrix multiplication involving $\bm B$ and another $N \times N$ matrix becomes a series of sparse matrix multiplications, and the complexity decreases from $\mathcal{O}(N^3)$ to $\mathcal{O}(N N_b)$, where $N_b$ is the number of bonds, a number that grows linearly with the system size for local hoppings.
+For example, for the square lattice, $N_b = 2 N$.
+The checkerboard breakup is particularly useful with site-dependent hoppings (indicating for example a fixed lattice distortion or a multi-orbital model), since it is both efficient and easy to implement.
+Furthermore, the computation of the inverse requires only reversing the sign of the off-diagonal elements, which saves us another $\mathcal{O}(N^3)$ computation.

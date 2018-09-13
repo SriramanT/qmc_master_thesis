@@ -2099,14 +2099,25 @@
     <bcf:citekey order="79">hou_numerical_2009</bcf:citekey>
     <bcf:citekey order="80">santos_introduction_2003</bcf:citekey>
     <bcf:citekey order="81">f._assaad_quantum_2002</bcf:citekey>
-    <bcf:citekey order="82">white_numerical_1989</bcf:citekey>
-    <bcf:citekey order="83">yazyev_emergence_2010</bcf:citekey>
-    <bcf:citekey order="84">feldner_dynamical_2011</bcf:citekey>
-    <bcf:citekey order="84">golor_quantum_2013</bcf:citekey>
-    <bcf:citekey order="85">gennes_superconductivity_1999</bcf:citekey>
-    <bcf:citekey order="86">mila_physique_2007</bcf:citekey>
-    <bcf:citekey order="87">gennes_superconductivity_1999</bcf:citekey>
-    <bcf:citekey order="88">yip_note_1986</bcf:citekey>
+    <bcf:citekey order="82">baeriswyl_interacting_2012</bcf:citekey>
+    <bcf:citekey order="82">feldbacher_efficient_2001</bcf:citekey>
+    <bcf:citekey order="82">bai_stable_2011</bcf:citekey>
+    <bcf:citekey order="83">hirsch_stable_1988</bcf:citekey>
+    <bcf:citekey order="83">white_algorithm_1988</bcf:citekey>
+    <bcf:citekey order="84">hanke_electronic_nodate</bcf:citekey>
+    <bcf:citekey order="85">newman_computational_2012</bcf:citekey>
+    <bcf:citekey order="86">bai_stable_2011</bcf:citekey>
+    <bcf:citekey order="87">bai_stable_2011</bcf:citekey>
+    <bcf:citekey order="88">hanke_electronic_nodate</bcf:citekey>
+    <bcf:citekey order="88">white_numerical_1989</bcf:citekey>
+    <bcf:citekey order="89">white_numerical_1989</bcf:citekey>
+    <bcf:citekey order="90">yazyev_emergence_2010</bcf:citekey>
+    <bcf:citekey order="91">feldner_dynamical_2011</bcf:citekey>
+    <bcf:citekey order="91">golor_quantum_2013</bcf:citekey>
+    <bcf:citekey order="92">gennes_superconductivity_1999</bcf:citekey>
+    <bcf:citekey order="93">mila_physique_2007</bcf:citekey>
+    <bcf:citekey order="94">gennes_superconductivity_1999</bcf:citekey>
+    <bcf:citekey order="95">yip_note_1986</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
