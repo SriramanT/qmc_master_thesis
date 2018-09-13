@@ -172,3 +172,23 @@ Then, we repeat the following steps until convergence:
 
 \end{itemize}
 
+As we explain in appendix \ref{ap:hubbardObSol}, a self-consistent solution is not necessarily the mean field one, thus one must continually check if the functional $F$ of Eq.(\ref{eq:gibbs2}) is being minimized.
+Moreover, we must repeat the calculation above several times by varying the initial conditions, and then select the lowest energy solution that minimizes $F$ as the mean field one.
+
+Now, we discuss how to circumvent the convergence issues that may arise when applying the self-consistent procedure.
+First, there are many possible initial conditions, most notably: the random one, which is the most unbiased, but may be slow or not converge at all; the paramagnetic state $\left\langle n_{i,\sigma} \right\rangle = \text{const.}$, which, when combined with the annealing method we shall describe below, emulates the random initial condition; a specific state, such as the antiferromagnetic on, which is a biased choice, which limits the accessible part of parameter space, and potentially gives a misleading mean field solution.
+
+In some cases, the symmetry of the system dramatically slows down convergence.
+By starting the procedure at a higher temperature than the desired one, we can improve convergence.
+The temperature is then gradually lowered until the desired one is achieved, and this procedure is applied at that temperature.
+There are a lot of possible annealing schemes, namely keeping $\beta$ fixed for some iterations and then adjusting it to the desired $\beta = \beta_0$, and smoothly reducing $\beta$ until it reaches $\beta_0$.
+
+A common convergence issue is the oscillation between two configurations $\left\langle n_{i,\sigma}\right\rangle_I \leftrightarrow \left\langle n_{i,\sigma}\right\rangle_{I+1}$.
+This is solved by averaging the values obtained at the current and previous iterations: $\left\langle n_{i,\sigma}\right\rangle_I \leftarrow \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_I + \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_{I+1}$
+The weights attributed to each configuration can be also be different, or even vary with the iteration: $\left\langle n_{i,\sigma}\right\rangle_I \leftarrow P(I) \left\langle n_{i,\sigma}\right\rangle_I + (1 - P(I) ) \left\langle n_{i,\sigma}\right\rangle_{I+1}$, if we make sure that $P(I) > \delta$, the latter being the convergence parameter.
+
+Finally, the number of parameters may be reduced.
+This is done while taking into account the symmetry of the system.
+For example, one may take only the number of sublattices, say 2 for a square lattice with \acp{PBC}.
+This corresponds to the uniform density ansatz $\left\langle n_{i,\sigma} \right\rangle = n_X = \frac{1}{N_X} \sum_{i \in X} \left\langle n_{i,\sigma} \right\rangle$ for all sites in the $X$ sublattice.
+If this reduction is not done correctly, for example by choosing the correct number of sublattices, we will obtain biased solutions that do not necessarily reflect the nature of the mean field solution.

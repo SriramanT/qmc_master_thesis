@@ -82,7 +82,7 @@ Consider the Hamiltonian to be given by $\mathcal{H} = \mathcal{H}_0 + \mathcal{
 
 We would like to find an effective Hamiltonian that is quadratic in the fermion operators:
 
-\begin{equation}
+\begin{equation}\label{eq:mfAv}
 \mathcal{H}_{\text{eff}} = \sum_{\bm k, \sigma} (\varepsilon_{\bm k} + v_{\bm k} ) c_{\bm k, \sigma}^\dagger c_{\bm k, \sigma}
 \end{equation}
 
@@ -528,3 +528,41 @@ Applying Wick's theorem to the set of non-interacting (and thus independent) par
 \mathcal{G} ( x_1, x_2, ... x_n; y_1, y_2,... y_n ) = \sum_P (- 1 )^P \mathcal{G}^0 ( x_1; y_{i_1} ) \mathcal{G}^0 ( x_2; y_{i_2} ) ... \mathcal{G}^0 ( x_n; y_{i_n} ) ,
 \end{equation}
 which corresponds to evaluating the determinant of the matrix $\bm G$, defined as $G_{ij} \equiv \mathcal{G}^0 ( x_i ; x_j )$ for $i, j = 1, 2, ..., n$, where the $\mathcal{G}^0$ are the free-particle Green's functions, also called propagators.
+
+\section{Mean field theory and the variational principle}
+\label{sec:mftVariational}
+
+In section \ref{sec:hartree-fock}, we derived the Hartree-Fock form of the Hubbard Hamiltonian.
+Here we explain how it arises as a mean field theory prone to studying spontaneous symmetry breaking, generally by resorting to a self-consistent procedure.
+This is useful as a first approach to investigate the tendency towards long range ordering, for example in ferromagnetic, or antiferromagnetic phases.
+
+The starting point is the Gibbs-Bogoliubov-Feynman (GBF) inequality
+
+\begin{equation}\label{eq:gibbs}
+\mathcal{F} \le \left\langle \mathcal{H} \right\rangle_{\text{MF}} - T \mathcal{S}_{\text{MF}} ,
+\end{equation}
+which is saturated when $\mathcal{H}_{\text{MF}} = \mathcal{H}$, and in general  serves as a variational principle to find a simpler, non-interacting form for the Hamiltonian.
+$\mathcal{F}$ is the system's free energy, $T$ is the temperature and the mean field averages are computed as per Eq.(\ref{eq:mfAv}), while the entropy is computed for the thermal distribution $\rho_{\text{MF}} = e^{-\beta \mathcal{H}_{\text{MF}}}$.
+Defining $\mathcal{F}_{\text{MF}} = \left\langle \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} - T \mathcal{S}_{\text{MF}}$, we may recast Eq.(\ref{eq:gibbs}) as
+
+\begin{equation}\label{eq:gibbs2}
+\mathcal{F} \le \mathcal{F}_{\text{MF}} + \left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} \equiv F
+\end{equation}
+
+We seek a quadratic Hamiltonian that minimizes $F$, i.e. $\delta F = 0$.
+
+\begin{equation}
+\mathcal{H}_{\text{MF}} = \mathcal{H}_K + \sum_{i, j, \sigma} \varepsilon_{ij} c_{i, \sigma}^\dagger c_{j, \sigma} ,
+\end{equation}
+and by varying $\varepsilon_{ij}$, we can compute $\delta F$ and show that it is minimized for the mean field Hubbard Hamiltonian in much the same way as we did in section \ref{sec:hartree-fock}.
+
+Although the mean field equations can be obtained both from $\delta \mathcal{F}_{\text{MF}} = 0$ and from $\delta F = 0$, this only means that they both have a vanishing functional derivative at a given (common) configuration of the system.
+There may be other configurations at which $\delta \mathcal{F}_{\text{MF}}$ vanishes, but we have only an extremum.
+Thus, we must be cautious when analyzing self-consistent solutions to confirm that they  indeed correspond to a minimum of the functional $F$, and not only an extremum of $\delta \mathcal{F}_{\text{MF}}$.
+
+On a final note, we remark that this procedure can be generalized to the \ac{GCE} by considering the GBF inequality for the grand potential:
+
+\begin{equation}\label{eq:gibbsGrand}
+\Omega \le \Omega_{\text{MF}} + \left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} \equiv F ,
+\end{equation}
+where we defined $\Omega_{\text{MF}} = \left\langle \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} - T \mathcal{S}_{\text{MF}}- \mu \left\langle \mathcal{N} \right\rangle_{\text{MF}}$, $\mathcal{N}$ being the total number operator.

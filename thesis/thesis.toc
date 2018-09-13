@@ -138,6 +138,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.6}On the finite temperature Wick's theorem}{A-12}{section.A.6}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.7}Mean field theory and the variational principle}{A-13}{section.A.7}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {B}Formulating Auxiliary Field Quantum Monte Carlo}{B-1}{appendix.B}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {B.1}Casting the fermionic trace as a determinant}{B-2}{section.B.1}
