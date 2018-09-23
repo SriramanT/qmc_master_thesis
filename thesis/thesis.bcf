@@ -2114,10 +2114,12 @@
     <bcf:citekey order="90">yazyev_emergence_2010</bcf:citekey>
     <bcf:citekey order="91">feldner_dynamical_2011</bcf:citekey>
     <bcf:citekey order="91">golor_quantum_2013</bcf:citekey>
-    <bcf:citekey order="92">gennes_superconductivity_1999</bcf:citekey>
-    <bcf:citekey order="93">mila_physique_2007</bcf:citekey>
+    <bcf:citekey order="92">liu_three-band_2013</bcf:citekey>
+    <bcf:citekey order="93">liu_three-band_2013</bcf:citekey>
     <bcf:citekey order="94">gennes_superconductivity_1999</bcf:citekey>
-    <bcf:citekey order="95">yip_note_1986</bcf:citekey>
+    <bcf:citekey order="95">mila_physique_2007</bcf:citekey>
+    <bcf:citekey order="96">gennes_superconductivity_1999</bcf:citekey>
+    <bcf:citekey order="97">yip_note_1986</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -50,7 +50,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}The non-interacting ($\frac {U}{t} = 0$) limit}{33}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Exact Diagonalization and the Heisenberg Hamiltonian as the Effective $\frac {U}{t} \gg 1$ Model }{37}{section.2.4}
+\contentsline {section}{\numberline {2.4}Exact Diagonalization and the Heisenberg Hamiltonian as the Effective $\frac {U}{t} \gg 1$ Model }{36}{section.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.1}Two-site calculation}{37}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
@@ -58,17 +58,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Green's functions and Wick's theorem}{40}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Single site case}{41}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.1}Single site case}{40}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Non-interacting case}{42}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Non-interacting case}{41}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.3}Finite temperature Wick's theorem for fermions}{43}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.3}Finite temperature Wick's theorem for fermions}{42}{subsection.2.5.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.6}Magnetism and mean field theory}{43}{section.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}Stoner criterion for ferromagnetism}{44}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.1}Stoner criterion for ferromagnetism}{43}{subsection.2.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}Mean field theory of the Hubbard model}{45}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.2}Mean field theory of the Hubbard model}{44}{subsection.2.6.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.6.3}Self-consistent solution in the \ac {GCE}}{47}{subsection.2.6.3}
 \defcounter {refsection}{0}\relax 
@@ -102,7 +102,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.1}Stable matrix multiplication}{73}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Inverting to obtain the Green's function}{75}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.2}Inverting to obtain the Green's function}{74}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.3}Storing partial products and time-displaced Green's function}{76}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
@@ -120,9 +120,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.2}\acp {TMD}}{82}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{83}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{87}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{85}{section*.56}
+\contentsline {chapter}{Bibliography}{89}{section*.59}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
@@ -130,7 +130,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.2}Mott insulators}{A-5}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Computing the partition function for a quadratic Hamiltonian}{A-8}{section.A.3}
+\contentsline {section}{\numberline {A.3}Computing the partition function for a quadratic Hamiltonian}{A-7}{section.A.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.4}Density of states for a 1D tight binding model}{A-9}{section.A.4}
 \defcounter {refsection}{0}\relax 
