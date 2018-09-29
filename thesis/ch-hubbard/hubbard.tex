@@ -7,9 +7,9 @@ Equivalently, we may imagine the system as a collection of tightly bond atoms, i
 Both these approaches lead to band theory, a framework which allows us to predict whether a material is a conductor or a insulator.
 From the tight binding point of view, the effect of the electron mobility is the broadening of the atomic energy levels: the electrons in the solid occupy energy bands, rather than levels.
 The partially filled band of highest energy is called the conduction band, since it is the band occupied by conduction electrons hopping from atom to atom.
-However, in transition metal and rare-earths, as in some compounds containing these elements, apart from the conduction bands there are partially filled bands: $d-$ or $f-$bands.
-The partial filling of these bands and the electron correlations within them are responsible for the characteristic properties of these solids.
-Some of these properties are not explained by band theory, namely the Mott metal-insulator transition \cite{h_de_boer_semiconductors_1937, mott_discussion_1937, mott_basis_1949}.
+However, in transition metal and rare-earths, as in some compounds containing these elements, apart from the conduction bands there are partially filled $d-$ or $f-$bands.
+The electron correlations within these partially filled bands are responsible for the characteristic properties of these solids.
+Some of these are not explained by band theory, namely the Mott metal-insulator transition \cite{h_de_boer_semiconductors_1937, mott_discussion_1937, mott_basis_1949}.
 
 \subsection{Electron correlations in narrow $d-$bands}
 
@@ -18,9 +18,10 @@ To see this, we may simply recall the shape of a $d-$wave function.
 
 \begin{figure}[H]\label{fig:hydrogenWF}
 \centering
-\includegraphics[width = 9cm]{Hubbard/Hydrogen_Density_Plots.png}
+\includegraphics[width = 10cm]{Hubbard/Hydrogen.jpeg}
 \caption[Hydrogen atomic wave functions.]{Probability density plots for different hydrogen orbital wave functions corresponding to quantum numbers $(n, l, m)$ for $n = 3$.
-d-wave functions correspond to $l=2$. Note that the probability density is always higher in a region near the nucleus, and has a complicated shape, which will lead to a non-uniform distribution of electronic charge, as opposed to the case of the free electron gas. (adapted from \cite{hydrogen})}
+d-wave functions correspond to $l=2$.
+We compare them with p-wave functions ($l=1$). Note that the probability density is always higher in a region near the nucleus, and has a complicated shape, which will lead to a non-uniform distribution of electronic charge, as opposed to the case of the free electron gas. (adapted from \cite{hydrogen})}
 \end{figure}
 
 In a $d-$orbital, the electron charge density is concentrated near the nucleus.
@@ -81,7 +82,6 @@ The electrons on the band evolve according to the Hamiltonian:
  c_{\bm k_1 \sigma_1}^\dagger c_{\bm k_2 \sigma_2}^\dagger c_{\bm k_2' \sigma_2} c_{\bm k_1' \sigma_1} ,
 \end{equation}
 where the $\bm k-$sums run over the first Brillouin zone.
-
 The integrals are defined by
 
 \begin{equation}\label{eq:integrals}
@@ -91,36 +91,25 @@ V^{\bm k_1 \bm k_2}_{\bm k_1' \bm k_2'} \equiv \left\langle \bm k_1 \bm k_2 \big
 The first term represents the band energies of the electrons minus their potential energy in the part of the Hartree-Fock field due to the electrons of the $s-$band itself.
 The latter ensures that we do not overestimate the magnitude of the interactions between the electrons of the band: the Hartree-Fock field that specifies $\varepsilon_{\bm k}$ is computed taking into account these interactions, so if we didn't subtract it, we would count the energy of these interactions twice since they reappear in the last term, which  represents the interactions among all electrons in the system.
 Furthermore, we assume that up and down spins are occupied equally, and $\nu_{\bm k}$ are the occupation numbers of the states of the band in the Hartree-Fock calculation. 
-
 The term that we subtract in equation ($\ref{eq:startingHamiltonian}$) corresponds to the part of the interaction term which is already accounted for by the first diagonal \say{mean field} term.
 Thus, it corresponds to the mean field expansion of the interaction term.
-A generic way of writing the interaction term by gathering the $\bm k, \sigma$ indexes into a single index $\mu$ is
-
-\begin{equation}\label{eq:vInt}
+A generic way of writing the interaction term by gathering the $\bm k, \sigma$ indexes into a single index $\mu$ is $
 V_{\text{int}} = \frac{1}{2} V^{\nu\mu}_{\nu'\mu'} c_\nu^\dagger c_\mu^\dagger c_{\mu'} c_{\nu'} ,
-\end{equation}
+$
 where the summation over repeated indexes is implied.
-In appendix \ref{ap:hubbardObSol}, we obtain the mean field form of $V_{\text{int}}$ in the Hartree-Fock approximation.
+In appendix \ref{ap:hubbardObSol}, we obtain the form of $V_{\text{int}}$ in the Hartree-Fock approximation.
 
-Now consider the Wannier functions
+We may write the Bloch states $\psi_{\bm k}$ as a combination of Wannier functions localized at each atom.
 
 \begin{equation}
-\phi(\bm x) = N^{-1/2} \sum_{\bm k} \psi_{\bm k} (\bm x) , 
+\psi_{\bm k} (\bm x) = N^{-1/2} \sum_i e^{i \bm k \cdot \bm R_i} \phi (\bm x - \bm R_i), \,\, \text{where} \,\,\, \phi(\bm x) = N^{-1/2} \sum_{\bm k} \psi_{\bm k} (\bm x) , 
 \end{equation}
-where $N$ is the number of atoms.
-We may write $\psi_{\bm k}$ as a combination of Wannier functions localized at each atom.
-
-\begin{equation}
-\psi_{\bm k} (\bm x) = N^{-1/2} \sum_i e^{i \bm k \cdot \bm R_i} \phi (\bm x - \bm R_i) ,
-\end{equation}
-where the sum runs over all atomic positions $\bm R_i$. 
-Introducting the annihilation (creation) operators of an electron of spin $\sigma$ in the Wannier state $\phi (\bm x - \bm R_i)$ localized at site $i$, $c_{i\sigma}^{(\dagger)}$, we may write
-
-\begin{equation}
+and where $N$ is the number of atoms.
+The sum runs over all atomic positions $\bm R_i$. 
+Introducting the annihilation (creation) operators of an electron of spin $\sigma$ in the Wannier state $\phi (\bm x - \bm R_i)$ localized at site $i$, $c_{i\sigma}^{(\dagger)}$, we may write $
 c_{\bm k \sigma}^{(\dagger)} = N^{-1/2} \sum_i e^{i \bm k \cdot \bm R_i} c_{i\sigma}^{(\dagger)}
-\end{equation}
-
-Thus, the Hamiltonian becomes 
+$
+, so that the Hamiltonian becomes 
 
 \begin{equation}
 \mathcal{H} = \sum_{\substack{ i j \\ \sigma} } K_{ij} c_{i \sigma}^\dagger c_{j \sigma} + \sum_{\substack{i j k l \\ \sigma \sigma'} } \bigg[  \frac{1}{2} V^{i j}_{k l}
@@ -146,39 +135,31 @@ Keeping only the terms in $U$ in the interaction part, we obtain
 \end{equation}
 where $n_{i\sigma} = c_{i\sigma}^\dagger c_{i\sigma}$.
 Note that $\nu_{i, i} = N^{-1} \sum_{\bm k} \nu_{\bm k} = n/2$, where $n$ is the electron density, which means that the last term is constant and may be dropped.
-Now, the hopping matrix $\bm K$ can, in principle, be found by inverse Fourier transforming the dispersion relation $\varepsilon_{\bm k}$ of the equivalent interaction-free system, that we can assumed to be obtained experimentally or numerically.
-In the purely tight binding view (with no $U$-term), we have a well defined crystal wavevectors that depends on the symmetry of the lattice, which may be written as Fourier transforms
+Now, the hopping matrix $\bm K$ can, in principle, be found by inverse Fourier transforming the dispersion relation $\varepsilon_{\bm k}$ of the interaction-free system, that we can assume to be obtained experimentally or numerically.
+From the tight binding view (with no $U$-term), we have a well defined crystal wavevectors that depend on the symmetry of the lattice, which may be written as Fourier transforms
+$
+\left| \bm k \right\rangle \equiv \frac{1}{N} \sum_{\bm r} e^{i\bm k \cdot \bm r} \left| \bm r \right\rangle , 
+$
+and, recalling the form of the hopping Hamiltonian (or the kinetic energy part in the Hubbard model):
+$
+\mathcal{H}_{K} = - \sum_{\bm r \bm r'} K (\bm r - \bm r') \left| \bm r' \right\rangle \left\langle \bm r \right| ,
+$
+ we cancast the dispersion relation as the (negative) Fourier transform of the hopping
 
 \begin{equation}
-\left| \bm k \right\rangle \equiv \frac{1}{N} \sum_{\bm r} e^{i\bm k \cdot \bm r} \left| \bm r \right\rangle
-\end{equation}
-
-Recalling the form of the hopping Hamiltonian (or the kinetic energy part in the Hubbard model)
-
-\begin{equation}
-\mathcal{H}_{K} = - \sum_{\bm r \bm r'} K (\bm r - \bm r') \left| \bm r' \right\rangle \left\langle \bm r \right|
-\end{equation}
-we can obtain the dispersion relation.
-
-\begin{equation}
-- \mathcal{H}_{K} \left| \bm k \right\rangle = \frac{1}{\sqrt{N}} \sum_{\bm r \bm r'} K ( \bm r - \bm r' ) e^{i \bm k \cdot \bm r} \left| \bm r' \right \rangle = \frac{1}{\sqrt{N}} \bigg( \sum_{\bm R} K(\bm R) e^{i\bm k \cdot \bm R} \bigg) \bigg( \sum_{\bm r'} e^{i\bm k \cdot \bm r'} \left| \bm r' \right\rangle \bigg) = \varepsilon_{\bm k} \left| \bm k \right\rangle
-\end{equation}
-and here we recognize the dispersion relation as the (negative) Fourier transform of the hopping
-
-\begin{equation}
-\varepsilon_{\bm k} = - \sum_{\bm R} K(\bm R) e^{i\bm k \cdot \bm R} 
+- \mathcal{H}_{K} \left| \bm k \right\rangle = \frac{1}{\sqrt{N}} \sum_{\bm r \bm r'} K ( \bm r - \bm r' ) e^{i \bm k \cdot \bm r} \left| \bm r' \right \rangle = \frac{1}{\sqrt{N}} \bigg( \sum_{\bm R} K(\bm R) e^{i\bm k \cdot \bm R} \bigg)\underbrace{ \bigg( \sum_{\bm r'} e^{i\bm k \cdot \bm r'} \left| \bm r' \right\rangle \bigg)}_{\left| \bm k \right\rangle} = \varepsilon_{\bm k} \left| \bm k \right\rangle
 \end{equation}
 
 This gives us an interpretation of the $\bm K$ matrix: given the dispersion relation, and considering the solid to be well described by a tight binding model, we can easily obtain the matrix elements $K_{i j}$.
 
-Let us now suppose that we have the simplest uniform nearest neighbor hopping model.
+Let us now suppose that we have the simplest uniform nearest neighbor hopping model with Hubbard-type electron interactions.
 Going back to equation (\ref{eq:hopping_matrix}), and recalling that the sum on $\bm k$ is restricted to the first Brillouin zone, we obtain the usual tight binding result: $K_{\left\langle i j \right\rangle} = - t \in \mathbbm{R}$ and $0$ otherwise (i.e. $\bm K$ is a very sparse matrix that is only non-zero for $i, j$ nearest neighbors).
-The Hubbard Hamiltonian is then
+Thus, the full Hamiltonian reads
 
 \begin{equation}\label{eq:hubbard_hamiltonian}
 \mathcal{H} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg(c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) + U \sum_{i} n_{i,\uparrow} n_{i\downarrow} -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg) ,
 \end{equation}
-where, for generality, we included an arbitrary chemical potential, so that we use the \ac{GCE}.
+where, for generality, we included the chemical potential, thus taking the \acl{GCE}.
 
 \subsection{Particle-hole symmetry}
 
@@ -187,16 +168,15 @@ The main idea is that, at half filling, the Hubbard Hamiltonian is invariant und
 \ac{PHS} allows us to relate the properties of the Hubbard Hamiltonian at different values of the parameters.
 Moreover, it allows us to devise a mapping between the attractive ($U < 0$) and the repulsive ($U > 0$) models.
 We will see later that this mapping is important in QMC simulations \cite{alavi_quantum_2016}.
-
 We start our discussion with the concept of a bipartite lattice.
 A lattice is said to be bipartite if it can be divided into two sublattices $\mathcal{A}$ and $\mathcal{B}$, such that the set of neighbors of a site in sublattice $\mathcal{A}$ belongs to sublattice $\mathcal{B}$.
 For example, the square and honeycomb lattices are bipartite, whereas the triangular lattice is not.
-In a bipartite lattice, \ac{AF} order is favored.
-In contrast, AF order is frustrated on the triangular and other non bipartite lattices.
+In a bipartite lattice, antiferromagnetic (\acs{AF}) order is favored.
+In contrast, \acs{AF} order is frustrated on the triangular and other non bipartite lattices.
 
 \begin{figure}[H]\label{fig:bipartite}
 \centering
-\includegraphics[width = 8cm]{Hubbard/bipartite}
+\includegraphics[width = 6cm]{Hubbard/bipartite}
 \caption[Bipartite lattices and antiferromagnetic order.]{On the left, we see that the square lattice is bipartite.
 The neighbors of a particular site in the red sublattice all belong to the green sublattice.
 The picture on the right is meant to give some intuition on why the bipartite lattice favors \ac{AF} order.
@@ -211,26 +191,21 @@ d_{ i, \sigma}^\dagger = (-1)^i c_{i, \sigma} ,
 we exchange the role of annihilation and creation operators.
 In fact, particles become holes and vice-versa: $d_{ i, \sigma}^\dagger d_{ i, \sigma} = 1 - c_{ i, \sigma}^\dagger c_{ i, \sigma} $, and the occupations $n = 0, 1$ are interchanged.
 Consider a bipartite lattice.
-Since in that case the factor $(-1)^i$ takes on $-1$ on one sublattice and $1$ on the other, the kinetic part of the Hamiltonian is invariant under a \ac{PHT}:
-
-\begin{equation}
+Since in that case the factor $(-1)^i$ takes on $-1$ on one sublattice and $1$ on the other, the kinetic part of the Hamiltonian is invariant under a \ac{PHT}: $
 c_{i, \sigma}^\dagger c_{j, \sigma} + c_{j, \sigma}^\dagger c_{i, \sigma} \mapsto (-1)^{i+j} ( d_{i, \sigma} d_{j, \sigma}^\dagger + d_{j, \sigma} d_{i, \sigma}^\dagger ) = d_{j, \sigma}^\dagger d_{i, \sigma} + d_{i, \sigma}^\dagger d_{j, \sigma}
-\end{equation}
+$.
 
 The \ac{PHS} form of the kinetic term can be incorporated into the interaction term by a shift in the chemical potential and by adding a constant to the Hamiltonian.
-First, note that the term
-
-\begin{equation*}
-U \bigg( n_{i,\uparrow} - \frac{1}{2} \bigg) \bigg( n_{i,\downarrow} - \frac{1}{2} \bigg)
-\end{equation*}
+First, note that the interaction term $
+U \big( n_{i,\uparrow} - \frac{1}{2} \big) \big( n_{i,\downarrow} - \frac{1}{2} \big)
+$
 is unchanged under a \ac{PHT}.
-Expanding this term, we obtain $U n_{i,\uparrow} n_{i,\downarrow} - \frac{U}{2} (n_{i,\uparrow} + n_{i,\downarrow}) + \frac{U}{4}$, which indeed differs from the original interaction term by a shift in the chemical potential ($\mu \rightarrow \mu + U / 2$) plus a constant.
-Thus, the particle-hole symmetric form of the Hamiltonian 
+Expanding it, we get $U n_{i,\uparrow} n_{i,\downarrow} - \frac{U}{2} (n_{i,\uparrow} + n_{i,\downarrow}) + \frac{U}{4}$, which indeed differs from the original interaction term by a shift in the chemical potential ($\mu \rightarrow \mu + U / 2$) plus a constant.
+Thus, the particle-hole symmetric Hamiltonian is equivalent to the original one.
 
 \begin{equation}
 \mathcal{H} = -t \sum_{\left\langle i, j \right \rangle, \sigma} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{i,\sigma}^\dagger c_{j,\sigma} \bigg) + U \sum_{i} \bigg( n_{i,\uparrow} - \frac{1}{2} \bigg) \bigg( n_{i,\downarrow} - \frac{1}{2} \bigg) -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg)
 \end{equation}
-is completely equivalent to the original Hamiltonian.
 
 Under a \ac{PHT}, the density, $\rho = \left\langle n_\uparrow + n_\downarrow \right\rangle$, transforms as $\rho \mapsto 2 - \rho$.
 The Hamiltonian changes only in the chemical potential term: $\mu \mapsto -\mu$.
@@ -239,4 +214,4 @@ This reasoning is valid for any $\beta$, $t$, or $U$, which implies that the pha
 Suppose you added next nearest neighbor (NNN) hoppings $t'$\footnote{On the square lattice, this corresponds to connecting sites across the diagonal of each square.}.
 Then, \ac{PHS} would be broken, and the phase diagram would no longer be symmetric about $\mu = 0$.
 Indeed, a modified version of the Hubbard model with NNN hoppings is often used to model cuprate superconductors, and this lack of symmetry is consistent with the fact that hole- and electron-doped cuprates have different properties. 
-\ac{PHS} is also broken for the triangular lattice with non uniform hoppings we shall consider later when modelling \acp{TMD}.
+\ac{PHS} is also broken for the triangular lattice and with non uniform hoppings we shall consider later when modelling \acp{TMD}.

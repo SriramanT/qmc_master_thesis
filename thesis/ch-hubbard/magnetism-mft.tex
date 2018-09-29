@@ -4,7 +4,7 @@ In this section we will build a picture of magnetism in the Hubbard model in inc
 As our degenerate perturbation theory  calculation of section (\ref{sec:effectiveHeisenberg}) showed, the on-site interaction favors the situation in which neighboring fermions have opposite spins through an Heisenberg type interaction.
 A different approach leads to the Stoner criterion for ferromagnetism.
 The argument is based on creating an imbalance between the numbers of spin-up and spin-down fermions, and analyzing the interplay between the resulting increase in kinetic energy, and decrease in potential energy.
-Finally, we formulate a (static) mean field theory for the Hubbard model, and discuss how it relates to the non-interacting case.
+Finally, we formulate the Hubbard model in the mean field approximation, and discuss how it relates to the non-interacting case.
 
 \subsection{Stoner criterion for ferromagnetism}
 \label{subsec:stoner}
@@ -13,7 +13,6 @@ Pauli's exclusion principle gives a prescription on how to fill fermionic energy
 Start from the lowest level, and start filling each level of higher energy consecutively with two electrons, one of each spin.
 This procedure requires the number of spin-up and spin-down electrons to be the same.
 Otherwise, there is an energy cost, since we are obliged to fill higher energy levels with the excess electrons.
-
 An unequal number of spin-up and spin-down electrons also decreases the potential energy.
 An extreme example is a completely polarized lattice.
 In that case, the potential energy is zero.
@@ -45,13 +44,13 @@ Thus, magnetism is favored by a large on-site interaction and a large density of
 
 We have already encountered an example of a mean field theory when deriving the Hubbard Hamiltonian (see appendix \ref{ap:hubbardObSol}, where we provide motivation both heuristically and via a more rigorous variational approach).
 In mean field theory, we give a systematic procedure to derive the most plausible quadratic Hamiltonian (which, as we know by now, is soluble) capturing some of the physics of our sytem.
+We do this variationally in appendix \ref{ap:hubbardObSol}.
 In the case of the Hubbard model, to find the best possible approximation for the quartic term we start by expressing the number operators in terms of an average plus fluctuations: $n = \left\langle n \right\rangle + ( n - \left\langle n \right\rangle ) \equiv \left\langle n \right\rangle + \delta n$.
 Then, we make this substitution in the interaction term and neglect the term that is second order in the fluctuations to obtain
 
 \begin{equation}\label{eq:meanFieldNop}
 \begin{split}
-n_\uparrow n_\downarrow &= \bigg[ \left\langle n_\uparrow \right\rangle + ( n_\uparrow - \left\langle n_\uparrow \right\rangle ) \bigg] \bigg[ \left\langle n_\downarrow \right\rangle + ( n_\downarrow - \left\langle n_\downarrow \right\rangle ) \bigg] \\
-&= \left\langle n_\uparrow \right\rangle \left\langle n_\downarrow \right\rangle + \left\langle n_\downarrow \right\rangle ( n_\uparrow - \left\langle n_\uparrow \right\rangle ) + \left\langle n_\uparrow \right\rangle ( n_\downarrow - \left\langle n_\downarrow \right\rangle ) + \mathcal{O}((\delta n)^2) \\
+n_\uparrow n_\downarrow &= \big( \left\langle n_\uparrow \right\rangle +  \delta n_\uparrow  \big) \big( \left\langle n_\downarrow \right\rangle +  \delta n_\downarrow  \big) = \left\langle n_\uparrow \right\rangle \left\langle n_\downarrow \right\rangle + \left\langle n_\downarrow \right\rangle ( n_\uparrow - \left\langle n_\uparrow \right\rangle ) + \left\langle n_\uparrow \right\rangle ( n_\downarrow - \left\langle n_\downarrow \right\rangle ) + \mathcal{O}((\delta n)^2) \\
 &= n_\uparrow \left\langle n_\downarrow \right\rangle + n_\downarrow \left\langle n_\uparrow \right\rangle - \left\langle n_\uparrow \right\rangle \left\langle n_\downarrow \right\rangle
 \end{split}
 \end{equation}
@@ -71,45 +70,44 @@ Similarly, for the \acs{AF} case on a bipartite lattice, we consider $n_{i, \upa
 Now we take on a \acl{LG} theory kind of approach.
 We compute the energy $E$ for fixed $n$ as a function of $m$, and inspect the system for ferromagnetic ordering: if the minimum lies at $m = 0$, the system is paramagnetic, otherwise it is ferromagnetic.
 For simplicity, let us now consider the \acs{1D} model.
-Since the average densities are site-independent, we can easily write down the polarized dispersion relations (up to an additive constant):
+Since the average densities are site-independent, we can easily write down the polarized dispersion relations (up to an additive constant), and add these levels up for the various possible fillings of the lattice.
 
 \begin{equation}\label{eq:meanFieldDispersion}
 \varepsilon_{\uparrow k} = U ( n - m ) - 2 t \cos k \quad \varepsilon_{\downarrow k} = U ( n + m ) - 2 t \cos k ,
 \end{equation}
-and add these levels up for the various possible fillings of the lattice.
 
 The computational procedure to perfom mean field computations goes as follows:
 \begin{itemize}
 \item Fix the lattice size $N$, the total particle number $N_p$, and the on-site interaction $U$.
 \item Set the possible densities by iterating $N_\uparrow = 0, 1, ..., N_p / 2$, and $N_\downarrow = N_p - N_\downarrow$ (we only need half the values since the values are symmetric under $ N_\uparrow \leftrightarrow N_\downarrow$), and setting $n_{\uparrow, \downarrow} = N_{\uparrow, \downarrow} / N$.
-\item Fill the lowest $N_\uparrow$, and $N_\downarrow$ energy levels, by looping over the allowes momentum states $k = \frac{2\pi}{N} \{ -\frac{N}{2} + 1, -\frac{N}{2}, ..., \frac{N}{2} \}$, and using equation (\ref{eq:meanFieldDispersion}).
+\item Fill the lowest $N_\uparrow$, and $N_\downarrow$ energy levels, by looping over the allowes momentum states $k = \frac{2\pi}{N} \{ -\frac{N}{2} + 1, -\frac{N}{2}, ..., \frac{N}{2} \}$, and using Eq.(\ref{eq:meanFieldDispersion}).
 Normalize the energy to $N$ and add in the additive constant $- \left\langle n_\uparrow \right\rangle \left\langle n_\downarrow \right\rangle$.
 This step is altered for the \acs{AF} case since we are assuming the up and down densities to be identical over the whole lattice.
 In such case, we fix $n = N_p / 2$ and loop over $m = 1/ N, 2 / N,...$, staying within the first Brillouin zone.
 Out of the energies computed in this way for varying $N_{\uparrow, \downarrow}$, the lowest gives the magnetization for the chosen values of $N_p$ and $U$.
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}
 	\centering
-\hspace{12mm}\includegraphics[trim={0 0 0 0},clip, width=0.7\linewidth]{Hubbard/mfHubbard.png}
+\hspace{12mm}\includegraphics[trim={0 0 0 0},clip, width=0.6\linewidth]{Hubbard/mfHubbard.png}
 	\caption[Mean field results for the \acs{1D} Hubbard model.]{Mean field results at quarter filling for a $ 1024$ sites chain.
 	$U$ is in units of $t$.
 	As the on-site interaction is increased, we see a transition from a paramagnetic to a ferromagnetic phase.}
 	\label{fig:mft}
 \end{figure}
 
-Let us focus on figure (\ref{fig:mft_multiple}).
-At $U = 2$, the phase is paramagnetic since the energy is minimized at $m = 0$. By $U = 4$, the phase transition is yet to occur but if you look at the energy scale in figure (\ref{fig:mft}), you will see that the energy of the spin polarized solutions decreased dramatically.
-	At $U = 4.2$, the large $| m | $ energies have turned down, although $m = 0$ is still the lowest energy solution.
-	At $U = 4.4$, the phase transition occurs, and the solutions with $| m | = 1$ become the lowest energy solutions: we have reached the ferromagnetic phase.
-
 \begin{figure}[H]
 	\centering
-\includegraphics[trim={0 0 0 0},clip, scale = 0.35]{Hubbard/mfHubbard_multiple.png}
+\includegraphics[trim={0 0 0 0},clip, scale = 0.3]{Hubbard/mfHubbard_multiple.png}
 	\caption[Mean field results for the \acs{1D} Hubbard model: closing in on the phase transition.]{Plots of each energy curve separately giving evidence of a phase transition.
 	}
 	\label{fig:mft_multiple}
 \end{figure}
+
+Let us focus on Fig.(\ref{fig:mft_multiple}).
+At $U = 2$, the phase is paramagnetic since the energy is minimized at $m = 0$. By $U = 4$, the phase transition is yet to occur but if you look at the energy scale in Fig.(\ref{fig:mft}), you will see that the energy of the spin polarized solutions decreased dramatically.
+	At $U = 4.2$, the large $| m | $ energies have turned down, although $m = 0$ is still the lowest energy solution.
+	At $U = 4.4$, the phase transition occurs, and the solutions with $| m | = 1$ become the lowest energy solutions: we have reached the ferromagnetic phase.
 
 Are these results consistent with Stoner's criterion: $U N ( \varepsilon_F ) > 1$?
 First, we use the density of states obtained in section (\ref{sec:exactSolutions}) to find a relation between the density $\rho$ and the Fermi energy $\varepsilon_F$:

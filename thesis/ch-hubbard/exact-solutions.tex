@@ -3,31 +3,27 @@
 In \ac{PHS} form, the Hubbard Hamiltonian may then be written as a sum of kinetic and chemical, and potential energy terms 
 $
 \mathcal{H} = \mathcal{H}_K + \mathcal{H}_V ,
-$
-defined as
+$.
+Let indexes $i$ and $j$ label sites on a lattice, and define
 
 \begin{equation}\label{eq:def_energies}
 \mathcal{H}_K = -t \sum_{\left\langle i, j \right \rangle, \sigma} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg) , \,\,\,
 \mathcal{H}_V = U \sum_{i} \bigg( n_{i,\uparrow} - \frac{1}{2} \bigg) \bigg( n_{i,\downarrow} - \frac{1}{2} \bigg) ,
 \end{equation}
-where $i$ and $j$ label sites on the lattice; $c_{i,\sigma}^{(\dagger)}$ is an operator that annihilates (creates) an electron with spin $\sigma$ on site $i$; $n_{i,\sigma}$ is the number operator counting the number of electrons of spin $\sigma$ on site $i$ (either 0 or 1); $t$ is the hopping parameter related to the kinetic energy of the electrons: it is determined by the overlap of the atomic wave functions on neighboring sites $\left\langle i, j \right\rangle$; $U$ is the on-site Coulomb repulsion between electrons: whenever a site $i$ has two electrons, there is a local repulsion between them corresponding to an energy cost $U n_{i \uparrow} n_{i \downarrow}$ (up to an additive constant); $\mu$ is the chemical potential controlling the electron number (or density).
+where $c_{i,\sigma}^{(\dagger)}$ is an operator that annihilates (creates) an electron with spin $\sigma$ on site $i$; $n_{i,\sigma}$ is the number operator counting the number of electrons of spin $\sigma$ on site $i$ (either 0 or 1); $t$ is the hopping parameter related to the kinetic energy of the electrons: it is determined by the overlap of the atomic wave functions on neighboring sites $\left\langle i, j \right\rangle$; $U$ is the on-site Coulomb repulsion between electrons: whenever a site $i$ has two electrons, there is a local repulsion between them corresponding to an energy cost $U n_{i \uparrow} n_{i \downarrow}$ (up to an additive constant); $\mu$ is the chemical potential controlling the electron number (or density).
 
 A given physical observable of interest $\mathcal{O}$, such as the spin-spin correlation, or the magnetic susceptibility may be computed formally by
 
-\begin{equation}
-\left\langle \mathcal{O} \right\rangle = \text{Tr} [ \mathcal{O} \mathcal{P} ]
-\end{equation}
-where
-
 \begin{equation}\label{eq:projection}
-\mathcal{P} \equiv \frac{1}{Z} e^{-\beta \mathcal{H} } , \text{ with } Z = \text{Tr} [ e^{-\beta \mathcal{H} } ]
+\left\langle \mathcal{O} \right\rangle = \text{Tr} [ \mathcal{O} \mathcal{P} ] , \text{where
+} \,\, \mathcal{P} \equiv \frac{1}{Z} e^{-\beta \mathcal{H} } , \text{ with } Z = \text{Tr} [ e^{-\beta \mathcal{H} } ]
 \end{equation}
 
 The trace is taken over the Hilbert space corresponding to all possible configurations of the lattice occupation.
 Defining an orthonormal basis of this Hilbert space $\{ | \psi_\alpha \rangle | \alpha = 1, ... D \} $, where $D$ is the dimension of the Hilbert space, the partition function reads
 
 \begin{equation}\label{eq:z_asEigen}
-\Tr [ e^{-\beta \mathcal{H} } ]= \sum_\alpha \left\langle \psi_\alpha | e^{-\beta \mathcal{H} } | \psi_\alpha \right\rangle
+Z = \Tr [ e^{-\beta \mathcal{H} } ]= \sum_\alpha \left\langle \psi_\alpha | e^{-\beta \mathcal{H} } | \psi_\alpha \right\rangle
 \end{equation}
 
 There are four possible states at each site in the Hubbard model: $\left| \,\, \right\rangle$, $\left|\uparrow \right\rangle$, $\left|\downarrow\right \rangle$, $\left|\uparrow \downarrow \right\rangle $, corresponding, respectively, to no electron, a spin up or spin down electron, and two electrons of opposite spin occupying the site.
@@ -53,18 +49,15 @@ $\{ c_{j\sigma} , c_{l \sigma'}^\dagger \} = \delta_{jl} \delta_{\sigma\sigma'}$
 The $c$-operator algebra is further defined by the vanishing of all other anticommutators:$
 \{ c_{j\sigma}^{(\dagger)} , c_{l \sigma'}^{(\dagger)} \} = 0$.
 Note that taking $l = j$ and $\sigma = \sigma'$ in this equation for the $c^\dagger$-operators, we recover Pauli's exclusion principle since $(c_{j\sigma}^\dagger)^2 = 0$.
-If we omit the site $i$ and spin $\sigma$ indices, a convenient way of specifying states on the lattice is
-
-\begin{equation}
-\left| 0 \right\rangle : \text{unoccupied state - no electron} \,\,\,\, \left| 1 \right\rangle : \text{occupied state - one electron}
-\end{equation}
-so that a generic state may be written as a product of the states above $\otimes_{i=1}^{N} \otimes_{\sigma = \pm 1/2} \left| n \right\rangle_{i, \sigma}$ at each site for each spin state, where $n= 0, 1$.
+If we omit the site $i$ and spin $\sigma$ indices, a convenient way of specifying states on the lattice is $
+\left| 0 \right\rangle : \text{unoccupied state - no electron} , \,\,  \left| 1 \right\rangle : \text{occupied state - one electron}
+$
+, so that a generic state may be written as a product of the states above $\otimes_{i=1}^{N} \otimes_{\sigma = \pm 1/2} \left| n \right\rangle_{i, \sigma}$ at each site for each spin state, where $n= 0, 1$.
 For example, one such state is
-
-\begin{equation}
+$
 \left| 0 \right\rangle_{1, \uparrow} \left| 1 \right\rangle_{1, \downarrow} \left| 1 \right\rangle_{2, \uparrow} \left| 1 \right\rangle_{2, \downarrow} \left| 0 \right\rangle_{3, \uparrow} \left| 0 \right\rangle_{3, \downarrow} ... \left| 1 \right\rangle_{N, \uparrow} \left| 0 \right\rangle_{N, \downarrow}  ,
-\end{equation}
-where $N$ is the number of sites on the lattice. Site $1$ has a single spin-down electron, while site $2$ is doubly occupied, site $3$ is unoccupied, and so on, until we reach site $N$, which has a single spin-up electron.
+$
+ where $N$ is the number of sites on the lattice. Site $1$ has a single spin-down electron, while site $2$ is doubly occupied, site $3$ is unoccupied, and so on, until we reach site $N$, which has a single spin-up electron.
 The creation and annihilation operators act as follows
 
 \begin{equation}
@@ -278,11 +271,9 @@ The Hamiltonian is diagonalized:
 \begin{equation}\label{eq:quadraticH}
 \mathcal{H} =\tilde{\bm c}^\dagger \big( -t \bm K - \mu \bm I \big) \tilde{\bm c} = \sum_{\bm k} \varepsilon_{\bm k} \tilde{n}_{\bm k} ,
 \end{equation}
-where $\tilde{\bm c} = \bm F \bm c$ and $\tilde{\bm c}^\dagger = (\bm F \bm c)^\dagger$, and
-
-\begin{equation}
+where $\tilde{\bm c} = \bm F \bm c$ and $\tilde{\bm c}^\dagger = (\bm F \bm c)^\dagger$, and $
 \varepsilon_{\bm k} = -t \lambda_{\bm k} - \mu \quad \tilde{n}_{\bm k} = \tilde{c}_{\bm k}^\dagger \tilde{c}_{\bm k}
-\end{equation}
+$.
 
 This is equivalent to performing a canonical transformation on the annihilation (creation) operators, that preserves not their Poisson brackets, as in classical mechanics, but their anti-commutators.
 Finding the eigendecomposition is equivalent to changing to Fourier space:

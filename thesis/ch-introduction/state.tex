@@ -1,9 +1,9 @@
 \section{Beyond graphene: TMD nanoribbons}
 \label{sec:state}
 
-\ac{2D} materials have steadily been drawing the attention of the community since graphene was experimentally isolated from a graphite sample by mechanical exfoliation, yielding a system constituted by a single layer of atoms (Fig. (\ref{fig:graphene}), left).
-Since then, numerous studies have been made due to the promising properties of these materials, and the interesting as-yet-unseen phenomena occurring within them, for example, in the case of graphene: unconventional quantum Hall effect, absence of localization, and electrons behaving like massless relativistic particles near the $K$ points, where the dispersion relation is approximately linear (Fig. (\ref{fig:graphene}), right), providing a bridge between condensed matter physics and quantum electrodynamics \cite{katsnelson_graphene:_2007}.
-In spite of its undeniable potential, graphene has some shortcomings.
+\ac{2D} materials have steadily been drawing the attention of the community since graphene was experimentally isolated from a graphite sample by mechanical exfoliation, yielding a system constituted by a single layer of atoms (Fig.(\ref{fig:graphene}), left).
+Since then, numerous studies have been made due to the promising properties of these materials, and the interesting as-yet-unseen phenomena occurring within them, for example, in the case of graphene: unconventional quantum Hall effect, absence of localization, and electrons behaving like massless relativistic particles near the $K$ points, where the dispersion relation is approximately linear (Fig.(\ref{fig:graphene}), right), providing a bridge between condensed matter physics and quantum electrodynamics \cite{katsnelson_graphene:_2007}.
+In spite of its undeniable potential both from a fundamental and from an application point of view, graphene has some shortcomings.
 This motivated the community to study other more complex graphene-like materials, which could have other desirable properties, while maintaining most of graphene's potential.
 
 \begin{figure}[H]
@@ -45,8 +45,8 @@ Contrastingly, monolayer \acp{TMD} are semiconductors, having an intrinsic gap i
 Thus, \acp{TMD} are more promising for designing, for example, transistors.
 More generally, since the direct band gap lies in the visible frequency range, and room temperature mobility is good, these semiconducting analogues of graphene are promising for electronic and optoelectronic applications.
 Perhaps even more striking is the appearance of an extra so called \emph{valley} degree of freedom.
-Since the valence and conduction band edges both lie at the two corners ($\pm K$) of the first Brillouin zone, electrons and holes can acquire a novel degree of freedom which can be used to encode and process information.
-Additionally, the presence of giant spin-orbit coupling and the lack of inversion symmetry lead to a strong coupling between valley and spin, suggesting that \acp{TMD} could allow the integration of spintronics and valleytronics.
+Since the valence and conduction band edges both lie at the two corners ($\pm K$) of the first Brillouin zone, electrons and holes can acquire an extra degree of freedom which can be used to encode and process information.
+Additionally, the presence of giant spin-orbit coupling and the lack of inversion symmetry lead to a strong coupling between valley and spin, suggesting that \acp{TMD} could allow the integration of spintronics and valleytronics, yielding a greater control of electron systems through their coupled spin and valley degrees of freedom, analogously to what is done in electronics, where only the charge degree of freedom is used.
  
 Hole-doped \acp{TMD} are expected to show topological superconductivity \cite{hsu_topological_2017}, while the superconducting phase of graphene has been predicted, but is not easily attained.
 Superconductivity in graphene-like \ac{2D} materials is important because it could boost high speed nanoelectronics.
@@ -62,18 +62,17 @@ In particular, for the 2H phase, they may ultimately be attributed to the lack o
 This leads to spin splitting of the electronic bands driven by spin-orbit coupling.
 Because $K$ and $K'$ (or $-K$) no longer correspond to time reversal invariant momenta, the spin degeneracy of the valence and conduction bands is lifted at these points.
 Time reversal symmetry implies that the splitting is opposite at the $K$ and $K'$ points, leading to the band structure of Fig. (\ref{fig:tmdProp}d) (we show the part relevant for realistic charge-carrier concentrations).
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale = 0.37]{Introduction/tmdProp}
- \caption[Structure and electronic properties of \ac{TMD} monolayers.]{(a) Examples of some of the possible structural phases of \ac{TMD} monolayers: trigonal prismatic (2H) with ABA stacking, distorted octahedral (1T), and dimerized octahedral (1T'), showing ABC stacking. (b) A periodic table of known \ac{TMD} layers. Shown are the transition metals involved, the existing phases (2H and/or 1T), and the possible electronic phases. (c) Calculated band structure (from density functional theory \cite{splendiani_emerging_2010} ) of $2H-\text{Mo}\text{S}_2$ for samples of decreasing thickness. (d) Representation of the band structure of monolayer $2H-\text{Mo}\text{S}_2$, showing the spin splitting (red for spin-up and blue for spin-down) of the bands near the corners of the Brillouin zone (K and K') points. \label{fig:tmdProp}}
-\end{figure}
-
 This property, known as spin-valley coupling, implies that the valley polarization of charge carriers directly translates into spin polarization, leading to an intrinsic property of \acp{TMD} that could allow one to design spintronic devices without resorting to magnetic materials \cite{manzeli_2d_2017}.
 More broadly, the possibilities afforded by the different compositions and structural phases listed in Fig.(\ref{fig:tmdProp}) lead to a vast array of electronic properties.
 On the one hand, the band structure and its metallic/insulating character vary quite substantially among \acp{TMD}.
 On the other hand, both highly nontrivial  correlated and topological phases arise within these materials.
 In this work, we investigate the properties of correlated phases in zigzag edged \ac{TMD} nanoribbons.
+
+\begin{figure}
+\centering
+\includegraphics[scale = 0.37]{Introduction/tmdProp}
+ \caption[Structure and electronic properties of \ac{TMD} monolayers.]{(a) Examples of some of the possible structural phases of \ac{TMD} monolayers: trigonal prismatic (2H) with ABA stacking, distorted octahedral (1T), and dimerized octahedral (1T'), showing ABC stacking. (b) A periodic table of known \ac{TMD} layers. Shown are the transition metals involved, the existing phases (2H and/or 1T), and the possible electronic phases. (c) Calculated band structure (from density functional theory \cite{splendiani_emerging_2010} ) of $2H-\text{Mo}\text{S}_2$ for samples of decreasing thickness. (d) Representation of the band structure of monolayer $2H-\text{Mo}\text{S}_2$, showing the spin splitting (red for spin-up and blue for spin-down) of the bands near the corners of the Brillouin zone (K and K') points. \label{fig:tmdProp}}
+\end{figure}
 
 \subsection{Nanoribbons}\label{subsec:nanoribbons}
 
@@ -81,31 +80,11 @@ Nanoribbons are a particularly promising type of \acs{2D} nanostructure.
 A nanoribbon consists of a \ac{2D} layer that can be regarded as infinitely long on one direction, but not on the other (Figs. (\ref{fig:fabrication}) and (\ref{fig:graphNano})), so that edge states become relevant, and can be controlled to yield interesting properties.
 For simulation purposes, it is natural to assume translational invariance along the ribbon's longitudinal direction, and use \acp{PBC}.
 On the other direction, we use \acp{OBC}, effectively considering zigzag edges (see Fig.(\ref{fig:nanoribbons}), left).
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale = 0.3]{Introduction/nanoribbons}
-\caption[Fabrication of \ac{TMD} nanoribbons]{Fabrication of \ac{TMD} nanoribbons. From left to right, we see \ac{AFM} images showing the appeareance of nanostructures ranging from \ac{2D} nanoislands to nanoribbons, as the temperature of the substrate is increased. The nanoribbons are grown by taking advantage of the temperature dependence of shape transformations occuring during the nonequilibrium growth of surface-based nanostructures (taken from \cite{chen_fabrication_2017}).}
-\label{fig:fabrication}
-\end{figure}
-
-\begin{figure}[H]
-\vspace{-0.5cm}
-\centering
-\includegraphics[scale = 0.38]{Introduction/grapheneNanoribbons.jpg}
-\caption[(TEM) images of graphene nanoribbons.]{(a) to (d) - Transmission electron microscopy (TEM) images of graphene nanoribbons (GNRs) of widths 15, 30, 40, and 60 $nm$, respectively (adapted from \cite{mohanty_nanotomy-based_2012}).}
-\label{fig:graphNano}
-\end{figure}
    
 A high density of low-energy electronic states is localized at the zigzag edges, decaying quickly in the bulk, which suggests the possibility of magnetic ordering.
 In fact, a mean field solution of the Hubbard model for a graphene nanoribbon shows that magnetic moments are localized at the edges \cite{yazyev_emergence_2010} (see Fig.(\ref{fig:nanoribbons}), right).
 QMC has been used to investigate edge-state magnetism beyond mean field in graphene \cite{feldner_dynamical_2011, golor_quantum_2013, cheng_strain-induced_2015, raczkowski_interplay_2017, yang_strain-tuning_2017}.
 However, edge-state magnetism in \acp{TMD} remains unexplored \cite{davelou_nanoribbon_2017}, and we would like to investigate, for example, whether edge-state magnetism is stabilized at finite temperature in \acp{TMDNR}, following the tendency that was identified for their graphene counterparts.
-
-While the zigzag graphene nanoribbon antiferromagnetic ground state is semiconducting, a state with interedge ferromagnetic orientation is a metal.
-An example of an application based on the switching between the two states is a magnetorresistive sensor.
-This device allows switching between low and high-resistance configurations, corresponding, respectively, to parallel, and antiparallel configurations of ferromagnetic leads at the ends of a nanoribbon.
-An analogous form of edge-state magnetism, as is observed in graphene nanoribbons, for \acp{TMDNR}, could yield similarly innovative applications.
 
 \begin{figure}[H]
 \vspace{-0.5cm}
@@ -126,6 +105,26 @@ The red circles corresponds to the spin up density, and the blue ones to the spi
 The particular arrangement of the electronic edge states leads to an \ac{AF} ground state (opposite edges with opposite magnetic moment). The results on the right part of the picture are taken from \cite{yazyev_emergence_2010}, while the left part corresponds to our original results clearly reproducing the ones on the literature). \label{fig:nanoribbons}}
 \end{figure}
 
+\begin{figure}[H]
+\vspace{-0.5cm}
+\centering
+\includegraphics[scale = 0.38]{Introduction/grapheneNanoribbons.jpg}
+\caption[(TEM) images of graphene nanoribbons.]{(a) to (d) - Transmission electron microscopy (TEM) images of graphene nanoribbons (GNRs) of widths 15, 30, 40, and 60 $nm$, respectively (adapted from \cite{mohanty_nanotomy-based_2012}).}
+\label{fig:graphNano}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale = 0.3]{Introduction/nanoribbons}
+\caption[Fabrication of \ac{TMD} nanoribbons]{Fabrication of \ac{TMD} nanoribbons. From left to right, we see \ac{AFM} images showing the appeareance of nanostructures ranging from \ac{2D} nanoislands to nanoribbons, as the temperature of the substrate is increased. The nanoribbons are grown by taking advantage of the temperature dependence of shape transformations occuring during the nonequilibrium growth of surface-based nanostructures (taken from \cite{chen_fabrication_2017}).}
+\label{fig:fabrication}
+\end{figure}
+
+While the zigzag graphene nanoribbon antiferromagnetic ground state is semiconducting, a state with interedge ferromagnetic orientation is a metal.
+An example of an application based on the switching between the two states is a magnetorresistive sensor.
+This device allows switching between low and high-resistance configurations, corresponding, respectively, to parallel, and antiparallel configurations of ferromagnetic leads at the ends of a nanoribbon.
+An analogous form of edge-state magnetism, as is observed in graphene nanoribbons, for \acp{TMDNR}, could yield similarly innovative applications.
+
 \subsection{Effective three-band minimal tight-binding model}\label{subsec:threeband}
 
 In this section, we present a minimal model describing the low energy physics of group 6 \acs{TMD} monolayers \cite{liu_three-band_2013}.
@@ -133,7 +132,7 @@ To obtain this tight-binding model, one uses the symmetries of the monolayers, a
 This is illustrated for $\text{Mo}\text{S}_2$ in Fig.(\ref{fig:energiesTMDs}).
 Near the Fermi energy, the $\text{Mo}$ $d$-orbitals are clearly more populated at the $K$ point (circled in orange), hence these Bloch  states contribute more to the energy dispersion near that point.
 
-One of the members of the $D_{3h}$ point-group describing the symmetry of \ac{TMD} monolayers is the reflection operator by the $x-y$ plane (see Fig.(\ref{fig:tmdHex})).
+One of the members of the $D_{3h}$ point-group describing the symmetry of \ac{TMD} monolayers is the reflection operator through the $x-y$ plane (see Fig.(\ref{fig:tmdHex})).
 This imposes the restriction that hybridization occurs only between the $d_{z^2}$, $d_{xy}$, and $d_{x^2 - y^2}$ orbitals\footnote{$d_{yz}$ and $d_{xz}$ orbitals are not symmetric under reflection upon the $x-y$ plane.}, which motivates us to construct a three-band model.
 Moreover, the dimension of the irreducible representation of $D_{3h}$ imposes a constraint on the number of independent hopping parameters.
 By fitting to first principles results obtained from density functional theory (using both the local-density and the generalized gradient approximations - LDA and GCA) for the materials' energy bands, we obtain the hopping parameters.
@@ -169,7 +168,7 @@ Let index $j$ run through the orbital categories, and $\mu$ through the basis el
 \end{equation}
 
 By symmetry, there are eight independent parameters, which we choose as some of the hopping integrals $t_{\mu \nu}^{j k} ( \bm R_i ) = \left\langle \phi_\mu^j ( \bm r ) | \mathcal{H} | \phi_{\nu}^k ( \bm r - \bm R_i ) \right\rangle$.
-The remaining ones can be obtained from $t^{jk} ( \bm G_n \bm R_i ) = \bm D^j ( \bm G_n ) t^{j k} ( \bm R_i ) [ \bm D^k ( \bm G_n ) ]^\dagger$, where $\bm D_j ( \bm G_n )$ is the $N_j \times N_j$ matrix of the j-th irreducible representation, and the $\bm G$-matrices are a subset of the symmetry operations of the $D_{3h}$ group \cite{braz_electronic_2015,liu_three-band_2013}.
+The remaining ones can be obtained from $\bm t^{jk} ( \bm G_n \bm R_i ) = \bm D^j ( \bm G_n ) \bm t^{j k} ( \bm R_i ) [ \bm D^k ( \bm G_n ) ]^\dagger$, where $\bm D_j ( \bm G_n )$ is the $N_j \times N_j$ matrix of the j-th irreducible representation, and the $\bm G$-matrices are the relevant subset of the symmetry operations of the $D_{3h}$ group \cite{braz_electronic_2015,liu_three-band_2013}.
 Let 
 
 \begin{equation}
@@ -182,7 +181,7 @@ t_2 &= t_{12}^{12} ( \bm R_1 ) \quad t_{11} = t_{11}^{22} ( \bm R_1 ) \quad t_{1
 The on-site energies $\varepsilon_j$ corresponding to the atomic orbitals $\left| \phi_\mu^j \right\rangle$ appear through a diagonal hopping matrix in orbital space $\bm t ( \bm 0 ) \equiv \bm t^0 = \text{diag} ( \varepsilon_1, \varepsilon_2, \varepsilon_2 )$, while the NN hoppings are (see Fig.(\ref{fig:tmdHex}))
 
 \begin{equation}
-\bm t (\bm R_{1, 4}) =
+\bm t (\bm R_{1, 4}) \equiv \bm t^{1, 4} =
 \begin{pmatrix}
 t_0 & \pm t_1 & t_2 \\
 \mp t_1 & t_{11} & \pm t_{12} \\
@@ -191,7 +190,7 @@ t_2 & \mp t_{12} & t_{22} \\
 \end{equation}
 
 \begin{equation}
-\bm t (\bm R_{2,5\,(3,6)}) =
+\bm t (\bm R_{2,5\,(3,6)})  \equiv \bm t^{2, 5 (3, 6)}  =
 \begin{pmatrix}
 t_0 & \Pm \bigg( \pm \frac{1}{2} t_1 - \frac{\sqrt{3}}{2} t_2 \bigg) & \mp \frac{\sqrt{3}}{2} t_1 - \frac{1}{2} t_2 \\
 \Pm \bigg( \mp \frac{1}{2} t_1 - \frac{\sqrt{3}}{2} t_2 \bigg) & \frac{1}{4} ( t_{11} + 3 t_{22} ) & \Pm \bigg( \frac{\sqrt{3}}{4} ( t_{22} - t_{11} ) \mp t_{12} \bigg) \\
@@ -216,8 +215,8 @@ t_{\alpha \beta}^\sigma ( \bm 0 ) \rightarrow t_{\alpha \beta}^\sigma ( \bm 0 ) 
 \end{equation}
 
 Spin-orbit coupling is important because it is responsible for the splitting of the valence band maximum by $\Delta_{\text{SOC}}^v = 2 \lambda$.
-The conduction band minimum remains degenerate (although a finite small splitting $\Delta_{\text{SOC}}^c$ arises when considering perturbations due to the $d$ orbitals that are not considered in our minimal model).
+The conduction band minimum remains degenerate (although a small splitting $\Delta_{\text{SOC}}^c$ arises when considering perturbations due to the $d$ orbitals that are not considered in our minimal model).
 
 The minimal model we presented is very rich, and can be used to study many-body physics, for example by adding Hubbard-type interaction terms.
 Moreover, it can be used to study edge state physics by imposing appropriate boundary conditions on the hopping matrix.
-We will follow this route by numerically solving  an interacting extension of the model for a nanoribbon using \ac{QMC}.
+We will follow this route by numerically solving  an interacting extension of the model for a nanoribbon using \ac{QMC}, and comparing it with our own results obtained in the mean field approximation.

@@ -32,48 +32,47 @@
 \BOOKMARK [1][]{section.2.4}{2.4 Exact Diagonalization and the Heisenberg Hamiltonian as the Effective Ut 1 Model }{chapter.2}% 32
 \BOOKMARK [2][]{subsection.2.4.1}{2.4.1 Two-site calculation}{section.2.4}% 33
 \BOOKMARK [2][]{subsection.2.4.2}{2.4.2 Degenerate perturbation theory}{section.2.4}% 34
-\BOOKMARK [1][]{section.2.5}{2.5 Green's functions and Wick's theorem}{chapter.2}% 35
+\BOOKMARK [1][]{section.2.5}{2.5 Green's functions}{chapter.2}% 35
 \BOOKMARK [2][]{subsection.2.5.1}{2.5.1 Single site case}{section.2.5}% 36
 \BOOKMARK [2][]{subsection.2.5.2}{2.5.2 Non-interacting case}{section.2.5}% 37
-\BOOKMARK [2][]{subsection.2.5.3}{2.5.3 Finite temperature Wick's theorem for fermions}{section.2.5}% 38
-\BOOKMARK [1][]{section.2.6}{2.6 Magnetism and mean field theory}{chapter.2}% 39
-\BOOKMARK [2][]{subsection.2.6.1}{2.6.1 Stoner criterion for ferromagnetism}{section.2.6}% 40
-\BOOKMARK [2][]{subsection.2.6.2}{2.6.2 Mean field theory of the Hubbard model}{section.2.6}% 41
-\BOOKMARK [2][]{subsection.2.6.3}{2.6.3 Self-consistent solution in the GCE}{section.2.6}% 42
-\BOOKMARK [1][]{section.2.7}{2.7 Simulatable variants of the Hubbard model}{chapter.2}% 43
-\BOOKMARK [0][]{chapter.3}{3 Auxiliary Field Quantum Monte Carlo}{}% 44
-\BOOKMARK [1][]{section.3.1}{3.1 Monte Carlo Method in Statistical Physics}{chapter.3}% 45
-\BOOKMARK [1][]{section.3.2}{3.2 Theoretical Framework and Mathematical Formulation}{chapter.3}% 46
-\BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Trotter-Suzuki Decomposition}{section.3.2}% 47
-\BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Hubbard-Stratonovich transformation}{section.3.2}% 48
-\BOOKMARK [2][]{subsection.3.2.3}{3.2.3 Single-particle propagators and the fermionic trace}{section.3.2}% 49
-\BOOKMARK [2][]{subsection.3.2.4}{3.2.4 Monte Carlo sampling of the HS-field}{section.3.2}% 50
-\BOOKMARK [2][]{subsection.3.2.5}{3.2.5 Checkerboard Breakup}{section.3.2}% 51
-\BOOKMARK [1][]{section.3.3}{3.3 Measurements}{chapter.3}% 52
-\BOOKMARK [2][]{subsection.3.3.1}{3.3.1 Obtaining observables in terms of Green's functions}{section.3.3}% 53
-\BOOKMARK [2][]{subsection.3.3.2}{3.3.2 Correlation functions}{section.3.3}% 54
-\BOOKMARK [2][]{subsection.3.3.3}{3.3.3 Imaginary-time displaced Green's functions and susceptibilities}{section.3.3}% 55
-\BOOKMARK [1][]{section.3.4}{3.4 Stabilization}{chapter.3}% 56
-\BOOKMARK [2][]{subsection.3.4.1}{3.4.1 Stable matrix multiplication}{section.3.4}% 57
-\BOOKMARK [2][]{subsection.3.4.2}{3.4.2 Inverting to obtain the Green's function}{section.3.4}% 58
-\BOOKMARK [2][]{subsection.3.4.3}{3.4.3 Storing partial products and time-displaced Green's function}{section.3.4}% 59
-\BOOKMARK [0][]{chapter.4}{4 Applications}{}% 60
-\BOOKMARK [1][]{section.4.1}{4.1 One-dimensional Chain}{chapter.4}% 61
-\BOOKMARK [1][]{section.4.2}{4.2 Square lattice}{chapter.4}% 62
-\BOOKMARK [1][]{section.4.3}{4.3 Honeycomb lattice}{chapter.4}% 63
-\BOOKMARK [1][]{section.4.4}{4.4 Nanoribbons}{chapter.4}% 64
-\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Graphene}{section.4.4}% 65
-\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 TMDs}{section.4.4}% 66
-\BOOKMARK [0][]{chapter.5}{5 Conclusions and Future Work}{}% 67
-\BOOKMARK [0][]{section*.59}{Bibliography}{}% 68
-\BOOKMARK [0][]{appendix.A}{Appendix A Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{}% 69
-\BOOKMARK [1][]{section.A.1}{A.1 Hartree-Fock Approximation and the Self Consistent Field Method}{appendix.A}% 70
-\BOOKMARK [1][]{section.A.2}{A.2 Mott insulators}{appendix.A}% 71
-\BOOKMARK [1][]{section.A.3}{A.3 Computing the partition function for a quadratic Hamiltonian}{appendix.A}% 72
-\BOOKMARK [1][]{section.A.4}{A.4 Density of states for a 1D tight binding model}{appendix.A}% 73
-\BOOKMARK [1][]{section.A.5}{A.5 Obtaining an effective Heisenberg Hamiltonian as the atomic, U/t 1 limit of the Hubbard model}{appendix.A}% 74
-\BOOKMARK [1][]{section.A.6}{A.6 On the finite temperature Wick's theorem}{appendix.A}% 75
-\BOOKMARK [1][]{section.A.7}{A.7 Mean field theory and the variational principle}{appendix.A}% 76
-\BOOKMARK [0][]{appendix.B}{Appendix B Formulating Auxiliary Field Quantum Monte Carlo}{}% 77
-\BOOKMARK [1][]{section.B.1}{B.1 Casting the fermionic trace as a determinant}{appendix.B}% 78
-\BOOKMARK [1][]{section.B.2}{B.2 Rank-one updates of the Green's function}{appendix.B}% 79
+\BOOKMARK [1][]{section.2.6}{2.6 Magnetism and mean field theory}{chapter.2}% 38
+\BOOKMARK [2][]{subsection.2.6.1}{2.6.1 Stoner criterion for ferromagnetism}{section.2.6}% 39
+\BOOKMARK [2][]{subsection.2.6.2}{2.6.2 Mean field theory of the Hubbard model}{section.2.6}% 40
+\BOOKMARK [2][]{subsection.2.6.3}{2.6.3 Self-consistent solution in the GCE}{section.2.6}% 41
+\BOOKMARK [1][]{section.2.7}{2.7 Simulatable variants of the Hubbard model}{chapter.2}% 42
+\BOOKMARK [0][]{chapter.3}{3 Auxiliary Field Quantum Monte Carlo}{}% 43
+\BOOKMARK [1][]{section.3.1}{3.1 Monte Carlo Method in Statistical Physics}{chapter.3}% 44
+\BOOKMARK [1][]{section.3.2}{3.2 Theoretical Framework and Mathematical Formulation}{chapter.3}% 45
+\BOOKMARK [2][]{subsection.3.2.1}{3.2.1 Trotter-Suzuki Decomposition}{section.3.2}% 46
+\BOOKMARK [2][]{subsection.3.2.2}{3.2.2 Hubbard-Stratonovich transformation}{section.3.2}% 47
+\BOOKMARK [2][]{subsection.3.2.3}{3.2.3 Single-particle propagators and the fermionic trace}{section.3.2}% 48
+\BOOKMARK [2][]{subsection.3.2.4}{3.2.4 Monte Carlo sampling of the HS-field}{section.3.2}% 49
+\BOOKMARK [2][]{subsection.3.2.5}{3.2.5 Checkerboard Breakup}{section.3.2}% 50
+\BOOKMARK [1][]{section.3.3}{3.3 Measurements}{chapter.3}% 51
+\BOOKMARK [2][]{subsection.3.3.1}{3.3.1 Obtaining observables in terms of Green's functions}{section.3.3}% 52
+\BOOKMARK [2][]{subsection.3.3.2}{3.3.2 Correlation functions}{section.3.3}% 53
+\BOOKMARK [2][]{subsection.3.3.3}{3.3.3 Imaginary-time displaced Green's functions and susceptibilities}{section.3.3}% 54
+\BOOKMARK [1][]{section.3.4}{3.4 Stabilization}{chapter.3}% 55
+\BOOKMARK [2][]{subsection.3.4.1}{3.4.1 Stable matrix multiplication}{section.3.4}% 56
+\BOOKMARK [2][]{subsection.3.4.2}{3.4.2 Inverting to obtain the Green's function}{section.3.4}% 57
+\BOOKMARK [2][]{subsection.3.4.3}{3.4.3 Storing partial products and time-displaced Green's function}{section.3.4}% 58
+\BOOKMARK [0][]{chapter.4}{4 Applications}{}% 59
+\BOOKMARK [1][]{section.4.1}{4.1 One-dimensional Chain}{chapter.4}% 60
+\BOOKMARK [1][]{section.4.2}{4.2 Square lattice}{chapter.4}% 61
+\BOOKMARK [1][]{section.4.3}{4.3 Honeycomb lattice}{chapter.4}% 62
+\BOOKMARK [1][]{section.4.4}{4.4 Nanoribbons}{chapter.4}% 63
+\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Graphene}{section.4.4}% 64
+\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 TMDs}{section.4.4}% 65
+\BOOKMARK [0][]{chapter.5}{5 Conclusions and Future Work}{}% 66
+\BOOKMARK [0][]{section*.59}{Bibliography}{}% 67
+\BOOKMARK [0][]{appendix.A}{Appendix A Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{}% 68
+\BOOKMARK [1][]{section.A.1}{A.1 Hartree-Fock Approximation and the Self Consistent Field Method}{appendix.A}% 69
+\BOOKMARK [1][]{section.A.2}{A.2 Mott insulators}{appendix.A}% 70
+\BOOKMARK [1][]{section.A.3}{A.3 Computing the partition function for a quadratic Hamiltonian}{appendix.A}% 71
+\BOOKMARK [1][]{section.A.4}{A.4 Density of states for a 1D tight binding model}{appendix.A}% 72
+\BOOKMARK [1][]{section.A.5}{A.5 Obtaining an effective Heisenberg Hamiltonian as the atomic, U/t 1 limit of the Hubbard model}{appendix.A}% 73
+\BOOKMARK [1][]{section.A.6}{A.6 On the finite temperature Wick's theorem}{appendix.A}% 74
+\BOOKMARK [1][]{section.A.7}{A.7 Mean field theory and the variational principle}{appendix.A}% 75
+\BOOKMARK [0][]{appendix.B}{Appendix B Formulating Auxiliary Field Quantum Monte Carlo}{}% 76
+\BOOKMARK [1][]{section.B.1}{B.1 Casting the fermionic trace as a determinant}{appendix.B}% 77
+\BOOKMARK [1][]{section.B.2}{B.2 Rank-one updates of the Green's function}{appendix.B}% 78
