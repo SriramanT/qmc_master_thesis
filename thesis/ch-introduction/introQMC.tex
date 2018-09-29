@@ -17,8 +17,7 @@ In the case of graphene-like \ac{2D} materials, one usually uses a tight-binding
 It is found that the dynamics given by the tight-binding Hamiltonian is sufficient to describe most properties of graphene.
 However, in other materials, such as \acp{TMD}, electron-electron interactions are stronger, and Hubbard-type models could give us a more accurate picture of the phenomena that occur within them.
 
-In principle, the properties of a quantum many-fermion system can all be deduced by solving an extremely complicated Schr\"odinger equation that takes into account the coupling of all (identical) particles of the system.
-However, for the majority of systems the resulting integrals have no analytic solution, so we solve the problem by numerical integration.
+For quantum many-fermion systems, observables are given in terms of integrals which have no analytic solution, so we solve the problem numerically.
 But there is a myriad of methods to evaluate integrals numerically.
 How do we pick the best one for this case? 
 Multi-dimensional integrals are plagued by the curse of dimensionality.
@@ -30,12 +29,11 @@ It is natural to use it since typically the state space of our quantum system is
 
 The Monte Carlo method is ubiquitous.
 Its central idea is to use randomness to produce accurate estimates of deterministic integrals.
-The term was coined by Nicolas Metropolis in 1949, first appearing in a seminal paper, in which it was described as a \say{statistical approach to the study of differential equations, or more generally, of integro-differential equations that occur in various branches of sciences}\cite{metropolis_monte_1949}.
-Although it was used as early as 1777 in an experiment known as Buffon's needle - where one obtains an estimate of the constant $\pi$ by repeatedly throwing a needle randomly onto a sheet of paper with evenly spaced lines - it was crucially developed in the Los Alamos National Laboratory during World War II where the development of the first atomic bomb was completed, the primary objective of the Manhattan Project.
+The term was coined by Metropolis in 1949, although it was used as early as 1777 in an experiment known as Buffon's needle - where one obtains an estimate of the constant $\pi$ by repeatedly throwing a needle randomly onto a sheet of paper with evenly spaced lines. %t was crucially developed in the Los Alamos National Laboratory during World War II where the development of the first atomic bomb was completed, the primary objective of the Manhattan Project.
 The method is particularly useful when one wants to sample from a probability distribution in an exponentially large state space (like the huge Hilbert space of an interacting electron system), but it can, in principle, be used to solve any problem allowing a probabilistic formulation.
-A variety of \ac{QMC} methods exists, using a sampling scheme based on the Metropolis algorithm, and variations thereof.
+To solve the interacting fermion problem, a variety of \ac{QMC} methods exists, using a sampling scheme based on the Metropolis algorithm, and variations thereof.
 Variational and Diffusion \ac{QMC} are the simplest \ac{QMC} methods that allow one to capture some properties of correlated systems, but it is not always ideal or even possible to use them. 
-We will discuss their flaws and show how further refinement leads to the auxiliary field method we ultimately used.
+%We will discuss their flaws and show how further refinement leads to the auxiliary field method we ultimately used.
 
 Using the Monte Carlo approach to study a many-fermion system implies overcoming a significant obstacle common to all \ac{QMC} methods - the so called \emph{fermion sign problem}.
 Pauli's exclusion principle implies that the many-fermion wave function is anti-symmetric, which leads to a sign oscillation that greatly impedes the accurate evaluation of averages of quantum observables.

@@ -105,7 +105,7 @@ This repository was based on a template for the thesis struture as specified by 
 
 ## Versioning
 
-v1 - latest update 14.08.2018
+v1 - latest update 29.09.2018
 
 ## Authors
 
@@ -116,3 +116,5 @@ v1 - latest update 14.08.2018
 *João M. V. P. Lopes, Eduardo V. Castro* - supervisors
 
 *Miguel Amador* - thesis template
+
+*André Calado Marta* - summary template

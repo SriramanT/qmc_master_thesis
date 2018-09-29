@@ -28,7 +28,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.4.3}Auxiliary Field \acs {QMC} and the Fermion Sign Problem}{15}{subsection.1.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Original Contributions}{17}{section.1.5}
+\contentsline {section}{\numberline {1.5}Original Contributions}{16}{section.1.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.6}Outline}{17}{section.1.6}
 \defcounter {refsection}{0}\relax 
