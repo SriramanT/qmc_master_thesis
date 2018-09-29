@@ -214,13 +214,13 @@ where we reversed the definition of $\bm T$, and the successive decompositions a
 At the first slice, we compute the partial products and store their decompositions
 
 \begin{equation}
-\underbrace{ \underbrace{ \underbrace{\bm B_{L - 1} \bm B_{L-2} ... \bm B_{L - 1- L / \Lambda}}_{(\bm T_L \bm D_L \bm Q_L)_{0} }  \bm B_{L - 2 - L / \Lambda} ...\bm B_{L - 2 - 2 L / \Lambda} }_{(\bm T_L \bm D_L \bm Q_L)_{1}} ... \bm B_{L / \Lambda - 1} ...  \bm B_0}_{(\bm T_L \bm D_L \bm Q_L)_{\Lambda - 1}} \rightsquigarrow 
+\underbrace{ \overbrace{ \underbrace{\bm B_{L - 1} \bm B_{L-2} ... \bm B_{L - 1- L / \Lambda}}_{(\bm T_L \bm D_L \bm Q_L)_{0} }  \bm B_{L - 2 - L / \Lambda} ...\bm B_{L - 2 - 2 L / \Lambda} }^{(\bm T_L \bm D_L \bm Q_L)_{1}} ... \bm B_{L / \Lambda - 1} ...  \bm B_0}_{(\bm T_L \bm D_L \bm Q_L)_{\Lambda - 1}} \rightsquigarrow 
 \end{equation}
 and as the $\bm B$-matrices are moved onto the left, we build their partial product from the right and decompose it in $\bm Q_R \bm D_R \bm T_R$, saving the resulting successive decompositions in place of the $\bm T_L \bm D_L \bm Q_L$ decompositions which become unneeded.
 For example, when the second partial product is on the left:
 
 \begin{equation}
-\underbrace{\bm B_{L / \Lambda - 1} ...  \bm B_0}_{(\bm Q_R \bm D_R \bm T_R)_{0}} ... \underbrace{ \underbrace{\bm B_{L - 1} \bm B_{L-2} ... \bm B_{L - 1- L / \Lambda}}_{(\bm T_L \bm D_L \bm Q_L)_{0} } ...  \bm B_{2 L / \Lambda -1} ...\bm B_{L / \Lambda} }_{(\bm T_L \bm D_L \bm Q_L)_{\Lambda - 2}} 
+\underbrace{\bm B_{L / \Lambda - 1} ...  \bm B_0}_{(\bm Q_R \bm D_R \bm T_R)_{0}} ... \overbrace{ \underbrace{\bm B_{L - 1} \bm B_{L-2} ... \bm B_{L - 1- L / \Lambda}}_{(\bm T_L \bm D_L \bm Q_L)_{0} } ...  \bm B_{2 L / \Lambda -1} ...\bm B_{L / \Lambda} }^{(\bm T_L \bm D_L \bm Q_L)_{\Lambda - 2}} 
 \end{equation}
 so that at the $\lambda$-th partial product, we obtain $(\bm Q_R \bm D_R \bm T_R )_{\lambda -1} (\bm T_L \bm D_L \bm Q_L )_{\Lambda - 1 - \lambda}$, and generally:
 

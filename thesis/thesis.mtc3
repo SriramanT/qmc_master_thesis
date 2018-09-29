@@ -1,15 +1,15 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Monte Carlo Method in Statistical Physics}{\reset@font\mtcSfont 50}{section.3.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Theoretical Framework and Mathematical Formulation}{\reset@font\mtcSfont 57}{section.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Trotter-Suzuki Decomposition}{\reset@font\mtcSSfont 57}{subsection.3.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Hubbard-Stratonovich transformation}{\reset@font\mtcSSfont 59}{subsection.3.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Single-particle propagators and the fermionic trace}{\reset@font\mtcSSfont 61}{subsection.3.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.4}Monte Carlo sampling of the HS-field}{\reset@font\mtcSSfont 62}{subsection.3.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.5}Checkerboard Breakup}{\reset@font\mtcSSfont 64}{subsection.3.2.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Measurements}{\reset@font\mtcSfont 65}{section.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Obtaining observables in terms of Green's functions}{\reset@font\mtcSSfont 67}{subsection.3.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}Correlation functions}{\reset@font\mtcSSfont 68}{subsection.3.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}Imaginary-time displaced Green's functions and susceptibilities}{\reset@font\mtcSSfont 69}{subsection.3.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Stabilization}{\reset@font\mtcSfont 70}{section.3.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}Stable matrix multiplication}{\reset@font\mtcSSfont 71}{subsection.3.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}Inverting to obtain the Green's function}{\reset@font\mtcSSfont 72}{subsection.3.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}Storing partial products and time-displaced Green's function}{\reset@font\mtcSSfont 74}{subsection.3.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Monte Carlo Method in Statistical Physics}{\reset@font\mtcSfont 48}{section.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Theoretical Framework and Mathematical Formulation}{\reset@font\mtcSfont 54}{section.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.1}Trotter-Suzuki Decomposition}{\reset@font\mtcSSfont 55}{subsection.3.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.2}Hubbard-Stratonovich transformation}{\reset@font\mtcSSfont 56}{subsection.3.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.3}Single-particle propagators and the fermionic trace}{\reset@font\mtcSSfont 59}{subsection.3.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.4}Monte Carlo sampling of the HS-field}{\reset@font\mtcSSfont 60}{subsection.3.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.2.5}Checkerboard Breakup}{\reset@font\mtcSSfont 62}{subsection.3.2.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Measurements}{\reset@font\mtcSfont 63}{section.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.1}Obtaining observables in terms of Green's functions}{\reset@font\mtcSSfont 65}{subsection.3.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.2}Correlation functions}{\reset@font\mtcSSfont 66}{subsection.3.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.3.3}Imaginary-time displaced Green's functions and susceptibilities}{\reset@font\mtcSSfont 66}{subsection.3.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Stabilization}{\reset@font\mtcSfont 67}{section.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.1}Stable matrix multiplication}{\reset@font\mtcSSfont 68}{subsection.3.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.2}Inverting to obtain the Green's function}{\reset@font\mtcSSfont 70}{subsection.3.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.3}Storing partial products and time-displaced Green's function}{\reset@font\mtcSSfont 71}{subsection.3.4.3}}

@@ -20,7 +20,7 @@ More generally, partial spin polarization makes double occupation unlikely, lowe
 
 \begin{figure}[H]
 	\centering
-\hspace{12mm}\includegraphics[trim={0 7.5cm 0 7.5cm},clip, width=1 \linewidth]{Hubbard/dos.pdf}
+\hspace{2mm}\includegraphics[trim={0 7.5cm 0 7.5cm},clip, width=0.85 \linewidth]{Hubbard/dos.pdf}
 	\caption[Density of states of the \acs{1D} tight-binding model.]{Density of states of the \acs{1D} tight-binding model.
 	Here we represent a polarization of the spins, which leads to an increase in kinetic energy, since the imbalance of spins forces higher energy levels to be filled.}
 	\label{fig:dos}
@@ -88,26 +88,20 @@ Out of the energies computed in this way for varying $N_{\uparrow, \downarrow}$,
 \end{itemize}
 
 \begin{figure}
-	\centering
-\hspace{12mm}\includegraphics[trim={0 0 0 0},clip, width=0.6\linewidth]{Hubbard/mfHubbard.png}
+\hspace{-3mm}
+\includegraphics[trim={0 0 0 0},clip, scale=0.47]{Hubbard/mfHubbard.png}
+\hspace{-2.5mm}
+\includegraphics[trim={0 0 0 0},clip, scale = 0.47]{Hubbard/mf-hubbard-1d-quarter-filling-multiple.png}
 	\caption[Mean field results for the \acs{1D} Hubbard model.]{Mean field results at quarter filling for a $ 1024$ sites chain.
 	$U$ is in units of $t$.
-	As the on-site interaction is increased, we see a transition from a paramagnetic to a ferromagnetic phase.}
+	As the on-site interaction is increased, we see a transition from a paramagnetic to a ferromagnetic phase. On the right, we close in on the phase transition: plots of each energy curve separately giving evidence of a phase transition.}
 	\label{fig:mft}
 \end{figure}
 
-\begin{figure}[H]
-	\centering
-\includegraphics[trim={0 0 0 0},clip, scale = 0.3]{Hubbard/mfHubbard_multiple.png}
-	\caption[Mean field results for the \acs{1D} Hubbard model: closing in on the phase transition.]{Plots of each energy curve separately giving evidence of a phase transition.
-	}
-	\label{fig:mft_multiple}
-\end{figure}
-
-Let us focus on Fig.(\ref{fig:mft_multiple}).
-At $U = 2$, the phase is paramagnetic since the energy is minimized at $m = 0$. By $U = 4$, the phase transition is yet to occur but if you look at the energy scale in Fig.(\ref{fig:mft}), you will see that the energy of the spin polarized solutions decreased dramatically.
+Focus on Fig.(\ref{fig:mft}).
+At $U = 2$, the phase is paramagnetic since the energy is minimized at $m = 0$. By $U = 4$, the phase transition is yet to occur, but looking at the energy scale on the left, one sees that the energy of the spin polarized solutions has decreased dramatically.
 	At $U = 4.2$, the large $| m | $ energies have turned down, although $m = 0$ is still the lowest energy solution.
-	At $U = 4.4$, the phase transition occurs, and the solutions with $| m | = 1$ become the lowest energy solutions: we have reached the ferromagnetic phase.
+	At $U = 4.4$, the phase transition occurs, and the solutions with $| m | = 1$ become the lowest energy solutions, signaling the appearance of the ferromagnetic phase.
 
 Are these results consistent with Stoner's criterion: $U N ( \varepsilon_F ) > 1$?
 First, we use the density of states obtained in section (\ref{sec:exactSolutions}) to find a relation between the density $\rho$ and the Fermi energy $\varepsilon_F$:
@@ -170,7 +164,7 @@ Then, we repeat the following steps until convergence:
 
 \end{itemize}
 
-To compare with the results of our \ac{QMC} simulations, we may compute other observables, such as the spin-spin correlation, by inverting the transformation above: $c_{i, \sigma} = \sum_{\alpha} Q_{\alpha i, \sigma} d_{\alpha, \sigma}$, yielding $\left\langle c_{i,\sigma}^\dagger c_{j,\sigma} \right\rangle = \sum_{\alpha, \beta} Q_{\beta i, \sigma}^\star Q_{\alpha j, \sigma} \underbrace{\left\langle d_{\beta,\sigma}^\dagger d_{\alpha,\sigma} \right\rangle}_{\delta_{\alpha\beta} \rho (\varepsilon_\alpha)} = \sum_\alpha Q_{\alpha i, \sigma}^\star Q_{\alpha j, \sigma} \rho ( \varepsilon_\alpha ) $, where $\rho (\varepsilon_\alpha)$ is the Fermi function.
+To compare with the results of our \ac{QMC} simulations, we may compute other observables, such as the spin-spin correlation, by inverting the transformation above: $c_{i, \sigma} = \sum_{\alpha} Q_{\alpha i, \sigma} d_{\alpha, \sigma}$, yielding $\left\langle c_{i,\sigma}^\dagger c_{j,\sigma} \right\rangle = \sum_{\alpha, \beta} Q_{\beta i, \sigma}^\star Q_{\alpha j, \sigma} \left\langle d_{\beta,\sigma}^\dagger d_{\alpha,\sigma} \right\rangle = \sum_\alpha Q_{\alpha i, \sigma}^\star Q_{\alpha j, \sigma} \rho ( \varepsilon_\alpha ) $, where $\rho (\varepsilon_\alpha)$ is the Fermi function.
 
 \begin{equation}
 \begin{split}

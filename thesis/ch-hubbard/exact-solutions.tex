@@ -122,19 +122,18 @@ This is because due to the diagonal form of $\mathcal{H}$, the expressions defin
 \begin{equation}
 \begin{split}
 \mathcal{H} e^{-\beta\mathcal{H} } &\leadsto e^{-\beta U / 4}  \text{diag}\bigg(\frac{U}{4}, (-\mu - \frac{U}{4})  e^{\beta(\mu + \frac{U}{2})} (-\mu - \frac{U}{4}) e^{\beta(\mu + \frac{U}{2})}, (\frac{U}{4} - 2\mu ) e^{2\beta \mu} \bigg) \\
-n_{\uparrow} e^{-\beta\mathcal{H} } &\leadsto e^{-\beta U / 4}  \text{diag}\bigg(0, e^{\beta(\mu + \frac{U}{2})}, 0,  e^{2\beta \mu} \bigg) \\
-n_{\downarrow} e^{-\beta\mathcal{H} } &\leadsto e^{-\beta U / 4}  \text{diag}\bigg(0, 0, e^{\beta(\mu + \frac{U}{2})},   e^{2\beta \mu} \bigg) \\
+n_{\uparrow} e^{-\beta\mathcal{H} } &\leadsto e^{-\beta U / 4}  \text{diag}\bigg(0, e^{\beta(\mu + \frac{U}{2})}, 0,  e^{2\beta \mu} \bigg) \,\,\,\,
+n_{\downarrow} e^{-\beta\mathcal{H} } \leadsto e^{-\beta U / 4}  \text{diag}\bigg(0, 0, e^{\beta(\mu + \frac{U}{2})},   e^{2\beta \mu} \bigg) \\
 n_{\uparrow} n_{\downarrow} e^{-\beta\mathcal{H} } &\leadsto e^{-\beta U / 4}  \text{diag}\bigg(0, 0, 0,   e^{2\beta \mu} \bigg) \\
 \end{split}
 \end{equation}
 
-From these we can compute some traces which we shall find useful to obtain averages of various observables.
+From these we can compute some traces we shall find useful to obtain averages of some observables.
 
 \begin{equation}
 \begin{split}
 &\Tr \bigg[ \mathcal{H} e^{-\beta\mathcal{H} } \bigg] = e^{-\beta U / 4} \bigg(\frac{U}{4} + 2 (-\mu - \frac{U}{4})  e^{\beta(\mu + \frac{U}{2})} + (\frac{U}{4} - 2\mu ) e^{2\beta \mu} \bigg) \\
-&\Tr \bigg[ (n_\uparrow + n_\downarrow ) e^{-\beta\mathcal{H} } \bigg] = e^{-\beta U / 4} \bigg(2 (-\mu - \frac{U}{4})  e^{\beta(\mu + \frac{U}{2})} + (\frac{U}{4} - 2\mu ) e^{2\beta \mu} \bigg) \\
-&\Tr \bigg[ n_\uparrow n_\downarrow \bigg] = e^{-\beta U/4} e^{2\beta\mu}
+&\Tr \bigg[ (n_\uparrow + n_\downarrow ) e^{-\beta\mathcal{H} } \bigg] = e^{-\beta U / 4} \bigg(2 (-\mu - \frac{U}{4})  e^{\beta(\mu + \frac{U}{2})} + (\frac{U}{4} - 2\mu ) e^{2\beta \mu} \bigg) \,\,\,\, \Tr \bigg[ n_\uparrow n_\downarrow \bigg] = e^{-\beta U/4} e^{2\beta\mu}
 \end{split}
 \end{equation}
 
@@ -149,7 +148,7 @@ The bottom line is that we are able to obtain \emph{exact} expressions for
 Note that when there is no chemical potential $\mu = 0$, we have $\rho = 1$ for any $U$, or $\beta$.
 This corresponds to half filling: the density of electrons is half its maximum possible value.
 
-In Fig. (\ref{fig:rhoVsMu}), we plot $\rho(\mu)$ for varying temperature, and fixed on-site interaction.
+In Fig.(\ref{fig:rhoVsMu_mSqVsT}), we plot $\rho(\mu)$ for varying temperature, and fixed on-site interaction.
 It allows us to get some insight into the Mott insulating gap.
 At $T = 0.25$, the curve owes its step-like shape to the small thermal fluctuations.
 As $T$ increases, the curve starts losing this tendency, and by $T = 2.0$, it is no longer possible to identify it.
@@ -163,13 +162,7 @@ One needs a sufficiently large chemical potential to overcome this effect.
 As we shall see, this feature of the model remains present as the number of sites increases.
 Note that in the Mott gap, the compressibility vanishes: $\kappa = \frac{\partial \rho}{\partial \mu} = 0$, leading to the appearance of the Mott Plateau.
 Just as thermal fluctuations can destroy the sharp jumps corresponding to the gap, so can quantum fluctuations.
-The hopping term in the Hamiltonian introduces such fluctuations, leading to an effect similar to that of Fig.  (\ref{fig:rhoVsMu}).
-\begin{figure}[H]
-	\centering
-\hspace{12mm}\includegraphics[width=0.7\linewidth]{Hubbard/rhoVsMu.png}
-	\caption[Electron density in the purely atomic limit of the Hubbard model]{Electron density $\rho$ for varying chemical potential $\mu$ and temperature $T = \beta^{-1}$, but fixed $U = 4$. As the temperature decreases, a \say{Mott plateau} sets in. The Mott insulating gap already seen here is an important feature of the Hubbard model.}
-	\label{fig:rhoVsMu}
-\end{figure}
+The hopping term in the Hamiltonian introduces such fluctuations, leading to an effect similar to that of Fig.(\ref{fig:rhoVsMu_mSqVsT}).
 
 \item the one-site energy $E = \left\langle \mathcal{H} \right\rangle$.
 \begin{equation}
@@ -180,10 +173,9 @@ E &= \frac{\text{Tr}\bigg( \mathcal{H}e^{-\beta\mathcal{H} } \bigg)}{Z} = \frac{
 \end{split}
 \end{equation}
 which at half filling becomes
-
-\begin{equation}
-E = \frac{U}{4} - \frac{U}{2 ( 1 + e^{-\beta U /2} )}
-\end{equation}
+$
+E = \frac{U}{4} - \frac{U}{2} ( 1 + e^{-\beta U /2} )^{-1}
+$.
 
 \item the double occupancy $\left\langle n_\uparrow n_\downarrow \right\rangle$.
 
@@ -191,13 +183,37 @@ E = \frac{U}{4} - \frac{U}{2 ( 1 + e^{-\beta U /2} )}
 \left\langle n_\uparrow n_\downarrow \right\rangle = \frac{\text{Tr} \big[ n_\uparrow n_\downarrow \big]}{Z} = \frac{e^{2\beta\mu}}{1 + 2 e^{\beta (\frac{U}{2} + \mu )} + e^{2\beta\mu}}
 \end{equation}
 which, at half filling, simplifies to
-
-\begin{equation}
-\left\langle n_\uparrow n_\downarrow \right\rangle = \frac{1}{2 ( 1 + e^{\beta U/2} )}
-\end{equation}
+$
+\left\langle n_\uparrow n_\downarrow \right\rangle = \frac{1}{2}  ( 1 + e^{\beta U/2} )^{-1}
+$.
 
 Note that as either $U$ or $\beta$ increase the double occupancy tends to zero.
 \end{enumerate}
+
+\begin{figure}[H]
+\hspace{5mm}\includegraphics[width=0.45\linewidth]{Hubbard/rhoVsMu.png}
+\hspace{0.02cm}
+\includegraphics[width= 0.45\linewidth]{Hubbard/mSqVsT.png}
+	\caption[Electron density in the purely atomic limit of the Hubbard model. Magnetization as a function of temperature $\left\langle m^2 \right\rangle (T)$ in the single site Hubbard model for varying chemical potential $\mu$.]{Electron density $\rho$ for varying chemical potential $\mu$ and temperature $T = \beta^{-1}$, but fixed $U = 4$. As the temperature decreases, a \say{Mott plateau} sets in. The Mott insulating gap already seen here is an important feature of the Hubbard model.
+	Magnetization as a function of temperature $\left\langle m^2 \right\rangle (T)$ in the single site Hubbard model for varying chemical potential $\mu$.
+	Local moments develop at lower temperature.
+	However, as we increase the magnitude of the chemical potential, the situation is reversed.
+	At low temperatures, the site is either  doubly occupied or empty, and so the magnetization goes to zero.
+	Thermal fluctuations allow the occupation of the site to fluctuate, and the magnetization to become nonzero.
+	}
+	\label{fig:rhoVsMu_mSqVsT}
+\end{figure}
+
+
+\begin{figure}[H]
+\hspace{5mm}
+\includegraphics[width=0.45\linewidth]{Hubbard/mSqVsU.png}
+\hspace{0.02cm}
+\includegraphics[width=0.45\linewidth]{Hubbard/mSqVsT_and_U.png}
+	\caption[Magnetization as a function of the on-site interaction $\left\langle m^2 \right\rangle (U)$, and vice-versa, in the single site Hubbard model for varying temperature $T$.]{Magnetization as a function of the on-site interaction $\left\langle m^2 \right\rangle (U)$, and vice-versa, in the single site Hubbard model for varying temperature $T$.
+	Local moments are favored by the on-site interaction, and are more likely to develop at lower temperatures, when thermal fluctuations are smaller. Here we consider half filling: $\mu = 0$.}
+	\label{fig:mSqVsU}
+\end{figure}
 
 As was motivated in the previous chapter, we are interested in studying magnetism in correlated systems.
 For the Hubbard model, the relevant quantity is the sum of the squared  local moments
@@ -206,31 +222,12 @@ For the Hubbard model, the relevant quantity is the sum of the squared  local mo
 \left\langle m^2 \right\rangle = \left\langle ( n_\uparrow - n_\downarrow )^2 \right\rangle = \left\langle n_\uparrow + n_\downarrow \right\rangle - 2  \left\langle n_\uparrow n_\downarrow \right\rangle = \rho - 2  \left\langle n_\uparrow n_\downarrow \right\rangle
 \end{equation}
 
-In Figs. (\ref{fig:mSqVsU}, \ref{fig:mSqVsT}), we show how $\left\langle m^2 \right\rangle$ varies as a function of $U$ for different temperatures, and how $\left\langle m^2 \right\rangle$ varies with $T$, for different values of the chemical potential, respectively.
+In Figs.(\ref{fig:rhoVsMu_mSqVsT},\ref{fig:mSqVsU}), we show how $\left\langle m^2 \right\rangle$ varies with $T$ and how $\left\langle m^2 \right\rangle$ varies as a function of $U$ for different temperatures, for different values of the chemical potential, respectively.
 At low temperature or for large on-site interaction, local moments tend to develop, which leads to magnetic ordering: $\left\langle m^2 \right\rangle \rightarrow 1$ (in the half-filled case).
 Since the double occupancy is zero in this case, if we do not consider thermal fluctuations, the magnetization corresponds to the spin of the electron occupying the site.
 
-\begin{figure}[H]
-	\centering
-\hspace{12mm}\includegraphics[width=0.7\linewidth]{Hubbard/mSqVsU.png}
-	\caption[Magnetization as a function of the on-site interaction $\left\langle m^2 \right\rangle (U)$ in the single site Hubbard model for varying temperature $T$.]{Magnetization as a function of the on-site interaction $\left\langle m^2 \right\rangle (U)$ in the single site Hubbard model for varying temperature $T$.
-	Local moments are favored by the on-site interaction, and are more likely to develop at lower temperatures, when thermal fluctuations are smaller. Here we consider half filling: $\mu = 0$.}
-	\label{fig:mSqVsU}
-\end{figure}
-
-In Fig. (\ref{fig:mSqVsU}), we see thermal fluctuations destroying magnetic ordering.
+In Fig.(\ref{fig:mSqVsU}), we see thermal fluctuations destroying magnetic ordering.
 As what happens for the Mott plateau, quantum fluctuations (i.e. introducing a hopping term in the Hamiltonian) change the behavior of the magnetization, and perfect moments ($\left\langle m^2 \right\rangle =1$) do not form anymore at zero temperature for finite on-site interaction.
-
-\begin{figure}[H]
-	\centering
-\hspace{12mm}\includegraphics[width= 0.7\linewidth]{Hubbard/mSqVsT.png}
-	\caption[Magnetization as a function of temperature $\left\langle m^2 \right\rangle (T)$ in the single site Hubbard model for varying chemical potential $\mu$.]{Magnetization as a function of temperature $\left\langle m^2 \right\rangle (T)$ in the single site Hubbard model for varying chemical potential $\mu$.
-	Local moments develop at lower temperature.
-	However, as we increase the magnitude of the chemical potential, the situation is reversed.
-	At low temperatures, the site is either  doubly occupied or empty, and so the magnetization goes to zero.
-	Thermal fluctuations allow the occupation of the site to fluctuate, and the magnetization to become nonzero.}
-	\label{fig:mSqVsT}
-\end{figure}
 
 \subsection{The non-interacting ($\frac{U}{t} = 0$) limit}
 
@@ -346,9 +343,10 @@ This is a feature of the Hubbard model at half filling down to $U = 0$.
 A similar effect happens in \acs{1D}, at $k = \pi$.
 
 \begin{figure}[H]
-\includegraphics[width=0.55\linewidth]{Hubbard/fermiEnergy1D.png}
-\hspace{-9mm}
-\includegraphics[width=0.49\linewidth]{Hubbard/fermiEnergy2D.png}
+\hspace{1.2cm}
+\includegraphics[width=0.47\linewidth]{Hubbard/fermiEnergy1D.png}
+\hspace{-1mm}
+\includegraphics[width=0.4\linewidth]{Hubbard/fermiEnergy2D.png}
 	\caption[Dispersion relations for the \acs{1D} chain and the square lattice in the non-interacting case.]{Dispersion relations for the \acs{1D} chain and the square lattice in the non-interacting case.
 	For the square lattice, the surfaces separating the different colors are Fermi surfaces for different fillings of the lattice. In particular, for half filling ($\rho = 1, \mu = 0$), we obtain the rotated square in the white region.}
 	\label{fig:fermi1D}

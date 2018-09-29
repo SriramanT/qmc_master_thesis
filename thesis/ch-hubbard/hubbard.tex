@@ -147,7 +147,7 @@ $
  we cancast the dispersion relation as the (negative) Fourier transform of the hopping
 
 \begin{equation}
-- \mathcal{H}_{K} \left| \bm k \right\rangle = \frac{1}{\sqrt{N}} \sum_{\bm r \bm r'} K ( \bm r - \bm r' ) e^{i \bm k \cdot \bm r} \left| \bm r' \right \rangle = \frac{1}{\sqrt{N}} \bigg( \sum_{\bm R} K(\bm R) e^{i\bm k \cdot \bm R} \bigg)\underbrace{ \bigg( \sum_{\bm r'} e^{i\bm k \cdot \bm r'} \left| \bm r' \right\rangle \bigg)}_{\left| \bm k \right\rangle} = \varepsilon_{\bm k} \left| \bm k \right\rangle
+- \mathcal{H}_{K} \left| \bm k \right\rangle = \frac{1}{\sqrt{N}} \sum_{\bm r \bm r'} K ( \bm r - \bm r' ) e^{i \bm k \cdot \bm r} \left| \bm r' \right \rangle = \frac{1}{\sqrt{N}} \bigg( \sum_{\bm R} K(\bm R) e^{i\bm k \cdot \bm R} \bigg)\bigg( \sum_{\bm r'} e^{i\bm k \cdot \bm r'} \left| \bm r' \right\rangle \bigg) = \varepsilon_{\bm k} \left| \bm k \right\rangle
 \end{equation}
 
 This gives us an interpretation of the $\bm K$ matrix: given the dispersion relation, and considering the solid to be well described by a tight binding model, we can easily obtain the matrix elements $K_{i j}$.
@@ -173,7 +173,7 @@ A lattice is said to be bipartite if it can be divided into two sublattices $\ma
 For example, the square and honeycomb lattices are bipartite, whereas the triangular lattice is not.
 In a bipartite lattice, antiferromagnetic (\acs{AF}) order is favored.
 In contrast, \acs{AF} order is frustrated on the triangular and other non bipartite lattices.
-
+\vspace{-0.2cm}
 \begin{figure}[H]\label{fig:bipartite}
 \centering
 \includegraphics[width = 6cm]{Hubbard/bipartite}
