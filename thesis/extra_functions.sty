@@ -96,20 +96,20 @@
   \color{chaptergrey}
 }
 \def\@makechapterhead#1{%
-  \vspace*{50\p@}%
+  %\vspace*{50\p@}%
   {\parindent \z@ \raggedright \normalfont
     {\chapnumfont\ifnum \c@secnumdepth >\m@ne
 %         \huge\bfseries \@chapapp\space \thechapter
         \raggedleft\bfseries \thechapter
         \par\nobreak
-        \vskip 20\p@
+        \vskip 10\p@
     \fi}
     \interlinepenalty\@M
     {\raggedleft\Huge \bfseries #1\par\nobreak}
-    \vskip 40\p@
+    \vskip 20\p@
   }}
 
-\newcommand{\fancychapter}[1]{\chapter{#1}\vfill\minitoc\pagebreak}
+\newcommand{\fancychapter}[1]{\chapter{#1}\minitoc}
 
 % This commmand allows to place horizontal lines with a custom width... replaces the standard hline command
 \newcommand{\hlinew}[1]{%

@@ -156,6 +156,12 @@ Then, we repeat the following steps until convergence:
 \mathcal{H}_{\text{MF}} = \sum_{\alpha, \sigma} \varepsilon_{\alpha, \sigma} d_{\alpha, \sigma}^\dagger d_{\alpha, \sigma} + \mathcal{C} , \,\, d_{\alpha, \sigma} = \sum_i Q_{\alpha i, \sigma}^\star c_{i,\sigma}
 \end{equation}
 
+\item Given a number of electrons per unit cell, compute the chemical potential corresponding to that filling implicitly through (we use the bissection method):
+
+\begin{equation}\label{eq:implicitChemPot}
+\frac{1}{N} \sum_{\alpha, \sigma} (  e^{\beta ( \varepsilon_{\alpha, \sigma} - \mu ) } +1 )^{-1} = n_e , \,\, \text{(the number of electrons per unit cell)}
+\end{equation}
+
 \item Recompute mean field parameters, and check for convergence: at iteration $I$, $\left\langle n_{i,\sigma} \right\rangle_I \approx \left\langle n_{i,\sigma} \right\rangle_{I - 1}$.
 
 \begin{equation}\label{eq:selfConsistent}
@@ -164,7 +170,7 @@ Then, we repeat the following steps until convergence:
 
 \end{itemize}
 
-To compare with the results of our \ac{QMC} simulations, we may compute other observables, such as the spin-spin correlation, by inverting the transformation above: $c_{i, \sigma} = \sum_{\alpha} Q_{\alpha i, \sigma} d_{\alpha, \sigma}$, yielding $\left\langle c_{i,\sigma}^\dagger c_{j,\sigma} \right\rangle = \sum_{\alpha, \beta} Q_{\beta i, \sigma}^\star Q_{\alpha j, \sigma} \left\langle d_{\beta,\sigma}^\dagger d_{\alpha,\sigma} \right\rangle = \sum_\alpha Q_{\alpha i, \sigma}^\star Q_{\alpha j, \sigma} \rho ( \varepsilon_\alpha ) $, where $\rho (\varepsilon_\alpha)$ is the Fermi function.
+To compare with the results of our \ac{QMC} simulations, we may compute other observables, such as the spin-spin correlation, by inverting the transformation above: $c_{i, \sigma} = \sum_{\alpha} Q_{\alpha i, \sigma} d_{\alpha, \sigma}$, yielding $\left\langle c_{i,\sigma}^\dagger c_{j,\sigma} \right\rangle = \sum_{\alpha, \beta} Q_{\beta i, \sigma}^\star Q_{\alpha j, \sigma} \left\langle d_{\beta,\sigma}^\dagger d_{\alpha,\sigma} \right\rangle = \sum_\alpha Q_{\alpha i, \sigma}^\star Q_{\alpha j, \sigma} \rho ( \varepsilon_{\alpha, \sigma} ) $, where $\rho (\varepsilon_{\alpha, \sigma})$ is the Fermi function.
 
 \begin{equation}
 \begin{split}
@@ -172,10 +178,10 @@ To compare with the results of our \ac{QMC} simulations, we may compute other ob
 &=\sum_{\sigma} \left( \left\langle n_{i,\sigma} \right\rangle \left\langle n_{j,\sigma} \right\rangle - \left\langle n_{i,-\sigma} \right\rangle \left\langle n_{j,\sigma} \right\rangle + \left\langle c_{i,\sigma}^\dagger c_{j,\sigma}  \right\rangle \left\langle c_{i,\sigma} c_{j,\sigma}^\dagger \right\rangle \right) , \, \text{by Wick's theorem} \\
 &=
 \begin{cases}
-\sum_{\sigma, \alpha, \beta} \rho ( \varepsilon_\alpha ) \rho ( \varepsilon_\beta ) \left( | Q_{\alpha i, \sigma} |^2 | Q_{\beta j, \sigma} |^2  - | Q_{\alpha i, -\sigma} |^2 | Q_{\beta j, \sigma} |^2  - Q_{\alpha i, \sigma}^\star Q_{\alpha j, 
+\sum_{\sigma, \alpha, \beta} \rho ( \varepsilon_{\beta, \sigma} ) \left( \rho ( \varepsilon_{\alpha, \sigma} ) | Q_{\alpha i, \sigma} |^2 | Q_{\beta j, \sigma} |^2  - \rho ( \varepsilon_{\alpha, -\sigma} ) | Q_{\alpha i, -\sigma} |^2 | Q_{\beta j, \sigma} |^2  - Q_{\alpha i, \sigma}^\star Q_{\alpha j, 
 \sigma}  Q_{\beta j, \sigma}^\star Q_{\beta i, 
 \sigma} \right) \,\, i \neq j \\
-\sum_{\alpha,\sigma} | Q_{\alpha i, \sigma} |^2 \rho (\varepsilon_\alpha) - \sum_{\alpha,\beta} | Q_{\alpha i, \uparrow} |^2 \rho (\varepsilon_\alpha) | Q_{\beta i, \downarrow} |^2 \rho (\varepsilon_\beta) \,\, i = j
+\sum_{\alpha,\sigma} | Q_{\alpha i, \sigma} |^2 \rho (\varepsilon_{\alpha, \sigma}) - \sum_{\alpha,\beta} | Q_{\alpha i, \uparrow} |^2 \rho (\varepsilon_{\alpha, \uparrow}) | Q_{\beta i, \downarrow} |^2 \rho (\varepsilon_{\beta, \downarrow}) \,\, i = j
 \end{cases}
 \end{split}
 \end{equation}
@@ -192,8 +198,8 @@ The temperature is then gradually lowered until the desired one is achieved, and
 There are a lot of possible annealing schemes, namely keeping $\beta$ fixed for some iterations and then adjusting it to the desired $\beta = \beta_0$, or smoothly reducing $\beta$ until it reaches $\beta_0$.
 
 A common convergence issue is the oscillation between two configurations $\left\langle n_{i,\sigma}\right\rangle_I \leftrightarrow \left\langle n_{i,\sigma}\right\rangle_{I+1}$.
-This is solved by averaging the values obtained at the current and previous iterations: $\left\langle n_{i,\sigma}\right\rangle_I \leftarrow \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_I + \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_{I+1}$
-The weights attributed to each configuration can be also be different, or even vary with the iteration: $\left\langle n_{i,\sigma}\right\rangle_I \leftarrow P(I) \left\langle n_{i,\sigma}\right\rangle_I + (1 - P(I) ) \left\langle n_{i,\sigma}\right\rangle_{I+1}$, if we make sure that $P(I) > \delta$, the latter being the convergence parameter.
+This is solved by averaging the values obtained at the current and previous iterations: $\left\langle n_{i,\sigma}\right\rangle_{I+1} \leftarrow \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_I + \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_{I+1}$
+The weights attributed to each configuration can be also be different, or even vary with the iteration: $\left\langle n_{i,\sigma}\right\rangle_{I+1} \leftarrow P(I) \left\langle n_{i,\sigma}\right\rangle_I + (1 - P(I) ) \left\langle n_{i,\sigma}\right\rangle_{I+1}$, if we make sure that $P(I) > \delta$, the latter being the convergence parameter.
 
 Finally, the number of parameters may be reduced.
 This is done while taking into account the symmetry of the system.

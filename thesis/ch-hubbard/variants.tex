@@ -1,8 +1,8 @@
 \section{Simulatable variants of the Hubbard model}\label{sec:variants}
 
-It is possible to think of more general  models than the one considered so far.
+More general  models than the one considered so far exist.
 Notwithstanding, a limited basis of single-electron orbitals allows one to describe the essential electronic degrees of freedom.
-In fact, all the methodology we shall present in the next chapter generalizes for Hamiltonians belonging to a particular class \cite{hanke_electronic_nodate}:
+In fact, all the methodology we shall present in the next chapter generalizes for Hamiltonians of the class \cite{hanke_electronic_nodate}:
 
 \begin{equation}\label{eq:variantsForm}
 \mathcal{H} = - \sum_{i, j, \sigma} K_{ij} \bigg( c_{i, \sigma}^\dagger c_{j, \sigma} + c_{j, \sigma}^\dagger c_{i, \sigma} \bigg) + \sum_{i, j} V_{ij} n_i n_j ,
@@ -14,17 +14,15 @@ There is a huge variety of approximation methods at both zero and finite tempera
 We have seen some examples of such methods for the specific case of the Hubbard model.
 The methods aim at studying magnetism, superconductivity, and other low-temperature phase transitions perturbatively or by considering a  simplified version of the model at hand.
 \ac{QMC} methods follow a different route, allowing the exploration of a more vast range of parameter space.
-In auxiliary field \ac{QMC}, the first step is to resort to a mathematical trick to eliminate the \emph{direct} electron-electron interaction.
-In the same way that photon fields mediate the electromagnetic interaction, there are fields mediating our simplified screened interaction.
+In auxiliary field \ac{QMC}, the first step is to eliminate the \emph{direct} electron-electron interaction: in the same way that photon fields mediate the electromagnetic interaction, there are fields mediating our simplified screened interaction.
 In the context of a path integral formulation, we will introduce these so called Hubbard Stratonovich fields to eliminate the electron-electron interactions.
 The complexity of the problem is transferred to the degrees of freedom of the interaction of each electron with the external bosonic field that mediates their interactions.
 The problem of direct interactions between electrons maps to a free-fermion problem that can be solved formally in terms of determinants of single-electron Green's functions.
-While this problem still can't be solved analytically, we can devise a Monte Carlo method that uses importance sampling to probe the configuration space of the auxiliary bosonic fields.
+We use Monte Carlo to probe the configuration space of the auxiliary bosonic fields by importance sampling.
 
-The type of algorithms at hand tend to suffer from a number of difficulties, namely excessive computer time, the sign problem, fermionic wave functions turning bosonic, and numerical instabilities at low temperatures.
+The algorithm tends to suffer from a number of difficulties, namely excessive computer time, the sign problem, fermionic wave functions turning bosonic, and, notably,  numerical instabilities at low temperatures.
 We will discuss how some of these obstacles can be circumvented.
-With respect to the latter, a key, generic observation regarding thermodynamic studies of many-electron systems is in order.
-In the low temperature limit, the lowest energy states are assigned larger weights, whereas high energy states are exponentially suppressed.
+In thermodynamic studies of many-electron systems, as we reach the low temperature limit, the lowest energy states are assigned larger weights, whereas high energy states are exponentially suppressed.
 However, Pauli's exclusion principle implies the existence of a \say{Fermi energy}.
 The prevalent states are not macroscopically occupied, that is, they are only filled up to the \say{Fermi energy}, which thus controls the physics of the system.
 Unfortunately, the information about the states around the Fermi energy is exponentially suppressed with respect to the comparatively unimportant states at the bottom of the band.
@@ -32,17 +30,13 @@ Numerically, this translates into determining differences of large numbers with 
 Finite-precision computers impose constraints on this process, but the limits can be stretched by using recently developed sophisticated algorithms.
 These explicitly separate the exponentially diverging numerical scales associated with the different energy scales (electron mobility, doping, Coulomb interaction, ...) with little extra computational cost.
 Thus, simulations can be stabilized at lower temperature, potentially allowing the study of more phases.
-
 The case of interest for this work comes from considering a particular multi-orbital form of the very general Hamiltonian of Eq.(\ref{eq:variantsForm}).
-Even when inter-orbital interactions $(U' = 0)$, yet is still numerically more expensive to simulate than the simple Hubbard model since the orbital space increases the overall dimensionality of the problem, and the hopping matrix is less sparse.
 Additional (greek) indexes are added to represent Wannier states on the same site, but corresponding to different \say{orbitals}, and we consider interactions only between electrons on the same site and on the same orbital:
 
 \begin{equation}\label{eq:variantTMD}
-\mathcal{H} = - \sum_{\substack{x, y \\ \alpha, \beta, \sigma}} K_{(x\alpha)(y\beta )} \bigg( c_{x,\alpha, \sigma}^\dagger c_{y,\beta, \sigma} + c_{y,\beta , \sigma}^\dagger c_{x,\alpha, \sigma} \bigg) + \frac{U}{2} \sum_{\substack{x, \alpha \\ \sigma \neq \sigma'} } n_{x\alpha, \uparrow} n_{x\alpha, \downarrow} + \frac{U'}{2} \sum_{\substack{x, \alpha \neq \beta \\ \sigma, \sigma'}} n_{x\alpha, \sigma} n_{x\beta, \sigma'}  ,
+\mathcal{H} = - \sum_{\substack{x, y \\ \alpha, \beta, \sigma}} K_{(x\alpha)(y\beta )} \bigg( c_{x,\alpha, \sigma}^\dagger c_{y,\beta, \sigma} + c_{y,\beta , \sigma}^\dagger c_{x,\alpha, \sigma} \bigg) + \frac{U}{2} \sum_{\substack{x, \alpha \\ \sigma \neq \sigma'} } n_{x\alpha, \uparrow} n_{x\alpha, \downarrow} + \frac{U'}{2} \sum_{\substack{x, \alpha \neq \beta \\ \sigma, \sigma'}} n_{x\alpha, \sigma} n_{x\beta, \sigma'} ,
 \end{equation}
-
-While these models describe fundamentally different physics than the Hubbard model, they do not require a different formulation than the one used in simulations of the Hubbard model.
-This is easily seen by considering the change of variable $i = N_{\text{orb}} x + \alpha$, where $N_{\text{orb}}$ is the number of orbitals in the model.
-It clearly collapses site and orbital indexes into the same index, bringing us back to a typical Hubbard-type model in a higher dimensional space.
-Additionally, the hopping matrix contains both the geometry, which specifies the  structure of the class of materials, and potentially non-uniform transition amplitudes related to the specific one at hand.
-A general form for these in \acp{TMD} is derived by symmetry arguments in \cite{liu_three-band_2013}, and their specific values for different materials are obtained by fitting to the results of  density functional theory (DFT), using the minimal model obtained by symmetry.
+but even when inter-orbital interactions $(U' = 0)$, it remains much more expensive to simulate numerically than the simpler Hubbard model since the orbital space increases the overall dimensionality of the problem, and the hopping matrix becomes less sparse.
+To see this, consider the change of variable collapsing site and orbital indexes into the same index: $i = N_{\text{orb}} x + \alpha$, where $N_{\text{orb}}$ is the number of orbitals in the model.
+The hopping matrix, now organized in blocks, is related to the geometry, specifying the neighbors on the spatial lattice, say a honeycomb or triangular lattice, through its block structure.
+It also relates to the specific \acs{TMD} at hand via the non-uniform hopping matrix elements in these blocks.

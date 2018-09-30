@@ -190,6 +190,13 @@ $.
 Note that as either $U$ or $\beta$ increase the double occupancy tends to zero.
 \end{enumerate}
 
+As was motivated in the previous chapter, we are interested in studying magnetism in correlated systems.
+For the Hubbard model, the relevant quantity is the sum of the squared local moments
+
+\begin{equation}
+\left\langle m^2 \right\rangle = \left\langle ( n_\uparrow - n_\downarrow )^2 \right\rangle = \left\langle n_\uparrow + n_\downarrow \right\rangle - 2  \left\langle n_\uparrow n_\downarrow \right\rangle = \rho - 2  \left\langle n_\uparrow n_\downarrow \right\rangle
+\end{equation}
+
 \begin{figure}[H]
 \hspace{5mm}\includegraphics[width=0.45\linewidth]{Hubbard/rhoVsMu.png}
 \hspace{0.02cm}
@@ -204,7 +211,6 @@ Note that as either $U$ or $\beta$ increase the double occupancy tends to zero.
 	\label{fig:rhoVsMu_mSqVsT}
 \end{figure}
 
-
 \begin{figure}[H]
 \hspace{5mm}
 \includegraphics[width=0.45\linewidth]{Hubbard/mSqVsU.png}
@@ -214,13 +220,6 @@ Note that as either $U$ or $\beta$ increase the double occupancy tends to zero.
 	Local moments are favored by the on-site interaction, and are more likely to develop at lower temperatures, when thermal fluctuations are smaller. Here we consider half filling: $\mu = 0$.}
 	\label{fig:mSqVsU}
 \end{figure}
-
-As was motivated in the previous chapter, we are interested in studying magnetism in correlated systems.
-For the Hubbard model, the relevant quantity is the sum of the squared  local moments
-
-\begin{equation}
-\left\langle m^2 \right\rangle = \left\langle ( n_\uparrow - n_\downarrow )^2 \right\rangle = \left\langle n_\uparrow + n_\downarrow \right\rangle - 2  \left\langle n_\uparrow n_\downarrow \right\rangle = \rho - 2  \left\langle n_\uparrow n_\downarrow \right\rangle
-\end{equation}
 
 In Figs.(\ref{fig:rhoVsMu_mSqVsT},\ref{fig:mSqVsU}), we show how $\left\langle m^2 \right\rangle$ varies with $T$ and how $\left\langle m^2 \right\rangle$ varies as a function of $U$ for different temperatures, for different values of the chemical potential, respectively.
 At low temperature or for large on-site interaction, local moments tend to develop, which leads to magnetic ordering: $\left\langle m^2 \right\rangle \rightarrow 1$ (in the half-filled case).

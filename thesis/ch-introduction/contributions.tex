@@ -5,8 +5,7 @@ In this work we focus mainly on the study of the emergence of magnetic ordering 
 To carry out this study, we use our own original implementation of the auxiliary field \ac{QMC} algorithm in \texttt{C++}.
 To validate the built software, we consider previously well known models (such as the Hubbard model on the \acs{1D} chain, and the square lattice), and compare our \ac{QMC} results with those obtained in the mean field approximation and benchmark them against existing, \say{tried and true}  implementations (namely \texttt{ALF} \cite{bercx_alf_2017} and \texttt{QUEST} \cite{noauthor_quest_2012}), and early seminal studies \cite{hirsch_discrete_1983,white_numerical_1989}.
 The code we wrote can be used to simulate low-dimensional Hubbard-like models with different geometries to extend this work further.
-Additionaly, using our code, we characterize and compare different options to stabilize the matrix products needed to perform the simulations, and characterize the fermion sign problem.
-This last step is needed to extract the maximum amount of information out of the Monte Carlo measurements, since the fermion sign problem may become relevant for specific combinations of parameters of a given model.
+Additionaly, using our code, we compare different options to stabilize the matrix products needed to perform the simulations, and characterize the fermion sign problem.
 
 To study \ac{TMD} nanoribbons, we extend a minimal three-band tight binding model \cite{liu_three-band_2013} of \acp{TMD} to the interacting case.
 Then, we show the emergence of edge-state magnetism in \ac{TMD} nanoribbons via original mean field and \ac{QMC} calculations, which we compare with one another.

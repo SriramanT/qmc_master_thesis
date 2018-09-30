@@ -2342,161 +2342,6 @@
       \verb 10.1021/nl903868w
       \endverb
     \endentry
-    \entry{chen_fabrication_2017}{article}{}
-      \name{author}{7}{}{%
-        {{hash=6ef5e83f2df66e076ce95e343216ee14}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Yuxuan},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=605009b41c70e69d4086c598301434d0}{%
-           family={Cui},
-           familyi={C\bibinitperiod},
-           given={Ping},
-           giveni={P\bibinitperiod}}}%
-        {{hash=6d60fe7dd3ff2b279d78f278b85d197e}{%
-           family={Ren},
-           familyi={R\bibinitperiod},
-           given={Xibiao},
-           giveni={X\bibinitperiod}}}%
-        {{hash=07917f676e2fa0e61e529ba5ff1a0922}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Chendong},
-           giveni={C\bibinitperiod}}}%
-        {{hash=3c2666c644e86fa9ed1d657175acb19f}{%
-           family={Jin},
-           familyi={J\bibinitperiod},
-           given={Chuanhong},
-           giveni={C\bibinitperiod}}}%
-        {{hash=6fab509a575563dcce94d6d45f8bbd26}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Zhenyu},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=3b04d598983be8376d855603877cf29b}{%
-           family={Shih},
-           familyi={S\bibinitperiod},
-           given={Chih-Kang},
-           giveni={C\bibinithyphendelim K\bibinitperiod}}}%
-      }
-      \strng{namehash}{6df7867741141bdec88cb9c3fb541baa}
-      \strng{fullhash}{18b7ccb5d30c703a6495107b069f7bbc}
-      \strng{bibnamehash}{6df7867741141bdec88cb9c3fb541baa}
-      \strng{authorbibnamehash}{6df7867741141bdec88cb9c3fb541baa}
-      \strng{authornamehash}{6df7867741141bdec88cb9c3fb541baa}
-      \strng{authorfullhash}{18b7ccb5d30c703a6495107b069f7bbc}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Transition metal dichalcogenides ({TMDs}) are a family of van der Waals layered materials exhibiting unique electronic, optical, magnetic and transport properties. Their technological potentials hinge critically on the ability to achieve controlled fabrication of desirable nanostructures, such as nanoribbons and nanodots. To date, nanodots/nanoislands have been regularly observed, while controlled fabrication of {TMD} nanoribbons remains challenging. Here we report a bottom-up fabrication of {MoSe}2 nanoribbons using molecular beam epitaxy, via an unexpected temperature-induced morphological phase transition from the nanodot to nanoribbon regime. Such nanoribbons are of zigzag nature, characterized by distinct chemical and electronic properties along the edges. The phase space for nanoribbon growth is narrowly defined by proper Se:Mo ratios, as corroborated experimentally using different Se fluxes, and supported theoretically using first-principles calculations that establish the crucial role of the morphological reconstruction of the bare Mo-terminated edge. The growth mechanism revealed should be applicable to other {TMD} systems.}
-      \field{day}{4}
-      \field{issn}{2041-1723}
-      \field{journaltitle}{Nature Communications}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{title}{Fabrication of {MoSe}$_{\textrm{2}}$ nanoribbons via an unusual morphological phase transition}
-      \field{urlday}{7}
-      \field{urlmonth}{6}
-      \field{urlyear}{2018}
-      \field{volume}{8}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{15135}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1038/ncomms15135
-      \endverb
-      \verb{file}
-      \verb Chen2017.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Chen2017.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/ATZEGTX2/ncomms15135.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://www.nature.com/articles/ncomms15135
-      \endverb
-      \verb{url}
-      \verb https://www.nature.com/articles/ncomms15135
-      \endverb
-      \keyw{nanoribbons,tmd}
-    \endentry
-    \entry{mohanty_nanotomy-based_2012}{article}{}
-      \name{author}{7}{}{%
-        {{hash=b8864dbd11b544323b3fa9e516d993c9}{%
-           family={Mohanty},
-           familyi={M\bibinitperiod},
-           given={Nihar},
-           giveni={N\bibinitperiod}}}%
-        {{hash=bf0da929c0fee6475cd4f91c951ed272}{%
-           family={Moore},
-           familyi={M\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=9e908449acbf12e7381f10a831bc8a2e}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Zhiping},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=3ec6b45d9dd778516736025bf884eb03}{%
-           family={Sreeprasad},
-           familyi={S\bibinitperiod},
-           given={T.\bibnamedelimi S.},
-           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=96ad9cd4f4dbaff90db8299d95dc4c56}{%
-           family={Nagaraja},
-           familyi={N\bibinitperiod},
-           given={Ashvin},
-           giveni={A\bibinitperiod}}}%
-        {{hash=361b2324d09885f22f35c26816f7aa91}{%
-           family={Rodriguez},
-           familyi={R\bibinitperiod},
-           given={Alfredo\bibnamedelima Alexander},
-           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=e5386dcaf2683d59ab6e0b64453ba87c}{%
-           family={Berry},
-           familyi={B\bibinitperiod},
-           given={Vikas},
-           giveni={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{3ad054771b646f5909c41b3a252581f5}
-      \strng{fullhash}{8547a445f3f86473b265a1d923ea311b}
-      \strng{bibnamehash}{3ad054771b646f5909c41b3a252581f5}
-      \strng{authorbibnamehash}{3ad054771b646f5909c41b3a252581f5}
-      \strng{authornamehash}{3ad054771b646f5909c41b3a252581f5}
-      \strng{authorfullhash}{8547a445f3f86473b265a1d923ea311b}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Because of the edge states and quantum confinement, the shape and size of graphene nanostructures dictate their electrical, optical, magnetic and chemical properties. The current synthesis methods for graphene nanostructures do not produce large quantities of graphene nanostructures that are easily transferable to different substrates/solvents, do not produce graphene nanostructures of different and controlled shapes, or do not allow control of {GN} dimensions over a wide range (up to 100 nm). Here we report the production of graphene nanostructures with predetermined shapes (square, rectangle, triangle and ribbon) and controlled dimensions. This is achieved by diamond-edge-induced nanotomy (nanoscale-cutting) of graphite into graphite nanoblocks, which are then exfoliated. Our results show that the edges of the produced graphene nanostructures are straight and relatively smooth with an {ID}/{IG} of 0.22–0.28 and roughness {<}1 nm. Further, thin films of {GN}-ribbons exhibit a bandgap evolution with width reduction (0, 10 and {\textasciitilde}35 {meV} for 50, 25 and 15 nm, respectively).}
-      \field{day}{15}
-      \field{issn}{2041-1723}
-      \field{journaltitle}{Nature Communications}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{title}{Nanotomy-based production of transferable and dispersible graphene nanostructures of controlled shape and size}
-      \field{urlday}{1}
-      \field{urlmonth}{8}
-      \field{urlyear}{2018}
-      \field{volume}{3}
-      \field{year}{2012}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{844}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1038/ncomms1834
-      \endverb
-      \verb{file}
-      \verb Mohanty2012.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/graphene/Mohanty2012.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/IEQPN3WU/ncomms1834.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://www.nature.com/articles/ncomms1834
-      \endverb
-      \verb{url}
-      \verb https://www.nature.com/articles/ncomms1834
-      \endverb
-    \endentry
     \entry{feldner_dynamical_2011}{article}{}
       \name{author}{6}{}{%
         {{hash=504331015369150db40c6f862d8cf8f7}{%
@@ -2873,6 +2718,161 @@
       \endverb
       \keyw{nanoribbons,tmd}
     \endentry
+    \entry{mohanty_nanotomy-based_2012}{article}{}
+      \name{author}{7}{}{%
+        {{hash=b8864dbd11b544323b3fa9e516d993c9}{%
+           family={Mohanty},
+           familyi={M\bibinitperiod},
+           given={Nihar},
+           giveni={N\bibinitperiod}}}%
+        {{hash=bf0da929c0fee6475cd4f91c951ed272}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9e908449acbf12e7381f10a831bc8a2e}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Zhiping},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=3ec6b45d9dd778516736025bf884eb03}{%
+           family={Sreeprasad},
+           familyi={S\bibinitperiod},
+           given={T.\bibnamedelimi S.},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=96ad9cd4f4dbaff90db8299d95dc4c56}{%
+           family={Nagaraja},
+           familyi={N\bibinitperiod},
+           given={Ashvin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=361b2324d09885f22f35c26816f7aa91}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Alfredo\bibnamedelima Alexander},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e5386dcaf2683d59ab6e0b64453ba87c}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={Vikas},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{3ad054771b646f5909c41b3a252581f5}
+      \strng{fullhash}{8547a445f3f86473b265a1d923ea311b}
+      \strng{bibnamehash}{3ad054771b646f5909c41b3a252581f5}
+      \strng{authorbibnamehash}{3ad054771b646f5909c41b3a252581f5}
+      \strng{authornamehash}{3ad054771b646f5909c41b3a252581f5}
+      \strng{authorfullhash}{8547a445f3f86473b265a1d923ea311b}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Because of the edge states and quantum confinement, the shape and size of graphene nanostructures dictate their electrical, optical, magnetic and chemical properties. The current synthesis methods for graphene nanostructures do not produce large quantities of graphene nanostructures that are easily transferable to different substrates/solvents, do not produce graphene nanostructures of different and controlled shapes, or do not allow control of {GN} dimensions over a wide range (up to 100 nm). Here we report the production of graphene nanostructures with predetermined shapes (square, rectangle, triangle and ribbon) and controlled dimensions. This is achieved by diamond-edge-induced nanotomy (nanoscale-cutting) of graphite into graphite nanoblocks, which are then exfoliated. Our results show that the edges of the produced graphene nanostructures are straight and relatively smooth with an {ID}/{IG} of 0.22–0.28 and roughness {<}1 nm. Further, thin films of {GN}-ribbons exhibit a bandgap evolution with width reduction (0, 10 and {\textasciitilde}35 {meV} for 50, 25 and 15 nm, respectively).}
+      \field{day}{15}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{title}{Nanotomy-based production of transferable and dispersible graphene nanostructures of controlled shape and size}
+      \field{urlday}{1}
+      \field{urlmonth}{8}
+      \field{urlyear}{2018}
+      \field{volume}{3}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{844}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/ncomms1834
+      \endverb
+      \verb{file}
+      \verb Mohanty2012.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/graphene/Mohanty2012.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/IEQPN3WU/ncomms1834.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/ncomms1834
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/ncomms1834
+      \endverb
+    \endentry
+    \entry{chen_fabrication_2017}{article}{}
+      \name{author}{7}{}{%
+        {{hash=6ef5e83f2df66e076ce95e343216ee14}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yuxuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=605009b41c70e69d4086c598301434d0}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6d60fe7dd3ff2b279d78f278b85d197e}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Xibiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=07917f676e2fa0e61e529ba5ff1a0922}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Chendong},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3c2666c644e86fa9ed1d657175acb19f}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Chuanhong},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6fab509a575563dcce94d6d45f8bbd26}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhenyu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=3b04d598983be8376d855603877cf29b}{%
+           family={Shih},
+           familyi={S\bibinitperiod},
+           given={Chih-Kang},
+           giveni={C\bibinithyphendelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6df7867741141bdec88cb9c3fb541baa}
+      \strng{fullhash}{18b7ccb5d30c703a6495107b069f7bbc}
+      \strng{bibnamehash}{6df7867741141bdec88cb9c3fb541baa}
+      \strng{authorbibnamehash}{6df7867741141bdec88cb9c3fb541baa}
+      \strng{authornamehash}{6df7867741141bdec88cb9c3fb541baa}
+      \strng{authorfullhash}{18b7ccb5d30c703a6495107b069f7bbc}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Transition metal dichalcogenides ({TMDs}) are a family of van der Waals layered materials exhibiting unique electronic, optical, magnetic and transport properties. Their technological potentials hinge critically on the ability to achieve controlled fabrication of desirable nanostructures, such as nanoribbons and nanodots. To date, nanodots/nanoislands have been regularly observed, while controlled fabrication of {TMD} nanoribbons remains challenging. Here we report a bottom-up fabrication of {MoSe}2 nanoribbons using molecular beam epitaxy, via an unexpected temperature-induced morphological phase transition from the nanodot to nanoribbon regime. Such nanoribbons are of zigzag nature, characterized by distinct chemical and electronic properties along the edges. The phase space for nanoribbon growth is narrowly defined by proper Se:Mo ratios, as corroborated experimentally using different Se fluxes, and supported theoretically using first-principles calculations that establish the crucial role of the morphological reconstruction of the bare Mo-terminated edge. The growth mechanism revealed should be applicable to other {TMD} systems.}
+      \field{day}{4}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{title}{Fabrication of {MoSe}$_{\textrm{2}}$ nanoribbons via an unusual morphological phase transition}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{8}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{15135}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/ncomms15135
+      \endverb
+      \verb{file}
+      \verb Chen2017.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Chen2017.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/ATZEGTX2/ncomms15135.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/ncomms15135
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/ncomms15135
+      \endverb
+      \keyw{nanoribbons,tmd}
+    \endentry
     \entry{liu_three-band_2013}{article}{}
       \name{author}{5}{}{%
         {{hash=fcc911878c164d26085ea1f484fd4eb9}{%
@@ -2971,57 +2971,6 @@
       \verb Braz2015.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/thesis-examples/Braz2015.pdf:application/pdf
       \endverb
       \keyw{tmd}
-    \endentry
-    \entry{metropolis_monte_1949}{article}{}
-      \name{author}{2}{}{%
-        {{hash=2b73f47a1a84dd52f45fe57c381c3786}{%
-           family={Metropolis},
-           familyi={M\bibinitperiod},
-           given={Nicholas},
-           giveni={N\bibinitperiod}}}%
-        {{hash=8d9ac49de0c3f3a38001916b81561993}{%
-           family={Ulam},
-           familyi={U\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{c934f479d57b4c43a1d4c06ef5d6d255}
-      \strng{fullhash}{c934f479d57b4c43a1d4c06ef5d6d255}
-      \strng{bibnamehash}{c934f479d57b4c43a1d4c06ef5d6d255}
-      \strng{authorbibnamehash}{c934f479d57b4c43a1d4c06ef5d6d255}
-      \strng{authornamehash}{c934f479d57b4c43a1d4c06ef5d6d255}
-      \strng{authorfullhash}{c934f479d57b4c43a1d4c06ef5d6d255}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{We shall present here the motivation and a general description of a method dealing with a class of problems in mathematical physics. The method is, essentially, a statistical approach to the study of differential equations, or more generally, of integro-differential equations that occur in various branches of the natural sciences.}
-      \field{issn}{0162-1459}
-      \field{journaltitle}{Journal of the American Statistical Association}
-      \field{number}{247}
-      \field{title}{The Monte Carlo Method}
-      \field{urlday}{7}
-      \field{urlmonth}{6}
-      \field{urlyear}{2018}
-      \field{volume}{44}
-      \field{year}{1949}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{335\bibrangedash 341}
-      \range{pages}{7}
-      \verb{doi}
-      \verb 10.2307/2280232
-      \endverb
-      \verb{file}
-      \verb Metropolis1949.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/metropolis-algorithm/Metropolis1949.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://www.jstor.org/stable/2280232
-      \endverb
-      \verb{url}
-      \verb http://www.jstor.org/stable/2280232
-      \endverb
-      \keyw{Metropolis–Hastings algorithm}
     \endentry
     \entry{troyer_computational_2005}{article}{}
       \name{author}{2}{}{%
@@ -3392,8 +3341,8 @@
       \strng{authorbibnamehash}{503da1af287f708dab5895d482d6beb5}
       \strng{authornamehash}{c9f5a135406b41ca6ec4d95dcab18cc7}
       \strng{authorfullhash}{503da1af287f708dab5895d482d6beb5}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{shorttitle}{Quantum Simulations of Complex Many-Body Systems}
@@ -3729,8 +3678,8 @@
       \strng{authorbibnamehash}{d22d4cc06dfee838c20df34ac58a7545}
       \strng{authornamehash}{d22d4cc06dfee838c20df34ac58a7545}
       \strng{authorfullhash}{d22d4cc06dfee838c20df34ac58a7545}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The behavior of the electrons in a dense electron gas is analyzed quantum-mechanically by a series of canonical transformations. The usual Hamiltonian corresponding to a system of individual electrons with Coulomb interactions is first re-expressed in such a way that the long-range part of the Coulomb interactions between the electrons is described in terms of collective fields, representing organized "plasma" oscillation of the system as a whole. The Hamiltonian then describes these collective fields plus a set of individual electrons which interact with the collective fields and with one another via short-range screened Coulomb interactions. There is, in addition, a set of subsidiary conditions on the system wave function which relate the field and particle variables. The field-particle interaction is eliminated to a high degree of approximation by a further canonical transformation to a new representation in which the Hamiltonian describes independent collective fields, with n′ degrees of freedom, plus the system of electrons interacting via screened Coulomb forces with a range of the order of the inter electronic distance. The new subsidiary conditions act only on the electronic wave functions; they strongly inhibit long wavelength electronic density fluctuations and act to reduce the number of individual electronic degrees of freedom by n′. The general properties of this system are discussed, and the methods and results obtained are related to the classical density fluctuation approach and Tomonaga's one-dimensional treatment of the degenerate Fermi gas.}
@@ -3783,8 +3732,8 @@
       \strng{authorbibnamehash}{efa343a1cfe1c8f601ccfc17f08329b5}
       \strng{authornamehash}{efa343a1cfe1c8f601ccfc17f08329b5}
       \strng{authorfullhash}{efa343a1cfe1c8f601ccfc17f08329b5}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The quantity εc is defined as the correlation energy per particle of an electron gas expressed in rydbergs. It is a function of the conventional dimensionless parameter rs, where rs−3 is proportional to the electron density. Here εc is computed for small values of rs (high density) and found to be given by εc=Alnrs+C+O(rs). The value of A is found to be 0.0622, a result that could be deduced from previous work of Wigner, Macke, and Pines. An exact formula for the constant C is given here for the first time; earlier workers had made only approximate calculations of C. Further, it is shown how the next correction in rs can be computed. The method is based on summing the most highly divergent terms of the perturbation series under the integral sign to give a convergent result. The summation is performed by a technique similar to Feynman's methods in field theory.}
@@ -3846,8 +3795,8 @@
       \strng{authorbibnamehash}{7e83115efaecadce81fb5a4a9a881ade}
       \strng{authornamehash}{95d2613e2827b85f3628fc4c219d13fb}
       \strng{authorfullhash}{7e83115efaecadce81fb5a4a9a881ade}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The contribution from zero-point plasma oscillations to the correlation energy of an electron gas at high density is considered, using the exact high-density theory of Gell-Mann and Brueckner and of Sawada. The plasmon energy is determined as a function of q by an eigenvalue equation identical with the dispersion relation of Bohm and Pines. The plasma solutions are stable only below the energy-momentum values at which they merge with the continuum spectrum arising from particle excitation, thus introducing a natural cutoff into the theory. At high density, however, it is shown that this cutoff can be allowed to become infinite without affecting the correlation energy.}
@@ -3895,8 +3844,8 @@
       \strng{authorbibnamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authornamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authorfullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The theory developed in a previous paper is applied to calculate the correlation energy of a free-electron gas. The theory involves no cut-off and gives a uniform description of collective motion effects in the long-range limit and of particle motion effects in the short-range limit. It is shown that in the lowest order the theory agrees with Bohm \& Pines’s plasma oscillation theory in the long-range limit, but is inadequate in the short-range limit. The theory is approximately evaluated to the next order, which is correct in the short-range limit, and is applied to calculate the correlation energy at several gas densities; the results are in good agreement with those of Bohm \& Pines.}
@@ -3944,8 +3893,8 @@
       \strng{authorbibnamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authornamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authorfullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The theory previously developed and applied to calculate the correlation energy of a free-electron gas is extended in this paper to calculate the energy of an electron gas in a potential field. Two new features arise: (i) the introduction of a self-consistent field which is a generalization of the ordinary Hartree field; (ii) the occurrence of ‘local field correction’ effects. It is shown that the energy of the gas can be expressed in terms of the eigenvalues of a certain homogeneous integral equation and a stationary principle for these eigenvalues is given. The theory is applied to crystals and an approximate expression for the correlation energy of a metal is derived neglecting Lorentz-Lorenz corrections effects.}
@@ -3998,8 +3947,8 @@
       \strng{authorbibnamehash}{a5dd95a2bff37f4bf90e1b4c4b7bfb14}
       \strng{authornamehash}{a5dd95a2bff37f4bf90e1b4c4b7bfb14}
       \strng{authorfullhash}{a5dd95a2bff37f4bf90e1b4c4b7bfb14}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A general Hamiltonian formalism is developed to treat from first principles the motion of electrons in solids, including their mutual Coulomb interaction. By a series of canonical transformations it is shown that under suitable circumstances (which obtain in nearly all solids) plasmons (a quantized collective plasma oscillation of the electron gas) represent a well-defined elementary excitation of the solid. The "existence criterion" for plasmons is found to be a high electronic polarizability. Where plasmons exist, we are able to give a satisfactory description of their properties when the majority of the individual electron oscillator strengths correspond to transitions in which the energy change is large or small with respect to the plasmon energy, \hbar \omega p=\hbar(4{ \pi N e}2m)12. After the plasmon modes are separated out, the remaining electron interaction is found to be screened, with a range of the order of the interelectronic spacing. The usefulness of this effective Hamiltonian for the calculation of the electronic energy levels and cohesive energy in solids is discussed briefly.}
@@ -4628,8 +4577,8 @@
       \strng{authorbibnamehash}{9527a3795fb8705f8b732c41ba299bc0}
       \strng{authornamehash}{9527a3795fb8705f8b732c41ba299bc0}
       \strng{authorfullhash}{9527a3795fb8705f8b732c41ba299bc0}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This book provides an introduction to Monte Carlo simulations in classical statistical physics and is aimed both at students beginning work in the field and at more experienced researchers who wish to learn more about Monte Carlo methods. The material covered includes methods for both equilibrium and out of equilibrium systems, and common algorithms like the Metropolis and heat-bath algorithms are discussed in detail, as well as more sophisticated ones such as continuous time Monte Carlo, cluster algorithms, multigrid methods, entropic sampling and simulated tempering. Data analysis techniques are also explained starting with straightforward measurement and error-estimation techniques and progressing to topics such as the single and multiple histogram methods and finite size scaling. The last few chapters of the book are devoted to implementation issues, including discussions of such topics as lattice representations, efficient implementation of data structures, multispin coding, parallelization of Monte Carlo algorithms, and random number generation. At the end of the book the authors give a number of example programmes demonstrating the applications of these techniques to a variety of well-known models.}
@@ -4666,8 +4615,8 @@
       \strng{authorbibnamehash}{85294e88c3889bcbec8c4634c84f7650}
       \strng{authornamehash}{85294e88c3889bcbec8c4634c84f7650}
       \strng{authorfullhash}{85294e88c3889bcbec8c4634c84f7650}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{By means of the Monte Carlo sampling technique the equilibrium thermodynamics of fluids and magnets can be calculated numerically. We show that the questions of convergence and accuracy of this method can be understood in terms of the dynamics of the appropriate stochastic model. Also, we discuss to what extent various choices of transition probabilities lead to different dynamic properties of the system. As examples of applications, we consider Ising and Heisenberg spin systems. The numerical results about the dynamic correlation functions are compared to simple approximations taken from the theory of the kinetic Ising model.}
@@ -4715,8 +4664,8 @@
       \strng{authorbibnamehash}{3f40fc505d6d3889dcb2919659238034}
       \strng{authornamehash}{3f40fc505d6d3889dcb2919659238034}
       \strng{authorfullhash}{3f40fc505d6d3889dcb2919659238034}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0103-9733}
