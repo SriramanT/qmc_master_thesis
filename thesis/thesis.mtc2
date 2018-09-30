@@ -6,14 +6,14 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Exact solutions for simple cases}{\reset@font\mtcSfont 23}{section.2.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}The purely atomic ( $\frac {U}{t} \rightarrow \infty $ ), single site limit}{\reset@font\mtcSSfont 24}{subsection.2.3.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}The non-interacting ($\frac {U}{t} = 0$) limit}{\reset@font\mtcSSfont 27}{subsection.2.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Exact Diagonalization and the Heisenberg Hamiltonian as the Effective $\frac {U}{t} \gg 1$ Model }{\reset@font\mtcSfont 30}{section.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Exact Diagonalization. Effective $\frac {U}{t} \gg 1$ Heisenberg Model}{\reset@font\mtcSfont 30}{section.2.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Two-site calculation}{\reset@font\mtcSSfont 31}{subsection.2.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Degenerate perturbation theory}{\reset@font\mtcSSfont 33}{subsection.2.4.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Green's functions}{\reset@font\mtcSfont 34}{section.2.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Single site case}{\reset@font\mtcSSfont 34}{subsection.2.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Non-interacting case}{\reset@font\mtcSSfont 35}{subsection.2.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Magnetism and mean field theory}{\reset@font\mtcSfont 36}{section.2.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.1}Stoner criterion for ferromagnetism}{\reset@font\mtcSSfont 37}{subsection.2.6.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.2}Mean field theory of the Hubbard model}{\reset@font\mtcSSfont 37}{subsection.2.6.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.3}Self-consistent solution in the \ac {GCE}}{\reset@font\mtcSSfont 39}{subsection.2.6.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.7}Simulatable variants of the Hubbard model}{\reset@font\mtcSfont 41}{section.2.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Degenerate perturbation theory}{\reset@font\mtcSSfont 32}{subsection.2.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Green's functions}{\reset@font\mtcSfont 33}{section.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Single site case}{\reset@font\mtcSSfont 33}{subsection.2.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Non-interacting case}{\reset@font\mtcSSfont 34}{subsection.2.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Magnetism and mean field theory}{\reset@font\mtcSfont 35}{section.2.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.1}Stoner criterion for ferromagnetism}{\reset@font\mtcSSfont 36}{subsection.2.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.2}Mean field theory of the Hubbard model}{\reset@font\mtcSSfont 36}{subsection.2.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.3}Self-consistent solution in the \ac {GCE}}{\reset@font\mtcSSfont 38}{subsection.2.6.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.7}Simulatable variants of the Hubbard model and TMDs}{\reset@font\mtcSfont 40}{section.2.7}}

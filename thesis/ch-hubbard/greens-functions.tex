@@ -41,16 +41,12 @@ There is a well known relation between the Green's function and the spectral den
 G ( \tau, 0 ) =  \int_{-\infty}^{+\infty} A ( \omega ) \frac{e^{-\omega \tau} }{ e^{-\beta \omega} + 1 } d\omega ,
 \end{equation}
 
-If we replace the following expression for the spectral density in equation (\ref{eq:specDens}), we recover the result for the half filled case.
-
-\begin{equation}
+If we replace the following expression for the spectral density in equation (\ref{eq:specDens}), we recover the result for the half filled case: $
 A ( \omega ) = \frac{1}{2} \bigg( \delta ( \omega - \frac{U}{2} ) + \delta ( \omega + \frac{U}{2} ) \bigg)
-\end{equation}
-
+$.
 We could do a similar calculation for $\mu \neq 0$ by changing the spectral density adequately, but the algebra is slightly more cumbersome, and the result does not bring additional insight.
-
 The spectral density consists of two delta functions separated by $U$, which is reminiscent of our result for the Mott insulating gap.
-In the same way that the gap softens (eventually disappearing) when we introduce hopping, the spectral function for the full Hubbard Hamiltonian changes accordingly, reflecting the same information about the properties of the system as the Green's function, encoded in a different manner.
+In the same way that the gap softens (eventually disappearing) when we introduce hopping, the spectral function for the full Hubbard Hamiltonian changes accordingly, reflecting the same information about the system as the Green's function, only encoded in a different manner.
 In \acs{QMC}, we can access $G(\tau, 0)$ and deduce the properties of the system from it.
 
 \subsection{Non-interacting case}
@@ -63,7 +59,7 @@ c_{\bm k} ( \tau ) = e^{ \mathcal{H} \tau } c_{\bm k} ( 0 ) e^{-\mathcal{H} \tau
 
 This equation can be verified by acting with the left hand side and with right hand side on the states $\left| 0 \right\rangle$ and $\left| 1 \right\rangle$, and noting that the result is the same.
 Alternatively, one can use the equation of motion $\partial_\tau \hat{A}(\tau) = [ \mathcal{H}, \hat{A} (\tau) ]$.
-To generalize the result of equation (\ref{eq:eqGreenNonInt}) for the \emph{equal-time} Green's function to  \emph{unequal-time} we transform the fermionic operators in $G$ to momentum space, and use $\left\langle c_{\bm k} c_{\bm k}^\dagger \right\rangle = 1 - f_{\bm k}$:
+To generalize the result of equation (\ref{eq:eqGreenNonInt}) for the \emph{equal-time} Green's function to  \emph{unequal-time} we transform the fermionic operators in $G$ to momentum space, and use $\left\langle c_{\bm k} c_{\bm k}^\dagger \right\rangle = 1 - f (\bm k )$:
 
 \begin{equation}
 G_{i j}(\tau, 0) = \frac{1}{N} \sum_{\bm k} e^{i \bm k \cdot (\bm R_i - \bm R_j )} ( 1 - f_{\bm k} ) e^{-\varepsilon_{\bm k} \tau } ,

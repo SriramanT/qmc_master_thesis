@@ -116,8 +116,8 @@ and this is one of the rare situations in which it is possible to explicitly wri
 Z = \text{Tr} [ e^{-\beta\mathcal{H} } ] = \sum_\alpha \left\langle \psi_\alpha \left|e^{-\beta \mathcal{H} } \right| \psi_\alpha \right\rangle = e^{-\beta U / 4} \bigg(1 + 2 e^{\beta(\mu + \frac{U}{2})} + e^{2 \beta \mu} \bigg)
 \end{equation}
 
-Moreover, some of the observables that were mentioned before are explicitly computable.
-This is because due to the diagonal form of $\mathcal{H}$, the expressions defining these observables greatly simplify.
+Moreover, the aforementioned observables are explicitly computable.
+This is due to the diagonal form of $\mathcal{H}$, and to the low-dimensional Hilbert space.
 
 \begin{equation}
 \begin{split}
@@ -133,7 +133,7 @@ From these we can compute some traces we shall find useful to obtain averages of
 \begin{equation}
 \begin{split}
 &\Tr \bigg[ \mathcal{H} e^{-\beta\mathcal{H} } \bigg] = e^{-\beta U / 4} \bigg(\frac{U}{4} + 2 (-\mu - \frac{U}{4})  e^{\beta(\mu + \frac{U}{2})} + (\frac{U}{4} - 2\mu ) e^{2\beta \mu} \bigg) \\
-&\Tr \bigg[ (n_\uparrow + n_\downarrow ) e^{-\beta\mathcal{H} } \bigg] = e^{-\beta U / 4} \bigg(2 (-\mu - \frac{U}{4})  e^{\beta(\mu + \frac{U}{2})} + (\frac{U}{4} - 2\mu ) e^{2\beta \mu} \bigg) \,\,\,\, \Tr \bigg[ n_\uparrow n_\downarrow \bigg] = e^{-\beta U/4} e^{2\beta\mu}
+&\Tr \bigg[ (n_\uparrow + n_\downarrow ) e^{-\beta\mathcal{H} } \bigg] = e^{-\beta U / 4} \bigg(2 (-\mu - \frac{U}{4})  e^{\beta(\mu + \frac{U}{2})} + (\frac{U}{4} - 2\mu ) e^{2\beta \mu} \bigg), \,\,\,\, \Tr \bigg[ n_\uparrow n_\downarrow \bigg] = e^{-\beta U/4} e^{2\beta\mu}
 \end{split}
 \end{equation}
 
@@ -221,7 +221,7 @@ For the Hubbard model, the relevant quantity is the sum of the squared local mom
 	\label{fig:mSqVsU}
 \end{figure}
 
-In Figs.(\ref{fig:rhoVsMu_mSqVsT},\ref{fig:mSqVsU}), we show how $\left\langle m^2 \right\rangle$ varies with $T$ and how $\left\langle m^2 \right\rangle$ varies as a function of $U$ for different temperatures, for different values of the chemical potential, respectively.
+In Figs.(\ref{fig:rhoVsMu_mSqVsT},\ref{fig:mSqVsU}), we respectively show how $\left\langle m^2 \right\rangle$ varies with $T$ for different values of the chemical potential, and how $\left\langle m^2 \right\rangle$ varies as a function of $U$ for different temperatures, and vice-versa.
 At low temperature or for large on-site interaction, local moments tend to develop, which leads to magnetic ordering: $\left\langle m^2 \right\rangle \rightarrow 1$ (in the half-filled case).
 Since the double occupancy is zero in this case, if we do not consider thermal fluctuations, the magnetization corresponds to the spin of the electron occupying the site.
 
@@ -242,7 +242,7 @@ where we casted the Hamiltonian as a bilinear form, and defined
 \bm c = \bigg[ c_1 \,\, c_2 \,\, ... \,\, c_N \bigg]^T \quad \bm c^\dagger = \bigg[c_1^\dagger \,\, c_2^\dagger \,\, ... c_N^\dagger \bigg] ,
 \end{equation}
 and where $\bm I$ is the identity matrix.
-We also defined a matrix of zeros and ones specifying the hopping geometry, $\bm K$. The elements of the hopping matrix are simply defined by the indicator function: $K_{ij} = \mathbbm{1}_{\left\langle j_i \right\rangle} (i)$, where $\left\langle j_i \right\rangle$ is the set of neighbors $j$ of site $i$.
+We also defined a matrix of zeros and ones specifying the hopping geometry, $\bm K$. The elements of the hopping matrix are simply defined by the indicator function: $K_{ij} = \mathbbm{1}_{j(i)} (i)$, where $j(i)$ is the set of neighbors $j$ of site $i$.
 When writing down $\bm K$, we must specify the boundary conditions.
 \acp{PBC} preserve a system's translational invariance and are advantageous because they reduce finite size effects.
 An example of a quantity which is measured more accurately is energy.
@@ -282,9 +282,10 @@ The $\tilde{c}_{\bm k}$-operators are equally valid electron creation/annihilati
 However, while the original operators create/annihilate particles at specific (spatial) sites, the new ones create/annihilate particles with momentum ${\bm k}$.
 Both sets of operators describe the same physics.
 Why can't this procedure be applied to the interacting case?
-Well, for instance, the interaction term in the Hubbard model takes on a fairly complex form in momentum space so it is not possible to apply a similar transformation to diagonalize it.
+The interaction term in the Hubbard model takes on a fairly complex form in momentum space so it is not possible to apply a similar transformation to diagonalize it.
 
-Now, it turns out that it is easy to evaluate the partition function for quadratic Hamiltonians. If $\mathcal{H} = \bm c^\dagger \bm H \bm c$, where $\bm H$ is a $N \times N$ Hermitian matrix, then we have that
+Now, it turns out that it is easy to evaluate the partition function for quadratic Hamiltonians, once we have diagonalized them.
+If $\mathcal{H} = \bm c^\dagger \bm H \bm c$, where $\bm H$ is a $N \times N$ Hermitian matrix, then we have that
 
 \begin{equation}\label{eq:trace_quadratic}
 \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \prod_{i=1}^N ( 1 + e^{-\beta \lambda_i } ) ,
@@ -292,8 +293,7 @@ Now, it turns out that it is easy to evaluate the partition function for quadrat
 where $\lambda_i$ are the eigenvalues of $\bm H$. We present a proof of this result in appendix \ref{ap:hubbardObSol}.
 It suggests that if we are able to devise some approximation to transform the quartic term of the interacting Hubbard model in a quadratic form, then we can solve it.
 While this idea is essentially correct, the procedure is not straightforward.
-Actually, we explore this in the next chapter to derive the simulation method that is at the basis of this work.
-
+We explore it in the next chapter to derive the simulation method that is at the basis of this work.
 To complete the solution of the non-interacting case we apply the result of equation (\ref{eq:trace_quadratic}) to compute the partition function corresponding to the quadratic Hamiltonian defined in equation (\ref{eq:quadraticH}):
 
 \begin{equation}
@@ -314,19 +314,19 @@ Now that we have found a closed form solution for $Z$, it is again possible to f
 \item the density, or average occupation of each site, $\rho$.
 
 \begin{equation}
-\rho = \left\langle n \right\rangle = \left\langle \tilde{n} \right\rangle = \frac{1}{N} \sum_{{\bm k}} \left\langle \tilde{n}_{\bm k} \right\rangle  = \frac{1}{N} \sum_{\bm k}  \frac{1}{1 + e^{\beta (\varepsilon_{\bm k} - \mu)}} = \frac{1}{N} \sum_{\bm k}  f_{\bm k} ,
+\rho = \left\langle n \right\rangle = \left\langle \tilde{n} \right\rangle = \frac{1}{N} \sum_{{\bm k}} \left\langle \tilde{n}_{\bm k} \right\rangle  = \frac{1}{N} \sum_{\bm k}  \frac{1}{1 + e^{\beta (\varepsilon_{\bm k} - \mu)}} = \frac{1}{N} \sum_{\bm k}  f(\bm k) ,
 \end{equation}
-where $f_{\bm k} = \big(1 + e^{\beta(\varepsilon_{\bm k} - \mu)} \big)^{-1}$ is the Fermi-Dirac distribution (at half filling: $\mu = 0$).
+where $f (\bm k ) = \big(1 + e^{\beta(\varepsilon_{\bm k} - \mu)} \big)^{-1}$ is the Fermi-Dirac distribution (at half filling: $\mu = 0$).
 
 \item the energy $E = \left\langle \mathcal{H} \right\rangle$.
 \begin{equation}
-E = \frac{1}{N} \sum_{\bm k} \frac{\varepsilon_{\bm k} - \mu}{1 + e^{\beta(\varepsilon_{\bm k} - \mu)}} = \sum_{\bm k} (\varepsilon_{\bm k} - \mu) f_{\bm k}
+E = \frac{1}{N} \sum_{\bm k} \frac{\varepsilon_{\bm k} - \mu}{1 + e^{\beta(\varepsilon_{\bm k} - \mu)}} = \sum_{\bm k} (\varepsilon_{\bm k} - \mu) f(\bm k)
 \end{equation}
 
 \item the equal-time Green's function, which plays a key role in computing other quantities, such as correlation functions.
 
 \begin{equation}\label{eq:eqGreenNonInt}
-G_{\bm l \bm j} = \left\langle c_{\bm l} c_{\bm j}^\dagger \right\rangle = \frac{1}{N} \sum_{\bm k} e^{ i {\bm k} \cdot ( \bm l -\bm  j ) } ( 1 - f_{\bm k} )
+G_{\bm l \bm j} = \left\langle c_{\bm l} c_{\bm j}^\dagger \right\rangle = \frac{1}{N} \sum_{\bm k} e^{ i {\bm k} \cdot ( \bm l -\bm  j ) } ( 1 - f(\bm k) )
 \end{equation}
 
 Note that the Green's function, like the Hamiltonian, is translationally invariant: $G_{\bm l \bm j} = G_{\bm l-\bm j}$. 

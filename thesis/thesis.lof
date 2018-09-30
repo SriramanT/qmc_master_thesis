@@ -36,29 +36,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Dispersion relations for the \acs {1D} chain and the square lattice in the non-interacting case.}}{30}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Density of states of the \acs {1D} tight-binding model.}}{37}{figure.caption.38}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Density of states of the \acs {1D} tight-binding model.}}{36}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Mean field results for the \acs {1D} Hubbard model.}}{39}{figure.caption.39}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{44}{chapter.3}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Mean field results for the \acs {1D} Hubbard model.}}{38}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Applications}{70}{chapter.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Boundary conditions on the nanoribbon.}}{71}{figure.caption.49}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Filling $\nu $ as a function of the Fermi energy $\varepsilon _F$ for a \acs {TMD} monolayer and a nanoribbon. $\text {Mo}\text {S}_2$. \acs {TMDNR} band structure obtained by the 3-band model.}}{73}{figure.caption.51}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs {TMDNR}}}{74}{figure.caption.52}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Spin density profile along the ribbon's transverse direction. Minimization of the grandpotential.}}{74}{figure.caption.53}
+\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{42}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Conclusions and Future Work}{75}{chapter.5}
+\contentsline {xchapter}{Applications}{68}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Boundary conditions on the nanoribbon.}}{69}{figure.caption.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Filling $\nu $ as a function of the Fermi energy $\varepsilon _F$ for a \acs {TMD} monolayer and a nanoribbon. $\text {Mo}\text {S}_2$. \acs {TMDNR} band structure obtained by the 3-band model.}}{71}{figure.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs {TMDNR}}}{72}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Spin density profile along the ribbon's transverse direction. Minimization of the grandpotential.}}{72}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Conclusions and Future Work}{73}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

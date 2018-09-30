@@ -21,15 +21,15 @@ To see this, we may simply recall the shape of a $d-$wave function.
 \includegraphics[width = 10cm]{Hubbard/Hydrogen.jpeg}
 \caption[Hydrogen atomic wave functions.]{Probability density plots for different hydrogen orbital wave functions corresponding to quantum numbers $(n, l, m)$ for $n = 3$.
 d-wave functions correspond to $l=2$.
-We compare them with p-wave functions ($l=1$). Note that the probability density is always higher in a region near the nucleus, and has a complicated shape, which will lead to a non-uniform distribution of electronic charge, as opposed to the case of the free electron gas. (adapted from \cite{hydrogen})}
+We compare them with p-wave functions ($l=1$). The probability density is higher in a region near the nucleus, and its shape leads to a non-uniform distribution of electronic charge, as opposed to the case of the free electron gas. (adapted from \cite{hydrogen})}
 \end{figure}
 
 In a $d-$orbital, the electron charge density is concentrated near the nucleus.
 In a solid, the electronic charge density should then also be concentrated near the nuclei, as long as the atomic description is useful, even if not completely correct\footnote{The electronic charge density is, of course, not actually defined in terms of a squared norm of the $d-$wave function for a narrow band. There is some broadening of the corresponding atomic energy level, and the wave function describing an electron is a Bloch wave function. Since the band is narrow, we assume that the atomic wave function description is still somewhat useful in a given range and we use it to provide a heuristic motivation for the non validity of the free electron assumption.}.
-It is much smaller between atoms so that electrons do seem to belong to individual atoms in some sense.
+%It is much smaller between atoms so that electrons do seem to belong to individual atoms in some sense.
 For a $d-$band, we assume this description to hold to some extent since the band is narrow.
-Thus, the fact that we may speak with some meaning of an electron belonging to a particular atom motivates a description from which the atomic characteristics of the solid emerge, in spite of the fact that the bandwidth of a $d-$band is still appreciable.
-The point is that electrons in $d-$bands are certainly not well described by a free electron gas, which cannot possibly account for atomic-like behavior.
+The fact that we may speak with some meaning of an electron belonging to a particular atom motivates a description from which the atomic characteristics of the solid emerge, in spite of the fact that the bandwidth of a $d-$band is still appreciable.
+The point is that electrons in $d-$bands are certainly not well described by a nearly free electron model nor by a tight biding model, which cannot possibly account for atomic-like behavior.
 
 Experimentally, $d-$electrons of transition metals show hybrid behavior: sometimes they are accurately described by an ordinary band model, but there are occasions in which the atomic model is better.
 For example, we see spin wave phenomena in ferromagnetic transition metals, and the susceptibilities of some of these metals depend strongly on temperature.
@@ -144,7 +144,7 @@ and, recalling the form of the hopping Hamiltonian (or the kinetic energy part i
 $
 \mathcal{H}_{K} = - \sum_{\bm r \bm r'} K (\bm r - \bm r') \left| \bm r' \right\rangle \left\langle \bm r \right| ,
 $
- we cancast the dispersion relation as the (negative) Fourier transform of the hopping
+ we can cast the dispersion relation as the (negative) Fourier transform of the hopping
 
 \begin{equation}
 - \mathcal{H}_{K} \left| \bm k \right\rangle = \frac{1}{\sqrt{N}} \sum_{\bm r \bm r'} K ( \bm r - \bm r' ) e^{i \bm k \cdot \bm r} \left| \bm r' \right \rangle = \frac{1}{\sqrt{N}} \bigg( \sum_{\bm R} K(\bm R) e^{i\bm k \cdot \bm R} \bigg)\bigg( \sum_{\bm r'} e^{i\bm k \cdot \bm r'} \left| \bm r' \right\rangle \bigg) = \varepsilon_{\bm k} \left| \bm k \right\rangle
@@ -214,4 +214,4 @@ This reasoning is valid for any $\beta$, $t$, or $U$, which implies that the pha
 Suppose you added next nearest neighbor (NNN) hoppings $t'$\footnote{On the square lattice, this corresponds to connecting sites across the diagonal of each square.}.
 Then, \ac{PHS} would be broken, and the phase diagram would no longer be symmetric about $\mu = 0$.
 Indeed, a modified version of the Hubbard model with NNN hoppings is often used to model cuprate superconductors, and this lack of symmetry is consistent with the fact that hole- and electron-doped cuprates have different properties. 
-\ac{PHS} is also broken for the triangular lattice and with non uniform hoppings we shall consider later when modelling \acp{TMD}.
+\ac{PHS} is also broken for the triangular lattice with non uniform hoppings we shall consider later when modelling \acp{TMD}.

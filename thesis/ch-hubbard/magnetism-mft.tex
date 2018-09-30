@@ -1,7 +1,7 @@
 \section{Magnetism and mean field theory}\label{sec:magMFT}
 
 In this section we will build a picture of magnetism in the Hubbard model in increasing level of sophistication.
-As our degenerate perturbation theory  calculation of section (\ref{sec:effectiveHeisenberg}) showed, the on-site interaction favors the situation in which neighboring fermions have opposite spins through an Heisenberg type interaction.
+As our degenerate perturbation theory  calculation of section (\ref{sec:effectiveHeisenberg}) showed, the on-site interaction favors opposite spin neighboring fermions through an Heisenberg type interaction.
 A different approach leads to the Stoner criterion for ferromagnetism.
 The argument is based on creating an imbalance between the numbers of spin-up and spin-down fermions, and analyzing the interplay between the resulting increase in kinetic energy, and decrease in potential energy.
 Finally, we formulate the Hubbard model in the mean field approximation, and discuss how it relates to the non-interacting case.
@@ -10,7 +10,7 @@ Finally, we formulate the Hubbard model in the mean field approximation, and dis
 \label{subsec:stoner}
 
 Pauli's exclusion principle gives a prescription on how to fill fermionic energy levels so as to yield the lowest possible total energy.
-Start from the lowest level, and start filling each level of higher energy consecutively with two electrons, one of each spin.
+Start from the lowest level, and start filling each level of higher energy consecutively with two electrons, one of each spin, until reaching the Fermi energy.
 This procedure requires the number of spin-up and spin-down electrons to be the same.
 Otherwise, there is an energy cost, since we are obliged to fill higher energy levels with the excess electrons.
 An unequal number of spin-up and spin-down electrons also decreases the potential energy.
@@ -37,35 +37,34 @@ The global change in energy is
 \delta E = \delta P + \delta K = \bigg( - U + \frac{1}{N(\varepsilon_F)} \bigg) \big( \delta n \big)^2 = \bigg( - U N ( \varepsilon_F ) + 1 \bigg) \frac{(\delta n)^2}{N(\varepsilon_F)}
 \end{equation}
 
-If $U N ( \varepsilon_F ) > 1$, then $\delta E < 0$, and the imbalance of spin densities actually becomes more favorable.
-Thus, magnetism is favored by a large on-site interaction and a large density of states at (near) the Fermi energy.
+If $U N ( \varepsilon_F ) > 1$, then $\delta E < 0$, and the imbalance of spin densities becomes more favorable.
+Thus, magnetism is favored by a large on-site interaction and a large density of states near the Fermi energy.
 
 \subsection{Mean field theory of the Hubbard model}
 
 We have already encountered an example of a mean field theory when deriving the Hubbard Hamiltonian (see appendix \ref{ap:hubbardObSol}, where we provide motivation both heuristically and via a more rigorous variational approach).
 In mean field theory, we give a systematic procedure to derive the most plausible quadratic Hamiltonian (which, as we know by now, is soluble) capturing some of the physics of our sytem.
 We do this variationally in appendix \ref{ap:hubbardObSol}.
+Here we provide the heuristic explanation.
 In the case of the Hubbard model, to find the best possible approximation for the quartic term we start by expressing the number operators in terms of an average plus fluctuations: $n = \left\langle n \right\rangle + ( n - \left\langle n \right\rangle ) \equiv \left\langle n \right\rangle + \delta n$.
-Then, we make this substitution in the interaction term and neglect the term that is second order in the fluctuations to obtain
+Then, we make this substitution in the interaction term and neglect the term that is second order in the fluctuations:
 
 \begin{equation}\label{eq:meanFieldNop}
 \begin{split}
 n_\uparrow n_\downarrow &= \big( \left\langle n_\uparrow \right\rangle +  \delta n_\uparrow  \big) \big( \left\langle n_\downarrow \right\rangle +  \delta n_\downarrow  \big) = \left\langle n_\uparrow \right\rangle \left\langle n_\downarrow \right\rangle + \left\langle n_\downarrow \right\rangle ( n_\uparrow - \left\langle n_\uparrow \right\rangle ) + \left\langle n_\uparrow \right\rangle ( n_\downarrow - \left\langle n_\downarrow \right\rangle ) + \mathcal{O}((\delta n)^2) \\
-&= n_\uparrow \left\langle n_\downarrow \right\rangle + n_\downarrow \left\langle n_\uparrow \right\rangle - \left\langle n_\uparrow \right\rangle \left\langle n_\downarrow \right\rangle
+&= n_\uparrow \left\langle n_\downarrow \right\rangle + n_\downarrow \left\langle n_\uparrow \right\rangle - \left\langle n_\uparrow \right\rangle \left\langle n_\downarrow \right\rangle ,
 \end{split}
 \end{equation}
-
-We consider a \say{mean field} in the sense that the average density of spin-up electrons interacts with the spin-down electrons and vice-versa.
-The last term subtracts the overcounted original single interaction term.
-From equation (\ref{eq:meanFieldNop}), we obtain the quadratic mean field Hamiltonian
+and from equation (\ref{eq:meanFieldNop}), we obtain the quadratic mean field Hamiltonian
 
 \begin{equation}
-\mathcal{H}_{\text{MF}} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} \bigg) + U \sum_i \bigg( n_{i,\uparrow} \left\langle n_{i, \downarrow} \right\rangle + n_{i, \downarrow} \left\langle n_{i, \uparrow} \right\rangle - \left\langle n_{i, \uparrow} \right\rangle \left\langle n_{i, \downarrow} \right\rangle \bigg)
+\mathcal{H}_{\text{MF}} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} \bigg) + U \sum_i \bigg( n_{i,\uparrow} \left\langle n_{i, \downarrow} \right\rangle + n_{i, \downarrow} \left\langle n_{i, \uparrow} \right\rangle - \left\langle n_{i, \uparrow} \right\rangle \left\langle n_{i, \downarrow} \right\rangle \bigg) ,
 \end{equation}
-
+where we consider a \say{mean field} in the sense that the average density of spin-up electrons interacts with the spin-down electrons and vice-versa.
+The last term subtracts the overcounted  interaction term.
 To solve $\mathcal{H}_{\text{MF}}$, one merely has to diagonalize the corresponding matrix.
 In the ferromagnetic case, the average occupation is independent of the specific site, but can vary with the spin species: $n_{i, \uparrow(\downarrow)} = n \Pm m$, where $m$ is the magnetization, the order parameter of the transition to a ferromagnetic phase.
-Similarly, for the \acs{AF} case on a bipartite lattice, we consider $n_{i, \uparrow(\downarrow)} = n \Pm (-1)^{i} m$, leading to a staggered potential.
+Similarly, for the \acs{AF} case on a bipartite lattice, we consider $n_{i, \uparrow(\downarrow)} = n \Pm (-1)^{i} m$, signaling to a staggered potential.
 
 Now we take on a \acl{LG} theory kind of approach.
 We compute the energy $E$ for fixed $n$ as a function of $m$, and inspect the system for ferromagnetic ordering: if the minimum lies at $m = 0$, the system is paramagnetic, otherwise it is ferromagnetic.
@@ -118,10 +117,6 @@ N ( \rho ) = \frac{1}{2\pi t \sin(\pi \rho / 2)} ,
 and in particular we can obtain the critical value $U_c$ at which the transition to the ferromagnetic phase takes place.
 At quarter filling, we have $N( 1 / 2 ) = 1 /\sqrt{2} \pi t$, giving $U_c = \sqrt{2} \pi t \approx 4.44 t$, which is about what we obtained at the mean field level\footnote{Here, there can be finite size effects due to the finite size of the chain, $N = 1024$.}.
 
-Mean field theory can be formulated in the \ac{GCE} as well.
-One simply chooses the chemical potential $\mu$, and then computes $N_{\uparrow, \downarrow}$ by filling the levels below $\mu$.
-The density is changed by tuning $\mu$.
-In the \ac{GCE} case, the calculation is self-consistent, and is determined iteratively\footnote{One must pay attention so as not to get stuck in metastable states.}: the densities are updated until convergence occurs.
 An example of the success of mean field is the discovery of striped phases of the Hubbard model, which are crucial in cuprate superconductors.
 Recently, these phases have been probed by the \ac{QMC} method we shall use in this thesis \cite{huang_stripe_2018}.
 In fact, mean field theory is insightful, but uncontrolled.
@@ -136,6 +131,8 @@ In this section, we solve the mean field Hamiltonian in an iterative, self-consi
 \mathcal{H}_{\text{MF}} = \mathcal{H}_\uparrow + \mathcal{H}_\downarrow + \mathcal{C} , \,\, \mathcal{H}_\sigma = - t \sum_{\left\langle i, j \right\rangle} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) + U \sum_i n_{i,\sigma} \left\langle n_{i,-\sigma} \right\rangle , \,\, \mathcal{C} = - U \sum_i \left\langle n_{i,\uparrow} \right\rangle \left\langle n_{i,\downarrow} \right\rangle
 \end{equation}
 
+We seek the most energetically self-consistent solution iteratively\footnote{One must pay attention so as not to get stuck in metastable states.}: the up and down-spin electron densities are updated successively until convergence occurs.
+
 Since the interacting problem is turned into a single particle problem, the solution basically consists of diagonalizing two $N \times N$ matrices, where $N$ is the size of the system.
 By varying the $2N$ mean field parameters, which are essentially the average local densities $\left\langle n_{i,\sigma} \right\rangle$, we can find the ground state, or other excited states, at the mean field level.
 The mean field approach has several advantages: the Hilbert space is reduced from exponential to linear in the system size, which allows the study of relatively large systems; we can do the computation in real space; we can arbitrarily change the system geometry (introducing \acp{OBC}, defects, nonuniform hoppings); the model is flexible: tight-binding, and interaction terms are easily added to the Hamiltonian.
@@ -146,31 +143,27 @@ While the mean field solution approaches the exact solution at weak coupling $U$
 The iterative method starts with the initialization of the mean field parameters.
 This initial condition cannot be completely arbitrary because it affects convergence.
 Typical choices are the random initial condition or the paramagnetic state.
+Then, we repeat the following steps until convergence.
 
-Then, we repeat the following steps until convergence:
-
-\begin{itemize}
-\item Diagonalize $\mathcal{H}_\sigma$, obtaining the one-particle spectrum $\varepsilon_{\alpha, \sigma}$ and the corresponding eigenvectors.
+First, we diagonalize $\mathcal{H}_\sigma$, obtaining the one-particle spectrum $\varepsilon_{\alpha, \sigma}$ and the corresponding eigenvectors.
 
 \begin{equation}
 \mathcal{H}_{\text{MF}} = \sum_{\alpha, \sigma} \varepsilon_{\alpha, \sigma} d_{\alpha, \sigma}^\dagger d_{\alpha, \sigma} + \mathcal{C} , \,\, d_{\alpha, \sigma} = \sum_i Q_{\alpha i, \sigma}^\star c_{i,\sigma}
 \end{equation}
 
-\item Given a number of electrons per unit cell, compute the chemical potential corresponding to that filling implicitly through (we use the bissection method):
+Given a number of electrons per unit cell, compute the chemical potential corresponding to that filling implicitly through (we use the bissection method):
 
 \begin{equation}\label{eq:implicitChemPot}
 \frac{1}{N} \sum_{\alpha, \sigma} (  e^{\beta ( \varepsilon_{\alpha, \sigma} - \mu ) } +1 )^{-1} = n_e , \,\, \text{(the number of electrons per unit cell)}
 \end{equation}
 
-\item Recompute mean field parameters, and check for convergence: at iteration $I$, $\left\langle n_{i,\sigma} \right\rangle_I \approx \left\langle n_{i,\sigma} \right\rangle_{I - 1}$.
+Recompute mean field parameters, and check for convergence: at iteration $I$, $\left\langle n_{i,\sigma} \right\rangle_I \approx \left\langle n_{i,\sigma} \right\rangle_{I - 1}$.
 
 \begin{equation}\label{eq:selfConsistent}
 \left\langle n_{i,\sigma} \right\rangle = \sum_\alpha | Q_{\alpha i, \sigma} |^2 ( 1 + e^ { \beta ( \varepsilon_{\alpha, \sigma} - \mu )} )^{-1}
 \end{equation}
 
-\end{itemize}
-
-To compare with the results of our \ac{QMC} simulations, we may compute other observables, such as the spin-spin correlation, by inverting the transformation above: $c_{i, \sigma} = \sum_{\alpha} Q_{\alpha i, \sigma} d_{\alpha, \sigma}$, yielding $\left\langle c_{i,\sigma}^\dagger c_{j,\sigma} \right\rangle = \sum_{\alpha, \beta} Q_{\beta i, \sigma}^\star Q_{\alpha j, \sigma} \left\langle d_{\beta,\sigma}^\dagger d_{\alpha,\sigma} \right\rangle = \sum_\alpha Q_{\alpha i, \sigma}^\star Q_{\alpha j, \sigma} \rho ( \varepsilon_{\alpha, \sigma} ) $, where $\rho (\varepsilon_{\alpha, \sigma})$ is the Fermi function.
+To compare with the results of our \ac{QMC} simulations, we may compute other observables, such as the spin-spin correlation, by inverting the transformation above: $c_{i, \sigma} = \sum_{\alpha} Q_{\alpha i, \sigma} d_{\alpha, \sigma}$, yielding $\left\langle c_{i,\sigma}^\dagger c_{j,\sigma} \right\rangle = \sum_{\alpha, \beta} Q_{\beta i, \sigma}^\star Q_{\alpha j, \sigma} \left\langle d_{\beta,\sigma}^\dagger d_{\alpha,\sigma} \right\rangle = \sum_\alpha Q_{\alpha i, \sigma}^\star Q_{\alpha j, \sigma} f ( \varepsilon_{\alpha, \sigma} ) $, where $f (\varepsilon_{\alpha, \sigma})$ is the Fermi function.
 
 \begin{equation}
 \begin{split}
@@ -178,10 +171,10 @@ To compare with the results of our \ac{QMC} simulations, we may compute other ob
 &=\sum_{\sigma} \left( \left\langle n_{i,\sigma} \right\rangle \left\langle n_{j,\sigma} \right\rangle - \left\langle n_{i,-\sigma} \right\rangle \left\langle n_{j,\sigma} \right\rangle + \left\langle c_{i,\sigma}^\dagger c_{j,\sigma}  \right\rangle \left\langle c_{i,\sigma} c_{j,\sigma}^\dagger \right\rangle \right) , \, \text{by Wick's theorem} \\
 &=
 \begin{cases}
-\sum_{\sigma, \alpha, \beta} \rho ( \varepsilon_{\beta, \sigma} ) \left( \rho ( \varepsilon_{\alpha, \sigma} ) | Q_{\alpha i, \sigma} |^2 | Q_{\beta j, \sigma} |^2  - \rho ( \varepsilon_{\alpha, -\sigma} ) | Q_{\alpha i, -\sigma} |^2 | Q_{\beta j, \sigma} |^2  - Q_{\alpha i, \sigma}^\star Q_{\alpha j, 
+\sum_{\sigma, \alpha, \beta} f ( \varepsilon_{\beta, \sigma} ) \left( f ( \varepsilon_{\alpha, \sigma} ) | Q_{\alpha i, \sigma} |^2 | Q_{\beta j, \sigma} |^2  - f ( \varepsilon_{\alpha, -\sigma} ) | Q_{\alpha i, -\sigma} |^2 | Q_{\beta j, \sigma} |^2  - Q_{\alpha i, \sigma}^\star Q_{\alpha j, 
 \sigma}  Q_{\beta j, \sigma}^\star Q_{\beta i, 
 \sigma} \right) \,\, i \neq j \\
-\sum_{\alpha,\sigma} | Q_{\alpha i, \sigma} |^2 \rho (\varepsilon_{\alpha, \sigma}) - \sum_{\alpha,\beta} | Q_{\alpha i, \uparrow} |^2 \rho (\varepsilon_{\alpha, \uparrow}) | Q_{\beta i, \downarrow} |^2 \rho (\varepsilon_{\beta, \downarrow}) \,\, i = j
+\sum_{\alpha,\sigma} | Q_{\alpha i, \sigma} |^2 f (\varepsilon_{\alpha, \sigma}) - \sum_{\alpha,\beta} | Q_{\alpha i, \uparrow} |^2 f (\varepsilon_{\alpha, \uparrow}) | Q_{\beta i, \downarrow} |^2 f (\varepsilon_{\beta, \downarrow}) \,\, i = j
 \end{cases}
 \end{split}
 \end{equation}
@@ -190,19 +183,16 @@ As we explain in appendix \ref{ap:hubbardObSol}, a self-consistent solution is n
 Moreover, we must repeat the calculation above several times by varying the initial conditions, and then select the lowest energy solution that minimizes $F$ as the mean field one.
 
 Now, we discuss how to circumvent the convergence issues that may arise when applying the self-consistent procedure.
-First, there are many possible initial conditions, most notably: the random one, which is the most unbiased, but may be slow or not converge at all; the paramagnetic state $\left\langle n_{i,\sigma} \right\rangle = \text{const.}$, which, when combined with the annealing method we shall describe below, emulates the random initial condition; a specific state, such as the antiferromagnetic on, which is a biased choice, which limits the accessible part of parameter space, and potentially gives a misleading mean field solution.
-
+First, there are many possible initial conditions, most notably: the random one, which is the most unbiased, but may be slow or not converge at all; the paramagnetic state $\left\langle n_{i,\sigma} \right\rangle = \text{const.}$, which, when combined with the annealing method we shall describe below, emulates the random initial condition; a specific state, such as the antiferromagnetic one, which is a biased choice, which limits the accessible part of parameter space, and potentially gives a misleading mean field solution, but can have good convergence properties.
 In some cases, the symmetry of the system dramatically slows down convergence.
 By starting the procedure at a higher temperature than the desired one, we can improve convergence.
 The temperature is then gradually lowered until the desired one is achieved, and this procedure is applied at that temperature.
 There are a lot of possible annealing schemes, namely keeping $\beta$ fixed for some iterations and then adjusting it to the desired $\beta = \beta_0$, or smoothly reducing $\beta$ until it reaches $\beta_0$.
-
 A common convergence issue is the oscillation between two configurations $\left\langle n_{i,\sigma}\right\rangle_I \leftrightarrow \left\langle n_{i,\sigma}\right\rangle_{I+1}$.
 This is solved by averaging the values obtained at the current and previous iterations: $\left\langle n_{i,\sigma}\right\rangle_{I+1} \leftarrow \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_I + \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_{I+1}$
 The weights attributed to each configuration can be also be different, or even vary with the iteration: $\left\langle n_{i,\sigma}\right\rangle_{I+1} \leftarrow P(I) \left\langle n_{i,\sigma}\right\rangle_I + (1 - P(I) ) \left\langle n_{i,\sigma}\right\rangle_{I+1}$, if we make sure that $P(I) > \delta$, the latter being the convergence parameter.
-
 Finally, the number of parameters may be reduced.
 This is done while taking into account the symmetry of the system.
 For example, one may take only the number of sublattices, say 2 for a square lattice with \acp{PBC}.
 This corresponds to the uniform density ansatz $\left\langle n_{i,\sigma} \right\rangle = n_X = \frac{1}{N_X} \sum_{i \in X} \left\langle n_{i,\sigma} \right\rangle$ for all sites in the $X$ sublattice.
-If this reduction is not done correctly, for example by choosing the correct number of sublattices, we will obtain biased solutions that do not necessarily reflect the nature of the mean field solution.
+If this reduction is not done correctly, we will obtain biased self-consistent solutions that do not necessarily reflect the nature of the mean field solution.
