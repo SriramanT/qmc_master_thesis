@@ -9,11 +9,9 @@ The difficulty lies in computing the nearly vanishing average of a random variab
 Ultimately, we seek a computable approximation of the projection operator $\mathcal{P}$ defined in equation (\ref{eq:projection}).
 As we shall see, it is found by using (either a discrete or continuous) Hubbard-Stratonovich transformation.
 This transformation introduces an auxiliary field (consisting basically of Ising spins), and we use Monte Carlo to sample configurations from the distribution corresponding to this \emph{classical} configuration space.
-This approach is equivalent to an exact solution of the mean field problem, an observation which motivates us to compare our results with the mean field ones.
-
+This approach is equivalent to an exact solution of the integral that is approximated by using the saddle point approximation in mean field, an observation which motivates us to compare our results with the mean field ones.
 Mean field theory may be formulated by applying the Hubbard Stratonovich (HS)  transformation to transform an interacting problem into a one-body problem, and then apply the saddle-point approximation to solve the resulting integrals.
-In the \ac{GCE} (where we make $\mathcal{H} \mapsto \mathcal{H} - \mu \mathcal{N}$, $\mathcal{N}$ being the total particle number), the partition function may be written in terms of a functional integral\footnote{In the case of a discrete HS transformation, as the one we shall use in what follows, we actually have a sum instead of a functional integral.
-We use the notation $\Tr$ to refer to both cases depending on the context.} over a space-time dependent field of the exponential of a one-body action
+In the \acs{GCE} (where we make $\mathcal{H} \mapsto \mathcal{H} - \mu \mathcal{N}$, $\mathcal{N}$ being the total particle number), the partition function may be written in terms of a functional integral over a space-time dependent field of the exponential of a one-body action
 
 \begin{equation}
 Z = \Tr [ e^{-\beta \mathcal{H} } ] = \int \mathcal{D}\bm h \, e^{-S(\bm h) }  \equiv \Tr_{\bm h} [ e^{-S(\bm h)} ],
@@ -128,7 +126,7 @@ e^{-\Delta\tau \mathcal{H}_V} = e^{-U \Delta\tau \sum_{i=1}^N (n_{i\uparrow} - 1
 
 The HS transformation is based on the well known identity 
 $
-e^{ \frac{a^2}{2}} = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{\frac{-z^2}{2}  - za } dz
+e^{ \frac{a^2}{2}} = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{-\frac{z^2}{2}  - za } dz
 $ 
 $ \forall a > 0$, 
 which is also valid for an operator $\mathcal{A}$, that is, making $a \mapsto \mathcal{A}$ in the Gaussian integral identity.
@@ -143,12 +141,11 @@ so that in the $\tau \rightarrow 0$ limit, the partition function becomes
 \begin{equation}
 Z \propto \int \mathcal{D} \widetilde{\bm h} ( \tau) e^{-\int_0^\beta d\tau \widetilde{\bm h}^2 ( \tau ) } \Tr \bigg[ \mathcal{T}_\tau e^{ -\int_0^\beta d\tau [ \mathcal{H}_K ( \tau ) + \sqrt{2U} ( \bm n_{\uparrow} (\tau) - \bm n_{\downarrow} (\tau ) ) \cdot \widetilde{\bm h}(\tau) ] } \bigg] ,
 \end{equation}
-representing a system of noninteracting fermions coupled via spin to an external fluctuating real field.
+representing a system of noninteracting fermions coupled via spin $s^z$ to an external fluctuating real field.
 
 The fact that $n_{i,\sigma}$ can only take on two possible values suggests an analogous transformation in which the fluctuating field can only take on two possible values.
 An Ising spin will prove sufficient to eliminate the direct electron-electron interaction.
-
-A discrete HS transformation for $U > 0$ allows us to recast Eq.(\ref{eq:Hint}) in terms of the local spin, a non-interacting quadratic term $n_{i\uparrow} - n_{i\downarrow} $ (at each imaginary-time slice, since the operators live on the Hilbert space of that specific slice).
+The discrete HS transformation for $U > 0$ allows us to recast Eq.(\ref{eq:Hint}) in terms of the local spin, a non-interacting quadratic term $n_{i\uparrow} - n_{i\downarrow} $ (at each imaginary-time slice, since the operators live on the Hilbert space of that specific slice).
 Let $c_U = \frac{1}{2} e^{-\frac{U\Delta \tau}{4}}$ and $\nu = \text{arcosh} ( e^{\frac{U\Delta\tau}{2}})$.
 Then, the sought transformation reads
 
@@ -161,7 +158,7 @@ This is because we worked with fixed length Ising spins.
 In the Gaussian formulation we started with, $\Delta \tau$ can be reabsorbed in the HS field, even though $\Delta \tau$ is still implicit in the integration measure.
 The parameter $\frac{1}{\Delta \tau}$ can be seen as a high energy cutoff, and it must be larger than all other energy scales in the problem, which is required to make the Trotter breakup error small when discretizing time onto 	a lattice of $L = \beta / \Delta \tau$ points.
 
-To prove Eq.(\ref{eq:discreteHS}), let us write down how the operators  $(n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )$ and $(n_{i\uparrow} - n_{i\downarrow} )$ act on a state on a given site.
+To prove Eq.(\ref{eq:discreteHS}), let us write down how the operators  $(n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )$ and $(n_{i\uparrow} - n_{i\downarrow} )$ act:
 
 \begin{equation}
 (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )
@@ -187,30 +184,22 @@ $.
 
 \begin{equation}
 \begin{split}
-&e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} \left| \psi \right\rangle = e^{-\frac{U\Delta \tau}{4}} \left| \psi \right\rangle \, , \left| \psi \right\rangle = \left| \, \, \right\rangle, \left| \uparrow \downarrow \right\rangle \\
-&e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} \left| \uparrow (\downarrow) \right\rangle = e^{\frac{U\Delta \tau}{4}} \left| \uparrow (\downarrow) \right\rangle \\
-&c_U \sum_{\widetilde{h}_i = \pm 1} e^{\nu \widetilde{h}_i (n_{i\uparrow} - n_{i\downarrow} )} \left| \psi \right\rangle = e^{-\frac{U\Delta \tau}{4}} \left| \psi \right\rangle \, , \left| \psi \right\rangle = \left| \, \, \right\rangle, \left| \uparrow \downarrow \right\rangle \\
-&c_U \sum_{\widetilde{h}_i = \pm 1} e^{\nu \widetilde{h}_i (n_{i\uparrow} - n_{i\downarrow} )} \left| \uparrow (\downarrow) \right\rangle= \frac{e^\nu + e^{-\nu}}{2} e^{-\frac{U\Delta \tau}{4}}  \left| \uparrow (\downarrow) \right\rangle
+&e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} \left| \,\,\, (\uparrow \downarrow) \right\rangle = e^{-\frac{U\Delta \tau}{4}} \left|  \,\,\, (\uparrow \downarrow) \right\rangle \,\,\,\,\,\, e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} \left| \uparrow (\downarrow) \right\rangle = e^{\frac{U\Delta \tau}{4}} \left| \uparrow (\downarrow) \right\rangle \\
+&c_U \sum_{\widetilde{h}_i = \pm 1} e^{\nu \widetilde{h}_i (n_{i\uparrow} - n_{i\downarrow} )} \left|  \,\, (\uparrow \downarrow) \right\rangle = e^{-\frac{U\Delta \tau}{4}} \left|  \,\, (\uparrow \downarrow)\right\rangle \,\,\,\,\,\, c_U \sum_{\widetilde{h}_i = \pm 1} e^{\nu \widetilde{h}_i (n_{i\uparrow} - n_{i\downarrow} )} \left| \uparrow (\downarrow) \right\rangle= \frac{e^\nu + e^{-\nu}}{2} e^{-\frac{U\Delta \tau}{4}}  \left| \uparrow (\downarrow) \right\rangle
 \end{split}
 \end{equation}
 
 Note that we require $U > 0$ so that there exists $\nu \in \mathbb{R}$ such that $\cosh \nu = e^{U\Delta \tau / 2}$. A similar reasoning could be made for $U < 0$.
-Similar transformations that recast other types of quartic terms in terms of quadratic ones exist, but we shall not need them in what follows \cite{hirsch_monte_1983}.
-The transformation we derived is the one we will use throughout.
+Similar transformations that recast other types of quartic terms in terms of quadratic ones exist, but the transformation we derived is the one we will use throughout \cite{hirsch_monte_1983}.
 We have made progress at the expense of introducing $L$ fields $\widetilde{\bm h}$ to each fermions are coupled to at each slice.
 More precisely, the external field couples to the local spin at each site.
 Our representation of the interacting problem is \emph{exact}, and is encoded in the configurations of the $NL$-dimensional HS field $\bm h$  \cite{hou_numerical_2009}.
-
-The interacting term
-
-\begin{equation} 
- e^{-\Delta\tau \mathcal{H}_V} = \prod_{i=0}^{N-1} \bigg( c_U \sum_{\widetilde{h}_i = \pm 1} e^{\nu \widetilde{h_i} ( n_{i\uparrow} - n_{i\downarrow} )} \bigg),
-\end{equation} 
-can be manipulated to arrive at a more compact form.
+The interacting term can be manipulated to arrive at a more compact form.
 
 \begin{equation}\label{eq:exp_quartic}
 \begin{split}
-e^{-\Delta\tau \mathcal{H}_V} &=  (c_U)^N \sum_{\widetilde{h}_0 = \pm 1} e^{\nu \widetilde{h}_0 ( n_{0\uparrow} - n_{0\downarrow} )} \sum_{\widetilde{h}_1 = \pm 1} e^{\nu \widetilde{h}_1 ( n_{1\uparrow} - n_{1\downarrow} )} ... \sum_{\widetilde{h}_{N-1} = \pm 1} e^{\nu \widetilde{h}_{N-1} ( n_{N-1\uparrow} - n_{N-1\downarrow} )} \\
+e^{-\Delta\tau \mathcal{H}_V} &= \prod_{i=0}^{N-1} \bigg( c_U \sum_{\widetilde{h}_i = \pm 1} e^{\nu \widetilde{h_i} ( n_{i\uparrow} - n_{i\downarrow} )} \bigg) \\
+&=  (c_U)^N \sum_{\widetilde{h}_0 = \pm 1} e^{\nu \widetilde{h}_0 ( n_{0\uparrow} - n_{0\downarrow} )} \sum_{\widetilde{h}_1 = \pm 1} e^{\nu \widetilde{h}_1 ( n_{1\uparrow} - n_{1\downarrow} )} ... \sum_{\widetilde{h}_{N-1} = \pm 1} e^{\nu \widetilde{h}_{N-1} ( n_{N-1\uparrow} - n_{N-1\downarrow} )} \\
 &= (c_U)^N \sum_{ \{ \widetilde{h}_i = \pm 1 \}} e^{\sum_{i=0}^{N-1} [(\nu \widetilde{h}_i ( n_{i\uparrow} - n_{i\downarrow} ) ]} \equiv (c_U)^N \text{Tr}_{\widetilde{\bm h}} \bigg[ e^{\sum_{i=0}^{N-1} [(\nu \widetilde{h}_i ( n_{i\uparrow} - n_{i\downarrow} ) ]} \bigg] \\
 &= (c_U)^N \text{Tr}_{\widetilde{\bm h}} \bigg[ e^{\sum_{i=0}^{N-1} \nu \widetilde{h}_i n_{i\uparrow}} e^{-\sum_{i=0}^{N-1} \nu \widetilde{h}_i n_{i\downarrow}} \bigg] = (c_U)^N \text{Tr}_{\widetilde{\bm h}} \bigg[ e^{\mathcal{H}_{V_\uparrow}} e^{\mathcal{H}_{V_\downarrow}} \bigg] ,
 \end{split}
@@ -237,7 +226,6 @@ where all operators are now quadratic in the fermion operators:
 \mathcal{H}_{K_\sigma} = \bm c_\sigma^\dagger ( - t_\sigma \bm K_\sigma -\mu_\sigma \bm I ) \bm c_\sigma \quad \mathcal{H}_{V_\sigma}^l = \sigma \nu \bm c_\sigma^\dagger \bm V_l (\widetilde{\bm h_l}) \bm c_\sigma
 \end{equation}
 for $\sigma = \pm 1$ and $\bm V_l ( \widetilde{\bm h_l} ) = \text{diag} ( h_{l, 0} , h_{l, 1}, ... , h_{l, N-1} )$.
-
 Furthermore, we have defined the $\bm B$-matrices, representing the imaginary-time propagators between time slices.
 
 \begin{equation}
@@ -247,12 +235,11 @@ Furthermore, we have defined the $\bm B$-matrices, representing the imaginary-ti
 The problem of computing the partition function has been reduced to computing the trace of a product of exponentials of quadratic forms.
 Thus, we may still rewrite equation (\ref{eq:Z_quadratic}) by making use of the following identity.
 
-Let $\mathcal{H}_l$ be quadratic forms of the fermion operators:
-
-\begin{equation}
+Let $\mathcal{H}_l$ be quadratic forms of the fermion operators: 
+$
 \mathcal{H}_l = c_i^\dagger (\bm H_l)_{ij} c_j,
-\end{equation}
-where the summation is implied, and where $\bm H_l$ are real matrices.
+$
+ where the summation is implied, and where $\bm H_l$ are real matrices.
 Then, the following identity holds
 
 \begin{equation}\label{eq:quadraticIdentity}
@@ -265,7 +252,7 @@ The products of up and down spin $\bm B$-matrices give rise to a product of two 
 
 When applied to our problem, Eq.(\ref{eq:quadraticIdentity}) essentially makes the computation of the trace possible! Note that if we were to compute it naively, we would soon run out of computer memory.
 The dimension of the Hilbert space of the Hubbard model is exponential in the number of sites N (actually $4^N$).
-At worst, the determinant can be calculated in $\mathcal{O}(N^3)$ flops for a matrix whose size is polynomial in $N$, leading to a naive $\mathcal{O}(N^4)$ algorithm.
+Contrastingly, at worst, the determinant can be calculated in $\mathcal{O}(N^3)$ flops for a matrix whose size is polynomial in $N$, leading to a naive $\mathcal{O}(N^4)$ algorithm.
 The computable form of the partition function (\ref{eq:Z_quadratic}) is
 
 \begin{equation}\label{eq:effectiveDensityMatrix}
@@ -300,21 +287,22 @@ In our formulation, an additional imaginary time slice index $l$ was introduced,
 \label{subsec:mc_hs}
 
 The computational problem is now that of sampling configurations of the $\bm h$ field drawn from the distribution $P(\bm h)$ using \emph{Classical} Monte Carlo.
-It remains to choose a dynamics and a sampling scheme. The simplest strategy to change from a configuration $\bm h$ to a new one $\bm h'$ is single spin-flip dynamics. We choose a random point $(l, i)$, and we flip the spin at that space-time  \say{site}:
+It remains to choose a dynamics and a sampling scheme. The simplest rule to change from a configuration $\bm h$ to a new one $\bm h'$ is single spin-flip dynamics. 
+Choose a random point $(l, i)$, and flip the spin at that space-time  \say{site}:
 $
 h_{l, i}' = - h_{l, i},
 $
 keeping all others unchanged.
-The most common scheme to ensure that the distribution of the accepted sample is $P(\bm h)$ is the Metropolis-Hastings algorithm, but other choices exist, such as the heat bath algorithm.
+The most common scheme to ensure that the distribution of the accepted sample is $P(\bm h)$ is the Metropolis-Hastings algorithm, but others exist, such as the heat bath algorithm.
 After the warm-up steps, we are correctly sampling from the required distribution, and we may perform measurements.
 
 \begin{algorithm}
 \caption{Auxiliary Field Quantum Monte Carlo Sampling Scheme}
 \label{afqmcSampling}
 \begin{algorithmic}[5]
-  \STATE Initialize HS field $\bm h$  \\
   \STATE Initialize hoppings $\bm K$  \\
-  \STATE  $(h_{l, i}) = (\pm 1)_{l=0, i = 0}^{L-1, N-1}$
+  \STATE Initialize HS field $\bm h$  \\
+  \STATE  $(h_{l, i}) = (\pm 1)$, $ l=0,... L-1$, $i = 0, ... N-1$.
   \STATE $(l, i) \leftarrow (0, 0)$
   \FOR{$\text{step} = 1$ to $S$}
   \STATE \footnotesize{Propose new configuration by flipping a spin} \\ \normalsize{$h_{l, i}' = - h_{l, i}$} 
@@ -410,8 +398,7 @@ This is undesired since it is multiplied repeatedly by other matrices throughout
 Diagonalizing and exponentiating $\bm K$ results in a dense matrix of $N^2$ elements.
 For uniform hoppings, we can use the \ac{FFT} and apply the exponential of the kinetic term $e^{t \Delta \tau \bm K }$ in momentum space, in which $\bm K$ is diagonal.
 The drawback of this approach is two-fold: first, the system size becomes constrained to powers of 2, so that the \ac{FFT} can be applied efficiently, and, more importantly, we cannot apply it to nonuniform hoppings (which is precisely the case we are interested in in this work).
-
-A convenient, and sparse approximation of $\bm B$ in real space is available, and it is obtained simply by appling the Trotter breakup to the exponential of the hopping matrix:
+A convenient, and sparse approximation of $\bm B$ in real space is available, and it is obtained simply by appling the Trotter breakup to the exponential of the hopping:
 
 \begin{equation}
 e^{t \Delta \tau \bm K } = e^{t \Delta \tau \sum_{\left\langle i, j \right\rangle} \bm K^{(ij)} } = \prod_{\left\langle i, j \right\rangle} e^{t \Delta \tau\bm K^{(ij)}} + \mathcal{O} ( (t \Delta \tau)^2 ) ,

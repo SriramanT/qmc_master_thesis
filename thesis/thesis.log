@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  30 SEP 2018 22:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  1 OCT 2018 01:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1843,28 +1843,16 @@ Package acronym Info: Label `acro:TMDNR' overridden on input line 12.
  (./ch-afqmc/classical-monte-carlo.tex [42
 
 ] [43] [44] [45]
-[46] [47]
+[46]
 Package acronym Info: Label `acro:FFT' newly defined as it shall be overridden
-although it is yet undefined on input line 247.
- [48]) (./ch-afqmc/matform.tex
-Package acronym Info: Label `acro:GCE' overridden on input line 15.
- [49] [50] [51] [52] [53] [54]
+although it is yet undefined on input line 233.
+ [47]) (./ch-afqmc/matform.tex [48] [49] [50] [51] [52] [53]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 312.
- [55]
-[56]) (./ch-afqmc/measurements.tex [57]
-Package acronym Info: Label `acro:QMC' overridden on input line 14.
- [58] [59] [60] [61])
-(./ch-afqmc/stabilization.tex [62] [63]
-Overfull \hbox (3.28008pt too wide) in paragraph at lines 99--102
-[]\T1/cmr/m/n/10 Now, for $\OML/cmm/m/it/10 ^^U \OT1/cmr/m/n/10 = 1\OML/cmm/m/i
-t/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; :::\OT1/cmr/m/n/10 ^^C$\T1/cmr/m/n/1
-0 , QR-decompose with col-umn piv-ot-ing: $\OT1/cmr/m/n/10 (\OML/cmm/b/it/10 B[
-]Q[]\OT1/cmr/m/n/10 )\OML/cmm/b/it/10 D[] \OT1/cmr/m/n/10 = \OML/cmm/b/it/10 Q[
-]R[]P[] \OMS/cmsy/m/n/10 ^^Q \OML/cmm/b/it/10 Q[]D[]T[]$\T1/cmr/m/n/10 ,
- []
-
-[64] [65] [66])) (./ch-applications/main.tex [67]
+put line 300.
+ [54] [55])
+(./ch-afqmc/measurements.tex [56] [57] [58] [59] [60])
+(./ch-afqmc/stabilization.tex [61] [62] [63] [64] [65]))
+(./ch-applications/main.tex [66]
 Chapter 4.
 \openout5 = `thesis.mtc'.
 
@@ -1874,29 +1862,29 @@ Chapter 4.
 (./ch-applications/square-lattice.tex) (./ch-applications/honeycomb.tex
 Package acronym Info: Label `acro:TMD' overridden on input line 5.
 )
-(./ch-applications/nanoribbon.tex [68
+(./ch-applications/nanoribbon.tex [67
 
 ]
 Package acronym Info: Label `acro:PBC' overridden on input line 14.
 Package acronym Info: Label `acro:OBC' overridden on input line 15.
-<all-figures/Applications/nanoribbon.pdf, id=1789, 1027.84pt x 770.88pt>
+<all-figures/Applications/nanoribbon.pdf, id=1773, 1027.84pt x 770.88pt>
 File: all-figures/Applications/nanoribbon.pdf Graphic file (type pdf)
 <use all-figures/Applications/nanoribbon.pdf>
 Package pdftex.def Info: all-figures/Applications/nanoribbon.pdf  used on input
  line 26.
 (pdftex.def)             Requested size: 256.95937pt x 118.03123pt.
- [69 <./all-figures/Applications/nanoribbon.pdf>] [70]
+ [68 <./all-figures/Applications/nanoribbon.pdf>] [69]
 Overfull \hbox (10.92175pt too wide) detected at line 117
 \OML/cmm/b/it/10 h[] \OT1/cmr/m/n/10 = []
  []
 
-<all-figures/Applications/fillingVsE.png, id=1906, 329.5512pt x 263.66505pt>
+<all-figures/Applications/fillingVsE.png, id=1890, 329.5512pt x 263.66505pt>
 File: all-figures/Applications/fillingVsE.png Graphic file (type png)
 <use all-figures/Applications/fillingVsE.png>
 Package pdftex.def Info: all-figures/Applications/fillingVsE.png  used on input
  line 120.
 (pdftex.def)             Requested size: 181.25371pt x 145.01622pt.
-<all-figures/Applications/BandStructureNanoribbonTMD.png, id=1907, 489.62926pt 
+<all-figures/Applications/BandStructureNanoribbonTMD.png, id=1891, 489.62926pt 
 x 266.4354pt>
 File: all-figures/Applications/BandStructureNanoribbonTMD.png Graphic file (typ
 e png)
@@ -1904,47 +1892,46 @@ e png)
 Package pdftex.def Info: all-figures/Applications/BandStructureNanoribbonTMD.pn
 g  used on input line 121.
 (pdftex.def)             Requested size: 269.29692pt x 146.53992pt.
-[71 <./all-figures/Applications/fillingVsE.png> <./all-figures/Applications/Ban
+[70 <./all-figures/Applications/fillingVsE.png> <./all-figures/Applications/Ban
 dStructureNanoribbonTMD.png>]
-<all-figures/Applications/MFnanoribbon.png, id=1922, 312.02573pt x 115.27065pt>
+<all-figures/Applications/MFnanoribbon.png, id=1905, 312.02573pt x 115.27065pt>
 
 File: all-figures/Applications/MFnanoribbon.png Graphic file (type png)
 <use all-figures/Applications/MFnanoribbon.png>
 Package pdftex.def Info: all-figures/Applications/MFnanoribbon.png  used on inp
 ut line 152.
 (pdftex.def)             Requested size: 156.01247pt x 57.63518pt.
-)) (./ch-conclusion/conclusions.tex [72 <./all-figures/Applications/MFnanoribbo
+)) (./ch-conclusion/conclusions.tex [71 <./all-figures/Applications/MFnanoribbo
 n.png>]
 Chapter 5.
 Package minitoc Info: I0006
 (minitoc)             thesis.mtc5 is empty on input line 5.
-) [73
+) [72
 
-] [74
+] [73
 
 
-] [75
 
-] [76]
+] [74]
 Overfull \hbox (2.08107pt too wide) in paragraph at lines 43--43
 []\T1/cmr/m/n/10 Raczkowski, M. & As-saad, F. F. In-ter-play be-tween the edge-
 state mag-netism and long-range Coulomb
  []
 
-[77] [78]
+[75] [76]
 Overfull \hbox (23.94919pt too wide) in paragraph at lines 43--43
 []\T1/cmr/m/n/10 Molinari, L. G. Notes on Wick's the-o-rem in many-body the-ory
 . \T1/cmr/m/it/10 arXiv:1710.09248 [cond-mat, physics:math-
  []
 
-[79] [80] (./end-appendices/hubbardObSol.tex
+[77] [78] (./end-appendices/hubbardObSol.tex
 Appendix A.
 [1
 
 
 
 ] [2] [3] [4] [5]
-<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=2080, 457.71pt x 210.7
+<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=2060, 457.71pt x 210.7
 875pt>
 File: all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png Graphic file (type pn
 g)
@@ -1995,20 +1982,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: BA0248035608724F59445E166FD7DFFF;6339.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 4F3FD519D913C25EE6B360BE21443DE9;6349.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22548 strings out of 492649
- 373804 string characters out of 6129622
- 915519 words of memory out of 5000000
- 24897 multiletter control sequences out of 15000+600000
+ 22535 strings out of 492649
+ 373641 string characters out of 6129622
+ 916581 words of memory out of 5000000
+ 24896 multiletter control sequences out of 15000+600000
  44233 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,30n,100p,2020b,2035s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2074,10 +2057,10 @@ cm-super/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm
 -super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-s
 uper/sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/bookman/u
 bkd8a.pfb>
-Output written on thesis.pdf (121 pages, 13373298 bytes).
+Output written on thesis.pdf (119 pages, 13371900 bytes).
 PDF statistics:
- 2565 PDF objects out of 2984 (max. 8388607)
- 2241 compressed objects within 23 object streams
- 677 named destinations out of 1000 (max. 500000)
+ 2542 PDF objects out of 2984 (max. 8388607)
+ 2220 compressed objects within 23 object streams
+ 665 named destinations out of 1000 (max. 500000)
  784 words of extra memory for PDF output out of 10000 (max. 10000000)
 

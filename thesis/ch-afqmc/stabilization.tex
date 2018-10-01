@@ -54,6 +54,7 @@ The modified Gram-Schmidt factorization is faster, corresponding to the choice $
 The matrix is decomposed in the form $\bm A = \bm Q \bm R$, with $\bm Q$ orthogonal, and $\bm R$ upper triangular, and then a diagonal matrix is introduced so as to make appear the unit upper triangular matrix $\bm  T = \bm D^{-1} \bm R$, which is well conditioned and can be multiplied safely in simulations, even it has appreciably large numbers, without leading to numerical  instabilities.
 Decompositions of this type explicitly separate the largely different numerical scales for a \emph{column-stratified} matrix $\bm A$, as the example below shows.
 Matrix elements represented as $x$ are $\mathcal{O}(1)$, while the larger sizes represent different numerical scales.
+A good compromise between speed and stability is the QR decomposition with column pivoting via Householder reflections \cite{newman_computational_2012}, which is the subroutine we use in our implementation, following \cite{bai_stable_2011}, where rigorous bounds are proven on the conditioning of the matrices obtained in this fashion.
 
 \begin{equation}
 \bm Q^{-1} \bm A \bm T^{-1} =
@@ -83,8 +84,6 @@ $$ \mbox{\Huge x} $$ & 0 & 0 & 0 \\
 \end{pmatrix} = \bm D
 \end{equation}
 
-A good compromise between speed and stability is the QR decomposition with column pivoting via Householder reflections \cite{newman_computational_2012}, which is the subroutine we use in our implementation, following \cite{bai_stable_2011}, where rigorous bounds are proven on the conditioning of the matrices obtained in this fashion.
-
 To compute $\bm G$, we recall Eq.(\ref{eq:eqG}), and note that the problem boils down to numerically inverting a matrix which involves a long chain of multiplied matrices\footnote{The imaginary time slice index goes from 0 to $\Lambda - 1$ because the $\bm B_\lambda$-matrices are already partial products of the original $\bm B_l$-matrices.
 The procedure we present is applied after multiplying together as many $\bm B$-matrices as possible without significantly losing precision.} $(\bm I_N + \bm B_{\Lambda-1} \bm B_{\Lambda-2} ... \bm B_1)^{-1}$, where $\bm I_N$ is the $N \times N$ identity.
 We start by QR-decomposing $\bm B_0 = \bm Q_0 \bm R_0 \bm P_0$, where $\bm Q_0$ is orthogonal, $\bm R_0$ is upper triangular, and $\bm P_0$ is a permutation matrix resulting from column pivoting.
@@ -96,7 +95,7 @@ Extracting the diagonal $\bm D_0 = \text{diag} ( \bm R_0 )$, we define $\bm T_0 
 \end{equation}
 leaving $\bm T_0$ well conditioned, which will be crucial in what follows.
 
-Now, for $\lambda = 1, 2, ... \Lambda$, QR-decompose with column pivoting: $(\bm B_\lambda \bm Q_{\lambda-1}) \bm D_{\lambda-1} = \bm Q_\lambda \bm R_\lambda \bm P_\lambda \equiv \bm Q_\lambda \bm D_\lambda \bm T_\lambda$, with $\bm D_\lambda = \text{diag} ( \bm R_\lambda ) $, and $\bm T_\lambda = \bm D_\lambda^{-1} \bm R_\lambda \bm P_\lambda$.
+Now, for $\lambda = 1, 2, ... \Lambda$, $\bm Q \bm R \bm P$-decompose: $(\bm B_\lambda \bm Q_{\lambda-1}) \bm D_{\lambda-1} = \bm Q_\lambda \bm R_\lambda \bm P_\lambda \equiv \bm Q_\lambda \bm D_\lambda \bm T_\lambda$, with the diagonal matrix $\bm D_\lambda = \text{diag} ( \bm R_\lambda ) $, and $\bm T_\lambda = \bm D_\lambda^{-1} \bm R_\lambda \bm P_\lambda$.
 Note that $\bm B_\lambda \bm Q_{\lambda-1} \bm D_{\lambda-1}$ is column-stratified, so that the diagonal matrix contains explicitly separated numerical scales.
 Finally, the $\bm B$-matrix chain becomes
 
@@ -152,7 +151,7 @@ This corresponds to defining numerical stability operationally.
 We maintain the numerical scales explicitly, so that the information that we lose at the end is practically irrelevant in computing the Green's function: because of the way we organized the calculation, the overwriting of small scales by unit numbers and of unit scales by big numbers does not decrease precision, instead cutting off certain well picked numerical scales.
 
 In the band picture, this becomes particularly evident.
-As long as state deep into the band is occupied, it does not matter whether it is amplified by say $10^{100}$ or even $10^{1000}$.
+As long as a state deep into the band is occupied, it does not matter whether it is amplified by say $10^{100}$ or even $10^{1000}$.
 The same applies for high energy states, which must be cut off anyway, so there is no problem in attenuating them by $10^{-100}$ or $10^{-1000}$.
 In our calculation of $\bm G$, this corresponds to finding the single-particle states for fixed HS field $\bm h$ via the transformation matrices $\bm Q$ and $\bm T$.
 The energy scales are stored in $\bm D$, so that when we add $\bm Q^T \bm T^{-1}$, the divergent scales are cut off, and so we can identify which states were amplified or attenuated.
@@ -191,7 +190,7 @@ In practice, it is verified that sufficiently low temperatures to study say the 
 \subsection{Storing partial products and time-displaced Green's function}
 \label{subsec:partial}
 
-Given the QRP decomposition of a matrix, we can obtain its PRQ decomposition (with partial pivoting), so that the partial products can be built up from the left through successive $\bm T_L \bm D_L \bm Q_L$ decompositions (the subscript meaning \say{left}).
+Given the $\bm Q \bm R \bm P$ decomposition of a matrix, we can obtain its $\bm P \bm R \bm Q$ decomposition (with partial pivoting), so that the partial products can be built up from the left through successive $\bm T_L \bm D_L \bm Q_L$ decompositions (the subscript meaning \say{left}).
 Define the row/column reversing matrix 
 
 \begin{equation}
@@ -204,7 +203,7 @@ Define the row/column reversing matrix
 \,\, \text{with} \,\, \bm P_r^T = \bm P_r \,\, \text{and} \,\, \bm P_r^{-1} = \bm P_r^T ,
 \end{equation}
 so that $\bm B \bm P_r$ reverses the order of the columns of $\bm B$, and $\bm P_r \bm B$ reverses the order of the rows.
-Now QRP-decompose $(\bm P_r \bm B)^T = \tilde{\bm Q} \tilde{\bm R} \tilde{\bm P}$, and define $\bm Q \equiv \bm P_r \tilde{\bm Q}^T$, $\bm R \equiv \bm P_r \tilde{\bm R}^T \bm P_r$, $\bm P \equiv \bm P_r \tilde{\bm P}^T \bm P_r$, giving
+Now $\bm Q \bm R \bm P$-decompose $(\bm P_r \bm B)^T = \tilde{\bm Q} \tilde{\bm R} \tilde{\bm P}$, and define $\bm Q \equiv \bm P_r \tilde{\bm Q}^T$, $\bm R \equiv \bm P_r \tilde{\bm R}^T \bm P_r$, $\bm P \equiv \bm P_r \tilde{\bm P}^T \bm P_r$, giving
 
 \begin{equation}
 \bm B = \underbrace{\bm P_r \bm P_r}_{\bm I} \bm B = \bm P_r ( \tilde{\bm Q} \tilde{\bm R} \tilde{\bm P} )^T =  \bm P_r \tilde{\bm P}^T \underbrace{\bm P_r \bm P_r}_{\bm I} \tilde{\bm R}^T \underbrace{\bm P_r \bm P_r}_{\bm I} \tilde{\bm Q}^T = \bm P \bm R \bm Q = \bm P \bm R \bm D^{-1} \bm D \bm Q \equiv \bm T \bm D \bm Q ,
@@ -214,7 +213,7 @@ where we reversed the definition of $\bm T$, and the successive decompositions a
 At the first slice, we compute the partial products and store their decompositions
 
 \begin{equation}
-\underbrace{ \overbrace{ \underbrace{\bm B_{L - 1} \bm B_{L-2} ... \bm B_{L - 1- L / \Lambda}}_{(\bm T_L \bm D_L \bm Q_L)_{0} }  \bm B_{L - 2 - L / \Lambda} ...\bm B_{L - 2 - 2 L / \Lambda} }^{(\bm T_L \bm D_L \bm Q_L)_{1}} ... \bm B_{L / \Lambda - 1} ...  \bm B_0}_{(\bm T_L \bm D_L \bm Q_L)_{\Lambda - 1}} \rightsquigarrow 
+\underbrace{ \overbrace{ \underbrace{\bm B_{L - 1} \bm B_{L-2} ... \bm B_{L - 1- L / \Lambda}}_{(\bm T_L \bm D_L \bm Q_L)_{0} }  \bm B_{L - 2 - L / \Lambda} ...\bm B_{L - 2 - 2 L / \Lambda} }^{(\bm T_L \bm D_L \bm Q_L)_{1}} ... \bm B_{L / \Lambda - 1} ...  \bm B_0}_{(\bm T_L \bm D_L \bm Q_L)_{\Lambda - 1}}
 \end{equation}
 and as the $\bm B$-matrices are moved onto the left, we build their partial product from the right and decompose it in $\bm Q_R \bm D_R \bm T_R$, saving the resulting successive decompositions in place of the $\bm T_L \bm D_L \bm Q_L$ decompositions which become unneeded.
 For example, when the second partial product is on the left:
@@ -303,3 +302,6 @@ The method is very stable, but numerically more expensive since the matrices at 
 \end{split}
 \end{equation}
 Here, $\bm D$ contains only large scales because the matrices with order one elements, $(\bm T_R \bm T_L)^{-1}$ and $(\bm Q_L \bm Q_R)^T$, cut off the exponentially small scales in $\bm D_L$ and $\bm D_R$.
+
+This procedure of storing the decompositions of partial products is not only more efficient.
+It also allows us to compute any observable, whether it requires equal or unequal time Green's functions, while still preserving the $\mathcal{O} (\beta N^3 )$ complexity of the algorithm.
