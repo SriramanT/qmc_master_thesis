@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  1 OCT 2018 01:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  1 OCT 2018 11:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1859,7 +1859,9 @@ Chapter 4.
 \openout5 = `thesis.mtc'.
 
 (./thesis.mtc4) (./ch-applications/1d-chain.tex)
-(./ch-applications/square-lattice.tex) (./ch-applications/honeycomb.tex
+(./ch-applications/square-lattice.tex
+Package acronym Info: Label `acro:QMC' overridden on input line 5.
+) (./ch-applications/honeycomb.tex
 Package acronym Info: Label `acro:TMD' overridden on input line 5.
 )
 (./ch-applications/nanoribbon.tex [67
@@ -1867,7 +1869,7 @@ Package acronym Info: Label `acro:TMD' overridden on input line 5.
 ]
 Package acronym Info: Label `acro:PBC' overridden on input line 14.
 Package acronym Info: Label `acro:OBC' overridden on input line 15.
-<all-figures/Applications/nanoribbon.pdf, id=1773, 1027.84pt x 770.88pt>
+<all-figures/Applications/nanoribbon.pdf, id=1779, 1027.84pt x 770.88pt>
 File: all-figures/Applications/nanoribbon.pdf Graphic file (type pdf)
 <use all-figures/Applications/nanoribbon.pdf>
 Package pdftex.def Info: all-figures/Applications/nanoribbon.pdf  used on input
@@ -1878,13 +1880,13 @@ Overfull \hbox (10.92175pt too wide) detected at line 117
 \OML/cmm/b/it/10 h[] \OT1/cmr/m/n/10 = []
  []
 
-<all-figures/Applications/fillingVsE.png, id=1890, 329.5512pt x 263.66505pt>
+<all-figures/Applications/fillingVsE.png, id=1897, 329.5512pt x 263.66505pt>
 File: all-figures/Applications/fillingVsE.png Graphic file (type png)
 <use all-figures/Applications/fillingVsE.png>
 Package pdftex.def Info: all-figures/Applications/fillingVsE.png  used on input
  line 120.
 (pdftex.def)             Requested size: 181.25371pt x 145.01622pt.
-<all-figures/Applications/BandStructureNanoribbonTMD.png, id=1891, 489.62926pt 
+<all-figures/Applications/BandStructureNanoribbonTMD.png, id=1898, 489.62926pt 
 x 266.4354pt>
 File: all-figures/Applications/BandStructureNanoribbonTMD.png Graphic file (typ
 e png)
@@ -1894,7 +1896,7 @@ g  used on input line 121.
 (pdftex.def)             Requested size: 269.29692pt x 146.53992pt.
 [70 <./all-figures/Applications/fillingVsE.png> <./all-figures/Applications/Ban
 dStructureNanoribbonTMD.png>]
-<all-figures/Applications/MFnanoribbon.png, id=1905, 312.02573pt x 115.27065pt>
+<all-figures/Applications/MFnanoribbon.png, id=1913, 312.02573pt x 115.27065pt>
 
 File: all-figures/Applications/MFnanoribbon.png Graphic file (type png)
 <use all-figures/Applications/MFnanoribbon.png>
@@ -1931,7 +1933,7 @@ Appendix A.
 
 
 ] [2] [3] [4] [5]
-<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=2060, 457.71pt x 210.7
+<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=2070, 457.71pt x 210.7
 875pt>
 File: all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png Graphic file (type pn
 g)
@@ -1981,86 +1983,111 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 56.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 56.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4F3FD519D913C25EE6B360BE21443DE9;6349.
+
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 4F3FD519D913C25EE6B360BE21443DE9;6349
+(rerunfilecheck)             After:  2BD1B3A0EEB043F2C388E0AD909502F0;6349.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22535 strings out of 492649
- 373641 string characters out of 6129622
- 916581 words of memory out of 5000000
- 24896 multiletter control sequences out of 15000+600000
+ 22544 strings out of 492649
+ 373872 string characters out of 6129622
+ 918679 words of memory out of 5000000
+ 24898 multiletter control sequences out of 15000+600000
  44233 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,30n,100p,2020b,2035s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
- </Users/franciscobrito/Library/texlive/2018/texmf-var/fonts/pk/ljfour/public/b
-bm/bbm10.600pk>{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib
-9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/cm-super/sfrm2074.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm2488.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
-lic/cm-super/sfsl1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/cm-super/sfti0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
-cm-super/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm
--super/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-s
-uper/sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/bookman/u
-bkd8a.pfb>
-Output written on thesis.pdf (119 pages, 13371900 bytes).
+pdfTeX warning (dest): name{table.caption.48} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.54} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.49} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.47} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.52} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <
+/Users/franciscobrito/Library/texlive/2018/texmf-var/fonts/pk/ljfour/public/bbm
+/bbm10.600pk>{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.
+pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm2074.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm2488.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/cm-super/sfsl1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
+cm-super/sfti0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm
+-super/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-s
+uper/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
+er/sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/bookman/ubk
+d8a.pfb>
+Output written on thesis.pdf (119 pages, 13372894 bytes).
 PDF statistics:
- 2542 PDF objects out of 2984 (max. 8388607)
- 2220 compressed objects within 23 object streams
- 665 named destinations out of 1000 (max. 500000)
+ 2554 PDF objects out of 2984 (max. 8388607)
+ 2232 compressed objects within 23 object streams
+ 672 named destinations out of 1000 (max. 500000)
  784 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2342,6 +2342,161 @@
       \verb 10.1021/nl903868w
       \endverb
     \endentry
+    \entry{mohanty_nanotomy-based_2012}{article}{}
+      \name{author}{7}{}{%
+        {{hash=b8864dbd11b544323b3fa9e516d993c9}{%
+           family={Mohanty},
+           familyi={M\bibinitperiod},
+           given={Nihar},
+           giveni={N\bibinitperiod}}}%
+        {{hash=bf0da929c0fee6475cd4f91c951ed272}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9e908449acbf12e7381f10a831bc8a2e}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Zhiping},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=3ec6b45d9dd778516736025bf884eb03}{%
+           family={Sreeprasad},
+           familyi={S\bibinitperiod},
+           given={T.\bibnamedelimi S.},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=96ad9cd4f4dbaff90db8299d95dc4c56}{%
+           family={Nagaraja},
+           familyi={N\bibinitperiod},
+           given={Ashvin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=361b2324d09885f22f35c26816f7aa91}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Alfredo\bibnamedelima Alexander},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e5386dcaf2683d59ab6e0b64453ba87c}{%
+           family={Berry},
+           familyi={B\bibinitperiod},
+           given={Vikas},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{3ad054771b646f5909c41b3a252581f5}
+      \strng{fullhash}{8547a445f3f86473b265a1d923ea311b}
+      \strng{bibnamehash}{3ad054771b646f5909c41b3a252581f5}
+      \strng{authorbibnamehash}{3ad054771b646f5909c41b3a252581f5}
+      \strng{authornamehash}{3ad054771b646f5909c41b3a252581f5}
+      \strng{authorfullhash}{8547a445f3f86473b265a1d923ea311b}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Because of the edge states and quantum confinement, the shape and size of graphene nanostructures dictate their electrical, optical, magnetic and chemical properties. The current synthesis methods for graphene nanostructures do not produce large quantities of graphene nanostructures that are easily transferable to different substrates/solvents, do not produce graphene nanostructures of different and controlled shapes, or do not allow control of {GN} dimensions over a wide range (up to 100 nm). Here we report the production of graphene nanostructures with predetermined shapes (square, rectangle, triangle and ribbon) and controlled dimensions. This is achieved by diamond-edge-induced nanotomy (nanoscale-cutting) of graphite into graphite nanoblocks, which are then exfoliated. Our results show that the edges of the produced graphene nanostructures are straight and relatively smooth with an {ID}/{IG} of 0.22–0.28 and roughness {<}1 nm. Further, thin films of {GN}-ribbons exhibit a bandgap evolution with width reduction (0, 10 and {\textasciitilde}35 {meV} for 50, 25 and 15 nm, respectively).}
+      \field{day}{15}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{title}{Nanotomy-based production of transferable and dispersible graphene nanostructures of controlled shape and size}
+      \field{urlday}{1}
+      \field{urlmonth}{8}
+      \field{urlyear}{2018}
+      \field{volume}{3}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{844}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/ncomms1834
+      \endverb
+      \verb{file}
+      \verb Mohanty2012.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/graphene/Mohanty2012.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/IEQPN3WU/ncomms1834.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/ncomms1834
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/ncomms1834
+      \endverb
+    \endentry
+    \entry{chen_fabrication_2017}{article}{}
+      \name{author}{7}{}{%
+        {{hash=6ef5e83f2df66e076ce95e343216ee14}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yuxuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=605009b41c70e69d4086c598301434d0}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6d60fe7dd3ff2b279d78f278b85d197e}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Xibiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=07917f676e2fa0e61e529ba5ff1a0922}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Chendong},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3c2666c644e86fa9ed1d657175acb19f}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Chuanhong},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6fab509a575563dcce94d6d45f8bbd26}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhenyu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=3b04d598983be8376d855603877cf29b}{%
+           family={Shih},
+           familyi={S\bibinitperiod},
+           given={Chih-Kang},
+           giveni={C\bibinithyphendelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6df7867741141bdec88cb9c3fb541baa}
+      \strng{fullhash}{18b7ccb5d30c703a6495107b069f7bbc}
+      \strng{bibnamehash}{6df7867741141bdec88cb9c3fb541baa}
+      \strng{authorbibnamehash}{6df7867741141bdec88cb9c3fb541baa}
+      \strng{authornamehash}{6df7867741141bdec88cb9c3fb541baa}
+      \strng{authorfullhash}{18b7ccb5d30c703a6495107b069f7bbc}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Transition metal dichalcogenides ({TMDs}) are a family of van der Waals layered materials exhibiting unique electronic, optical, magnetic and transport properties. Their technological potentials hinge critically on the ability to achieve controlled fabrication of desirable nanostructures, such as nanoribbons and nanodots. To date, nanodots/nanoislands have been regularly observed, while controlled fabrication of {TMD} nanoribbons remains challenging. Here we report a bottom-up fabrication of {MoSe}2 nanoribbons using molecular beam epitaxy, via an unexpected temperature-induced morphological phase transition from the nanodot to nanoribbon regime. Such nanoribbons are of zigzag nature, characterized by distinct chemical and electronic properties along the edges. The phase space for nanoribbon growth is narrowly defined by proper Se:Mo ratios, as corroborated experimentally using different Se fluxes, and supported theoretically using first-principles calculations that establish the crucial role of the morphological reconstruction of the bare Mo-terminated edge. The growth mechanism revealed should be applicable to other {TMD} systems.}
+      \field{day}{4}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{title}{Fabrication of {MoSe}$_{\textrm{2}}$ nanoribbons via an unusual morphological phase transition}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{8}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{15135}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/ncomms15135
+      \endverb
+      \verb{file}
+      \verb Chen2017.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Chen2017.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/ATZEGTX2/ncomms15135.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/ncomms15135
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/ncomms15135
+      \endverb
+      \keyw{nanoribbons,tmd}
+    \endentry
     \entry{feldner_dynamical_2011}{article}{}
       \name{author}{6}{}{%
         {{hash=504331015369150db40c6f862d8cf8f7}{%
@@ -2715,161 +2870,6 @@
       \endverb
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevB.96.165436
-      \endverb
-      \keyw{nanoribbons,tmd}
-    \endentry
-    \entry{mohanty_nanotomy-based_2012}{article}{}
-      \name{author}{7}{}{%
-        {{hash=b8864dbd11b544323b3fa9e516d993c9}{%
-           family={Mohanty},
-           familyi={M\bibinitperiod},
-           given={Nihar},
-           giveni={N\bibinitperiod}}}%
-        {{hash=bf0da929c0fee6475cd4f91c951ed272}{%
-           family={Moore},
-           familyi={M\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=9e908449acbf12e7381f10a831bc8a2e}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Zhiping},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=3ec6b45d9dd778516736025bf884eb03}{%
-           family={Sreeprasad},
-           familyi={S\bibinitperiod},
-           given={T.\bibnamedelimi S.},
-           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=96ad9cd4f4dbaff90db8299d95dc4c56}{%
-           family={Nagaraja},
-           familyi={N\bibinitperiod},
-           given={Ashvin},
-           giveni={A\bibinitperiod}}}%
-        {{hash=361b2324d09885f22f35c26816f7aa91}{%
-           family={Rodriguez},
-           familyi={R\bibinitperiod},
-           given={Alfredo\bibnamedelima Alexander},
-           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=e5386dcaf2683d59ab6e0b64453ba87c}{%
-           family={Berry},
-           familyi={B\bibinitperiod},
-           given={Vikas},
-           giveni={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{3ad054771b646f5909c41b3a252581f5}
-      \strng{fullhash}{8547a445f3f86473b265a1d923ea311b}
-      \strng{bibnamehash}{3ad054771b646f5909c41b3a252581f5}
-      \strng{authorbibnamehash}{3ad054771b646f5909c41b3a252581f5}
-      \strng{authornamehash}{3ad054771b646f5909c41b3a252581f5}
-      \strng{authorfullhash}{8547a445f3f86473b265a1d923ea311b}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Because of the edge states and quantum confinement, the shape and size of graphene nanostructures dictate their electrical, optical, magnetic and chemical properties. The current synthesis methods for graphene nanostructures do not produce large quantities of graphene nanostructures that are easily transferable to different substrates/solvents, do not produce graphene nanostructures of different and controlled shapes, or do not allow control of {GN} dimensions over a wide range (up to 100 nm). Here we report the production of graphene nanostructures with predetermined shapes (square, rectangle, triangle and ribbon) and controlled dimensions. This is achieved by diamond-edge-induced nanotomy (nanoscale-cutting) of graphite into graphite nanoblocks, which are then exfoliated. Our results show that the edges of the produced graphene nanostructures are straight and relatively smooth with an {ID}/{IG} of 0.22–0.28 and roughness {<}1 nm. Further, thin films of {GN}-ribbons exhibit a bandgap evolution with width reduction (0, 10 and {\textasciitilde}35 {meV} for 50, 25 and 15 nm, respectively).}
-      \field{day}{15}
-      \field{issn}{2041-1723}
-      \field{journaltitle}{Nature Communications}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{title}{Nanotomy-based production of transferable and dispersible graphene nanostructures of controlled shape and size}
-      \field{urlday}{1}
-      \field{urlmonth}{8}
-      \field{urlyear}{2018}
-      \field{volume}{3}
-      \field{year}{2012}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{844}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1038/ncomms1834
-      \endverb
-      \verb{file}
-      \verb Mohanty2012.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/graphene/Mohanty2012.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/IEQPN3WU/ncomms1834.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://www.nature.com/articles/ncomms1834
-      \endverb
-      \verb{url}
-      \verb https://www.nature.com/articles/ncomms1834
-      \endverb
-    \endentry
-    \entry{chen_fabrication_2017}{article}{}
-      \name{author}{7}{}{%
-        {{hash=6ef5e83f2df66e076ce95e343216ee14}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Yuxuan},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=605009b41c70e69d4086c598301434d0}{%
-           family={Cui},
-           familyi={C\bibinitperiod},
-           given={Ping},
-           giveni={P\bibinitperiod}}}%
-        {{hash=6d60fe7dd3ff2b279d78f278b85d197e}{%
-           family={Ren},
-           familyi={R\bibinitperiod},
-           given={Xibiao},
-           giveni={X\bibinitperiod}}}%
-        {{hash=07917f676e2fa0e61e529ba5ff1a0922}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Chendong},
-           giveni={C\bibinitperiod}}}%
-        {{hash=3c2666c644e86fa9ed1d657175acb19f}{%
-           family={Jin},
-           familyi={J\bibinitperiod},
-           given={Chuanhong},
-           giveni={C\bibinitperiod}}}%
-        {{hash=6fab509a575563dcce94d6d45f8bbd26}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Zhenyu},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=3b04d598983be8376d855603877cf29b}{%
-           family={Shih},
-           familyi={S\bibinitperiod},
-           given={Chih-Kang},
-           giveni={C\bibinithyphendelim K\bibinitperiod}}}%
-      }
-      \strng{namehash}{6df7867741141bdec88cb9c3fb541baa}
-      \strng{fullhash}{18b7ccb5d30c703a6495107b069f7bbc}
-      \strng{bibnamehash}{6df7867741141bdec88cb9c3fb541baa}
-      \strng{authorbibnamehash}{6df7867741141bdec88cb9c3fb541baa}
-      \strng{authornamehash}{6df7867741141bdec88cb9c3fb541baa}
-      \strng{authorfullhash}{18b7ccb5d30c703a6495107b069f7bbc}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Transition metal dichalcogenides ({TMDs}) are a family of van der Waals layered materials exhibiting unique electronic, optical, magnetic and transport properties. Their technological potentials hinge critically on the ability to achieve controlled fabrication of desirable nanostructures, such as nanoribbons and nanodots. To date, nanodots/nanoislands have been regularly observed, while controlled fabrication of {TMD} nanoribbons remains challenging. Here we report a bottom-up fabrication of {MoSe}2 nanoribbons using molecular beam epitaxy, via an unexpected temperature-induced morphological phase transition from the nanodot to nanoribbon regime. Such nanoribbons are of zigzag nature, characterized by distinct chemical and electronic properties along the edges. The phase space for nanoribbon growth is narrowly defined by proper Se:Mo ratios, as corroborated experimentally using different Se fluxes, and supported theoretically using first-principles calculations that establish the crucial role of the morphological reconstruction of the bare Mo-terminated edge. The growth mechanism revealed should be applicable to other {TMD} systems.}
-      \field{day}{4}
-      \field{issn}{2041-1723}
-      \field{journaltitle}{Nature Communications}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{title}{Fabrication of {MoSe}$_{\textrm{2}}$ nanoribbons via an unusual morphological phase transition}
-      \field{urlday}{7}
-      \field{urlmonth}{6}
-      \field{urlyear}{2018}
-      \field{volume}{8}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{15135}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1038/ncomms15135
-      \endverb
-      \verb{file}
-      \verb Chen2017.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Chen2017.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/ATZEGTX2/ncomms15135.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb https://www.nature.com/articles/ncomms15135
-      \endverb
-      \verb{url}
-      \verb https://www.nature.com/articles/ncomms15135
       \endverb
       \keyw{nanoribbons,tmd}
     \endentry
@@ -4718,8 +4718,8 @@
       \strng{authorbibnamehash}{0545503ebd7ddfa5da3984377a1c613b}
       \strng{authornamehash}{0545503ebd7ddfa5da3984377a1c613b}
       \strng{authorfullhash}{0545503ebd7ddfa5da3984377a1c613b}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{As its name suggests, the 1988 workshop on "Interacting Electrons in Reduced Dimen the wide variety of physical effects that are associated with (possibly sions" focused on strongly) correlated electrons interacting in quasi-one- and quasi-two-dimensional mate rials. Among the phenomena discussed were superconductivity, magnetic ordering, the metal-insulator transition, localization, the fractional Quantum Hall effect ({QHE}), Peierls and spin-Peierls transitions, conductance fluctuations and sliding charge-density ({CDW}) and spin-density ({SDW}) waves. That these effects appear most pronounced in systems of reduced dimensionality was amply demonstrated at the meeting. Indeed, when concrete illustrations were presented, they typically involved chain-like materials such as conjugated polymers, inorganic {CDW} systems and organie conductors, or layered materials such as high-temperature copper-oxide superconductors, certain of the organic superconductors, and the {QHE} samples, or devices where the electrons are confined to a restricted region of sample, e. g. , the depletion layer of a {MOSFET}. To enable this broad subject to be covered in thirty-five lectures (and ab out half as many posters), the workshop was deliberately focused on theoretical models for these phenomena and on methods for describing as faithfully as possible the "true" behav ior of these models. This latter emphasis was especially important, since the inherently many-body nature of problems involving interacting electrons renders conventional effec tive single-particle/mean-field methods (e. g. , Hartree-Fock or the local-density approxi mation in density-functional theory) highly suspect. Again, this is particularly true in reduced dimensions, where strong quantum fluctuations can invalidate mean-field results.}
@@ -4756,8 +4756,8 @@
       \strng{authorbibnamehash}{ac506abf96d8972c3810165ea0990d0f}
       \strng{authornamehash}{ac506abf96d8972c3810165ea0990d0f}
       \strng{authorfullhash}{ac506abf96d8972c3810165ea0990d0f}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The calculation of imaginary-time-displaced correlation functions with the auxiliary-field projector quantum Monte Carlo algorithm provides valuable insight (such as spin and charge gaps) into the model under consideration. One of the authors and M. Imada proposed a numerically stable method to compute those quantities [J. Phys. Soc. Jpn. 65, 189 (1996)]. Although precise, this method is expensive in {CPU} time. Here we present an alternative approach which is an order of magnitude quicker, just as precise, and very simple to implement. The method is based on the observation that for a given auxiliary field the equal-time Green-function matrix G is a projector: G2=G.}
@@ -4880,6 +4880,65 @@
       \field{year}{2012}
       \field{dateera}{ce}
       \keyw{Numerical stability,Numerical Methods,{QR} factorization}
+    \endentry
+    \entry{claveau_mean-field_2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a1d60295859df60661bc715f2cfcf43b}{%
+           family={Claveau},
+           familyi={C\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1d50c37f29aac2c49c7fedb71156f533}{%
+           family={Arnaud},
+           familyi={A\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b5e35ba167f9a98300044cc9cca5daeb}{%
+           family={Matteo},
+           familyi={M\bibinitperiod},
+           given={S.\bibnamedelimi Di},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{05dd7103ccae34d2b0b7f3994311c892}
+      \strng{fullhash}{44760e982cf99b69c96c85a355246b51}
+      \strng{bibnamehash}{44760e982cf99b69c96c85a355246b51}
+      \strng{authorbibnamehash}{44760e982cf99b69c96c85a355246b51}
+      \strng{authornamehash}{05dd7103ccae34d2b0b7f3994311c892}
+      \strng{authorfullhash}{44760e982cf99b69c96c85a355246b51}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The present paper is based on our graduate lectures in condensed-matter physics. We found that the mean-field solution of the Hubbard model is an excellent tool to stimulate students’ reflections towards the treatment of realistic magnetic interactions. We show by detailed analytical and numerical calculations how to find the mean-field solution of the model on a square lattice. We then interpret the physical implications of the ground-state magnetic phase diagram in terms of the electron density and the ratio between the Coulomb repulsion and the electron-structure bandwidth.}
+      \field{issn}{0143-0807}
+      \field{journaltitle}{European Journal of Physics}
+      \field{langid}{english}
+      \field{number}{3}
+      \field{shortjournal}{Eur. J. Phys.}
+      \field{shorttitle}{Mean-field solution of the Hubbard model}
+      \field{title}{Mean-field solution of the Hubbard model: the magnetic phase diagram}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{35}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{035023}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0143-0807/35/3/035023
+      \endverb
+      \verb{file}
+      \verb Claveau2014.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/hubbard-model/Claveau2014.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://stacks.iop.org/0143-0807/35/i=3/a=035023
+      \endverb
+      \verb{url}
+      \verb http://stacks.iop.org/0143-0807/35/i=3/a=035023
+      \endverb
+      \keyw{hubbard}
     \endentry
     \entry{gennes_superconductivity_1999}{book}{}
       \name{author}{1}{}{%

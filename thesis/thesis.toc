@@ -110,7 +110,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Square lattice}{67}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Honeycomb lattice}{67}{section.4.3}
+\contentsline {section}{\numberline {4.3}Honeycomb lattice}{68}{section.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}Nanoribbons}{68}{section.4.4}
 \defcounter {refsection}{0}\relax 
@@ -120,7 +120,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusions and Future Work}{72}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{73}{section*.52}
+\contentsline {chapter}{Bibliography}{73}{section*.53}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
