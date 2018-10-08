@@ -35,11 +35,16 @@
 \input{ch-afqmc/main.tex}
 \input{ch-applications/main.tex}
 \input{ch-conclusion/conclusions.tex}
-\cleardoublepage
+%\cleardoublepage
 \phantomsection 
 \addcontentsline{toc}{chapter}{Bibliography}
 
-\printbibliography
+%\printbibliography
+
+\renewcommand{\bibfont}{\scriptsize}
+\begin{multicols}{2}
+	\printbibliography[heading=none]
+\end{multicols}
 
 \cleardoublepage
 

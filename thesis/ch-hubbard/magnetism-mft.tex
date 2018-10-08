@@ -17,7 +17,6 @@ An unequal number of spin-up and spin-down electrons also decreases the potentia
 An extreme example is a completely polarized lattice.
 In that case, the potential energy is zero.
 More generally, partial spin polarization makes double occupation unlikely, lowering the potential energy.
-
 \begin{figure}[H]
 	\centering
 \hspace{2mm}\includegraphics[trim={0 7.5cm 0 7.5cm},clip, width=0.85 \linewidth]{Hubbard/dos.pdf}
@@ -32,7 +31,6 @@ When we reduce, say the spin-up electron density by $\delta n$, the potential en
 The extra density of electrons $\delta n$ that is added to the down sector will occupy levels with energy greater than $\varepsilon_F$, so that $\delta n = N ( \varepsilon_F ) \delta E$.
 Some spin-up levels below $\varepsilon_F$ that used to be occupied are now empty, which makes $\delta n$ fermions per site increase their energy by $\delta E$, leading to a change in kinetic energy $\delta K = \delta n \delta E = \frac{(\delta n)^2}{N(\varepsilon_F)}$.
 The global change in energy is
-
 \begin{equation}
 \delta E = \delta P + \delta K = \bigg( - U + \frac{1}{N(\varepsilon_F)} \bigg) \big( \delta n \big)^2 = \bigg( - U N ( \varepsilon_F ) + 1 \bigg) \frac{(\delta n)^2}{N(\varepsilon_F)}
 \end{equation}
@@ -48,7 +46,6 @@ We do this variationally in appendix \ref{ap:hubbardObSol}.
 Here we provide the heuristic explanation.
 In the case of the Hubbard model, to find the best possible approximation for the quartic term we start by expressing the number operators in terms of an average plus fluctuations: $n = \left\langle n \right\rangle + ( n - \left\langle n \right\rangle ) \equiv \left\langle n \right\rangle + \delta n$.
 Then, we make this substitution in the interaction term and neglect the term that is second order in the fluctuations:
-
 \begin{equation}\label{eq:meanFieldNop}
 \begin{split}
 n_\uparrow n_\downarrow &= \big( \left\langle n_\uparrow \right\rangle +  \delta n_\uparrow  \big) \big( \left\langle n_\downarrow \right\rangle +  \delta n_\downarrow  \big) = \left\langle n_\uparrow \right\rangle \left\langle n_\downarrow \right\rangle + \left\langle n_\downarrow \right\rangle ( n_\uparrow - \left\langle n_\uparrow \right\rangle ) + \left\langle n_\uparrow \right\rangle ( n_\downarrow - \left\langle n_\downarrow \right\rangle ) + \mathcal{O}((\delta n)^2) \\
@@ -56,7 +53,6 @@ n_\uparrow n_\downarrow &= \big( \left\langle n_\uparrow \right\rangle +  \delta
 \end{split}
 \end{equation}
 and from equation (\ref{eq:meanFieldNop}), we obtain the quadratic mean field Hamiltonian
-
 \begin{equation}
 \mathcal{H}_{\text{MF}} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} \bigg) + U \sum_i \bigg( n_{i,\uparrow} \left\langle n_{i, \downarrow} \right\rangle + n_{i, \downarrow} \left\langle n_{i, \uparrow} \right\rangle - \left\langle n_{i, \uparrow} \right\rangle \left\langle n_{i, \downarrow} \right\rangle \bigg) ,
 \end{equation}
@@ -70,7 +66,6 @@ Now we take on a \acl{LG} theory kind of approach.
 We compute the energy $E$ for fixed $n$ as a function of $m$, and inspect the system for ferromagnetic ordering: if the minimum lies at $m = 0$, the system is paramagnetic, otherwise it is ferromagnetic.
 For simplicity, let us now consider the \acs{1D} model.
 Since the average densities are site-independent, we can easily write down the polarized dispersion relations (up to an additive constant), and add these levels up for the various possible fillings of the lattice.
-
 \begin{equation}\label{eq:meanFieldDispersion}
 \varepsilon_{\uparrow k} = U ( n - m ) - 2 t \cos k \quad \varepsilon_{\downarrow k} = U ( n + m ) - 2 t \cos k ,
 \end{equation}
@@ -85,7 +80,6 @@ This step is altered for the \acs{AF} case since we are assuming the up and down
 In such case, we fix $n = N_p / 2$ and loop over $m = 1/ N, 2 / N,...$, staying within the first Brillouin zone.
 Out of the energies computed in this way for varying $N_{\uparrow, \downarrow}$, the lowest gives the magnetization for the chosen values of $N_p$ and $U$.
 \end{itemize}
-
 \begin{figure}
 \hspace{-3mm}
 \includegraphics[trim={0 0 0 0},clip, scale=0.47]{Hubbard/mfHubbard.png}
@@ -104,13 +98,11 @@ At $U = 2$, the phase is paramagnetic since the energy is minimized at $m = 0$. 
 
 Are these results consistent with Stoner's criterion: $U N ( \varepsilon_F ) > 1$?
 First, we use the density of states obtained in section (\ref{sec:exactSolutions}) to find a relation between the density $\rho$ and the Fermi energy $\varepsilon_F$:
-
 \begin{equation}
 \rho ( \varepsilon_F ) = 2 \int_{-2t}^{\varepsilon_F} dE N ( E ) \leadsto \rho_{\text{1D}} ( \varepsilon_F ) = \frac{2}{\pi} \arccos\bigg( \frac{-\varepsilon_F}{2t}\bigg) ,
 \end{equation}
 which behaves as expected, i.e. $\rho ( -2 t ) = 0$,  $\rho ( 0 ) = 1$, $\rho ( 2 t ) = 2$.
 In terms of the electron density:
-
 \begin{equation}
 N ( \rho ) = \frac{1}{2\pi t \sin(\pi \rho / 2)} ,
 \end{equation}
@@ -126,7 +118,6 @@ Even if the transition does occur, generally its details are not perfectly captu
 \subsection{Self-consistent solution in the \ac{GCE}}\label{subsec:selfconsistent}
 
 In this section, we solve the mean field Hamiltonian in an iterative, self-consistent manner.
-
 \begin{equation}
 \mathcal{H}_{\text{MF}} = \mathcal{H}_\uparrow + \mathcal{H}_\downarrow + \mathcal{C} , \,\, \mathcal{H}_\sigma = - t \sum_{\left\langle i, j \right\rangle} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) + U \sum_i n_{i,\sigma} \left\langle n_{i,-\sigma} \right\rangle , \,\, \mathcal{C} = - U \sum_i \left\langle n_{i,\uparrow} \right\rangle \left\langle n_{i,\downarrow} \right\rangle
 \end{equation}
@@ -146,25 +137,21 @@ Typical choices are the random initial condition or the paramagnetic state.
 Then, we repeat the following steps until convergence.
 
 First, we diagonalize $\mathcal{H}_\sigma$, obtaining the one-particle spectrum $\varepsilon_{\alpha, \sigma}$ and the corresponding eigenvectors.
-
 \begin{equation}
 \mathcal{H}_{\text{MF}} = \sum_{\alpha, \sigma} \varepsilon_{\alpha, \sigma} d_{\alpha, \sigma}^\dagger d_{\alpha, \sigma} + \mathcal{C} , \,\, d_{\alpha, \sigma} = \sum_i Q_{\alpha i, \sigma}^\star c_{i,\sigma}
 \end{equation}
 
 Given a number of electrons per unit cell, compute the chemical potential corresponding to that filling implicitly through (we use the bissection method):
-
 \begin{equation}\label{eq:implicitChemPot}
 \frac{1}{N} \sum_{\alpha, \sigma} (  e^{\beta ( \varepsilon_{\alpha, \sigma} - \mu ) } +1 )^{-1} = n_e , \,\, \text{(the number of electrons per unit cell)}
 \end{equation}
 
 Recompute mean field parameters, and check for convergence: at iteration $I$, $\left\langle n_{i,\sigma} \right\rangle_I \approx \left\langle n_{i,\sigma} \right\rangle_{I - 1}$.
-
 \begin{equation}\label{eq:selfConsistent}
 \left\langle n_{i,\sigma} \right\rangle = \sum_\alpha | Q_{\alpha i, \sigma} |^2 ( 1 + e^ { \beta ( \varepsilon_{\alpha, \sigma} - \mu )} )^{-1}
 \end{equation}
 
 To compare with the results of our \ac{QMC} simulations, we may compute other observables, such as the spin-spin correlation, by inverting the transformation above: $c_{i, \sigma} = \sum_{\alpha} Q_{\alpha i, \sigma} d_{\alpha, \sigma}$, yielding $\left\langle c_{i,\sigma}^\dagger c_{j,\sigma} \right\rangle = \sum_{\alpha, \beta} Q_{\beta i, \sigma}^\star Q_{\alpha j, \sigma} \left\langle d_{\beta,\sigma}^\dagger d_{\alpha,\sigma} \right\rangle = \sum_\alpha Q_{\alpha i, \sigma}^\star Q_{\alpha j, \sigma} f ( \varepsilon_{\alpha, \sigma} ) $, where $f (\varepsilon_{\alpha, \sigma})$ is the Fermi function.
-
 \begin{equation}
 \begin{split}
 &\left\langle S_i^z S_j^z \right\rangle = \left\langle ( n_{i,\uparrow} -  n_{i,\downarrow} ) ( n_{j,\uparrow} -  n_{j,\downarrow} )  \right\rangle = \sum_{\sigma} \left( \left\langle c_{i,\sigma}^\dagger c_{i,\sigma} c_{j,\sigma}^\dagger c_{j,\sigma} \right\rangle - \left\langle c_{i,-\sigma}^\dagger c_{i,-\sigma} c_{j,\sigma}^\dagger c_{j,\sigma} \right\rangle \right) \\

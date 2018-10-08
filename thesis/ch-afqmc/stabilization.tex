@@ -55,7 +55,6 @@ The matrix is decomposed in the form $\bm A = \bm Q \bm R$, with $\bm Q$ orthogo
 Decompositions of this type explicitly separate the largely different numerical scales for a \emph{column-stratified} matrix $\bm A$, as the example below shows.
 Matrix elements represented as $x$ are $\mathcal{O}(1)$, while the larger sizes represent different numerical scales.
 A good compromise between speed and stability is the QR decomposition with column pivoting via Householder reflections \cite{newman_computational_2012}, which is the subroutine we use in our implementation, following \cite{bai_stable_2011}, where rigorous bounds are proven on the conditioning of the matrices obtained in this fashion.
-
 \begin{equation}
 \bm Q^{-1} \bm A \bm T^{-1} =
 \begin{pmatrix}
@@ -89,7 +88,6 @@ The procedure we present is applied after multiplying together as many $\bm B$-m
 We start by QR-decomposing $\bm B_0 = \bm Q_0 \bm R_0 \bm P_0$, where $\bm Q_0$ is orthogonal, $\bm R_0$ is upper triangular, and $\bm P_0$ is a permutation matrix resulting from column pivoting.
 Although it is not guaranteed, the diagonal of $\bm R$ generally reflects the magnitudes of the singular values of $\bm B_0$.
 Extracting the diagonal $\bm D_0 = \text{diag} ( \bm R_0 )$, we define $\bm T_0 = \bm D_0^{-1} \bm R_0 \bm P_0$ so that
-
 \begin{equation}
 \bm B_0 = \bm Q_0 \bm R_0 \bm P_0 = \bm Q_0 \bm D_0 ( \bm D_0^{-1} \bm R_0 \bm P_0 ) = \bm Q_0 \bm D_0 \bm T_0 ,
 \end{equation}
@@ -98,7 +96,6 @@ leaving $\bm T_0$ well conditioned, which will be crucial in what follows.
 Now, for $\lambda = 1, 2, ... \Lambda$, $\bm Q \bm R \bm P$-decompose: $(\bm B_\lambda \bm Q_{\lambda-1}) \bm D_{\lambda-1} = \bm Q_\lambda \bm R_\lambda \bm P_\lambda \equiv \bm Q_\lambda \bm D_\lambda \bm T_\lambda$, with the diagonal matrix $\bm D_\lambda = \text{diag} ( \bm R_\lambda ) $, and $\bm T_\lambda = \bm D_\lambda^{-1} \bm R_\lambda \bm P_\lambda$.
 Note that $\bm B_\lambda \bm Q_{\lambda-1} \bm D_{\lambda-1}$ is column-stratified, so that the diagonal matrix contains explicitly separated numerical scales.
 Finally, the $\bm B$-matrix chain becomes
-
 \begin{equation}
 \bm B_{\Lambda - 1} ... \bm B_1 \bm B_0 = \bm Q_{\Lambda - 1} \bm D_{\Lambda -2 } ( \bm T_{\Lambda-1} ... \bm T_1 \bm T_0 ) \equiv \bm Q \bm D \bm T ,
 \end{equation}
@@ -108,7 +105,6 @@ Note that the $\bm B$-matrices we consider are already partial products of the o
 We suppose that we can multiply $L / \Lambda $ of them stably, and then decouple the numerical scales by identifying column-stratified matrices and applying the procedure above.
 Imagine that we have already decomposed a partial product $\bm B ( \tau, 0 ) = \bm Q \bm D \bm T$, and that we want to extend the single-propagator to imaginary time $\tau + \tau_0$, where $\tau_0$ is the time we can reach by simply multiplying $\bm B$'s together, without affecting precision.
 Then, schematically, we can see that the numerical scales are explicitly separated:
-
 \begin{equation}
 \bm B ( \tau + \tau_0 , 0 ) = \underbrace{\bm B ( \tau + \tau_0, \tau ) \bm Q \bm D}_{\bm Q' \bm D' \bm T'} \bm T = 
 \bm B \bm Q \begin{pmatrix}
@@ -131,11 +127,18 @@ $$ \mbox{\Huge x} $$ & $$ \mbox{\huge x} $$ & $$ \mbox{\Large x} $$ & $$ \mbox{\
 
 After successive decompositions, the chain of $\bm B$-matrices in Eq.(\ref{eq:eqG}) takes on the form $\bm Q \bm D \bm T$.
 Using the orthogonality condition $\bm Q^{-1} = \bm Q^T$, and decomposing $\bm Q^T \bm T^{-1} + \bm D$ in $\bm Q' \bm D' \bm T'$:
-
 \begin{equation}
 ( \bm I + \bm Q \bm D \bm T )^{-1} = [ \bm Q ( 
 \bm Q^T \bm T^{-1} + \bm D ) \bm T ]^{-1} = \bm T^{-1} ( \underbrace{\bm Q^T \bm T^{-1} + \bm D}_{\bm Q' \bm D' \bm T'} )^{-1} \bm Q^T = ( \bm T' \bm T )^{-1} (\bm D')^{-1} (\bm Q \bm Q')^{T} ,
 \end{equation}
+\begin{figure}[H]\label{fig:divergences}
+\hspace{0.3cm}
+\includegraphics[scale=0.55]{Afqmc/OrdersOfMagnitude_N=64sites.png}
+\hspace{0.3cm}
+\includegraphics[scale=0.55]{Afqmc/OrdersOfMagnitude_N=96sites.png}
+\caption[Exponentially divergent diagonal entries of $\bm D'$, showing the orders of magnitude spanned by the matrix elements of the stabilized matrix product.]{Exponentially divergent (and order one)  diagonal entries of $\bm D'$, showing the orders of magnitude spanned by the matrix elements of the stabilized matrix product.
+The depicted systems are the same of Fig.(3.1). }
+\end{figure}
 
 The idea is to isolate the divergent scales in $\bm D$ right up until they are combined with the order one elements of $\bm Q^T \bm T^{-1}$, which cut off the divergent scales.
 This is analogous to what happens in the band picture, where the unit term cuts off divergent scales in $e^{\beta ( E - \mu )}$ when we compute the occupation of a state (which is an element of the Green's matrix).
@@ -146,11 +149,18 @@ We gave an intuitive picture which we now make mathematically precise.
 One may safely assume that $\bm Q^T \bm T^{-1}$ has moderate magnitude and condition number, so that when we add the first many elements of the diagonal $\bm D$, which are typically huge, we end up with diagonally dominant matrix.
 Its first many rows are essentially a diagonal matrix plus a zero block on the right.
 The remaining rows determine the effective condition number, so that $\kappa ( \bm Q^T \bm T^{-1} + \bm D )$ is actually reduced and the matrix becomes better conditioned.
-
 This corresponds to defining numerical stability operationally.
 We maintain the numerical scales explicitly, so that the information that we lose at the end is practically irrelevant in computing the Green's function: because of the way we organized the calculation, the overwriting of small scales by unit numbers and of unit scales by big numbers does not decrease precision, instead cutting off certain well picked numerical scales.
+\begin{figure}[H]\label{fig:divergences}
+\includegraphics[scale=0.55]{Afqmc/conditionNumberNaive.png}
+\hspace{-0.8cm}
+\includegraphics[scale=0.55]{Afqmc/DivergentScalesComparison.png}
+\caption[Condition number of $\bm M_l = \prod_l \bm B_l$ obtained by multiplying $\bm B$-matrices naively. Absolute values of the diagonal entries of $\bm D'$ and corresponding condition number of the matrix to invert to obtain the Green's function.]{Left: Exponentially growing condition number $\kappa [ \bm M_l ]$ obtained by multiplying $\bm B$-matrices naively.
+Right: Absolute values of the diagonal entries of $\bm D'$ for varying $\beta$ and $U$ and corresponding condition number of the matrix to invert to obtain the Green's function: $\kappa ( \bm Q^T \bm T^{-1} + \bm D )$.
+Here, we show that are able to stabilize a multiplication of $\bm B$-matrices with elements spanning about 150 orders of magnitude, as can be seen by the elements of $\bm D'$. }
+\end{figure}
 
-In the band picture, this becomes particularly evident.
+In the band picture, our reasoning becomes particularly evident.
 As long as a state deep into the band is occupied, it does not matter whether it is amplified by say $10^{100}$ or even $10^{1000}$.
 The same applies for high energy states, which must be cut off anyway, so there is no problem in attenuating them by $10^{-100}$ or $10^{-1000}$.
 In our calculation of $\bm G$, this corresponds to finding the single-particle states for fixed HS field $\bm h$ via the transformation matrices $\bm Q$ and $\bm T$.
@@ -159,7 +169,6 @@ These do not impact the calculation of $\bm G$ significantly, and because the co
 
 A more accurate alternative proposed in \cite{bai_stable_2011} uses another more efficient method of separating the numerical scales.
 The idea is to define two diagonal matrices of big and small entries, respectively $\bm D^b$ and $\bm D^s$, defined as
-
 \begin{equation}
 i = 0,..., N-1 :\,\,
 D_{i i}^b =
@@ -176,7 +185,6 @@ D_{i i} , \,\, \text{if} \,\, | D_{i, i} | \le 1 \\
 \end{equation}
 so that $\bm D = \bm D^b \bm D^s$ .
 Now, to compute the inverse, we can pull out $\bm D^b$, so that $(\bm D^b)^{-1}$ annihilates the top many rows of $\bm Q^T$, while $\bm D^s$ annihilates the bottom many rows of $\bm T$, isolating the relevant numerical scales, and leaving us with the fairly well conditioned matrix $(\bm D^b)^{-1} \bm Q^T + \bm D^s \bm T$ to invert.
-
 \begin{equation}
 ( \bm Q^T \bm T^{-1} + \bm D^b \bm D^s )^{-1} = \bm T^{-1} [ (\bm D^b)^{-1} \bm Q^T + \bm D^s \bm T ]^{-1} (\bm D^b)^{-1}
 \end{equation}
@@ -192,7 +200,6 @@ In practice, it is verified that sufficiently low temperatures to study say the 
 
 Given the $\bm Q \bm R \bm P$ decomposition of a matrix, we can obtain its $\bm P \bm R \bm Q$ decomposition (with partial pivoting), so that the partial products can be built up from the left through successive $\bm T_L \bm D_L \bm Q_L$ decompositions (the subscript meaning \say{left}).
 Define the row/column reversing matrix 
-
 \begin{equation}
 \bm P_r \equiv
 \begin{pmatrix}
@@ -204,33 +211,27 @@ Define the row/column reversing matrix
 \end{equation}
 so that $\bm B \bm P_r$ reverses the order of the columns of $\bm B$, and $\bm P_r \bm B$ reverses the order of the rows.
 Now $\bm Q \bm R \bm P$-decompose $(\bm P_r \bm B)^T = \tilde{\bm Q} \tilde{\bm R} \tilde{\bm P}$, and define $\bm Q \equiv \bm P_r \tilde{\bm Q}^T$, $\bm R \equiv \bm P_r \tilde{\bm R}^T \bm P_r$, $\bm P \equiv \bm P_r \tilde{\bm P}^T \bm P_r$, giving
-
 \begin{equation}
 \bm B = \underbrace{\bm P_r \bm P_r}_{\bm I} \bm B = \bm P_r ( \tilde{\bm Q} \tilde{\bm R} \tilde{\bm P} )^T =  \bm P_r \tilde{\bm P}^T \underbrace{\bm P_r \bm P_r}_{\bm I} \tilde{\bm R}^T \underbrace{\bm P_r \bm P_r}_{\bm I} \tilde{\bm Q}^T = \bm P \bm R \bm Q = \bm P \bm R \bm D^{-1} \bm D \bm Q \equiv \bm T \bm D \bm Q ,
 \end{equation}
 where we reversed the definition of $\bm T$, and the successive decompositions are obtained by multiplying other $\bm B$-matrices on the the right: $\bm T (\bm D \bm Q \bm B') = \bm T \bm T' \bm D' \bm Q'$, and so on.
-
 At the first slice, we compute the partial products and store their decompositions
-
 \begin{equation}
 \underbrace{ \overbrace{ \underbrace{\bm B_{L - 1} \bm B_{L-2} ... \bm B_{L - 1- L / \Lambda}}_{(\bm T_L \bm D_L \bm Q_L)_{0} }  \bm B_{L - 2 - L / \Lambda} ...\bm B_{L - 2 - 2 L / \Lambda} }^{(\bm T_L \bm D_L \bm Q_L)_{1}} ... \bm B_{L / \Lambda - 1} ...  \bm B_0}_{(\bm T_L \bm D_L \bm Q_L)_{\Lambda - 1}}
 \end{equation}
 and as the $\bm B$-matrices are moved onto the left, we build their partial product from the right and decompose it in $\bm Q_R \bm D_R \bm T_R$, saving the resulting successive decompositions in place of the $\bm T_L \bm D_L \bm Q_L$ decompositions which become unneeded.
 For example, when the second partial product is on the left:
-
 \begin{equation}
 \underbrace{\bm B_{L / \Lambda - 1} ...  \bm B_0}_{(\bm Q_R \bm D_R \bm T_R)_{0}} ... \overbrace{ \underbrace{\bm B_{L - 1} \bm B_{L-2} ... \bm B_{L - 1- L / \Lambda}}_{(\bm T_L \bm D_L \bm Q_L)_{0} } ...  \bm B_{2 L / \Lambda -1} ...\bm B_{L / \Lambda} }^{(\bm T_L \bm D_L \bm Q_L)_{\Lambda - 2}} 
 \end{equation}
 so that at the $\lambda$-th partial product, we obtain $(\bm Q_R \bm D_R \bm T_R )_{\lambda -1} (\bm T_L \bm D_L \bm Q_L )_{\Lambda - 1 - \lambda}$, and generally:
-
 \begin{equation}
-\bm G ( \tau, \tau ) = [\bm I + \bm B ( \tau, 0 ) \bm B ( \beta, \tau ) ]^{-1} = ( \bm I + \bm Q_R \bm D_R \bm T_R \bm T_L \bm D_L \bm Q_L )^{-1} = \bm Q_L^T ( \bm Q_R^T \bm Q_L^T + \bm D_R \bm T_R \bm T_L \bm D_L )^{-1} \bm Q_R^T ,
+\bm G ( \tau, \tau ) = [\bm I + \bm B ( \tau, 0 ) \bm B ( \beta, \tau ) ]^{-1} = ( \bm I + \bm Q_R \bm D_R \bm T_R \bm T_L \bm D_L \bm Q_L )^{-1} = \bm Q_L^T ( \underbrace{\bm Q_R^T \bm Q_L^T + \bm D_R \bm T_R \bm T_L \bm D_L}_{\bm Q' \bm D' \bm T'} )^{-1} \bm Q_R^T ,
 \end{equation}
 where we may now apply any of the two methods described in the previous section to stably compute the inverse in brackets.
 We will generalize the \say{cut off} method so as to obtain time-displaced Green's functions, the price to pay being that the matrices increase their size to $2 N \times 2 N$.
 
 The inverse of a matrix composed of blocks is given by the Aitken block diagonalization formula
-
 \begin{equation}
 \begin{pmatrix}
 \bm A & \bm B \\
@@ -244,7 +245,6 @@ The inverse of a matrix composed of blocks is given by the Aitken block diagonal
 \end{equation}
 
 A particular choice of these matrices gives both the equal- and the unequal-time Green's functions:
-
 \begin{equation}
 \begin{pmatrix}
 \bm I & \bm B_{\bm h} (\tau, 0) \\
@@ -264,7 +264,6 @@ A particular choice of these matrices gives both the equal- and the unequal-time
 
 We can now substitute the decompositions of the partial products that we store and update throughout the algorithm, and invert while being careful in isolating the diverging scales.
 The method is very stable, but numerically more expensive since the matrices at hand are twice as big.
-
 \begin{equation}
 \begin{split}
 \begin{pmatrix}

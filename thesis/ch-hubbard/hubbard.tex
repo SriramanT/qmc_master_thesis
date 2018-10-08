@@ -15,10 +15,9 @@ Some of these are not explained by band theory, namely the Mott metal-insulator 
 
 First, note that the effects of correlations cannot possibly be the same in narrow energy bands and in the free electron gas.
 To see this, we may simply recall the shape of a $d-$wave function.
-
 \begin{figure}[H]\label{fig:hydrogenWF}
 \centering
-\includegraphics[width = 10cm]{Hubbard/Hydrogen.jpeg}
+\includegraphics[width = 9cm]{Hubbard/Hydrogen.jpeg}
 \caption[Hydrogen atomic wave functions.]{Probability density plots for different hydrogen orbital wave functions corresponding to quantum numbers $(n, l, m)$ for $n = 3$.
 d-wave functions correspond to $l=2$.
 We compare them with p-wave functions ($l=1$). The probability density is higher in a region near the nucleus, and its shape leads to a non-uniform distribution of electronic charge, as opposed to the case of the free electron gas. (adapted from \cite{hydrogen})}
@@ -76,14 +75,12 @@ The extent of atomic behavior depends, of course, on the strength of the interac
 Imagine a hypothetical partially filled narrow $s-$band with $n$ electrons per atom.
 Suppose you have obtained Bloch wave functions $\psi_{\bm k}$ corresponding to energies $\varepsilon_{\bm k}$ by solving the Schr\"odinger equation for some spin-independent Hartree-Fock potential that accounts for the average interaction of the $s-$band electrons with electrons on other bands, and the interaction with the other $s-$electrons.
 The electrons on the band evolve according to the Hamiltonian:
-
 \begin{equation}\label{eq:startingHamiltonian}
 \mathcal{H} = \sum_{\bm k \sigma} \bigg( \varepsilon_{\bm k} - \sum_{ \bm k'} \big( 2 V^{\bm k \bm k'}_{\bm k \bm k'} - V^{\bm k \bm k'}_{\bm k' \bm k} \big) \nu_{\bm k'} \bigg) c_{\bm k \sigma}^\dagger c_{\bm k \sigma} +  \frac{1}{2} \sum_{ \substack{\bm k_1 \bm k_2 \\ \bm k_1' \bm k_2'  \sigma_1 \sigma_2 } } V^{\bm k_1 \bm k_2}_{\bm k_1' \bm k_2'}
  c_{\bm k_1 \sigma_1}^\dagger c_{\bm k_2 \sigma_2}^\dagger c_{\bm k_2' \sigma_2} c_{\bm k_1' \sigma_1} ,
 \end{equation}
 where the $\bm k-$sums run over the first Brillouin zone.
 The integrals are defined by
-
 \begin{equation}\label{eq:integrals}
 V^{\bm k_1 \bm k_2}_{\bm k_1' \bm k_2'} \equiv \left\langle \bm k_1 \bm k_2 \bigg| \frac{e^2}{r} \bigg| \bm k_1' \bm k_2' \right\rangle  =  e^2 \int \frac{\psi_{\bm k_1}^\star (\bm x) \psi_{\bm k_1'} (\bm x) \psi_{\bm k_2}^\star (\bm x') \psi_{\bm k_2'}(\bm x') }{| \bm x - \bm x' |} d\bm x d\bm x'
 \end{equation}
@@ -100,7 +97,6 @@ where the summation over repeated indexes is implied.
 In appendix \ref{ap:hubbardObSol}, we obtain the form of $V_{\text{int}}$ in the Hartree-Fock approximation.
 
 We may write the Bloch states $\psi_{\bm k}$ as a combination of Wannier functions localized at each atom.
-
 \begin{equation}
 \psi_{\bm k} (\bm x) = N^{-1/2} \sum_i e^{i \bm k \cdot \bm R_i} \phi (\bm x - \bm R_i), \,\, \text{where} \,\,\, \phi(\bm x) = N^{-1/2} \sum_{\bm k} \psi_{\bm k} (\bm x) , 
 \end{equation}
@@ -110,13 +106,11 @@ Introducting the annihilation (creation) operators of an electron of spin $\sigm
 c_{\bm k \sigma}^{(\dagger)} = N^{-1/2} \sum_i e^{i \bm k \cdot \bm R_i} c_{i\sigma}^{(\dagger)}
 $
 , so that the Hamiltonian becomes 
-
 \begin{equation}
 \mathcal{H} = \sum_{\substack{ i j \\ \sigma} } K_{ij} c_{i \sigma}^\dagger c_{j \sigma} + \sum_{\substack{i j k l \\ \sigma \sigma'} } \bigg[  \frac{1}{2} V^{i j}_{k l}
  c_{i \sigma}^\dagger c_{j \sigma'}^\dagger c_{l \sigma'} c_{ k \sigma} - \bigg( 2 V^{i j}_{k l} - V^{i j} _{l k} \bigg) \nu_{j l} c_{i \sigma}^\dagger c_{ k \sigma} \bigg]  ,
 \end{equation}
 where
-
 \begin{equation}\label{eq:hopping_matrix}
 K_{ij} = N^{-1} \sum_{\bm k} \varepsilon_{\bm k} e^{i \bm k \cdot ( \bm R_i - \bm R_j )}, \, \text{and} \, \, \nu_{j l} = N^{-1} \sum_{\bm k} e^{i \bm k \cdot ( \bm R_j - \bm R_l) }
 \end{equation}
@@ -129,7 +123,6 @@ This suggests the seemingly crude approximation of neglecting all other integral
 However, this approximation is not so radical as it could seem at first sight since the other integrals are indeed much smaller than $U$.
 In fact, for example, for $3d$ electrons of transition metals they are smaller by about two orders of magnitude \cite{hubbard_electron_1963}.
 Keeping only the terms in $U$ in the interaction part, we obtain
-
 \begin{equation}
 \mathcal{H} = \sum_{i, j, \sigma} K_{ij} c_{i\sigma}^\dagger c_{j\sigma} + \frac{U}{2} \sum_{i\sigma} n_{i\sigma} n_{i, -\sigma} - U \sum_{i, \sigma} \nu_{i, i} n_{i, \sigma}
 \end{equation}
@@ -145,7 +138,6 @@ $
 \mathcal{H}_{K} = - \sum_{\bm r \bm r'} K (\bm r - \bm r') \left| \bm r' \right\rangle \left\langle \bm r \right| ,
 $
  we can cast the dispersion relation as the (negative) Fourier transform of the hopping
-
 \begin{equation}
 - \mathcal{H}_{K} \left| \bm k \right\rangle = \frac{1}{\sqrt{N}} \sum_{\bm r \bm r'} K ( \bm r - \bm r' ) e^{i \bm k \cdot \bm r} \left| \bm r' \right \rangle = \frac{1}{\sqrt{N}} \bigg( \sum_{\bm R} K(\bm R) e^{i\bm k \cdot \bm R} \bigg)\bigg( \sum_{\bm r'} e^{i\bm k \cdot \bm r'} \left| \bm r' \right\rangle \bigg) = \varepsilon_{\bm k} \left| \bm k \right\rangle
 \end{equation}
@@ -155,7 +147,6 @@ This gives us an interpretation of the $\bm K$ matrix: given the dispersion rela
 Let us now suppose that we have the simplest uniform nearest neighbor hopping model with Hubbard-type electron interactions.
 Going back to equation (\ref{eq:hopping_matrix}), and recalling that the sum on $\bm k$ is restricted to the first Brillouin zone, we obtain the usual tight binding result: $K_{\left\langle i j \right\rangle} = - t \in \mathbbm{R}$ and $0$ otherwise (i.e. $\bm K$ is a very sparse matrix that is only non-zero for $i, j$ nearest neighbors).
 Thus, the full Hamiltonian reads
-
 \begin{equation}\label{eq:hubbard_hamiltonian}
 \mathcal{H} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg(c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) + U \sum_{i} n_{i,\uparrow} n_{i\downarrow} -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg) ,
 \end{equation}
@@ -173,7 +164,6 @@ A lattice is said to be bipartite if it can be divided into two sublattices $\ma
 For example, the square and honeycomb lattices are bipartite, whereas the triangular lattice is not.
 In a bipartite lattice, antiferromagnetic (\acs{AF}) order is favored.
 In contrast, \acs{AF} order is frustrated on the triangular and other non bipartite lattices.
-\vspace{-0.2cm}
 \begin{figure}[H]\label{fig:bipartite}
 \centering
 \includegraphics[width = 6cm]{Hubbard/bipartite}
@@ -184,7 +174,6 @@ We represent a configuration where fermions of a given spin have as their neighb
 \end{figure}
 
 Introducing a \ac{PHT},
-
 \begin{equation}\label{eq:PHT}
 d_{ i, \sigma}^\dagger = (-1)^i c_{i, \sigma} ,
 \end{equation}
@@ -202,7 +191,6 @@ $
 is unchanged under a \ac{PHT}.
 Expanding it, we get $U n_{i,\uparrow} n_{i,\downarrow} - \frac{U}{2} (n_{i,\uparrow} + n_{i,\downarrow}) + \frac{U}{4}$, which indeed differs from the original interaction term by a shift in the chemical potential ($\mu \rightarrow \mu + U / 2$) plus a constant.
 Thus, the particle-hole symmetric Hamiltonian is equivalent to the original one.
-
 \begin{equation}
 \mathcal{H} = -t \sum_{\left\langle i, j \right \rangle, \sigma} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{i,\sigma}^\dagger c_{j,\sigma} \bigg) + U \sum_{i} \bigg( n_{i,\uparrow} - \frac{1}{2} \bigg) \bigg( n_{i,\downarrow} - \frac{1}{2} \bigg) -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg)
 \end{equation}

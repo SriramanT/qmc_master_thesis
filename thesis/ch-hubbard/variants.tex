@@ -3,7 +3,6 @@
 More general  models than the one considered so far exist.
 Notwithstanding, a limited basis of single-electron orbitals allows one to describe the essential electronic degrees of freedom.
 In fact, all the methodology we shall present in the next chapter generalizes for Hamiltonians of the class \cite{hanke_electronic_nodate}:
-
 \begin{equation}\label{eq:variantsForm}
 \mathcal{H} = - \sum_{i, j, \sigma} K_{ij} \bigg( c_{i, \sigma}^\dagger c_{j, \sigma} + c_{j, \sigma}^\dagger c_{i, \sigma} \bigg) + \sum_{i, j} V_{ij} n_i n_j ,
 \end{equation}
@@ -31,7 +30,6 @@ Thus, simulations can be stabilized at lower temperature, potentially allowing t
 
 The case of interest for simulating \acs{TMD} nanoribbons comes from considering a particular multi-orbital form of the very general Hamiltonian of Eq.(\ref{eq:variantsForm}).
 Additional (greek) indexes are added to represent different \say{orbitals} on the same site, and we consider interactions only between electrons on the same site and  orbital:
-
 \begin{equation}\label{eq:variantTMD}
 \mathcal{H} = - \sum_{\substack{i, j \\ \alpha, \beta, \sigma}} K_{(i\alpha),(j\beta )} \bigg( c_{i,\alpha, \sigma}^\dagger c_{j,\beta, \sigma} + c_{j,\beta , \sigma}^\dagger c_{i,\alpha, \sigma} \bigg) + \frac{U}{2} \sum_{\substack{i, \alpha \\ \sigma \neq \sigma'} } n_{i\alpha, \uparrow} n_{i\alpha, \downarrow} + \frac{U'}{2} \sum_{\substack{i, \alpha \neq \beta \\ \sigma, \sigma'}} n_{i\alpha, \sigma} n_{i\beta, \sigma'} ,
 \end{equation}

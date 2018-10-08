@@ -3,7 +3,6 @@
 
 In QMC simulations, physical observables are extracted by measuring them directly over the course of the sampling of the  configuration space. The single-particle (equal time) Green's Function is useful to obtain quantities such as density and kinetic energy, and is simply the inverse of the $\bm M$-matrix that we already compute to obtain the acceptance ratio at each step.
 At imaginary-time $\tau = \Delta \tau \lambda$: 
-
 \begin{equation}\label{eq:eqG}
 G_{ij}^\sigma ( \tau, \tau) = \left\langle c_{i,\sigma} c_{j,\sigma}^\dagger \right\rangle_{\bm h} = \bigg( (\bm I + \prod_{l= \lambda - 1}^0 \bm B_{l,\sigma} ( \widetilde{\bm h}_l ) \prod_{l= L -1}^\lambda \bm B_{l,\sigma} ( \widetilde{\bm h}_l )  )^{-1} \bigg)_{ij} \equiv \bigg( (\bm I + \bm B_{\bm h}^\sigma (\tau, 0) \bm B_{\bm h, }^\sigma (\beta, \tau)  )^{-1} \bigg)_{ij}
 \end{equation}
@@ -13,7 +12,6 @@ For a fixed HS field, the problem becomes a free fermion problem, and one may us
 Eq.(\ref{eq:eqG}) is easily shown, and the proof offers some insight into how other observables are written in terms of $G_{ij}^\sigma (\tau, \tau)$ through Wick's theorem.
 In auxiliary field \acs{QMC}, we wish to compute averages of observables $O$ by sampling $\bm h$ configurations, and then averaging $O$ for fixed $\bm h$ (which is computed throughout the simulation) over these.
 Ignoring spin,
-
 \begin{equation}
 \begin{split}
 \left\langle O \right\rangle &= \frac{1}{Z} \Tr [ e^{-\beta \mathcal{H} } O ] = \sum_{\bm h} P (\bm h) \left\langle O \right\rangle_{\bm h} + \mathcal{O}(\Delta \tau^2 ) , \,\,
@@ -24,7 +22,6 @@ P ( \bm h ) &= \frac{C(\bm h) \det [ \bm I + \bm B_{\bm h} ( \beta, 0 ) ] }{\sum
 \end{equation}
 and $U_{\bm h} ( \tau', \tau)$ is the imaginary-time evolution operator between $\tau$ and $\tau'$.
 Introducing a ficticious coupling $\eta$ to a one-body operator $O = \bm c^\dagger \bm A \bm c$ that can be taken back to zero later, we obtain 
-
 \begin{equation}\label{eq:connected}
 \begin{split}
 \left\langle O \right\rangle_{\bm h} &= \partial_\eta \bigg( \ln \Tr \big[ U_{\bm h} (\beta, \tau ) e^{\eta O} U_{\bm h} (\tau, 0) \big] \bigg) \bigg|_{\eta = 0} = \partial_\eta \bigg( \ln \det [ \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta \bm A} \bm B_{\bm h} (\tau, 0)  ] \bigg) \bigg|_{\eta = 0} \\
@@ -38,13 +35,11 @@ Introducing a ficticious coupling $\eta$ to a one-body operator $O = \bm c^\dagg
 In particular, for the case of the Green's function: $O = c_i c_j^\dagger$, $A_{xy} = \delta_{i j} - \delta_{xj} \delta_{yi}$, leading to Eq.(\ref{eq:eqG}).
 A generalization of Eq.(\ref{eq:connected}) for higher order derivatives allows us to obtain the connected correlation functions, or cumulants (denoted $\left\langle\langle \quad \right\rangle\rangle_{\bm h}$), revealing a connection with Wick's theorem.
 Defining
-
 \begin{equation}
 \left\langle\langle O_n O_{n-1}... O_1  \right\rangle\rangle_{\bm h} = \partial_{\eta_n} \partial_{\eta_{n-1}} ... \partial_{\eta_1} \ln \Tr [ U_{\bm h} (\beta, \tau ) e^{\eta_n O_n} e^{\eta_{n-1} O_{n-1}} ... e^{\eta_1 O_1} U_{\bm h} (\tau, 0) ] |_{\eta_n = \eta_{n-1} =...= \eta_1 = 0}
 \end{equation}
 we see a pattern emerging, relating multi-point correlators and cumulants.
 Omitting the subscript $\bm h$:
-
 \begin{equation}\label{eq:allOrderCumulants}
 \begin{split}
 \left\langle\langle O_1  \right\rangle\rangle &= \left\langle O_1  \right\rangle \quad
@@ -60,12 +55,11 @@ This is equivalent to the zero temperature version of Wick's theorem that we sta
 We can now compute the cumulants order by order.
 In particular, one can show that operators of the type 
 $\left\langle \left\langle c_{x_n}^\dagger c_{y_n} c_{x_{n-1}}^\dagger c_{y_{n-1}} ... c_{x_1}^\dagger c_{y_1}  \right\rangle\right\rangle_{\bm h}$
-can always be written in terms of a linear combination of products of pair averages of the type $\left\langle c^\dagger c \right\rangle$ \cite{f._assaad_quantum_2002}
+can always be written in terms of a linear combination of products of pair averages of the type $\left\langle c^\dagger c \right\rangle$ \cite{f._assaad_quantum_2002}.
 A case of particular relevance for the observables we shall be interested in is obtained by doing so for a four $c$-operator average, i.e. $n = 2$, and $A_{x y}^{(i)} = \delta_{x, x_i} \delta_{y, y_i}$..
 
 Before proceeding, recall that, for an invertible matrix $\bm A$, the derivative of its inverse with respect to a parameter $\eta$ can be  obtained in terms of the derivative of the matrix itself and its inverse.
 The sought identity is easy to show by using $\bm A^{-1} \bm A = \bm I$ and differentiating both the LHS and the RHS: $\partial_{\eta} ( \bm A^{-1} \bm A ) = 0 \iff ( \partial_\eta \bm A ) \bm A^{-1} + \bm A \partial_\eta \bm A^{-1} = 0 \iff \partial_\eta \bm A^{-1} = - \bm A^{-1} ( \partial_\eta \bm A ) \bm A^{-1}$.
-
 \begin{equation}
 \begin{split}
 &\left\langle \left\langle c_{x_2}^\dagger c_{y_2} c_{x_1}^\dagger c_{y_1}  \right\rangle\right\rangle_{\bm h} = \partial_{\eta_2} \partial_{\eta_1} \bigg( \Tr \bigg[ \ln ( \bm I + \bm B_{\bm h} ( \beta, \tau ) e^{\eta_2 \bm A_2} e^{\eta_1 \bm A_1} \bm B_{\bm h} ( \tau, 0) ) \bigg] \bigg|_{\bm \eta = \bm 0 } \\
@@ -77,7 +71,6 @@ The sought identity is easy to show by using $\bm A^{-1} \bm A = \bm I$ and diff
 \end{equation}
 where, in the last step, we simply identify the only element of the matrix  $( \bm I - \bm G ) \bm A_2 \bm G \bm A_1$ that is on the diagonal, which is the only one that is picked up by the trace.
 By comparison with Eq.(\ref{eq:allOrderCumulants}), we obtain an important relation we will use repeatedly:
-
 \begin{equation}
 \left\langle c_{x_2}^\dagger c_{y_2} c_{x_1}^\dagger c_{y_1} \right\rangle_{\bm h} = \left\langle c_{x_2}^\dagger c_{y_2} \right\rangle_{\bm h} \left\langle c_{x_1}^\dagger c_{y_1} \right\rangle_{\bm h} + \left\langle c_{x_2}^\dagger c_{y_1} \right\rangle_{\bm h} \left\langle  c_{y_2} c_{x_1}^\dagger \right\rangle_{\bm h}
 \end{equation}
@@ -86,7 +79,6 @@ By comparison with Eq.(\ref{eq:allOrderCumulants}), we obtain an important relat
 \label{subsec:observablesGreen}
 
 The simplest observables that can be obtained from the Green's function are the (site-dependent) electron density and the double occupancy:
-
 \begin{equation}
 \rho_{i, \sigma} = \left\langle c_{i,\sigma}^\dagger c_{i,\sigma} \right\rangle = 1 - \left\langle c_{i,\sigma} c_{i,\sigma}^\dagger \right\rangle = 1 - G_{ii}^\sigma  \quad\quad \left\langle n_{i,\uparrow} n_{i,\downarrow} \right\rangle = ( 1 - G_{ii}^\uparrow ) ( 1 - G_{ii}^\downarrow )
 \end{equation}
@@ -95,15 +87,13 @@ It is natural to think of averaging them over the lattice, which is justified by
 Thus, $\rho_{i\sigma}$ and $\left\langle n_{i,\uparrow} n_{i,\downarrow} \right\rangle$ should be independent of the spatial site.
 This statement is strict when exactly solving the model, but it becomes only approximate, i.e. valid only on average in our simulations.
 Thus, to reduce statistical errors, we take the averages
-
 \begin{equation}
 \rho = \frac{1}{N} \sum_\sigma \sum_{i=0}^{N-1} \rho_{i, \sigma} = 2 - \frac{1}{N} \sum_\sigma \sum_{i=0}^{N-1} G_{ii}^\sigma \quad \left\langle n_\uparrow n_\downarrow \right\rangle = 1 - \frac{1}{N} \sum_{i=0}^{N-1} ( G_{ii}^\uparrow + G_{ii}^\downarrow - G_{ii}^\uparrow G_{ii}^\downarrow )
 \end{equation}
 
 It is implicit that $\rho_{i\sigma}$ is already averaged over the HS-field configurations that were sampled through the simulation.
-One must pay attention to the symmetry of the model at hand, since, say a similar model for a disordered system including randomness would not be translationally invariant anymore.
+One must pay attention to the symmetry of the model at hand, since, say a similar model for a disordered system including randomness would not be translationally invariant anymore (the same is true for the model of \acs{TMDNR}s we will ultimately consider).
 Now, the average kinetic energy is similarly obtained.
-
 \begin{equation}
 \left\langle \mathcal{H}_K \right\rangle = - t  \sum_{\left\langle i, j \right\rangle , \sigma} \left\langle ( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} ) \right\rangle = t \sum_{\left\langle i, j \right\rangle , \sigma} ( G_{ij}^\sigma + G_{ji}^\sigma ) = t \sum_{ i, j , \sigma} K_{ij} ( G_{ij}^\sigma + G_{ji}^\sigma )  ,
 \end{equation}
@@ -112,24 +102,21 @@ where the minus sign is due to the switching of the order of the operators bring
 \subsection{Correlation functions}
 
 One of the most important goals of QMC simulations is to inspect the system for order of various types, and to find  associated phase transitions. This is done by computing correlation functions $C_i (j) $, measuring how correlated two sites separated by a distance $j$ are.
-
 \begin{equation}
-C_i (j) = \big\langle \mathcal{O}_{i+j} \mathcal{O}_{i}^\dagger \big\rangle - \langle \mathcal{O}_{i+j} \big\rangle\big\langle\mathcal{O}_{i}^\dagger \big\rangle ,
+C (i, j) = \big\langle \mathcal{O}_{i+j} \mathcal{O}_{i}^\dagger \big\rangle - \langle \mathcal{O}_{i+j} \big\rangle\big\langle\mathcal{O}_{i}^\dagger \big\rangle ,
 \end{equation}
 where $\mathcal{O}$ is an operator corresponding to the order parameter of the phase transition. For example, we might be looking for magnetic order, in which case the relevant operators are $S^z_i$, i.e. $\mathcal{O}_i = n_{i\uparrow} - n_{i\downarrow} \, , \, \mathcal{O}_i^\dagger = n_{i\uparrow} - n_{i\downarrow}$, or superconductivity, where we would like to measure correlations in fermion pair formation: $\mathcal{O}_i = c_{i\downarrow} c_{i\uparrow} \, , \, \mathcal{O}_i^\dagger = c_{i\uparrow}^\dagger c_{i\downarrow}^\dagger$.
-In general, we expect a high temperature disordered phase, for which correlations decay exponentially $C_i (j) \propto e^{-j/\xi}$, where $\xi$ is a characteristic length called the correlation length. At some point, there can be a transition to a low temperature phase, where $C(j) \propto m^2$, where $m$ is the order parameter for the transition. Right at the transition, that is at $T = T_c$, there might be singular behavior. In continuous phase transitions, the correlation length diverges $\xi \propto (T-T_c)^{-\nu}$, and the correlations decay slower (in fact algebraically): $C(j) \propto j^{-\eta}$, in an intermediate behavior between exponential decay and a constant. The \emph{critical} exponents $\nu$, and $\eta$ are characteristic of the transition, or more accurately, of the universality class it belongs to.
+In general, we expect a high temperature disordered phase, for which correlations decay exponentially $C (i, j) \propto e^{-j/\xi}$, where $\xi$ is a characteristic length called the correlation length. At some point, there can be a transition to a low temperature phase, where $C(i, j) \propto m^2$, where $m$ is the order parameter for the transition. Right at the transition, that is at $T = T_c$, there might be singular behavior. In continuous phase transitions, the correlation length diverges $\xi \propto (T-T_c)^{-\nu}$, and the correlations decay slower (in fact algebraically): $C(i, j) \propto j^{-\eta}$, in an intermediate behavior between exponential decay and a constant. The \emph{critical} exponents $\nu$, and $\eta$ are characteristic of the transition, or more accurately, of the universality class it belongs to.
 The behavior of all these quantities on finite lattices does not precisely correspond to the infinite system behavior. The tails of the functions, i.e. the $j\rightarrow \infty$ limit is not well captured. Finite-size scaling is a method to improve on these predictions.
 
-To evaluate correlation functions we use Wick's theorem. Expectations of more than two fermion creation and annihilation operators reduce to products of expectations of pairs of creation and annihilation operators. For example, for spin order in $x/y$ direction:
-
-\begin{equation}
-\big\langle C_i(j) \big\rangle = \big\langle c_{i+j, \downarrow}^\dagger c_{i+j, \uparrow} c_{i, \uparrow}^\dagger c_{i, \downarrow} \big\rangle = G_{i+j, i}^\uparrow G_{i, i + j}^\downarrow
-\end{equation}
+To evaluate correlation functions we use Wick's theorem. Expectations of more than two fermion creation and annihilation operators reduce to products of expectations of pairs of creation and annihilation operators. For example, for spin order in the $x/y$ direction:
+$
+C(i, j) = \big\langle c_{i+j, \downarrow}^\dagger c_{i+j, \uparrow} c_{i, \uparrow}^\dagger c_{i, \downarrow} \big\rangle = G_{i+j, i}^\uparrow G_{i, i + j}^\downarrow
+$.
 
 How would one measure a correlation function experimentally? Fortunately, there is a quantity that is easy to measure called structure factor, which is just the Fourier transform of the correlation function
-
 \begin{equation}
-S(\bm q) = \frac{1}{N} \sum_{i, j} e^{i\bm q \cdot (\bm R_j - \bm R_i) } C_i(j) 
+S(\bm q) = \frac{1}{N} \sum_{i, j} e^{i\bm q \cdot (\bm R_j - \bm R_i) } C(i, j) 
 \end{equation}
 
 The accuracy of QMC simulations can be evaluated by comparing the results for the Fourier transformed correlation functions with the corresponding experimentally measured structure factors.
@@ -139,30 +126,27 @@ The accuracy of QMC simulations can be evaluated by comparing the results for th
 
 By applying Wick's theorem, any \say{equal-time observable} may written in terms of a combination of products of certain elements of the single-particle equal-time Green's matrices $\bm G ( \tau, \tau )$.
 Other \say{unequal-time} quantities, such as susceptibilities require time-displaced correlators.
-
 \begin{equation}
 \chi_{\mathcal{O}} ( i \omega_n ) = \int_0^\beta \left\langle \mathcal{O}^\dagger ( \tau ) \mathcal{O} ( 0 ) \right\rangle e^{i\omega_n \tau} d\tau ,
 \end{equation}
-which are also commonly Fourier transformed, represented in $\bm q$-space, or averaged over the lattice
-
+whose $\omega =0$ component can be Fourier transformed and represented in $\bm q$-space, or averaged over the lattice ($\chi ( bm 0 ) \equiv \chi$), as we shall often do.
+The more general quantity $\chi (\bm q, \omega)$ describes scattering events where momentum changes by $\bm q$, and energy changes by $\bm \omega$.
 \begin{equation}
-\chi ( \bm q ) = \frac{1}{N} \sum_{i, j} e^{i\bm q \cdot ( \bm R_j - \bm R_i )} \int_0^\beta \left\langle \mathcal{O}_{i + j}^\dagger ( \tau ) \mathcal{O}_i ( 0 ) \right\rangle d\tau \quad \text{or} \quad \chi = \frac{1}{N} \sum_{i, j} \int_0^\beta \left\langle \mathcal{O}_{i + j}^\dagger ( \tau ) \mathcal{O}_i ( 0 ) \right\rangle d\tau
+\chi ( \bm q ) = \frac{1}{N} \sum_{i, j} e^{i\bm q \cdot ( \bm R_j - \bm R_i )} \int_0^\beta \left\langle \mathcal{O}_{i + j}^\dagger ( \tau ) \mathcal{O}_i ( 0 ) \right\rangle d\tau \quad \text{or } \quad \chi = \frac{1}{N} \sum_{i, j} \int_0^\beta \left\langle \mathcal{O}_{i + j}^\dagger ( \tau ) \mathcal{O}_i ( 0 ) \right\rangle d\tau
 \end{equation}
 
 When we apply Wick's theorem to this case, contractions between fermion operators at different time slices arise, and thus we require matrix elements of the \emph{unequal}-time Green's function
-
 \begin{equation}
 \bm G ( \tau' , \tau ) = \bm B ( \tau', \tau ) ( \bm I + \bm B ( \tau, 0 ) \bm B ( \beta, \tau ) )^{-1}
 \end{equation}
 
-The Green's function can also be propagated with the $\bm B$-matrices to obtain these unequal-time Green's matrices: $\bm G ( \tau_2, \tau_1) = \bm B ( \tau_2, \tau') \bm G ( \tau', \tau_1)$, $\tau_2 > \tau_1$, or $\bm G ( \tau_1, \tau_2) =  \bm G ( \tau', \tau_1) \bm B^{-1} ( \tau_2, \tau') , \, \tau_2 < \tau_1$, but the procedure becomes unstable as $\beta$ or $N$ increase, as we will discuss later.
+The Green's function can also be propagated with the $\bm B$-matrices to obtain these unequal-time Green's matrices: $\bm G ( \tau_2, \tau_1) = \bm B ( \tau_2, \tau') \bm G ( \tau', \tau_1)$, $\tau_2 > \tau_1$, or $\bm G ( \tau_1, \tau_2) =  \bm G ( \tau', \tau_1) \bm B^{-1} ( \tau_2, \tau') , \, \tau_2 < \tau_1$, but this procedure too becomes unstable as $\beta$ or $N$ increase, as we will discuss later.
 
 The unequal time Green's function is defined as 
 $
 G_{ij} ( \tau_1, \tau_2 ) = \left\langle \mathcal{T} c_i ( \tau_1 ) c_j^\dagger ( \tau_2 ) \right\rangle_{\bm h}
 $, 
 i.e. for $\tau_1 > \tau_2$:
-
 \begin{equation}
 \left\langle \mathcal{T} c_i ( \tau_1 ) c_j^\dagger ( \tau_2 ) \right\rangle_{\bm h} = \frac{\Tr [ U_{\bm h} (\beta, \tau_2 ) U_{\bm h}^{-1} (\tau_1, \tau_2) c_i U_{\bm h} (\tau_1, \tau_2 ) c_j^\dagger U_{\bm h} (\tau_2, 0) ]}{\Tr[ U_{\bm h}(\beta, 0) ]}
 \end{equation}
@@ -173,17 +157,15 @@ $
 $.
 
 Since $\bm A$ is an arbitrary matrix, and the $\bm B$-matrices are matrix exponentials, we can define $\bm B = e^{-\bm A}$:
-
 \begin{equation}
 U_{\bm h}^{-1} (\tau_1, \tau_2) c_i U_{\bm h} (\tau_1, \tau_2 ) = ( \bm B_{\bm h} ( \tau_1 , \tau_2 ) \bm c )_i \,\,
 U_{\bm h}^{-1} (\tau_1, \tau_2) c_i^\dagger U_{\bm h} (\tau_1, \tau_2 ) = ( \bm c^\dagger \bm B_{\bm h}^{-1} ( \tau_1 , \tau_2 )  )_i ,
 \end{equation}
 and since the $\bm B$'s are matrices, not operators, they can come out of the trace.
 This leads to a Wick's theorem for time-displaced Green's functions that stems directly from the equal-time version.
-
 \begin{equation}
 \begin{split}
-G_{ij} ( \tau_1 , \tau_2 ) &= \left\langle  c_i ( \tau_1 ) c_j^\dagger ( \tau_2 ) \right\rangle_{\bm h} = [ \bm B_{\bm h} (\tau_1, \tau_2 ) \bm G (\tau_2, \tau_2 ) ]_{ij} , \tau_1 > \tau_2 \\
-G_{ij} ( \tau_1 , \tau_2 ) &= -\left\langle  c_j^\dagger ( \tau_2 ) c_i ( \tau_1 )  \right\rangle_{\bm h} = - [ ( \bm I - \bm G (\tau_1, \tau_1 ) ) \bm B_{\bm h}^{-1} (\tau_1, \tau_2 ) ]_{ij} , \tau_1 < \tau_2
+G_{ij} ( \tau_1 , \tau_2 ) &= \left\langle  c_i ( \tau_1 ) c_j^\dagger ( \tau_2 ) \right\rangle_{\bm h} = [ \bm B_{\bm h} (\tau_1, \tau_2 ) \bm G ( \tau_2 ) ]_{ij} , \tau_1 > \tau_2 \\
+G_{ij} ( \tau_1 , \tau_2 ) &= -\left\langle  c_j^\dagger ( \tau_2 ) c_i ( \tau_1 )  \right\rangle_{\bm h} = - [ ( \bm I - \bm G ( \tau_1 ) ) \bm B_{\bm h}^{-1} (\tau_1, \tau_2 ) ]_{ij} , \tau_1 < \tau_2
 \end{split}
 \end{equation}

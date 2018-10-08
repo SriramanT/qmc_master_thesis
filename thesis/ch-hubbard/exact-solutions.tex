@@ -5,7 +5,6 @@ $
 \mathcal{H} = \mathcal{H}_K + \mathcal{H}_V ,
 $.
 Let indexes $i$ and $j$ label sites on a lattice, and define
-
 \begin{equation}\label{eq:def_energies}
 \mathcal{H}_K = -t \sum_{\left\langle i, j \right \rangle, \sigma} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) -\mu \sum_i \bigg( n_{i,\uparrow} + n_{i,\downarrow} \bigg) , \,\,\,
 \mathcal{H}_V = U \sum_{i} \bigg( n_{i,\uparrow} - \frac{1}{2} \bigg) \bigg( n_{i,\downarrow} - \frac{1}{2} \bigg) ,
@@ -13,7 +12,6 @@ Let indexes $i$ and $j$ label sites on a lattice, and define
 where $c_{i,\sigma}^{(\dagger)}$ is an operator that annihilates (creates) an electron with spin $\sigma$ on site $i$; $n_{i,\sigma}$ is the number operator counting the number of electrons of spin $\sigma$ on site $i$ (either 0 or 1); $t$ is the hopping parameter related to the kinetic energy of the electrons: it is determined by the overlap of the atomic wave functions on neighboring sites $\left\langle i, j \right\rangle$; $U$ is the on-site Coulomb repulsion between electrons: whenever a site $i$ has two electrons, there is a local repulsion between them corresponding to an energy cost $U n_{i \uparrow} n_{i \downarrow}$ (up to an additive constant); $\mu$ is the chemical potential controlling the electron number (or density).
 
 A given physical observable of interest $\mathcal{O}$, such as the spin-spin correlation, or the magnetic susceptibility may be computed formally by
-
 \begin{equation}\label{eq:projection}
 \left\langle \mathcal{O} \right\rangle = \text{Tr} [ \mathcal{O} \mathcal{P} ] , \text{where
 } \,\, \mathcal{P} \equiv \frac{1}{Z} e^{-\beta \mathcal{H} } , \text{ with } Z = \text{Tr} [ e^{-\beta \mathcal{H} } ]
@@ -21,14 +19,12 @@ A given physical observable of interest $\mathcal{O}$, such as the spin-spin cor
 
 The trace is taken over the Hilbert space corresponding to all possible configurations of the lattice occupation.
 Defining an orthonormal basis of this Hilbert space $\{ | \psi_\alpha \rangle | \alpha = 1, ... D \} $, where $D$ is the dimension of the Hilbert space, the partition function reads
-
 \begin{equation}\label{eq:z_asEigen}
 Z = \Tr [ e^{-\beta \mathcal{H} } ]= \sum_\alpha \left\langle \psi_\alpha | e^{-\beta \mathcal{H} } | \psi_\alpha \right\rangle
 \end{equation}
 
 There are four possible states at each site in the Hubbard model: $\left| \,\, \right\rangle$, $\left|\uparrow \right\rangle$, $\left|\downarrow\right \rangle$, $\left|\uparrow \downarrow \right\rangle $, corresponding, respectively, to no electron, a spin up or spin down electron, and two electrons of opposite spin occupying the site.
 The potential energy operator acts as follows
-
 \begin{equation}
 U (n_{i\uparrow} - \frac{1}{2} ) ( n_{i\downarrow} - \frac{1}{2} ) 
 \begin{cases}
@@ -59,7 +55,6 @@ $
 $
  where $N$ is the number of sites on the lattice. Site $1$ has a single spin-down electron, while site $2$ is doubly occupied, site $3$ is unoccupied, and so on, until we reach site $N$, which has a single spin-up electron.
 The creation and annihilation operators act as follows
-
 \begin{equation}
 c \left| 0 \right\rangle = 0 \quad c^\dagger \left| 0 \right\rangle = \left| 1 \right\rangle \quad c \left| 1 \right\rangle = \left| 0 \right\rangle \quad c^\dagger \left| 1 \right\rangle = 0
 \end{equation}
@@ -69,7 +64,6 @@ n \left| 0 \right\rangle = 0 , \, n \left| 1 \right\rangle = \left| 1 \right\ran
 $.
 Moreover, the operator $c_i^\dagger c_{i+1}^\dagger$, corresponding to the hopping from site $i+1$ to $i$, i.e. to the kinetic energy of the electrons on neighboring sites, annihilates the particle at $i+1$ and creates it back at $i$, i.e. the electron hops from $i+1$ to $i$.
 Ignoring spin:
-
 \begin{equation}
 c_i^\dagger c_{i+1}^\dagger \begin{cases}
 \left|0 0 \right\rangle = 0 \\
@@ -85,12 +79,10 @@ c_i^\dagger c_{i+1}^\dagger \begin{cases}
 When $t = 0$, the site index may be omitted since the Hamiltonian is a sum of operators solely at site $i$.
 Hence, we have $[ \mathcal{H}, n_{i,\sigma} ] = 0 \,\, \forall i = 1, 2,..., N $, and the eigenstates of $\mathcal{H}$ are also eigenstates of all number operators at the different sites in the lattice.
 Thus, in the single site limit, we obtain
-
 \begin{equation}
 \mathcal{H} = U \bigg(n_\uparrow - \frac{1}{2} \bigg) \bigg(n_\downarrow - \frac{1}{2} \bigg) - \mu \bigg( n_\uparrow + n_\downarrow \bigg)
 \end{equation}
 which acts as follows (using the eigenstates of $n_\sigma$)
-
 \begin{equation}
 \mathcal{H} \begin{cases}
 \left| \,\, \right\rangle = \frac{U}{4} \left| \,\, \right\rangle \\
@@ -101,24 +93,20 @@ which acts as follows (using the eigenstates of $n_\sigma$)
 \end{equation}
 
 Thus, the Hamiltonian is diagonal in the basis $\{\left| \psi_\alpha \right\rangle \} = \left| \,\, \right\rangle, \left|\uparrow \right\rangle, \left|\downarrow\right \rangle, \left|\uparrow \downarrow \right\rangle $:
-
 \begin{equation}
 \mathcal{H} \leadsto \bm H = \text{diag}\bigg(\frac{U}{4}, \frac{U}{4} - (\mu + \frac{U}{2} ), \frac{U}{4} - (\mu + \frac{U}{2} ), \frac{U}{4} - 2 \mu \bigg) ,
 \end{equation}
 which means that $e^{-\beta \mathcal{H} }$ is also diagonal:
-
 \begin{equation}
 e^{-\beta \mathcal{H} } \leadsto e^{-\beta U / 4}  \text{diag}\bigg(1,  e^{\beta(\mu + \frac{U}{2})}, e^{\beta(\mu + \frac{U}{2})},  e^{2\beta \mu} \bigg)
 \end{equation}
 and this is one of the rare situations in which it is possible to explicitly write down a closed form for the partition function.
-
 \begin{equation}\label{eq:singleSitePartition}
 Z = \text{Tr} [ e^{-\beta\mathcal{H} } ] = \sum_\alpha \left\langle \psi_\alpha \left|e^{-\beta \mathcal{H} } \right| \psi_\alpha \right\rangle = e^{-\beta U / 4} \bigg(1 + 2 e^{\beta(\mu + \frac{U}{2})} + e^{2 \beta \mu} \bigg)
 \end{equation}
 
 Moreover, the aforementioned observables are explicitly computable.
 This is due to the diagonal form of $\mathcal{H}$, and to the low-dimensional Hilbert space.
-
 \begin{equation}
 \begin{split}
 \mathcal{H} e^{-\beta\mathcal{H} } &\leadsto e^{-\beta U / 4}  \text{diag}\bigg(\frac{U}{4}, (-\mu - \frac{U}{4})  e^{\beta(\mu + \frac{U}{2})} (-\mu - \frac{U}{4}) e^{\beta(\mu + \frac{U}{2})}, (\frac{U}{4} - 2\mu ) e^{2\beta \mu} \bigg) \\
@@ -129,7 +117,6 @@ n_{\uparrow} n_{\downarrow} e^{-\beta\mathcal{H} } &\leadsto e^{-\beta U / 4}  \
 \end{equation}
 
 From these we can compute some traces we shall find useful to obtain averages of some observables.
-
 \begin{equation}
 \begin{split}
 &\Tr \bigg[ \mathcal{H} e^{-\beta\mathcal{H} } \bigg] = e^{-\beta U / 4} \bigg(\frac{U}{4} + 2 (-\mu - \frac{U}{4})  e^{\beta(\mu + \frac{U}{2})} + (\frac{U}{4} - 2\mu ) e^{2\beta \mu} \bigg) \\
@@ -138,7 +125,6 @@ From these we can compute some traces we shall find useful to obtain averages of
 \end{equation}
 
 The bottom line is that we are able to obtain \emph{exact} expressions for
-
 \begin{enumerate}
 \item the one-site density $\rho = \left\langle n_\uparrow \right\rangle + \left\langle n_\downarrow \right\rangle$, measuring the average occupation of each site.
 \begin{equation}
@@ -163,7 +149,6 @@ As we shall see, this feature of the model remains present as the number of site
 Note that in the Mott gap, the compressibility vanishes: $\kappa = \frac{\partial \rho}{\partial \mu} = 0$, leading to the appearance of the Mott Plateau.
 Just as thermal fluctuations can destroy the sharp jumps corresponding to the gap, so can quantum fluctuations.
 The hopping term in the Hamiltonian introduces such fluctuations, leading to an effect similar to that of Fig.(\ref{fig:rhoVsMu_mSqVsT}).
-
 \item the one-site energy $E = \left\langle \mathcal{H} \right\rangle$.
 \begin{equation}
 \begin{split}
@@ -176,9 +161,7 @@ which at half filling becomes
 $
 E = \frac{U}{4} - \frac{U}{2} ( 1 + e^{-\beta U /2} )^{-1}
 $.
-
 \item the double occupancy $\left\langle n_\uparrow n_\downarrow \right\rangle$.
-
 \begin{equation}
 \left\langle n_\uparrow n_\downarrow \right\rangle = \frac{\text{Tr} \big[ n_\uparrow n_\downarrow \big]}{Z} = \frac{e^{2\beta\mu}}{1 + 2 e^{\beta (\frac{U}{2} + \mu )} + e^{2\beta\mu}}
 \end{equation}
@@ -192,11 +175,9 @@ Note that as either $U$ or $\beta$ increase the double occupancy tends to zero.
 
 As was motivated in the previous chapter, we are interested in studying magnetism in correlated systems.
 For the Hubbard model, the relevant quantity is the sum of the squared local moments
-
 \begin{equation}
 \left\langle m^2 \right\rangle = \left\langle ( n_\uparrow - n_\downarrow )^2 \right\rangle = \left\langle n_\uparrow + n_\downarrow \right\rangle - 2  \left\langle n_\uparrow n_\downarrow \right\rangle = \rho - 2  \left\langle n_\uparrow n_\downarrow \right\rangle
 \end{equation}
-
 \begin{figure}[H]
 \hspace{5mm}\includegraphics[width=0.45\linewidth]{Hubbard/rhoVsMu.png}
 \hspace{0.02cm}
@@ -210,7 +191,6 @@ For the Hubbard model, the relevant quantity is the sum of the squared local mom
 	}
 	\label{fig:rhoVsMu_mSqVsT}
 \end{figure}
-
 \begin{figure}[H]
 \hspace{5mm}
 \includegraphics[width=0.45\linewidth]{Hubbard/mSqVsU.png}
@@ -232,12 +212,10 @@ As what happens for the Mott plateau, quantum fluctuations (i.e. introducing a h
 
 In the $\frac{U}{t} = 0$ limit, the spin sectors become independent (since the opposite spin electrons do not interact via the on-site term) and they may be considered separately.
 Thus, we omit the spin indexes of the operators in the Hamiltonian:
-
 \begin{equation}
 \mathcal{H} = -t \sum_{\left\langle i, j \right\rangle} \bigg( c_i^\dagger c_j + c_j^\dagger c_i \bigg) - \mu \sum_i n_i = \bm c^\dagger \bigg( -t \bm K - \mu \bm I \bigg) \bm c ,
 \end{equation}
 where we casted the Hamiltonian as a bilinear form, and defined
-
 \begin{equation}
 \bm c = \bigg[ c_1 \,\, c_2 \,\, ... \,\, c_N \bigg]^T \quad \bm c^\dagger = \bigg[c_1^\dagger \,\, c_2^\dagger \,\, ... c_N^\dagger \bigg] ,
 \end{equation}
@@ -251,19 +229,16 @@ Additionally, \acp{PBC} have the property of giving site independent observables
 For example, the electron density per site does not vary with the distance to the edges of the lattice with \acp{PBC}, but it does when we use \acp{OBC}.
 
 For concreteness, let us consider a rectangular two-dimensional lattice with $N_x \times N_y$ sites. Then, we have $\dim(\bm K) = N_x N_y \times N_x N_y $, and
-
 \begin{equation}
 \bm K = \bm I_y \otimes \bm K_x + \bm I_x \otimes \bm K_y ,
 \end{equation}
 where $\bm I_{x, y}$ are identity matrices of dimension $N_{x, y} \times N_{x, y}$, respectively, and $\bm K_{x, y}$ are the hopping matrices in the $x$ and $y$-directions.
 For lattices in \acs{1D} or \acs{2D}, it is possible to find an exact eigendecomposition
-
 \begin{equation}
 \bm K = \bm F^T \bm \Lambda \bm F \quad \text{with}  \quad \bm F^T \bm F = \bm I ,
 \end{equation}
 where $\bm \Lambda = \text{diag}(\lambda_{\bm k})$ is a diagonal matrix of eigenvalues of $\bm K$.
 The Hamiltonian is diagonalized:
-
 \begin{equation}\label{eq:quadraticH}
 \mathcal{H} =\tilde{\bm c}^\dagger \big( -t \bm K - \mu \bm I \big) \tilde{\bm c} = \sum_{\bm k} \varepsilon_{\bm k} \tilde{n}_{\bm k} ,
 \end{equation}
@@ -273,7 +248,6 @@ $.
 
 This is equivalent to performing a canonical transformation on the annihilation (creation) operators, that preserves not their Poisson brackets, as in classical mechanics, but their anti-commutators.
 Finding the eigendecomposition is equivalent to changing to Fourier space:
-
 \begin{equation}
 \tilde{c}_{\bm k}^\dagger = \frac{1}{\sqrt{N}} \sum_{} e^{i \bm k \cdot \bm R_j} c_j^\dagger ,
 \end{equation}
@@ -286,7 +260,6 @@ The interaction term in the Hubbard model takes on a fairly complex form in mome
 
 Now, it turns out that it is easy to evaluate the partition function for quadratic Hamiltonians, once we have diagonalized them.
 If $\mathcal{H} = \bm c^\dagger \bm H \bm c$, where $\bm H$ is a $N \times N$ Hermitian matrix, then we have that
-
 \begin{equation}\label{eq:trace_quadratic}
 \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \prod_{i=1}^N ( 1 + e^{-\beta \lambda_i } ) ,
 \end{equation}
@@ -295,13 +268,11 @@ It suggests that if we are able to devise some approximation to transform the qu
 While this idea is essentially correct, the procedure is not straightforward.
 We explore it in the next chapter to derive the simulation method that is at the basis of this work.
 To complete the solution of the non-interacting case we apply the result of equation (\ref{eq:trace_quadratic}) to compute the partition function corresponding to the quadratic Hamiltonian defined in equation (\ref{eq:quadraticH}):
-
 \begin{equation}
 Z = \prod_{\bm k} ( 1 + e^{-\beta (\varepsilon_{\bm k} - \mu )} ) ,
 \end{equation}
 where $\varepsilon_{\bm k}$ is just the dispersion relation for a tight binding model, a standard result.
 A related quantity is the density of states, counting the number of states with a given energy. For a single spin species:
-
 \begin{equation}
 N ( E ) = \frac{1}{N} \sum_{\bm k} \delta_{E,\varepsilon_{\bm k}} \rightarrow \frac{1}{(2\pi)^d} \int d\bm k \, \delta ( E - \varepsilon_{\bm k})\,\, \text{when}\,\, N\rightarrow \infty.
 \end{equation}
@@ -309,22 +280,17 @@ N ( E ) = \frac{1}{N} \sum_{\bm k} \delta_{E,\varepsilon_{\bm k}} \rightarrow \f
 In \acs{1D}, we have $\varepsilon_{k} = - 2 t \cos k$, which gives $N(E) = ( \pi \sqrt{ 4 t^2 - E^2 } )^{-1}$ (see appendix \ref{ap:hubbardObSol}).
 
 Now that we have found a closed form solution for $Z$, it is again possible to find closed form expressions for observables of interest as well, namely:
-
 \begin{enumerate}
 \item the density, or average occupation of each site, $\rho$.
-
 \begin{equation}
 \rho = \left\langle n \right\rangle = \left\langle \tilde{n} \right\rangle = \frac{1}{N} \sum_{{\bm k}} \left\langle \tilde{n}_{\bm k} \right\rangle  = \frac{1}{N} \sum_{\bm k}  \frac{1}{1 + e^{\beta (\varepsilon_{\bm k} - \mu)}} = \frac{1}{N} \sum_{\bm k}  f(\bm k) ,
 \end{equation}
 where $f (\bm k ) = \big(1 + e^{\beta(\varepsilon_{\bm k} - \mu)} \big)^{-1}$ is the Fermi-Dirac distribution (at half filling: $\mu = 0$).
-
 \item the energy $E = \left\langle \mathcal{H} \right\rangle$.
 \begin{equation}
 E = \frac{1}{N} \sum_{\bm k} \frac{\varepsilon_{\bm k} - \mu}{1 + e^{\beta(\varepsilon_{\bm k} - \mu)}} = \sum_{\bm k} (\varepsilon_{\bm k} - \mu) f(\bm k)
 \end{equation}
-
 \item the equal-time Green's function, which plays a key role in computing other quantities, such as correlation functions.
-
 \begin{equation}\label{eq:eqGreenNonInt}
 G_{\bm l \bm j} = \left\langle c_{\bm l} c_{\bm j}^\dagger \right\rangle = \frac{1}{N} \sum_{\bm k} e^{ i {\bm k} \cdot ( \bm l -\bm  j ) } ( 1 - f(\bm k) )
 \end{equation}
@@ -340,12 +306,11 @@ This suggests that this wavevector could have a crucial role in the description 
 Indeed, as we will see, a large magnetic structure factor at $\bm k = (\pi , \pi)$ signals antiferromagnetic order.
 This is a feature of the Hubbard model at half filling down to $U = 0$.
 A similar effect happens in \acs{1D}, at $k = \pi$.
-
 \begin{figure}[H]
-\hspace{1.2cm}
-\includegraphics[width=0.47\linewidth]{Hubbard/fermiEnergy1D.png}
+\hspace{0.6cm}
+\includegraphics[scale = 0.55]{Hubbard/fermiEnergy1D.png}
 \hspace{-1mm}
-\includegraphics[width=0.4\linewidth]{Hubbard/fermiEnergy2D.png}
+\includegraphics[scale = 0.55]{Hubbard/fermiEnergy2D.png}
 	\caption[Dispersion relations for the \acs{1D} chain and the square lattice in the non-interacting case.]{Dispersion relations for the \acs{1D} chain and the square lattice in the non-interacting case.
 	For the square lattice, the surfaces separating the different colors are Fermi surfaces for different fillings of the lattice. In particular, for half filling ($\rho = 1, \mu = 0$), we obtain the rotated square in the white region.}
 	\label{fig:fermi1D}

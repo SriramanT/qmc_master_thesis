@@ -1,25 +1,25 @@
 \section{Nanoribbons}
 \label{sec:nanoribbon}
 
-In this section, we apply our code to the case of honeycomb lattices with boundary conditions corresponding to nanoribbons. These structures are much longer on one direction than on the other, resembling a ribbon, hence their name.
-The low energy electronic states on the edges of this ribbon might lead to interesting magnetic behavior in \ac{TMD} nanostructures (as indeed they do in graphene nanostructures \cite{yazyev_emergence_2010}) and it is this possibility was unexplored numerically before this work \cite{feldner_dynamical_2011, golor_quantum_2013}, as was mentioned on chapter \ref{cap:int}.
-A nanoribbon is much longer on one direction than on the other, i.e. $l \gg w$. 
-This condition corresponds to taking $N_x \gg N_y$ in our conventions (see Fig.(\ref{fig:nanoribbon}), where this condition is, of course, not obeyed solely for the sake of giving a good visual representation of the boundary conditions, and the numbering system).
+In this section, we apply our code to the case of the honeycomb lattice of graphene and of the triangular lattice with nonuniform hoppings considered in the 3-band minimal model of \acs{TMD}s.
+We take boundary conditions corresponding to nanoribbons.
+These structures are much longer on one direction than on the other, , i.e. $l \gg w$, resembling a ribbon, hence their name.
+This condition corresponds to taking $N_x \gg N_y$ in our conventions (see Fig.(\ref{fig:nanoribbon})\footnote{In Fig.(\ref{fig:nanoribbon}, this condition is, of course, not obeyed solely for the sake of giving a good visual representation of the boundary conditions, and the numbering system).}.
+The low energy electronic states on the edges of these ribbons might lead to nontrivial magnetic behavior in \ac{TMD} nanostructures (as indeed they do in graphene nanostructures \cite{yazyev_emergence_2010}) and it is this possibility was unexplored numerically before this work \cite{feldner_dynamical_2011, golor_quantum_2013}, as was mentioned on chapter \ref{cap:int}.
 
 \subsection{Graphene}
 \label{sec:graphene}
 
 We use three coordinates to label each site on the honeycomb lattice, by taking advantage of its bipartite nature.
 Regarding the honeycomb lattice as two interpenetrating triangular sublattices $\mathcal{A}$ and $\mathcal{B}$, we take the axes $x$ and $y$ to be along the primitive vectors of each triangular sublattice.
-Along the $x$-direction, the ribbon is supposed to be very long, which justifies the fact that we take \acp{PBC}.
+Along the $x$-direction, a ribbon is normally very long, which justifies the fact that we take \acp{PBC}.
 In contrast, in the narrow $y$-direction we take \acp{OBC}.
 To number the sites on the ribbon, we introduce an additional coordinate labeling the sublattice: $z = 0$, if the site is in sublattice $\mathcal{A}$, and $z = 1$ if the site is in sublattice $\mathcal{B}$.
 We then adopt the numbering convention for the sites $i = 0,1, ..., 2 N_x N_y - 1$ of the lattice $\mathcal{L}$:
-
-\begin{equation}\label{eq:numbering}
+$
 i (x, y, z) = N_x N_y z + N_x y + x,
-\end{equation}
-where $x = 0, ..., N_x - 1$, $y = 0, ..., N_y - 1$, and $z = 0, 1$ define each element $\bm r = (x, y, z) \in \mathcal{L}$.
+$
+ where $x = 0, ..., N_x - 1$, $y = 0, ..., N_y - 1$, and $z = 0, 1$ define each element $\bm r = (x, y, z) \in \mathcal{L}$.
 
 \begin{figure}[H]\label{fig:bcRibbon}
 	\centering
@@ -66,12 +66,11 @@ We summarize all possible cases in the following table.
 \label{subsec:apTMD}
 
 We start by approaching the \acs{TMDNR} problem at the mean field level.
-Such a procedure allows one to understand the system in a simplified manner that is very useful to obtain a crude picture of its behavior.
-In particular, if there is a transition between a configuration with magnetic order, and a disordered one, there is a critical interaction parameter $U = U_c$ at which the transition occurs, and it can be estimated in mean field, and compared with the more precise \acs{QMC} result.
+Such a procedure is very useful to obtain a physical picture of the system's behavior.
+In particular, at a given temperature, if there is a transition between a configuration with magnetic order, and a disordered one, there is a critical interaction parameter $U = U_c$ at which the transition occurs, and it can be estimated in mean field, and compared with the more precise, unbiased \acs{QMC} result.
 In general, our mean field formulation would involve diagonalizing an $N \times N$ matrix at each step, where $N = N_{\text{orb}} N_x N_y$ is the size of the system times the number of orbitals.
 However, since we consider \acs{PBC}s along the $x$-direction, we can partially diagonalize  the Hamiltonian analytically, reducing the size of the matrix to be diagonalized to $N_{\text{orb}} N_y \times N_{\text{orb}} N_y$, where $N_y$ is the width of the ribbon, i.e. the number of $\text{M}\text{X}_2$ formula units.
-Consider the spinless 3-band tight binding model, with the normalized lattice constant: $a = 1$.
-
+Consider the spinless 3-band tight binding model, with the lattice constant: $a \equiv 1$.
 \begin{equation}
 \begin{split}
 \mathcal{H}_0 &= \sum_{\substack{m, n \\ \alpha, \beta}} \bigg( c_{m,n, \alpha}^\dagger t_{\alpha\beta}^0 c_{m, n, \beta} + \delta_{0, N_x}  c_{m,n, \alpha}^\dagger t_{\alpha\beta}^1 c_{m+1, n, \beta} + \delta_{-\sqrt{3}/2, (N_y -1)\sqrt{3}/2}  c_{m,n, \alpha}^\dagger t_{\alpha\beta}^4 c_{m-1, n, \beta} \\
@@ -80,8 +79,7 @@ Consider the spinless 3-band tight binding model, with the normalized lattice co
 \end{split}
 \end{equation}
 
-Fourier transforming in $x$: $c_{m, n, \alpha} = \frac{1}{\sqrt{N_x}}\sum_{k} e^{-i k m } c_{k, n, \alpha} $, with $k = \frac{2\pi}{N_x} \{ -\frac{N_x}{2} + 1, -\frac{N_x}{2}, ..., \frac{N_x}{2} \}$:
-
+Fourier transforming along $m$: $c_{m, n, \alpha} = \frac{1}{\sqrt{N_x}}\sum_{k} e^{-i k m } c_{k, n, \alpha} $, with $k = \frac{2\pi}{N_x} \{ -\frac{N_x}{2} + 1, -\frac{N_x}{2}, ..., \frac{N_x}{2} \}$:
 \begin{equation}
 \begin{split}
 \mathcal{H}_0 &= \sum_{ \substack{k, y \\ \alpha, \beta} } \bigg( c_{k, y, \alpha}^\dagger (t_{\alpha \beta}^0  + e^{ik} t_{\alpha \beta}^1 + e^{-ik} t_{\alpha \beta}^4 )  c_{k, y, \beta} + \delta_{-1, N_y -1} c_{k, y - 1, \alpha}^\dagger ( e^{ik/2} t_{\alpha \beta}^2 + e^{-ik/2} t_{\alpha \beta}^3 ) c_{k, y, \beta} \\
@@ -89,7 +87,6 @@ Fourier transforming in $x$: $c_{m, n, \alpha} = \frac{1}{\sqrt{N_x}}\sum_{k} e^
 \end{split}
 \end{equation}
 leading to a tridiagonal block $3 N_y \times 3 N_y$ hopping matrix $\bm H (k)$ with three different types of matrix elements: $\bm h_1 = \bm H_{y,y}$, $\bm h_2 = \bm H_{y,y-1}$, $\bm h_2^\dagger = \bm H_{y, y+1}$.
-
 \begin{equation}
 [ H_{(\alpha y) (\beta y')} (k) ] = 
 \begin{pmatrix}
@@ -106,7 +103,6 @@ leading to a tridiagonal block $3 N_y \times 3 N_y$ hopping matrix $\bm H (k)$ w
 2 t_2 \cos k& -2 i t_{12} \sin k & \varepsilon_2 + 2 t_{22} \cos k \\
 \end{pmatrix}
 \end{equation}
-
 \begin{equation*}
 \bm h_2 =
 \begin{pmatrix}
@@ -115,7 +111,6 @@ leading to a tridiagonal block $3 N_y \times 3 N_y$ hopping matrix $\bm H (k)$ w
 \cos ( k / 2) \bigg( \sqrt{3} t_1 - t_2 \bigg) & -i \sin (k / 2) \bigg( \frac{\sqrt{3}}{2} ( t_{11} - t_{22} ) - 2 t_{12} \bigg) & \frac{1}{2} \cos (k / 2) \bigg( 3 t_{11	} + t_{22} \bigg)
 \end{pmatrix}
 \end{equation*}
-
 \begin{figure}[H]
 \includegraphics[scale=0.55]{Applications/fillingVsE.png}
 \includegraphics[scale=0.55]{Applications/BandStructureNanoribbonTMD.png}
@@ -129,11 +124,9 @@ By applying our mean field approach to solve the 3-band model with Hubbard-type 
 This is equivalent to taking $\left\langle n_{x, y,\alpha, \sigma}\right\rangle = \left\langle n_{y,\alpha, \sigma}\right\rangle  \forall x$ ($6 N_y$ parameters).
 By reducing the number of parameters, convergence is facilitated, which allows us to evaluate whether the solution of Fig.(\ref{fig:nanoGraphVsTMD}) is robust, i.e. whether it corresponds to a metastable or not.
 The mean field form of the interaction term with the reduced number of parameters changes, implying that the self-consistent relation of Eq.(\ref{eq:selfConsistent}) from which the local densities are computed changes as well.
-
 \begin{equation}
 \mathcal{H}_{\text{MF}} = \mathcal{H}_0 + \mathcal{H}_1 + \mathcal{C} , \,\text{where} \,\, \mathcal{H}_1 = U \sum_{m, n, \alpha}  \sum_\sigma n_{\substack{m, \sigma \\ n, \alpha}} \big\langle n_{\substack{m, -\sigma \\ n, \alpha}} \big\rangle  , \,\, \mathcal{C} = -U  \sum_{m, n, \alpha} \big\langle n_{\substack{m, \uparrow \\ n, \alpha}} \big\rangle \big\langle n_{\substack{m, \downarrow \\ n, \alpha}} \big\rangle
 \end{equation}
-
 \begin{equation}
 \begin{split}
 \mathcal{H}_1 + \mathcal{C} &= \frac{U}{N_x^{\,2}} \sum_{\substack{n \alpha \\ k_1 k_2 \\ k_3 k_4}} \underbrace{\sum_m e^{i [ (k_1 + k_3) - (k_2 + k_4) ] m}}_{N_x \delta_{k_4, k_1 + k_3 - k_2}} \bigg( \sum_\sigma c_{\substack{k_1, \sigma \\ n, \alpha}}^\dagger c_{\substack{k_2, \sigma \\ n, \alpha}} \underbrace{\big\langle c_{\substack{k_3, -\sigma\\ n, \alpha}}^\dagger c_{\substack{k_4, -\sigma \\ n, \alpha}} \big\rangle}_{\delta_{k_3, k_4} \big\langle n_{\substack{k_3,-\sigma \\ n, \alpha}} \big\rangle} - \underbrace{\big\langle c_{\substack{k_1, \uparrow \\ n, \alpha}}^\dagger c_{\substack{k_2  \uparrow \\n, \alpha}} \big\rangle}_{\delta_{k_1, k_2} \big\langle n_{\substack{k_2,\uparrow \\ n, \alpha}} \big\rangle} \underbrace{\big\langle c_{\substack{k_3, \downarrow \\ n, \alpha}}^\dagger c_{\substack{k_4, \downarrow \\ n, \alpha}} \big\rangle}_{\delta_{k_3, k_4} \big\langle n_{\substack{k_3,\downarrow \\ n, \alpha}} \big\rangle}  \bigg) \\
@@ -143,22 +136,21 @@ U \sum_{k, \mu} \bigg( \sum_\sigma n_{k,\mu, \sigma} \big\langle n_{\mu, -\sigma
 \end{equation}
 where we collapsed the indexes $(n, \alpha)$ into a single index $\mu$.
 The self consistent relation allowing us to compute the new MF parameters at each step emerges by diagonalizing $\mathcal{H}_1$ in the $\mu$-subspace:
-
 \begin{equation}
 \big\langle n_{\mu, \sigma} \big\rangle = \frac{1}{N_x}\sum_{q, \nu} | Q_{q \sigma \mu, \nu} |^2 \rho ( \varepsilon_{q \nu \sigma} ) , \, \text{where} \,\, d_{q, \sigma, \nu} = \sum_\nu Q_{q \sigma \mu, \nu}^\star c_{q ,\sigma, \mu} ,  \, \text{and} \,\, \mathcal{H}_{\text{MF}} = \sum_{q, \nu, \sigma} \varepsilon_{q, \nu, \sigma} d_{q, \nu, \sigma}^\dagger d_{q, \nu, \sigma} + \mathcal{C}
 \end{equation}
-
 \begin{figure}[H]
-\includegraphics[scale=0.5]{Applications/MFnanoribbon.png}
-\hspace{-0.18cm}
-	\caption[Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs{TMDNR}]{Comparison between the MF solutions of the Hubbard model at half filling for a graphene nanoribbon (GNR) at $U=1.2$ with $\beta t = 20$ (left) and a \acs{TMDNR}.}
+\includegraphics[scale=0.93]{Applications/MFnanoribbon.png}
+\hspace{0.1cm}
+\includegraphics[scale=0.5]{Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png}
+	\caption[Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs{TMDNR}. Spin density profile along the ribbon's transverse direction. ]{Comparison between the MF solutions of the Hubbard model at half filling for a graphene nanoribbon (GNR) at $U=1.2$ with $\beta t = 20$ (left) and a \acs{TMDNR}.
+	Right: Spin density profile along the ribbon's transverse direction $\left\langle m \right\rangle (y)$, with the inset $\left\langle m \right\rangle (i = N_x y + x))$ showing that the obtained solution is constant along $x$.}
 	\label{fig:nanoGraphVsTMD}
 \end{figure}
-
-\begin{figure}[H]
-	\caption[Spin density profile along the ribbon's transverse direction. Minimization of the grandpotential.]{Left: Spin density profile along the ribbon's transverse direction, with the inset showing that the obtained solution is constant along $x$. Right: Minimization of the grandpotential. 
-	The upper inset shows that the grandpotential $\Omega$ initially increases due to the use of annealing to improve convergence. The main panel shows the behavior of $\Omega$ after the annealing phase has finished:
-	$\Omega$ starts decreasing fast, then in the last iterations it stabilizes (as shown in the lower panel), and we consider that the self consistent solution has been achieved.}
-	\label{fig:densSpinGrandPot}
-\end{figure}
+%\begin{figure}[H]
+%	\caption[Minimization of the grandpotential.]{Left: Right: Minimization of the grandpotential. 
+%	The upper inset shows that the grandpotential $\Omega$ initially increases due to the use of annealing to improve convergence. The main panel shows the behavior of $\Omega$ after the annealing phase has finished:
+%	$\Omega$ starts decreasing fast, then in the last iterations it stabilizes (as shown in the lower panel), and we consider that the self consistent solution has been achieved.}
+%	\label{fig:densSpinGrandPot}
+%\end{figure}
 

@@ -52,7 +52,6 @@ A particularly relevant observable is the variational energy $E_V$ associated to
 Let $\bm r$ be the $3N$ spatial coordinates of the $N$ electrons.
 For simplicity, let us ignore all other degrees of freedom, such as spin.
 Given the Hamiltonian of the system $\mathcal{H}$, and a trial wave function $\psi_T (\bm r)$ - a \say{guess} of the ground state - one can compute its associated variational energy by averaging over a \say{local} energy:
-
 \begin{equation}\label{eq:variational_energy}
 E_V = \frac{\left\langle \psi_T | \mathcal{H} | \psi_T \right \rangle}{\left\langle \psi_T | \psi_T \right \rangle} = \frac{ \int d\bm r |\psi_T (\bm r)|^2 E_L (\bm r)}{\int d\bm r | \psi_T (\bm r)|^2 } = \int d\bm r\rho (\bm r) E_L (\bm r) , \text{where} \, 
 E_L = \frac{\mathcal{H} \psi_T (\bm r) }{\psi_T (\bm r)} , \, \rho (\bm r) = \frac{ | \psi_T (\bm r) |^2}{ \int d\bm r' | \psi_T (\bm r') |^2}
@@ -64,7 +63,6 @@ $
 E_V \approx \overline{E}_L = \frac{1}{M} \sum_{k= 1}^{M} E_L (\bm r_k)
 $.
 Then, the trial ground state $\psi_{\bm \alpha}$ is optimized by tuning the  variational parameters ${\bm \alpha}$, according to how close the trial state's energy is to the ground state energy $E_0$, via the variational principle:
-
 \begin{equation}
 E_V(\bm \alpha) = \frac{\left\langle \psi_{\bm \alpha} | \mathcal{H} | \psi_{\bm \alpha} \right\rangle}{\left\langle\psi_{\bm \alpha} | \psi_{\bm \alpha} \right\rangle} \ge E_0,
 \end{equation}
@@ -84,7 +82,6 @@ In imaginary-time $\tau = i t$, the solution to the Schr\"odinger equation in te
 Within precision and accuracy constraints, the longest lasting of these in imaginary-time is the ground state \cite{kosztin_introduction_1996}.
 Thus, the idea of the diffusion method is to generate samples using the exact ground state wave function $\psi_0 (\bm r)$ \cite{toulouse_chapter_2016}.
 The associated exact energy $E_0$ is the matrix element of the Hamiltonian calculated using a trial wave function and the ground state.
-
 \begin{equation}
 E_0 = \frac{ \big( \left\langle \psi_0 |E_0 \big) \big( \mathbbm{1} | \psi_T \right\rangle \big)}{\left\langle \psi_0 | \psi_T \right\rangle} = \frac{\left\langle \psi_0 | \mathcal{H} | \psi_T \right\rangle}{ \left\langle\psi_0 | \psi_T \right\rangle} = \frac{\int d\bm r \psi_0^\star (\bm r) \psi_T (\bm r) E_L (\bm r)}{\int d\bm r\psi_0^\star (\bm r) \psi_T (\bm r)}
 \end{equation}
@@ -92,21 +89,18 @@ E_0 = \frac{ \big( \left\langle \psi_0 |E_0 \big) \big( \mathbbm{1} | \psi_T \ri
 Note that using this trick we avoid the computation of $\mathcal{H} \psi_0 = E_0 \psi_0$, that is, the ground state energy.
 Instead, we approximate the integral by considering $M$ configurations $\bm r_{k = 1,..., M}$.
 The local energy of the trial wave function $E_L (\bm r) = \frac{\mathcal{H} \psi (\bm r)}{\psi (\bm r)}$ is averaged over a mixed distribution from which we draw a sample:
-
 \begin{equation}
 f(\bm r) = \frac{\psi_0^\star (\bm r) \psi_T (\bm r) }{ \int d\bm r  \psi_0 (\bm r) \psi_T (\bm r)}
 \end{equation}
 
 Although the method is, of course, aimed at probing many-body systems, let us consider a single particle in \acs{1D}, for simplicity, to illustrate the method.
 Performing a Wick rotation - effectively going to imaginary time - and shifting the energy, the Schr\"odinger equation becomes (with $\hbar = 1$)
-
 \begin{equation}
 \frac{\partial \psi_T ( x, \tau )}{\partial\tau}  = -\frac{1}{2m}\frac{\partial^2 \psi_T ( x, \tau )}{\partial x^2} - \bigg[ V(x) - E_T \bigg] \psi_T( x, \tau )  \leadsto \psi_T (x, \tau) = \sum_{n=0}^{\infty} c_n \psi_n (x) e^{-(E_n - E_T)\tau}
 \end{equation}
 
 The exact ground state wave function $\psi_0 ( x )$ is obtained as the longest lasting transient state in imaginary time: we are interested in the asymptotic behavior of the series expansion constituting the formal solution of the Schr\"odinger equation.
 Imaginary time evolution is governed by
-
 \begin{equation}\label{eq:im_ev}
 \left| \psi_T (t) \right\rangle = \lim_{\tau \rightarrow \infty} \sum_n e^{-(E_n - E_T) \tau} \left|\psi_n \right\rangle \left\langle \psi_n | \psi_T \right\rangle = \lim_{\tau \rightarrow \infty} e^{-(E_0 - E_T)\tau} \left| \psi_0 \right\rangle \left\langle \psi_0 | \psi_T \right\rangle 
 \end{equation}
@@ -134,7 +128,6 @@ An alternative method is based on introducing an additional lattice bosonic fiel
 The interacting problem then becomes a problem of independent fermions coupled to an external field, and the fermionic part of the partition function can be traced out explicitly, leaving the contribution of a \emph{discrete}\footnote{The introduced field is discrete (and \emph{binary}) because each fermionic state can only have occupations $n = 0, 1$. Although, there is a finite number of field configurations, the number grows exponentially with the number of sites on the lattice.} bosonic field, $\bm h$.
 This contribution can be evaluated numerically by employing importance sampling over the field configurations.
 Auxiliary field \acs{QMC} relies on a mapping to a so called \say{classical} system (in quotes because there may be no actual classical analogue):
-
 \begin{equation}\label{eq:Zsign}
 Z = \Tr [ e^{-\beta \mathcal{H} } ] = \sum_{\{ \bm h\} } \sum_{\text{fermionic}} e^{-S} = \sum_c p_c ,
 \end{equation}
@@ -143,7 +136,6 @@ Here, $S$ is a fermion-boson action that we shall write out explicitly later.
 For a fixed configuration of the bosonic field, we sum over the fermionic part exactly to obtain the weight of each configuration $p_c$.
 The sum over $\bm h$ is carried out stochastically.
 The negative weight problem can be circumvented when computing the average of an observable $A$:
-
 \begin{equation}\label{eq:signSampling}
 \left\langle A \right\rangle = \frac{\sum_c A ( c ) p ( c )}{\sum_c p ( c ) } = \frac{\sum_c A ( c )|  p ( c ) | \text{sign}[p(c)] / \sum_c | p ( c ) | }{\sum_c  |  p ( c ) | \text{sign}[p(c)] /  \sum_c | p ( c ) |} \equiv \frac{\left\langle A s \right\rangle_{|p|}}{\left\langle s \right\rangle_{|p|}} ,
 \end{equation}
@@ -152,7 +144,6 @@ where $s(c) = \text{sign} [ p ( c ) ]$, and $| p ( c ) | $ corresponds to an aux
 The relative error $\Delta s / \left\langle s \right\rangle$ increases exponentially with the number of particles, with inverse temperature, and possibly with other parameters of the specific model to be studied \cite{troyer_computational_2005, hou_numerical_2009}.
 To see this, we start by noting that the average sign is the ratio between the partition functions of the fermionic ($Z = \sum_c p(c)$) and bosonic systems ($Z' = \sum_c | p ( c ) |$).
 In terms of the difference in free energy densities, $\left\langle s \right\rangle = Z / Z' = e^{-\beta N_p \Delta f}$, implying that for $M$ samples, the error of the denominator of Eq. (\ref{eq:signSampling}) becomes
-
 \begin{equation}
 \frac{\Delta s}{\left\langle s \right\rangle} = \frac{\sqrt{(\left\langle s^2 \right\rangle - \left\langle s \right\rangle^2 )/ M }}{\left\langle s \right\rangle} = \frac{ \sqrt{ 1 - \left\langle s \right\rangle^2}  }{\sqrt{M} \left\langle s \right\rangle} \propto \frac{e^{\beta N_p \Delta f}}{\sqrt{M}} ,
 \end{equation}
@@ -166,7 +157,6 @@ Furthermore, in general, it suffices to use the finite temperature auxiliary fie
 In this case, the inverse temperature may be regarded as being analogous to a  projective parameter $\Theta$, characterizing convergence to the ground state, within statistical uncertainty.
 Projector \ac{QMC}, the zero temperature version of auxiliary field \ac{QMC} is based on an equation similar to Eq.(\ref{eq:im_ev}).
 Any observable $A$ is computed by use of a trial wave function with some overlap with the ground state $\left\langle \psi_T | \psi_0 \right\rangle \neq 0$ (see \cite{f._assaad_quantum_2002} for more details on the projector method; in this work we focus on the finite temperature version since it is more general):
-
 \begin{equation}
 \left\langle A \right\rangle = \lim_{\Theta \rightarrow \infty} \frac{\left\langle \psi_T | e^{-\Theta \mathcal{H} } A e^{-\Theta \mathcal{H} } | \psi_T \right\rangle }{\left\langle \psi_T | e^{- 2 \Theta \mathcal{H} } | \psi_T \right\rangle}
 \end{equation}

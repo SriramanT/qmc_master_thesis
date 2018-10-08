@@ -15,7 +15,7 @@
 \usepackage{bbm}
 
 \RequirePackage{color}
-\definecolor{chaptergrey}{rgb}{0.6,0.6,0.6}
+\definecolor{chaptergrey}{rgb}{0.7,0.7,0.7}
 
 \@ifundefined{verbatim@processline}{\RequirePackage{verbatim}}{}
 
@@ -91,22 +91,22 @@
 \newcommand*{\chapnumfont}{%
 %   \usefont{T1}{\@defaultcnfont}{b}{n}\fontsize{100}{130}\selectfont%
   \usefont{T1}{pbk}{b}{n}
-  \fontsize{150}{130}
+  \fontsize{30}{20}
   \selectfont
   \color{chaptergrey}
 }
 \def\@makechapterhead#1{%
   %\vspace*{50\p@}%
-  {\parindent \z@ \raggedright \normalfont
+  {\parindent \z@ \centering \normalfont
     {\chapnumfont\ifnum \c@secnumdepth >\m@ne
 %         \huge\bfseries \@chapapp\space \thechapter
-        \raggedleft\bfseries \thechapter
+        \centering \bfseries \thechapter
         \par\nobreak
-        \vskip 10\p@
+        \vskip 2\p@
     \fi}
     \interlinepenalty\@M
-    {\raggedleft\Huge \bfseries #1\par\nobreak}
-    \vskip 20\p@
+    {\centering\LARGE \bfseries #1\par\nobreak}
+    \vskip 5\p@
   }}
 
 \newcommand{\fancychapter}[1]{\chapter{#1}\minitoc}

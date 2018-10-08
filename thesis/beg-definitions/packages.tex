@@ -19,7 +19,6 @@
 \usepackage{cuted}
 \usepackage{bm}
 \usepackage{bbm}
-\usepackage{setspace}
 \pagenumbering{arabic}
 \usepackage{scrextend}
 \usepackage{ragged2e}
@@ -35,6 +34,17 @@
                  \!\raise -1.2pt \hbox{\tiny)}}}
 \usepackage{simplewick}
 \newcommand{\angstrom}{\textup{\AA}}
+\usepackage{multicol}
+\setlength{\columnsep}{0.1mm}
+
+    \makeatletter
+    \g@addto@macro{\normalsize}{%
+        \setlength{\abovedisplayskip}{6pt}
+        \setlength{\abovedisplayshortskip}{6pt}
+        \setlength{\belowdisplayskip}{6pt}
+        \setlength{\belowdisplayshortskip}{6pt}}
+    \makeatother
+    
 % Defines an additional alphabet... not required in most cases
 % ------------------------------------------------------------
 % \DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}

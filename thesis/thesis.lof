@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Minimal models of electron correlations in energy bands}{16}{chapter.2}
+\contentsline {xchapter}{Minimal models of electron correlations}{16}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Graphical comparison between the Ising and the Hubbard models.}}{17}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
@@ -30,41 +30,45 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Bipartite lattices and antiferromagnetic order.}}{22}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Electron density in the purely atomic limit of the Hubbard model. Magnetization as a function of temperature $\left \delimiter "426830A m^2 \right \delimiter "526930B (T)$ in the single site Hubbard model for varying chemical potential $\mu $.}}{27}{figure.caption.33}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Electron density in the purely atomic limit of the Hubbard model. Magnetization as a function of temperature $\left \delimiter "426830A m^2 \right \delimiter "526930B (T)$ in the single site Hubbard model for varying chemical potential $\mu $.}}{26}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Magnetization as a function of the on-site interaction $\left \delimiter "426830A m^2 \right \delimiter "526930B (U)$, and vice-versa, in the single site Hubbard model for varying temperature $T$.}}{27}{figure.caption.34}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Magnetization as a function of the on-site interaction $\left \delimiter "426830A m^2 \right \delimiter "526930B (U)$, and vice-versa, in the single site Hubbard model for varying temperature $T$.}}{26}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Dispersion relations for the \acs {1D} chain and the square lattice in the non-interacting case.}}{30}{figure.caption.37}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Dispersion relations for the \acs {1D} chain and the square lattice in the non-interacting case.}}{29}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Density of states of the \acs {1D} tight-binding model.}}{36}{figure.caption.38}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Density of states of the \acs {1D} tight-binding model.}}{35}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Mean field results for the \acs {1D} Hubbard model.}}{38}{figure.caption.39}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{42}{chapter.3}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Mean field results for the \acs {1D} Hubbard model.}}{36}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Applications}{67}{chapter.4}
+\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{41}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Boundary conditions on the nanoribbon.}}{68}{figure.caption.48}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Evolution of the probability of accepted configurations.}}{52}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Filling $\nu $ as a function of the Fermi energy $\varepsilon _F$ for a \acs {TMD} monolayer and a nanoribbon. $\text {Mo}\text {S}_2$. \acs {TMDNR} band structure obtained by the 3-band model.}}{70}{figure.caption.50}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Exponentially divergent diagonal entries of $\bm {D}'$, showing the orders of magnitude spanned by the matrix elements of the stabilized matrix product.}}{61}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs {TMDNR}}}{71}{figure.caption.51}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Spin density profile along the ribbon's transverse direction. Minimization of the grandpotential.}}{71}{figure.caption.52}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Condition number of $\bm {M}_l = \DOTSB \prod@ \slimits@ _l \bm {B}_l$ obtained by multiplying $\bm {B}$-matrices naively. Absolute values of the diagonal entries of $\bm {D}'$ and corresponding condition number of the matrix to invert to obtain the Green's function.}}{62}{figure.caption.46}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Conclusions and Future Work}{72}{chapter.5}
+\contentsline {xchapter}{Applications and original results}{65}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Boundary conditions on the nanoribbon.}}{66}{figure.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Filling $\nu $ as a function of the Fermi energy $\varepsilon _F$ for a \acs {TMD} monolayer and a nanoribbon. $\text {Mo}\text {S}_2$. \acs {TMDNR} band structure obtained by the 3-band model.}}{68}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs {TMDNR}. Spin density profile along the ribbon's transverse direction. }}{69}{figure.caption.54}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Conclusions and Future Work}{70}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{A-6}{figure.caption.55}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{A-6}{figure.caption.56}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

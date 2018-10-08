@@ -21,7 +21,6 @@ $.
 The effect of the hopping term is best understood in a minimal two-site example.
 There are four one-particle quantum states, represented by the action of the operators $c_{1,\uparrow}^\dagger$, $c_{1,\downarrow}^\dagger$, $c_{2,\uparrow}^\dagger$, $c_{2,\downarrow}^\dagger$ on the vacuum state.
 There are six two-particle states in the Fock space represented by $\left| n_{1\uparrow} \,  n_{1\downarrow} \,  n_{2\uparrow} \, n_{2\downarrow} \right\rangle$:
-
 \begin{equation}
 \begin{split}
 \left| 1 \right\rangle &\equiv \left| 1, 0, 1, 0 \right\rangle = c_{1\uparrow}^\dagger c_{2\uparrow}^\dagger \left| 0 \right\rangle \,\,\,\,
@@ -40,7 +39,6 @@ $
 \mathcal{H}_{2} = - t \big( c_{1\uparrow}^\dagger c_{2\uparrow} +  c_{2\uparrow}^\dagger c_{1\uparrow} + c_{1\downarrow}^\dagger c_{2\downarrow} +  c_{2\downarrow}^\dagger c_{1\downarrow} \big) + U \big(n_{1\uparrow}n_{1\downarrow} + n_{2\uparrow}n_{2\downarrow} \big)
 $ 
 acts on the states of the Fock space as follows
-
 \begin{equation}
 \begin{split}
 \mathcal{H}_{2}\left| 1 \right\rangle & = 0 \,\,
@@ -123,7 +121,6 @@ The hopping Hamiltonian $\mathcal{H}_0$ makes an electron hop, leaving its previ
 This implies that to first order all the matrix elements are 0.
 
 To second order, the matrix elements of the effective Hamiltonian are
-
 \begin{equation}
 \left \langle m | \mathcal{H}_{\text{eff}} | n \right\rangle = \sum_{ | k \rangle} \frac{\left\langle m | \mathcal{H}_0 | k \right\rangle \left\langle k | \mathcal{H}_0 | n \right\rangle }{E_0 - E_k} =-\frac{1}{U} \sum_{ | k \rangle} \left\langle m | \mathcal{H}_0 | k \right\rangle \left\langle k | \mathcal{H}_0 | n \right\rangle ,
 \end{equation}
@@ -140,14 +137,12 @@ $
 \sum_j n_{j,\sigma} n_{j, -\sigma}
 $, 
 so that the effective Hamiltonian is
-
 \begin{equation}\label{eq:degPert}
 \mathcal{H}_{\text{eff}} = - \mathcal{H}_0 \frac{\sum_j n_{j,\sigma} n_{j, -\sigma}}{U} \mathcal{H}_0
 \end{equation}
 
 In appendix (\ref{ap:hubbardObSol}), we find the Heisenberg model as the effective Hamiltonian in this $\frac{U}{t} \gg 1$ limit.
 This is consistent since the Heisenberg model couples spins on different sites, thus it is an \emph{atomic} model.
-
 \begin{equation}
 \mathcal{H}_{\text{eff}} = J \sum_{\left\langle i, j \right\rangle} \bm S_i \cdot \bm S_j ,
 \end{equation}

@@ -4,7 +4,6 @@ Green's functions are the core of the first perturbative, diagrammatic approache
 They are very useful in reducing the enormous amount of variables that come into play in correlated systems to a manageable number.
 Here we try do give some intuition about how they work since they are the central quantity in the \acs{QMC} method we will use.
 Considering the imaginary-time variable of the previous chapter $\tau = i t$, for $\tau > 0$, the Green's function is defined as
-
 \begin{equation}
 G_{i  j} ( \tau, 0 ) = \left\langle c_{i} ( \tau ) c_{j}^\dagger ( 0 ) \right\rangle  \, , \text{with} \,\, c_{i} ( \tau ) = e^{\mathcal{H} \tau } c_{i} ( 0 ) e^{- \mathcal{H} \tau } 
 \end{equation}
@@ -14,7 +13,6 @@ G_{i  j} ( \tau, 0 ) = \left\langle c_{i} ( \tau ) c_{j}^\dagger ( 0 ) \right\ra
 The Hubbard Hamiltonian does not distinguish between spin-up and spin-down sectors.
 Thus, without loss of generality, let us consider the spin-up sector, and compute $G_\uparrow (\tau, 0) =  \left\langle c_{\uparrow} ( \tau) c_{\uparrow}^\dagger ( 0 ) \right\rangle$.
 Only the states $\left| n_{\uparrow} n_{\downarrow} \right\rangle = $ $\left| 0\, 0 \right\rangle$, $\left| 0\, 1 \right\rangle$ contribute to the expectation due to the creation operator on the right, which gives 0, unless there is no spin up electron already in the state it acts upon.
-
 \begin{equation}
 \begin{split}
 c_{\uparrow} ( \tau) c_{\uparrow}^\dagger ( 0 )  \left| 0\, 0 \right\rangle &= e^{\mathcal{H} \tau } c_{\uparrow} ( 0 ) e^{-\mathcal{H} \tau } c_{\uparrow}^\dagger ( 0 )  \left| 0\, 0 \right\rangle = e^{\mathcal{H} \tau } c_{\uparrow} ( 0 ) e^{-\mathcal{H} \tau } \left| 0\, 1 \right\rangle \\
@@ -25,18 +23,15 @@ c_{\uparrow} ( \tau) c_{\uparrow}^\dagger ( 0 )  \left| 0\, 0 \right\rangle &= e
 \end{equation}
 
 Using the expression for the partition function that we obtained in equation (\ref{eq:singleSitePartition}), we arrive at
-
 \begin{equation}
 G_\uparrow (\tau, 0) = \frac{ e^{\tau ( U / 2 + \mu )} e^{-\beta U / 4} + e^{-\tau ( U / 2 - \mu )} e^{\beta (U / 4 + \mu)} }{ e^{-\beta U / 4} ( 1 + 2 e^{\beta ( U /2 + \mu)} + e^{2\beta \mu} ) } ,
 \end{equation}
 which, at half filling becomes
-
 \begin{equation}
 G_\uparrow (\tau, 0) = \frac{ e^{\tau U / 2} e^{-\beta U / 4} + e^{-\tau U / 2} e^{\beta U / 4 } }{ 2 e^{-\beta U / 4}  + 2 e^{\beta U / 4} } ,
 \end{equation}
 
 There is a well known relation between the Green's function and the spectral density $A ( \omega )$, which may be regarded as a local density of states:
-
 \begin{equation}\label{eq:specDens}
 G ( \tau, 0 ) =  \int_{-\infty}^{+\infty} A ( \omega ) \frac{e^{-\omega \tau} }{ e^{-\beta \omega} + 1 } d\omega ,
 \end{equation}
@@ -52,7 +47,6 @@ In \acs{QMC}, we can access $G(\tau, 0)$ and deduce the properties of the system
 \subsection{Non-interacting case}
 
 In this limit, we can compute $G_{i j} ( \tau, 0 )$ analytically by going to momentum space.
-
 \begin{equation}
 c_{\bm k} ( \tau ) = e^{ \mathcal{H} \tau } c_{\bm k} ( 0 ) e^{-\mathcal{H} \tau } = e^{-\varepsilon_{\bm k} \tau } c_{\bm k} ( 0 )
 \end{equation}
@@ -60,14 +54,12 @@ c_{\bm k} ( \tau ) = e^{ \mathcal{H} \tau } c_{\bm k} ( 0 ) e^{-\mathcal{H} \tau
 This equation can be verified by acting with the left hand side and with right hand side on the states $\left| 0 \right\rangle$ and $\left| 1 \right\rangle$, and noting that the result is the same.
 Alternatively, one can use the equation of motion $\partial_\tau \hat{A}(\tau) = [ \mathcal{H}, \hat{A} (\tau) ]$.
 To generalize the result of equation (\ref{eq:eqGreenNonInt}) for the \emph{equal-time} Green's function to  \emph{unequal-time} we transform the fermionic operators in $G$ to momentum space, and use $\left\langle c_{\bm k} c_{\bm k}^\dagger \right\rangle = 1 - f (\bm k )$:
-
 \begin{equation}
 G_{i j}(\tau, 0) = \frac{1}{N} \sum_{\bm k} e^{i \bm k \cdot (\bm R_i - \bm R_j )} ( 1 - f_{\bm k} ) e^{-\varepsilon_{\bm k} \tau } ,
 \end{equation}
 which is translationally invariant corresponding to the symmetry of the Hamiltionian.
 
 We can generalize our definition of the Green's function by using the time-ordering operator $\mathcal{T}$:
-
 \begin{equation}
 G_{\bm k}(\tau, 0) = - \left\langle \mathcal{T} c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ) \right\rangle ,
 \text{where} \,\
@@ -80,13 +72,11 @@ c_{\bm k} ( \tau) c_{\bm k}^\dagger ( 0 ), \,\, \tau > 0 \\
 
 An important property follows immediately from this definition: $G ( \tau + \beta, 0 ) = - G( \tau, 0 )$ for $ -\beta < \tau < 0$.
 The imaginary-time anti-periodicity constraint implies that the frequencies that appear when we Fourier transform are the so called (fermionic) Matsubara frequencies $\omega_n = \frac{(2n + 1) \pi}{\beta}$.\footnote{Analogously, for bosons, imaginary-time periodicity implies that $\omega_n = 2n \pi / \beta$}
-
 \begin{equation}
 G ( i \omega_n ) = \int_0^\beta \frac{d\tau}{\beta} G( \tau, 0) e^{i\omega_n \tau} \quad\quad G (\tau, 0) = \sum_n G ( i \omega_n ) e^{ - i \omega_n \tau}
 \end{equation}
 
 In momentum space, and imaginary time, the Green's function then becomes
-
 \begin{equation}
 G_{\bm k} (\tau, 0 ) =
 \begin{cases}
