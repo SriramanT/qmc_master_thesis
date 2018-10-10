@@ -275,8 +275,8 @@ After the warm-up steps, we are correctly sampling from the required distributio
 \begin{figure}[H]\label{fig:convergence}
 \includegraphics[scale=0.55]{Afqmc/Log-weights_N=64sites.png}
 \hspace{-0.8cm}
-\includegraphics[scale=0.55]{Afqmc/Log-weights_N=96sites.png}
-\caption[Evolution of the probability of accepted configurations.]{Evolution of the probability of accepted HS field  configurations with respect to the probability of the first randomly chosen configuration for a $8 \times 8$ square lattice and for a $8 \times 4$ $\text{Mo}\text{S}_2$ \acs{TMDNR}. Note that while we consider the same $U$, the statistical weights are smaller for the \acs{TMDNR} since the hoppings are normalized to $|t_0| = 0.184$, instead of being uniform and equal to one: $t= 1$. Moreover, we consider $\beta = 4$, a typical used inverse temperature, since the sign problem tends to impede accurate lower temperature simulations.}
+\includegraphics[scale=0.55]{Afqmc/Log-weights_N=108sites.png}
+\caption[Evolution of the probability of accepted configurations.]{Evolution of the probability of accepted HS field  configurations with respect to the probability of the first randomly chosen configuration for a $8 \times 8$ square lattice and for a $9 \times 4$ $\text{Mo}\text{S}_2$ \acs{TMDNR}. Note that while we consider a higher $U$  for the \acs{TMDNR}, the statistical weights are smaller since the hoppings are normalized to $|t_0| = 0.184$, instead of being uniform and equal to one: $t= 1$, as in the square lattice. Moreover, we consider $\beta = 2$, a typical used inverse temperature, since the sign problem tends to impede accurate lower temperature simulations.}
 \end{figure}
 \begin{algorithm}
 \caption{Auxiliary Field Quantum Monte Carlo Sampling Scheme}

@@ -1811,6 +1811,89 @@
       \endverb
       \keyw{hubbard,Hubbard Hamiltonian,hubbard model}
     \endentry
+    \entry{novoselov_electric_2004}{article}{}
+      \name{author}{8}{}{%
+        {{hash=36069fe6cce2bfc2ce88ced9f8a6618f}{%
+           family={Novoselov},
+           familyi={N\bibinitperiod},
+           given={K.\bibnamedelimi S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=61254c1999639e718d72bd4ac22286a4}{%
+           family={Geim},
+           familyi={G\bibinitperiod},
+           given={A.\bibnamedelimi K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=f7fdfb33b45fd6ae767d0324c3ddcafa}{%
+           family={Morozov},
+           familyi={M\bibinitperiod},
+           given={S.\bibnamedelimi V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=444a95a649677e9745b34ae7e38568c1}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=95a281ba3b1fbf7b222b10f7711f11b0}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=10fe886b17345abea64ddb74a08da317}{%
+           family={Dubonos},
+           familyi={D\bibinitperiod},
+           given={S.\bibnamedelimi V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=8e5bd9db7c5443d603b907d2e052beae}{%
+           family={Grigorieva},
+           familyi={G\bibinitperiod},
+           given={I.\bibnamedelimi V.},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=c261a992b3a0a120688d0e32100d5ca6}{%
+           family={Firsov},
+           familyi={F\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c717d530904180772bde0a9ffb9b9e7}
+      \strng{fullhash}{eb745baf8be6825ca0a07de2f497762a}
+      \strng{bibnamehash}{1c717d530904180772bde0a9ffb9b9e7}
+      \strng{authorbibnamehash}{1c717d530904180772bde0a9ffb9b9e7}
+      \strng{authornamehash}{1c717d530904180772bde0a9ffb9b9e7}
+      \strng{authorfullhash}{eb745baf8be6825ca0a07de2f497762a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We describe monocrystalline graphitic films, which are a few atoms thick but are nonetheless stable under ambient conditions, metallic, and of remarkably high quality. The films are found to be a two-dimensional semimetal with a tiny overlap between valence and conductance bands, and they exhibit a strong ambipolar electric field effect such that electrons and holes in concentrations up to 1013 per square centimeter and with room-temperature mobilities of ∼10,000 square centimeters per volt-second can be induced by applying gate voltage. Exfoliating graphite yields stable carbon films just a few atoms thick, which on a silicon substrate act as a new type of strong semimetal transistor. Exfoliating graphite yields stable carbon films just a few atoms thick, which on a silicon substrate act as a new type of strong semimetal transistor.}
+      \field{day}{22}
+      \field{issn}{0036-8075, 1095-9203}
+      \field{journaltitle}{Science}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{5696}
+      \field{title}{Electric Field Effect in Atomically Thin Carbon Films}
+      \field{urlday}{10}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{volume}{306}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{666\bibrangedash 669}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1126/science.1102896
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/franciscobrito/Zotero/storage/QBZMH58T/Novoselov et al. - 2004 - Electric Field Effect in Atomically Thin Carbon Fi.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/AP27JPSV/666.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://science.sciencemag.org/content/306/5696/666
+      \endverb
+      \verb{url}
+      \verb http://science.sciencemag.org/content/306/5696/666
+      \endverb
+    \endentry
     \entry{katsnelson_graphene:_2007}{article}{}
       \name{author}{1}{}{%
         {{hash=a51c7385d3aaba04fa2b4d4df866e797}{%
@@ -2321,8 +2404,8 @@
       \strng{authorbibnamehash}{13c1c5fe6264f24e19d30f3f87962cfc}
       \strng{authornamehash}{13c1c5fe6264f24e19d30f3f87962cfc}
       \strng{authorfullhash}{b0d6cbeec9650afe9cd0a3736087a52f}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Novel physical phenomena can emerge in low-dimensional nanomaterials. Bulk {MoS}(2), a prototypical metal dichalcogenide, is an indirect bandgap semiconductor with negligible photoluminescence. When the {MoS}(2) crystal is thinned to monolayer, however, a strong photoluminescence emerges, indicating an indirect to direct bandgap transition in this d-electron system. This observation shows that quantum confinement in layered d-electron materials like {MoS}(2) provides new opportunities for engineering the electronic structure of matter at the nanoscale.}
@@ -3341,8 +3424,8 @@
       \strng{authorbibnamehash}{503da1af287f708dab5895d482d6beb5}
       \strng{authornamehash}{c9f5a135406b41ca6ec4d95dcab18cc7}
       \strng{authorfullhash}{503da1af287f708dab5895d482d6beb5}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{shorttitle}{Quantum Simulations of Complex Many-Body Systems}
@@ -3678,8 +3761,8 @@
       \strng{authorbibnamehash}{d22d4cc06dfee838c20df34ac58a7545}
       \strng{authornamehash}{d22d4cc06dfee838c20df34ac58a7545}
       \strng{authorfullhash}{d22d4cc06dfee838c20df34ac58a7545}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The behavior of the electrons in a dense electron gas is analyzed quantum-mechanically by a series of canonical transformations. The usual Hamiltonian corresponding to a system of individual electrons with Coulomb interactions is first re-expressed in such a way that the long-range part of the Coulomb interactions between the electrons is described in terms of collective fields, representing organized "plasma" oscillation of the system as a whole. The Hamiltonian then describes these collective fields plus a set of individual electrons which interact with the collective fields and with one another via short-range screened Coulomb interactions. There is, in addition, a set of subsidiary conditions on the system wave function which relate the field and particle variables. The field-particle interaction is eliminated to a high degree of approximation by a further canonical transformation to a new representation in which the Hamiltonian describes independent collective fields, with n′ degrees of freedom, plus the system of electrons interacting via screened Coulomb forces with a range of the order of the inter electronic distance. The new subsidiary conditions act only on the electronic wave functions; they strongly inhibit long wavelength electronic density fluctuations and act to reduce the number of individual electronic degrees of freedom by n′. The general properties of this system are discussed, and the methods and results obtained are related to the classical density fluctuation approach and Tomonaga's one-dimensional treatment of the degenerate Fermi gas.}
@@ -3732,8 +3815,8 @@
       \strng{authorbibnamehash}{efa343a1cfe1c8f601ccfc17f08329b5}
       \strng{authornamehash}{efa343a1cfe1c8f601ccfc17f08329b5}
       \strng{authorfullhash}{efa343a1cfe1c8f601ccfc17f08329b5}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The quantity εc is defined as the correlation energy per particle of an electron gas expressed in rydbergs. It is a function of the conventional dimensionless parameter rs, where rs−3 is proportional to the electron density. Here εc is computed for small values of rs (high density) and found to be given by εc=Alnrs+C+O(rs). The value of A is found to be 0.0622, a result that could be deduced from previous work of Wigner, Macke, and Pines. An exact formula for the constant C is given here for the first time; earlier workers had made only approximate calculations of C. Further, it is shown how the next correction in rs can be computed. The method is based on summing the most highly divergent terms of the perturbation series under the integral sign to give a convergent result. The summation is performed by a technique similar to Feynman's methods in field theory.}
@@ -3795,8 +3878,8 @@
       \strng{authorbibnamehash}{7e83115efaecadce81fb5a4a9a881ade}
       \strng{authornamehash}{95d2613e2827b85f3628fc4c219d13fb}
       \strng{authorfullhash}{7e83115efaecadce81fb5a4a9a881ade}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The contribution from zero-point plasma oscillations to the correlation energy of an electron gas at high density is considered, using the exact high-density theory of Gell-Mann and Brueckner and of Sawada. The plasmon energy is determined as a function of q by an eigenvalue equation identical with the dispersion relation of Bohm and Pines. The plasma solutions are stable only below the energy-momentum values at which they merge with the continuum spectrum arising from particle excitation, thus introducing a natural cutoff into the theory. At high density, however, it is shown that this cutoff can be allowed to become infinite without affecting the correlation energy.}
@@ -3844,8 +3927,8 @@
       \strng{authorbibnamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authornamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authorfullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The theory developed in a previous paper is applied to calculate the correlation energy of a free-electron gas. The theory involves no cut-off and gives a uniform description of collective motion effects in the long-range limit and of particle motion effects in the short-range limit. It is shown that in the lowest order the theory agrees with Bohm \& Pines’s plasma oscillation theory in the long-range limit, but is inadequate in the short-range limit. The theory is approximately evaluated to the next order, which is correct in the short-range limit, and is applied to calculate the correlation energy at several gas densities; the results are in good agreement with those of Bohm \& Pines.}
@@ -3893,8 +3976,8 @@
       \strng{authorbibnamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authornamehash}{df44506ac19a4ea61bc214b80e55dc9b}
       \strng{authorfullhash}{df44506ac19a4ea61bc214b80e55dc9b}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The theory previously developed and applied to calculate the correlation energy of a free-electron gas is extended in this paper to calculate the energy of an electron gas in a potential field. Two new features arise: (i) the introduction of a self-consistent field which is a generalization of the ordinary Hartree field; (ii) the occurrence of ‘local field correction’ effects. It is shown that the energy of the gas can be expressed in terms of the eigenvalues of a certain homogeneous integral equation and a stationary principle for these eigenvalues is given. The theory is applied to crystals and an approximate expression for the correlation energy of a metal is derived neglecting Lorentz-Lorenz corrections effects.}
@@ -3947,8 +4030,8 @@
       \strng{authorbibnamehash}{a5dd95a2bff37f4bf90e1b4c4b7bfb14}
       \strng{authornamehash}{a5dd95a2bff37f4bf90e1b4c4b7bfb14}
       \strng{authorfullhash}{a5dd95a2bff37f4bf90e1b4c4b7bfb14}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A general Hamiltonian formalism is developed to treat from first principles the motion of electrons in solids, including their mutual Coulomb interaction. By a series of canonical transformations it is shown that under suitable circumstances (which obtain in nearly all solids) plasmons (a quantized collective plasma oscillation of the electron gas) represent a well-defined elementary excitation of the solid. The "existence criterion" for plasmons is found to be a high electronic polarizability. Where plasmons exist, we are able to give a satisfactory description of their properties when the majority of the individual electron oscillator strengths correspond to transitions in which the energy change is large or small with respect to the plasmon energy, \hbar \omega p=\hbar(4{ \pi N e}2m)12. After the plasmon modes are separated out, the remaining electron interaction is found to be screened, with a range of the order of the interelectronic spacing. The usefulness of this effective Hamiltonian for the calculation of the electronic energy levels and cohesive energy in solids is discussed briefly.}
@@ -4718,8 +4801,8 @@
       \strng{authorbibnamehash}{0545503ebd7ddfa5da3984377a1c613b}
       \strng{authornamehash}{0545503ebd7ddfa5da3984377a1c613b}
       \strng{authorfullhash}{0545503ebd7ddfa5da3984377a1c613b}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{As its name suggests, the 1988 workshop on "Interacting Electrons in Reduced Dimen the wide variety of physical effects that are associated with (possibly sions" focused on strongly) correlated electrons interacting in quasi-one- and quasi-two-dimensional mate rials. Among the phenomena discussed were superconductivity, magnetic ordering, the metal-insulator transition, localization, the fractional Quantum Hall effect ({QHE}), Peierls and spin-Peierls transitions, conductance fluctuations and sliding charge-density ({CDW}) and spin-density ({SDW}) waves. That these effects appear most pronounced in systems of reduced dimensionality was amply demonstrated at the meeting. Indeed, when concrete illustrations were presented, they typically involved chain-like materials such as conjugated polymers, inorganic {CDW} systems and organie conductors, or layered materials such as high-temperature copper-oxide superconductors, certain of the organic superconductors, and the {QHE} samples, or devices where the electrons are confined to a restricted region of sample, e. g. , the depletion layer of a {MOSFET}. To enable this broad subject to be covered in thirty-five lectures (and ab out half as many posters), the workshop was deliberately focused on theoretical models for these phenomena and on methods for describing as faithfully as possible the "true" behav ior of these models. This latter emphasis was especially important, since the inherently many-body nature of problems involving interacting electrons renders conventional effec tive single-particle/mean-field methods (e. g. , Hartree-Fock or the local-density approxi mation in density-functional theory) highly suspect. Again, this is particularly true in reduced dimensions, where strong quantum fluctuations can invalidate mean-field results.}
@@ -4756,8 +4839,8 @@
       \strng{authorbibnamehash}{ac506abf96d8972c3810165ea0990d0f}
       \strng{authornamehash}{ac506abf96d8972c3810165ea0990d0f}
       \strng{authorfullhash}{ac506abf96d8972c3810165ea0990d0f}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The calculation of imaginary-time-displaced correlation functions with the auxiliary-field projector quantum Monte Carlo algorithm provides valuable insight (such as spin and charge gaps) into the model under consideration. One of the authors and M. Imada proposed a numerically stable method to compute those quantities [J. Phys. Soc. Jpn. 65, 189 (1996)]. Although precise, this method is expensive in {CPU} time. Here we present an alternative approach which is an order of magnitude quicker, just as precise, and very simple to implement. The method is based on the observation that for a given auxiliary field the equal-time Green-function matrix G is a projector: G2=G.}

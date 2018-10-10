@@ -1,55 +1,46 @@
-\chapter{Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}
+\chapter{Obtaining the Hubbard Model. Approximate Solutions}
 \label{ap:hubbardObSol}
 
 %\pagebreak
 
-\section{Hartree-Fock Approximation and the Self Consistent Field Method}\label{sec:hartree-fock}
+\section{Hartree-Fock Approximation and the Self Consistent Field}\label{sec:hartree-fock}
 
 In the mean field approximation, the quartic term of the interaction part of the Hamiltonian
-
 \begin{equation*}
 V_{\text{int}} = \frac{1}{2} V^{\nu\mu}_{\nu'\mu'} c_\nu^\dagger c_\mu^\dagger c_{\mu'} c_{\nu'} ,
 \end{equation*} 
 becomes a sum of all possible 2-body terms (note that terms of the type $\left\langle cc \right\rangle$ and $\left\langle c^\dagger c^\dagger \right\rangle$ must vanish since they do not conserve the number of particles).
-
 \begin{equation}\label{eq:c_mft}
 c_\nu^\dagger c_\mu^\dagger c_{\mu'} c_{\nu'} \approx - \left\langle c_\nu^\dagger c_{\mu'} \right\rangle  c_{\mu}^\dagger c_{\nu'} - \left\langle c_{\mu}^\dagger c_{\nu'} \right\rangle c_{\nu}^\dagger c_{\mu'} + \left\langle c_{\nu}^\dagger c_{\nu'} \right\rangle  c_{\mu}^\dagger c_{\mu'} + \left\langle c_{\mu}^\dagger c_{\mu'} \right\rangle  c_{\nu}^\dagger c_{\nu'} ,
 \end{equation}
 where we ignored the constant terms which are unimportant in the Hamiltonian, in what concerns the dynamics. 
-
-This Hartree-Fock, or mean field approximation is slightly tricky to obtain. It requires one to be precise about what the meaning of the mean field approximation is in terms of creation and annihilation operators. In mean field theory, we assume that the operator
-
+This Hartree-Fock, or mean field approximation is slightly tricky to obtain. 
+It requires one to be precise about what the meaning of the mean field approximation is in terms of creation and annihilation operators. In mean field theory, we assume that the operator
 \begin{equation}
 \rho_{\mu\mu'} = c_{\mu}^\dagger c_{\mu'}
 \end{equation}
 is close to its average, so that we neglect second order terms in the fluctuations $\delta \rho_{\mu\mu'}$, i.e. $\rho_{\mu\mu'}$ is \say{large} only when its average is nonzero, otherwise it is negligibly small. Thus, for most combinations of indices, this operator will vanish. We follow the usual mean field procedure of writing the original operator as a deviation plus an average
-
 \begin{equation}\label{eq:hartree}
 c_{\nu}^\dagger \bigg( c_\mu^\dagger c_{\mu'} - \left\langle c_\mu^\dagger c_{\mu'} \right\rangle \bigg) c_{\nu'} + c_{\nu}^\dagger c_{\nu'} \left\langle c_\nu^\dagger c_{\nu'} \right\rangle
 \end{equation}
 
 Then we note that if $\nu' \neq \mu$, we can commute $c_{\nu'}$ with the parenthesis. But this is true except in a set of measure zero. In the thermodynamic limit $N \rightarrow \infty$, the number of allowed $\bm k$-states is very large, and if we take a continuum limit in which the set of possible $\bm k$-states becomes dense, then the commutation becomes exact. Repeating the procedure of writing (\ref{eq:hartree}) replacing $c_\nu^\dagger c_{\nu'} \mapsto c_\nu^\dagger c_{\nu'} - \left\langle c_\nu^\dagger c_{\nu'} \right\rangle + \left\langle c_\nu^\dagger c_{\nu'} \right\rangle $, we obtain
-
 \begin{equation}\label{eq:mf}
 \underbrace{\big( c_\nu^\dagger c_{\nu'} - \left\langle c_\nu^\dagger c_{\nu'} \right\rangle \big) \big( c_\mu^\dagger c_{\mu'} - \left\langle c_\mu^\dagger c_{\mu'} \right\rangle \big)}_{\propto \, \delta \rho_{\mu\mu'} \, \delta \rho_{\nu\nu'} \rightarrow 0} + c_\nu^\dagger c_{\nu'} \left\langle c_\mu^\dagger c_{\mu'} \right\rangle + c_\mu^\dagger c_{\mu'} \left\langle c_\nu^\dagger c_{\nu'} \right\rangle - \left\langle c_\mu^\dagger c_{\mu'} \right\rangle \left\langle c_\nu^\dagger c_{\nu'} \right\rangle
 \end{equation}
 
 But this result is not complete. This is only the so called Hartree or direct term. Due to identical nature of the interacting electrons, we must consider an analogous contribution for $\left\langle c_\nu^\dagger c_{\mu'} \right\rangle$ finite. We start by exchanging the first two operators: 
-
 \begin{equation}
 c_\nu^\dagger c_\mu^\dagger c_{\mu'} c_{\nu'} = - c_\mu^\dagger c_\nu^\dagger c_{\mu'} c_{\nu'}
 \end{equation}
 Then we proceed in exactly the same manner as before. The result is analogous, but a minus sign appears and we must switch $\mu \leftrightarrow \nu$:
-
 \begin{equation}
 - c_\mu^\dagger c_{\nu'} \left\langle c_\nu^\dagger c_{\mu'} \right\rangle \\
 - c_\nu^\dagger c_{\mu'} \left\langle c_\mu^\dagger c_{\nu'} \right\rangle + \left\langle c_\nu^\dagger c_{\mu'} \right\rangle \left\langle c_\mu^\dagger c_{\nu'} \right\rangle
 \end{equation}
 
 Ignoring the constant terms of the type $\left\langle c^\dagger c \right\rangle \left\langle c^\dagger c \right\rangle$, we recover equation (\ref{eq:c_mft}).
-
 Now we can simply substitute the mean field expansion of equation (\ref{eq:c_mft}) in the second term to  obtain the last term that is subtracted in equation (\ref{eq:startingHamiltonian}) (we omit the boldface on the $\bm k$'s solely in the following equation, but keep in mind that they are vectors):
-
 \begin{equation}\label{eq:mean_field}
 \begin{split}
 &\frac{1}{2} \sum_{\substack{ k_1 k_2 k_1' k_2' \\ \sigma_1 \sigma_2} } V^{k_1 k_2}_{k_1' k_2'} \bigg( - \underbrace{\left\langle c_{k_1 \sigma_1}^\dagger c_{k_2' \sigma_2} \right\rangle}_{\delta_{k_1 k_2'} \delta_{\sigma_1 \sigma_2} f_{k_1} } c_{k_2 \sigma_2}^\dagger c_{k_1' \sigma_1}  - \underbrace{\left\langle c_{k_2 \sigma_2}^\dagger c_{k_1' \sigma_1}  \right\rangle}_{\delta_{k_2 k_1'} \delta_{\sigma_1 \sigma_2} f_{k_2} } c_{k_1 \sigma_1}^\dagger c_{k_2' \sigma_2} + \underbrace{\left\langle c_{k_1 \sigma_1}^\dagger c_{k_1' \sigma_1} \right\rangle}_{\delta_{k_1 k_1'} f_{k_1} } c_{k_2 \sigma_2}^\dagger c_{k_2' \sigma_2}  \\
@@ -57,48 +48,38 @@ Now we can simply substitute the mean field expansion of equation (\ref{eq:c_mft
 \end{split}
 \end{equation}
 
-In the language of Hartree Fock theory, the first two terms give the exchange term, and the last two terms the direct term. Apart from the $\frac{1}{2}$ factor, the term in (\ref{eq:mean_field}) becomes
-
+In the language of Hartree Fock theory, the first two terms give the exchange term, and the last two terms the direct term. Thus, apart from the $\frac{1}{2}$ factor, the term in (\ref{eq:mean_field}) becomes
 \begin{equation}
 \begin{split}
 &- \sum_{\substack{k_1 k_2 \\ k_1' \sigma_1}} V_{k_1' k_1}^{k_1 k_2} f_{k_1} c_{k_2 \sigma_1}^\dagger c_{k_1' \sigma_1}  - \sum_{\substack{k_1 k_2 \\ k_2' \sigma_1}} V_{k_2 k_2'}^{k_1 k_2} f_{k_2} c_{k_1 \sigma_1}^\dagger c_{k_2' \sigma_1} + \sum_{\substack{k_1 k_2 k_2' \\ \sigma_1 \sigma_2}} V_{k_1 k_2'}^{k_1 k_2} f_{k_1} c_{k_2 \sigma_2}^\dagger c_{k_2' \sigma_2} \\
-& + \sum_{\substack{k_1 k_2 k_1' \\  \sigma_1 \sigma_2}} V_{k_1' k_2'}^{k_1 k_2} f_{k_2} c_{k_1 \sigma_1}^\dagger c_{k_1' \sigma_1} \\
-&= \sum_{k_1 k_2 \sigma_1} \bigg( 4 V_{k_1 k_2}^{k_1 k_2} - 2  V_{k_2 k_1}^{k_1 k_2}  \bigg) f_{k_2} c_{k_1 \sigma_1}^\dagger c_{k_1 \sigma_1}
+& + \sum_{\substack{k_1 k_2 k_1' \\  \sigma_1 \sigma_2}} V_{k_1' k_2'}^{k_1 k_2} f_{k_2} c_{k_1 \sigma_1}^\dagger c_{k_1' \sigma_1} = \sum_{k_1 k_2 \sigma_1} \bigg( 4 V_{k_1 k_2}^{k_1 k_2} - 2  V_{k_2 k_1}^{k_1 k_2}  \bigg) f_{k_2} c_{k_1 \sigma_1}^\dagger c_{k_1 \sigma_1}
 ,
 \end{split}
 \end{equation}
 where we used momentum conservation to eliminate a $k'$-sum. Moreover, we used that the sum on spin ($\pm 1/2$) on the last two terms gives factors of 2 , since the interaction is spin independent and thus no spin-dependent term remains after we use momentum conservation. Making $k_1 \rightarrow k , \, k_2 \rightarrow k', \, \sigma_1 \rightarrow \sigma$, and recalling the definition in equation (\ref{eq:integrals}), we obtain the result we sought.
 
 The procedure above is meant to serve as an intuitive derivation. Now we approach the problem more formally. In fact, the argument that allowed us to perform the commutation leading to equation \ref{eq:mf} seems somewhat handwaving. We should not have to take the thermodynamic limit to perform a mean field expansion. A more systematic procedure to obtain the mean field expansion of a quartic interaction term was given by Pierre de Gennes in the context of a mean field treatment of a superconductor in a magnetic field \cite{gennes_superconductivity_1999}. Our case is actually much simpler to analyze, but we follow the same argument as de Gennes.
-
 Consider the Hamiltonian to be given by $\mathcal{H} = \mathcal{H}_0 + \mathcal{H}_1$, where
-
 \begin{equation}
-\begin{split}
-\mathcal{H}_0 &= \sum_{\bm k, \sigma} \varepsilon_{\bm k} c_{\bm k, \sigma}^\dagger c_{\bm k, \sigma} \\
-\mathcal{H}_1 &= \frac{1}{2} \sum_{\substack{\bm k_1 \bm k_2 \\ \bm k_1' \bm k_2' \\  \sigma_1 \sigma_2}} V_{k_1' k_2'}^{k_1 k_2} c_{\bm k_1 \sigma_1}^\dagger c_{\bm k_2 \sigma_2}^\dagger c_{\bm k_2' \sigma_2} c_{\bm k_1' \sigma_1} 
-\end{split}
+\mathcal{H}_0 = \sum_{\bm k, \sigma} \varepsilon_{\bm k} c_{\bm k, \sigma}^\dagger c_{\bm k, \sigma} \quad 
+\mathcal{H}_1 = \frac{1}{2} \sum_{\substack{\bm k_1 \bm k_2 \\ \bm k_1' \bm k_2' \\  \sigma_1 \sigma_2}} V_{k_1' k_2'}^{k_1 k_2} c_{\bm k_1 \sigma_1}^\dagger c_{\bm k_2 \sigma_2}^\dagger c_{\bm k_2' \sigma_2} c_{\bm k_1' \sigma_1} 
 \end{equation}
 
 We would like to find an effective Hamiltonian that is quadratic in the fermion operators:
-
 \begin{equation}\label{eq:mfAv}
 \mathcal{H}_{\text{eff}} = \sum_{\bm k, \sigma} (\varepsilon_{\bm k} + v_{\bm k} ) c_{\bm k, \sigma}^\dagger c_{\bm k, \sigma}
 \end{equation}
 
 This effective Hamiltonian is diagonal, so assuming we know $v_{\bm k}$ (which is what we are trying to determine in the first place), we can compute its eigenstates $\{ \left| \phi \right\rangle \}$, and compute the average of the actual Hamiltonian $\mathcal{H}$ using the basis $\{ \left| \phi \right\rangle \}$:
-
 \begin{equation}\label{eq:avH}
 \left\langle \mathcal{H} \right\rangle = \frac{\sum_\phi \left\langle \phi | \mathcal{H} | \phi \right\rangle e^{-\beta E_\phi} }{\sum_\phi e^{-\beta E_\phi} }
 \end{equation}
 
 Our criterion to determine $\mathcal{H}_{\text{eff}}$ is the requirement that the free energy $F = \left\langle \mathcal{H} \right\rangle - TS$, with the average computed with the eigenstates of $\mathcal{H}_{\text{eff}}$ be stationary, i.e. $\delta F = 0$. Thus, we find the mean field form of the quartic term invoking only a variational principle without any need to resort to the thermodynamic limit. In fact, we never even have to explicitly compute the average in equation (\ref{eq:avH}). In terms of pairs of fermion operator averages, we have 
-
 \begin{equation}
 \left\langle \mathcal{H} \right\rangle = \sum_{\bm k, \sigma} \varepsilon_{\bm k} \left\langle c_{\bm k, \sigma}^\dagger c_{\bm k, \sigma} \right\rangle + \frac{1}{2} \sum_{\substack{\bm k_1 \bm k_2 \\ \bm k_1' \bm k_2' \\  \sigma_1 \sigma_2}} V_{k_1' k_2'}^{k_1 k_2} \left\langle c_{\bm k_1 \sigma_1}^\dagger c_{\bm k_2 \sigma_2}^\dagger c_{\bm k_2' \sigma_2} c_{\bm k_1' \sigma_1} \right\rangle ,
 \end{equation}
 where the last term can be reduced to products of averages of pairs of fermion operators by Wick's theorem:
-
 \begin{equation}
 \begin{split}
 &\left\langle c_{\bm k_1 \sigma_1}^\dagger c_{\bm k_2 \sigma_2}^\dagger c_{\bm k_2' \sigma_2} c_{\bm k_1' \sigma_1} \right\rangle = \left\langle c_{\bm k_1 \sigma_1}^\dagger c_{\bm k_1' \sigma_1} \right\rangle  \left\langle c_{\bm k_2 \sigma_2}^\dagger c_{\bm k_2' \sigma_2} \right\rangle - \left\langle c_{\bm k_1 \sigma_1}^\dagger c_{\bm k_2' \sigma_2} \right\rangle  \left\langle c_{\bm k_2 \sigma_2}^\dagger c_{\bm k_1' \sigma_1} \right\rangle \\
@@ -107,7 +88,6 @@ where the last term can be reduced to products of averages of pairs of fermion o
 \end{equation}
 
 The computation is now done by using the rules (for all $\bm k$ and $\sigma$).
-
 \begin{equation}\label{eq:rules}
 \begin{split}
 \left\langle c_{\bm k, \sigma}^\dagger c_{\bm k', \sigma'} \right\rangle &= \delta_{\bm k, \bm k'} \delta_{\sigma, \sigma'} f_{\bm k} \\
@@ -117,7 +97,6 @@ The computation is now done by using the rules (for all $\bm k$ and $\sigma$).
 where $f_{\bm k} = (e^{\beta(\varepsilon_{\bm k} - \mu)} +1 )^{-1}$ is the Fermi-Dirac function.
 
 Since the original Hamiltonian is quadratic, again we have that terms of the type $\left\langle cc \right\rangle$ and $\left\langle c^\dagger c^\dagger \right\rangle$ do not contribute. Hence, varying the free energy, we obtain
-
 \begin{equation}
 \begin{split}
 &\delta F =  \delta \left\langle \mathcal{H} \right\rangle - T \delta S = \sum_{\bm k \sigma} \varepsilon_{\bm k} \delta \left\langle c_{\bm k, \sigma}^\dagger c_{\bm k, \sigma} \right\rangle + \frac{1}{2} \sum_{\substack{\bm k_1 \bm k_2 \\ \bm k_1' \bm k_2' \\  \sigma_1 \sigma_2}} V_{k_1' k_2'}^{k_1 k_2} \bigg( \left\langle c_{\bm k_1 \sigma_1}^\dagger c_{\bm k_1' \sigma_1} \right\rangle \delta  \left\langle c_{\bm k_2 \sigma_2}^\dagger c_{\bm k_2' \sigma_2} \right\rangle + \\
@@ -125,19 +104,16 @@ Since the original Hamiltonian is quadratic, again we have that terms of the typ
 \end{split}
 \end{equation}
 which can be simplified exactly in the same manner as in equation (\ref{eq:mean_field}), i.e. by using the rules of equation (\ref{eq:rules}), and that the occupation of a given momentum state $\bm k$ is given by the Fermi-Dirac function:
-
 \begin{equation}
 \delta F = \sum_{\bm k \sigma} \varepsilon_{\bm k} \delta \left\langle c_{\bm k, \sigma}^\dagger c_{\bm k, \sigma} \right\rangle + \sum_{\bm k \bm k' \sigma} \bigg( 2 V_{\bm k \bm k'}^{\bm k \bm k'} -  V_{\bm k' \bm k}^{\bm k \bm k'}  \bigg) f_{\bm k'} c_{\bm k \sigma} \delta \left\langle c_{\bm k, \sigma}^\dagger c_{\bm k, \sigma} \right\rangle
 \end{equation}
 
 We can now compare $\delta F = \delta \left\langle \mathcal{H} \right\rangle - T \delta S$ and $\delta F' = \delta \left\langle \mathcal{H}_{\text{eff}} \right\rangle - T \delta S$, which is simply given by
-
 \begin{equation}
 \delta F' =  \delta \left\langle \mathcal{H}_{\text{eff}} \right\rangle - T \delta S = \sum_{\bm k \sigma} (\varepsilon_{\bm k} + v_{\bm k}) \delta \left\langle c_{\bm k, \sigma}^\dagger c_{\bm k, \sigma} \right\rangle
 \end{equation}
 
 Requiring both free energies to be stationary, we find our desired result
-
 \begin{equation}
 v_{\bm k} = \sum_{\bm k'} \bigg( 2 V_{\bm k \bm k'}^{\bm k \bm k'} -  V_{\bm k' \bm k}^{\bm k \bm k'}  \bigg) f_{\bm k'} ,
 \end{equation}
@@ -149,7 +125,6 @@ Band theory was found to be flawed soon after it was introduced.
 The picture it proposes is simple and generally works pretty well.
 It is based on considering the electrons to be independently moving under the constant background potential created by the ions.
 The solutions of the Schr\"odinger for free electrons in a periodic potential $U(\bm r)$, such that $U(\bm r) = U(\bm r + \bm R)$,
-
 \begin{equation}\label{eq:schrodinger}
 \bigg[ -\frac{1}{2m} \nabla^2 + U(\bm r) \bigg] \psi (\bm r) = \varepsilon \psi (\bm r)
 \end{equation}
@@ -208,7 +183,6 @@ How much energy do we need to provide for this process to occur?
 If $a$ is large, we have essentially one electron per site at the start.
 When an electron is displaced, we end up with a hole and a doubly occupied site.
 The potential energy of such a state is
-
 \begin{equation}
 E_{H^-} + E_{H^+} - 2 E_H 
 \end{equation}
@@ -220,14 +194,12 @@ Let $W$ be the bandwidth corresponding to the delocalization of an electron on t
 Both the hole and the doubly occupied will stay at the bottom of the band and gain an energy $W/2$ (assuming that this delocalization is of the same order of magnitude).
 The dominant transfer integral $-t$ is between nearest neighbors.
 The dispersion relation then reads
-
 \begin{equation}
 \varepsilon_{\bm k} = -2 t ( \cos k_x + \cos k_y ) 
 \end{equation}
 
 The bandwidth is then $W = 8 t$.
 The energy of a configuration with a hole and a doubly occupied site is
-
 \begin{equation}
 \Delta_c = U - W ,
 \end{equation}
@@ -252,31 +224,26 @@ The fluctuations of both charge and spin due to the electron interactions may th
 Let us start by restating the result we want to prove.
 
 If $\mathcal{H} = \bm c^\dagger \bm H \bm c$, where $\bm H$ is a $N \times N$ Hermitian matrix, then we have that
-
 \begin{equation}\label{eq:apZquadratic}
 \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \prod_{i=1}^N ( 1 + e^{-\beta \lambda_{i} } ) ,
 \end{equation}
 where $\lambda_{i}$ are the eigenvalues of $\bm H$. 
 
-We will now prove equation (\ref{eq:apZquadratic}). Without loss of generality, let us consider $\bm H$ to be diagonal. Then, its eigenvalues coincide with the diagonal entries, so that $\bm H = \text{diag}(\lambda_{i} )$. The quadratic Hamiltonian may then be  diagonalized
-
+We will now prove equation (\ref{eq:apZquadratic}). Without loss of generality, let us consider $\bm H$ to be diagonal. Then, its eigenvalues coincide with the diagonal entries, so that $\bm H = \text{diag}(\lambda_{i} )$. The quadratic Hamiltonian may then be diagonalized
 \begin{equation*}
 \mathcal{H} = {\bm c}^\dagger \text{diag} (\lambda_{1}, \lambda_{2}, .., \lambda_{N}) \bm c = \sum_{i=1}^N \lambda_{i} n_{i}
 \end{equation*}
 
 We continue by induction. When $N=1$, we have
-
 \begin{equation}
 \text{Tr} (e^{-\beta\mathcal{H} } ) = \left\langle 0 \left| e^{-\beta \lambda_{1} n_{1}}  \right| 0 \right\rangle + \left\langle 1 \left| e^{-\beta \lambda_{1} n_{1}}   \right| 1 \right\rangle = 1 + e^{-\beta \lambda_{1} }
 \end{equation}
 
 Assuming that for $N-1$:
-
 \begin{equation*}
 \text{Tr} \big[ e^{-\beta \sum_{i=1}^{N-1} \lambda_{i} n_{i} } \big] = \prod_{i=1}^{N-1} ( 1 + e^{-\beta \lambda_{i} } )
 \end{equation*}
 we can compute the trace for $i$ going up to $N$.
-
 \begin{equation*}
 \begin{split}
 &\text{Tr} \big[ e^{-\beta \sum_{i=1}^{N-1} \lambda_{i} n_{i} } \big] = \sum_{i=1}^{N} \left\langle \psi_1^{\lambda_1} \psi_2^{\lambda_2} ... \psi_N^{\lambda_N} \left| e^{-\beta \sum_{i=1}^N \lambda_{i} n_{i}}  \right| \psi_1^{\lambda_1} \psi_2^{\lambda_2} ... \psi_N^{\lambda_N} \right\rangle \\
@@ -288,13 +255,11 @@ we can compute the trace for $i$ going up to $N$.
 \end{equation*}
 
 To complete the proof we note that for any $\bm H$, there exists a unitary matrix $\bm Q$, such that $\bm Q^T \bm H \bm Q = \bm \Lambda = \text{diag}(\lambda_{i})$. Let $\tilde{\bm c} = \bm Q \bm c$, and $\tilde{n_i} = \tilde{c_i}^\dagger \tilde{c_i}$. Then, we find
-
 \begin{equation*}
 \mathcal{H} = \bm c^\dagger \bm H \bm c = \bm \tilde{\bm c}^\dagger \bm \Lambda \tilde{\bm c} = \sum_{i=1}^N \lambda_{i} \tilde{n}_{i}
 \end{equation*}
 
 The trace is independent of the choice of basis functions. Thus, we have
-
 \begin{equation*}
 \begin{split}
 \text{Tr} ( e^{-\beta \mathcal{H} } ) &= \text{Tr} \bigg( \prod_{i=1}^N e^{-\beta \lambda_{i} \tilde{n}_{i} } \bigg) \\
@@ -306,70 +271,57 @@ The trace is independent of the choice of basis functions. Thus, we have
 \label{sec:dos1d}
 
 Using the definition of the density of states
-
 \begin{equation}
 N ( E ) = \frac{1}{N} \sum_{\bm k} \delta_{E,\varepsilon_{\bm k}} \rightarrow \frac{1}{(2\pi)^d} \int d\bm k \, \delta ( E - \varepsilon_{\bm k})\,\, \text{when}\,\, N\rightarrow \infty.
 \end{equation}
 with $\varepsilon_k = - 2 t \cos k$, in the thermodynamic limit we obtain
-
 \begin{equation}
 N ( E ) = \frac{1}{2\pi} \int d k \, \delta ( E + 2t \cos k)
 \end{equation}
 
 Now we use a well known property of the delta function
-
 \begin{equation}
 \delta ( g(x) ) = \sum_{ \{i | g(x_i) = 0\} } \frac{\delta ( x - x_i) }{| g' ( x_i) |}
 \end{equation}
 
 Noting that $g'(k) = - 2 t \sin k$, and that the roots of $g$ (there are two in the first Brillouin zone, to which the integral is restricted) satisfy $\cos k_i = - E / 2t$, so that $\sin k_i = \pm \sqrt{1 - E^2 / 4 t^2}$, we obtain
-
 \begin{equation}
 \delta ( E + 2 t \cos k) = \frac{1 }{ \sqrt{4t^2 - E^2 }} \bigg( \delta ( k - k_1 ) + \delta ( k - k_2 ) \bigg)
 \end{equation}
 leading to the sought result
-
 \begin{equation}
 N ( E )_{1d} = \frac{1}{\pi \sqrt{4 t^2 - E^2}}
 \end{equation}
 
-\section{Obtaining an effective Heisenberg Hamiltonian as the atomic,  $U/t \gg 1$ limit of the Hubbard model}
+\section{Effective Heisenberg model as the atomic limit of the Hubbard model}
 \label{sec:heisenberg}
 
 To obtain the effective Hamiltonian corresponding to the $U/t \gg 1$ limit of the Hubbard model to second order in degenerate perturbation theory, we start with its general form, as obtained in equation (\ref{eq:degPert}).
-
 \begin{equation}
 \mathcal{H}_{\text{eff}} = - \mathcal{H}_0 \frac{\sum_j n_{j,\sigma} n_{j, -\sigma}}{U} \mathcal{H}_0
 \end{equation}
 
 For each element $j$ of the sum, only terms of the type 
-
 \begin{equation*}
 \sum_{i(j)} c_{j,\sigma}^\dagger c_{i,\sigma} 
 \end{equation*}
 contribute.
 Here $\sum_{i(j)}$ is a sum over the set of neighbors $i$ of site $j$.
-
 A term of the effective Hamiltonian $\mathcal{H}_{\text{eff}}$ corresponding to the j-th element in the sum reads
-
 \begin{equation*}
 -\frac{t^2}{U} \sum_{i(j), \sigma_1, \sigma_2 } c_{i,\sigma_1}^\dagger c_{j,\sigma_1} n_{j,\sigma} n_{j, -\sigma} c_{j, \sigma_2}^\dagger c_{i, \sigma_2}
 \end{equation*}
 
 There are only four cases in which the contribution of a term of this type is nonzero.
-
 \begin{itemize}
-
 \item $\sigma = \sigma_1 = \sigma_2$
 
 The operator in the sum then becomes
-
 \begin{equation*}
 c_{i,\sigma}^\dagger c_{j,\sigma} n_{j,\sigma} n_{j, -\sigma} c_{j, \sigma}^\dagger c_{i, \sigma} = n_{i,\sigma} n_{j, -\sigma} c_{j,\sigma} n_{j, \sigma} c_{j, \sigma}^\dagger
 \end{equation*}
 
 Now, we use a fermionic operator identity:
-
 \begin{equation*}
 \begin{split}
 &c n = c c^\dagger c = ( 1 -  c^\dagger c ) c = c \\
@@ -378,19 +330,16 @@ Now, we use a fermionic operator identity:
 \end{equation*}
 
 The term of the Hamiltonian corresponding to this first case then takes on the form
-
 \begin{equation*}
 n_{i,\sigma} n_{j,-\sigma} ( 1 - n_{j, \sigma} )
 \end{equation*}
 
 We can further simplify this term by noting that in the subspace where $\mathcal{H}_{\text{eff}}$ acts, every site is occupied by only a single electron so that
-
 \begin{equation*}
 n_{j,\sigma} + n_{j,-\sigma} = 1 \iff 1 - n_{j,\sigma} = n_{j,-\sigma}
 \end{equation*}
 
 Since, for fermions we have that $\hat{n} = \hat{n}^k$, whichever the power $k \in \mathbbm{N}$, the final form of the sought term of the Hamiltonian is
-
 \begin{equation*}
 n_{i,\sigma} n_{j, -\sigma}
 \end{equation*}
@@ -398,7 +347,6 @@ n_{i,\sigma} n_{j, -\sigma}
 \item $-\sigma = \sigma_1 = \sigma_2$
 
 The contribution to the Hamiltonian is exactly of the same form but making $\sigma \mapsto -\sigma$:
-
 \begin{equation*}
 n_{i,-\sigma} n_{j, \sigma}
 \end{equation*}
@@ -406,7 +354,6 @@ n_{i,-\sigma} n_{j, \sigma}
 \item $\sigma = - \sigma_1 = \sigma_2$
 
 We can use the same reasoning as we did for the first term to obtain
-
 \begin{equation*}
 \begin{split}
 &c_{i,-\sigma}^\dagger c_{j,-\sigma} n_{j,\sigma} n_{j, -\sigma} c_{j, \sigma}^\dagger c_{i, \sigma} \\
@@ -418,7 +365,6 @@ We can use the same reasoning as we did for the first term to obtain
 \item $-\sigma = - \sigma_1 = \sigma_2$
 
 Analogously, the contribution to the Hamiltonian is
-
 \begin{equation*}
 \begin{split}
 &c_{i,\sigma}^\dagger c_{j,\sigma} n_{j,\sigma} n_{j, -\sigma} c_{j, -\sigma}^\dagger c_{i, -\sigma} \\
@@ -429,14 +375,12 @@ Analogously, the contribution to the Hamiltonian is
 \end{itemize}
 
 Grouping all these four terms, we obtain
-
 \begin{equation}
 \mathcal{H}_{\text{eff}} = \frac{2t^2}{U} \sum_{\left\langle i, j \right\rangle, \sigma} ( - n_{i,\sigma} n_{j,-\sigma} + c_{i,-\sigma}^\dagger c_{i,\sigma} c_{j,\sigma}^\dagger c_{j,-\sigma} ) ,
 \end{equation}
 where the factor of 2 appears because for each pair of nearest neighbors $\left\langle i, j \right\rangle$, a term comes from the term $n_{j,\sigma} n_{j,-\sigma}$ of the sum $\sum_j n_{j,\sigma} n_{j,-\sigma}$, and another term from $n_{i,\sigma} n_{i,-\sigma}$.
 
 Recall the second quantized form of the spin operators:
-
 \begin{equation}
 \begin{cases}
 S_i^z = \frac{1}{2} ( n_{i,\uparrow} - n_{i,\downarrow} ) \\
@@ -446,7 +390,6 @@ S_i^- = c_{i,\downarrow}^\dagger c_{i,\uparrow}, \\
 \end{equation}
 
 Using these relations and that the density operator is $n_i = n_{i,\uparrow} + n_{i,\downarrow}$, the following relations hold
-
 \begin{equation}
 \begin{split}
 S_i^z S_j^z - \frac{1}{4} n_i n_j &= -\frac{1}{2} ( n_{i,\uparrow} n_{j,\downarrow} + n_{i,\downarrow} n_{j,\uparrow} ) \\
@@ -455,23 +398,20 @@ S_i^+ S_j^- + S_i^- S_j^+ &= c_{i,\uparrow}^\dagger c_{i,\downarrow} c_{j,\downa
 \end{equation}
 
 Thus, we may rewrite the effective Hamiltonian:
-
 \begin{equation}
 \mathcal{H}_{\text{eff}} = \frac{4t^2}{U} \sum_{\left\langle i, j \right\rangle} \bigg( S_i^z S_j^z - \frac{1}{4} n_i n_j + \frac{1}{2} ( S_i^+ S_j^- + S_i^- S_j^+ ) \bigg)
 \end{equation}
 
 But $S_i^z S_j^z + \frac{1}{2} ( S_i^+ S_j^- + S_i^- S_j^+) = \bm S_i \cdot \bm S_j$ and $n_i = n_j = 1$ in the ground state subspace, so the effective Hamiltonian becomes
-
 \begin{equation}
 \mathcal{H}_{\text{eff}} = \frac{4t^2}{U} \sum_{\left\langle i, j \right\rangle} \bigg( \bm S_i \cdot \bm S_j  - \frac{1}{4}  \bigg),
 \end{equation}
 which corresponds to the antiferromagnetic Heisenberg model: $\mathcal{H}_{\text{Heis}} = J \sum_{\left\langle i, j \right\rangle} \bm S_i \cdot \bm S_j $, with $J = 4 t^2 / U$.
 
-\section{On the finite temperature Wick's theorem}
+\section{On Wick's theorem}
 \label{sec:wick}
 
 A product of operators containing $k$ factors $c_i^\dagger$ and $n - k$ factors $c_i$ is brought into \emph{normal ordering} by the operator $\mathcal{N}$ (also written $: \,\,:$) defined as
-
 \begin{equation}
 \mathcal{N} [ c_1^{(\dagger)} c_2^{(\dagger)} ... c_n^{(\dagger)} ] = :  c_1^{(\dagger)} c_2^{(\dagger)} ... c_n^{(\dagger)}  : \, \equiv ( - 1 )^P c_{i_1}^{\dagger} c_{i_2}^{\dagger} ... c_{i_k}^{\dagger} c_{i_{k+1}} ... c_{i_n} ,
 \end{equation}
@@ -487,7 +427,6 @@ The definition of a contraction holds even there are other operators between the
 Wick's theorem generalizes the resullt for a product of two operators, giving an expression for the product of an arbitrary number of operators.
 
 Let us state the zero temperature version of Wick's theorem for generic operators $C_i= C_i^+ + C_i^-$.
-
 \begin{equation}\label{eq:wickState}
 C_1 C_2 ... C_n = \mathcal{N} [ C_1 C_2 ... C_n ] + \sum_{(ij)} \mathcal{N} [ C_1 C_2 ...
 \contraction{}{C_i}{...}{C_j}
@@ -504,7 +443,6 @@ Otherwise, they are just products of contractions, which are c-numbers.
 A general rule follows from the fact that the average of a normally ordered operator vanishes in the ground state.
 Two-point correlation functions determine all $n$-point correlation functions.
 In particular, for the case of 4 operators, using a self-explanatory abbreviated notation:
-
 \begin{equation}
 \left\langle gs | 1234 | gs \right\rangle = \left\langle 12 \right\rangle \left\langle 34 \right\rangle - \left\langle 13 \right\rangle \left\langle 24 \right\rangle + \left\langle 14 \right\rangle \left\langle 23 \right\rangle
 \end{equation}
@@ -515,7 +453,6 @@ All that changes is the definition of the contraction, which is now defined in t
 Additionally, the theorem generalizes for time-ordered products, simply by replacing the thermal averages of the pair products by time-ordered pair averages.
 
 In particular, for a free theory, the $n$-particle Green's function, defined by the field operators $\hat{\psi} ( x )$,
-
 \begin{equation}
 \mathcal{G} ( x_1, x_2, ..., x_n; y_1, y_2, ... y_n ) \equiv \left\langle \mathcal{T} \hat{\psi} ( x_1 ) \hat{\psi} ( x_2 ) ... \hat{\psi} ( x_n ) \hat{\psi}^\dagger ( y_1 ) \hat{\psi}^\dagger ( y_2 ) ... \hat{\psi}^\dagger ( y_n ) \right\rangle
 \end{equation}
@@ -523,7 +460,6 @@ is determined solely by the set of all one-particle Green's functions.
 Here $x$ and $y$ denote both the complete set of quantum numbers describing the system's degrees of freedom, and imaginary time.
 
 Applying Wick's theorem to the set of non-interacting (and thus independent) particles, we obtain
-
 \begin{equation}
 \mathcal{G} ( x_1, x_2, ... x_n; y_1, y_2,... y_n ) = \sum_P (- 1 )^P \mathcal{G}^0 ( x_1; y_{i_1} ) \mathcal{G}^0 ( x_2; y_{i_2} ) ... \mathcal{G}^0 ( x_n; y_{i_n} ) ,
 \end{equation}
@@ -537,32 +473,72 @@ Here we explain how it arises as a mean field theory prone to studying spontaneo
 This is useful as a first approach to investigate the tendency towards long range ordering, for example in ferromagnetic, or antiferromagnetic phases.
 
 The starting point is the Gibbs-Bogoliubov-Feynman (GBF) inequality
-
 \begin{equation}\label{eq:gibbs}
 \mathcal{F} \le \left\langle \mathcal{H} \right\rangle_{\text{MF}} - T \mathcal{S}_{\text{MF}} ,
 \end{equation}
 which is saturated when $\mathcal{H}_{\text{MF}} = \mathcal{H}$, and in general  serves as a variational principle to find a simpler, non-interacting form for the Hamiltonian.
 $\mathcal{F}$ is the system's free energy, $T$ is the temperature and the mean field averages are computed as per Eq.(\ref{eq:mfAv}), while the entropy is computed for the thermal distribution $\rho_{\text{MF}} = e^{-\beta \mathcal{H}_{\text{MF}}}$.
 Defining $\mathcal{F}_{\text{MF}} = \left\langle \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} - T \mathcal{S}_{\text{MF}}$, we may recast Eq.(\ref{eq:gibbs}) as
-
 \begin{equation}\label{eq:gibbs2}
 \mathcal{F} \le \mathcal{F}_{\text{MF}} + \left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} \equiv F
 \end{equation}
 
-We seek a quadratic Hamiltonian that minimizes $F$, i.e. $\delta F = 0$.
-
-\begin{equation}
+We seek a quadratic Hamiltonian that minimizes $F$, i.e. $\delta F = 0$, of the form
+\begin{equation}\label{eq:hMF}
 \mathcal{H}_{\text{MF}} = \mathcal{H}_K + \sum_{i, j, \sigma} \varepsilon_{ij} c_{i, \sigma}^\dagger c_{j, \sigma} ,
 \end{equation}
-and by varying $\varepsilon_{ij}$, we can compute $\delta F$ and show that it is minimized for the mean field Hubbard Hamiltonian in much the same way as we did in section \ref{sec:hartree-fock}.
+which corresponds to the possibility of the  appearance of spin polarization along the quantization axis.
+and by varying $\varepsilon_{ij} \mapsto \varepsilon_{ij} + \delta \varepsilon_{ij} $, we can compute $\delta F$ and show that it is minimized ($\delta F = 0$) for the mean field Hubbard Hamiltonian in much the same way as we did in section \ref{sec:hartree-fock}.
+
+Since the Hamiltonian of Eq.(\ref{eq:hMF}) is quadratic in the fermion operators, we have that $ \left\langle n_{i,\uparrow} n_{i,\downarrow} \right\rangle_{\text{MF}} = \left\langle n_{i,\uparrow} \right\rangle_{\text{MF}} \left\langle n_{i,\downarrow} \right\rangle_{\text{MF}}$, and we must vary $\varepsilon_{ij}$ in the following term
+\begin{equation}
+\left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} = \sum_{i, j, \sigma} \bigg( \frac{U}{2} \left\langle n_{i,\sigma} \right\rangle_{\text{MF}} \left\langle n_{j,-\sigma} \right\rangle_{\text{MF}} \delta_{ij} -\varepsilon_{ij} \left\langle c_{i,\sigma}^\dagger c_{j, \sigma} \right\rangle_{\text{MF}} \bigg),
+\end{equation}
+leading to
+\begin{equation}
+\delta \left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} = \sum_{i, j, \sigma} \bigg( U \left\langle n_{i,\sigma} \right\rangle_{\text{MF}} \delta \left\langle n_{j,-\sigma} \right\rangle_{\text{MF}} \delta_{ij} - \delta \varepsilon_{ij} \left\langle c_{i,\sigma}^\dagger c_{j, \sigma} \right\rangle_{\text{MF}} - \varepsilon_{ij} \delta \left\langle c_{i,\sigma}^\dagger c_{j, \sigma} \right\rangle_{\text{MF}} \bigg)
+\end{equation}
+
+The mean field free energy term can be obtained by introducing the variation $\mathcal{H} \mapsto \mathcal{H} + \delta \mathcal{H} $.
+\begin{equation}\label{eq:varTr}
+\begin{split}
+\Tr [ e^{-\beta ( \mathcal{H} + \delta \mathcal{H} ) } ] &= \Tr  \bigg[ \sum_n \frac{(-\beta)^n}{n!} ( \mathcal{H} + \delta \mathcal{H} )^n \bigg] \\
+&= 1 + \Tr \bigg[  \sum_{n=1}^{\infty} \frac{(-\beta)^n}{n!} \mathcal{H}^n \bigg] \\
+& + \Tr \bigg[  \sum_{n=1}^{\infty} \frac{(-\beta)^n}{n!} (\delta \mathcal{H} \mathcal{H}^{n-1} +  \mathcal{H} \delta \mathcal{H} \mathcal{H}^{n-2} + \mathcal{H}^2 \delta \mathcal{H} \mathcal{H}^{n-3} + ... \mathcal{H}^{n-1} \delta \mathcal{H} ) \bigg] + \mathcal{O} ( \delta \mathcal{H}^2 ) \\
+&= \Tr [ e^{-\beta \mathcal{H} } ] + \Tr \bigg[ \delta \mathcal{H} \sum_{n=1}^\infty \frac{(-\beta)^n}{(n-1)!} \mathcal{H}^{n-1} \bigg] + \mathcal{O} ( \delta \mathcal{H}^2 ) \\
+&= \Tr [ e^{-\beta \mathcal{H} } ] - \beta \Tr \bigg[ \delta \mathcal{H} e^{-\beta \mathcal{H} } \bigg] + \mathcal{O} ( \delta \mathcal{H}^2 )
+\end{split} ,
+\end{equation}
+which, in turn, implies that
+\begin{equation}\label{eq:dTr}
+\delta \Tr [ e^{-\beta \mathcal{H} } ] = -\beta \Tr [ e^{-\beta \mathcal{H} } \delta \mathcal{H} ] 
+\end{equation}
+and, using the definition of the mean field free energy:
+\begin{equation}\label{eq:fMF}
+\delta \mathcal{F}_{\text{MF}} = -\frac{1}{\beta} \delta \bigg( \ln ( \Tr [ e^{-\beta \mathcal{H}_{\text{MF}} } ] ) \bigg) = -\frac{1}{\beta} \frac{\delta \big( \Tr [e^{-\beta \mathcal{H}_\text{MF}} ] \big) }{\Tr [e^{-\beta \mathcal{H}_\text{MF}} ]} ,
+\end{equation}
+and replacing Eq.(\ref{eq:dTr}) in Eq.(\ref{eq:fMF}), we may gather all the terms to finally arrive at
+\begin{equation}
+\begin{split}
+\delta F &= \delta \mathcal{F}_{\text{MF}} + \delta \left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} \\
+&= \sum_{i, j, \sigma} \bigg( U \left\langle n_{i,-\sigma} \right\rangle_{\text{MF}} \delta \left\langle n_{j,\sigma} \right\rangle_{\text{MF}} \delta_{ij} - \varepsilon_{i j} \delta \left\langle c_{i, \sigma}^\dagger c_{j, \sigma} \right\rangle_{\text{MF}} \bigg) \\
+&= \sum_{i, j, \sigma} \bigg( U \left\langle n_{i,-\sigma} \right\rangle_{\text{MF}} \delta \left\langle c_{i, \sigma}^\dagger c_{j,\sigma} \right\rangle_{\text{MF}} \delta_{ij} - \varepsilon_{i j} \delta \left\langle c_{i, \sigma}^\dagger c_{j, \sigma} \right\rangle_{\text{MF}} \bigg) = 0 \\
+&\implies \varepsilon_{i j} = U \left\langle n_{i,-\sigma} \right\rangle_{\text{MF}} \delta_{i j} 
+\end{split}
+\end{equation}
+leading to the mean field approximation for the Hubbard model:
+\begin{equation}
+\mathcal{H}_{\text{MF}} = \mathcal{H}_K + U \sum_{i, \sigma} \left\langle n_{i,- \sigma} \right\rangle_{\text{MF}} n_{i, \sigma}
+\end{equation}
 
 Although the mean field equations can be obtained both from $\delta \mathcal{F}_{\text{MF}} = 0$ and from $\delta F = 0$, this only means that they both have a vanishing functional derivative at a given (common) configuration of the system.
 There may be other configurations at which $\delta \mathcal{F}_{\text{MF}}$ vanishes, but we have only an extremum.
-Thus, we must be cautious when analyzing self-consistent solutions to confirm that they  indeed correspond to a minimum of the functional $F$, and not only an extremum of $\delta \mathcal{F}_{\text{MF}}$.
+Thus, we must be cautious when analyzing self-consistent solutions to confirm that they indeed correspond to a minimum of the functional $F$, and not only an extremum of $\mathcal{F}_{\text{MF}}$.
 
 On a final note, we remark that this procedure can be generalized to the \ac{GCE} by considering the GBF inequality for the grand potential:
-
 \begin{equation}\label{eq:gibbsGrand}
 \Omega \le \Omega_{\text{MF}} + \left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} \equiv F ,
 \end{equation}
 where we defined $\Omega_{\text{MF}} = \left\langle \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} - T \mathcal{S}_{\text{MF}}- \mu \left\langle \mathcal{N} \right\rangle_{\text{MF}}$, $\mathcal{N}$ being the total number operator.
+
+\section{Iterative solution of the self consistent equation and free energy minimization}

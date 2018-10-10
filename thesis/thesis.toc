@@ -16,7 +16,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.1}Electronic properties}{6}{subsection.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Nanoribbons}{7}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.2}Nanoribbons}{6}{subsection.1.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.3}Effective three-band minimal tight-binding model}{8}{subsection.1.3.3}
 \defcounter {refsection}{0}\relax 
@@ -110,7 +110,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Square lattice}{65}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Nanoribbons}{65}{section.4.3}
+\contentsline {section}{\numberline {4.3}Nanoribbons}{66}{section.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}Graphene}{66}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
@@ -120,24 +120,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Bibliography}{70}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Appendix \numberline {A}Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{A-1}{appendix.A}
+\contentsline {chapter}{Appendix \numberline {A}Obtaining the Hubbard Model. Approximate Solutions}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Hartree-Fock Approximation and the Self Consistent Field Method}{A-1}{section.A.1}
+\contentsline {section}{\numberline {A.1}Hartree-Fock Approximation and the Self Consistent Field}{A-1}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Mott insulators}{A-4}{section.A.2}
+\contentsline {section}{\numberline {A.2}Mott insulators}{A-3}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Computing the partition function for a quadratic Hamiltonian}{A-7}{section.A.3}
+\contentsline {section}{\numberline {A.3}Computing the partition function for a quadratic Hamiltonian}{A-6}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Density of states for a 1D tight binding model}{A-8}{section.A.4}
+\contentsline {section}{\numberline {A.4}Density of states for a 1D tight binding model}{A-7}{section.A.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Obtaining an effective Heisenberg Hamiltonian as the atomic, $U/t \gg 1$ limit of the Hubbard model}{A-8}{section.A.5}
+\contentsline {section}{\numberline {A.5}Effective Heisenberg model as the atomic limit of the Hubbard model}{A-7}{section.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.6}On the finite temperature Wick's theorem}{A-11}{section.A.6}
+\contentsline {section}{\numberline {A.6}On Wick's theorem}{A-9}{section.A.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.7}Mean field theory and the variational principle}{A-12}{section.A.7}
+\contentsline {section}{\numberline {A.7}Mean field theory and the variational principle}{A-10}{section.A.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.8}Iterative solution of the self consistent equation and free energy minimization}{A-12}{section.A.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {B}Formulating Auxiliary Field Quantum Monte Carlo}{B-1}{appendix.B}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {B.1}Casting the fermionic trace as a determinant}{B-1}{section.B.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.2}Rank-one updates of the Green's function}{B-4}{section.B.2}
+\contentsline {section}{\numberline {B.2}Rank-one updates of the Green's function}{B-3}{section.B.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.3}Average sign in 1D}{B-5}{section.B.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.4}No sign problem at half filling}{B-5}{section.B.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.5}Auto-correlation studies}{B-5}{section.B.5}

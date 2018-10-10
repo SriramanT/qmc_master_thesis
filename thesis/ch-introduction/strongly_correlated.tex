@@ -3,19 +3,18 @@
 
 Condensed matter physics is concerned with the emergence of the properties of quantum materials from complexity.
 The central concept within this approach is that of symmetry breaking.
-When a phase transition occurs, a system is said to condense into a phase of lower (or higher) symmetry.
+When a phase transition occurs, a system is said to condense into a phase of lower symmetry.
 A simple pictorial example is the transition from a gas to a solid, or vice versa.
-Statistically, any point within a gas is equivalent, that is, on average, the surroundings of all points look similar.
-Formally, the system is then said to be fully translationally invariant.
-On the other hand, in a solid, a point is only equivalent to a discrete set of other points.
-In fact, a simplified view of a solid consists of a periodic arrangement of atoms occupying the points of a lattice.
+Statistically, any point within a gas is equivalent, that is, on average, the surroundings of every point look similar.
+Formally, the system is said to be invariant under any translation.
+On the other hand, in a crystal, a point is only equivalent to a discrete set of other points.
+In fact, a simplified view of a crystal consists of a periodic arrangement of atoms occupying the points of a Bravais lattice.
 Any point on the lattice can be reached starting from any other point upon translation by a lattice vector.
-Thus, a system that makes a transition from the gaseous to the solid state becomes invariant only under a discrete set of translations, rather than a continuous one. 
+Thus, a system which makes a transition from the gaseous to the solid state becomes invariant only under a discrete subgroup of all translations. 
 
 A framework that is commonly used to identify symmetry breaking is the \ac{LG} theory of phase transitions.
-The theory gives a prescription to discover phase transitions.
+This theory gives a prescription to discover phase transitions.
 More precisely, it gives criteria for a symmetry to become manifest.
-Although this framework is very useful, it turns out that the search for order relies on symmetry ideas well beyond condensed matter.
 Symmetry breaking gives rise to emergent phenomena.
 The idea of emergence rests on a constructionist, rather than a reductionist hypothesis: that the behavior of the many does not trivially follow from the behavior of the few.
 As P.W. Anderson puts it, \say{The ability to reduce everything to simple fundamental laws does not imply the ability to start from those laws and reconstruct the universe.} \cite{anderson_more_1972}
@@ -27,28 +26,26 @@ The \acl{LG} procedure can be summarized as follows: identify an order parameter
 The drawback of this \emph{variational} approach is that it might be difficult to identify an order parameter in the first place.
 Moreover, even if we do manage to find one, the usual procedure may be impossible to perform.
 It can easily happen that the degree of complexity of the order parameter is simply too high.
-Additionally, and perhaps more importantly, not all phase transitions can be described by the LG paradigm.
+Additionally, and perhaps more importantly, \emph{not all} phase transitions can be described by the LG paradigm.
 
 On the one hand, there are systems where a different kind of order arises.
 A prominent example is that of fractional quantum Hall effect, where (rather surprisingly!) the \emph{quasi-particles} describing the excitations of the quantum Hall fluid carry \emph{fractions} of the electron charge.
 There is an intimate connection between charge fractionalization and topology, which may be understood in terms of the properties of the Laughlin states describing the quantum Hall fluid. However, while it is tempting to try to characterize the latter in terms of the \acs{LG} paradigm, it must actually be regarded as a distinct type of matter, where \say{topological order} arises \cite{wen_topological_1990}.
 %The proposal put forward by Wen \cite{wen_topological_1990} rests on characterizing quantum states by their ground state degeneracy, and investigating how they change under operations defined on specific manifolds. 
 
-On the other hand, for the so called strongly correlated systems we shall focus on in this work, there are phenomena which emerge specifically due to the interacting nature of the problem.
-They are elusive because a description in terms of the \acs{LG} paradigm does not yield a behavior consistent with what is observed empirically.
+On the other hand, for the so called \emph{strongly correlated} systems we shall focus on in this work, there are phenomena which emerge specifically due to the interacting nature of the problem.
+They are elusive because a description within the \acs{LG} paradigm does not yield a behavior consistent with what is observed.
 Instead, order emerges from the complexity created by the interactions among all the constituents.
 The \acs{LG} theory fails because it ignores these interactions by disregarding fluctuations in the microscopic configuration of the system.
-This approximation consists of reducing the complex interactions to an effective \emph{mean field}, which is normally determined self consistently.
-Strongly correlated systems require an approach beyond mean field, which makes them both extremely interesting and notoriously difficult to tackle.
-The mean field view fails to describe them because it considers each constituent to interact only with an external entity representing the interactions with all other constituents, underestimating collective behavior.
+This approximation consists of reducing the complex interactions to an effective \emph{mean field}, which is normally determined self-consistently.
+Strongly correlated systems require an approach beyond mean field, which makes them both extremely interesting and notoriously difficult to treat.
 In fact, the failure of mean field theory is not limited to correlated systems, and its success in describing a given system depends, for example, on the dimensionality\footnote{Normally, there is an upper critical dimension $d_c$ above which mean field is exact. Below $d_c$, its predictions might be useful qualitatively, but not quantitatively.} and on the range of the particular type of interaction that is considered.
 
 In many cases, mean field theory is too extreme an approximation.
 Nonetheless, its occasional failure at capturing the whole of a system's properties does not deem it  useless.
 Actually, it is quite the contrary.
-Mean field is often used as a first approach to build an intuitive physical picture for the general properties and behavior of the system.
-Of course, this is done while keeping in mind that the description it provides is intrinsically insufficient.
-Clearly, to extract the features of a correlated system we must extend it to the fully interacting case.
+Mean field is often used as a first approach to build an intuitive physical picture for the general properties of the system, while keeping in mind that the description it provides is intrinsically insufficient.
+%Clearly, to extract the features of a correlated system we must extend it to the fully interacting case.
 
 Strongly correlated quantum matter is ubiquitous and is at the heart of today's most advanced electronic materials, namely organic conductors, high $T_c$ (cuprate) superconductors, colossal  magnetoresistance materials, and \say{heavy-fermion}\footnote{The quasi-particles describing excitations in these materials behave like much heavier electrons, hence the name.} compounds. 
 Actually, the problem of strong correlations has now expanded beyond condensed matter physics. Quark-gluon plasmas, believed to have been formed just a few microseconds after the Big Bang, also belong to this class of systems.

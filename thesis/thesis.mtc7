@@ -1,7 +1,8 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.1}Hartree-Fock Approximation and the Self Consistent Field Method}{\reset@font\mtcSfont A-1}{section.A.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.2}Mott insulators}{\reset@font\mtcSfont A-4}{section.A.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.3}Computing the partition function for a quadratic Hamiltonian}{\reset@font\mtcSfont A-7}{section.A.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.4}Density of states for a 1D tight binding model}{\reset@font\mtcSfont A-8}{section.A.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.5}Obtaining an effective Heisenberg Hamiltonian as the atomic, $U/t \gg 1$ limit of the Hubbard model}{\reset@font\mtcSfont A-8}{section.A.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.6}On the finite temperature Wick's theorem}{\reset@font\mtcSfont A-11}{section.A.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.7}Mean field theory and the variational principle}{\reset@font\mtcSfont A-12}{section.A.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.1}Hartree-Fock Approximation and the Self Consistent Field}{\reset@font\mtcSfont A-1}{section.A.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.2}Mott insulators}{\reset@font\mtcSfont A-3}{section.A.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.3}Computing the partition function for a quadratic Hamiltonian}{\reset@font\mtcSfont A-6}{section.A.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.4}Density of states for a 1D tight binding model}{\reset@font\mtcSfont A-7}{section.A.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.5}Effective Heisenberg model as the atomic limit of the Hubbard model}{\reset@font\mtcSfont A-7}{section.A.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.6}On Wick's theorem}{\reset@font\mtcSfont A-9}{section.A.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.7}Mean field theory and the variational principle}{\reset@font\mtcSfont A-10}{section.A.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A.8}Iterative solution of the self consistent equation and free energy minimization}{\reset@font\mtcSfont A-12}{section.A.8}}

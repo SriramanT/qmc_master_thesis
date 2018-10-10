@@ -6,15 +6,13 @@
 \section{Casting the fermionic trace as a determinant}\label{sec:trace_det}
 
 Let the two arbitrary real matrices be $\bm M$ and $\bm N$.
-Then, a particular case of the identity of Eq.(\ref{eq:quadraticIdentity}) is
-
+Then, a particular case of the identity (\ref{eq:quadraticIdentity}) is
 \begin{equation}\label{eq:particularIdentity}
 \Tr \big[ e^{-c_i^\dagger M_{ij} c_j} e^{-c_i^\dagger N_{ij} c_j} \big] = \text{det} ( \bm I + e^{-{\bm M}} e^{-{\bm N}} ) ,
 \end{equation}
 where a summation over repeated indices is implied, as it wil be throughout this proof.
 
 To prove this identity, we start by proving that
-
 \begin{equation}\label{eq:identity_prod_exps}
 e^{-c_i^\dagger M_{ij} c_j}  e^{-c_i^\dagger N_{ij} c_j} = e^{-\sum_\nu c_\nu^\dagger \rho_\nu c_\nu} ,
 \end{equation}
@@ -23,61 +21,49 @@ where $\lambda_\nu = e^{-\rho_\nu}$ are the eigenvalues of the matrix $e^{-{\bm 
 The proof consists of showing that any many-particle state are propagated in the same way when acted upon by any of these two operators, i.e. the LHS operator leads the system to the same state as the RHS operator.
 
 A generic single-particle state reads
-
 \begin{equation}
 \left| \phi \right\rangle = \sum_j a_j c_j^\dagger \left| 0 \right\rangle ,
 \end{equation}
 where $a_j$ are arbitrary coefficients, and $\left| 0 \right\rangle$ is the vacuum state.
 
 Let $\{\left| \mu \right\rangle \}$ be the basis in which the matrix $\bm N$ is diagonal. Using Dirac notation, we then have
-
 \begin{equation}
 \bm N = \sum_{\mu} \left| \mu \right\rangle n_\mu \left\langle \mu \right|
 \end{equation}
 
 Define new fermionic operators
-
 \begin{equation}\label{eq:changeBasis1}
 c_\mu = \sum_j \left\langle \mu | j \right\rangle c_j \quad
 c_\mu^\dagger = \sum_j \left\langle j | \mu \right\rangle c_j^\dagger ,
 \end{equation}
 which may be inverted to obtain
-
 \begin{equation}\label{eq:changeBasis2}
 c_j = \sum_\mu \left\langle j | \mu \right\rangle c_\mu \quad
 c_j^\dagger = \sum_\mu \left\langle \mu | j \right\rangle c_\mu^\dagger ,
 \end{equation}
 
 Now we prove yet another identity that goes into proving equation (\ref{eq:identity_prod_exps}).
-
 \begin{equation}\label{eq:LHS_identity}
 e^{-c_i^\dagger N_{ij} c_j} = \prod_\mu \big[ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\mu^\dagger c_\mu \big]
 \end{equation}
-
 \begin{equation*}
 \begin{split}
-&\exp({-c_i^\dagger N_{ij} c_j}) = \exp({ - \sum_{\mu\nu} \left\langle \mu | i \right\rangle c_\mu^\dagger N_{ij} \left\langle j | \nu \right\rangle c_\nu }) \\
-&= \exp({-\sum_{ij}\sum_{ \mu\nu\sigma} \left\langle \mu | i \right\rangle  \left\langle i | \sigma \right\rangle c_\mu^\dagger n_\sigma \left\langle \sigma | j \right\rangle \left\langle j | \nu \right\rangle c_\nu }) , \\
+&\exp({-c_i^\dagger N_{ij} c_j}) = \exp({ - \sum_{\mu\nu} \left\langle \mu | i \right\rangle c_\mu^\dagger N_{ij} \left\langle j | \nu \right\rangle c_\nu }) = \exp({-\sum_{ij}\sum_{ \mu\nu\sigma} \left\langle \mu | i \right\rangle  \left\langle i | \sigma \right\rangle c_\mu^\dagger n_\sigma \left\langle \sigma | j \right\rangle \left\langle j | \nu \right\rangle c_\nu }) , \\
 & \text{(using the closure relation} \sum_i \left| i \right\rangle \left\langle i \right|= \mathbbm{1} \text{)} \\
-&= \exp({-\sum_{ \mu\nu\sigma} \overbrace{\left\langle \mu | \sigma \right\rangle}^{\delta_{\mu\sigma}}  c_\mu^\dagger n_\sigma \overbrace{\left\langle \sigma | \nu \right\rangle}^{\delta_{\sigma\nu}} c_\nu }) \\
-&= \exp({-\sum_\mu c_\mu^\dagger n_\mu c_\mu}) \\
-&= \prod_\mu e^{-n_\mu \hat{n}_\mu} \\
-&= \prod_\mu [ \mathbbm{1} + ( - n_\mu \hat{n}_\mu + \frac{n_\mu^2}{2!} \hat{n}_\mu^2 - \frac{n_\mu^3}{3!} \hat{n}_\mu^3 + ... ] \\
-&= \prod_\mu [ \mathbbm{1} + ( - n_\mu + \frac{n_\mu^2}{2!} - \frac{n_\mu^3}{3!} + ... ) \hat{n}_\mu ] \\
+&= \exp({-\sum_{ \mu\nu\sigma} \overbrace{\left\langle \mu | \sigma \right\rangle}^{\delta_{\mu\sigma}}  c_\mu^\dagger n_\sigma \overbrace{\left\langle \sigma | \nu \right\rangle}^{\delta_{\sigma\nu}} c_\nu }) = \exp({-\sum_\mu c_\mu^\dagger n_\mu c_\mu}) = \prod_\mu e^{-n_\mu \hat{n}_\mu} \\
+&= \prod_\mu [ \mathbbm{1} + ( - n_\mu \hat{n}_\mu + \frac{n_\mu^2}{2!} \hat{n}_\mu^2 - \frac{n_\mu^3}{3!} \hat{n}_\mu^3 + ... ] = \prod_\mu [ \mathbbm{1} + ( - n_\mu + \frac{n_\mu^2}{2!} - \frac{n_\mu^3}{3!} + ... ) \hat{n}_\mu ] \\
 & \text{(since  } \hat{n} = \hat{n}^k \text{  for all  } k \in \mathbb{N} \text{  for fermions since  } n = 0, 1 ) \\
 &= \prod_\mu [ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\mu^\dagger c_\mu ] \quad\quad \qedsymbol
 \end{split}
 \end{equation*}
 
-Let
-
-\begin{equation}
+Let 
+$
 \left| \phi \right\rangle = \sum_j a_j c_j^\dagger \left| 0 \right\rangle
-\end{equation}
+$
 be an arbitrary many-particle state. 
 
 Now we use the previous identity to prove that applying the operator of equation (\ref{eq:LHS_identity}) to $\left| \phi \right\rangle$ we obtain
-
 \begin{equation}
 e^{-c_i^\dagger N_{ij} c_j} \left| \phi \right\rangle = \sum_j a_j' c_j^\dagger \left| 0 \right\rangle , 
 \end{equation}
@@ -87,34 +73,27 @@ a_j' = \sum_{i} (e^{-\bm N})_{ji} a_i
 \end{equation}
 
 We start by writing $\left| \phi \right\rangle$ in the basis $\{ \left| \mu \right\rangle \}$ (in which $\bm N$ is diagonal).
-
 \begin{equation}
 \left| \phi \right\rangle = \sum_{i,\mu} a_i \left\langle \mu | i \right\rangle c_\mu^\dagger \left| 0 \right\rangle
 \end{equation}
 
 Then, we apply the RHS of equation (\ref{eq:LHS_identity}) to $\left| \phi \right\rangle$ written in this basis.
-
 \begin{equation}\label{eq:proofAuxIdentity}
 \begin{split}
-&\sum_\nu \bigg[ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\nu^\dagger c_\nu \bigg] c_\mu^\dagger \left| 0 \right\rangle \\
-=&\bigg[ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\mu^\dagger c_\mu \bigg] c_\mu^\dagger \left| 0 \right\rangle \\
-=& c_\mu^\dagger \left| 0 \right\rangle + (e^{-n_\mu - 1} - 1) c_\mu^\dagger \left| 0 \right\rangle \\
-=& c_\mu^\dagger e^{-n_\mu} \left| 0 \right\rangle
+\sum_\nu \bigg[ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\nu^\dagger c_\nu \bigg] c_\mu^\dagger \left| 0 \right\rangle 
+&=\bigg[ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\mu^\dagger c_\mu \bigg] c_\mu^\dagger \left| 0 \right\rangle \\
+&= c_\mu^\dagger \left| 0 \right\rangle + (e^{-n_\mu - 1} - 1) c_\mu^\dagger \left| 0 \right\rangle c_\mu^\dagger e^{-n_\mu} \left| 0 \right\rangle
 \end{split}
 \end{equation}
-
 \begin{equation}
 \begin{split}
-&\sum_\nu \bigg[ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\nu^\dagger c_\nu \bigg] \left| \phi \right\rangle \\
-=& \sum_{i\mu} \left\langle \mu | i \right\rangle a_i e^{-n_\mu} c_\mu^\dagger \\
-=& \sum_{j\mu i} \left\langle j | \mu \right\rangle e^{-n_\mu} \left\langle \mu | i \right\rangle a_i \left| j \right\rangle \\
-=& \sum_{j i} \underbrace{\sum_{\mu\nu} \left\langle j | \mu \right\rangle e^{-N_{\mu\nu}} \left\langle \nu | i \right\rangle}_{(e^{-\bm N})_{ji}} a_i \left| j \right\rangle \\
-=& \sum_j a_j' c_j^\dagger \left| 0 \right\rangle
+&\sum_\nu \bigg[ \mathbbm{1} + ( e^{-n_\mu} - 1 ) c_\nu^\dagger c_\nu \bigg] \left| \phi \right\rangle = \sum_{i\mu} \left\langle \mu | i \right\rangle a_i e^{-n_\mu} c_\mu^\dagger \\
+&= \sum_{j\mu i} \left\langle j | \mu \right\rangle e^{-n_\mu} \left\langle \mu | i \right\rangle a_i \left| j \right\rangle = \sum_{j i} \underbrace{\sum_{\mu\nu} \left\langle j | \mu \right\rangle e^{-N_{\mu\nu}} \left\langle \nu | i \right\rangle}_{(e^{-\bm N})_{ji}} a_i \left| j \right\rangle \\
+&= \sum_j a_j' c_j^\dagger \left| 0 \right\rangle
 \end{split}
 \end{equation}
 
 Similarly, by repeating the procedure performing a change of basis to the eigenbasis of $\bm M$, we obtain the more general relation
-
 \begin{equation}\label{eq:propagation_exps}
 \begin{split}
 &e^{-c_i^\dagger M_{ij} c_j} e^{-c_i^\dagger N_{ij} c_j} \left| \phi \right\rangle = \sum_j a_j'' c_j^\dagger \left| 0 \right\rangle \\
@@ -123,25 +102,21 @@ Similarly, by repeating the procedure performing a change of basis to the eigenb
 \end{equation}
 
 The amplitude of a propagated state is given by multiplying the initial amplitude by the matrix $e^{-\bm M} e^{-\bm N}$, whichever the basis we choose. Then, since equation (\ref{eq:propagation_exps}) holds in particular for the choice of the eigenbasis of $e^{-\bm M}e^{-\bm N}$ as our basis of single-particle states, if we start with an eigenstate
-
 \begin{equation}
 \left| \phi \right\rangle = c_\nu^\dagger \left| 0 \right\rangle ,
 \end{equation}
 then the amplitude of the propagated state will be given by
-
 \begin{equation}
 (e^{-\bm M} e^{-\bm N} )_{\nu\nu} = e^{-\rho_\nu} ,
 \end{equation}
 the same as we would obtain from equation (\ref{eq:identity_prod_exps}). Clearly, if we start with a state that is an arbitrary combination of states of the eigenbasis, we would obtain the identity (\ref{eq:identity_prod_exps}).
 
 The identity was proven for a single-particle state. Does it generalize to more than one particle? As we did before, we start with propagation by a single factor $e^{-\bm N}$. Take a two-particle state
-
 \begin{equation}
 \left| \phi \right\rangle = c_{\mu_1}^\dagger c_{\mu_2}^\dagger \left| 0 \right\rangle
 \end{equation}
 
 Now propagate it with $\bm N$, i.e. 
-
 \begin{equation}
 \begin{split}
 &e^{-c_i^\dagger N_{ij} c_j} \left| \phi \right\rangle = \prod_\mu \bigg[ 1 + (e^{-n_\mu} -1 ) c_\mu^\dagger c_\mu \bigg] c_{\mu_1}^\dagger c_{\mu_2}^\dagger \left| 0 \right\rangle \\
@@ -151,7 +126,6 @@ Now propagate it with $\bm N$, i.e.
 where we simply note that by similar reasoning to the previous case, we would in equation (\ref{eq:proofAuxIdentity}) keep two terms corresponding to $\mu_1 \neq \mu_2$. If $\mu_1 = \mu_2$, then both sides are equal to zero due to Pauli's exclusion principle and the equality holds trivially. This reasoning clearly generalizes to an arbitrary superposition of many-particle states. Moreover, we proved the result for a product of two factors $e^{-\bm M} e^{-\bm N}$, but it is also easy to see that by successive changes of basis, we could extend our result to an arbitrary number of factors.
 
 To complete our proof of the identity (\ref{eq:particularIdentity}) that is so crucial in formulating AFQMC, we use the auxiliar identity we just proved (\ref{eq:identity_prod_exps}).
-
 \begin{equation}\label{eq:completeProof}
 \begin{split}
 &\Tr \bigg[ e^{-\sum_\nu c_\nu^\dagger \rho_\nu c_\nu} \bigg] = \Tr \bigg[ \prod_\nu e^{-c_\nu^\dagger \rho_\nu c_\nu } \bigg] \text{  since  } [\hat{n}_\mu, \hat{n}_\nu] = 0 \\
@@ -163,23 +137,19 @@ where the last equality stems from the fact that the determinant of a diagonal m
 \section{Rank-one updates of the Green's function}\label{sec:greenUpdate}
 
 Consider two matrices $\bm A_1$, $\bm A_2$ written in the form
-
 \begin{equation}
 \bm A_{1,2} = \bm I + \bm F \bm V_{1,2} ,
 \end{equation}
 where $\bm F$ is some matrix. $\bm V_{1,2}$ are diagonal and non-singular and differ only in the $(1,1)$ entry, so that
-
 \begin{equation}
 \bm V_1^{-1} \bm V_2 = \bm I + \alpha_1 \bm e_1 \bm e_1^T ,
 \end{equation}
 where $\bm e_1$ is a vector corresponding to the first column of the identity matrix $\bm I$, and
-
 \begin{equation}
 \alpha_1 = \frac{V_2(1,1)}{V_1(1,1)} - 1
 \end{equation}
 
 Then, $\bm A_2$ is clearly a rank-one update of $\bm A_1$.
-
 \begin{equation}\label{eq:a2}
 \begin{split}
 \bm A_2 &= \bm I + \bm F \bm V_1 + \bm F \bm V_1 ( \bm V_1^{-1} \bm V_2 - \bm I ) \\
@@ -190,7 +160,6 @@ Then, $\bm A_2$ is clearly a rank-one update of $\bm A_1$.
 
 To find an expression for the ratio of the determinants of $\bm A_1$ and $\bm A_2$, we shall need to make use of the Sylvester's determinant identity $\det(\bm I + \bm A \bm B ) = \det (\bm I + \bm B \bm A )$.
 To prove it, consider the matrices
-
 \begin{equation}
 \bm P =
 \begin{pmatrix}
@@ -214,7 +183,6 @@ To prove it, consider the matrices
 \end{equation}
 
 Using the identity $\det ( \bm A \bm B ) = \det ( \bm A ) \det ( \bm B )$ applied to these two matrices, we can clearly see that the determinants of the two matrices coincide, i.e.
-
 \begin{equation}
 \det ( \bm P) = \det
 \begin{pmatrix}
@@ -240,7 +208,6 @@ Using the identity $\det ( \bm A \bm B ) = \det ( \bm A ) \det ( \bm B )$ applie
 \end{equation}
 
 The sought identity is obtained by computing the determinants explicitly.
-
 \begin{equation}
 \det ( \bm P ) = \det
 \begin{pmatrix}
@@ -258,32 +225,27 @@ The sought identity is obtained by computing the determinants explicitly.
 \end{equation}
 
 A corollary of Sylvester's identity for any two column vectors: $\text{det}[\bm I + \bm x \bm y^T] = 1 + \bm y^T \bm x$ may be used with $x \mapsto ( \bm I - \bm A_1^{-1} ) \bm e_1$, $y \mapsto \bm e_1$ to write the ratio of the determinants of matrices $\bm A_1$ and $\bm A_2$ as
-
 \begin{equation}\label{eq:efRatio}
 r_1 = \frac{\text{det}[\bm A_2]}{\text{det}[\bm A_1]} = 1 + \alpha_1 ( 1 - \bm e_1^T \bm A_1^{-1} \bm e_1 ) ,
 \end{equation}
 which reduces the computation of the ratio $r_1$ to computing the $(1,1)$ entry of $\bm A^{-1}$.
 
 Now we generalize this idea for a sequence of matrices $\bm A_1, \bm A_2, ..., \bm A_i, ..., \bm A_n$ generated by successive rank-one updates: $\bm A_{i+1} = \bm I + \bm F \bm V_{i+1}, \, i = 1, 2, ..., n-1$, with
-
 \begin{equation}
 \bm V_i^{-1} \bm V_{i+1} = \bm I + \alpha_i \bm e_i \bm e_i^T \quad \alpha_i = \frac{\bm V_{i+1}(1,1)}{\bm V_i (1,1)} -1
 \end{equation}
 
 That is accomplished by use of the  Sherman-Morrison-Woodbury formula, or simply Woodbury matrix identity:
-
 \begin{equation}
 ( \bm A + \bm B \bm C \bm D )^{-1} = \bm A^{-1} - \bm A^{-1} \bm B ( \bm C^{-1} + \bm D \bm A^{-1} \bm B )^{-1} \bm D \bm A^{-1} ,
 \end{equation}
 where $\text{dim}(\bm A) = N \times N $, $\text{dim}(\bm B) = N \times K $, $\text{dim}(\bm C) = K \times K $, $\text{dim}(\bm D) = K \times N $, and $N$ and $K$ are integers.
 To prove the identity, we use two simple identities, from which the proof easily follows.
-
 \begin{equation}
 \bm B + \bm B \bm C \bm D \bm A^{-1} \bm B = ( \bm A + \bm B \bm C \bm D ) \bm A^{-1} \bm B
 \quad\,\,
 ( \bm A + \bm B \bm C \bm D )^{-1} \bm B \bm C = \bm A^{-1} \bm B ( \bm C^{-1} + \bm D \bm A^{-1} \bm B )^{-1}
 \end{equation}
-
 \begin{equation}
 \begin{split}
 \bm A^{-1} &= ( \bm A + \bm B \bm C \bm D )^{-1} ( \bm A + \bm B \bm C \bm D ) \bm A^{-1} = ( \bm A + \bm B \bm C \bm D )^{-1} ( \bm I + \bm B \bm C \bm D \bm A^{-1} ) \\
@@ -295,7 +257,6 @@ To prove the identity, we use two simple identities, from which the proof easily
 \end{equation}
 
 The Woodbury identity applied to Eq.(\ref{eq:a2}) gives an expression for $\bm A_2^{-1}$ as a rank-one update of $\bm A_1^{-1}$.
-
 \begin{equation}\label{eq:greenUpdate}
 \begin{split}
 \bm A_2^{-1} &= \bm A_1^{-1} - \alpha_1 ( \bm I - \bm A_1^{-1} ) {\underbrace{\bigg[ \bm e_1 + \bm e_1^T \bm A_1^{-1} \alpha_1 (  \bm A_1 - \bm I ) \bigg]}_{\bm e_1 \times, \times \bm e_1 \text{(multiply left and right)}}}^{-1} \bm e_1^T \bm A_1^{-1} \\
@@ -309,7 +270,6 @@ $
 $.
 
 Using Eqs.(\ref{eq:efRatio},\ref{eq:greenUpdate}) successively, we find the updates
-
 \begin{equation}
 \begin{split}
 r_i &= \frac{\text{det}[\bm A_{i+1}]}{\text{det}[\bm A_{i}]} = 1 + \alpha_i ( 1 - \bm e_i^T \bm A_i^{-1}  \bm e_i ) , \,\, \text{and} \\
@@ -319,12 +279,10 @@ r_i &= \frac{\text{det}[\bm A_{i+1}]}{\text{det}[\bm A_{i}]} = 1 + \alpha_i ( 1 
 where $\bm u_i = (\bm I - \bm A_i^{-1} ) \bm e_i$ and $\bm w_i = (\bm A_i^{-1})^T \bm e_i$.
 
 It is possible to generalize this procedure to compute the inverse of $\bm M_k$ as a rank$-(k-1)$ update of $\bm A_1^{-1}$ to devise a delayed update scheme that is more efficient:
-
 \begin{equation}
 \bm M_k^{-1} = \bm M_1^{-1} - \bm U_{k-1} \bm D_k \bm W_{k-1}^T ,
 \end{equation}
 where
-
 \begin{equation}
 \bm U_k = [ \bm u_1 , \bm u_2, ..., \bm u_{k-1} ] \quad \text{and} \quad \bm W = [ \bm w_1, \bm w_2, ..., \bm w_{k-1} ] ,
 \end{equation}
@@ -333,3 +291,9 @@ and $\bm D_k = \text{diag}(\alpha_1 / r_1, \alpha_2 / r_2, ..., \alpha_{k-1} / r
 In \cite{yip_note_1986}, precise bounds are given on the conditioning of the matrices obtained via such type of Sherman-Morrison updates.
 In practice, if the Green's functions are sufficiently well-conditioned, no precision-related issues arise.
 Numerical instabilities may arise when the Green's matrices comprise divergent energy scales, and care must be taken to ensure that the algorithm converges.
+
+\section{Average sign in 1D}
+
+\section{No sign problem at half filling}
+
+\section{Auto-correlation studies}

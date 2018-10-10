@@ -10,7 +10,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Graphene monolayer; graphene's dispersion relation.}}{5}{figure.caption.16}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Graphene monolayer; graphene's dispersion relation.}}{4}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.2}{\ignorespaces \ac {TMD} monolayer condensing in its 2H phase. $M-X$ honeycomb lattice. Unit cell of the trigonal prismatic (2H) phase of a \ac {TMD} monolayer. High symmetry points of the corresponding hexagonal lattice's reciprocal space.}}{5}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
@@ -58,7 +58,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Filling $\nu $ as a function of the Fermi energy $\varepsilon _F$ for a \acs {TMD} monolayer and a nanoribbon. $\text {Mo}\text {S}_2$. \acs {TMDNR} band structure obtained by the 3-band model.}}{68}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs {TMDNR}. Spin density profile along the ribbon's transverse direction. }}{69}{figure.caption.54}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs {TMDNR}. Spin density profile along the ribbon's transverse direction.}}{69}{figure.caption.54}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -66,9 +66,9 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Obtaining and Solving the Hubbard Model Approximately and in Simple Limits}{A-1}{appendix.A}
+\contentsline {xchapter}{Obtaining the Hubbard Model. Approximate Solutions}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{A-6}{figure.caption.56}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{A-5}{figure.caption.56}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
