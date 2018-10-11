@@ -1,22 +1,44 @@
 \section{One-dimensional Chain}
 \label{sec:1d-chain}
 
-The analytical solution of the $T= 0$ \acs{1D} Hubbard model indicates that there is no Mott transition \cite{lieb_absence_1968} in the ground state, independently of the value of the on-site interaction $U$.
+The analytical solution of the \acs{1D} Hubbard model indicates that there is no Mott transition \cite{lieb_absence_1968} in the ground state (at zero temperature $T$), independently of the value of the on-site interaction $U$.
 Consider the $\frac{U}{t} \gg 1$ limit. 
 Then, the Hubbard model can be replaced by an effective atomic Heisenberg model defined in the Hilbert subspace with one electron per site, and antiferromagnetic order sets in.
 At zero temperature, it is found that upon decreasing $U$, the system remains an antiferromagnetic insulator down to $U \rightarrow 0$, becoming a conductor only at $U = 0$.
-Thus, we expect signs of antiferromagnetic for all $U$ for high enough $\beta$.
+Thus, we expect signs of antiferromagnetic for all $U$ for high enough $\beta = t / T$.
+\begin{figure}[H]\label{fig:corr_FT}
+\includegraphics[scale=0.53]{Applications/magCorr.png}
+\hspace{-0.5cm}
+\includegraphics[scale=0.53]{Applications/SandChi.png}
+\caption[]{}
+\end{figure}
+
 Upon decreasing $\beta$, thermal fluctuations tend to destroy long range order.
 Conversely, as $\beta$ is increased, we expect to see a divergence in $\chi$, corresponding to a phase transition to the antiferromagnetic ground state.
-We identify it by studying the spin-spin correlator $\left\langle S^z_i S^z_j \right\rangle$.
-Fourier transforming, we obtain a peak at $q = \pi$ in the magnetic structure factor $S ( q ) $, and in the magnetic susceptibility $\chi (q)$.
-For the case of the latter, the peak is found to increase in magnitude, and seems to diverge at $T = 0$.
-
-\begin{figure}[H]\label{fig:divergences}
-\hspace{0.3cm}
-\includegraphics[scale=0.55]{Afqmc/OrdersOfMagnitude_N=64sites.png}
-\hspace{0.3cm}
-\includegraphics[scale=0.55]{Afqmc/OrdersOfMagnitude_N=108sites.png}
-\caption[Exponentially divergent diagonal entries of $\bm D'$, showing the orders of magnitude spanned by the matrix elements of the stabilized matrix product.]{Exponentially divergent (and order one)  diagonal entries of $\bm D'$, showing the orders of magnitude spanned by the matrix elements of the stabilized matrix product.
-The depicted systems are the same of Fig.(3.1). }
+We identify it by studying the spin-spin correlation function $\left\langle S^z_i (\tau) S^z_j (0) \right\rangle$.
+Fourier transforming as per Eqs.(\ref{eq:S(q)},\ref{eq:chi(q)}), we obtain a peak at $q = \pi$ in the magnetic structure factor $S ( q ) $, and in the magnetic susceptibility $\chi (q)$.
+Both peaks increase in magnitude as temperature is decreased, and the \say{staggered} susceptibility $\chi (\pi)$ does seem to diverge at $T_c = 0$.
+\begin{figure}[H]\label{fig:Schi0}
+\includegraphics[scale=0.55]{Applications/S0T.png}
+\includegraphics[scale=0.55]{Applications/Sus.png}
+\caption[]{}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}[H]\label{fig:SchiPi}
+\includegraphics[scale=0.55]{Applications/SqT.png}
+\includegraphics[scale=0.55]{Applications/stSus.png}
+\caption[]{}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}[H]\label{fig:quest_time}
+\includegraphics[scale=0.55]{Applications/s_compare.png}
+\includegraphics[scale=0.55]{Applications/runtime2sites.png}
+\caption[]{}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}[H]\label{fig:hirsch1982}
+\includegraphics[scale=0.55]{Applications/Ehirsch1982.png}
+\hspace{-0.5cm}
+\includegraphics[scale=0.55]{Applications/SiSjhirsch1982.png}
+\caption[]{}
 \end{figure}

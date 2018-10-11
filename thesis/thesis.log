@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  10 OCT 2018 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  11 OCT 2018 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1919,14 +1919,10 @@ Overfull \hbox (3.42043pt too wide) in paragraph at lines 276--279
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 282.
-
-Overfull \vbox (1.22826pt too high) has occurred while \output is active []
-
-
 [52 <./all-figures/Afqmc/Log-weights_N=64sites.png> <./all-figures/Afqmc/Log-we
-ights_N=108sites.png>] [53]) (./ch-afqmc/measurements.tex [54] [55] [56]
-[57]) (./ch-afqmc/stabilization.tex [58] [59] [60]
-<all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png, id=1726, 433.62pt x 289.08p
+ights_N=108sites.png>] [53] [54]) (./ch-afqmc/measurements.tex [55] [56]
+[57] [58]) (./ch-afqmc/stabilization.tex [59] [60] [61]
+<all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png, id=1732, 433.62pt x 289.08p
 t>
 File: all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png Graphic file (type png)
 
@@ -1934,7 +1930,7 @@ File: all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png Graphic file (type png)
 Package pdftex.def Info: all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png  use
 d on input line 136.
 (pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
-<all-figures/Afqmc/OrdersOfMagnitude_N=108sites.png, id=1727, 433.62pt x 289.08
+<all-figures/Afqmc/OrdersOfMagnitude_N=108sites.png, id=1733, 433.62pt x 289.08
 pt>
 File: all-figures/Afqmc/OrdersOfMagnitude_N=108sites.png Graphic file (type png
 )
@@ -1947,15 +1943,13 @@ Overfull \hbox (45.4762pt too wide) in paragraph at lines 135--140
 []  []   [] 
  []
 
-[61 <./all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png> <./all-figures/Afqmc/
-OrdersOfMagnitude_N=108sites.png>]
-<all-figures/Afqmc/conditionNumberNaive.png, id=1738, 433.62pt x 289.08pt>
+<all-figures/Afqmc/conditionNumberNaive.png, id=1734, 433.62pt x 289.08pt>
 File: all-figures/Afqmc/conditionNumberNaive.png Graphic file (type png)
 <use all-figures/Afqmc/conditionNumberNaive.png>
 Package pdftex.def Info: all-figures/Afqmc/conditionNumberNaive.png  used on in
 put line 155.
 (pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
-<all-figures/Afqmc/DivergentScalesComparison.png, id=1739, 433.62pt x 289.08pt>
+<all-figures/Afqmc/DivergentScalesComparison.png, id=1735, 433.62pt x 289.08pt>
 
 File: all-figures/Afqmc/DivergentScalesComparison.png Graphic file (type png)
 <use all-figures/Afqmc/DivergentScalesComparison.png>
@@ -1967,42 +1961,137 @@ Overfull \hbox (3.42043pt too wide) in paragraph at lines 155--160
 [][]   [] 
  []
 
-[62 <./all-figures/Afqmc/conditionNumberNaive.png> <./all-figures/Afqmc/Diverge
-ntScalesComparison.png>] [63])) (./ch-applications/main.tex [64]
+[62 <./all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png> <./all-figures/Afqmc/
+OrdersOfMagnitude_N=108sites.png>] [63 <./all-figures/Afqmc/conditionNumberNaiv
+e.png> <./all-figures/Afqmc/DivergentScalesComparison.png>] [64]))
+(./ch-applications/main.tex [65]
 Chapter 4.
 \openout5 = `thesis.mtc'.
 
 \openout5 = `thesis.mtc'.
 
-(./thesis.mtc4) (./ch-applications/1d-chain.tex)
-(./ch-applications/square-lattice.tex
-Package acronym Info: Label `acro:QMC' overridden on input line 5.
-) (./ch-applications/nanoribbon.tex
+(./thesis.mtc4) (./ch-applications/1d-chain.tex
+<all-figures/Applications/magCorr.png, id=1786, 433.62pt x 289.08pt>
+File: all-figures/Applications/magCorr.png Graphic file (type png)
+<use all-figures/Applications/magCorr.png>
+Package pdftex.def Info: all-figures/Applications/magCorr.png  used on input li
+ne 10.
+(pdftex.def)             Requested size: 229.8175pt x 153.21165pt.
+<all-figures/Applications/SandChi.png, id=1787, 433.62pt x 289.08pt>
+File: all-figures/Applications/SandChi.png Graphic file (type png)
+<use all-figures/Applications/SandChi.png>
+Package pdftex.def Info: all-figures/Applications/SandChi.png  used on input li
+ne 12.
+(pdftex.def)             Requested size: 229.8175pt x 153.21165pt.
+<all-figures/Applications/S0T.png, id=1790, 433.62pt x 289.08pt>
+File: all-figures/Applications/S0T.png Graphic file (type png)
+<use all-figures/Applications/S0T.png>
+Package pdftex.def Info: all-figures/Applications/S0T.png  used on input line 2
+2.
+(pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
+<all-figures/Applications/Sus.png, id=1791, 433.62pt x 289.08pt>
+File: all-figures/Applications/Sus.png Graphic file (type png)
+<use all-figures/Applications/Sus.png>
+Package pdftex.def Info: all-figures/Applications/Sus.png  used on input line 2
+3.
+(pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
+
+Overfull \hbox (23.96103pt too wide) in paragraph at lines 22--24
+[][] [] 
+ []
+
+[66
+
+ <./all-figures/Applications/magCorr.png> <./all-figures/Applications/SandChi.p
+ng>]
+<all-figures/Applications/SqT.png, id=1799, 433.62pt x 289.08pt>
+File: all-figures/Applications/SqT.png Graphic file (type png)
+<use all-figures/Applications/SqT.png>
+Package pdftex.def Info: all-figures/Applications/SqT.png  used on input line 2
+8.
+(pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
+<all-figures/Applications/stSus.png, id=1800, 433.62pt x 289.08pt>
+File: all-figures/Applications/stSus.png Graphic file (type png)
+<use all-figures/Applications/stSus.png>
+Package pdftex.def Info: all-figures/Applications/stSus.png  used on input line
+ 29.
+(pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
+
+Overfull \hbox (23.96103pt too wide) in paragraph at lines 28--30
+[][] [] 
+ []
+
+<all-figures/Applications/s_compare.png, id=1801, 433.62pt x 289.08pt>
+File: all-figures/Applications/s_compare.png Graphic file (type png)
+<use all-figures/Applications/s_compare.png>
+Package pdftex.def Info: all-figures/Applications/s_compare.png  used on input 
+line 34.
+(pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
+<all-figures/Applications/runtime2sites.png, id=1802, 433.62pt x 289.08pt>
+File: all-figures/Applications/runtime2sites.png Graphic file (type png)
+<use all-figures/Applications/runtime2sites.png>
+Package pdftex.def Info: all-figures/Applications/runtime2sites.png  used on in
+put line 35.
+(pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
+
+Overfull \hbox (23.96103pt too wide) in paragraph at lines 34--36
+[][] [] 
+ []
+
+<all-figures/Applications/Ehirsch1982.png, id=1803, 433.62pt x 289.08pt>
+File: all-figures/Applications/Ehirsch1982.png Graphic file (type png)
+<use all-figures/Applications/Ehirsch1982.png>
+Package pdftex.def Info: all-figures/Applications/Ehirsch1982.png  used on inpu
+t line 40.
+(pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
+<all-figures/Applications/SiSjhirsch1982.png, id=1804, 433.62pt x 289.08pt>
+File: all-figures/Applications/SiSjhirsch1982.png Graphic file (type png)
+<use all-figures/Applications/SiSjhirsch1982.png>
+Package pdftex.def Info: all-figures/Applications/SiSjhirsch1982.png  used on i
+nput line 42.
+(pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
+
+Overfull \hbox (11.95634pt too wide) in paragraph at lines 40--43
+[][]   [] 
+ []
+
+) (./ch-applications/square-lattice.tex [67 <./all-figures/Applications/S0T.png
+> <./all-figures/Applications/Sus.png> <./all-figures/Applications/SqT.png> <./
+all-figures/Applications/stSus.png> <./all-figures/Applications/s_compare.png> 
+<./all-figures/Applications/runtime2sites.png>]
+<all-figures/Applications/mf-phase-diagram-hubbard.png, id=1824, 969.12062pt x 
+533.995pt>
+File: all-figures/Applications/mf-phase-diagram-hubbard.png Graphic file (type 
+png)
+<use all-figures/Applications/mf-phase-diagram-hubbard.png>
+Package pdftex.def Info: all-figures/Applications/mf-phase-diagram-hubbard.png 
+ used on input line 9.
+(pdftex.def)             Requested size: 203.52133pt x 112.14226pt.
+)
+(./ch-applications/nanoribbon.tex
 Package acronym Info: Label `acro:TMD' overridden on input line 8.
-
-[65
-
-]
 Package acronym Info: Label `acro:PBC' overridden on input line 15.
 Package acronym Info: Label `acro:OBC' overridden on input line 16.
-<all-figures/Applications/nanoribbon.pdf, id=1803, 1027.84pt x 770.88pt>
+ [68 <./all-figures/Applications/Ehirsch1982.png> <./all-figures/Applications/S
+iSjhirsch1982.png> <./all-figures/Applications/mf-phase-diagram-hubbard.png>]
+<all-figures/Applications/nanoribbon.pdf, id=1852, 1027.84pt x 770.88pt>
 File: all-figures/Applications/nanoribbon.pdf Graphic file (type pdf)
 <use all-figures/Applications/nanoribbon.pdf>
 Package pdftex.def Info: all-figures/Applications/nanoribbon.pdf  used on input
  line 26.
 (pdftex.def)             Requested size: 256.95937pt x 118.03123pt.
- [66 <./all-figures/Applications/nanoribbon.pdf>] [67]
+ [69 <./all-figures/Applications/nanoribbon.pdf>]
 Overfull \hbox (10.92175pt too wide) detected at line 113
 \OML/cmm/b/it/10 h[] \OT1/cmr/m/n/10 = []
  []
 
-<all-figures/Applications/fillingVsE.png, id=1920, 329.5512pt x 263.66505pt>
+<all-figures/Applications/fillingVsE.png, id=1960, 329.5512pt x 263.66505pt>
 File: all-figures/Applications/fillingVsE.png Graphic file (type png)
 <use all-figures/Applications/fillingVsE.png>
 Package pdftex.def Info: all-figures/Applications/fillingVsE.png  used on input
  line 115.
 (pdftex.def)             Requested size: 181.25371pt x 145.01622pt.
-<all-figures/Applications/BandStructureNanoribbonTMD.png, id=1921, 489.62926pt 
+<all-figures/Applications/BandStructureNanoribbonTMD.png, id=1961, 489.62926pt 
 x 266.4354pt>
 File: all-figures/Applications/BandStructureNanoribbonTMD.png Graphic file (typ
 e png)
@@ -2010,15 +2099,14 @@ e png)
 Package pdftex.def Info: all-figures/Applications/BandStructureNanoribbonTMD.pn
 g  used on input line 116.
 (pdftex.def)             Requested size: 269.29692pt x 146.53992pt.
-[68 <./all-figures/Applications/fillingVsE.png> <./all-figures/Applications/Ban
-dStructureNanoribbonTMD.png>]
-<all-figures/Applications/MFnanoribbon.png, id=1936, 107.6823pt x 114.54794pt>
+[70]
+<all-figures/Applications/MFnanoribbon.png, id=1975, 107.6823pt x 114.54794pt>
 File: all-figures/Applications/MFnanoribbon.png Graphic file (type png)
 <use all-figures/Applications/MFnanoribbon.png>
 Package pdftex.def Info: all-figures/Applications/MFnanoribbon.png  used on inp
 ut line 144.
 (pdftex.def)             Requested size: 110.15816pt x 117.18167pt.
-<all-figures/Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png, id=1937, 209.
+<all-figures/Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png, id=1976, 209.
 70345pt x 215.6055pt>
 File: all-figures/Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png Graphic f
 ile (type png)
@@ -2026,21 +2114,22 @@ ile (type png)
 Package pdftex.def Info: all-figures/Applications/lattice_Nx=512_Ny=16_U=20_bet
 a=100.png  used on input line 146.
 (pdftex.def)             Requested size: 115.33723pt x 118.58337pt.
-<all-figures/Applications/magProf.png, id=1938, 384.4764pt x 268.41078pt>
+<all-figures/Applications/magProf.png, id=1977, 384.4764pt x 268.41078pt>
 File: all-figures/Applications/magProf.png Graphic file (type png)
 <use all-figures/Applications/magProf.png>
 Package pdftex.def Info: all-figures/Applications/magProf.png  used on input li
 ne 148.
 (pdftex.def)             Requested size: 177.6298pt x 124.00697pt.
-)) (./ch-conclusion/conclusions.tex [69 <./all-figures/Applications/MFnanoribbo
-n.png> <./all-figures/Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png> <./a
-ll-figures/Applications/magProf.png>]
+ [71 <./all-figures/Applications/fillingVsE.png> <./all-figures/Applications/Ba
+ndStructureNanoribbonTMD.png>])) (./ch-conclusion/conclusions.tex [72 <./all-fi
+gures/Applications/MFnanoribbon.png> <./all-figures/Applications/lattice_Nx=512
+_Ny=16_U=20_beta=100.png> <./all-figures/Applications/magProf.png>]
 Chapter 5.
 Package minitoc Info: I0006
 (minitoc)             thesis.mtc5 is empty on input line 5.
-) [70
+) [73
 
-] [71]
+] [74]
 Underfull \hbox (badness 5316) in paragraph at lines 46--46
 []\T1/cmr/m/n/7 Newman, M. E. J. & Barkema, G. T. \T1/cmr/m/it/7 Monte
  []
@@ -2050,14 +2139,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--46
 \T1/cmr/m/it/7 trons in Re-duced Di-men-sions \T1/cmr/m/n/7 Google-Books-ID:
  []
 
-[72] (./end-appendices/hubbardObSol.tex
+[75] [76
+
+
+] (./end-appendices/hubbardObSol.tex
 Appendix A.
 [1
 
-
-
 ] [2] [3] [4]
-<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=2082, 457.71pt x 210.7
+<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=2133, 457.71pt x 210.7
 875pt>
 File: all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png Graphic file (type pn
 g)
@@ -2087,7 +2177,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: F1CF54505E4E81C53BA67339D3A9DCAA;6597.
+(rerunfilecheck)             Checksum: 418A719EAC3225438F96BEC7CA112C52;6597.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2097,10 +2187,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22703 strings out of 492649
- 377608 string characters out of 6129622
- 950056 words of memory out of 5000000
- 25052 multiletter control sequences out of 15000+600000
+ 22778 strings out of 492649
+ 380002 string characters out of 6129622
+ 954214 words of memory out of 5000000
+ 25106 multiletter control sequences out of 15000+600000
  45704 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,30n,100p,2020b,2040s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2168,10 +2258,10 @@ uper/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
 er/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super
 /sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/bookman/ubkd8
 a.pfb>
-Output written on thesis.pdf (110 pages, 14940728 bytes).
+Output written on thesis.pdf (114 pages, 16783860 bytes).
 PDF statistics:
- 2572 PDF objects out of 2984 (max. 8388607)
- 2238 compressed objects within 23 object streams
- 665 named destinations out of 1000 (max. 500000)
- 848 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2624 PDF objects out of 2984 (max. 8388607)
+ 2263 compressed objects within 23 object streams
+ 675 named destinations out of 1000 (max. 500000)
+ 903 words of extra memory for PDF output out of 10000 (max. 10000000)
 

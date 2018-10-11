@@ -2109,18 +2109,21 @@
     <bcf:citekey order="86">hanke_electronic_nodate</bcf:citekey>
     <bcf:citekey order="86">white_numerical_1989</bcf:citekey>
     <bcf:citekey order="87">lieb_absence_1968</bcf:citekey>
-    <bcf:citekey order="88">white_numerical_1989</bcf:citekey>
-    <bcf:citekey order="89">claveau_mean-field_2014</bcf:citekey>
-    <bcf:citekey order="90">white_numerical_1989</bcf:citekey>
-    <bcf:citekey order="91">yazyev_emergence_2010</bcf:citekey>
-    <bcf:citekey order="92">feldner_dynamical_2011</bcf:citekey>
-    <bcf:citekey order="92">golor_quantum_2013</bcf:citekey>
-    <bcf:citekey order="93">liu_three-band_2013</bcf:citekey>
+    <bcf:citekey order="88">claveau_mean-field_2014</bcf:citekey>
+    <bcf:citekey order="88">gouveia_magnetic_2015</bcf:citekey>
+    <bcf:citekey order="89">white_numerical_1989</bcf:citekey>
+    <bcf:citekey order="89">hirsch_two-dimensional_1985</bcf:citekey>
+    <bcf:citekey order="90">gouveia_magnetic_2015</bcf:citekey>
+    <bcf:citekey order="91">gouveia_magnetic_2015</bcf:citekey>
+    <bcf:citekey order="92">yazyev_emergence_2010</bcf:citekey>
+    <bcf:citekey order="93">feldner_dynamical_2011</bcf:citekey>
+    <bcf:citekey order="93">golor_quantum_2013</bcf:citekey>
     <bcf:citekey order="94">liu_three-band_2013</bcf:citekey>
-    <bcf:citekey order="95">gennes_superconductivity_1999</bcf:citekey>
-    <bcf:citekey order="96">mila_physique_2007</bcf:citekey>
-    <bcf:citekey order="97">gennes_superconductivity_1999</bcf:citekey>
-    <bcf:citekey order="98">yip_note_1986</bcf:citekey>
+    <bcf:citekey order="95">liu_three-band_2013</bcf:citekey>
+    <bcf:citekey order="96">gennes_superconductivity_1999</bcf:citekey>
+    <bcf:citekey order="97">mila_physique_2007</bcf:citekey>
+    <bcf:citekey order="98">gennes_superconductivity_1999</bcf:citekey>
+    <bcf:citekey order="99">yip_note_1986</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -5023,6 +5023,58 @@
       \endverb
       \keyw{hubbard}
     \endentry
+    \entry{gouveia_magnetic_2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6a78feef63a3e6c25af0a65a196fe2de}{%
+           family={Gouveia},
+           familyi={G\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=32e6a5d42b98a683473d3296efd3ea16}{%
+           family={Dias},
+           familyi={D\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{044347e0034a565efd99ad040684ebd0}
+      \strng{fullhash}{044347e0034a565efd99ad040684ebd0}
+      \strng{bibnamehash}{044347e0034a565efd99ad040684ebd0}
+      \strng{authorbibnamehash}{044347e0034a565efd99ad040684ebd0}
+      \strng{authornamehash}{044347e0034a565efd99ad040684ebd0}
+      \strng{authorfullhash}{044347e0034a565efd99ad040684ebd0}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the mean-field phase diagram of the repulsive Hubbard model in the Lieb lattice. Far from half-filling, the most stable phases are paramagnetism for low on-site interaction U/t and ferromagnetism for high U/t, as in the case of the mean-field phase diagram of the square lattice Hubbard model obtained by Dzierzawa (1991) [1]. At half-filling, the ground state was found to be ferrimagnetic [a (π,π) spiral phase], in agreement with a theorem by Lieb (1989) [2]. The total magnetization approaches Lieb's prediction as U/t becomes large. As we move away from half-filling, this ferrimagnetic phase becomes a (q1,q1) spiral phase with q1≈π and then undergoes a series of first-order phase transitions, (q1,q1)→(q1,q2)→(q1,0), with q2≈π/2, before becoming ferromagnetic at large U/t or paramagnetic at low U/t.}
+      \field{day}{15}
+      \field{issn}{0304-8853}
+      \field{journaltitle}{Journal of Magnetism and Magnetic Materials}
+      \field{month}{5}
+      \field{shortjournal}{Journal of Magnetism and Magnetic Materials}
+      \field{title}{Magnetic phase diagram of the Hubbard model in the Lieb lattice}
+      \field{urlday}{11}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{volume}{382}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{312\bibrangedash 317}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.jmmm.2015.02.005
+      \endverb
+      \verb{file}
+      \verb Gouveia2015.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/hubbard-model/Gouveia2015.pdf:application/pdf;ScienceDirect Snapshot:/Users/franciscobrito/Zotero/storage/JMGYM56I/S0304885315001353.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0304885315001353
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0304885315001353
+      \endverb
+    \endentry
     \entry{gennes_superconductivity_1999}{book}{}
       \name{author}{1}{}{%
         {{hash=cc918f83f9a579c362766558f0a0a4fc}{%
@@ -5070,8 +5122,8 @@
       \strng{authorbibnamehash}{61fb909bff1ded8930c5c15e1fc5b6cf}
       \strng{authornamehash}{61fb909bff1ded8930c5c15e1fc5b6cf}
       \strng{authorfullhash}{61fb909bff1ded8930c5c15e1fc5b6cf}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper, we address the stability of the Sherman–Morrison–Woodbury formula. Our main result states that if the original matrices, A and B, are well conditioned, then there exists matrices U and V such that the Sherman–Morrison–Woodbury formula is stable when applied to \$A = B - {UV}{^}T \$.}

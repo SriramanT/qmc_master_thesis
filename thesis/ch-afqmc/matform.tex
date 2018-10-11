@@ -314,7 +314,7 @@ The acceptance/rejection scheme leads to a rank-one update of the matrices $\bm 
 The acceptance ratio is given in terms of determinants of the Green's matrices, but these need not be explicitly computed at each step.
 Instead, a \emph{global} update of the Green's matrices at each step suffices to obtain the ratio between the determinants of the Green's matrices of the current and previous configurations.
 This brings the computational complexity from $\mathcal{O}(N^3)$ to $\mathcal{O}(N^2)$ at each step.
-This results in an overall cubic scaling of the algorithm, more precisely $\mathcal{O}(\beta N^3)$ (the process is repeated $L N$ times, and $\beta \sim L$).
+Upon fixing the precision via the Trotter error $\Delta \tau$, this results in an overall cubic scaling of the algorithm, more precisely $\mathcal{O}(\beta N^3)$ (the process is repeated $L N$ times, and $\beta \sim L$).
 
 Suppose we start at the first imaginary-time slice, $l = 0$.
 Using the result of appendix \ref{ap:theoAFQMC}, for $i = 0$, the proposal $h_{0 0}' = - h_{0 0}$ leads to

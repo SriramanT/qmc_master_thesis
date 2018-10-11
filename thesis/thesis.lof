@@ -46,29 +46,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Evolution of the probability of accepted configurations.}}{52}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Exponentially divergent diagonal entries of $\bm {D}'$, showing the orders of magnitude spanned by the matrix elements of the stabilized matrix product.}}{61}{figure.caption.45}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Exponentially divergent diagonal entries of $\bm {D}'$, showing the orders of magnitude spanned by the matrix elements of the stabilized matrix product.}}{62}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Condition number of $\bm {M}_l = \DOTSB \prod@ \slimits@ _l \bm {B}_l$ obtained by multiplying $\bm {B}$-matrices naively. Absolute values of the diagonal entries of $\bm {D}'$ and corresponding condition number of the matrix to invert to obtain the Green's function.}}{62}{figure.caption.46}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Applications and original results}{65}{chapter.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Boundary conditions on the nanoribbon.}}{66}{figure.caption.51}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Filling $\nu $ as a function of the Fermi energy $\varepsilon _F$ for a \acs {TMD} monolayer and a nanoribbon. $\text {Mo}\text {S}_2$. \acs {TMDNR} band structure obtained by the 3-band model.}}{68}{figure.caption.53}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs {TMDNR}. Spin density profile along the ribbon's transverse direction.}}{69}{figure.caption.54}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Condition number of $\bm {M}_l = \DOTSB \prod@ \slimits@ _l \bm {B}_l$ obtained by multiplying $\bm {B}$-matrices naively. Absolute values of the diagonal entries of $\bm {D}'$ and corresponding condition number of the matrix to invert to obtain the Green's function.}}{63}{figure.caption.46}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Conclusions and Future Work}{70}{chapter.5}
+\contentsline {xchapter}{Applications and original results}{66}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Boundary conditions on the nanoribbon.}}{69}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Filling $\nu $ as a function of the Fermi energy $\varepsilon _F$ for a \acs {TMD} monolayer and a nanoribbon. $\text {Mo}\text {S}_2$. \acs {TMDNR} band structure obtained by the 3-band model.}}{71}{figure.caption.58}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs {TMDNR}. Spin density profile along the ribbon's transverse direction.}}{72}{figure.caption.59}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Conclusions and Future Work}{73}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Obtaining the Hubbard Model. Approximate Solutions}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{A-5}{figure.caption.56}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{A-5}{figure.caption.61}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

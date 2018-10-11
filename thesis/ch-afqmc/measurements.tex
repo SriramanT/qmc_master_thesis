@@ -115,7 +115,7 @@ C(i, j) = \big\langle c_{i+j, \downarrow}^\dagger c_{i+j, \uparrow} c_{i, \uparr
 $.
 
 How would one measure a correlation function experimentally? Fortunately, there is a quantity that is easy to measure called structure factor, which is just the Fourier transform of the correlation function
-\begin{equation}
+\begin{equation}\label{eq:S(q)}
 S(\bm q) = \frac{1}{N} \sum_{i, j} e^{i\bm q \cdot (\bm R_j - \bm R_i) } C(i, j) 
 \end{equation}
 
@@ -129,9 +129,9 @@ Other \say{unequal-time} quantities, such as susceptibilities require time-displ
 \begin{equation}
 \chi_{\mathcal{O}} ( i \omega_n ) = \int_0^\beta \left\langle \mathcal{O}^\dagger ( \tau ) \mathcal{O} ( 0 ) \right\rangle e^{i\omega_n \tau} d\tau ,
 \end{equation}
-whose $\omega =0$ component can be Fourier transformed and represented in $\bm q$-space, or averaged over the lattice ($\chi ( bm 0 ) \equiv \chi$), as we shall often do.
-The more general quantity $\chi (\bm q, \omega)$ describes scattering events where momentum changes by $\bm q$, and energy changes by $\bm \omega$.
-\begin{equation}
+whose $\omega =0$ component can be Fourier transformed and represented in $\bm q$-space, or averaged over the lattice ($\chi ( \bm 0 ) \equiv \chi$), as we shall often do.
+The more general quantity $\chi (\bm q, \omega)$ describes scattering events where momentum changes by $\bm q$, and energy changes by $ \omega$.
+\begin{equation}\label{eq:chi(q)}
 \chi ( \bm q ) = \frac{1}{N} \sum_{i, j} e^{i\bm q \cdot ( \bm R_j - \bm R_i )} \int_0^\beta \left\langle \mathcal{O}_{i + j}^\dagger ( \tau ) \mathcal{O}_i ( 0 ) \right\rangle d\tau \quad \text{or } \quad \chi = \frac{1}{N} \sum_{i, j} \int_0^\beta \left\langle \mathcal{O}_{i + j}^\dagger ( \tau ) \mathcal{O}_i ( 0 ) \right\rangle d\tau
 \end{equation}
 
