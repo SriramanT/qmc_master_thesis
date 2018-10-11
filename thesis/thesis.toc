@@ -110,15 +110,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Square lattice}{68}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Nanoribbons}{68}{section.4.3}
+\contentsline {section}{\numberline {4.3}Nanoribbons}{69}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Graphene}{68}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Graphene}{69}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}\acp {TMD}}{69}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}\acp {TMD}}{70}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{73}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{74}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{73}{section*.60}
+\contentsline {chapter}{Bibliography}{74}{section*.63}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Obtaining the Hubbard Model. Approximate Solutions}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
@@ -136,16 +136,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.7}Mean field theory and the variational principle}{A-10}{section.A.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.8}Iterative solution of the self consistent equation and free energy minimization}{A-12}{section.A.8}
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {B}Formulating Auxiliary Field Quantum Monte Carlo}{B-1}{appendix.B}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {B.1}Casting the fermionic trace as a determinant}{B-1}{section.B.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {B.2}Rank-one updates of the Green's function}{B-3}{section.B.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.3}Average sign in 1D}{B-5}{section.B.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.4}No sign problem at half filling}{B-5}{section.B.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.5}Auto-correlation studies}{B-5}{section.B.5}
+\contentsline {section}{\numberline {B.3}Particle-hole symmetry and the sign problem}{B-5}{section.B.3}

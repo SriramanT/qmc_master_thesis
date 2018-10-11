@@ -249,6 +249,7 @@ In this limit, the 1 in the numerator of Eq.(\ref{eq:errorCorr}) can be neglecte
 the same result we would obtain by simply replacing $N_s$ by $M$.
 What we found, in rigorous terms, was that the presence of many correlated samples does not significantly change the sample mean if $\Delta t \ll \tau_c$.
 If we take enough correlated samples, their influence on the sample mean averages out.
-
 Eq.(\ref{eq:errorMC}) has the advantage of being independent of $\Delta t$, which allows us to choose $\Delta t$ freely, without affecting the final error.
 This is handy since it allows us to choose $\Delta t$ small so as not to lose data.
+
+In practice, before we perform our Monte Carlo simulations, we do preliminary auto-correlation studies to ensure that we estimate the error in our measurements correctly.

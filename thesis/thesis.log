@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  11 OCT 2018 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  11 OCT 2018 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1168,6 +1168,12 @@ LaTeX Warning: Unused global option(s):
 
 LaTeX Warning: Label `fig:divergences' multiply defined.
 
+
+LaTeX Warning: Label `fig:corrSq' multiply defined.
+
+
+LaTeX Warning: Label `fig:corrSq' multiply defined.
+
 )
 \openout1 = `thesis.aux'.
 
@@ -1293,13 +1299,13 @@ LaTeX Info: Redefining \nameref on input line 7.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./beg-firstFewPages/1.Cover.tex
-<all-figures/Cover/istnewlogo.pdf, id=329, 502.99277pt x 195.67976pt>
+<all-figures/Cover/istnewlogo.pdf, id=325, 502.99277pt x 195.67976pt>
 File: all-figures/Cover/istnewlogo.pdf Graphic file (type pdf)
 <use all-figures/Cover/istnewlogo.pdf>
 Package pdftex.def Info: all-figures/Cover/istnewlogo.pdf  used on input line 9
 .
 (pdftex.def)             Requested size: 142.26378pt x 55.34532pt.
-<all-figures/Cover/coverimage.jpg, id=330, 1003.75pt x 567.11874pt>
+<all-figures/Cover/coverimage.jpg, id=326, 1003.75pt x 567.11874pt>
 File: all-figures/Cover/coverimage.jpg Graphic file (type jpg)
 <use all-figures/Cover/coverimage.jpg>
 Package pdftex.def Info: all-figures/Cover/coverimage.jpg  used on input line 1
@@ -1515,11 +1521,6 @@ Overfull \hbox (5.33202pt too wide) detected at line 137
  []\T1/cmr/m/n/10 A-10
  []
 
-
-Overfull \hbox (5.33202pt too wide) detected at line 139
- []\T1/cmr/m/n/10 A-12
- []
-
 [10])
 \tf@toc=\write7
 \openout7 = `thesis.toc'.
@@ -1604,13 +1605,13 @@ Package acronym Info: Label `acro:LG' newly defined as it shall be overridden
 although it is yet undefined on input line 15.
  [2] [3])
 (./ch-introduction/state.tex
-<all-figures/Introduction/graphene.png, id=709, 390.96063pt x 560.59438pt>
+<all-figures/Introduction/graphene.png, id=704, 390.96063pt x 560.59438pt>
 File: all-figures/Introduction/graphene.png Graphic file (type png)
 <use all-figures/Introduction/graphene.png>
 Package pdftex.def Info: all-figures/Introduction/graphene.png  used on input l
 ine 10.
 (pdftex.def)             Requested size: 65.44142pt x 93.83705pt.
-<all-figures/Introduction/dispGraphene.png, id=711, 1019.81pt x 552.0625pt>
+<all-figures/Introduction/dispGraphene.png, id=706, 1019.81pt x 552.0625pt>
 File: all-figures/Introduction/dispGraphene.png Graphic file (type png)
 <use all-figures/Introduction/dispGraphene.png>
 Package pdftex.def Info: all-figures/Introduction/dispGraphene.png  used on inp
@@ -1618,7 +1619,7 @@ ut line 12.
 (pdftex.def)             Requested size: 179.25244pt x 97.03357pt.
 Package acronym Info: Label `acro:AFM' newly defined as it shall be overridden
 although it is yet undefined on input line 14.
-<all-figures/Introduction/tmd2.png, id=724, 998.73125pt x 517.935pt>
+<all-figures/Introduction/tmd2.png, id=719, 998.73125pt x 517.935pt>
 File: all-figures/Introduction/tmd2.png Graphic file (type png)
 <use all-figures/Introduction/tmd2.png>
 Package pdftex.def Info: all-figures/Introduction/tmd2.png  used on input line 
@@ -1626,7 +1627,7 @@ Package pdftex.def Info: all-figures/Introduction/tmd2.png  used on input line
 (pdftex.def)             Requested size: 229.70335pt x 119.12253pt.
  [4 <./all-figures/Introduction/graphene.png> <./all-figures/Introduction/dispG
 raphene.png>] [5 <./all-figures/Introduction/tmd2.png>]
-<all-figures/Introduction/tmdProp.png, id=776, 1109.14375pt x 638.88687pt>
+<all-figures/Introduction/tmdProp.png, id=771, 1109.14375pt x 638.88687pt>
 File: all-figures/Introduction/tmdProp.png Graphic file (type png)
 <use all-figures/Introduction/tmdProp.png>
 Package pdftex.def Info: all-figures/Introduction/tmdProp.png  used on input li
@@ -1636,14 +1637,14 @@ Package acronym Info: Label `acro:PBC' newly defined as it shall be overridden
 although it is yet undefined on input line 78.
 Package acronym Info: Label `acro:OBC' newly defined as it shall be overridden
 although it is yet undefined on input line 79.
-<all-figures/Introduction/grapheneNanoribbons.jpg, id=789, 703.62875pt x 295.10
+<all-figures/Introduction/grapheneNanoribbons.jpg, id=784, 703.62875pt x 295.10
 25pt>
 File: all-figures/Introduction/grapheneNanoribbons.jpg Graphic file (type jpg)
 <use all-figures/Introduction/grapheneNanoribbons.jpg>
 Package pdftex.def Info: all-figures/Introduction/grapheneNanoribbons.jpg  used
  on input line 81.
 (pdftex.def)             Requested size: 163.94629pt x 68.7592pt.
-<all-figures/Introduction/nanoribbons.png, id=790, 1228.08812pt x 289.08pt>
+<all-figures/Introduction/nanoribbons.png, id=785, 1228.08812pt x 289.08pt>
 File: all-figures/Introduction/nanoribbons.png Graphic file (type png)
 <use all-figures/Introduction/nanoribbons.png>
 Package pdftex.def Info: all-figures/Introduction/nanoribbons.png  used on inpu
@@ -1653,14 +1654,14 @@ t line 82.
 Package acronym Info: Label `acro:TMDNR' newly defined as it shall be overridde
 n
 although it is yet undefined on input line 94.
-<all-figures/Introduction/comparisonMF_edges.png, id=817, 1008.26688pt x 590.70
+<all-figures/Introduction/comparisonMF_edges.png, id=812, 1008.26688pt x 590.70
 688pt>
 File: all-figures/Introduction/comparisonMF_edges.png Graphic file (type png)
 <use all-figures/Introduction/comparisonMF_edges.png>
 Package pdftex.def Info: all-figures/Introduction/comparisonMF_edges.png  used 
 on input line 96.
 (pdftex.def)             Requested size: 226.86565pt x 132.91232pt.
-<all-figures/Introduction/energiesTMDs.png, id=818, 945.5325pt x 594.72188pt>
+<all-figures/Introduction/energiesTMDs.png, id=813, 945.5325pt x 594.72188pt>
 File: all-figures/Introduction/energiesTMDs.png Graphic file (type png)
 <use all-figures/Introduction/energiesTMDs.png>
 Package pdftex.def Info: all-figures/Introduction/energiesTMDs.png  used on inp
@@ -1680,7 +1681,7 @@ Chapter 2.
 \openout5 = `thesis.mtc'.
 
 (./thesis.mtc2) (./ch-hubbard/modelling.tex
-<all-figures/Hubbard/IsingVsHubbard.png, id=994, 932.48375pt x 100.375pt>
+<all-figures/Hubbard/IsingVsHubbard.png, id=989, 932.48375pt x 100.375pt>
 File: all-figures/Hubbard/IsingVsHubbard.png Graphic file (type png)
 <use all-figures/Hubbard/IsingVsHubbard.png>
 Package pdftex.def Info: all-figures/Hubbard/IsingVsHubbard.png  used on input 
@@ -1698,7 +1699,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 14.
 
-<all-figures/Hubbard/Hydrogen.jpeg, id=1027, 983.675pt x 247.92625pt>
+<all-figures/Hubbard/Hydrogen.jpeg, id=1022, 983.675pt x 247.92625pt>
 File: all-figures/Hubbard/Hydrogen.jpeg Graphic file (type jpg)
 <use all-figures/Hubbard/Hydrogen.jpeg>
 Package pdftex.def Info: all-figures/Hubbard/Hydrogen.jpeg  used on input line 
@@ -1712,7 +1713,7 @@ File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
 Package acronym Info: Label `acro:PHS' newly defined as it shall be overridden
 although it is yet undefined on input line 159.
-<all-figures/Hubbard/bipartite.png, id=1065, 1263.21938pt x 525.46312pt>
+<all-figures/Hubbard/bipartite.png, id=1060, 1263.21938pt x 525.46312pt>
 File: all-figures/Hubbard/bipartite.png Graphic file (type png)
 <use all-figures/Hubbard/bipartite.png>
 Package pdftex.def Info: all-figures/Hubbard/bipartite.png  used on input line 
@@ -1755,25 +1756,25 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 76.
 
 [24] [25]
-<all-figures/Hubbard/rhoVsMu.png, id=1134, 391.2216pt x 262.8219pt>
+<all-figures/Hubbard/rhoVsMu.png, id=1129, 391.2216pt x 262.8219pt>
 File: all-figures/Hubbard/rhoVsMu.png Graphic file (type png)
 <use all-figures/Hubbard/rhoVsMu.png>
 Package pdftex.def Info: all-figures/Hubbard/rhoVsMu.png  used on input line 18
 2.
 (pdftex.def)             Requested size: 204.85846pt x 137.62262pt.
-<all-figures/Hubbard/mSqVsT.png, id=1135, 387.48766pt x 262.8219pt>
+<all-figures/Hubbard/mSqVsT.png, id=1130, 387.48766pt x 262.8219pt>
 File: all-figures/Hubbard/mSqVsT.png Graphic file (type png)
 <use all-figures/Hubbard/mSqVsT.png>
 Package pdftex.def Info: all-figures/Hubbard/mSqVsT.png  used on input line 184
 .
 (pdftex.def)             Requested size: 204.85846pt x 138.95004pt.
-<all-figures/Hubbard/mSqVsU.png, id=1136, 387.48766pt x 262.8219pt>
+<all-figures/Hubbard/mSqVsU.png, id=1131, 387.48766pt x 262.8219pt>
 File: all-figures/Hubbard/mSqVsU.png Graphic file (type png)
 <use all-figures/Hubbard/mSqVsU.png>
 Package pdftex.def Info: all-figures/Hubbard/mSqVsU.png  used on input line 196
 .
 (pdftex.def)             Requested size: 204.85846pt x 138.95004pt.
-<all-figures/Hubbard/mSqVsT_and_U.png, id=1137, 387.48766pt x 262.8219pt>
+<all-figures/Hubbard/mSqVsT_and_U.png, id=1132, 387.48766pt x 262.8219pt>
 File: all-figures/Hubbard/mSqVsT_and_U.png Graphic file (type png)
 <use all-figures/Hubbard/mSqVsT_and_U.png>
 Package pdftex.def Info: all-figures/Hubbard/mSqVsT_and_U.png  used on input li
@@ -1804,13 +1805,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package acronym Info: Label `acro:PBC' overridden on input line 225.
 Package acronym Info: Label `acro:OBC' overridden on input line 227.
 [27] [28]
-<all-figures/Hubbard/fermiEnergy1D.png, id=1196, 385.31955pt x 261.25604pt>
+<all-figures/Hubbard/fermiEnergy1D.png, id=1191, 385.31955pt x 261.25604pt>
 File: all-figures/Hubbard/fermiEnergy1D.png Graphic file (type png)
 <use all-figures/Hubbard/fermiEnergy1D.png>
 Package pdftex.def Info: all-figures/Hubbard/fermiEnergy1D.png  used on input l
 ine 311.
 (pdftex.def)             Requested size: 211.9264pt x 143.69125pt.
-<all-figures/Hubbard/fermiEnergy2D.png, id=1197, 372.31094pt x 260.6538pt>
+<all-figures/Hubbard/fermiEnergy2D.png, id=1192, 372.31094pt x 260.6538pt>
 File: all-figures/Hubbard/fermiEnergy2D.png Graphic file (type png)
 <use all-figures/Hubbard/fermiEnergy2D.png>
 Package pdftex.def Info: all-figures/Hubbard/fermiEnergy2D.png  used on input l
@@ -1844,7 +1845,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [29 <./all-figures/Hubbard/fermiEnergy1D.png> <./all-figures/Hubbard/fermiEnerg
 y2D.png>] [30] [31]) (./ch-hubbard/greens-functions.tex [32] [33])
 (./ch-hubbard/magnetism-mft.tex
-<all-figures/Hubbard/dos.pdf, id=1260, 1027.84pt x 770.88pt>
+<all-figures/Hubbard/dos.pdf, id=1255, 1027.84pt x 770.88pt>
 File: all-figures/Hubbard/dos.pdf Graphic file (type pdf)
 <use all-figures/Hubbard/dos.pdf>
 Package pdftex.def Info: all-figures/Hubbard/dos.pdf  used on input line 22.
@@ -1857,13 +1858,13 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
-<all-figures/Hubbard/mfHubbard.png, id=1373, 397.0032pt x 277.87814pt>
+<all-figures/Hubbard/mfHubbard.png, id=1368, 397.0032pt x 277.87814pt>
 File: all-figures/Hubbard/mfHubbard.png Graphic file (type png)
 <use all-figures/Hubbard/mfHubbard.png>
 Package pdftex.def Info: all-figures/Hubbard/mfHubbard.png  used on input line 
 85.
 (pdftex.def)             Requested size: 186.59152pt x 130.60274pt.
-<all-figures/Hubbard/mf-hubbard-1d-quarter-filling-multiple.png, id=1375, 595.5
+<all-figures/Hubbard/mf-hubbard-1d-quarter-filling-multiple.png, id=1370, 595.5
 048pt x 262.88213pt>
 File: all-figures/Hubbard/mf-hubbard-1d-quarter-filling-multiple.png Graphic fi
 le (type png)
@@ -1900,13 +1901,13 @@ Package acronym Info: Label `acro:TMDNR' overridden on input line 12.
 Package acronym Info: Label `acro:FFT' newly defined as it shall be overridden
 although it is yet undefined on input line 214.
  [46]) (./ch-afqmc/matform.tex [47] [48] [49] [50] [51]
-<all-figures/Afqmc/Log-weights_N=64sites.png, id=1585, 433.62pt x 289.08pt>
+<all-figures/Afqmc/Log-weights_N=64sites.png, id=1580, 433.62pt x 289.08pt>
 File: all-figures/Afqmc/Log-weights_N=64sites.png Graphic file (type png)
 <use all-figures/Afqmc/Log-weights_N=64sites.png>
 Package pdftex.def Info: all-figures/Afqmc/Log-weights_N=64sites.png  used on i
 nput line 276.
 (pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
-<all-figures/Afqmc/Log-weights_N=108sites.png, id=1586, 433.62pt x 289.08pt>
+<all-figures/Afqmc/Log-weights_N=108sites.png, id=1581, 433.62pt x 289.08pt>
 File: all-figures/Afqmc/Log-weights_N=108sites.png Graphic file (type png)
 <use all-figures/Afqmc/Log-weights_N=108sites.png>
 Package pdftex.def Info: all-figures/Afqmc/Log-weights_N=108sites.png  used on 
@@ -1922,7 +1923,7 @@ put line 282.
 [52 <./all-figures/Afqmc/Log-weights_N=64sites.png> <./all-figures/Afqmc/Log-we
 ights_N=108sites.png>] [53] [54]) (./ch-afqmc/measurements.tex [55] [56]
 [57] [58]) (./ch-afqmc/stabilization.tex [59] [60] [61]
-<all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png, id=1732, 433.62pt x 289.08p
+<all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png, id=1727, 433.62pt x 289.08p
 t>
 File: all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png Graphic file (type png)
 
@@ -1930,7 +1931,7 @@ File: all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png Graphic file (type png)
 Package pdftex.def Info: all-figures/Afqmc/OrdersOfMagnitude_N=64sites.png  use
 d on input line 136.
 (pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
-<all-figures/Afqmc/OrdersOfMagnitude_N=108sites.png, id=1733, 433.62pt x 289.08
+<all-figures/Afqmc/OrdersOfMagnitude_N=108sites.png, id=1728, 433.62pt x 289.08
 pt>
 File: all-figures/Afqmc/OrdersOfMagnitude_N=108sites.png Graphic file (type png
 )
@@ -1943,13 +1944,13 @@ Overfull \hbox (45.4762pt too wide) in paragraph at lines 135--140
 []  []   [] 
  []
 
-<all-figures/Afqmc/conditionNumberNaive.png, id=1734, 433.62pt x 289.08pt>
+<all-figures/Afqmc/conditionNumberNaive.png, id=1729, 433.62pt x 289.08pt>
 File: all-figures/Afqmc/conditionNumberNaive.png Graphic file (type png)
 <use all-figures/Afqmc/conditionNumberNaive.png>
 Package pdftex.def Info: all-figures/Afqmc/conditionNumberNaive.png  used on in
 put line 155.
 (pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
-<all-figures/Afqmc/DivergentScalesComparison.png, id=1735, 433.62pt x 289.08pt>
+<all-figures/Afqmc/DivergentScalesComparison.png, id=1730, 433.62pt x 289.08pt>
 
 File: all-figures/Afqmc/DivergentScalesComparison.png Graphic file (type png)
 <use all-figures/Afqmc/DivergentScalesComparison.png>
@@ -1971,25 +1972,25 @@ Chapter 4.
 \openout5 = `thesis.mtc'.
 
 (./thesis.mtc4) (./ch-applications/1d-chain.tex
-<all-figures/Applications/magCorr.png, id=1786, 433.62pt x 289.08pt>
+<all-figures/Applications/magCorr.png, id=1781, 433.62pt x 289.08pt>
 File: all-figures/Applications/magCorr.png Graphic file (type png)
 <use all-figures/Applications/magCorr.png>
 Package pdftex.def Info: all-figures/Applications/magCorr.png  used on input li
 ne 10.
 (pdftex.def)             Requested size: 229.8175pt x 153.21165pt.
-<all-figures/Applications/SandChi.png, id=1787, 433.62pt x 289.08pt>
+<all-figures/Applications/SandChi.png, id=1782, 433.62pt x 289.08pt>
 File: all-figures/Applications/SandChi.png Graphic file (type png)
 <use all-figures/Applications/SandChi.png>
 Package pdftex.def Info: all-figures/Applications/SandChi.png  used on input li
 ne 12.
 (pdftex.def)             Requested size: 229.8175pt x 153.21165pt.
-<all-figures/Applications/S0T.png, id=1790, 433.62pt x 289.08pt>
+<all-figures/Applications/S0T.png, id=1785, 433.62pt x 289.08pt>
 File: all-figures/Applications/S0T.png Graphic file (type png)
 <use all-figures/Applications/S0T.png>
 Package pdftex.def Info: all-figures/Applications/S0T.png  used on input line 2
 2.
 (pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
-<all-figures/Applications/Sus.png, id=1791, 433.62pt x 289.08pt>
+<all-figures/Applications/Sus.png, id=1786, 433.62pt x 289.08pt>
 File: all-figures/Applications/Sus.png Graphic file (type png)
 <use all-figures/Applications/Sus.png>
 Package pdftex.def Info: all-figures/Applications/Sus.png  used on input line 2
@@ -2004,13 +2005,13 @@ Overfull \hbox (23.96103pt too wide) in paragraph at lines 22--24
 
  <./all-figures/Applications/magCorr.png> <./all-figures/Applications/SandChi.p
 ng>]
-<all-figures/Applications/SqT.png, id=1799, 433.62pt x 289.08pt>
+<all-figures/Applications/SqT.png, id=1794, 433.62pt x 289.08pt>
 File: all-figures/Applications/SqT.png Graphic file (type png)
 <use all-figures/Applications/SqT.png>
 Package pdftex.def Info: all-figures/Applications/SqT.png  used on input line 2
 8.
 (pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
-<all-figures/Applications/stSus.png, id=1800, 433.62pt x 289.08pt>
+<all-figures/Applications/stSus.png, id=1795, 433.62pt x 289.08pt>
 File: all-figures/Applications/stSus.png Graphic file (type png)
 <use all-figures/Applications/stSus.png>
 Package pdftex.def Info: all-figures/Applications/stSus.png  used on input line
@@ -2021,13 +2022,13 @@ Overfull \hbox (23.96103pt too wide) in paragraph at lines 28--30
 [][] [] 
  []
 
-<all-figures/Applications/s_compare.png, id=1801, 433.62pt x 289.08pt>
+<all-figures/Applications/s_compare.png, id=1796, 433.62pt x 289.08pt>
 File: all-figures/Applications/s_compare.png Graphic file (type png)
 <use all-figures/Applications/s_compare.png>
 Package pdftex.def Info: all-figures/Applications/s_compare.png  used on input 
 line 34.
 (pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
-<all-figures/Applications/runtime2sites.png, id=1802, 433.62pt x 289.08pt>
+<all-figures/Applications/runtime2sites.png, id=1797, 433.62pt x 289.08pt>
 File: all-figures/Applications/runtime2sites.png Graphic file (type png)
 <use all-figures/Applications/runtime2sites.png>
 Package pdftex.def Info: all-figures/Applications/runtime2sites.png  used on in
@@ -2038,13 +2039,13 @@ Overfull \hbox (23.96103pt too wide) in paragraph at lines 34--36
 [][] [] 
  []
 
-<all-figures/Applications/Ehirsch1982.png, id=1803, 433.62pt x 289.08pt>
+<all-figures/Applications/Ehirsch1982.png, id=1798, 433.62pt x 289.08pt>
 File: all-figures/Applications/Ehirsch1982.png Graphic file (type png)
 <use all-figures/Applications/Ehirsch1982.png>
 Package pdftex.def Info: all-figures/Applications/Ehirsch1982.png  used on inpu
 t line 40.
 (pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
-<all-figures/Applications/SiSjhirsch1982.png, id=1804, 433.62pt x 289.08pt>
+<all-figures/Applications/SiSjhirsch1982.png, id=1799, 433.62pt x 289.08pt>
 File: all-figures/Applications/SiSjhirsch1982.png Graphic file (type png)
 <use all-figures/Applications/SiSjhirsch1982.png>
 Package pdftex.def Info: all-figures/Applications/SiSjhirsch1982.png  used on i
@@ -2059,39 +2060,107 @@ Overfull \hbox (11.95634pt too wide) in paragraph at lines 40--43
 > <./all-figures/Applications/Sus.png> <./all-figures/Applications/SqT.png> <./
 all-figures/Applications/stSus.png> <./all-figures/Applications/s_compare.png> 
 <./all-figures/Applications/runtime2sites.png>]
-<all-figures/Applications/mf-phase-diagram-hubbard.png, id=1824, 969.12062pt x 
+<all-figures/Applications/mf-phase-diagram-hubbard.png, id=1819, 969.12062pt x 
 533.995pt>
 File: all-figures/Applications/mf-phase-diagram-hubbard.png Graphic file (type 
 png)
 <use all-figures/Applications/mf-phase-diagram-hubbard.png>
 Package pdftex.def Info: all-figures/Applications/mf-phase-diagram-hubbard.png 
  used on input line 9.
-(pdftex.def)             Requested size: 203.52133pt x 112.14226pt.
-)
-(./ch-applications/nanoribbon.tex
+(pdftex.def)             Requested size: 232.5937pt x 128.1614pt.
+<all-figures/Applications/square/nUpnDwSquare.png, id=1820, 398.08725pt x 267.5
+1945pt>
+File: all-figures/Applications/square/nUpnDwSquare.png Graphic file (type png)
+<use all-figures/Applications/square/nUpnDwSquare.png>
+Package pdftex.def Info: all-figures/Applications/square/nUpnDwSquare.png  used
+ on input line 10.
+(pdftex.def)             Requested size: 193.07208pt x 129.74677pt.
+<all-figures/Applications/square/CorrelationsDots.png, id=1823, 492.6405pt x 27
+8.2395pt>
+File: all-figures/Applications/square/CorrelationsDots.png Graphic file (type p
+ng)
+<use all-figures/Applications/square/CorrelationsDots.png>
+Package pdftex.def Info: all-figures/Applications/square/CorrelationsDots.png  
+used on input line 16.
+(pdftex.def)             Requested size: 246.31964pt x 139.1194pt.
+<all-figures/Applications/square/S(q).png, id=1824, 316.0608pt x 216.93045pt>
+File: all-figures/Applications/square/S(q).png Graphic file (type png)
+<use all-figures/Applications/square/S(q).png>
+Package pdftex.def Info: all-figures/Applications/square/S(q).png  used on inpu
+t line 17.
+(pdftex.def)             Requested size: 189.63794pt x 130.15927pt.
+
+Overfull \hbox (4.50449pt too wide) in paragraph at lines 15--18
+[]  [] [] 
+ []
+
+<all-figures/Applications/square/S(q)pcolor.png, id=1825, 369.5406pt x 256.6789
+6pt>
+File: all-figures/Applications/square/S(q)pcolor.png Graphic file (type png)
+<use all-figures/Applications/square/S(q)pcolor.png>
+Package pdftex.def Info: all-figures/Applications/square/S(q)pcolor.png  used o
+n input line 23.
+(pdftex.def)             Requested size: 203.24796pt x 141.17384pt.
+<all-figures/Applications/square/chi(q)pcolor.png, id=1826, 366.77025pt x 256.0
+767pt>
+File: all-figures/Applications/square/chi(q)pcolor.png Graphic file (type png)
+<use all-figures/Applications/square/chi(q)pcolor.png>
+Package pdftex.def Info: all-figures/Applications/square/chi(q)pcolor.png  used
+ on input line 25.
+(pdftex.def)             Requested size: 201.72426pt x 140.84262pt.
+
+Overfull \hbox (1.91771pt too wide) in paragraph at lines 22--26
+[]  []   [] 
+ []
+
+[68 <./all-figures/Applications/Ehirsch1982.png> <./all-figures/Applications/Si
+Sjhirsch1982.png> <./all-figures/Applications/mf-phase-diagram-hubbard.png> <./
+all-figures/Applications/square/nUpnDwSquare.png> <./all-figures/Applications/s
+quare/CorrelationsDots.png> <./all-figures/Applications/square/S(q).png>]
+<all-figures/Applications/square/Spipi.png, id=1842, 383.031pt x 264.0264pt>
+File: all-figures/Applications/square/Spipi.png Graphic file (type png)
+<use all-figures/Applications/square/Spipi.png>
+Package pdftex.def Info: all-figures/Applications/square/Spipi.png  used on inp
+ut line 31.
+(pdftex.def)             Requested size: 210.6677pt x 145.21495pt.
+<all-figures/Applications/square/extrapolationSpi.png, id=1843, 433.62pt x 289.
+08pt>
+File: all-figures/Applications/square/extrapolationSpi.png Graphic file (type p
+ng)
+<use all-figures/Applications/square/extrapolationSpi.png>
+Package pdftex.def Info: all-figures/Applications/square/extrapolationSpi.png  
+used on input line 32.
+(pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
+
+Overfull \hbox (12.58504pt too wide) in paragraph at lines 30--33
+[]  [] [] 
+ []
+
+) (./ch-applications/nanoribbon.tex
 Package acronym Info: Label `acro:TMD' overridden on input line 8.
 Package acronym Info: Label `acro:PBC' overridden on input line 15.
 Package acronym Info: Label `acro:OBC' overridden on input line 16.
- [68 <./all-figures/Applications/Ehirsch1982.png> <./all-figures/Applications/S
-iSjhirsch1982.png> <./all-figures/Applications/mf-phase-diagram-hubbard.png>]
-<all-figures/Applications/nanoribbon.pdf, id=1852, 1027.84pt x 770.88pt>
+ [69 <./all-figures/Applications/square/S(q)pcolor.png> <./all-figures/Applicat
+ions/square/chi(q)pcolor.png> <./all-figures/Applications/square/Spipi.png> <./
+all-figures/Applications/square/extrapolationSpi.png>]
+<all-figures/Applications/nanoribbon.pdf, id=1870, 1027.84pt x 770.88pt>
 File: all-figures/Applications/nanoribbon.pdf Graphic file (type pdf)
 <use all-figures/Applications/nanoribbon.pdf>
 Package pdftex.def Info: all-figures/Applications/nanoribbon.pdf  used on input
  line 26.
 (pdftex.def)             Requested size: 256.95937pt x 118.03123pt.
- [69 <./all-figures/Applications/nanoribbon.pdf>]
+ [70 <./all-figures/Applications/nanoribbon.pdf>]
 Overfull \hbox (10.92175pt too wide) detected at line 113
 \OML/cmm/b/it/10 h[] \OT1/cmr/m/n/10 = []
  []
 
-<all-figures/Applications/fillingVsE.png, id=1960, 329.5512pt x 263.66505pt>
+<all-figures/Applications/fillingVsE.png, id=1976, 329.5512pt x 263.66505pt>
 File: all-figures/Applications/fillingVsE.png Graphic file (type png)
 <use all-figures/Applications/fillingVsE.png>
 Package pdftex.def Info: all-figures/Applications/fillingVsE.png  used on input
  line 115.
 (pdftex.def)             Requested size: 181.25371pt x 145.01622pt.
-<all-figures/Applications/BandStructureNanoribbonTMD.png, id=1961, 489.62926pt 
+<all-figures/Applications/BandStructureNanoribbonTMD.png, id=1977, 489.62926pt 
 x 266.4354pt>
 File: all-figures/Applications/BandStructureNanoribbonTMD.png Graphic file (typ
 e png)
@@ -2099,14 +2168,14 @@ e png)
 Package pdftex.def Info: all-figures/Applications/BandStructureNanoribbonTMD.pn
 g  used on input line 116.
 (pdftex.def)             Requested size: 269.29692pt x 146.53992pt.
-[70]
-<all-figures/Applications/MFnanoribbon.png, id=1975, 107.6823pt x 114.54794pt>
+[71]
+<all-figures/Applications/MFnanoribbon.png, id=1992, 107.6823pt x 114.54794pt>
 File: all-figures/Applications/MFnanoribbon.png Graphic file (type png)
 <use all-figures/Applications/MFnanoribbon.png>
 Package pdftex.def Info: all-figures/Applications/MFnanoribbon.png  used on inp
 ut line 144.
 (pdftex.def)             Requested size: 110.15816pt x 117.18167pt.
-<all-figures/Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png, id=1976, 209.
+<all-figures/Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png, id=1993, 209.
 70345pt x 215.6055pt>
 File: all-figures/Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png Graphic f
 ile (type png)
@@ -2114,22 +2183,22 @@ ile (type png)
 Package pdftex.def Info: all-figures/Applications/lattice_Nx=512_Ny=16_U=20_bet
 a=100.png  used on input line 146.
 (pdftex.def)             Requested size: 115.33723pt x 118.58337pt.
-<all-figures/Applications/magProf.png, id=1977, 384.4764pt x 268.41078pt>
+<all-figures/Applications/magProf.png, id=1994, 384.4764pt x 268.41078pt>
 File: all-figures/Applications/magProf.png Graphic file (type png)
 <use all-figures/Applications/magProf.png>
 Package pdftex.def Info: all-figures/Applications/magProf.png  used on input li
 ne 148.
 (pdftex.def)             Requested size: 177.6298pt x 124.00697pt.
- [71 <./all-figures/Applications/fillingVsE.png> <./all-figures/Applications/Ba
-ndStructureNanoribbonTMD.png>])) (./ch-conclusion/conclusions.tex [72 <./all-fi
+ [72 <./all-figures/Applications/fillingVsE.png> <./all-figures/Applications/Ba
+ndStructureNanoribbonTMD.png>])) (./ch-conclusion/conclusions.tex [73 <./all-fi
 gures/Applications/MFnanoribbon.png> <./all-figures/Applications/lattice_Nx=512
 _Ny=16_U=20_beta=100.png> <./all-figures/Applications/magProf.png>]
 Chapter 5.
 Package minitoc Info: I0006
 (minitoc)             thesis.mtc5 is empty on input line 5.
-) [73
+) [74
 
-] [74]
+] [75]
 Underfull \hbox (badness 5316) in paragraph at lines 46--46
 []\T1/cmr/m/n/7 Newman, M. E. J. & Barkema, G. T. \T1/cmr/m/it/7 Monte
  []
@@ -2139,15 +2208,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--46
 \T1/cmr/m/it/7 trons in Re-duced Di-men-sions \T1/cmr/m/n/7 Google-Books-ID:
  []
 
-[75] [76
-
-
-] (./end-appendices/hubbardObSol.tex
+[76] (./end-appendices/hubbardObSol.tex
 Appendix A.
 [1
 
+
+
 ] [2] [3] [4]
-<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=2133, 457.71pt x 210.7
+<all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png, id=2145, 457.71pt x 210.7
 875pt>
 File: all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png Graphic file (type pn
 g)
@@ -2158,7 +2226,16 @@ sed on input line 179.
  [5 <./all-figures/Hubbard/hubbardOneHoleOneDoublyOcV2.png>]
 [6] [7] [8] [9] [10] [11]
 Package acronym Info: Label `acro:GCE' overridden on input line 538.
-) (./end-appendices/afqmcCalc.tex [12]
+<all-figures/Applications/grandpotMin_Nx=512_Ny=16_U=16_beta=2.png, id=2218, 43
+3.62pt x 289.08pt>
+File: all-figures/Applications/grandpotMin_Nx=512_Ny=16_U=16_beta=2.png Graphic
+ file (type png)
+<use all-figures/Applications/grandpotMin_Nx=512_Ny=16_U=16_beta=2.png>
+Package pdftex.def Info: all-figures/Applications/grandpotMin_Nx=512_Ny=16_U=16
+_beta=2.png  used on input line 545.
+(pdftex.def)             Requested size: 238.49173pt x 158.99448pt.
+) (./end-appendices/afqmcCalc.tex [12 <./all-figures/Applications/grandpotMin_N
+x=512_Ny=16_U=16_beta=2.png>]
 Appendix B.
 [1
 
@@ -2176,9 +2253,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 418A719EAC3225438F96BEC7CA112C52;6597.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 23C13CDD34CB52162DDB41C53584E95B;6467
+(rerunfilecheck)             After:  285F3CA9005E8EFC9F25AA9700AC4660;6335.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2187,81 +2270,87 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22778 strings out of 492649
- 380002 string characters out of 6129622
- 954214 words of memory out of 5000000
- 25106 multiletter control sequences out of 15000+600000
+ 22825 strings out of 492649
+ 382003 string characters out of 6129622
+ 954332 words of memory out of 5000000
+ 25140 multiletter control sequences out of 15000+600000
  45704 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,30n,100p,2020b,2040s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
- </Users/franciscobrito/Library/texlive/2018/texmf-var/fonts/pk/ljfour/public/b
-bm/bbm10.600pk>{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib
-9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/cm-super/sfcc0700.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm2074.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm2488.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/cm-super/sfsl1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
-cm-super/sfti0700.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm
--super/sfti0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-s
-uper/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
-er/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super
-/sftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/bookman/ubkd8
-a.pfb>
-Output written on thesis.pdf (114 pages, 16783860 bytes).
+ 59i,30n,100p,2020b,2035s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section.B.5} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.4} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <
+/Users/franciscobrito/Library/texlive/2018/texmf-var/fonts/pk/ljfour/public/bbm
+/bbm10.600pk>{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.
+pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbi0900.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/cm-super/sfcc0700.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm2074.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/cm-super/sfrm2488.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
+cm-super/sfsl1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm
+-super/sfti0700.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-s
+uper/sfti0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
+er/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super
+/sftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/s
+ftt1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/bookman/ubkd8a.
+pfb>
+Output written on thesis.pdf (114 pages, 18294500 bytes).
 PDF statistics:
- 2624 PDF objects out of 2984 (max. 8388607)
- 2263 compressed objects within 23 object streams
- 675 named destinations out of 1000 (max. 500000)
- 903 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2639 PDF objects out of 2984 (max. 8388607)
+ 2262 compressed objects within 23 object streams
+ 678 named destinations out of 1000 (max. 500000)
+ 935 words of extra memory for PDF output out of 10000 (max. 10000000)
 
