@@ -537,12 +537,19 @@ Thus, we must be cautious when analyzing self-consistent solutions to confirm th
 
 On a final note, we remark that this procedure can be generalized to the \ac{GCE} by considering the GBF inequality for the grand potential:
 \begin{equation}\label{eq:gibbsGrand}
-\Omega \le \Omega_{\text{MF}} + \left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} \equiv F ,
+\Omega_{\text{Hubbard}} \le \Omega_{\text{MF}} + \left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} \equiv \Omega ,
 \end{equation}
 where we defined $\Omega_{\text{MF}} = \left\langle \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} - T \mathcal{S}_{\text{MF}}- \mu \left\langle \mathcal{N} \right\rangle_{\text{MF}}$, $\mathcal{N}$ being the total number operator.
+The iterative scheme we use to solve the self consistent equation is not a minimization algorithm.
+However, if it does not get stuck in a metastable state, it tends to take steps towards minimizing the functional $\Omega$.
+This is illustrated in Fig.(\ref{fig:grandPotmin}).
+The data was obtained by solving the self consistent equation for a generalized version of the Hubbard model, obtained via the 3-band tight binding Hamiltonian  of the first chapter.
+In this case, we consider a \acs{TMD} nanoribbon with $N_y = 16$, at inverse temperature $\beta t = 2 $, at $U = 16$, where $U$ is an on-site interaction that only occurs if the electrons occupy the same $d$-orbital.
+Thus, only double occupancy of a site \emph{and an orbital} is penalized.
 
 \begin{figure}[H]
+\centering
 \includegraphics[scale=0.55]{Applications/grandpotMin_Nx=512_Ny=16_U=16_beta=2.png}
-	\caption[]{}
+	\caption[Example of the minimization of the grandpotential functional.]{Example of the minimization of the grandpotential functional $\Omega$ for a TMD nanoribbon of width $N_y = 16$, at inverse temperature $\beta t = 2 $, at $U = 16$.}
 	\label{fig:grandPotMin}
 \end{figure}

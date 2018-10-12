@@ -21,12 +21,14 @@ i (x, y, z) = N_x N_y z + N_x y + x,
 $
  where $x = 0, ..., N_x - 1$, $y = 0, ..., N_y - 1$, and $z = 0, 1$ define each element $\bm r = (x, y, z) \in \mathcal{L}$.
 
-\begin{figure}[H]\label{fig:bcRibbon}
-	\centering
+\begin{figure}[H]
+\hspace{-1cm}
 \includegraphics[trim={0 8cm 0 2.5cm},clip, scale = 0.25]{Applications/nanoribbon.pdf}
+\hspace{-1.2cm}
+\includegraphics[scale = 0.5]{Applications/graphene-strain/CorrelationsDots.png}
 	\caption[Boundary conditions on the nanoribbon.]{Boundary conditions on the nanoribbon for $N_x = 5, \, N_y = 4$. The orange circles correspond to sublattice $\mathcal{A}$, and the blue circles correspond to sublattice $\mathcal{B}$.
 	The counting starts at 1 (i.e. the numbers correspond to $i+1$, since $i$ starts at 0).}
-	\label{fig:nanoribbon}
+	\label{fig:bcRibbon}
 \end{figure}
 
 The geometry of the system appears through the hopping matrix $\bm K$ in our code.
@@ -61,6 +63,25 @@ We summarize all possible cases in the following table.
 	\end{tabular}
 	\label{tab:dummytable}
 \end{table}
+
+\begin{figure}[H]
+\includegraphics[scale = 0.5]{Applications/graphene-strain/S(q)pcolor.png}
+\includegraphics[scale = 0.5]{Applications/graphene-strain/edgeStFactor_Graphene.png}
+	\caption[]{}
+	\label{fig:edgeStFactor}
+\end{figure}
+\begin{figure}[H]
+\includegraphics[scale = 0.5]{Applications/graphene-strain/LongitudinalProfile.png}
+\includegraphics[scale = 0.5]{Applications/graphene-strain/order_parameter_Graphene.png}
+	\caption[]{}
+	\label{fig:edgeStFactor}
+\end{figure}
+\begin{figure}[H]
+\includegraphics[scale = 0.5]{Applications/graphene-strain/chiTyang2017.png}
+\includegraphics[scale = 0.5]{Applications/graphene-strain/fityang2017.png}
+	\caption[]{}
+	\label{fig:edgeStFactor}
+\end{figure}
 
 \subsection{\acp{TMD}}
 \label{subsec:apTMD}
@@ -150,4 +171,45 @@ The self consistent relation allowing us to compute the new MF parameters at eac
 	Right: Comparison between the spin density profile along the ribbon's transverse direction $\left\langle m \right\rangle (y)$ (the obtained solution is constant along $x$) for the GNR and the \acs{TMDNR}).}
 	\label{fig:nanoGraphVsTMD}
 \end{figure}
-
+\begin{figure}[H]
+\includegraphics[trim={0cm 8cm 0cm 6.5cm},clip, scale =0.45]{Applications/tmd-mf/edge-mag.pdf}
+	\caption[]{}
+	\label{fig:zeroTphaseDiagram}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands05} \\
+\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands1} \\
+\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands4} \\
+\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands100}
+	\caption[]{}
+	\label{fig:band-structures}
+\end{figure}
+\begin{figure}[H]
+\hspace{1cm}
+\includegraphics[scale=0.5]{Applications/tmd-mf/wfAroundK1}
+\includegraphics[scale=0.5]{Applications/tmd-mf/magProfU14}
+	\caption[]{}
+	\label{fig:wfs}
+\end{figure}
+\begin{figure}[H]
+\hspace{1.2cm}
+\includegraphics[scale=0.35]{Applications/tmd-mf/bands152.png}
+\hspace{4mm}
+\includegraphics[scale=0.35]{Applications/tmd-mf/bands154.png}
+	\caption[]{}
+	\label{fig:wfs}
+\end{figure}
+\begin{figure}[H]
+\hspace{1cm}
+\includegraphics[scale=0.51]{Applications/tmd-mf/wfAroundK2}
+\includegraphics[scale=0.5]{Applications/tmd-mf/magProfU154}
+	\caption[]{}
+	\label{fig:wfs}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.62]{Applications/tmd-mf/edge-mag-phase-diagram}
+	\caption[]{}
+	\label{fig:wfs}
+\end{figure}

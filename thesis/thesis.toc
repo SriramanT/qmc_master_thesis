@@ -114,11 +114,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}Graphene}{69}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}\acp {TMD}}{70}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}\acp {TMD}}{71}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{74}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{77}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{74}{section*.63}
+\contentsline {chapter}{Bibliography}{77}{section*.72}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Obtaining the Hubbard Model. Approximate Solutions}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
