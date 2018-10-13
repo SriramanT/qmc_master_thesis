@@ -154,10 +154,10 @@ To compare with the results of our \ac{QMC} simulations, we may compute other ob
 &=\sum_{\sigma} \left( \left\langle n_{i,\sigma} \right\rangle \left\langle n_{j,\sigma} \right\rangle - \left\langle n_{i,-\sigma} \right\rangle \left\langle n_{j,\sigma} \right\rangle + \left\langle c_{i,\sigma}^\dagger c_{j,\sigma}  \right\rangle \left\langle c_{i,\sigma} c_{j,\sigma}^\dagger \right\rangle \right) , \, \text{by Wick's theorem} \\
 &=
 \begin{cases}
-\sum_{\sigma, \alpha, \beta} f ( \varepsilon_{\beta, \sigma} ) \left( f ( \varepsilon_{\alpha, \sigma} ) | Q_{\alpha i, \sigma} |^2 | Q_{\beta j, \sigma} |^2  - f ( \varepsilon_{\alpha, -\sigma} ) | Q_{\alpha i, -\sigma} |^2 | Q_{\beta j, \sigma} |^2  - Q_{\alpha i, \sigma}^\star Q_{\alpha j, 
+\sum_{\sigma} \big( \left\langle n_{i,\sigma} \right\rangle \left\langle n_{j,\sigma} \right\rangle - \left\langle n_{i,-\sigma} \right\rangle \left\langle n_{j,\sigma} \right\rangle - \sum_{\alpha, \beta}  f ( \varepsilon_{\beta, \sigma} )  f ( \varepsilon_{\alpha, \sigma} ) Q_{\alpha i, \sigma}^\star Q_{\alpha j, 
 \sigma}  Q_{\beta j, \sigma}^\star Q_{\beta i, 
-\sigma} \right) \,\, i \neq j \\
-\sum_{\alpha,\sigma} | Q_{\alpha i, \sigma} |^2 f (\varepsilon_{\alpha, \sigma}) - \sum_{\alpha,\beta} | Q_{\alpha i, \uparrow} |^2 f (\varepsilon_{\alpha, \uparrow}) | Q_{\beta i, \downarrow} |^2 f (\varepsilon_{\beta, \downarrow}) \,\, i = j
+\sigma} \big) \,\, \text{if} \,\, i \neq j \\
+\left\langle n_{i, \uparrow} \right\rangle +  \left\langle n_{i, \downarrow } \right\rangle - 2 \left\langle n_{i, \uparrow} \right\rangle \left\langle n_{i, \downarrow } \right\rangle  \,\,\text{if} \,\, i = j
 \end{cases}
 \end{split}
 \end{equation}

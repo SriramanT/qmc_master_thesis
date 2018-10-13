@@ -1,34 +1,24 @@
 \section{Nanoribbons}
 \label{sec:nanoribbon}
 
-In this section, we apply our code to the case of the honeycomb lattice of graphene and of the triangular lattice with nonuniform hoppings considered in the 3-band minimal model of \acs{TMD}s.
+In this section, we apply our code to the case of the honeycomb lattice of graphene and of the triangular lattice with nonuniform hoppings considered in the 3-band minimal model of \acs{TMD}s with intra-orbital on-site interactions.
 We take boundary conditions corresponding to nanoribbons.
-These structures are much longer on one direction than on the other, , i.e. $l \gg w$, resembling a ribbon, hence their name.
-This condition corresponds to taking $N_x \gg N_y$ in our conventions (see Fig.(\ref{fig:bcRibbon})\footnote{In Fig.(\ref{fig:bcRibbon}), this condition is, of course, not obeyed solely for the sake of giving a good visual representation of the boundary conditions, and the numbering system).}.
-The low energy electronic states on the edges of these ribbons might lead to nontrivial magnetic behavior in \ac{TMD} nanostructures (as indeed they do in graphene nanostructures \cite{yazyev_emergence_2010}) and it is this possibility was unexplored numerically before this work \cite{feldner_dynamical_2011, golor_quantum_2013}, as was mentioned on chapter \ref{cap:int}.
+These structures are much longer on one direction than on the other, , i.e. $l \gg w$, resembling a ribbon, hence their name (see Fig.(\ref{fig:bcRibbon}))\footnote{In Fig.(\ref{fig:bcRibbon}), this condition is, of course, not obeyed solely for the sake of giving a good visual representation of the boundary conditions, and the numbering system).}.
+Along the $x$-direction, a ribbon is normally very long, which justifies the fact that we take \acp{PBC}.
+In contrast, in the narrow $y$-direction we take \acp{OBC}.
+The presence of low energy electronic states on the edges of these ribbons might lead to nontrivial magnetic behavior in \ac{TMD} nanostructures (as indeed they do in graphene nanostructures \cite{yazyev_emergence_2010}) and it is this possibility was unexplored numerically before this work \cite{feldner_dynamical_2011, golor_quantum_2013}, as was mentioned in chapter \ref{cap:int}.
 
 \subsection{Graphene}
 \label{sec:graphene}
 
 We use three coordinates to label each site on the honeycomb lattice, by taking advantage of its bipartite nature.
 Regarding the honeycomb lattice as two interpenetrating triangular sublattices $\mathcal{A}$ and $\mathcal{B}$, we take the axes $x$ and $y$ to be along the primitive vectors of each triangular sublattice.
-Along the $x$-direction, a ribbon is normally very long, which justifies the fact that we take \acp{PBC}.
-In contrast, in the narrow $y$-direction we take \acp{OBC}.
 To number the sites on the ribbon, we introduce an additional coordinate labeling the sublattice: $z = 0$, if the site is in sublattice $\mathcal{A}$, and $z = 1$ if the site is in sublattice $\mathcal{B}$.
 We then adopt the numbering convention for the sites $i = 0,1, ..., 2 N_x N_y - 1$ of the lattice $\mathcal{L}$:
 $
 i (x, y, z) = N_x N_y z + N_x y + x,
 $
  where $x = 0, ..., N_x - 1$, $y = 0, ..., N_y - 1$, and $z = 0, 1$ define each element $\bm r = (x, y, z) \in \mathcal{L}$.
-
-\begin{figure}[H]
-\hspace{-0.4cm}
-\includegraphics[trim={0 8cm 0 2.5cm},clip, scale = 0.27]{Applications/nanoribbon.pdf}
-\includegraphics[scale = 0.49]{Applications/graphene-strain/CorrelationsDots.png}
-	\caption[Boundary conditions on the nanoribbon.]{Boundary conditions on the nanoribbon for $N_x = 5, \, N_y = 4$. The orange circles correspond to sublattice $\mathcal{A}$, and the blue circles correspond to sublattice $\mathcal{B}$.
-	The counting starts at 1 (i.e. the numbers correspond to $i+1$, since $i$ starts at 0).}
-	\label{fig:bcRibbon}
-\end{figure}
 
 The geometry of the system appears through the hopping matrix $\bm K$ in our code.
 This numbering system makes it straightforward to find the neighbors of each site.
@@ -63,24 +53,59 @@ We summarize all possible cases in the following table.
 	\label{tab:dummytable}
 \end{table}
 
+Recall the mean field result obtained for a graphene nanoribbon we presented in chapter \ref{cap:int}.
+For each sublattice, ferromagnetic order is induced by the on-site interaction along each row of the ribbon, i.e. along the longitudinal direction $x$.
+The average spin density has its maximum on the edge, decaying in the bulk.
+It reaches another (smaller) maximum on the other side of the ribbon, i.e., in the row next to the other sublattice's edge. (see Fig.(\ref{fig:nanoGraphVsTMD})).
+This type of globally (considering the two sublattices) antiferromagnetic ordering is confirmed by \ac{QMC} \cite{feldner_dynamical_2011, raczkowski_interplay_2017}.
+Other recent auxiliary field \ac{QMC} studies point at the possibility of strain-tuning this type of edge-magnetism in zig-zag graphene nanoribbons \cite{yang_strain-tuning_2017}.
+The authors start by introducing a reduction in the hopping along $x$ to model strain, i.e. changing the hopping between atoms connected by red bonds in Fig.(\ref{fig:bcRibbon}): $-t \mapsto -t + \Delta$.
+Then, they identify phase transitions to edge-magnetized states for relatively small values of the hopping reduction ($\Delta = 0-0.5t$) and on-site interaction ($U = 1 t- 4t$).
+To do so, they fit the magnetic susceptibility at the edge $\chi_e$ to the Curie-Weiss law:
+\begin{equation}
+\frac{1}{\chi_e} = \frac{T - T_c}{A} ,
+\end{equation}
+and identify the critical temperature.
+By repeating this procedure for different simulations, one can find critical values of $U_c$ and $\Delta$ for the transition to occur, and find the critical temperatures of the transitions for different values of these parameters.
+
+\begin{figure}[H]
+\hspace{-0.6cm}
+\includegraphics[trim={0 8cm 0 2.5cm},clip, scale = 0.27]{Applications/nanoribbon.pdf}
+\includegraphics[scale = 0.49]{Applications/graphene-strain/CorrelationsDots.png}
+	\caption[Boundary conditions on the nanoribbon. Spin-spin correlations of a strained zig-zag graphene nanoribbon.]{Left: Boundary conditions on the nanoribbon for $N_x = 5, \, N_y = 4$. The orange circles correspond to sublattice $\mathcal{A}$, and the blue circles correspond to sublattice $\mathcal{B}$.
+	Spin-spin correlations of a strained zig-zag graphene nanoribbon, with reduced hopping along $x$: $t \mapsto t - \Delta$, for $\Delta = 0.3t$. The label $\bm 0$ refers to the lower left site.
+}
+	\label{fig:bcRibbon}
+\end{figure}
+
+A mean field treatment tends to overestimate long range order.
+In this case, it predicts spin correlations to decay rapidly from the edge rows inward, and then to remain constant along the $x$ direction.
+The result of Fig.(\ref{fig:bcRibbon}) shows us that it decays as we penetrate the sample, and then increases again, with the profile shown in Fig.(\ref{fig:longProf}).
+
+A peak at $\bm q = \bm 0$ in the magnetic structure factor $S ( \bm q )$ suggests sublattice ferromagnetic ordering, and indeed, by studying the magnetic structure factor of each row separately, we see that it is enhanced at $\bm q = \bm 0$ on the edges compared to the bulk.
+Moreover, we study the behavior of $M_{\text{row}} \equiv \frac{1}{N_x}\sqrt{ \sum_{(i, j) \in \text{row}} \left\langle S_i S_j \right\rangle}$, and we conclude that it is maximum in one of the edge rows, decreases as we penetrate the bulk, and then increases again, having a smaller local maximum on the other edge row.
+Of course, since the system size is small, the effect is much more pronounced on one of the edges than the other, because the decay of the average spin density from the edge to the bulk is relatively slow.
+If we had more CPU time available, we could do larger scale simulations to see a more dramatic effect on \emph{both} edges.
+
 \begin{figure}[H]
 \includegraphics[scale = 0.56]{Applications/graphene-strain/S(q)pcolor.png}
+\hspace{-0.7cm}
 \includegraphics[scale = 0.55]{Applications/graphene-strain/edgeStFactor_Graphene.png}
-	\caption[]{}
+	\caption[Magnetic structure factor $S(\bm q)$ for a strained graphene nanoribbon: bulk and edges.]{Magnetic structure factor $S(\bm q)$ for a strained graphene nanoribbon: bulk (left) and edges compared with a row of the bulk (right).}
 	\label{fig:edgeStFactor}
 \end{figure}
 \begin{figure}[H]
 \includegraphics[scale = 0.55]{Applications/graphene-strain/LongitudinalProfile.png}
 \includegraphics[scale = 0.55]{Applications/graphene-strain/order_parameter_Graphene.png}
-	\caption[]{}
-	\label{fig:edgeStFactor}
+	\caption[Spin-spin correlation function profile along the ribbon's ]{}
+	\label{fig:longProf}
 \end{figure}
 \begin{figure}[H]
 \hspace{-0.2cm}
 \includegraphics[scale = 0.55]{Applications/graphene-strain/chiTyang2017.png}
 \includegraphics[scale = 0.55]{Applications/graphene-strain/fityang2017.png}
 	\caption[]{}
-	\label{fig:edgeStFactor}
+	\label{fig:chiFit}
 \end{figure}
 
 \subsection{\acp{TMD}}

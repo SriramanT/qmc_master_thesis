@@ -52,48 +52,54 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Applications and original results}{64}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Spin-spin correlation function, magnetic structure factor, and susceptibility for a 64 site Hubbard chain at $\beta = 25 t$, for $U = 4$.}}{65}{figure.caption.48}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Spin-spin correlation function, magnetic structure factor, and susceptibility for a 64 site Hubbard chain at $\beta = 25 t$, for $U = 4$.}}{65}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces $q=0$ components of the magnetic structure factor and susceptibility as a function of temperature, indicating that the ground state does not have ferromagnetic ordering.}}{65}{figure.caption.49}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces $q=0$ components of the magnetic structure factor and susceptibility as a function of temperature, indicating that the ground state does not have ferromagnetic ordering.}}{65}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The magnetic structure factor and the susceptibility have a peak at $q = \pi $ that increases as $T\rightarrow 0$, indicating \emph {antiferromagnetic ordering}.}}{65}{figure.caption.50}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The magnetic structure factor and the susceptibility have a peak at $q = \pi $ that increases as $T\rightarrow 0$, indicating \emph {antiferromagnetic ordering}. Divergence of the staggered susceptibility near $T_c = 0$, signaling the transition to the antiferromagnetic ground state.}}{66}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of the magnetic structure factor with that obtained using \texttt {QUEST}. Run time comparison.}}{66}{figure.caption.52}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of the magnetic structure factor with that obtained using \texttt {QUEST}. Run time comparison.}}{66}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean field phase diagram of the Hubbard model. \ac {QMC} data showing the decrease of the double occupancy with increasing $U$.}}{66}{figure.caption.54}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Convergence of some of the measured observables to the value given by exact diagonalization for $N=2$, $\beta = 2 t$, $U = 4 t$. Comparison with the results of \texttt {QUEST}.}}{67}{figure.caption.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Spin-spin correlations with respect to the point labeled $0$ on the lattice.}}{67}{figure.caption.55}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean field phase diagram of the Hubbard model. \ac {QMC} data showing the decrease of the double occupancy with increasing $U$.}}{67}{figure.caption.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces 3D Plot of the magnetic structure factor}}{67}{figure.caption.56}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Spin-spin correlations on the square lattice. Magnetic structure factors showing a peak at $\bm {q} = \bm {\pi }$.}}{67}{figure.caption.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Boundary conditions on the nanoribbon.}}{68}{figure.caption.61}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Color map of the structure factor $S ( \bm {q})$, and susceptibility $\chi ( \bm {q})$, both showing peaks at $\bm {q} = \bm {\pi }$.}}{68}{figure.caption.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Filling $\nu $ as a function of the Fermi energy $\varepsilon _F$ for a \acs {TMD} monolayer and a nanoribbon. $\text {Mo}\text {S}_2$. \acs {TMDNR} band structure obtained by the 3-band model.}}{71}{figure.caption.66}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces $S ( \bm {\pi }) $ for varying system size and inverse temperature. Infinite system extrapolation of long range order.}}{68}{figure.caption.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs {TMDNR}. Spin density profile along the ribbon's transverse direction.}}{72}{figure.caption.67}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Boundary conditions on the nanoribbon. Spin-spin correlations of a strained zig-zag graphene nanoribbon.}}{70}{figure.caption.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Magnetic structure factor $S(\bm {q})$ for a strained graphene nanoribbon: bulk and edges.}}{71}{figure.caption.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Filling $\nu $ as a function of the Fermi energy $\varepsilon _F$ for a \acs {TMD} monolayer and a nanoribbon. $\text {Mo}\text {S}_2$. \acs {TMDNR} band structure obtained by the 3-band model.}}{73}{figure.caption.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs {TMDNR}. Spin density profile along the ribbon's transverse direction.}}{74}{figure.caption.68}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Conclusions and Future Work}{76}{chapter.5}
+\contentsline {xchapter}{Conclusions and Future Work}{77}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Obtaining the Hubbard Model. Approximate Solutions}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{A-5}{figure.caption.76}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{A-5}{figure.caption.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Example of the minimization of the grandpotential functional.}}{A-12}{figure.caption.78}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Example of the minimization of the grandpotential functional.}}{A-12}{figure.caption.79}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{Formulating Auxiliary Field Quantum Monte Carlo}{B-1}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Average sign as a function of chemical potential/electron density for a Hubbard chain.}}{B-6}{figure.caption.80}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Average sign as a function of chemical potential/electron density for a Hubbard chain.}}{B-6}{figure.caption.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Electron density as a function of chemical potential for a Hubbard chain. Average sign as a function of chemical potential for a simulation of a TMD nanoribbon using the minimal model described in chapter 2.}}{B-6}{figure.caption.81}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Electron density as a function of chemical potential for a Hubbard chain. Average sign as a function of chemical potential for a simulation of a TMD nanoribbon using the minimal model described in chapter 2.}}{B-6}{figure.caption.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Average sign as a function of electron density for the minimal Hubbard model of \acs {TMDNR}s. Electron density as a function of chemical potential.}}{B-6}{figure.caption.82}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Average sign as a function of electron density for the minimal Hubbard model of \acs {TMDNR}s. Electron density as a function of chemical potential.}}{B-6}{figure.caption.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Average sign as a function of chemical potential for the same system, and for a system at lower temperature ($\beta = 2$), and fixed on-site/orbital interaction $U = 16$.}}{B-7}{figure.caption.83}
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Average sign as a function of chemical potential for the same system, and for a system at lower temperature ($\beta = 2$), and fixed on-site/orbital interaction $U = 16$.}}{B-7}{figure.caption.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.5}{\ignorespaces Average sign as a function of electron density for the same \acs {TMDNR} at $\beta = 2$, $U = 16$. Electron density as a function of the chemical potential. }}{B-7}{figure.caption.84}
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Average sign as a function of electron density for the same \acs {TMDNR} at $\beta = 2$, $U = 16$. Electron density as a function of the chemical potential. }}{B-7}{figure.caption.85}
