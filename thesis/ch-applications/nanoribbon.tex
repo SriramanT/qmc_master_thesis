@@ -83,7 +83,7 @@ In this case, it predicts spin correlations to decay rapidly from the edge rows 
 The result of Fig.(\ref{fig:bcRibbon}) shows us that it decays as we penetrate the sample, and then increases again, with the profile shown in Fig.(\ref{fig:longProf}).
 
 A peak at $\bm q = \bm 0$ in the magnetic structure factor $S ( \bm q )$ suggests sublattice ferromagnetic ordering, and indeed, by studying the magnetic structure factor of each row separately, we see that it is enhanced at $\bm q = \bm 0$ on the edges compared to the bulk.
-Moreover, we study the behavior of $M_{\text{row}} \equiv \frac{1}{N_x}\sqrt{ \sum_{(i, j) \in \text{row}} \left\langle S_i S_j \right\rangle}$, and we conclude that it is maximum in one of the edge rows, decreases as we penetrate the bulk, and then increases again, having a smaller local maximum on the other edge row.
+Moreover, we study the behavior of the parameter $M_{\text{row}} \equiv \frac{1}{N_x}\sqrt{ \sum_{(i, j) \in \text{row}} \left\langle S_i S_j \right\rangle}$, and we conclude that it is maximum in one of the edge rows, decreases as we penetrate the bulk, and then increases again, having a smaller local maximum on the other edge row.
 Of course, since the system size is small, the effect is much more pronounced on one of the edges than the other, because the decay of the average spin density from the edge to the bulk is relatively slow.
 If we had more CPU time available, we could do larger scale simulations to see a more dramatic effect on \emph{both} edges.
 
@@ -97,14 +97,19 @@ If we had more CPU time available, we could do larger scale simulations to see a
 \begin{figure}[H]
 \includegraphics[scale = 0.55]{Applications/graphene-strain/LongitudinalProfile.png}
 \includegraphics[scale = 0.55]{Applications/graphene-strain/order_parameter_Graphene.png}
-	\caption[Spin-spin correlation function profile along the ribbon's ]{}
+	\caption[Spin-spin correlation function profile along the longitudinal direction $x$ of the ribbon. Magnetization parameter along each row, as a function of the transverse coordinate $y$.
+	]{Left: Spin-spin correlation function profile along the longitudinal direction of the ribbon. Right: Magnetization parameter along each row, as a function of the transverse coordinate $y$.}
 	\label{fig:longProf}
 \end{figure}
+We studied the phase transition to the ordered state we described in this section by carrying out many simulations at different temperatures.
+By fitting the magnetic susceptibility at the edge $\chi_edge (\bm q = \bm 0)$ -which diverges at the transition - to the Curie-Weiss Law, we were able to find the critical temperature $(T_c = 0.017 \pm 0.003) t$, for the parameters $U = 3 t$, and $\Delta = 0.3 t$.
+Repeating this procedure for varying $U, \Delta$, we can obtain a complete phase diagram of the system.
 \begin{figure}[H]
 \hspace{-0.2cm}
 \includegraphics[scale = 0.55]{Applications/graphene-strain/chiTyang2017.png}
 \includegraphics[scale = 0.55]{Applications/graphene-strain/fityang2017.png}
-	\caption[]{}
+	\caption[Divergence of the edge susceptibility when approaching the critical temperature. Linear fit used to obtain the critical temperature of the transition to the edge-magnetized phase.]{Left: Divergence of the edge susceptibility when approaching the critical temperature. 
+	Right: Linear fit used to obtain the critical temperature of the transition to the edge-magnetized phase.}
 	\label{fig:chiFit}
 \end{figure}
 
@@ -114,9 +119,11 @@ If we had more CPU time available, we could do larger scale simulations to see a
 We start by approaching the \acs{TMDNR} problem at the mean field level.
 Such a procedure is very useful to obtain a physical picture of the system's behavior.
 In particular, at a given temperature, if there is a transition between a configuration with magnetic order, and a disordered one, there is a critical interaction parameter $U = U_c$ at which the transition occurs, and it can be estimated in mean field, and compared with the more precise, unbiased \acs{QMC} result.
+Repeating the process for different temperatures, we can obtain a complete phase diagram.
+
 In general, our mean field formulation would involve diagonalizing an $N \times N$ matrix at each step, where $N = N_{\text{orb}} N_x N_y$ is the size of the system times the number of orbitals.
 However, since we consider \acs{PBC}s along the $x$-direction, we can partially diagonalize  the Hamiltonian analytically, reducing the size of the matrix to be diagonalized to $N_{\text{orb}} N_y \times N_{\text{orb}} N_y$, where $N_y$ is the width of the ribbon, i.e. the number of $\text{M}\text{X}_2$ formula units.
-Consider the spinless 3-band tight binding model, with the lattice constant: $a \equiv 1$.
+Consider the spinless 3-band tight binding model, with unit lattice constant:
 \begin{equation}
 \begin{split}
 \mathcal{H}_0 &= \sum_{\substack{m, n \\ \alpha, \beta}} \bigg( c_{m,n, \alpha}^\dagger t_{\alpha\beta}^0 c_{m, n, \beta} + \delta_{0, N_x}  c_{m,n, \alpha}^\dagger t_{\alpha\beta}^1 c_{m+1, n, \beta} + \delta_{-\sqrt{3}/2, (N_y -1)\sqrt{3}/2}  c_{m,n, \alpha}^\dagger t_{\alpha\beta}^4 c_{m-1, n, \beta} \\
@@ -192,19 +199,29 @@ The self consistent relation allowing us to compute the new MF parameters at eac
 \includegraphics[scale=0.55]{Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png}
 \hspace{1cm}
 \includegraphics[scale=0.462]{Applications/magProf.png}
-	\caption[Comparison between the MF solutions of the Hubbard model for a graphene nanoribbon (GNR) and a \acs{TMDNR}. Spin density profile along the ribbon's transverse direction.]{Left: Comparison between the MF solutions of the Hubbard model at half filling for a graphene nanoribbon (GNR) at $U=1.2$ with $\beta t = 20$ (left) and a \acs{TMDNR}.
+	\caption[Comparison between the zero temperature MF solutions of the Hubbard model for a graphene nanoribbon(GNR) and a \acs{TMDNR}. Spin density profile along the ribbon's transverse direction.]{Ordered phases obtained in mean field for graphene and \ac{TMD} nanoribbons. Left: Comparison between the zero temperature MF solutions of the Hubbard model at half filling ($\left\langle n \right\rangle = 1$) for a $16 \times 8$ graphene nanoribbon (GNR) at $U=1.2$ (left) and a  \acs{TMDNR} with $N_y = 16$ at $U = 20$, and electron density $\left\langle n \right\rangle = 0.66$, the filling that corresponds to the Fermi energy of the free-fermion problem.
 	Right: Comparison between the spin density profile along the ribbon's transverse direction $\left\langle m \right\rangle (y)$ (the obtained solution is constant along $x$) for the GNR and the \acs{TMDNR}).}
 	\label{fig:nanoGraphVsTMD}
 \end{figure}
+By solving the self-consistent equation iteratively, at zero temperature, for varying $U$, we find two phase transitions, with respective critical on-site interactions $U_{c_1} \approx 11.8 |t_0|$, and $U_{c_2} \approx 15.4 |t_0|$.
 \begin{figure}[H]
-\centering
-\includegraphics[trim={0cm 1.5cm 0cm 1.5cm},clip, scale =0.23]{Applications/tmd-mf/edge-mag.pdf}
-	\caption[]{}
+\includegraphics[trim={0cm 1.7cm 0cm 1.7cm},clip, scale =0.2]{Applications/tmd-mf/edge-mag.pdf}
+\hspace{0.5cm}
+\includegraphics[scale=0.53]{Applications/tmd-mf/edge-magzoom1}
+	\caption[Mean field phase diagram at zero temperature. Zoom-in of the first phase transition as we increase $U$.]{Mean field phase diagram at zero temperature. Zoom-in of the first phase transition as we increase $U$.}
 	\label{fig:zeroTphaseDiagram}
 \end{figure}
 \begin{figure}[H]
+\hspace{0.2cm}
+\includegraphics[scale=0.53]{Applications/tmd-mf/edge-magzoom2}
+\includegraphics[scale=0.53]{Applications/tmd-mf/freeBands}
+	\caption[Zoom-in of the second phase transition as we increase $U$. Band structure of the free-fermion problem.]{Zoom-in of the second phase transition as we increase $U$. Band structure of the free-fermion problem.}
+	\label{fig:freeBands}
+\end{figure}
+To understand the effect of the on-site interaction at the mean field level, we start by comparing the band structure of the free problem , and the mean field band structure well within the ordered phase.
+\begin{figure}[H]
 \centering
-\includegraphics[trim={0cm 1.5cm 0cm 1.5cm},clip, scale =0.3]{Applications/tmd-mf/bandsZoomed.pdf}
+\includegraphics[trim={1.5cm 1.5cm 0cm 2cm},clip, scale =0.4]{Applications/tmd-mf/bandsZoomed.pdf}
 	\caption[]{}
 	\label{fig:bandsZoomed}
 \end{figure}
