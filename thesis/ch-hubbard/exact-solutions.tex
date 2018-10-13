@@ -63,15 +63,9 @@ Thus, the eigenstates of the number operator are $\left| 0 \right\rangle, \left|
 n \left| 0 \right\rangle = 0 , \, n \left| 1 \right\rangle = \left| 1 \right\rangle
 $.
 Moreover, the operator $c_i^\dagger c_{i+1}^\dagger$, corresponding to the hopping from site $i+1$ to $i$, i.e. to the kinetic energy of the electrons on neighboring sites, annihilates the particle at $i+1$ and creates it back at $i$, i.e. the electron hops from $i+1$ to $i$.
-Ignoring spin:
-\begin{equation}
-c_i^\dagger c_{i+1}^\dagger \begin{cases}
-\left|0 0 \right\rangle = 0 \\
-\left|1 0 \right\rangle =  0 \\
-\left|0 1 \right\rangle =  \left| 1 0 \right\rangle \\
-\left|1 1 \right\rangle =  c_i^\dagger \left| 1 0  \right\rangle = 0 \\
-\end{cases}
-\end{equation}
+Ignoring spin, the only nonzero kinetic energy term is
+$c_i^\dagger c_{i+1}^\dagger \left|0 1 \right\rangle =  \left| 1 0 \right\rangle $.
+When acting upon the other three states we get $0$.
 
 \subsection{The purely atomic ( $\frac{U}{t} \rightarrow \infty$ ), single site limit}
 \label{subsec:atomic}
@@ -86,8 +80,7 @@ which acts as follows (using the eigenstates of $n_\sigma$)
 \begin{equation}
 \mathcal{H} \begin{cases}
 \left| \,\, \right\rangle = \frac{U}{4} \left| \,\, \right\rangle \\
-\left| \uparrow \right\rangle = \bigg( \frac{U}{4} - (\mu + \frac{U}{2} ) \bigg) \left| \uparrow \right\rangle \\
-\left| \downarrow \right\rangle = \bigg( \frac{U}{4} - (\mu + \frac{U}{2} ) \bigg) \left| \downarrow \right\rangle \\
+\left| \uparrow (\downarrow) \right\rangle = \bigg( \frac{U}{4} - (\mu + \frac{U}{2} ) \bigg) \left| \uparrow (\downarrow) \right\rangle \\
 \left| \uparrow \downarrow \right\rangle = \bigg( \frac{U}{4} - 2 \mu \bigg) \left| \uparrow \downarrow \right\rangle
 \end{cases}
 \end{equation}
@@ -171,17 +164,10 @@ $
 $.
 
 Note that as either $U$ or $\beta$ increase the double occupancy tends to zero.
-\end{enumerate}
-
-As was motivated in the previous chapter, we are interested in studying magnetism in correlated systems.
-For the Hubbard model, the relevant quantity is the sum of the squared local moments
-\begin{equation}
-\left\langle m^2 \right\rangle = \left\langle ( n_\uparrow - n_\downarrow )^2 \right\rangle = \left\langle n_\uparrow + n_\downarrow \right\rangle - 2  \left\langle n_\uparrow n_\downarrow \right\rangle = \rho - 2  \left\langle n_\uparrow n_\downarrow \right\rangle
-\end{equation}
 \begin{figure}[H]
-\hspace{5mm}\includegraphics[width=0.45\linewidth]{Hubbard/rhoVsMu.png}
+\hspace{7mm}\includegraphics[width=0.43\linewidth]{Hubbard/rhoVsMu.png}
 \hspace{0.02cm}
-\includegraphics[width= 0.45\linewidth]{Hubbard/mSqVsT.png}
+\includegraphics[width= 0.43\linewidth]{Hubbard/mSqVsT.png}
 	\caption[Electron density in the purely atomic limit of the Hubbard model. Magnetization as a function of temperature $\left\langle m^2 \right\rangle (T)$ in the single site Hubbard model for varying chemical potential $\mu$.]{Electron density $\rho$ for varying chemical potential $\mu$ and temperature $T = \beta^{-1}$, but fixed $U = 4$. As the temperature decreases, a \say{Mott plateau} sets in. The Mott insulating gap already seen here is an important feature of the Hubbard model.
 	Magnetization as a function of temperature $\left\langle m^2 \right\rangle (T)$ in the single site Hubbard model for varying chemical potential $\mu$.
 	Local moments develop at lower temperature.
@@ -191,11 +177,18 @@ For the Hubbard model, the relevant quantity is the sum of the squared local mom
 	}
 	\label{fig:rhoVsMu_mSqVsT}
 \end{figure}
+\end{enumerate}
+
+As was motivated in the previous chapter, we are interested in studying magnetism in correlated systems.
+For the Hubbard model, the relevant quantity is the sum of the squared local moments
+\begin{equation}
+\left\langle m^2 \right\rangle = \left\langle ( n_\uparrow - n_\downarrow )^2 \right\rangle = \left\langle n_\uparrow + n_\downarrow \right\rangle - 2  \left\langle n_\uparrow n_\downarrow \right\rangle = \rho - 2  \left\langle n_\uparrow n_\downarrow \right\rangle
+\end{equation}
 \begin{figure}[H]
-\hspace{5mm}
-\includegraphics[width=0.45\linewidth]{Hubbard/mSqVsU.png}
+\hspace{7mm}
+\includegraphics[width=0.43\linewidth]{Hubbard/mSqVsU.png}
 \hspace{0.02cm}
-\includegraphics[width=0.45\linewidth]{Hubbard/mSqVsT_and_U.png}
+\includegraphics[width=0.43\linewidth]{Hubbard/mSqVsT_and_U.png}
 	\caption[Magnetization as a function of the on-site interaction $\left\langle m^2 \right\rangle (U)$, and vice-versa, in the single site Hubbard model for varying temperature $T$.]{Magnetization as a function of the on-site interaction $\left\langle m^2 \right\rangle (U)$, and vice-versa, in the single site Hubbard model for varying temperature $T$.
 	Local moments are favored by the on-site interaction, and are more likely to develop at lower temperatures, when thermal fluctuations are smaller. Here we consider half filling: $\mu = 0$.}
 	\label{fig:mSqVsU}
@@ -216,10 +209,10 @@ Thus, we omit the spin indexes of the operators in the Hamiltonian:
 \mathcal{H} = -t \sum_{\left\langle i, j \right\rangle} \bigg( c_i^\dagger c_j + c_j^\dagger c_i \bigg) - \mu \sum_i n_i = \bm c^\dagger \bigg( -t \bm K - \mu \bm I \bigg) \bm c ,
 \end{equation}
 where we casted the Hamiltonian as a bilinear form, and defined
-\begin{equation}
+$
 \bm c = \bigg[ c_1 \,\, c_2 \,\, ... \,\, c_N \bigg]^T \quad \bm c^\dagger = \bigg[c_1^\dagger \,\, c_2^\dagger \,\, ... c_N^\dagger \bigg] ,
-\end{equation}
-and where $\bm I$ is the identity matrix.
+$
+ and where $\bm I$ is the identity matrix.
 We also defined a matrix of zeros and ones specifying the hopping geometry, $\bm K$. The elements of the hopping matrix are simply defined by the indicator function: $K_{ij} = \mathbbm{1}_{j(i)} (i)$, where $j(i)$ is the set of neighbors $j$ of site $i$.
 When writing down $\bm K$, we must specify the boundary conditions.
 \acp{PBC} preserve a system's translational invariance and are advantageous because they reduce finite size effects.
@@ -304,13 +297,13 @@ On the square lattice, a unique feature called perfect nesting appears.
 For example, in \acs{2D}, the wavevector $\bm k = (\pi , \pi)$ connects symmetric regions of the Fermi surface.
 This suggests that this wavevector could have a crucial role in the description of the model in the square lattice.
 Indeed, as we will see, a large magnetic structure factor at $\bm k = (\pi , \pi)$ signals antiferromagnetic order.
-This is a feature of the Hubbard model at half filling down to $U = 0$.
+This is a feature of the Hubbard model at half filling down to $U = 0$ on the square lattice.
 A similar effect happens in \acs{1D}, at $k = \pi$.
 \begin{figure}[H]
 \hspace{0.6cm}
-\includegraphics[scale = 0.55]{Hubbard/fermiEnergy1D.png}
-\hspace{-1mm}
-\includegraphics[scale = 0.55]{Hubbard/fermiEnergy2D.png}
+\includegraphics[scale = 0.5]{Hubbard/fermiEnergy1D.png}
+\hspace{10mm}
+\includegraphics[scale = 0.5]{Hubbard/fermiEnergy2D.png}
 	\caption[Dispersion relations for the \acs{1D} chain and the square lattice in the non-interacting case.]{Dispersion relations for the \acs{1D} chain and the square lattice in the non-interacting case.
 	For the square lattice, the surfaces separating the different colors are Fermi surfaces for different fillings of the lattice. In particular, for half filling ($\rho = 1, \mu = 0$), we obtain the rotated square in the white region.}
 	\label{fig:fermi1D}

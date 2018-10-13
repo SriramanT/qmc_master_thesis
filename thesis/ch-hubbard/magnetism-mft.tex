@@ -19,7 +19,7 @@ In that case, the potential energy is zero.
 More generally, partial spin polarization makes double occupation unlikely, lowering the potential energy.
 \begin{figure}[H]
 	\centering
-\hspace{2mm}\includegraphics[trim={0 7.5cm 0 7.5cm},clip, width=0.85 \linewidth]{Hubbard/dos.pdf}
+\hspace{2mm}\includegraphics[trim={0 7.5cm 0 7.5cm},clip, width=0.9 \linewidth]{Hubbard/dos.pdf}
 	\caption[Density of states of the \acs{1D} tight-binding model.]{Density of states of the \acs{1D} tight-binding model.
 	Here we represent a polarization of the spins, which leads to an increase in kinetic energy, since the imbalance of spins forces higher energy levels to be filled.}
 	\label{fig:dos}
@@ -70,16 +70,11 @@ Since the average densities are site-independent, we can easily write down the p
 \varepsilon_{\uparrow k} = U ( n - m ) - 2 t \cos k \quad \varepsilon_{\downarrow k} = U ( n + m ) - 2 t \cos k ,
 \end{equation}
 
-The computational procedure to perfom mean field computations goes as follows:
-\begin{itemize}
-\item Fix the lattice size $N$, the total particle number $N_p$, and the on-site interaction $U$.
-\item Set the possible densities by iterating $N_\uparrow = 0, 1, ..., N_p / 2$, and $N_\downarrow = N_p - N_\downarrow$ (we only need half the values since the values are symmetric under $ N_\uparrow \leftrightarrow N_\downarrow$), and setting $n_{\uparrow, \downarrow} = N_{\uparrow, \downarrow} / N$.
-\item Fill the lowest $N_\uparrow$, and $N_\downarrow$ energy levels, by looping over the allowes momentum states $k = \frac{2\pi}{N} \{ -\frac{N}{2} + 1, -\frac{N}{2}, ..., \frac{N}{2} \}$, and using Eq.(\ref{eq:meanFieldDispersion}).
+The computational procedure to perfom mean field computations goes as follows: fix the lattice size $N$, the total particle number $N_p$, and the on-site interaction $U$; set the possible densities by iterating $N_\uparrow = 0, 1, ..., N_p / 2$, and $N_\downarrow = N_p - N_\downarrow$ (we only need half the values since the values are symmetric under $ N_\uparrow \leftrightarrow N_\downarrow$), and setting $n_{\uparrow, \downarrow} = N_{\uparrow, \downarrow} / N$; fill the lowest $N_\uparrow$, and $N_\downarrow$ energy levels, by looping over the allowes momentum states $k = \frac{2\pi}{N} \{ -\frac{N}{2} + 1, -\frac{N}{2}, ..., \frac{N}{2} \}$, and using Eq.(\ref{eq:meanFieldDispersion}).
 Normalize the energy to $N$ and add in the additive constant $- \left\langle n_\uparrow \right\rangle \left\langle n_\downarrow \right\rangle$.
 This step is altered for the \acs{AF} case since we are assuming the up and down densities to be identical over the whole lattice.
 In such case, we fix $n = N_p / 2$ and loop over $m = 1/ N, 2 / N,...$, staying within the first Brillouin zone.
 Out of the energies computed in this way for varying $N_{\uparrow, \downarrow}$, the lowest gives the magnetization for the chosen values of $N_p$ and $U$.
-\end{itemize}
 \begin{figure}
 \hspace{-3mm}
 \includegraphics[trim={0 0 0 0},clip, scale=0.47]{Hubbard/mfHubbard.png}
@@ -141,15 +136,16 @@ First, we diagonalize $\mathcal{H}_\sigma$, obtaining the one-particle spectrum 
 \mathcal{H}_{\text{MF}} = \sum_{\alpha, \sigma} \varepsilon_{\alpha, \sigma} d_{\alpha, \sigma}^\dagger d_{\alpha, \sigma} + \mathcal{C} , \,\, d_{\alpha, \sigma} = \sum_i Q_{\alpha i, \sigma}^\star c_{i,\sigma}
 \end{equation}
 
-Given a number of electrons per unit cell, compute the chemical potential corresponding to that filling implicitly through (we use the bissection method):
-\begin{equation}\label{eq:implicitChemPot}
-\frac{1}{N} \sum_{\alpha, \sigma} (  e^{\beta ( \varepsilon_{\alpha, \sigma} - \mu ) } +1 )^{-1} = n_e , \,\, \text{(the number of electrons per unit cell)}
-\end{equation}
+Given a number of electrons per unit cell, $n_e$, compute the chemical potential corresponding to that filling implicitly through $ \frac{1}{N} \sum_{\alpha, \sigma} (  e^{\beta ( \varepsilon_{\alpha, \sigma} - \mu ) } +1 )^{-1} = n_e$ (we use the bissection method).
 
 Recompute mean field parameters, and check for convergence: at iteration $I$, $\left\langle n_{i,\sigma} \right\rangle_I \approx \left\langle n_{i,\sigma} \right\rangle_{I - 1}$.
 \begin{equation}\label{eq:selfConsistent}
 \left\langle n_{i,\sigma} \right\rangle = \sum_\alpha | Q_{\alpha i, \sigma} |^2 ( 1 + e^ { \beta ( \varepsilon_{\alpha, \sigma} - \mu )} )^{-1}
 \end{equation}
+
+As we explain in appendix \ref{ap:hubbardObSol}, a self-consistent solution is not necessarily the mean field one, thus one must continually check if the functional $F$ of Eq.(\ref{eq:gibbs2}) is being minimized.
+Moreover, we must repeat the calculation above several times by varying the initial conditions, and then select the lowest energy solution that minimizes $F$ as the mean field one.
+This is illustrated in appendix \ref{ap:hubbardObSol}.
 
 To compare with the results of our \ac{QMC} simulations, we may compute other observables, such as the spin-spin correlation, by inverting the transformation above: $c_{i, \sigma} = \sum_{\alpha} Q_{\alpha i, \sigma} d_{\alpha, \sigma}$, yielding $\left\langle c_{i,\sigma}^\dagger c_{j,\sigma} \right\rangle = \sum_{\alpha, \beta} Q_{\beta i, \sigma}^\star Q_{\alpha j, \sigma} \left\langle d_{\beta,\sigma}^\dagger d_{\alpha,\sigma} \right\rangle = \sum_\alpha Q_{\alpha i, \sigma}^\star Q_{\alpha j, \sigma} f ( \varepsilon_{\alpha, \sigma} ) $, where $f (\varepsilon_{\alpha, \sigma})$ is the Fermi function.
 \begin{equation}
@@ -166,10 +162,6 @@ To compare with the results of our \ac{QMC} simulations, we may compute other ob
 \end{split}
 \end{equation}
 
-As we explain in appendix \ref{ap:hubbardObSol}, a self-consistent solution is not necessarily the mean field one, thus one must continually check if the functional $F$ of Eq.(\ref{eq:gibbs2}) is being minimized.
-Moreover, we must repeat the calculation above several times by varying the initial conditions, and then select the lowest energy solution that minimizes $F$ as the mean field one.
-This is illustrated in appendix \ref{ap:hubbardObSol}.
-
 Now, we discuss how to circumvent the convergence issues that may arise when applying the self-consistent procedure.
 First, there are many possible initial conditions, most notably: the random one, which is the most unbiased, but may be slow or not converge at all; the paramagnetic state $\left\langle n_{i,\sigma} \right\rangle = \text{const.}$, which, when combined with the annealing method we shall describe below, emulates the random initial condition; a specific state, such as the antiferromagnetic one, which is a biased choice, which limits the accessible part of parameter space, and potentially gives a misleading mean field solution, but can have good convergence properties.
 In some cases, the symmetry of the system dramatically slows down convergence.
@@ -183,4 +175,4 @@ Finally, the number of parameters may be reduced.
 This is done while taking into account the symmetry of the system.
 For example, one may take only the number of sublattices, say 2 for a square lattice with \acp{PBC}.
 This corresponds to the uniform density ansatz $\left\langle n_{i,\sigma} \right\rangle = n_X = \frac{1}{N_X} \sum_{i \in X} \left\langle n_{i,\sigma} \right\rangle$ for all sites in the $X$ sublattice.
-If this reduction is not done correctly, we will obtain biased self-consistent solutions that do not necessarily reflect the nature of the mean field solution.
+If this reduction is not done correctly, we will obtain biased self-consistent solutions that do not necessarily reflect the nature of the solution.

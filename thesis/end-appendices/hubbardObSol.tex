@@ -296,8 +296,21 @@ N ( E )_{1d} = \frac{1}{\pi \sqrt{4 t^2 - E^2}}
 \section{Effective Heisenberg model as the atomic limit of the Hubbard model}
 \label{sec:heisenberg}
 
-To obtain the effective Hamiltonian corresponding to the $U/t \gg 1$ limit of the Hubbard model to second order in degenerate perturbation theory, we start with its general form, as obtained in equation (\ref{eq:degPert}).
+To obtain the effective Hamiltonian in the $U/t \gg 1$ limit of the Hubbard model to second order in degenerate perturbation theory, we start with its general form
 \begin{equation}
+\left \langle m | \mathcal{H}_{\text{eff}} | n \right\rangle = \sum_{ | k \rangle} \frac{\left\langle m | \mathcal{H}_0 | k \right\rangle \left\langle k | \mathcal{H}_0 | n \right\rangle }{E_0 - E_k} =-\frac{1}{U} \sum_{ | k \rangle} \left\langle m | \mathcal{H}_0 | k \right\rangle \left\langle k | \mathcal{H}_0 | n \right\rangle ,
+\end{equation}
+where $| k \rangle$ are the states that are not in the ground state subspace.
+The identity operator in the subspace of states with one doubly occupied site
+$
+\sum_{ | k \rangle} | k \rangle \langle k |
+$
+may be written in a more conveniently in the representation:
+$
+\sum_j n_{j,\sigma} n_{j, -\sigma}
+$, 
+so that the effective Hamiltonian is
+\begin{equation}\label{eq:degPert}
 \mathcal{H}_{\text{eff}} = - \mathcal{H}_0 \frac{\sum_j n_{j,\sigma} n_{j, -\sigma}}{U} \mathcal{H}_0
 \end{equation}
 
@@ -535,21 +548,21 @@ Although the mean field equations can be obtained both from $\delta \mathcal{F}_
 There may be other configurations at which $\delta \mathcal{F}_{\text{MF}}$ vanishes, but we have only an extremum.
 Thus, we must be cautious when analyzing self-consistent solutions to confirm that they indeed correspond to a minimum of the functional $F$, and not only an extremum of $\mathcal{F}_{\text{MF}}$.
 
-On a final note, we remark that this procedure can be generalized to the \ac{GCE} by considering the GBF inequality for the grand potential:
+On a final note, we remark that this procedure can be generalized to the \ac{GCE} by considering the GBF inequality for the grand potential $\Omega_G$:
 \begin{equation}\label{eq:gibbsGrand}
-\Omega_{\text{Hubbard}} \le \Omega_{\text{MF}} + \left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} \equiv \Omega ,
+\Omega_G \le \Omega_{\text{MF}} + \left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} \equiv \Omega ,
 \end{equation}
 where we defined $\Omega_{\text{MF}} = \left\langle \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} - T \mathcal{S}_{\text{MF}}- \mu \left\langle \mathcal{N} \right\rangle_{\text{MF}}$, $\mathcal{N}$ being the total number operator.
 The iterative scheme we use to solve the self consistent equation is not a minimization algorithm.
 However, if it does not get stuck in a metastable state, it tends to take steps towards minimizing the functional $\Omega$.
-This is illustrated in Fig.(\ref{fig:grandPotmin}).
-The data was obtained by solving the self consistent equation for a generalized version of the Hubbard model, obtained via the 3-band tight binding Hamiltonian  of the first chapter.
+This is illustrated in Fig.(\ref{fig:grandPotMin}).
+The data was obtained by solving the self consistent equation for the generalized intra-orbital version of the Hubbard model we use throughout.
+The model is obtained from the 3-band tight binding Hamiltonian of the first chapter, and by adding an on-site and intra-orbital interaction.
 In this case, we consider a \acs{TMD} nanoribbon with $N_y = 16$, at inverse temperature $\beta t = 2 $, at $U = 16$, where $U$ is an on-site interaction that only occurs if the electrons occupy the same $d$-orbital.
 Thus, only double occupancy of a site \emph{and an orbital} is penalized.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.55]{Applications/grandpotMin_Nx=512_Ny=16_U=16_beta=2.png}
-	\caption[Example of the minimization of the grandpotential functional.]{Example of the minimization of the grandpotential functional $\Omega$ for a TMD nanoribbon of width $N_y = 16$, at inverse temperature $\beta t = 2 $, at $U = 16$.}
-	\label{fig:grandPotMin}
+	\caption[Example of the minimization of the grandpotential functional.]{Example of the minimization of the grandpotential functional $\Omega$ for a TMD nanoribbon of width $N_y = 16$, at inverse temperature $\beta t = 2 $, at $U = 16$. \label{fig:grandPotMin}}
 \end{figure}

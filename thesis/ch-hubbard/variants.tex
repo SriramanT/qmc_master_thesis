@@ -15,25 +15,24 @@ In auxiliary field \ac{QMC}, we start by eliminating the \emph{direct} electron-
 In the context of a path integral formulation, we will introduce these fields to eliminate the electron-electron interactions.
 The complexity of the problem is transferred to the degrees of freedom of the bosonic fields that mediates the interaction.
 The problem of direct interactions between electrons maps to a free-fermion problem that can be solved formally in terms of field-dependent determinants of single-electron Green's functions.
-We use Monte Carlo to importance sample the auxiliary bosonic fields.
+We use Monte Carlo to importance sample configurations of these fields.
 
 The algorithm tends to suffer from a number of difficulties, namely excessive computer time, the sign problem, fermionic wave functions turning bosonic, and, notably,  numerical instabilities at low temperatures.
 Luckily, this last obstacle can be circumvented.
 In thermodynamic studies of many-electron systems, as we reach the low temperature limit, the lowest energy states are assigned larger weights, whereas high energy states are exponentially suppressed.
 However, Pauli's exclusion principle implies the existence of a \say{Fermi energy}.
-The prevalent states are not macroscopically occupied, that is, they are only filled up to the \say{Fermi energy}, which thus controls the physics of the system.
+The prevalent states are not macroscopically occupied, that is, they are only filled up to the \say{Fermi energy}, which controls the physics of the system.
 Unfortunately, the information about the states around the Fermi energy is exponentially suppressed with respect to the comparatively unimportant states at the bottom of the band.
 Numerically, this translates into determining differences of large numbers with great precision.
-Finite-precision computers impose constraints on this process, but the limits can be stretched by using recently developed sophisticated algorithms.
-These explicitly separate the exponentially diverging numerical scales associated with the different energy scales (electron mobility, doping, Coulomb interaction, ...) with little extra computational cost.
-Thus, simulations can be stabilized at lower temperature, potentially allowing the study of more phases.
+Finite-precision computers impose constraints on this process.
+Sophisticated algorithms exist to explicitly separate the exponentially diverging numerical scales associated with the different energy scales (electron mobility, doping, Coulomb interaction, ...).
+Thus, simulations can be stabilized at lower temperature, potentially allowing the study of a wider variety of phases.
 
-The case of interest for simulating \acs{TMD} nanoribbons comes from considering a particular multi-orbital form of the very general Hamiltonian of Eq.(\ref{eq:variantsForm}).
-Additional (greek) indexes are added to represent different \say{orbitals} on the same site, and we consider interactions only between electrons on the same site and  orbital:
+The case of interest for simulating \acs{TMD} nanoribbons comes from considering a particular multi-orbital form of the Hamiltonian of Eq.(\ref{eq:variantsForm}).
+Greek indexes $\alpha, \beta$ are used to represent different \say{orbitals} on the same site, and we consider on-site  interactions only between electrons on the same orbital:
 \begin{equation}\label{eq:variantTMD}
 \mathcal{H} = - \sum_{\substack{i, j \\ \alpha, \beta, \sigma}} K_{(i\alpha),(j\beta )} \bigg( c_{i,\alpha, \sigma}^\dagger c_{j,\beta, \sigma} + c_{j,\beta , \sigma}^\dagger c_{i,\alpha, \sigma} \bigg) + \frac{U}{2} \sum_{\substack{i, \alpha \\ \sigma \neq \sigma'} } n_{i\alpha, \uparrow} n_{i\alpha, \downarrow} + \frac{U'}{2} \sum_{\substack{i, \alpha \neq \beta \\ \sigma, \sigma'}} n_{i\alpha, \sigma} n_{i\beta, \sigma'} ,
 \end{equation}
-but even when inter-orbital interactions $(U' = 0)$, it remains much more expensive to simulate numerically than the simpler Hubbard model since the orbital space increases the overall dimensionality of the problem, and the hopping matrix becomes less sparse.
-To see this, consider a variable that collapses site and orbital indexes into the same index: $ N_{\text{orb}} i + \alpha$, where $N_{\text{orb}}$ is the number of orbitals in the model.
-The hopping matrix, now organized in blocks, is related to the geometry, specifying the neighbors on the spatial lattice, say the triangular lattice, through its block structure.
-It also relates to the specific \acs{TMD} at hand via the non-uniform hopping matrix elements in these blocks.
+but even when inter-orbital interactions vanish $(U' = 0)$, it remains much more expensive to simulate numerically than the simpler Hubbard model since the orbital space increases the overall dimensionality of the problem, and the hopping matrix becomes less sparse.
+This block matrix specifies the geometry, i.e. the number and position of the neighbors on the spatial lattice, say the triangular lattice.
+It also relates to the \acs{TMD} (or other material) at hand via the non-uniform hopping parameters in these blocks, greatly affecting the possibility of simulating the system effectively (due, for example, to the sign problem, whose severity strongly depends on the considered model).

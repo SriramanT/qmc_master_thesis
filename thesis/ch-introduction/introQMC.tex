@@ -4,9 +4,9 @@
 Solving the many-body problem remains one of the greatest challenges in physics.
 Following the wealth of attempts at such pursuit, certain phenomena arising due to the strong interactions in quantum systems are explained in different theoretical frameworks, namely superconductivity, the Mott metal-insulator transition, and fractional quantum Hall effect.
 However, only in very limited cases does an actual analytical solution exist for the  Schr\"odinger equation for a system of interacting particles, and one must resort to sophisticated approximation methods to obtain information about the role played by the competing interactions.
-It is then natural that numerical methods have become prominent as a tool for extracting useful information about this type of systems.
+Thus, numerical methods have become prominent as a tool for extracting information about this type of systems.
 
-\acl{QMC} is amongst the most accurate and extensively studied ones.
+\acl{QMC} is amongst the most accurate and extensively studied methods.
 It differs from \say{Classical} Monte Carlo because in the quantum version, instead of measuring thermal averages, one measures expectations of operators over the Hilbert space of the system, corresponding to physical observables that have both quantum dynamical and thermal fluctuations.
 In fact, the dynamics of a quantum system are encoded in the Hamiltonian operator.
 In the case of graphene-like \ac{2D} materials, such as \acp{TMD}, electron-electron interactions can be substantial, and we need accurate picture of the many-body phenomena that occur within them due to these interactions.
@@ -14,7 +14,6 @@ In the case of graphene-like \ac{2D} materials, such as \acp{TMD}, electron-elec
 The idea of all \ac{QMC} methods is to reduce the interacting problem to solving a set of integrals, which can be evaluated numerically through a standard stochastic procedure.
 But there is a myriad of methods to evaluate integrals numerically.
 Why is Monte Carlo the best one for this case?
-
 Multi-dimensional integrals are plagued by the curse of dimensionality.
 Although the Newton-Cotes quadrature formulas (including, for example the Newton method, and Simpson's rules), Gaussian quadrature formulas, or Romberg's method all scale polynomially with the number of integration points, they become impractical as the dimension increases.
 To use them, one would invoke Fubini's theorem to reduce the multi-dimensional integral to a series of one-dimensional integrals.

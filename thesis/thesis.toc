@@ -46,13 +46,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Exact solutions for simple cases}{22}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}The purely atomic ( $\frac {U}{t} \rightarrow \infty $ ), single site limit}{24}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}The purely atomic ( $\frac {U}{t} \rightarrow \infty $ ), single site limit}{23}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}The non-interacting ($\frac {U}{t} = 0$) limit}{27}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}The non-interacting ($\frac {U}{t} = 0$) limit}{26}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Exact Diagonalization. Effective $\frac {U}{t} \gg 1$ Heisenberg Model}{29}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Two-site calculation}{30}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}Two-site calculation}{29}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.2}Degenerate perturbation theory}{31}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
@@ -70,55 +70,55 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.6.3}Self-consistent solution in the \ac {GCE}}{37}{subsection.2.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Simulatable variants of the Hubbard model and TMDs}{39}{section.2.7}
+\contentsline {section}{\numberline {2.7}Simulatable variants of the Hubbard model and TMDs}{38}{section.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Auxiliary Field Quantum Monte Carlo}{41}{chapter.3}
+\contentsline {chapter}{\numberline {3}Auxiliary Field Quantum Monte Carlo}{40}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Monte Carlo Method in Classical Statistical Physics}{41}{section.3.1}
+\contentsline {section}{\numberline {3.1}Monte Carlo Method in Classical Statistical Physics}{40}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Theoretical Framework and Mathematical Formulation}{47}{section.3.2}
+\contentsline {section}{\numberline {3.2}Theoretical Framework and Mathematical Formulation}{46}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Trotter-Suzuki Decomposition}{48}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Trotter-Suzuki Decomposition}{47}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Hubbard-Stratonovich transformation}{49}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Hubbard-Stratonovich transformation}{48}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Single-particle propagators and the fermionic trace}{50}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Single-particle propagators and the fermionic trace}{49}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Monte Carlo sampling of the Hubbard Stratonovich field}{52}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Monte Carlo sampling of the Hubbard Stratonovich field}{51}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Checkerboard Breakup}{54}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.5}Checkerboard Breakup}{53}{subsection.3.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Measurements}{55}{section.3.3}
+\contentsline {section}{\numberline {3.3}Measurements}{54}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Obtaining observables in terms of Green's functions}{57}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Obtaining observables in terms of Green's functions}{55}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Correlation functions}{57}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Correlation functions}{56}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Imaginary-time displaced Green's functions and susceptibilities}{58}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Imaginary-time displaced Green's functions and susceptibilities}{57}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Stabilization}{59}{section.3.4}
+\contentsline {section}{\numberline {3.4}Stabilization}{57}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Stable matrix multiplication}{60}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Stable matrix multiplication}{59}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Inverting to obtain the Green's function}{62}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.2}Inverting to obtain the Green's function}{60}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Storing partial products and time-displaced Green's function}{64}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}Storing partial products and time-displaced Green's function}{62}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Applications and original results}{66}{chapter.4}
+\contentsline {chapter}{\numberline {4}Applications and original results}{64}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}One-dimensional Chain}{66}{section.4.1}
+\contentsline {section}{\numberline {4.1}One-dimensional Chain}{64}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Square lattice}{68}{section.4.2}
+\contentsline {section}{\numberline {4.2}Square lattice}{66}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Nanoribbons}{69}{section.4.3}
+\contentsline {section}{\numberline {4.3}Nanoribbons}{67}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Graphene}{69}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Graphene}{68}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}\acp {TMD}}{71}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}\acp {TMD}}{70}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{77}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{76}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{77}{section*.72}
+\contentsline {chapter}{Bibliography}{76}{section*.75}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Obtaining the Hubbard Model. Approximate Solutions}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 

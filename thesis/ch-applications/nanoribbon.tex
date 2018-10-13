@@ -4,7 +4,7 @@
 In this section, we apply our code to the case of the honeycomb lattice of graphene and of the triangular lattice with nonuniform hoppings considered in the 3-band minimal model of \acs{TMD}s.
 We take boundary conditions corresponding to nanoribbons.
 These structures are much longer on one direction than on the other, , i.e. $l \gg w$, resembling a ribbon, hence their name.
-This condition corresponds to taking $N_x \gg N_y$ in our conventions (see Fig.(\ref{fig:nanoribbon})\footnote{In Fig.(\ref{fig:nanoribbon}, this condition is, of course, not obeyed solely for the sake of giving a good visual representation of the boundary conditions, and the numbering system).}.
+This condition corresponds to taking $N_x \gg N_y$ in our conventions (see Fig.(\ref{fig:bcRibbon})\footnote{In Fig.(\ref{fig:bcRibbon}), this condition is, of course, not obeyed solely for the sake of giving a good visual representation of the boundary conditions, and the numbering system).}.
 The low energy electronic states on the edges of these ribbons might lead to nontrivial magnetic behavior in \ac{TMD} nanostructures (as indeed they do in graphene nanostructures \cite{yazyev_emergence_2010}) and it is this possibility was unexplored numerically before this work \cite{feldner_dynamical_2011, golor_quantum_2013}, as was mentioned on chapter \ref{cap:int}.
 
 \subsection{Graphene}
@@ -22,10 +22,9 @@ $
  where $x = 0, ..., N_x - 1$, $y = 0, ..., N_y - 1$, and $z = 0, 1$ define each element $\bm r = (x, y, z) \in \mathcal{L}$.
 
 \begin{figure}[H]
-\hspace{-1cm}
-\includegraphics[trim={0 8cm 0 2.5cm},clip, scale = 0.25]{Applications/nanoribbon.pdf}
-\hspace{-1.2cm}
-\includegraphics[scale = 0.5]{Applications/graphene-strain/CorrelationsDots.png}
+\hspace{-0.4cm}
+\includegraphics[trim={0 8cm 0 2.5cm},clip, scale = 0.27]{Applications/nanoribbon.pdf}
+\includegraphics[scale = 0.49]{Applications/graphene-strain/CorrelationsDots.png}
 	\caption[Boundary conditions on the nanoribbon.]{Boundary conditions on the nanoribbon for $N_x = 5, \, N_y = 4$. The orange circles correspond to sublattice $\mathcal{A}$, and the blue circles correspond to sublattice $\mathcal{B}$.
 	The counting starts at 1 (i.e. the numbers correspond to $i+1$, since $i$ starts at 0).}
 	\label{fig:bcRibbon}
@@ -65,20 +64,21 @@ We summarize all possible cases in the following table.
 \end{table}
 
 \begin{figure}[H]
-\includegraphics[scale = 0.5]{Applications/graphene-strain/S(q)pcolor.png}
-\includegraphics[scale = 0.5]{Applications/graphene-strain/edgeStFactor_Graphene.png}
+\includegraphics[scale = 0.56]{Applications/graphene-strain/S(q)pcolor.png}
+\includegraphics[scale = 0.55]{Applications/graphene-strain/edgeStFactor_Graphene.png}
 	\caption[]{}
 	\label{fig:edgeStFactor}
 \end{figure}
 \begin{figure}[H]
-\includegraphics[scale = 0.5]{Applications/graphene-strain/LongitudinalProfile.png}
-\includegraphics[scale = 0.5]{Applications/graphene-strain/order_parameter_Graphene.png}
+\includegraphics[scale = 0.55]{Applications/graphene-strain/LongitudinalProfile.png}
+\includegraphics[scale = 0.55]{Applications/graphene-strain/order_parameter_Graphene.png}
 	\caption[]{}
 	\label{fig:edgeStFactor}
 \end{figure}
 \begin{figure}[H]
-\includegraphics[scale = 0.5]{Applications/graphene-strain/chiTyang2017.png}
-\includegraphics[scale = 0.5]{Applications/graphene-strain/fityang2017.png}
+\hspace{-0.2cm}
+\includegraphics[scale = 0.55]{Applications/graphene-strain/chiTyang2017.png}
+\includegraphics[scale = 0.55]{Applications/graphene-strain/fityang2017.png}
 	\caption[]{}
 	\label{fig:edgeStFactor}
 \end{figure}
@@ -172,16 +172,23 @@ The self consistent relation allowing us to compute the new MF parameters at eac
 	\label{fig:nanoGraphVsTMD}
 \end{figure}
 \begin{figure}[H]
-\includegraphics[trim={0cm 8cm 0cm 6.5cm},clip, scale =0.45]{Applications/tmd-mf/edge-mag.pdf}
+\centering
+\includegraphics[trim={0cm 1.5cm 0cm 1.5cm},clip, scale =0.23]{Applications/tmd-mf/edge-mag.pdf}
 	\caption[]{}
 	\label{fig:zeroTphaseDiagram}
 \end{figure}
-\begin{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[trim={0cm 1.5cm 0cm 1.5cm},clip, scale =0.3]{Applications/tmd-mf/bandsZoomed.pdf}
+	\caption[]{}
+	\label{fig:bandsZoomed}
+\end{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands05} \\
-\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands1} \\
+\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands075} \\
 \includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands4} \\
-\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands100}
+\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands100} \\
 	\caption[]{}
 	\label{fig:band-structures}
 \end{figure}

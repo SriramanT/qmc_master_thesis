@@ -1,12 +1,12 @@
 \section{Original Contributions}
 \label{sec:int_contributions}
 
-In this work, we focus mainly on the study of emerging magnetic ordering in \ac{TMD} nanoribbons due to electron-electron interactions.
+In this work, we focus on the study of emerging magnetic ordering in \ac{TMD} nanoribbons due to electron-electron interactions.
 To carry out this study, we use our own original implementation of the auxiliary field \ac{QMC} algorithm in \texttt{C++}.
 To validate the built software, we consider previously well known models (such as the Hubbard model on the \acs{1D} chain, and the square lattice), and benchmark our results by comparing them with those of existing implementations (namely \texttt{ALF} \cite{bercx_alf_2017} and \texttt{QUEST} \cite{noauthor_quest_2012}) and early seminal studies \cite{hirsch_discrete_1983,white_numerical_1989}.
-Finally, we also compare our results with those obtained in the mean field approximation
+We obtain original mean field results, which we use as a guide to approach the problem via \acs{QMC}.
 The code we wrote can be used to simulate low-dimensional Hubbard-like models with different geometries, thus extending this work further.
 Additionally, using our code, we compare different options to stabilize the matrix products needed to perform the simulations, and characterize the fermion sign problem.
 
 To study \ac{TMD} nanoribbons, we extend a minimal three-band tight binding model \cite{liu_three-band_2013} of \acp{TMD} to the interacting case.
-Then, we show the emergence of edge-state magnetism in \ac{TMD} nanoribbons via original mean field and \ac{QMC} calculations, which we compare with one another.
+Then, we find emerging edge-state magnetism in \ac{TMD} nanoribbons via original mean field calculations, and we compare those with \acs{QMC} results.

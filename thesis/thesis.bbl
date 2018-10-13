@@ -5042,8 +5042,8 @@
       \strng{authorbibnamehash}{044347e0034a565efd99ad040684ebd0}
       \strng{authornamehash}{044347e0034a565efd99ad040684ebd0}
       \strng{authorfullhash}{044347e0034a565efd99ad040684ebd0}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We study the mean-field phase diagram of the repulsive Hubbard model in the Lieb lattice. Far from half-filling, the most stable phases are paramagnetism for low on-site interaction U/t and ferromagnetism for high U/t, as in the case of the mean-field phase diagram of the square lattice Hubbard model obtained by Dzierzawa (1991) [1]. At half-filling, the ground state was found to be ferrimagnetic [a (π,π) spiral phase], in agreement with a theorem by Lieb (1989) [2]. The total magnetization approaches Lieb's prediction as U/t becomes large. As we move away from half-filling, this ferrimagnetic phase becomes a (q1,q1) spiral phase with q1≈π and then undergoes a series of first-order phase transitions, (q1,q1)→(q1,q2)→(q1,0), with q2≈π/2, before becoming ferromagnetic at large U/t or paramagnetic at low U/t.}
@@ -5122,8 +5122,8 @@
       \strng{authorbibnamehash}{61fb909bff1ded8930c5c15e1fc5b6cf}
       \strng{authornamehash}{61fb909bff1ded8930c5c15e1fc5b6cf}
       \strng{authorfullhash}{61fb909bff1ded8930c5c15e1fc5b6cf}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper, we address the stability of the Sherman–Morrison–Woodbury formula. Our main result states that if the original matrices, A and B, are well conditioned, then there exists matrices U and V such that the Sherman–Morrison–Woodbury formula is stable when applied to \$A = B - {UV}{^}T \$.}

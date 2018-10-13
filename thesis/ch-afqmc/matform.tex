@@ -1,7 +1,7 @@
 \section{Theoretical Framework and Mathematical Formulation}
 \label{sec:matform}
 
-Auxiliary-field, or Determinant \acs{QMC} is a simulation method that is commonly used to simulate the Hubbard model, allowing one to capture the elusive effects of electron correlations in the two-dimensional graphene-like nanostructures we are concerned with.
+Auxiliary-field, or Determinant \acs{QMC} is a simulation method that is commonly used to simulate the Hubbard model, allowing one to capture the elusive effects of electron-electron correlations in the two-dimensional graphene-like nanostructures we are concerned with.
 The sign problem may deem the algorithm exponentially complex in the size of the system and in inverse temperature, but it is possible to overcome this hurdle for a class of models, namely the Hubbard model on a bipartite lattice at half filling ($\mu = 0$ in our conventions).
 In fact, many interesting phenomena occur at half filling, for example magnetic ordering and the Mott metal-insulator transition.
 The difficulty lies in computing the nearly vanishing average of a random variable $X$ with comparatively large variance, i.e. $\sigma_X / \left\langle X \right\rangle \gg 1$.
@@ -11,29 +11,29 @@ As we shall see, it is found by using (either a discrete or continuous) Hubbard-
 This transformation introduces an auxiliary field (consisting basically of Ising spins), and we use Monte Carlo to sample configurations from the distribution corresponding to this \emph{classical} configuration space.
 This approach is equivalent to an exact solution of the integral that is approximated by using the saddle point approximation in mean field, an observation which motivates us to compare our results with the mean field ones.
 Mean field theory may be formulated by applying the Hubbard Stratonovich (HS)  transformation to transform an interacting problem into a one-body problem, and then apply the saddle-point approximation to solve the resulting integrals.
-In the \acs{GCE} (where we make $\mathcal{H} \mapsto \mathcal{H} - \mu \mathcal{N}$, $\mathcal{N}$ being the total particle number), the partition function may be written in terms of a functional integral over a space-time dependent field of the exponential of a one-body action
+In the \acs{GCE} (where we make $\mathcal{H} \mapsto \mathcal{H} - \mu \mathcal{N}$, $\mathcal{N}$ being the total particle number), the grand-partition function may be written in terms of a functional integral over a space-time dependent field of the exponential of a one-body action
 \begin{equation}
 Z = \Tr [ e^{-\beta \mathcal{H} } ] = \int \mathcal{D}\bm h \, e^{-S(\bm h) }  \equiv \Tr_{\bm h} [ e^{-S(\bm h)} ],
 \end{equation}
 which may be computed by Monte Carlo sampling.
-In mean field, we approximate the integral by replacing the functional integral by a constant times the exponential action itself evaluated at a single field $\bm h^\star$, for which the action has a minimum: $\partial_{\bm h} S( \bm h ) |_{\bm h = \bm h^\star} = 0$, and $\partial_{\bm h}^2 S( \bm h ) |_{\bm h = \bm h^\star} > 0$.
-
-The integral is evaluated exactly in the auxiliary field \acs{QMC} method, which avoids the bias introduced by the specific choice of the HS decoupling.
-The nature of the analytical mean field solution depends on this choice, while the unbiased \acs{QMC} solution does not, relying on a numerical solution that scales with the cubic volume of the system, and linearly with inverse temperature.
-
-The sign problem may be seen as an inherent difficulty that arises from taking all possible fluctuations around the mean field solution.
-An advantage of determinant \acs{QMC} is that certain symmetries of the model at hand, such as \acs{PHS} in the Hubbard model, may be used to avoid the sign problem.
-
+In mean field, we approximate the integral by replacing the functional integral by a constant times the exponential of the action - evaluated at the field $\bm h^\star$, for which the action has a minimum: $\partial_{\bm h} S( \bm h ) |_{\bm h = \bm h^\star} = 0$, and $\partial_{\bm h}^2 S( \bm h ) |_{\bm h = \bm h^\star} > 0$.
+%The integral is evaluated exactly in the auxiliary field \acs{QMC} method, which avoids the bias introduced by the specific choice of the HS decoupling.
+%The nature of the analytical mean field solution depends on this choice, while the unbiased \acs{QMC} solution does not, relying on a numerical solution that scales with the cubic volume of the system, and linearly with inverse temperature.
+This approach depends on the HS decoupling that was used.
+In contrast, with the auxiliary field \ac{QMC} method, one computes the integral directly, which is independent of this choice, despite being more expensive in computing time ($\mathcal{O}(\beta N^3)$ ).
+Another obstacle of taking into account all the fluctuations around $\bm h^\star$ is the fermion sign problem referred in chapter \ref{cap:int}.
+However, in certain cases, the symmetries of the model (like \ac{PHS}) may be used to avoid it, as we explain in appendix \ref{ap:afqmcCalc}.
+%The sign problem may be seen as an inherent difficulty that arises from taking all possible fluctuations around the mean field solution.
+%An advantage of determinant \acs{QMC} is that certain symmetries of the model at hand, such as \acs{PHS} in the Hubbard model, may be used to avoid the sign problem.
 \subsection{Trotter-Suzuki Decomposition}
 \label{subsec:trotter}
 
-In section \ref{sec:exactSolutions}, we found exact solutions for particular instances of the Hubbard model by finding a closed form for the partition function \cite{hou_numerical_2009}. When devising a numerical method, a good sanity check is to verify that it satisfactorily approximates the partition function since it is the quantity that can be used to obtain  any observable.
+In section \ref{sec:exactSolutions}, we found exact solutions for particular instances of the Hubbard model by finding a closed form for the partition function \cite{hou_numerical_2009}. These will be used to calibrate our numerical calculations.
 Computing the partition function of a quantum system in equilibrium
 \begin{equation}\label{eq:partitionBeta}
 Z_\beta = \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \sum_{\alpha} \left\langle \psi_\alpha | e^{-\beta \mathcal{H} } | \psi_\alpha \right\rangle
 \end{equation}
-is equivalent to studying its \emph{imaginary} time evolution.
-The inverse temperature $\beta$ represents the imaginary time $\tau = it$, and $Z_\beta$ may be simply thought of as the wave function of the analogous quantum system at imaginary time $\beta$.
+is equivalent to studying its imaginary time evolution, i.e. $Z_\beta$ may be thought of as the wave function of the trace of the propagator of the analogous quantum system at imaginary time $\beta$.
 %To see this, recall that quantum states evolve according to
 %
 %\begin{equation}
@@ -72,28 +72,26 @@ In that case, the partition function strictly corresponds to the ground state wa
 Eq.(\ref{eq:partitionBeta}) is not very amenable to numerical computation since it contains an exponential of a sum of non-commuting operators $e^{-\beta (\mathcal{H}_K + \mathcal{H}_V)}$ as per Eq.(\ref{eq:def_energies}). 
 The exponential is not factorizable and involves computing an infinite number of commutators containing these two operators, as per the Zassenhaus formula, valid for any two generic operators $X$ and $Y$\footnote{This is just the inverse of the well known Baker–Campbell–Hausdorff formula commonly used in quantum mechanics.}:
 \begin{equation}\label{eq:zassenhaus}
-e^{\delta (X+Y)}=e^{\delta X} e^{\delta Y} e^{-{\frac {\delta^{2}}{2}}[X,Y]} e^{{\frac {\delta^{3}}{6}}(2[Y,[X,Y]]+[X,[X,Y]])}  e^{{\frac {-\delta^{4}}{24}}([[[X,Y],X],X]+3[[[X,Y],X],Y]+3[[[X,Y],Y],Y])} \, ... , 
+e^{(X+Y)}=e^{X} e^{Y} e^{-{\frac{1}{2}}[X,Y]} e^{{\frac {1}{6}}(2[Y,[X,Y]]+[X,[X,Y]])}  e^{{-\frac {1}{24}}([[[X,Y],X],X]+3[[[X,Y],X],Y]+3[[[X,Y],Y],Y])} \, ... , 
 \end{equation}
-where $\delta \in \mathbb{C}$ is an expansion parameter.
-The Trotter-Suzuki decomposition leads to the sought approximate factorization that is used to approximate the partition function.
-Dividing the imaginary time interval $[0, \beta ]$ into $L$ equal sub-intervals of small width $\Delta \tau = \beta / L$:
+
+The Trotter-Suzuki decomposition leads to the sought approximate factorization that is used to evaluate the partition function.
+Dividing the imaginary time interval $[0, \beta ]$ into $L$ equal sub-intervals of smaller width $\Delta \tau = \beta / L$, one obtains:
 \begin{equation}\label{eq:partBreak}
 Z =  \Tr \bigg[ \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg] ,
 \end{equation}
-we obtain a form that is more amenable to computation.
-Actually, it also arises naturally by writing the matrix elements of the projection operator $\mathcal{P}$ as path integrals (here, time ordering is implicit \cite{hirsch_discrete_1983}):
+a form that is more amenable to computation.
+Actually, by writing the matrix elements of the projection operator $\mathcal{P}$ as path-integrals (here, time-ordering is implicit \cite{hirsch_discrete_1983}):
 \begin{equation}
-\left\langle \psi | e^{-\beta \mathcal{H} } | \psi' \right\rangle = \sum_{\left| \psi_1 \right\rangle, \left| \psi_2 \right\rangle,..., \left| \psi_{L-1} \right\rangle }  \left\langle \psi | e^{-\Delta \tau \mathcal{H} } | \psi_1 \right\rangle \left\langle \psi_1 | e^{-\Delta \tau \mathcal{H} } | \psi_2 \right\rangle ... \left\langle \psi_{L - 1} | e^{-\Delta \tau \mathcal{H} } | \psi' \right\rangle 
+\left\langle \psi | e^{-\beta \mathcal{H} } | \psi' \right\rangle = \sum_{\left| \psi_1 \right\rangle, \left| \psi_2 \right\rangle,..., \left| \psi_{L-1} \right\rangle }  \left\langle \psi | e^{-\Delta \tau \mathcal{H} } | \psi_1 \right\rangle \left\langle \psi_1 | e^{-\Delta \tau \mathcal{H} } | \psi_2 \right\rangle ... \left\langle \psi_{L - 1} | e^{-\Delta \tau \mathcal{H} } | \psi' \right\rangle ,
 \end{equation}
-
-Then, the partition function only selects paths that are periodic in imaginary time:
+we see that it is the same as the partition function, if the paths are periodic in imaginary time:
 \begin{equation}
 Z = \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \sum_{\left| \psi_0 \right\rangle} \left\langle \psi_0 | e^{-\beta \mathcal{H}} | \psi_0 \right\rangle = \sum_{\{ \left| \psi_l \right\rangle \}} \prod_{l = 0}^{L - 1} \left\langle \psi_{l} | e^{-\Delta \tau \mathcal{H} } | \psi_{l+1} \right\rangle \delta_{0, L} = \Tr \bigg[ \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg] ,
 \end{equation}
-where we have $\left| \psi_L \right\rangle = \left| \psi_0 \right\rangle$, and we  recover the result of Eq.(\ref{eq:partBreak}) by simply reorganizing the summations over $\{ \left| \psi_l \right\rangle \}$, so as to make appear closure relations, resulting in unit operators in the Hilbert space of each slice.
+where we have $\left| \psi_L \right\rangle = \left| \psi_0 \right\rangle$. We recover Eq.(\ref{eq:partBreak}) by reorganizing the summations over $\{ \left| \psi_l \right\rangle \}$, and using closure relations in the Hilbert space of each slice.
 The \say{Trotter breakup} follows from truncating Eq.(\ref{eq:zassenhaus}), and keeping only the first order term in $\Delta \tau$.
-In the $\Delta \tau \rightarrow 0$ limit, it becomes a trace of a time ordered exponential of the integral of the time-dependent action.
-The slice index $l$, or the argument $\tau$, imply time ordering.
+In the $\Delta \tau \rightarrow 0$ limit, it becomes a trace of a time-ordered exponential:
 \begin{equation}\label{eq:Z_propagator}
 Z = \Tr \bigg[ \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H}_{K}^l } e^{-\Delta\tau \mathcal{H}_{V}^l } \bigg] + \mathcal{O}(\Delta \tau^2) \underset{\tau \rightarrow 0}{\longrightarrow}
  \Tr \bigg[ \mathcal{T}_\tau \exp \bigg( {- \int_0^\beta   d\tau ( \underbrace{\mathcal{H}_K (\tau) + \mathcal{H}_V ( \tau) ) }_{S(\tau)} } \bigg) \bigg]
@@ -101,16 +99,16 @@ Z = \Tr \bigg[ \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H}_{K}^l } e^{-\Delta\t
 
 \subsection{Hubbard-Stratonovich transformation}\label{subsec:HStransf}
 
-The kinetic energy term is quadratic in the fermion operators, and is spin-independent and thus may be separated into spin up and spin down components, independent of the time slice, i.e. $\mathcal{H}_{K_\sigma}^l = \mathcal{H}_{K_\sigma}$.
+The kinetic energy term is quadratic in the fermion operators, and spin-independent, meaning that it be separated into two spin components, independently of the time slice.
 \begin{equation}
 e^{-\Delta\tau \mathcal{H}_K} = e^{-\Delta\tau \mathcal{H}_{K_\uparrow}} e^{-\Delta\tau \mathcal{H}_{K_\downarrow}} ,
 \end{equation}
-where $\mathcal{H}_{K_\sigma} = \bm c_\sigma^\dagger (-t_\sigma \bm K_\sigma - \mu_\sigma \bm I )  \bm c_\sigma$, and we allow spin-dependent hoppings and chemical potential.
+where $\mathcal{H}_{K_\sigma} = \bm c_\sigma^\dagger (-t_\sigma \bm K_\sigma - \mu_\sigma \bm I )  \bm c_\sigma$.
 
 The potential energy term, however, is quartic.
 Fortunately, it is possible to express it in quadratic form by introducing an extra degree of freedom, the so called \emph{Hubbard-Stratonovich (HS) field} $\bm h \equiv (h_{l, i})_{i=0,\, l= 0}^{N-1, \, L - 1}$, in which each element is essentially an Ising spin.
 At each slice, the interaction is eliminated by an $N$-dimensional HS field $\widetilde{\bm h}$.
-We start by noting that $[ n_i , n_j ] = 0 \,\, \forall i, j$, so that
+We start by noting that $[ n_{i,\sigma} , n_{j,\sigma'} ] = 0 \,\, \forall i, j, \sigma, \sigma'$, so that
 \begin{equation}\label{eq:Hint}
 e^{-\Delta\tau \mathcal{H}_V} = e^{-U \Delta\tau \sum_{i=1}^N (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} = \prod_i e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )}
 \end{equation}
@@ -120,7 +118,7 @@ $
 e^{ \frac{a^2}{2}} = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{-\frac{z^2}{2}  - za } dz
 $ 
 $ \forall a > 0$, 
-which is also valid for an operator $\mathcal{A}$, that is, making $a \mapsto \mathcal{A}$ in the Gaussian integral identity.
+which is also valid if $\mathcal{A}$ is an operator.
 Noting that $(n_{i\uparrow} - \frac{1}{2} ) (n_{i\downarrow} - \frac{1}{2} ) = -\frac{1}{2} ( n_{i\uparrow} - n_{i\downarrow} )^2 + \frac{1}{4}$, we can recast the potential energy term as
 \begin{equation}
 e^{-\Delta\tau \mathcal{H}_V} = \prod_i e^{ \frac{U \Delta \tau}{2} ( n_{i\uparrow} - n_{i\downarrow} )^2 } e^{- \frac{U \Delta \tau}{4}}
@@ -144,7 +142,7 @@ e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} = c_U \sum_{\w
 Notice that $\Delta \tau$ appears explicitly in the coupling constant.
 This is because we worked with fixed length Ising spins.
 In the Gaussian formulation we started with, $\Delta \tau$ can be reabsorbed in the HS field, even though $\Delta \tau$ is still implicit in the integration measure.
-The parameter $\frac{1}{\Delta \tau}$ can be seen as a high energy cutoff, and it must be larger than all other energy scales in the problem, which is required to make the Trotter breakup error small when discretizing time onto 	a lattice of $L = \beta / \Delta \tau$ points.
+The parameter $\frac{1}{\Delta \tau}$ can be seen as a high energy cutoff, and it must be larger than all other energy scales in the problem, which is required to make the Trotter breakup error small when discretizing time onto a lattice of $L = \beta / \Delta \tau$ points.
 
 To prove Eq.(\ref{eq:discreteHS}), let us write down how the operators  $(n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )$ and $(n_{i\uparrow} - n_{i\downarrow} )$ act:
 \begin{equation}
@@ -215,7 +213,6 @@ Furthermore, we have defined the $\bm B$-matrices, representing the imaginary-ti
 
 The problem of computing the partition function has been reduced to computing the trace of a product of exponentials of quadratic forms.
 Thus, we may still rewrite equation (\ref{eq:Z_quadratic}) by making use of the following identity.
-
 Let $\mathcal{H}_l$ be quadratic forms of the fermion operators: 
 $
 \mathcal{H}_l = c_i^\dagger (\bm H_l)_{ij} c_j,
@@ -226,7 +223,7 @@ Then, the following identity holds
 \Tr \big[ e^{-\mathcal{H}_1 } e^{-\mathcal{H}_2 } ... e^{-\mathcal{H}_L } \big] = \text{det} ( \bm I + e^{-\bm H_L} e^{-\bm H_{L-1}} ... e^{-\bm H_1} )
 \end{equation}
 
-For simplicity, in appendix \ref{ap:theoAFQMC}, we present the proof for a simpler case, corresponding to a single $\bm B$-matrix, i.e. a product of exponentials of two quadratic operators \cite{hirsch_two-dimensional_1985}.
+For simplicity, in appendix \ref{ap:afqmcCalc}, we present the proof for a simpler case, corresponding to a single $\bm B$-matrix, i.e. a product of exponentials of two quadratic operators \cite{hirsch_two-dimensional_1985}.
 It could then be easily extended to the more general case \cite{hanke_electronic_nodate}(ch.4, ap. III).
 The products of up and down spin $\bm B$-matrices give rise to a product of two such determinants, which may easily be deduced from the proof of appendix \ref{ap:theoAFQMC}.
 

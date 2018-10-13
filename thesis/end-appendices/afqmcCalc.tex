@@ -294,39 +294,103 @@ Numerical instabilities may arise when the Green's matrices comprise divergent e
 
 \section{Particle-hole symmetry and the sign problem}\label{sec:phsSign}
 
+To a greater or lesser extent, all \acl{QMC} methods are plagued by the sign problem.
+If the average of the sign is not too small, i.e. $\left\langle \text{sign} \right\rangle \rightarrow 0$, one can simply take more measurements and increase runs proportionally to $\left\langle \text{sign} \right\rangle^{-2}$ to achieve an accuracy comparable to that of the sign problem-free case.
+The case of the square lattice is very special because it can be proven that there is no sign problem at half filling.
+This is related to \ac{PHS}.
+
+When approaching other models, one must carry out preliminary studies to evaluate whether the sign problem impedes accurate measurements or not, and to set the chemical potential correctly to get the desired filling of the lattice.
+In the following figures we give examples of this procedure for a Hubbard chain and for a \acs{TMD} nanoribbon.
+
 \begin{figure}[H]
 \includegraphics[scale = 0.5]{Applications/muVsSign.png}
 \includegraphics[scale = 0.5]{Applications/densVsSign.png}
-	\caption[]{}
+	\caption[Average sign as a function of chemical potential/electron density for a Hubbard chain.]{Average sign as a function of chemical potential/electron density for a Hubbard chain.}
 	\label{fig:signMuDens}
 \end{figure}
 \begin{figure}[H]
 \includegraphics[scale = 0.5]{Applications/muDens.png}
 \includegraphics[scale = 0.5]{Applications/muSignTMDbeta1.png}
-	\caption[]{}
+	\caption[Electron density as a function of chemical potential for a Hubbard chain. Average sign as a function of chemical potential for a simulation of a TMD nanoribbon using the minimal model described in chapter 2.]{Left: Electron density as a function of chemical potential for a Hubbard chain.
+	Right: Average sign as a function of chemical potential for a simulation of a TMD nanoribbon using the minimal model described in chapter 2 at $\beta = 1$ and $U = 14, 16, 18$.
+	The sign problem worsens as $U$ is increased.}
 	\label{fig:muSign}
 \end{figure}
 \begin{figure}[H]
 \includegraphics[scale = 0.5]{Applications/densSignTMDbeta1.png}
 \includegraphics[scale = 0.5]{Applications/muDensTMDbeta1.png}
-	\caption[]{}
+	\caption[Average sign as a function of electron density for the minimal Hubbard model of \acs{TMDNR}s. Electron density as a function of chemical potential.]{Left: Average sign as a function of electron density for the minimal Hubbard model of \acs{TMDNR}s. Electron density as a function of chemical potential.}
 	\label{fig:densSignmuDens}
-\end{figure}
-\begin{figure}[H]
-\includegraphics[scale = 0.5]{Applications/densSignTMDbeta1.png}
-\includegraphics[scale = 0.5]{Applications/muDensTMDbeta1.png}
-	\caption[]{}
-	\label{fig:tmdBeta1}
 \end{figure}
 \begin{figure}[H]
 \includegraphics[scale = 0.5]{Applications/muSignTMDbeta1.png}
 \includegraphics[scale = 0.5]{Applications/signTMDmusSignU16beta2.png}
-	\caption[]{}
+	\caption[Average sign as a function of chemical potential for the same system, and for a system at lower temperature ($\beta = 2$), and fixed on-site/orbital interaction $U = 16$.]{Average sign as a function of chemical potential for the same system (left), and for a system at lower temperature ($\beta = 2$), and fixed on-site/orbital interaction $U = 16$ (right).}
 	\label{fig:muDensU16signDens}
 \end{figure}
 \begin{figure}[H]
-\includegraphics[scale = 0.5]{Applications/signTMDmusDensU16beta2.png}
 \includegraphics[scale = 0.5]{Applications/signTMDdensSignU16beta2.png}
-	\caption[]{}
+\includegraphics[scale = 0.5]{Applications/signTMDmusDensU16beta2.png}
+	\caption[Average sign as a function of electron density for the same \acs{TMDNR} at $\beta = 2$, $U = 16$. Electron density as a function of the chemical potential. ]{Left: Average sign as a function of electron density for a \acs{TMDNR} at $\beta = 2$, $U = 16$. Right: Electron density as a function of the chemical potential. }
 	\label{fig:muDensU16}
 \end{figure}
+
+To prove that the half filled square lattice is sign problem-free we start by invoking two well known identities.
+Respectively, for any non-singular matrix $\bm A$, and for symmetric, non-singular matrices $\bm A_{l=1,... m}$:
+\begin{equation}\label{eq:identities}
+( \bm I + \bm A^{-1} )^{-1}  = \bm I - ( \bm I + \bm A )^{-1} \,\,\,\, \,\,\,\, ( \bm I + \bm A_m^{-1}  \bm A_{m-1}^{-1}  ...  \bm A_{1}^{-1} )^{-1} =  \bm I - [ ( \bm I + \bm A_m \bm A_{m-1} ... \bm A_1 )^{-1} ]^T
+\end{equation}
+
+Moreover, given any two matrices $\bm A$ and $\bm B$, there exists a third one $\bm \Pi$, which anti-commutes with $\bm A$, i.e. $ \bm \Pi \bm A  + \bm A \bm \Pi = 0$, and commutes with $\bm B$, i.e. $ \bm \Pi \bm B  - \bm B \bm \Pi = 0$ (or vice-versa).
+Then, the following two relations hold:
+\begin{equation}
+\begin{split}
+( \bm I + e^{\bm A - \bm B} )^{-1} &= \bm I - \bm \Pi^{-1} ( \bm I + e^{\bm A + \bm B} )^{-1} \bm \Pi \\
+\det [ \bm I + e^{\bm A - \bm B} ] &= e^{\Tr [\bm A - \bm B ]} \det [ \bm I + e^{\bm A + \bm B} ]
+\end{split}
+\end{equation}
+
+The first is proven by using the first identity of Eq.(\ref{eq:identities}):
+\begin{equation}
+\begin{split}
+( \bm I + e^{\bm A - \bm B} )^{-1} &= \bm I - ( \bm I + e^{-\bm A + \bm B} )^{-1}  = \bm I - ( \bm I + e^{\bm \Pi^{-1} ( \bm A + \bm B) \bm \Pi } )^{-1} \\
+&= \bm I - ( \bm I + \bm \Pi^{-1} e^{\bm A + \bm B} \bm \Pi )^{-1} = \bm I - \bm \Pi^{-1} ( \bm I + e^{\bm A + \bm B} )^{-1} \bm \Pi
+\end{split}
+\end{equation}
+
+The proof of the second uses the commutation relations:
+\begin{equation}
+\begin{split}
+\bm I + e^{\bm A - \bm B} &= e^{\bm A - \bm B} ( \bm I + e^{-(\bm A - \bm B)} ) = e^{\bm A - \bm B} ( \bm I + e^{-\bm A + \bm B} ) \\
+&=e^{\bm A - \bm B} ( \bm I + e^{\bm \Pi^{-1} \bm A \bm \Pi +\bm \Pi^{-1} \bm B \bm \Pi  } ) = e^{\bm A - \bm B} ( \bm I + \bm \Pi^{-1} e^{\bm A + \bm B} \bm \Pi ) \\
+&= e^{\bm A - \bm B}  \bm \Pi^{-1} ( \bm I + e^{\bm A + \bm B} ) \bm \Pi \\
+\rightarrow \det [ \bm I + e^{\bm A - \bm B} ]&= \det [ e^{\bm A - \bm B} ] \det [ \bm \Pi^{-1} ] \det [ \bm I + e^{\bm A + \bm B} ] \det [ \bm \Pi ] \\
+&= e^{ \Tr [ \bm A - \bm B ] } \det [ \bm I + e^{\bm A + \bm B} ]
+\end{split}
+\end{equation}
+
+Similarly, we can prove that for symmetric matrices $\bm A$, $\bm B$, if we can find a non singular matrix $\bm \Pi$ that commutes with $\bm A$ and anti-commutes with $\bm B$, then:  $\det[ \bm I + e^{\bm A} e^{-\bm B} = e^{ \Tr [ \bm A - \bm B ] } \det [ \bm I + e^{\bm A} e^{\bm B} ]$ and
+\begin{equation}
+(\bm I + e^{\bm A} e^{-\bm B} )^{-1} = \bm I - [\bm \Pi^{-1}]^T [ ( \bm I + e^{\bm A} e^{\bm B} )^{-1} ]^T \bm [\bm \Pi^{-1} ]^T
+\end{equation}
+
+This theorem generalizes for the products we use in our code: $\bm M_\sigma = \bm I + e^{\bm A} e^{\sigma \bm B_k} e^{\bm A} e^{\sigma \bm B_{k-1}} ... e^{\bm A} e^{\sigma \bm B_1}$.
+If we can find a non singular matrix $\bm \Pi$, such that $\{\bm \Pi, \bm A \} = 0$ and $[ \bm \Pi, \bm B_l] = 0$, then we have
+\begin{equation}
+\bm M_\downarrow^{-1} = \bm I -[ \bm \Pi^{-1}]^T [\bm M_\uparrow^{-1} ]^T \bm \Pi^T \quad \text{and} \quad \det [ \bm M_\downarrow ] = e^{k \Tr [ \bm A ] - \sum_{l = 1}^k \Tr [ \bm B_l] } \det [ \bm M_\uparrow ]
+\end{equation}
+
+Since $\det [ \bm M_\downarrow ] $ is then proportional to $\det [ \bm M_\uparrow ]$, and $e^{k \Tr [ \bm A ] - \sum_{l = 1}^k \Tr [ \bm B_l] }$ is positive, the weight of the classical spin configuration $\det [ \bm M_\uparrow ] \det [ \bm M_\downarrow ] $ will always be positive, and there will be no sign problem.
+Now, it turns out that this is only possible at half filling.
+Away from half filling, we cannot find a $\bm \Pi$ obeying these conditions.
+
+The matrix $\bm \Pi$ is intimately related to the particle hole transformation.
+In fact, for the \acs{1D} chain, or the square lattice, if we take $\bm \Pi_{x (y) } = \text{diag} ( 1, -1, 1, -1, ...)$, then the particle-hole transformation of the Green's function reads
+\begin{equation}
+\bm G^\downarrow = \bm I - \bm \Pi_x (\bm G^\uparrow)^T \bm \Pi_x \text{  for the chain} \,\, \text{and} \,\, \bm G^\downarrow = \bm I - \bm \Pi (\bm G^\uparrow)^T \bm \Pi \text{  for the square lattice} ,
+\end{equation}
+where $\bm \Pi = \bm \Pi_x \otimes \bm \Pi_y$, the tensor (Kronecker) product of the two matrices.
+
+This reasoning is not only valid for the chain and square lattice, but actually holds for any bipartite lattice, such as the honeycomb lattice.
+Unfortunately, for example for the triangular lattice, it does not.
+This makes simulations on the triangular lattice (such as the one in this work) and other non bipartite lattices potentially much harder to control.
