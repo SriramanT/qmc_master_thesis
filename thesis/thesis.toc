@@ -116,9 +116,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.2}\acp {TMD}}{72}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{78}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{79}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{78}{section*.77}
+\contentsline {chapter}{Bibliography}{79}{section*.79}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Appendix \numberline {A}Obtaining the Hubbard Model. Approximate Solutions}{A-1}{appendix.A}
 \defcounter {refsection}{0}\relax 

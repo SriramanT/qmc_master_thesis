@@ -203,62 +203,97 @@ The self consistent relation allowing us to compute the new MF parameters at eac
 	Right: Comparison between the spin density profile along the ribbon's transverse direction $\left\langle m \right\rangle (y)$ (the obtained solution is constant along $x$) for the GNR and the \acs{TMDNR}).}
 	\label{fig:nanoGraphVsTMD}
 \end{figure}
-By solving the self-consistent equation iteratively, at zero temperature, for varying $U$, we find two phase transitions, with respective critical on-site interactions $U_{c_1} \approx 11.8 |t_0|$, and $U_{c_2} \approx 15.4 |t_0|$.
+By solving the self-consistent equation iteratively, at zero temperature, for varying $U$, we find two phase transitions, with respective critical on-site interactions $U_{c_1} \approx 11.8 |t_0|$, and $U_{c_2} \approx 15.395 |t_0|$.
 \begin{figure}[H]
-\includegraphics[trim={0cm 1.7cm 0cm 1.7cm},clip, scale =0.2]{Applications/tmd-mf/edge-mag.pdf}
+\includegraphics[trim={0cm 1.7cm 0cm 1.7cm},clip, scale =0.21]{Applications/tmd-mf/edge-mag.pdf}
 \hspace{0.5cm}
-\includegraphics[scale=0.53]{Applications/tmd-mf/edge-magzoom1}
-	\caption[Mean field phase diagram at zero temperature. Zoom-in of the first phase transition as we increase $U$.]{Mean field phase diagram at zero temperature. Zoom-in of the first phase transition as we increase $U$.}
-	\label{fig:zeroTphaseDiagram}
+\includegraphics[scale=0.55]{Applications/tmd-mf/edge-magzoom1}
+	\caption[Mean field phase diagram at zero temperature. Zoom-in of the first phase transition as we increase $U$.]{Mean field phase diagram at zero temperature. Zoom-in of the first phase transition as we increase $U$.
+	\label{fig:zeroTphaseDiagram}}
 \end{figure}
+By comparing the $y$-scales of Figs.(\ref{fig:zeroTphaseDiagram},\ref{fig:freeBands}), we see that the phase transition is much more abrupt in the latter than in the former, so that the first transition at $U_{c_1} \approx 11.8 |t_0|$ appears to be continuous, while the second one at $U_{c_2} \approx 15.395 |t_0|$ appears to be first order.
 \begin{figure}[H]
-\hspace{0.2cm}
-\includegraphics[scale=0.53]{Applications/tmd-mf/edge-magzoom2}
-\includegraphics[scale=0.53]{Applications/tmd-mf/freeBands}
-	\caption[Zoom-in of the second phase transition as we increase $U$. Band structure of the free-fermion problem.]{Zoom-in of the second phase transition as we increase $U$. Band structure of the free-fermion problem.}
-	\label{fig:freeBands}
+\includegraphics[scale=0.5]{Applications/tmd-mf/edge-magzoom2}
+\hspace{0.5cm}
+\includegraphics[scale=0.5]{Applications/tmd-mf/freeBands}
+	\caption[Zoom-in of the second phase transition as we increase $U$. Band structure of the free-fermion problem.]{Zoom-in of the second phase transition as we increase $U$. Band structure of the free-fermion problem.
+	\label{fig:freeBands}}
 \end{figure}
 To understand the effect of the on-site interaction at the mean field level, we start by comparing the band structure of the free problem , and the mean field band structure well within the ordered phase.
 \begin{figure}[H]
 \centering
-\includegraphics[trim={1.5cm 1.5cm 0cm 2cm},clip, scale =0.4]{Applications/tmd-mf/bandsZoomed.pdf}
-	\caption[]{}
+\includegraphics[trim={0cm 3cm 0cm 4cm},clip, scale =0.4]{Applications/tmd-mf/bandsZoomed.pdf}
+	\caption[$T=0$ mean field band structure for a \ac{TMDNR} of width $N_y = 16$ in the ordered phase, at $U=20$.]{$T=0$ mean field band structure for a \ac{TMDNR} of width $N_y = 16$ in the ordered phase ($U=20$).}
 	\label{fig:bandsZoomed}
 \end{figure}
+
+The first two things to note are that spin degeneracy has been lifted, and that the shape of the bands has been distorted.
+The part of the bands near the Fermi energy $\varepsilon_F$ determines the physics of the phase.
+The interplay between the tight-binding model geometry and parameters, the on-site interaction and the temperature gives rise to different phases since it determines the shape of the bands and the location of the Fermi energy corresponding to charge neutrality.
+In Fig.(\ref{fig:bandsZoomed}), two changes with respect to the free bands of Fig.(\ref{fig:freeBands}) are crucial:
+the K-point splitting, correponding to the region where one of the bands stays below the Fermi energy, while the other stays above (circled in yellow), and band crossing (circled in green).
+
+The spin polarization leading to the edge magnetization is due to the different occupation of the spin-up and spin-down bands.
+As the red spin-up band near the Fermi energy rests completely below it, its electronic states are all occupied, while the corresponding spin-down states are all above $\varepsilon_F$.
+If these states are extended throughout the sample, a magnetization appears in the bulk.
+However, as we show later, the wave functions corresponding to the states near the Fermi energy are heavily localized at the edges.
+This means that the spin polarization will be restricted to the edges.
+Initially, the up and down states are equally occupied.
+As we start increasing $U$, one of the bands (say, the up band) becomes more occupied than the other.
+The states in this band correspond only to one of the edges.
+Suppose it is the top edge.
+As we keep increasing $U$, the band structure changes and eventually, the up band corresponding to the bottom edge is occupied, while its down band is unoccupied, and both edges become magnetized.
+In what follows, we explain how the two phase transitions we find can be understood in terms of the mean field picture we built.
+
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands05} \\
-\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands075} \\
-\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands4} \\
-\includegraphics[scale=0.4]{Applications/tmd-mf/superposedBands100} \\
-	\caption[]{}
+\includegraphics[scale=0.42]{Applications/tmd-mf/superposedBands05} \\
+\includegraphics[scale=0.42]{Applications/tmd-mf/superposedBands075} \\
+\includegraphics[scale=0.42]{Applications/tmd-mf/superposedBands4} \\
+\includegraphics[scale=0.42]{Applications/tmd-mf/superposedBands100} \\
+	\caption[Spin-resolved band structures for varying $U$ and $\beta$, compared with the tight-binding bands.]{Spin-resolved band structures for varying $U$ and $\beta$, compared with the tight-binding bands.
+	From top to bottom, we have $\beta = 0.5, 0.75, 4, \infty$.
+	On the rightmost figures, we represent the Fermi energy that corresponds to the considered temperature in the tight-binding case.}
 	\label{fig:band-structures}
 \end{figure}
 \begin{figure}[H]
 \hspace{1cm}
 \includegraphics[scale=0.5]{Applications/tmd-mf/wfAroundK1}
-\includegraphics[scale=0.5]{Applications/tmd-mf/magProfU14}
-	\caption[]{}
-	\label{fig:wfs}
+\includegraphics[scale=0.5]{Applications/tmd-mf/magProfU13}
+	\caption[Localized edge states on the top of the ribbon for the different orbitals. Resulting magnetization profile along the ribbon's transverse direction due to higher spin up than spin down occupation.]{Left: Localized edge states on the top of the ribbon for the different orbitals. Right: Resulting magnetization profile along the ribbon's transverse direction $y$ due to higher spin up than spin down occupation of the states on the left, showing top edge magnetization ($U = 13 |t_0|$).}
+	\label{fig:wfs1}
 \end{figure}
 \begin{figure}[H]
 \hspace{1.2cm}
 \includegraphics[scale=0.35]{Applications/tmd-mf/bands152.png}
 \hspace{4mm}
 \includegraphics[scale=0.35]{Applications/tmd-mf/bands154.png}
-	\caption[]{}
-	\label{fig:wfs}
+	\caption[Comparison of the band structures at $U = 15.2$, and $U=15.4$.]{Comparison of the band structures at $U = 15.2$ (left), and $U=15.4$ (right). The second phase transition occurs because the degeneracy of the bands marked as "$1$" below $U = 15.395$ is lifted, leading to the appearance of two bands, marked "$2$", and "$3$". Band 2 stays above the Fermi energy. Thus, it is unoccupied. Part of band 3 becomes occupied, leading to the magnetization of the edge (the states that become occupied are localized at the bottom edge).}
+	\label{fig:bandDegen}
 \end{figure}
 \begin{figure}[H]
 \hspace{1cm}
 \includegraphics[scale=0.51]{Applications/tmd-mf/wfAroundK2}
 \includegraphics[scale=0.5]{Applications/tmd-mf/magProfU154}
-	\caption[]{}
-	\label{fig:wfs}
+	\caption[Localized edge states on the bottom of the ribbon for the different orbitals. Resulting magnetization profile along the ribbon's transverse direction due to higher spin up than spin down occupation.]{Localized edge states on the bottom of the ribbon for the different orbitals. Resulting magnetization profile along the ribbon's transverse direction due to higher spin up than spin down occupation.}
+	\label{fig:wfs2}
 \end{figure}
+In Fig.(\ref{fig:wfs2}), we can see that edge-magnetization has appeared on both sides of the ribbon.
+An important detail to notice is that when the magnetization of the bottom edge appears at $U_{c_2} \approx 15.395 |t_0|$, the magnetization of the top edge decreases slightly.
+This can be understood by looking at Fig.(\ref{fig:bandDegen}).
+The band marked "$4$" has now \say{widened} (one can see that there is white space below it), and more down spin states localized at the top edge become occupied, canceling out some of the magnetization induced by their corresponding up spin states.
+This effect occurs because, along with the lifting of the degeneracy, the Fermi energy increases slightly.
+
+Finally, in Fig.(\ref{pdMF}), we present a complete phase diagram, containing the behavior of the total edge magnetization $\left\langle m \right\rangle_{\text{edges}} = \left\langle m \right\rangle_{\text{top}} + \left\langle m \right\rangle_{\text{bottom}}$ for varying $U$ at a number of different inverse temperatures $\beta$ (here, $\beta$ is in units of $| t_0 |$).
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.62]{Applications/tmd-mf/edge-mag-phase-diagram}
-	\caption[]{}
-	\label{fig:wfs}
+	\caption[Mean field phase diagram for varying $U$ and $\beta$]{Mean field phase diagram for varying $U$ and $\beta$.}
+	\label{fig:pdMF}
 \end{figure}
+
+The first phase transition is suppressed at high temperatures, corresponding to $\beta \lesssim 1$ (in units of $| t_0 |$), and for even higher temperatures even the second transition is suppressed.
+The critical on-site interactions $U_{c_{1, 2}}$ vary with temperature.
+As $\beta$ is decreased from $\infty$ until $\beta \sim 10$, the first transition occurs sooner, at about $U = 10$, and the center plateau between the two transitions becomes shorter.
+By $\beta = 2$, the plateau has disappeared, $U_{c_1}$ returns to about its original ($\beta = \infty$) value, and the magnetization increases smoothly until $U_{c_2}$ (which is now higher than the original $\beta = 100$ one).
+Below $\beta = 0.75$, the system smoothly increases its edge magnetization starting at $U \sim 12$, and at about $\beta = 0.1$, both transitions seem to be completely suppressed (in this range of $U$).
