@@ -5,7 +5,6 @@ Solving the many-body problem remains one of the greatest challenges in physics.
 Following the wealth of attempts at such pursuit, certain phenomena arising due to the strong interactions in quantum systems are explained in different theoretical frameworks, namely superconductivity, the Mott metal-insulator transition, and fractional quantum Hall effect.
 However, only in very limited cases does an actual analytical solution exist for the  Schr\"odinger equation for a system of interacting particles, and one must resort to sophisticated approximation methods to obtain information about the role played by the competing interactions.
 Thus, numerical methods have become prominent as a tool for extracting information about this type of systems.
-
 \acl{QMC} is amongst the most accurate and extensively studied methods.
 It differs from \say{Classical} Monte Carlo because in the quantum version, instead of measuring thermal averages, one measures expectations of operators over the Hilbert space of the system, corresponding to physical observables that have both quantum dynamical and thermal fluctuations.
 In fact, the dynamics of a quantum system are encoded in the Hamiltonian operator.
@@ -24,13 +23,11 @@ It is natural to use it since typically the state space of our quantum system is
 The Monte Carlo method is ubiquitous, and is based on using randomness to produce accurate estimates of deterministic integrals.
 The term was coined by Metropolis in 1949, although it was used as early as 1777 in an experiment known as Buffon's needle - where one obtains an estimate of the constant $\pi$ by repeatedly throwing a needle randomly onto a sheet of paper with evenly spaced lines. %t was crucially developed in the Los Alamos National Laboratory during World War II where the development of the first atomic bomb was completed, the primary objective of the Manhattan Project.
 The method is particularly useful when one wants to sample from a probability distribution in an exponentially large state space (like the huge Hilbert space of an interacting electron system), but it can, in principle, be used to solve any problem allowing a probabilistic formulation.
-
-A variety of \ac{QMC} methods exists to approach the interacting fermion problem.
-All use a sampling scheme based on the Metropolis algorithm, or variations thereof.
-Variational and Diffusion \ac{QMC} are the simplest of those which allow one to capture some properties of correlated systems,.
-However, it is not always ideal or even possible to use any of them. 
+%A variety of \ac{QMC} methods exists to approach the interacting fermion problem.
+%All use a sampling scheme based on the Metropolis algorithm, or variations thereof.
+%Variational and Diffusion \ac{QMC} are the simplest of those which allow one to capture some properties of correlated systems,.
+%However, it is not always ideal or even possible to use any of them. 
 %We will discuss their flaws and show how further refinement leads to the auxiliary field method we ultimately used.
-
 Using the Monte Carlo approach to study a many-fermion system implies overcoming a significant obstacle common to all \ac{QMC} methods - the so called \emph{fermion sign problem}.
 Pauli's exclusion principle implies that the many-fermion wave function is anti-symmetric, which leads to a sign oscillation that greatly impedes the accurate evaluation of averages of quantum observables.
 The anti-symmetry constraint implies that a  straightforward weight interpretation of the wave function is not possible.
@@ -113,12 +110,10 @@ $
 $.
 Diffusion \ac{QMC} makes use of this relation, approximating $\psi_0(x)$ by $\psi_T (x, \tau)$ for sufficiently long time.
 An important requirement is that $\psi_T (x, \tau)$ and $\psi_0(x)$ overlap significantly so that $c_0$ is large enough to be numerically measurable.
-Furthermore, we can only use Monte Carlo to integrate Eq.(\ref{eq:GSenergy}) if the mixed distribution $f(\bm r)$ is positive and real.
+
+We can only use Monte Carlo to integrate Eq.(\ref{eq:GSenergy}) if $f(\bm r)$ is positive and real.
 The second constraint is usually satisfied since we typically consider time-reversal symmetric Hamiltonians, for which we may choose real eigenstates.
-However, since many-electron wave functions are anti-symmetric, the trial wave function $\psi_T$ might have different plus and minus sign domains (nodal cells) than those of the ground state wave function $\psi_0$, changing the sign of $f ( \bm r )$.
-This problem may be circumvented if we know where the nodal cells are.
-In fact, the nodal surface, or sign structure of the ground state, can be deduced from symmetry considerations for a few particular models.
-Nonetheless, in general the many-fermion wave function has a complicated node structure owing to the quantum many-body physics of the problem.
+However, since many-electron wave functions are anti-symmetric, the trial wave function $\psi_T$ might have different plus and minus sign domains (nodal cells) than those of the ground state wave function $\psi_0$, changing the sign of $f ( \bm r )$, and hindering Monte Carlo integration.
 
 \subsection{Auxiliary Field \acs{QMC} and the Fermion Sign Problem}
 \label{subsec:introAFQMC}

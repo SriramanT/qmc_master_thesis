@@ -311,8 +311,8 @@ In the following figures we give examples of this procedure for a Hubbard chain 
 \begin{figure}[H]
 \includegraphics[scale = 0.5]{Applications/muDens.png}
 \includegraphics[scale = 0.5]{Applications/muSignTMDbeta1.png}
-	\caption[Electron density as a function of chemical potential for a Hubbard chain. Average sign as a function of chemical potential for a simulation of a TMD nanoribbon using the minimal model described in chapter 2.]{Left: Electron density as a function of chemical potential for a Hubbard chain.
-	Right: Average sign as a function of chemical potential for a simulation of a TMD nanoribbon using the minimal model described in chapter 2 at $\beta = 1$ and $U = 14, 16, 18$.
+	\caption[Electron density as a function of chemical potential for a Hubbard chain. Average sign as a function of chemical potential for a simulation of a $9 \times 4$ TMD nanoribbon using the minimal model described in chapter 2.]{Left: Electron density as a function of chemical potential for a Hubbard chain.
+	Right: Average sign as a function of chemical potential for a simulation of a $9 \times 4$ TMD nanoribbon using the minimal model described in chapter 2 at $\beta = 1$ and $U = 14, 16, 18$.
 	The sign problem worsens as $U$ is increased.}
 	\label{fig:muSign}
 \end{figure}
@@ -329,10 +329,11 @@ In the following figures we give examples of this procedure for a Hubbard chain 
 	\label{fig:muDensU16signDens}
 \end{figure}
 \begin{figure}[H]
-\includegraphics[scale = 0.5]{Applications/signTMDdensSignU16beta2.png}
 \includegraphics[scale = 0.5]{Applications/signTMDmusDensU16beta2.png}
-	\caption[Average sign as a function of electron density for the same \acs{TMDNR} at $\beta = 2$, $U = 16$. Electron density as a function of the chemical potential. ]{Left: Average sign as a function of electron density for a \acs{TMDNR} at $\beta = 2$, $U = 16$. Right: Electron density as a function of the chemical potential. }
-	\label{fig:muDensU16}
+\includegraphics[scale = 0.5]{Applications/Local-av-sign.png}
+	\caption[Electron density as a function of the chemical potential for the $9 \times 4$ \acs{TMD} nanoribbon, with $\beta = 2$ and $U = 16$. Sign of the accepted configuration as a function for a few space-time sweeps of the algorithm.]{Left: Electron density as a function of the chemical potential for the $9 \times 4$ \acs{TMD} nanoribbon, with $\beta = 2$ and $U = 16$.
+	Right: Sign of the accepted configuration as a function for a few space-time sweeps of the algorithm, for the same \acs{TMDNR}; the red line is the local average of the sign.}
+	\label{fig:SignLoc}
 \end{figure}
 
 To prove that the half filled square lattice is sign problem-free we start by invoking two well known identities.

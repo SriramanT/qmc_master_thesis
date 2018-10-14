@@ -1,19 +1,19 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Modelling electron correlations in energy bands}{\reset@font\mtcSfont 16}{section.2.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Hubbard model}{\reset@font\mtcSfont 17}{section.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Electron correlations in narrow $d-$bands}{\reset@font\mtcSSfont 18}{subsection.2.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Hubbard Hamiltonian}{\reset@font\mtcSSfont 19}{subsection.2.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}Particle-hole symmetry}{\reset@font\mtcSSfont 21}{subsection.2.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Exact solutions for simple cases}{\reset@font\mtcSfont 22}{section.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}The purely atomic ( $\frac {U}{t} \rightarrow \infty $ ), single site limit}{\reset@font\mtcSSfont 23}{subsection.2.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}The non-interacting ($\frac {U}{t} = 0$) limit}{\reset@font\mtcSSfont 26}{subsection.2.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Exact Diagonalization. Effective $\frac {U}{t} \gg 1$ Heisenberg Model}{\reset@font\mtcSfont 29}{section.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Two-site calculation}{\reset@font\mtcSSfont 29}{subsection.2.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Degenerate perturbation theory}{\reset@font\mtcSSfont 31}{subsection.2.4.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Green's functions}{\reset@font\mtcSfont 32}{section.2.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Single site case}{\reset@font\mtcSSfont 32}{subsection.2.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Non-interacting case}{\reset@font\mtcSSfont 33}{subsection.2.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Magnetism and mean field theory}{\reset@font\mtcSfont 34}{section.2.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.1}Stoner criterion for ferromagnetism}{\reset@font\mtcSSfont 34}{subsection.2.6.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.2}Mean field theory of the Hubbard model}{\reset@font\mtcSSfont 35}{subsection.2.6.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.3}Self-consistent solution in the \ac {GCE}}{\reset@font\mtcSSfont 37}{subsection.2.6.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.7}Simulatable variants of the Hubbard model and TMDs}{\reset@font\mtcSfont 38}{section.2.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Modelling electron correlations in energy bands}{\reset@font\mtcSfont 15}{section.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Hubbard model}{\reset@font\mtcSfont 16}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Electron correlations in narrow $d-$bands}{\reset@font\mtcSSfont 17}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Hubbard Hamiltonian}{\reset@font\mtcSSfont 18}{subsection.2.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}Particle-hole symmetry}{\reset@font\mtcSSfont 20}{subsection.2.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Exact solutions for simple cases}{\reset@font\mtcSfont 21}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}The purely atomic ( $\frac {U}{t} \rightarrow \infty $ ), single site limit}{\reset@font\mtcSSfont 22}{subsection.2.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}The non-interacting ($\frac {U}{t} = 0$) limit}{\reset@font\mtcSSfont 25}{subsection.2.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Exact Diagonalization. Effective $\frac {U}{t} \gg 1$ Heisenberg Model}{\reset@font\mtcSfont 28}{section.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Two-site calculation}{\reset@font\mtcSSfont 28}{subsection.2.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Degenerate perturbation theory}{\reset@font\mtcSSfont 30}{subsection.2.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Green's functions}{\reset@font\mtcSfont 31}{section.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.1}Single site case}{\reset@font\mtcSSfont 31}{subsection.2.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.5.2}Non-interacting case}{\reset@font\mtcSSfont 32}{subsection.2.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Magnetism and mean field theory}{\reset@font\mtcSfont 33}{section.2.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.1}Stoner criterion for ferromagnetism}{\reset@font\mtcSSfont 33}{subsection.2.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.2}Mean field theory of the Hubbard model}{\reset@font\mtcSSfont 34}{subsection.2.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.6.3}Self-consistent solution in the \ac {GCE}}{\reset@font\mtcSSfont 36}{subsection.2.6.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.7}Simulatable variants of the Hubbard model and TMDs}{\reset@font\mtcSfont 37}{section.2.7}}

@@ -4,6 +4,21 @@
 \fancychapter{Conclusions and Future Work}
 \label{cap:conclusions}
 
-Conclusions Chapter
+In this work, we investigated edge-magnetism in \ac{TMD} nanoribbons by considering a minimal symmetry-based tight-binding model, and adding intra-orbital Hubbard-type on-site electron-electron interactions.
+We set up a mean field theory, arriving at a self-consistent equation, which we solved iteratively, arriving at the mean field phase diagram of Fig.(\ref{fig:pdMF}).
+In the zero temperature case, we found two phase transitions.
+We explained the mechanism that is behind them by looking at how the band structure changes in mean field as a function of the on-site (intra-orbital) interaction $U$, and inverse temperature $\beta$.
 
-%\cleardoublepage
+Then, we used our own implementation of the unbiased, and very accurate auxiliary field, or determinant \ac{QMC} algorithm to tackle the problem from a different, potentially more precise angle.
+Based on similar studies for graphene, we looked for long range magnetic order by analyzing the $S^z$ spin-spin correlation functions (since spin-orbit coupling selects a preferred spin orientation).
+We found that, while the sign problem limits our simulations, it does not impede us to extract conclusions from them.
+However, the amount of computer time required to do so grows considerably.
+The fact that we consider 3 orbitals and a correspondingly less sparse hopping matrix means that both the complexity of the model, and the run time of the algorithm are increased.
+In practice this means that because of the presence of 3 orbitals, we must run the code for much longer to simulate systems of size comparable to the ones usually done in simulations involving graphene nanoribbons, and for which long range order can be accurately investigated.
+For the combination of parameters we took, this amounts to about $20 \times$ more computer time than for the comparable graphene-based systems (a factor of $(3 /2)^3$ due to the increased number of orbitals since the algorithm scales as $\mathcal{O}(\beta N^3)$, $N$ being the total size of the system - sites \emph{plus} orbitals - and a factor $\left\langle \text{sign} \right\rangle^{-2}$ due to the presence of the sign problem in the relevant region of parameter space.
+
+Our preliminary results for the orbital-resolved spin-spin correlation functions along the rows of the ribbon are promising. Correlations along the edge rows tend to larger than those along the bulk rows, and we notice that, while the magnetic ordering is certainly not as simple as our mean field calculation suggests, certain features of it seem to emerge, namely the fact that only one edge becomes magnetized (for example the $0$ edge on the upper right panel of Fig.(\ref{fig:tmd-data}).
+
+We shall continue this work by a more thorough analysis of the spin-spin correlation functions of these systems, and by carrying out larger scale simulations to characterize edge-magnetism in \acp{TMDNR} in a more accurate,  conclusive manner.
+
+\clearpage
