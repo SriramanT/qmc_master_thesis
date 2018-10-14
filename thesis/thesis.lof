@@ -1,0 +1,123 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {portuguese}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Introduction}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Graphene monolayer; graphene's dispersion relation.}}{4}{figure.caption.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces \ac {TMD} monolayer condensing in its 2H phase. $M-X$ honeycomb lattice. Unit cell of the trigonal prismatic (2H) phase of a \ac {TMD} monolayer. High symmetry points of the corresponding hexagonal lattice's reciprocal space.}}{5}{figure.caption.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.4}{\ignorespaces (TEM) images of graphene nanoribbons. Fabrication of \ac {TMD} nanoribbons.}}{6}{figure.caption.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Structure and electronic properties of \ac {TMD} monolayers.}}{7}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Zigzag edges of a nanoribbon and magnetism. Orbital projected band structures for monolayer $\text {Mo}\text {S}_2$ obtained from first principles.}}{7}{figure.caption.25}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Minimal models of electron correlations}{15}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphical comparison between the Ising and the Hubbard models.}}{16}{figure.caption.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Hydrogen atomic wave functions.}}{17}{figure.caption.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Electron density in the purely atomic limit of the Hubbard model. Magnetization as a function of temperature $\left \delimiter "426830A m^2 \right \delimiter "526930B (T)$ in the single site Hubbard model for varying chemical potential $\mu $.}}{24}{figure.caption.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Magnetization as a function of the on-site interaction $\left \delimiter "426830A m^2 \right \delimiter "526930B (U)$, and vice-versa, in the single site Hubbard model for varying temperature $T$.}}{25}{figure.caption.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Dispersion relations for the \acs {1D} chain and the square lattice in the non-interacting case.}}{28}{figure.caption.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Density of states of the \acs {1D} tight-binding model.}}{33}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Mean field results for the \acs {1D} Hubbard model.}}{35}{figure.caption.38}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Auxiliary Field Quantum Monte Carlo}{39}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Evolution of the probability of accepted configurations.}}{50}{figure.caption.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Exponentially divergent diagonal entries of $\bm {D}'$, showing the orders of magnitude spanned by the matrix elements of the stabilized matrix product.}}{59}{figure.caption.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Condition number of $\bm {M}_l = \DOTSB \prod@ \slimits@ _l \bm {B}_l$ obtained by multiplying $\bm {B}$-matrices naively. Absolute values of the diagonal entries of $\bm {D}'$ and corresponding condition number of the matrix to invert to obtain the Green's function.}}{60}{figure.caption.47}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Applications and original results}{63}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Spin-spin correlation function, magnetic structure factor, and susceptibility for a 64 site Hubbard chain at $\beta = 25 t$, for $U = 4$.}}{64}{figure.caption.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The magnetic structure factor and the susceptibility have a peak at $q = \pi $ that increases as $T\rightarrow 0$, indicating \emph {antiferromagnetic ordering}. Divergence of the staggered susceptibility near $T_c = 0$, signaling the transition to the antiferromagnetic ground state.}}{64}{figure.caption.50}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison of the magnetic structure factor with that obtained using \texttt {QUEST}. Run time comparison.}}{65}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Convergence of some of the measured observables to the value given by exact diagonalization for $N=2$, $\beta = 2 t$, $U = 4 t$. Comparison with the results of \texttt {QUEST}.}}{65}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Mean field phase diagram of the Hubbard model. \ac {QMC} data showing the decrease of the double occupancy with increasing $U$.}}{65}{figure.caption.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Spin-spin correlations on the square lattice. Magnetic structure factors showing a peak at $\bm {q} = \bm {\pi }$.}}{66}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Color map of the structure factor $S ( \bm {q})$, and susceptibility $\chi ( \bm {q})$, both showing peaks at $\bm {q} = \bm {\pi }$.}}{66}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces $S ( \bm {\pi }) $ for varying system size and inverse temperature. Infinite system extrapolation of long range order.}}{67}{figure.caption.57}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Boundary conditions on the nanoribbon. Spin-spin correlations of a strained zig-zag graphene nanoribbon.}}{68}{figure.caption.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Magnetic structure factor $S(\bm {q})$ for a strained graphene nanoribbon: bulk and edges.}}{69}{figure.caption.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Spin-spin correlation function profile along the longitudinal direction $x$ of the ribbon. Magnetization parameter along each row, as a function of the transverse coordinate $y$. }}{69}{figure.caption.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Divergence of the edge susceptibility when approaching the critical temperature. Linear fit used to obtain the critical temperature of the transition to the edge-magnetized phase.}}{70}{figure.caption.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Filling $\nu $ as a function of the Fermi energy $\varepsilon _F$ for a \acs {TMD} monolayer and a nanoribbon. $\text {Mo}\text {S}_2$. \acs {TMDNR} band structure obtained by the 3-band model.}}{71}{figure.caption.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Comparison between the zero temperature MF solutions of the Hubbard model for a graphene nanoribbon(GNR) and a \acs {TMDNR}}}{72}{figure.caption.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Mean field phase diagram at zero temperature. Zoom-in of the first phase transition.}}{72}{figure.caption.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Zoom-in of the second phase transition (as $U$ is increased). Band structure of the free-fermion problem.}}{73}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.17}{\ignorespaces $T=0$ mean field band structure for a \ac {TMDNR} of width $N_y = 16$ in the ordered phase, at $U=20$.}}{73}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Spin-resolved band structures for varying $U$ and $\beta $, compared with the tight-binding bands.}}{74}{figure.caption.72}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Localized edge states on the top and on the bottom of the ribbon for the different orbitals. Resulting magnetization profile along the ribbon's transverse direction due to higher spin up than spin down occupation.}}{75}{figure.caption.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Comparison of the band structures at $U = 15.2$, and $U=15.4$.}}{75}{figure.caption.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Mean field phase diagram for varying $U$ and $\beta $. Average sign as a function of electron density, obtained by running our determinant \ac {QMC} code for a $9 \times 4$ \acs {TMDNR} at $\beta = 2$, $U = 16$.}}{75}{figure.caption.75}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Longitudinal profile (along the $x$ direction) of orbital-resolved $S^z$ spin-spin correlation functions we measured, for two lattice sizes: $9 \times 4$ and $9 \times 6$.}}{76}{figure.caption.76}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Conclusions and Future Work}{77}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Obtaining the Hubbard Model. Approximate Solutions}{A-1}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Configuration of the Hubbard model on the square lattice with a hole and a doubly occupied site.}}{A-5}{figure.caption.81}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Example of the minimization of the grandpotential functional.}}{A-12}{figure.caption.83}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Formulating Auxiliary Field Quantum Monte Carlo}{B-1}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Average sign as a function of chemical potential/electron density for a Hubbard chain.}}{B-6}{figure.caption.85}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Electron density as a function of chemical potential for a Hubbard chain. Average sign as a function of chemical potential for a simulation of a $9 \times 4$ TMD nanoribbon using the minimal model described in chapter 2.}}{B-6}{figure.caption.86}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Average sign as a function of electron density for the minimal Hubbard model of \acs {TMDNR}s. Electron density as a function of chemical potential.}}{B-6}{figure.caption.87}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Average sign as a function of chemical potential for the same system, and for a system at lower temperature ($\beta = 2$), and fixed on-site/orbital interaction $U = 16$.}}{B-7}{figure.caption.88}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Electron density as a function of the chemical potential for the $9 \times 4$ \acs {TMD} nanoribbon, with $\beta = 2$ and $U = 16$. Sign of the accepted configuration as a function for a few space-time sweeps of the algorithm.}}{B-7}{figure.caption.89}

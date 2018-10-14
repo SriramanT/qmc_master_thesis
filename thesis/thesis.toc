@@ -1,0 +1,145 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {portuguese}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Strongly correlated electron systems}{2}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Beyond graphene: TMD nanoribbons}{4}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}Electronic properties}{6}{subsection.1.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.2}Nanoribbons}{6}{subsection.1.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.3}Effective three-band minimal tight-binding model}{8}{subsection.1.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Introduction to \acl {QMC}}{9}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.1}Variational Monte Carlo}{11}{subsection.1.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.2}Diffusion Monte Carlo and projective methods}{11}{subsection.1.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.3}Auxiliary Field \acs {QMC} and the Fermion Sign Problem}{12}{subsection.1.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Original Contributions}{14}{section.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Outline}{14}{section.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Minimal models of electron correlations}{15}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Modelling electron correlations in energy bands}{15}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Hubbard model}{16}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Electron correlations in narrow $d-$bands}{17}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Hubbard Hamiltonian}{18}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Particle-hole symmetry}{20}{subsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Exact solutions for simple cases}{21}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}The purely atomic ( $\frac {U}{t} \rightarrow \infty $ ), single site limit}{22}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}The non-interacting ($\frac {U}{t} = 0$) limit}{25}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Exact Diagonalization. Effective $\frac {U}{t} \gg 1$ Heisenberg Model}{28}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Two-site calculation}{28}{subsection.2.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Degenerate perturbation theory}{30}{subsection.2.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Green's functions}{31}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.1}Single site case}{31}{subsection.2.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.2}Non-interacting case}{32}{subsection.2.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Magnetism and mean field theory}{33}{section.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.1}Stoner criterion for ferromagnetism}{33}{subsection.2.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.2}Mean field theory of the Hubbard model}{34}{subsection.2.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.3}Self-consistent solution in the \ac {GCE}}{36}{subsection.2.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Simulatable variants of the Hubbard model and TMDs}{37}{section.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Auxiliary Field Quantum Monte Carlo}{39}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Monte Carlo Method in Classical Statistical Physics}{39}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Theoretical Framework and Mathematical Formulation}{45}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Trotter-Suzuki Decomposition}{46}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Hubbard-Stratonovich transformation}{47}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}Single-particle propagators and the fermionic trace}{48}{subsection.3.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.4}Monte Carlo sampling of the Hubbard Stratonovich field}{50}{subsection.3.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.5}Checkerboard Breakup}{52}{subsection.3.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Measurements}{53}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Obtaining observables in terms of Green's functions}{54}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Correlation functions}{55}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Imaginary-time displaced Green's functions and susceptibilities}{56}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Stabilization}{56}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Stable matrix multiplication}{58}{subsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Inverting to obtain the Green's function}{59}{subsection.3.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.3}Storing partial products and time-displaced Green's function}{61}{subsection.3.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Applications and original results}{63}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}One-dimensional Chain}{63}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Square lattice}{65}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Nanoribbons}{67}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Graphene}{67}{subsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}\acp {TMD}}{70}{subsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{77}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{78}{section*.80}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Appendix \numberline {A}Obtaining the Hubbard Model. Approximate Solutions}{A-1}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Hartree-Fock Approximation and the Self Consistent Field}{A-1}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Mott insulators}{A-3}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Computing the partition function for a quadratic Hamiltonian}{A-6}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Density of states for a 1D tight binding model}{A-7}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Effective Heisenberg model as the atomic limit of the Hubbard model}{A-7}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.6}On Wick's theorem}{A-9}{section.A.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.7}Mean field theory and the variational principle}{A-10}{section.A.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Appendix \numberline {B}Formulating Auxiliary Field Quantum Monte Carlo}{B-1}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}Casting the fermionic trace as a determinant}{B-1}{section.B.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}Rank-one updates of the Green's function}{B-3}{section.B.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.3}Particle-hole symmetry and the sign problem}{B-5}{section.B.3}
