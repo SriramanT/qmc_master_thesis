@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  15 OCT 2018 06:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  15 OCT 2018 10:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -211,7 +211,11 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \mult@nat@firstbox=\box59
 \colbreak@box=\box60
 \mc@col@check@num=\count98
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip63
 
@@ -249,7 +253,7 @@ LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count104
 \c@MaxMatrixCols=\count105
-\dotsspace@=\muskip10
+\dotsspace@=\muskip11
 \c@parentequation=\count106
 \dspbrk@lvl=\count107
 \tag@help=\toks17
@@ -318,10 +322,6 @@ Package: logreq 2010/08/04 v1.0 xml request logger
 (/usr/local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
@@ -665,35 +665,23 @@ LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
 
 LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
 
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
 )
 \openout1 = `ExtendedAbstract.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 160.
+LaTeX Info: Redefining \selectfont on input line 161.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -737,14 +725,14 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ExtendedAbstract.bbl' found.
 
 (./ExtendedAbstract.bbl)
-Package biblatex Info: Reference section=0 on input line 160.
-Package biblatex Info: Reference segment=0 on input line 160.
-LaTeX Font Info:    Try loading font information for U+msa on input line 176.
+Package biblatex Info: Reference section=0 on input line 161.
+Package biblatex Info: Reference segment=0 on input line 161.
+LaTeX Font Info:    Try loading font information for U+msa on input line 177.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 176.
+LaTeX Font Info:    Try loading font information for U+msb on input line 177.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -778,10 +766,10 @@ Package pdftex.def Info: images/tmd2.png  used on input line 26.
 <images/energiesTMDs.png, id=17, 945.5325pt x 594.72188pt>
 File: images/energiesTMDs.png Graphic file (type png)
 <use images/energiesTMDs.png>
-Package pdftex.def Info: images/energiesTMDs.png  used on input line 35.
+Package pdftex.def Info: images/energiesTMDs.png  used on input line 36.
 (pdftex.def)             Requested size: 189.10315pt x 118.94226pt.
 
-Underfull \hbox (badness 1742) in paragraph at lines 53--56
+Underfull \hbox (badness 1742) in paragraph at lines 54--57
 \OT1/cmr/m/n/10 where we con-sider the ba-sis set $\OMS/cmsy/m/n/10 f[]g[] \OT1
 /cmr/m/n/10 =
  []
@@ -790,12 +778,12 @@ Underfull \hbox (badness 1742) in paragraph at lines 53--56
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./images/tmd2.png> <./images/energiesTMDs.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 72--82
+Underfull \hbox (badness 10000) in paragraph at lines 73--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--82
+Underfull \hbox (badness 10000) in paragraph at lines 73--83
 
  []
 
@@ -806,7 +794,7 @@ Left:97.65192pt
 Right:94.50034pt
 Output:97.65192pt
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--91
+Underfull \hbox (badness 10000) in paragraph at lines 85--92
 
  []
 
@@ -820,7 +808,7 @@ Left:47.97221pt
 Right:46.0pt
 Output:47.97221pt
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--100
+Underfull \hbox (badness 10000) in paragraph at lines 98--103
 
  []
 
@@ -828,58 +816,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--100
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \vbox (7.05556pt too high) has occurred while \output is active []
+Underfull \vbox (badness 6252) has occurred while \output is active []
 
-Extra height:0.0pt when 26.94444pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:26.94444pt Right:34.0pt Output:26.94444pt
+Extra height:34.0pt when 49.97221pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(2)Left:34.0pt Right:34.0pt Output:34.0pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:34.0pt when 50.97221pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 51.97221pt
+(2)Left:51.97221pt Right:46.0pt Output:51.97221pt
 - LAST -
-Left:34.0pt
-Right:34.0pt
-Output:34.0pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+Left:51.97221pt
+Right:46.0pt
+Output:51.97221pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-Overfull \hbox (10.92178pt too wide) detected at line 185
+Overfull \hbox (10.92178pt too wide) detected at line 201
 \OML/cmm/b/it/10 h[] \OT1/cmr/m/n/10 = []
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 143--186
-\OT1/cmr/m/n/10 since we con-sider PBCs along the $\OML/cmm/m/it/10 x$\OT1/cmr/
-m/n/10 -direction,
+Underfull \hbox (badness 3536) in paragraph at lines 159--202
+\OT1/cmr/m/n/10 for the nanorib-bon, we can par-tially di-ag-o-
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 143--186
-\OT1/cmr/m/n/10 we can par-tially di-ag-o-nal-ize the Hamil-to-nian
+Underfull \hbox (badness 5217) in paragraph at lines 159--202
+\OT1/cmr/m/n/10 nal-ize the Hamil-to-nian an-a-lyt-i-cally, re-duc-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--186
-
+Underfull \hbox (badness 1565) in paragraph at lines 159--202
+\OT1/cmr/m/n/10 the size of the ma-trix to be di-ag-o-nal-ized to
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 159--202
 
-Extra height:0.0pt when 457.00066pt
-(2)Left:457.00066pt Right:452.0pt Output:457.00066pt
+ []
+
+Extra height:0.0pt when 521.7088pt
+(2)Left:521.7088pt Right:524.95792pt Output:521.7088pt
+(2)Left:524.95792pt Right:524.95792pt Output:524.95792pt
 - LAST -
-Left:457.00066pt
-Right:452.0pt
-Output:457.00066pt
- [4]
+Left:524.95792pt
+Right:524.95792pt
+Output:524.95792pt
+[4]
 Extra height:0.0pt when 0.0pt
 (2)Left:0.0pt Right:0.0pt Output:0.0pt
 - LAST -
@@ -887,27 +878,28 @@ Left:0.0pt
 Right:0.0pt
 Output:0.0pt
 
-
-LaTeX Warning: Reference `fig:nanoGraphVsTMD' on page 5 undefined on input line
- 189.
-
-
-Underfull \hbox (badness 1838) in paragraph at lines 186--202
-\OT1/cmr/m/n/10 the 3-band model with Hubbard-type in-ter-ac-
+Underfull \hbox (badness 1342) in paragraph at lines 202--219
+\OT1/cmr/m/n/10 Hubbard-type in-ter-ac-tions, we ob-tain so-lu-tions
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 186--202
-\OT1/cmr/m/n/10 which mo-ti-vates us to re-duce the num-ber of
+Underfull \hbox (badness 3861) in paragraph at lines 202--219
+\OT1/cmr/m/n/10 that are in-de-pen-dent of $\OML/cmm/m/it/10 x$ \OT1/cmr/m/n/10
+ (the lon-gi-tu-di-nal
  []
 
 
-Underfull \hbox (badness 2980) in paragraph at lines 186--202
-\OT1/cmr/m/n/10 MF pa-ram-e-ters by choos-ing a trans-la-tion-ally
+Underfull \hbox (badness 2119) in paragraph at lines 202--219
+\OT1/cmr/m/n/10 to re-duce the num-ber of MF pa-ram-e-ters by
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--202
+Underfull \hbox (badness 7814) in paragraph at lines 202--219
+\OT1/cmr/m/n/10 choos-ing the trans-la-tion-ally in-vari-ant ansatz
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--219
 
  []
 
@@ -917,236 +909,178 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:0.0pt when 95.97221pt
+Extra height:10.0pt when 101.97221pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(2)Left:95.97221pt Right:94.0pt Output:95.97221pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 102.97221pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 103.97221pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 104.97221pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:10.0pt when 105.97221pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Extra height:0.0pt when 106.97221pt
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+(2)Left:106.97221pt Right:94.0pt Output:106.97221pt
 - LAST -
-Left:95.97221pt
+Left:106.97221pt
 Right:94.0pt
-Output:95.97221pt
+Output:106.97221pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 220--226
+Underfull \hbox (badness 1418) in paragraph at lines 237--243
 \OT1/cmr/m/n/10 electron wave-func-tion un-der elec-tron ex-change.
  []
 
-
-Underfull \vbox (badness 3954) has occurred while \output is active []
-
- [5]
-Overfull \hbox (2.84145pt too wide) detected at line 274
+[5]
+Overfull \hbox (2.84145pt too wide) detected at line 291
 []
  []
 
-[6]
-Overfull \hbox (46.10103pt too wide) detected at line 328
-\OML/cmm/m/it/10 Z \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 c[]\OT1/cmr/m/n/10 )[][]
-[] [] [] [] [] [] []\OML/cmm/m/it/10 ;
- []
-
-) (./ExtendedAbstract_imple.tex
-<images/LongitudinalProfile.png, id=48, 389.2944pt x 255.71535pt>
-File: images/LongitudinalProfile.png Graphic file (type png)
-<use images/LongitudinalProfile.png>
-Package pdftex.def Info: images/LongitudinalProfile.png  used on input line 18.
-
-(pdftex.def)             Requested size: 170.71652pt x 112.1405pt.
-<images/fityang2017.png, id=49, 383.031pt x 260.05154pt>
-File: images/fityang2017.png Graphic file (type png)
-<use images/fityang2017.png>
-Package pdftex.def Info: images/fityang2017.png  used on input line 25.
-(pdftex.def)             Requested size: 170.71652pt x 115.90707pt.
-<images/s_compare.png, id=50, 378.9357pt x 257.40166pt>
-File: images/s_compare.png Graphic file (type png)
-<use images/s_compare.png>
-Package pdftex.def Info: images/s_compare.png  used on input line 31.
-(pdftex.def)             Requested size: 170.71652pt x 115.96713pt.
-<images/OrdersOfMagnitude_N=64sites.png, id=51, 433.62pt x 289.08pt>
+[6]) (./ExtendedAbstract_imple.tex
+<images/OrdersOfMagnitude_N=64sites.png, id=48, 393.75105pt x 254.1495pt>
 File: images/OrdersOfMagnitude_N=64sites.png Graphic file (type png)
 <use images/OrdersOfMagnitude_N=64sites.png>
 Package pdftex.def Info: images/OrdersOfMagnitude_N=64sites.png  used on input 
-line 42.
-(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
- [7 <./images/LongitudinalProfile.png> <./images/fityang2017.png> <./images/s_c
-ompare.png>]) (./ExtendedAbstract_resul.tex
-<images/freeBands.png, id=62, 433.62pt x 289.08pt>
-File: images/freeBands.png Graphic file (type png)
-<use images/freeBands.png>
-Package pdftex.def Info: images/freeBands.png  used on input line 22.
-(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
-<images/magProf.png, id=63, 384.4764pt x 268.41078pt>
+line 22.
+(pdftex.def)             Requested size: 213.39566pt x 137.73506pt.
+ [7]
+<images/s_compare.png, id=55, 378.9357pt x 257.40166pt>
+File: images/s_compare.png Graphic file (type png)
+<use images/s_compare.png>
+Package pdftex.def Info: images/s_compare.png  used on input line 30.
+(pdftex.def)             Requested size: 213.39566pt x 144.95695pt.
+<images/LongitudinalProfile.png, id=56, 389.2944pt x 255.71535pt>
+File: images/LongitudinalProfile.png Graphic file (type png)
+<use images/LongitudinalProfile.png>
+Package pdftex.def Info: images/LongitudinalProfile.png  used on input line 40.
+
+(pdftex.def)             Requested size: 213.39566pt x 140.17563pt.
+<images/fityang2017.png, id=57, 383.031pt x 260.05154pt>
+File: images/fityang2017.png Graphic file (type png)
+<use images/fityang2017.png>
+Package pdftex.def Info: images/fityang2017.png  used on input line 49.
+(pdftex.def)             Requested size: 213.39566pt x 144.88583pt.
+) (./ExtendedAbstract_resul.tex
+<images/magProf.png, id=58, 384.4764pt x 268.41078pt>
 File: images/magProf.png Graphic file (type png)
 <use images/magProf.png>
-Package pdftex.def Info: images/magProf.png  used on input line 29.
+Package pdftex.def Info: images/magProf.png  used on input line 21.
+(pdftex.def)             Requested size: 192.23772pt x 134.20506pt.
+<images/freeBands.png, id=59, 433.62pt x 289.08pt>
+File: images/freeBands.png Graphic file (type png)
+<use images/freeBands.png>
+Package pdftex.def Info: images/freeBands.png  used on input line 27.
+(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
+
+Underfull \vbox (badness 5260) has occurred while \output is active []
+
+ [8 <./images/OrdersOfMagnitude_N=64sites.png> <./images/s_compare.png> <./imag
+es/LongitudinalProfile.png> <./images/fityang2017.png>]
+File: images/magProf.png Graphic file (type png)
+<use images/magProf.png>
+Package pdftex.def Info: images/magProf.png  used on input line 34.
 (pdftex.def)             Requested size: 170.71652pt x 119.18234pt.
-<images/edge-mag.pdf, id=64, 1027.84pt x 770.88pt>
+<images/edge-mag.pdf, id=68, 1027.84pt x 770.88pt>
 File: images/edge-mag.pdf Graphic file (type pdf)
 <use images/edge-mag.pdf>
-Package pdftex.def Info: images/edge-mag.pdf  used on input line 35.
+Package pdftex.def Info: images/edge-mag.pdf  used on input line 40.
 (pdftex.def)             Requested size: 215.85277pt x 141.57376pt.
-<images/edge-mag-phase-diagram.png, id=66, 384.2355pt x 254.1495pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<images/edge-mag-phase-diagram.png, id=70, 384.2355pt x 254.1495pt>
 File: images/edge-mag-phase-diagram.png Graphic file (type png)
 <use images/edge-mag-phase-diagram.png>
 Package pdftex.def Info: images/edge-mag-phase-diagram.png  used on input line 
-42.
+47.
 (pdftex.def)             Requested size: 192.11728pt x 127.07443pt.
-<images/bands152.png, id=67, 548.38477pt x 375.65945pt>
+<images/bands_Nx=512.png, id=71, 540.00143pt x 372.04596pt>
+File: images/bands_Nx=512.png Graphic file (type png)
+<use images/bands_Nx=512.png>
+Package pdftex.def Info: images/bands_Nx=512.png  used on input line 54.
+(pdftex.def)             Requested size: 170.71652pt x 117.61519pt.
+<images/bands152.png, id=72, 548.38477pt x 375.65945pt>
 File: images/bands152.png Graphic file (type png)
 <use images/bands152.png>
-Package pdftex.def Info: images/bands152.png  used on input line 49.
+Package pdftex.def Info: images/bands152.png  used on input line 61.
 (pdftex.def)             Requested size: 170.71652pt x 116.94618pt.
-<images/bands154.png, id=68, 548.38477pt x 375.65945pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./images/edge-mag.pdf> <./images/magProf.png> <./images/freeBands.png> <./
+images/edge-mag-phase-diagram.png> <./images/bands_Nx=512.png>]
+<images/bands154.png, id=101, 548.38477pt x 375.65945pt>
 File: images/bands154.png Graphic file (type png)
 <use images/bands154.png>
-Package pdftex.def Info: images/bands154.png  used on input line 56.
+Package pdftex.def Info: images/bands154.png  used on input line 68.
 (pdftex.def)             Requested size: 170.71652pt x 116.94618pt.
-<images/bottomEdgeMagProfU154.png, id=69, 1054.94125pt x 705.13437pt>
+<images/bottomEdgeMagProfU154.png, id=102, 1054.94125pt x 705.13437pt>
 File: images/bottomEdgeMagProfU154.png Graphic file (type png)
 <use images/bottomEdgeMagProfU154.png>
-Package pdftex.def Info: images/bottomEdgeMagProfU154.png  used on input line 6
-3.
+Package pdftex.def Info: images/bottomEdgeMagProfU154.png  used on input line 7
+5.
 (pdftex.def)             Requested size: 170.71652pt x 114.10417pt.
-<images/topEdgeMagProfU13.png, id=70, 1055.44313pt x 704.13063pt>
+<images/topEdgeMagProfU13.png, id=103, 1055.44313pt x 704.13063pt>
 File: images/topEdgeMagProfU13.png Graphic file (type png)
 <use images/topEdgeMagProfU13.png>
-Package pdftex.def Info: images/topEdgeMagProfU13.png  used on input line 70.
+Package pdftex.def Info: images/topEdgeMagProfU13.png  used on input line 82.
 (pdftex.def)             Requested size: 170.71652pt x 113.88803pt.
-
-[8 <./images/edge-mag.pdf> <./images/OrdersOfMagnitude_N=64sites.png> <./images
-/freeBands.png> <./images/magProf.png> <./images/edge-mag-phase-diagram.png> <.
-/images/bands152.png> <./images/bands154.png> <./images/bottomEdgeMagProfU154.p
-ng>]
-<images/signTMDdensSignU16beta2.png, id=102, 433.62pt x 289.08pt>
+<images/signTMDdensSignU16beta2.png, id=104, 433.62pt x 289.08pt>
 File: images/signTMDdensSignU16beta2.png Graphic file (type png)
 <use images/signTMDdensSignU16beta2.png>
 Package pdftex.def Info: images/signTMDdensSignU16beta2.png  used on input line
- 77.
+ 89.
 (pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
-<images/tmdFinalxyxy.png, id=103, 433.62pt x 131.96503pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<images/tmdFinalxyxy.png, id=105, 433.62pt x 131.96503pt>
 File: images/tmdFinalxyxy.png Graphic file (type png)
 <use images/tmdFinalxyxy.png>
-Package pdftex.def Info: images/tmdFinalxyxy.png  used on input line 84.
+Package pdftex.def Info: images/tmdFinalxyxy.png  used on input line 96.
 (pdftex.def)             Requested size: 170.71652pt x 51.95544pt.
-<images/tmdFinalx2y2z2.png, id=104, 433.62pt x 128.78514pt>
+<images/tmdFinalx2y2z2.png, id=106, 433.62pt x 128.78514pt>
 File: images/tmdFinalx2y2z2.png Graphic file (type png)
 <use images/tmdFinalx2y2z2.png>
-Package pdftex.def Info: images/tmdFinalx2y2z2.png  used on input line 91.
+Package pdftex.def Info: images/tmdFinalx2y2z2.png  used on input line 103.
 (pdftex.def)             Requested size: 170.71652pt x 50.7035pt.
-<images/bands_Nx=512.png, id=105, 540.00143pt x 372.04596pt>
-File: images/bands_Nx=512.png Graphic file (type png)
-<use images/bands_Nx=512.png>
-Package pdftex.def Info: images/bands_Nx=512.png  used on input line 98.
-(pdftex.def)             Requested size: 170.71652pt x 117.61519pt.
-) (./ExtendedAbstract_concl.tex) (./ExtendedAbstract_ackno.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 Atom-i-cally Thin Car-
- []
+)
+(./ExtendedAbstract_concl.tex) (./ExtendedAbstract_ackno.tex) [10 <./images/ban
+ds152.png> <./images/bands154.png> <./images/bottomEdgeMagProfU154.png> <./imag
+es/topEdgeMagProfU13.png> <./images/signTMDdensSignU16beta2.png> <./images/tmdF
+inalxyxy.png> <./images/tmdFinalx2y2z2.png>] [11
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 666{669. \OT1/cmr/m/sc/7 issn\OT1/cmr/m/n/7 : 0036-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 D. Three-band tight-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 si-tion metal dichalco-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-[]\OT1/cmr/m/n/7 Troyer, M. & Wiese,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 U.[]J. Com-pu-ta-tional
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 Com-plex-ity and Fun-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 da-men-tal Lim-i-ta-tions
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/it/7 Phys-i-cal Re-view Let-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 tar, R. & Ya-mazaki,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/it/7 in Con-tem-po-rary Ap-
- []
-
-
-Underfull \hbox (badness 5359) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 HIGHER ED-U-CA-TION
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 978-981-4273-25-1 978-
- []
-
-
-Underfull \hbox (badness 8113) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 981-4273-26-8. doi:$\OT1/cmtt/m/n/7 10 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmtt/m/n/7 1142 / 9789814273268 _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmtt/m/n/7 9789814273268 _ 0001$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-[]\OT1/cmr/m/n/7 Hirsch, J. Dis-crete
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 Hubbard-Stratonovich
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 trans-for-ma-tion for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
-\OT1/cmr/m/n/7 fermion lat-tice mod-
- []
-
-[9 <./images/topEdgeMagProfU13.png> <./images/signTMDdensSignU16beta2.png> <./i
-mages/tmdFinalxyxy.png> <./images/tmdFinalx2y2z2.png> <./images/bands_Nx=512.pn
-g>] (./ExtendedAbstract.aux)
-
-LaTeX Warning: There were undefined references.
-
+] (./ExtendedAbstract.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1155,13 +1089,13 @@ Package logreq Info: Writing requests to 'ExtendedAbstract.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11625 strings out of 492649
- 196277 string characters out of 6129622
- 668255 words of memory out of 5000000
- 15260 multiletter control sequences out of 15000+600000
+ 11643 strings out of 492649
+ 196936 string characters out of 6129622
+ 668662 words of memory out of 5000000
+ 15278 multiletter control sequences out of 15000+600000
  18705 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,29n,45p,1510b,1257s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,29n,45p,1510b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
@@ -1191,10 +1125,10 @@ st/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2018/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on ExtendedAbstract.pdf (9 pages, 8796321 bytes).
+Output written on ExtendedAbstract.pdf (11 pages, 8806446 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 215 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

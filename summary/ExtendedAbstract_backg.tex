@@ -26,12 +26,13 @@ Near the Fermi energy, the $\text{Mo}$ $d$-orbitals are clearly more populated a
 \includegraphics[scale = 0.2]{images/tmd2.png}
  \caption{(a) The 2H phase of a  TMD monolayer may be viewed simply as a $M-X$ honeycomb lattice. Here we represent the six nearest neighbors of a point on the $M$ triangular lattice by the real space vectors $\bm R_{i = 1,2,..., 6}$.
 (b) Unit cell of the trigonal prismatic (2H) phase of a TMD monolayer.
-(c) High symmetry points $\Gamma, M, K$ of the first Brillouin zone ($\bm b_{1,2}$ are the reciprocal basis vectors).\label{fig:tmdHex}}
+(c) High symmetry points $\Gamma, M, K$ of the first Brillouin zone ($\bm b_{1,2}$ are the reciprocal basis vectors.\label{fig:tmdHex} (taken from \cite{liu_three-band_2013}). }
 \end{figure}
-The existence of mirror symmetry through the $x-y$ plane (see Fig.(\ref{fig:tmdHex})) imposes that no hybridization can occur between the sets of orbitals $\{d_{z^2}, d_{xy}, d_{x^2 - y^2} \}$ and $\{d_{xz}, d_{yz} \}$ ($d_{yz}$ and $d_{xz}$ orbitals are not symmetric under reflection upon the $x-y$ plane).
+The existence of mirror symmetry through the $x-y$ plane (see Fig.(\ref{fig:tmdHex}b)) imposes that no hybridization can occur between the sets of orbitals $\{d_{z^2}, d_{xy}, d_{x^2 - y^2} \}$ and $\{d_{xz}, d_{yz} \}$ ($d_{yz}$ and $d_{xz}$ orbitals are not symmetric under reflection upon the $x-y$ plane).
 At low energies, the former are known to be the most relevant for the band structure of TMDs (see Fig.(\ref{fig:nanoribbons_energiesTMDs})).
 These considerations motivate us to construct a three-band tight-binding model.
 \begin{figure}[H]
+\centering
 \includegraphics[scale = 0.2]{images/energiesTMDs}
  \caption{Orbital projected band structures for monolayer $\text{Mo}\text{S}_2$ obtained from first principles.
 The Fermi energy is set to 0, and the symbol size is proportional to the population of the state.
@@ -61,7 +62,7 @@ t_{11} &= t_{11}^{22} ( \bm R_1 ) \quad t_{12} = t_{12}^{22} ( \bm R_1 ) \quad t
 \end{split}
 \end{equation*}
 
-The on-site energies $\varepsilon_j$ corresponding to the atomic orbitals $\left| \phi_\mu^j \right\rangle$ appear through a diagonal hopping matrix in orbital space $\bm t ( \bm 0 ) \equiv \bm t^0 = \text{diag} ( \varepsilon_1, \varepsilon_2, \varepsilon_2 )$, while the NN hoppings are (see Fig.(\ref{fig:tmdHex}))
+The on-site energies $\varepsilon_j$ corresponding to the atomic orbitals $\left| \phi_\mu^j \right\rangle$ appear through a diagonal hopping matrix in orbital space $\bm t ( \bm 0 ) \equiv \bm t^0 = \text{diag} ( \varepsilon_1, \varepsilon_2, \varepsilon_2 )$, while the NN hoppings are (see Fig.(\ref{fig:tmdHex}a))
 \begin{equation}
 \bm t (\bm R_{1, 4}) \equiv \bm t^{1, 4} =
 \begin{pmatrix}
@@ -92,7 +93,9 @@ Then, the intra-orbital Hubbard-like model corresponding to this minimal 3-band 
 
 \subsection{Self-consistent solution in the GCE}\label{subsec:selfconsistent}
 
-Here, we show how to solve the mean field Hamiltonian in an iterative, self-consistent manner.
+Here, we start by showing how to obtain the solution of the mean field Hubbard Hamiltonian numerically in an self-consistent manner, and then we generalize the procedure to treat the TMD nanoribbon.
+
+The mean field Hubbard Hamiltonian reads
 \begin{strip}
 \begin{equation}
 \mathcal{H}_{\text{MF}} = \mathcal{H}_\uparrow + \mathcal{H}_\downarrow + \mathcal{C} , \,\, \mathcal{H}_\sigma = - t \sum_{\left\langle i, j \right\rangle} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) + U \sum_i n_{i,\sigma} \left\langle n_{i,-\sigma} \right\rangle , \,\, \mathcal{C} = - U \sum_i \left\langle n_{i,\uparrow} \right\rangle \left\langle n_{i,\downarrow} \right\rangle
@@ -118,32 +121,45 @@ First, we diagonalize $\mathcal{H}_\sigma$, obtaining the one-particle spectrum 
 \mathcal{H}_{\text{MF}} = \sum_{\alpha, \sigma} \varepsilon_{\alpha, \sigma} d_{\alpha, \sigma}^\dagger d_{\alpha, \sigma} + \mathcal{C} , \,\, d_{\alpha, \sigma} = \sum_i Q_{\alpha i, \sigma}^\star c_{i,\sigma}
 \end{equation}
 
-Given a number of electrons per unit cell, $n_e$, compute the chemical potential corresponding to that filling implicitly through $ \frac{1}{N} \sum_{\alpha, \sigma} (  e^{\beta ( \varepsilon_{\alpha, \sigma} - \mu ) } +1 )^{-1} = n_e$ (we use the bissection method).
+Given a number of electrons per unit cell, $n_e$, we compute the chemical potential corresponding to that filling implicitly through 
+\begin{equation*}
+\frac{1}{N} \sum_{\alpha, \sigma} (  e^{\beta ( \varepsilon_{\alpha, \sigma} - \mu ) } +1 )^{-1} = n_e
+\end{equation*}
+We use the bissection method.
 
-Recompute mean field parameters, and check for convergence: at iteration $I$, $\left\langle n_{i,\sigma} \right\rangle_I \approx \left\langle n_{i,\sigma} \right\rangle_{I - 1}$.
+Then, we recompute the mean field parameters, and check for convergence: at iteration $I$, $\left\langle n_{i,\sigma} \right\rangle_I \approx \left\langle n_{i,\sigma} \right\rangle_{I - 1}$.
 \begin{equation}\label{eq:selfConsistent}
 \left\langle n_{i,\sigma} \right\rangle = \sum_\alpha | Q_{\alpha i, \sigma} |^2 ( 1 + e^ { \beta ( \varepsilon_{\alpha, \sigma} - \mu )} )^{-1}
 \end{equation}
 
 Now, we discuss how to circumvent the convergence issues that may arise when applying the self-consistent procedure.
 First, there are many possible initial conditions, most notably: the random one, which is the most unbiased, but may be slow or not converge at all; the paramagnetic state $\left\langle n_{i,\sigma} \right\rangle = \text{const.}$, which, when combined with the annealing method we shall describe below, emulates the random initial condition; a specific state, such as the antiferromagnetic one, which is a biased choice, which limits the accessible part of parameter space, and potentially gives a misleading mean field solution, but can have good convergence properties.
+
 In some cases, the symmetry of the system dramatically slows down convergence.
 By starting the procedure at a higher temperature than the desired one, we can improve convergence.
 The temperature is then gradually lowered until the desired one is achieved, and this procedure is applied at that temperature.
-There are a lot of possible annealing schemes, namely keeping $\beta$ fixed for some iterations and then adjusting it to the desired $\beta = \beta_0$, or smoothly reducing $\beta$ until it reaches $\beta_0$.
+There are a lot of possible such so called  annealing schemes, namely keeping $\beta$ fixed for some iterations and then adjusting it to the desired $\beta = \beta_0$, or smoothly reducing $\beta$ until it reaches $\beta_0$.
 A common convergence issue is the oscillation between two configurations $\left\langle n_{i,\sigma}\right\rangle_I \leftrightarrow \left\langle n_{i,\sigma}\right\rangle_{I+1}$.
-This is solved by averaging the values obtained at the current and previous iterations: $\left\langle n_{i,\sigma}\right\rangle_{I+1} \leftarrow \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_I + \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_{I+1}$
-The weights attributed to each configuration can be also be different, or even vary with the iteration: $\left\langle n_{i,\sigma}\right\rangle_{I+1} \leftarrow P(I) \left\langle n_{i,\sigma}\right\rangle_I + (1 - P(I) ) \left\langle n_{i,\sigma}\right\rangle_{I+1}$, if we make sure that $P(I) > \delta$, the latter being the convergence parameter.
+This is solved by averaging the values obtained at the current and previous iterations:
+\begin{equation}
+\left\langle n_{i,\sigma}\right\rangle_{I+1} \leftarrow \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_I + \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_{I+1}.
+\end{equation}
+The weights attributed to each configuration can be also be different, or even vary with the iteration:
+\begin{equation}
+\left\langle n_{i,\sigma}\right\rangle_{I+1} \leftarrow P(I) \left\langle n_{i,\sigma}\right\rangle_I + (1 - P(I) ) \left\langle n_{i,\sigma}\right\rangle_{I+1},
+\end{equation}
+if we make sure that $P(I) > \delta$, the latter being the convergence parameter.
+
 Finally, the number of parameters may be reduced.
 This is done while taking into account the symmetry of the system.
 For example, one may take only the number of sublattices, say 2 for a square lattice with PBC.
 This corresponds to the uniform density ansatz $\left\langle n_{i,\sigma} \right\rangle = n_X = \frac{1}{N_X} \sum_{i \in X} \left\langle n_{i,\sigma} \right\rangle$ for all sites in the $X$ sublattice.
 If this reduction is not done correctly, we will obtain biased self-consistent solutions that do not necessarily reflect the nature of the solution.
 
-In general, our mean field formulation would involve diagonalizing an $N \times N$ matrix at each step, where $N = N_{\text{orb}} N_x N_y$ is the size of the system times the number of orbitals.
-However, since we consider PBCs along the $x$-direction, we can partially diagonalize  the Hamiltonian analytically, reducing the size of the matrix to be diagonalized to $N_{\text{orb}} N_y \times N_{\text{orb}} N_y$, where $N_y$ is the width of the ribbon, i.e. the number of $\text{M}\text{X}_2$ formula units.
-Consider the spinless 3-band tight binding model, with unit lattice constant:
+Since we consider PBCs along the $x$-direction for the nanoribbon, we can partially diagonalize the Hamiltonian analytically, reducing the size of the matrix to be diagonalized to $N_{\text{orb}} N_y \times N_{\text{orb}} N_y$, where $N_y$ is the width of the ribbon, i.e. the number of $\text{M}\text{X}_2$ formula units.
+Consider the spinless 3-band tight binding model on the nanoribbon, with unit lattice constant.
 \begin{strip}
+\vspace{-1.1cm}
 \begin{equation}
 \begin{split}
 \mathcal{H}_0 &= \sum_{\substack{m, n \\ \alpha, \beta}} \bigg( c_{m,n, \alpha}^\dagger t_{\alpha\beta}^0 c_{m, n, \beta} + \delta_{0, N_x}  c_{m,n, \alpha}^\dagger t_{\alpha\beta}^1 c_{m+1, n, \beta} + \delta_{-\sqrt{3}/2, (N_y -1)\sqrt{3}/2}  c_{m,n, \alpha}^\dagger t_{\alpha\beta}^4 c_{m-1, n, \beta} \\
@@ -184,11 +200,12 @@ leading to a tridiagonal block $3 N_y \times 3 N_y$ hopping matrix $\bm H (k)$ w
 \end{pmatrix}
 \end{equation*}
 \end{strip}
-By applying our mean field approach to solve the 3-band model with Hubbard-type interactions, we obtain solutions that are independent of $x$ (the longitudinal coordinate on the ribbon), which motivates us to reduce the number of MF parameters by choosing a translationally invariant ansatz.
+In fact, by applying our mean field approach in real space to solve the 3-band model with Hubbard-type interactions, we obtain solutions that are independent of $x$ (the longitudinal coordinate on the ribbon), which motivates us to reduce the number of MF parameters by choosing the translationally invariant ansatz introduced above.
 This is equivalent to taking $\left\langle n_{x, y,\alpha, \sigma}\right\rangle = \left\langle n_{y,\alpha, \sigma}\right\rangle  \forall x$ ($6 N_y$ parameters).
-By reducing the number of parameters, convergence is facilitated, which allows us to evaluate whether the solution of Fig.(\ref{fig:nanoGraphVsTMD}) is robust, i.e. whether it corresponds to a metastable or not.
+By reducing the number of parameters, convergence is facilitated, which makes it more likely that, for example, the solution of Fig.(\ref{fig:nanoGraphVsTMD}) is robust, i.e. it  does not correspond to a metastable.
 The mean field form of the interaction term with the reduced number of parameters changes, implying that the self-consistent relation of Eq.(\ref{eq:selfConsistent}) from which the local densities are computed changes as well.
 \begin{strip}
+\vspace{-0.3cm}
 \begin{equation}
 \mathcal{H}_{\text{MF}} = \mathcal{H}_0 + \mathcal{H}_1 + \mathcal{C} , \,\text{where} \,\, \mathcal{H}_1 = U \sum_{m, n, \alpha}  \sum_\sigma n_{\substack{m, \sigma \\ n, \alpha}} \big\langle n_{\substack{m, -\sigma \\ n, \alpha}} \big\rangle  , \,\, \mathcal{C} = -U  \sum_{m, n, \alpha} \big\langle n_{\substack{m, \uparrow \\ n, \alpha}} \big\rangle \big\langle n_{\substack{m, \downarrow \\ n, \alpha}} \big\rangle
 \end{equation}
@@ -201,7 +218,7 @@ U \sum_{k, \mu} \bigg( \sum_\sigma n_{k,\mu, \sigma} \big\langle n_{\mu, -\sigma
 \end{equation}
 \end{strip}
 where we collapsed the indexes $(n, \alpha)$ into a single index $\mu$.
-The self consistent relation allowing us to compute the new MF parameters at each step emerges by diagonalizing $\mathcal{H}_1$ in the $\mu$-subspace:
+The self-consistent relation allowing us to compute the new MF parameters at each step emerges by diagonalizing $\mathcal{H}_1$ in the $\mu$-subspace:
 \begin{equation}
 \begin{split}
 &\big\langle n_{\mu, \sigma} \big\rangle = \frac{1}{N_x}\sum_{q, \nu} | Q_{q \sigma \mu, \nu} |^2 \rho ( \varepsilon_{q \nu \sigma} ), \\ &\text{where} \,\, d_{q, \sigma, \nu} = \sum_\nu Q_{q \sigma \mu, \nu}^\star c_{q ,\sigma, \mu} , \\ 
@@ -211,22 +228,20 @@ The self consistent relation allowing us to compute the new MF parameters at eac
 
 \subsection{Auxiliary field Quantum Monte Carlo}
 \label{sec:afqmc}
-This is based on introducing an additional lattice field that mediates the electron-electron interaction.
-The interacting problem then becomes a problem of independent fermions coupled to this external field, and the fermionic part of the partition function can be traced out explicitly, leaving the contribution of a \emph{discrete}\footnote{The introduced field is discrete (and \emph{binary}) because each fermionic state can only have occupations $n = 0, 1$. Although, there is a finite number of field configurations, the number grows exponentially with the number of sites on the lattice.} classical field, $\bm h$.
+This method is based on introducing an additional lattice field that mediates the electron-electron interaction.
+The interacting problem then becomes a problem of independent fermions coupled to an external field, and the fermionic part of the partition function can be traced out explicitly, leaving the contribution of a \emph{discrete}\footnote{The introduced field is discrete (and \emph{binary}) because each fermionic state can only have occupations $n = 0, 1$. Although, there is a finite number of field configurations, the number grows exponentially with the number of sites on the lattice.} classical field, $\bm h$.
 This contribution can be evaluated numerically by employing importance sampling over the field configurations.
 Auxiliary field QMC relies on a mapping to a so called \say{classical} system (in quotes because there may be no actual classical analogue):
 \begin{equation}\label{eq:Zsign}
-Z = \Tr [ e^{-\beta \mathcal{H} } ] = \sum_{\{ \bm h\} } \sum_{\text{fermionic}} e^{-S} = \sum_c p_c ,
+Z = \Tr [ e^{-\beta \mathcal{H} } ] = \sum_{\{ \bm h\} } \sum_{\text{fermionic}} e^{-S} = \sum_c p (c) ,
 \end{equation}
-but some of the \say{probabilities} $p_c$ can actually be negative due to the antisymmetry of the many-electron wavefunction under electron exchange.
+but some of the \say{probabilities} $p(c)$ can actually be negative due to the antisymmetry of the many-electron wavefunction under electron exchange.
 Here, $S$ is a fermion-field action that we shall write out explicitly later.
-For a fixed configuration of the $\bm h$ field, we sum over the fermionic part exactly to obtain the weight of each configuration $p_c$.
+For a fixed configuration of the $\bm h$ field, we sum over the fermionic part exactly to obtain the weight of each configuration $p(c)$.
 The sum over $\bm h$ is carried out stochastically.
 The negative weight problem can be circumvented when computing the average of an observable $A$:
 \begin{equation}\label{eq:signSampling}
-\begin{split}
-\left\langle A \right\rangle &= \frac{\sum_c A ( c ) p ( c )}{\sum_c p ( c ) } \\ &= \frac{\sum_c A ( c )|  p ( c ) | \text{sign}[p(c)] / \sum_c | p ( c ) | }{\sum_c  |  p ( c ) | \text{sign}[p(c)] /  \sum_c | p ( c ) |} \equiv \frac{\left\langle A s \right\rangle_{|p|}}{\left\langle s \right\rangle_{|p|}} ,
-\end{split}
+\left\langle A \right\rangle = \frac{\sum_c A ( c )|  p ( c ) | \text{sign}[p(c)] / \sum_c | p ( c ) | }{\sum_c  |  p ( c ) | \text{sign}[p(c)] /  \sum_c | p ( c ) |} \equiv \frac{\left\langle A s \right\rangle_{|p|}}{\left\langle s \right\rangle_{|p|}} ,
 \end{equation}
 where $s(c) = \text{sign} [ p ( c ) ]$, and $| p ( c ) | $ corresponds to an auxiliary bosonic system (also coupled to the classical field) corresponding to the original fermionic system, and for which there is no sign problem.
 
@@ -238,8 +253,9 @@ In terms of the difference in free energy densities, $\left\langle s \right\rang
 \end{equation}
 and similarly for the numerator of Eq. (\ref{eq:signSampling}).
 
-Mean field theory may be formulated by applying the Hubbard Stratonovich (HS)  transformation to transform an interacting problem into a one-body problem, and then apply the saddle-point approximation to solve the resulting integrals.
-In the GCE (where we make $\mathcal{H} \mapsto \mathcal{H} - \mu \mathcal{N}$, $\mathcal{N}$ being the total particle number), the grand-partition function may be written in terms of a functional integral over a space-time dependent field of the exponential of a one-body action
+For the sake of comparison, recall that mean field theory may be formulated by applying the Hubbard Stratonovich (HS)  transformation to transform an interacting problem into a one-body problem, and then apply the saddle-point approximation to solve the resulting integrals.
+In the Grand-canonical Ensemble (GCE), we take $\mathcal{H} \mapsto \mathcal{H} - \mu \mathcal{N}$, $\mathcal{N}$ being the total particle number).
+The grand-partition function may be written in terms of a functional integral over a space-time dependent field of the exponential of a one-body action
 \begin{equation}
 Z = \Tr [ e^{-\beta \mathcal{H} } ] = \int \mathcal{D}\bm h \, e^{-S(\bm h) }  \equiv \Tr_{\bm h} [ e^{-S(\bm h)} ],
 \end{equation}
@@ -251,11 +267,12 @@ This approach depends on the HS decoupling that was used.
 In contrast, with the auxiliary field QMC method, one computes the integral directly.
 Although it is more expensive in computing time ($\mathcal{O}(\beta N^3)$ ), it does not rely on any particular choice of the decoupling.
 Another obstacle of taking into account all the fluctuations around $\bm h^\star$ is the fermion sign problem.
-However, in certain cases, the symmetries of the model (like PHS) may be used to avoid it.
+However, in certain cases, the symmetries of the model (like particle-hole) may be used to avoid it.
+
 The Trotter-Suzuki decomposition leads to an approximate factorization of $e^{-\beta (\mathcal{H}_K + \mathcal{H}_V )}$ that is used to evaluate the partition function.
 Dividing the imaginary time interval $[0, \beta ]$ into $L$ equal sub-intervals of smaller width $\Delta \tau = \beta / L$, one obtains:
 \begin{equation}\label{eq:partBreak}
-Z =  \Tr \bigg[ \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg] ,
+Z =  \Tr \bigg[ \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H}^l } \bigg] ,
 \end{equation}
 a form that is more amenable to computation.
 Actually, by writing the matrix elements of the projection operator $\mathcal{P}$ as path-integrals (here, time-ordering is implicit \cite{hirsch_discrete_1983}):
@@ -273,7 +290,7 @@ Z &= \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \sum_{\left| \psi_0 \right\
 \end{split}
 \end{equation}
 where we have $\left| \psi_L \right\rangle = \left| \psi_0 \right\rangle$. We recover Eq.(\ref{eq:partBreak}) by reorganizing the summations over $\{ \left| \psi_l \right\rangle \}$, and using closure relations in the Hilbert space of each slice.
-The \say{Trotter breakup} follows from truncating the inverse of the wellk known Baker-Campbell-Haudsorff formula, and keeping only the first order term in $\Delta \tau$.
+SImply put, the \say{Trotter breakup} follows from truncating the inverse of the well known Baker-Campbell-Haudsorff formula, and keeping only the first order term in $\Delta \tau$.
 
 The kinetic energy term is quadratic in the fermion operators, and spin-independent, meaning that it be separated into two spin components, independently of the time slice.
 \begin{equation}
@@ -285,7 +302,7 @@ The potential energy term, however, is quartic.
 Fortunately, it is possible to express it in quadratic form by introducing an extra degree of freedom, the so called \emph{Hubbard-Stratonovich (HS) field} $\bm h \equiv (h_{l, i})_{i=0,\, l= 0}^{N-1, \, L - 1}$, in which each element is essentially an Ising spin.
 At each slice, the interaction is eliminated by an $N$-dimensional HS field $\widetilde{\bm h}$.
 We start by noting that $[ n_{i,\sigma} , n_{j,\sigma'} ] = 0 \,\, \forall i, j, \sigma, \sigma'$, so that in particle-hole symmetric-form\footnote{The particular model in which we are interested does not have particle-hole symmetry (PHS), but the HS transformation is done in PHS-form for convenience when we simulate PHS models.
-One simply has to remember that the PHT shifts the chemical potential by $\frac{U}{2}$.}
+One simply has to remember that the PH transformation shifts the chemical potential by $\frac{U}{2}$.}
 \begin{equation}\label{eq:Hint}
 e^{-\Delta\tau \mathcal{H}_V} = \prod_i e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )}
 \end{equation}
@@ -309,7 +326,7 @@ Z &\propto \int \mathcal{D} \widetilde{\bm h} ( \tau) e^{-\int_0^\beta d\tau \wi
  &\Tr \bigg[ \mathcal{T}_\tau e^{ -\int_0^\beta d\tau [ \mathcal{H}_K ( \tau ) + \sqrt{2U} ( \bm n_{\uparrow} (\tau) - \bm n_{\downarrow} (\tau ) ) \cdot \widetilde{\bm h}(\tau) ] } \bigg] ,
 \end{split}
 \end{equation}
-representing a system of noninteracting fermions coupled via spin $s^z_i$ to an external fluctuating real field.
+representing a system of noninteracting fermions coupled via spin $S^z_i$ to an external fluctuating real field.
 
 The fact that $n_{i,\sigma}$ can only take on two possible values suggests an analogous transformation in which the fluctuating field can only take on two possible values.
 An Ising spin will prove sufficient to eliminate the direct electron-electron interaction.
@@ -324,10 +341,31 @@ For each imaginary time slice $l$, we may define a HS-field $\widetilde{\bm h_l}
 The Hamiltonian acquires a \say{ficticious} imaginary-time dependence that enforces (imaginary-)time ordering, and independent Hilbert spaces at each slice.
 After some algebra,
 \begin{equation}\label{eq:Z_quadratic}
-Z  = (c_U)^{NL} \text{Tr}_{\bm h} \Tr \bigg[ \prod_{l=0}^{L-1} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\uparrow}} e^{\mathcal{H}_{V_\uparrow}^l} \bigg)}_{B_{l, \uparrow}(\widetilde{\bm h_l)}} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\downarrow}} e^{\mathcal{H}_{V_\downarrow}^l} \bigg)}_{B_{l, \downarrow}(\widetilde{\bm h_l)}} \bigg] ,
+Z  = (c_U)^{NL} \text{Tr}_{\bm h} \Tr \bigg[ \prod_{l=0}^{L-1} \prod_\sigma \underbrace{ e^{-\Delta\tau  \mathcal{H}_{K_\sigma}} e^{\mathcal{H}_{V_\sigma}^l}}_{\bm B_{l, \sigma}(\widetilde{\bm h_l)}} \bigg] ,
 \end{equation}
 where all operators are now quadratic in the fermion operators:
 \begin{equation}
 \mathcal{H}_{K_\sigma} = \bm c_\sigma^\dagger ( - t_\sigma \bm K_\sigma -\mu_\sigma \bm I ) \bm c_\sigma \quad \mathcal{H}_{V_\sigma}^l = \sigma \nu \bm c_\sigma^\dagger \bm V_l (\widetilde{\bm h_l}) \bm c_\sigma
 \end{equation}
 for $\sigma = \pm 1$ and $\bm V_l ( \widetilde{\bm h_l} ) = \text{diag} ( h_{l, 0} , h_{l, 1}, ... , h_{l, N-1} )$.
+The problem of computing the partition function has been reduced to computing the trace of a product of exponentials of quadratic forms.
+Thus, we may still rewrite equation (\ref{eq:Z_quadratic}) by making use of the following identity.
+Let $\mathcal{H}_l$ be quadratic forms of the fermion operators: 
+$
+\mathcal{H}_l = c_i^\dagger (\bm H_l)_{ij} c_j,
+$
+ where the summation is implied, and where $\bm H_l$ are real matrices.
+Then, the following identity holds
+\begin{equation}\label{eq:quadraticIdentity}
+\Tr \big[ e^{-\mathcal{H}_1 } e^{-\mathcal{H}_2 } ... e^{-\mathcal{H}_L } \big] = \text{det} ( \bm I + e^{-\bm H_L} ... e^{-\bm H_1} )
+\end{equation}
+
+Since we mapped our interacting quantum problem to a higher dimensional \say{classical} problem of higher dimension, we can use the Metropolis algorithm with single spin flip dynamics to generate samples from the distribution of the classical field $p (c) \propto \prod_\sigma \det [\bm I + \prod_l \bm B_{l, \sigma} ( \widetilde{\bm h_l} ) ]$.
+The determinants are not computed explicitly.
+Instead they are updated at each step by use of the Sherman-Morrison-Woodbury formula, in a procedure that scales as $\mathcal{O}(N^2)$.
+The single-particles Green's functions of the free-fermion problem we obtain after using the HS transformation are represented by the matrices $\bm G^\sigma = (\bm I + \prod_l \bm B_{l, \sigma} ( \widetilde{\bm h_l}))^{-1}$.
+By using Wick's theorem, we can write any quantum observable in terms of combinations of matrix elements of the Green's matrices $\bm G^\sigma$.
+We measure the relevant observables for our problem during the Monte Carlo sampling, for example: the electron density $\rho = \frac{1}{N} \sum_{i, \sigma} \left\langle n_{i, \sigma} \right\rangle$, related to the filling; the (equal-time) spin-spin correlation $\left\langle S_i^z S_j^z \right\rangle$, where $S_i^z = n_{i, \uparrow} - n_{i, \downarrow}$, whose Fourier transform gives the magnetic structure factor $S(\bm q)$; the time-displaced spin-spin correlator $\left\langle S_i^z (\tau) S_j^z (0) \right\rangle$, which gives us the (momentum-dependent) susceptibility 
+\begin{equation}\label{eq:chi}
+\chi ( \bm q ) = \frac{1}{N} \sum_{i, j} e^{i \bm q \cdot ( \bm R_i - \bm R_j )} \int_0^\beta d\tau \left\langle S_i^z (\tau) S_j^z (0) \right\rangle
+\end{equation}

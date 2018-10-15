@@ -1979,9 +1979,16 @@
     <bcf:citekey order="1">novoselov_electric_2004</bcf:citekey>
     <bcf:citekey order="2">liu_three-band_2013</bcf:citekey>
     <bcf:citekey order="3">liu_three-band_2013</bcf:citekey>
-    <bcf:citekey order="4">troyer_computational_2005</bcf:citekey>
-    <bcf:citekey order="4">hou_numerical_2009</bcf:citekey>
-    <bcf:citekey order="5">hirsch_discrete_1983</bcf:citekey>
+    <bcf:citekey order="4">liu_three-band_2013</bcf:citekey>
+    <bcf:citekey order="5">liu_three-band_2013</bcf:citekey>
+    <bcf:citekey order="6">troyer_computational_2005</bcf:citekey>
+    <bcf:citekey order="6">hou_numerical_2009</bcf:citekey>
+    <bcf:citekey order="7">hirsch_discrete_1983</bcf:citekey>
+    <bcf:citekey order="8">bai_stable_2011</bcf:citekey>
+    <bcf:citekey order="9">yang_strain-tuning_2017</bcf:citekey>
+    <bcf:citekey order="10">feldner_dynamical_2011</bcf:citekey>
+    <bcf:citekey order="10">raczkowski_interplay_2017</bcf:citekey>
+    <bcf:citekey order="11">yang_strain-tuning_2017</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

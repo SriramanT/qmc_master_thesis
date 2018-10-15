@@ -80,25 +80,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Trotter-Suzuki Decomposition}{45}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Hubbard-Stratonovich transformation}{45}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Hubbard-Stratonovich transformation}{46}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.3}Single-particle propagators and the fermionic trace}{47}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Monte Carlo sampling of the Hubbard Stratonovich field}{48}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Monte Carlo sampling of the Hubbard Stratonovich field}{49}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.5}Checkerboard Breakup}{51}{subsection.3.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Measurements}{51}{section.3.3}
+\contentsline {section}{\numberline {3.3}Measurements}{52}{section.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.1}Obtaining observables in terms of Green's functions}{53}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.2}Correlation functions}{54}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Imaginary-time displaced Green's functions and susceptibilities}{54}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Imaginary-time displaced Green's functions and susceptibilities}{55}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Stabilization}{55}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Stable matrix multiplication}{56}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Stable matrix multiplication}{57}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.2}Inverting to obtain the Green's function}{58}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 

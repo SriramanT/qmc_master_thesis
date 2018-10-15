@@ -188,8 +188,8 @@
       \strng{authorbibnamehash}{67324938f341ebfcb460cc8f09d376f4}
       \strng{authornamehash}{67324938f341ebfcb460cc8f09d376f4}
       \strng{authorfullhash}{67324938f341ebfcb460cc8f09d376f4}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Quantum Monte Carlo simulations, while being efficient for bosons, suffer from the “negative sign problem” when applied to fermions—causing an exponential increase of the computing time with the number of particles. A polynomial time solution to the sign problem is highly desired since it would provide an unbiased and numerically exact method to simulate correlated quantum systems. Here we show that such a solution is almost certainly unattainable by proving that the sign problem is nondeterministic polynomial ({NP}) hard, implying that a generic solution of the sign problem would also solve all problems in the complexity class {NP} in polynomial time.}
@@ -274,8 +274,8 @@
       \strng{bookauthorbibnamehash}{cc75efbd1597c7be39a3f9144ecbace3}
       \strng{bookauthornamehash}{7674bf3ba25bba5570b5deacbefb504d}
       \strng{bookauthorfullhash}{cc75efbd1597c7be39a3f9144ecbace3}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Series in Contemporary Applied Mathematics}
@@ -320,8 +320,8 @@
       \strng{authorbibnamehash}{eefc2eb9b9cb2c10cb62f286fac3ed4c}
       \strng{authornamehash}{eefc2eb9b9cb2c10cb62f286fac3ed4c}
       \strng{authorfullhash}{eefc2eb9b9cb2c10cb62f286fac3ed4c}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We discuss a new functional-integral formulation of interacting fermion systems on a lattice such as the Anderson or Hubbard models: the fermion-fermion interaction is eliminated by introducing auxiliary Ising variables. The resulting model for a d-dimensional quantum system is a (d+1)-dimensional Ising model with complicated interactions. The new transformation is particularly useful for performing numerical studies of these models using Monte Carlo techniques. We study its convergence properties and compare it with the usual Gaussian formulation for the case of the Hubbard model.}
@@ -339,6 +339,263 @@
       \verb Hirsch1983.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/hubbard-stratonovich/Hirsch1983.pdf:application/pdf
       \endverb
       \keyw{Hubbard-Stratonovich,Discrete,Transformation,Fermion lattice models}
+    \endentry
+    \entry{bai_stable_2011}{article}{}
+      \name{author}{4}{}{%
+        {{hash=1152022ae21c42723dbd02ef3e840663}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Zhaojun},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=1ee3b5f7ece4b45cc93ba4543c3de608}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Cherung},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e3fef59365ab92dab709c049d9f56b52}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ren-Cang},
+           giveni={R\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=ef25e4539cda90144577f2888c8e35f5}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Shufang},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{528a3fda56821a6a9fe15e44f335246a}
+      \strng{fullhash}{0fb88dca5381741350c18c473929dc10}
+      \strng{bibnamehash}{0fb88dca5381741350c18c473929dc10}
+      \strng{authorbibnamehash}{0fb88dca5381741350c18c473929dc10}
+      \strng{authornamehash}{528a3fda56821a6a9fe15e44f335246a}
+      \strng{authorfullhash}{0fb88dca5381741350c18c473929dc10}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper is concerned with solving linear system (In+{BL}⋯B2B1)x=b arising from the Green’s function calculation in the quantum Monte Carlo simulation of interacting electrons. The order of the system and integer L are adjustable. Also adjustable is the conditioning of the coefficient matrix to give rise an extreme ill-conditioned system. Two numerical methods based on the {QR} decomposition with column pivoting and the singular value decomposition, respectively, are studied in this paper. It is proved that the computed solution x∼ by each of the methods is weakly backward stable in the sense that the computed x∼ is close to the exact solution of a nearby linear system[In+({BL}+Δ{BL})⋯(B2+ΔB2)(B1+ΔB1)]x∼=bwith each ΔBi small in norm relatively to Bi.}
+      \field{day}{1}
+      \field{issn}{0024-3795}
+      \field{journaltitle}{Linear Algebra and its Applications}
+      \field{month}{8}
+      \field{number}{3}
+      \field{series}{Special Issue: Dedication to Pete Stewart on the occasion of his 70th birthday}
+      \field{shortjournal}{Linear Algebra and its Applications}
+      \field{title}{Stable solutions of linear systems involving long chain of matrix multiplications}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{435}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{659\bibrangedash 673}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.laa.2010.06.023
+      \endverb
+      \verb{file}
+      \verb Bai2010.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Bai2010.pdf:application/pdf;ScienceDirect Snapshot:/Users/franciscobrito/Zotero/storage/3JJSU3EE/S0024379510003198.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0024379510003198
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0024379510003198
+      \endverb
+      \keyw{Condition number,Graded {QR} decomposition,Numerical stability,Quantum Monte Carlo,Singular value decomposition}
+    \endentry
+    \entry{yang_strain-tuning_2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=11a33b1aa9e89479e304318dff521b9c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Guang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=27ab7330fbd30c8559533dab86a5490b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Baoyue},
+           giveni={B\bibinitperiod}}}%
+        {{hash=25bbf4047d900f3760c65b01ee899dba}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f18c66e037df1194674c380d8ae5adae}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Miao},
+           giveni={M\bibinitperiod}}}%
+        {{hash=632e04dac7b45b0ae3587e0001f4d5a6}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Tianxing},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{f417e8a65f8cc3f417c43e53877ac454}
+      \strng{fullhash}{c7a4370bebc051bb90cc0d25db16b320}
+      \strng{bibnamehash}{c7a4370bebc051bb90cc0d25db16b320}
+      \strng{authorbibnamehash}{c7a4370bebc051bb90cc0d25db16b320}
+      \strng{authornamehash}{f417e8a65f8cc3f417c43e53877ac454}
+      \strng{authorfullhash}{c7a4370bebc051bb90cc0d25db16b320}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using the determinant quantum Monte-Carlo method, we elucidate the strain tuning of edge magnetism in zigzag graphene nanoribbons. Our intensive numerical results show that a relatively weak Coulomb interaction may induce a ferromagnetic-like behaviour with a proper strain, and the edge magnetism can be enhanced greatly as the strain along the zigzag edge increases, which provides another way to control graphene magnetism even at room temperature.}
+      \field{issn}{0953-8984}
+      \field{journaltitle}{Journal of Physics: Condensed Matter}
+      \field{langid}{english}
+      \field{number}{36}
+      \field{shortjournal}{J. Phys.: Condens. Matter}
+      \field{title}{Strain-tuning of edge magnetism in zigzag graphene nanoribbons}
+      \field{urlday}{12}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{29}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{365601}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1361-648X/aa7dc1
+      \endverb
+      \verb{file}
+      \verb Yang2017.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Yang2017.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://stacks.iop.org/0953-8984/29/i=36/a=365601
+      \endverb
+      \verb{url}
+      \verb http://stacks.iop.org/0953-8984/29/i=36/a=365601
+      \endverb
+    \endentry
+    \entry{feldner_dynamical_2011}{article}{}
+      \name{author}{6}{}{%
+        {{hash=504331015369150db40c6f862d8cf8f7}{%
+           family={Feldner},
+           familyi={F\bibinitperiod},
+           given={Hélène},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6ee0d31a67f4d947a2dee2c06c77e4dd}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Zi\bibnamedelima Yang},
+           giveni={Z\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=4d7ed7ad40607d73d7f7674f23c48d1f}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={Thomas\bibnamedelima C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=f7a4b116051e5e414c553aabeeb069fe}{%
+           family={Assaad},
+           familyi={A\bibinitperiod},
+           given={Fakher\bibnamedelima F.},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=83b6f28cea7f5150b33a4e5eca11b51a}{%
+           family={Wessel},
+           familyi={W\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=882a8883e463c92e9f0fbc40517b2c8f}{%
+           family={Honecker},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{820792bdc4142c3fb0c3458609fec7ef}
+      \strng{fullhash}{e26703082ce1d3764b14620a1bf8215a}
+      \strng{bibnamehash}{820792bdc4142c3fb0c3458609fec7ef}
+      \strng{authorbibnamehash}{820792bdc4142c3fb0c3458609fec7ef}
+      \strng{authornamehash}{820792bdc4142c3fb0c3458609fec7ef}
+      \strng{authorfullhash}{e26703082ce1d3764b14620a1bf8215a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We investigate the edge-state magnetism of graphene nanoribbons using projective quantum Monte Carlo simulations and a self-consistent mean-field approximation of the Hubbard model. The static magnetic correlations are found to be short ranged. Nevertheless, the correlation length increases with the width of the ribbon such that already for ribbons of moderate widths we observe a strong trend towards mean-field-type ferromagnetic correlations at a zigzag edge. These correlations are accompanied by a dominant low-energy peak in the local spectral function and we propose that this can be used to detect edge-state magnetism by scanning tunneling microscopy. The dynamic spin structure factor at the edge of a ribbon exhibits an approximately linearly dispersing collective magnonlike mode at low energies that decays into Stoner modes beyond the energy scale where it merges into the particle-hole continuum.}
+      \field{day}{31}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{5}
+      \field{number}{22}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Dynamical Signatures of Edge-State Magnetism on Graphene Nanoribbons}
+      \field{urlday}{13}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{106}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{226401}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.106.226401
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/Users/franciscobrito/Zotero/storage/S6S4VAUR/PhysRevLett.106.html:text/html;Feldner2011.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Feldner2011.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.106.226401
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.106.226401
+      \endverb
+    \endentry
+    \entry{raczkowski_interplay_2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=329d70389aac124790e479f64cc9abe4}{%
+           family={Raczkowski},
+           familyi={R\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f7a4b116051e5e414c553aabeeb069fe}{%
+           family={Assaad},
+           familyi={A\bibinitperiod},
+           given={Fakher\bibnamedelima F.},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{13c37595f84604ddea6882d758b089d7}
+      \strng{fullhash}{13c37595f84604ddea6882d758b089d7}
+      \strng{bibnamehash}{13c37595f84604ddea6882d758b089d7}
+      \strng{authorbibnamehash}{13c37595f84604ddea6882d758b089d7}
+      \strng{authornamehash}{13c37595f84604ddea6882d758b089d7}
+      \strng{authorfullhash}{13c37595f84604ddea6882d758b089d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We perform projective quantum Monte Carlo simulations of zigzag graphene nanoribbons within a realistic model with long-range Coulomb interactions. Increasing the relative strength of nonlocal interactions with respect to the on-site repulsion does not generate a phase transition but has a number of nontrivial effects. At the single-particle level we observe a marked enhancement of the Fermi velocity at the Dirac points. At the two-particle level, spin- and charge-density-wave fluctuations compete. As a consequence, the edge magnetic moment is reduced but the edge dispersion relation increases in the sense that the single-particle gap at momentum q=π/{|}a1{|} grows. We attribute this to nonlocal charge fluctuations which assist the spin fluctuations to generate the aforementioned gap. In contrast, the net result of the interaction-induced renormalization of different energy scales is a constant spin-wave velocity of the edge modes. However, since the particle-hole continuum is shifted to higher energies—due to the renormalization of the Fermi velocity—Landau damping is reduced. As a result, a roughly linear spin-wave-like mode at the edge spreads out through a larger part of the Brillouin zone.}
+      \field{day}{26}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{9}
+      \field{number}{11}
+      \field{shortjournal}{Phys. Rev. B}
+      \field{shorttitle}{Interplay between the edge-state magnetism and long-range Coulomb interaction in zigzag graphene nanoribbons}
+      \field{title}{Interplay between the edge-state magnetism and long-range Coulomb interaction in zigzag graphene nanoribbons: Quantum Monte Carlo study}
+      \field{urlday}{13}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{96}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{115155}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.96.115155
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/Users/franciscobrito/Zotero/storage/PTZXDNN6/PhysRevB.96.html:text/html;Raczkowski2017.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Raczkowski2017.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.96.115155
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.96.115155
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
