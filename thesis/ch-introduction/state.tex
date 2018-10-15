@@ -20,11 +20,11 @@ An excellent review of their properties, experimental results and applications i
 Much like graphite which is essentially constituted by stacked monolayers of carbon atoms bound by weak Van der Waals forces, 3D \ac{TMD} structures are also formed by weakly bound layers.
 However, instead of carbon, the layers contain transition metals $M$, and chalcogens $X$, in a $1-2$ proportion.
 Thus, group 6 \acp{TMD} are denoted $MX_2$, where $M = \text{Mo}, \text{W}, ...$ (respectively Molybdenum and Tungsten) and $X = \text{S}, \text{Se}, \text{Te}$ (respectively Sulfur, Selenium and Tellurium).
-Each \acs{TMD} monolayer contains a layer of $M$ atoms organized in a triangular lattice sandwiched between two layers of $X$ atoms,unlike graphene( where carbon atoms are all on the same plane).
+Each \acs{TMD} monolayer contains a layer of $M$ atoms organized in a triangular lattice sandwiched between two layers of $X$ atoms,unlike graphene.
 Each $M$ atom is coordinated with six $X$ atoms, in a stacked structure with various possible coordinations for the $X$ atoms.
 The most common phases are trigonal prismatic (2H) and octahedral (1T), typically in the few $\angstrom$ range (for Molybdenum disulfide, $\text{Mo}\text{S}_2$, the width is around $6.5 \angstrom$).
-Therefore, for our purposes, we shall take a $2H$ configuration seen as a planar honeycomb lattice, as depicted in the top-down view of Fig (\ref{fig:tmdHex}a).
-In these lattice models, the valence bands arise out of the hybridization of the $d_{xy}$ and $d_{x^2 - y^2}$ orbitals of the transition metal with the $p_{x, y}$ orbitals of the chalcogen, while conduction bands have a main contribution from the $d_{3z^2 - r^2}$ orbitals of the $M$ atoms with only a minor contribution from the $p_{x, y}$ orbitals of the $X$ atoms.
+Here we will consider the 2H configuration, whose planar honeycomb lattice is depicted in the top-down view of Fig (\ref{fig:tmdHex}a).
+The valence bands arise out of the hybridization of the $d_{xy}$ and $d_{x^2 - y^2}$ orbitals of the transition metal with the $p_{x, y}$ orbitals of the chalcogen, while conduction bands have a main contribution from the $d_{3z^2 - r^2}$ orbitals of the $M$ atoms with only a minor contribution from the $p_{x, y}$ orbitals of the $X$ atoms.
 %revise english
 \begin{figure}[H]
 \centering
@@ -39,14 +39,14 @@ In these lattice models, the valence bands arise out of the hybridization of the
 
 \acl{2D} \acp{TMD} have been attracting interest because they seem to overcome some of the drawbacks of graphene in technological applications.
 For example, monolayer graphene is gapless, while its bilayer counterpart has a tunable, but small gap of the order of a tenth of an $eV$.
-Contrastingly, monolayer \acp{TMD} are semiconductors, having an intrinsic gap in excess of $1 \, eV$, which lies at the inequivalent $K$ points of the hexagonal Brillouin zone.
+Contrastingly, monolayer \acp{TMD} are semiconductors, having an intrinsic gap in excess of $1 \, eV$, which lies at the inequivalent $K$ points of the hexagonal Brillouin zone (see Fig.(\ref{fig:tmdHex})).
 Thus, \acp{TMD} are more promising for designing, for example, transistors.
 More generally, since the direct band gap lies in the visible frequency range, and room temperature mobility is good, these semiconducting analogues of graphene are promising for electronic and optoelectronic applications.
 Perhaps even more striking is the appearance of an extra so called \emph{valley} degree of freedom.
 Since the valence and conduction band edges both lie at the two corners ($\pm K$) of the first Brillouin zone, electrons and holes can acquire an extra degree of freedom which can be used to encode and process information.
-Additionally, the presence of giant spin-orbit coupling and the lack of inversion symmetry lead to a strong coupling between valley and spin, suggesting that \acp{TMD} could allow the integration of spintronics and valleytronics, yielding a greater control of electron systems through their coupled spin and valley degrees of freedom, analogously to what is done in electronics, where only the charge degree of freedom is used.
  
-Hole-doped \acp{TMD} are expected to show topological superconductivity \cite{hsu_topological_2017}, while the superconducting phase of graphene has been predicted, but is not easily attained.
+On a more fundamental level, hole-doped \acp{TMD} are expected to show topological superconductivity \cite{hsu_topological_2017}.
+While the superconducting phase of graphene has been predicted, it is not easily attained.
 Superconductivity in graphene-like \ac{2D} materials is important because it could boost high speed nanoelectronics.
 Moreover, the presence of transition metal atoms in \acp{TMD} suggests the possibility of magnetic ordering \cite{braz_valley_2017}, which could be very relevant in nanospintronics applications.
 Both superconductivity and magnetic ordering may arise due to the effect of strong electron correlations.
@@ -59,16 +59,16 @@ The electronic properties of \ac{TMD} monolayers depend crucially on $\text{X}$-
 In particular, for the 2H phase, they may ultimately be attributed to the lack of inversion symmetry relative to the $M$ atoms.
 This leads to the spin splitting of the electronic bands driven by spin-orbit coupling.
 %Because $K$ and $K'$ (or $-K$) no longer correspond to time reversal invariant momenta, the spin degeneracy of the valence and conduction bands is lifted at these points.
-Time-reversal symmetry implies that the splitting is opposite at the $K$ and $K'$ points, leading to the band structure of Fig. (\ref{fig:tmdProp}d) (we show the part relevant for realistic charge-carrier concentrations).
+Time-reversal symmetry implies that the splitting is opposite at the $K$ and $K'$ points, where the top of the valence band and the bottom of the conduction band occur (the so called valleys), leading to the band structure of Fig. (\ref{fig:tmdProp}d) (we show the part relevant for realistic charge-carrier concentrations).
 This property, known as spin-valley coupling, implies that the valley polarization of charge carriers directly translates into spin polarization, leading to an intrinsic property of \acp{TMD} that could allow the design of spintronic devices without resorting to magnetic materials \cite{manzeli_2d_2017}.
 More broadly, the possibilities afforded by the different compositions and structural phases listed in Fig.(\ref{fig:tmdProp}) lead to a vast array of electronic properties.
 On the one hand, the band structure and its metallic/insulating character vary quite substantially among \acp{TMD}.
 On the other hand, both highly nontrivial  correlated and topological phases arise within these materials.
 In this work, we investigate the properties of correlated phases in zigzag edged \ac{TMD} nanoribbons.
-\begin{figure}
+\begin{figure}[H]
 \centering
-\includegraphics[scale = 0.34]{Introduction/tmdProp}
- \caption[Structure and electronic properties of \ac{TMD} monolayers.]{(a) Some of the possible structural phases of \ac{TMD} monolayers: trigonal prismatic (2H) with ABA stacking, distorted octahedral (1T), and dimerized octahedral (1T'), showing ABC stacking. (b) A periodic table of known \ac{TMD} layers. Shown are the transition metals involved, the existing phases (2H and/or 1T), and the possible electronic phases. (c) Calculated band structure (from density functional theory \cite{splendiani_emerging_2010}) of $2H-\text{Mo}\text{S}_2$ for samples of decreasing thickness. (d) Representation of the band structure of monolayer $2H-\text{Mo}\text{S}_2$, showing the spin splitting (red for spin-up, blue for spin-down) of the bands near the corners of the Brillouin zone (K and K'). \label{fig:tmdProp}}
+\includegraphics[scale = 0.4]{Introduction/tmdProp}
+ \caption[Structure and electronic properties of \ac{TMD} monolayers.]{(a) Some of the possible structural phases of \ac{TMD} monolayers: trigonal prismatic (2H) with ABA stacking, distorted octahedral (1T), and dimerized octahedral (1T'), showing ABC stacking. (b) A periodic table of known \ac{TMD} layers. Shown are the transition metals involved, the existing phases (2H and/or 1T), and the possible electronic phases. (c) Calculated band structure (from density functional theory \cite{splendiani_emerging_2010}) of $2H-\text{Mo}\text{S}_2$ for samples of decreasing thickness. (d) Representation of the band structure of monolayer $2H-\text{Mo}\text{S}_2$, showing the spin splitting (red for spin-up, blue for spin-down) of the bands near the corners of the Brillouin zone (K and K') (taken from \cite{manzeli_2d_2017}) \label{fig:tmdProp}}
 \end{figure}
 
 \subsection{Nanoribbons}\label{subsec:nanoribbons}
@@ -78,16 +78,21 @@ They consist of \ac{2D} layers that can be regarded as infinitely long on one di
 For simulation purposes, we assume translational invariance along the ribbon's longitudinal direction, by the use of \acp{PBC}.
 On the transverse direction, we use \acp{OBC},  considering zigzag edges (see Fig.(\ref{fig:nanoribbons_energiesTMDs}), left).
 \begin{figure}[H]
-\includegraphics[scale = 0.2]{Introduction/grapheneNanoribbons.jpg}
-\includegraphics[scale = 0.2]{Introduction/nanoribbons}
+\includegraphics[scale = 0.22]{Introduction/grapheneNanoribbons.jpg}
+\includegraphics[scale = 0.23]{Introduction/nanoribbons}
 \caption[(TEM) images of graphene nanoribbons. Fabrication of \ac{TMD} nanoribbons.]{Left: (a) to (d) - Transmission electron microscopy (TEM) images of graphene nanoribbons (GNRs) of widths 15, 30, 40, and 60 $nm$ (adapted from \cite{mohanty_nanotomy-based_2012}). Right: Fabrication of \ac{TMD} nanoribbons. Left to right: \ac{AFM} images showing the appeareance of nanostructures ranging from \ac{2D} nanoislands to nanoribbons, as the temperature of the substrate is increased. The nanoribbons are grown by taking advantage of the temperature dependence of shape transformations occuring during the nonequilibrium growth of surface-based nanostructures (taken from \cite{chen_fabrication_2017})}
 \label{fig:graphNanoFabricationTMD}
 \end{figure}
 
-Ab initio calculations indicate that a large density of low-energy electronic states is localized at the zigzag edges, decaying quickly in the bulk, which suggests the possibility of magnetic ordering.
+For graphene, ab initio calculations indicate that a large density of low-energy electronic states is localized at the zigzag edges, decaying quickly in the bulk, which suggests the possibility of magnetic ordering \cite{yazyev_emergence_2010}.
 In fact, a mean field solution of the Hubbard model for a graphene nanoribbon shows that magnetic moments are localized at the edges \cite{yazyev_emergence_2010} (see Fig.(\ref{fig:nanoribbons_energiesTMDs}), left).
 QMC has been used to investigate edge-state magnetism beyond mean field in graphene \cite{feldner_dynamical_2011, golor_quantum_2013, cheng_strain-induced_2015, raczkowski_interplay_2017, yang_strain-tuning_2017}.
 However, edge-state magnetism in zigzag-edged \ac{TMD} nanoribbons remains unexplored \cite{davelou_nanoribbon_2017}, and we would like to investigate, for example, whether edge-state magnetism is stabilized at finite temperature in such systems, following the tendency that was identified for their graphene counterparts.
+In fact, several studies suggest that zero temperature long range order can be found at the zigzag edges of graphene nanoribbons.
+The presence of the $SU(2)$ symmetry and the \acs{1D} nature of the edge implies that no true long range order exists.
+However, the high value for the spin wave stiffness for the domain wall creation energy implies a crossover temperature $T_X \approx 10 K$ below which the spin correlation length $\xi$ grows exponentially with decreasing temperature.
+Below $T_X$, $\xi \propto T^{-1}$ limits the long-range magnetic order to $\sim 1 nm$ at $300 K$ \cite{yazyev_magnetic_2008}. 
+In \acs{TMD}s $SU(2)$ symmetry is broken, as the sizable spin-orbit coupling forces the spin to be perpendicular to the plane.
 \begin{figure}[H]
 \includegraphics[scale=0.225]{Introduction/comparisonMF_edges}
 \hspace{5mm}
@@ -104,7 +109,7 @@ The panels represent the contributions from: (a) $\text{Mo}$ $d$-orbitals; (b) A
 \subsection{Effective three-band minimal tight-binding model}\label{subsec:threeband}
 
 In this section, we present a minimal model describing the low energy physics of group 6 \acs{TMD} monolayers \cite{liu_three-band_2013}.
-To obtain this tight-binding model, one uses the symmetries of the monolayer, and the fact that at low energies, both band edges have major contributions from $d_{z^2}$, $d_{xy}$, and $d_{x^2 - y^2}$ orbitals of M-atoms and the the $p$-orbitals of the X-atoms.
+To obtain this tight-binding model, one uses the symmetries of the monolayer, and the fact that at low energies, both band edges have major contributions from $d_{z^2}$, $d_{xy}$, and $d_{x^2 - y^2}$ orbitals of M-atoms and the $p$-orbitals of the X-atoms (which contribute very little at the band edges).
 This is illustrated for $\text{Mo}\text{S}_2$ in Fig.(\ref{fig:nanoribbons_energiesTMDs}).
 Near the Fermi energy, the $\text{Mo}$ $d$-orbitals are clearly more populated at the $K$ point (circled in orange), hence these atomic orbitals contribute more to the Bloch states near that point.
 
@@ -123,7 +128,7 @@ We start by introducing the \say{spinless} model, and then generalize it to incl
 Let the greek indices represent orbital space, except for $\sigma$, meaning spin.
 Then, the Hamiltonian reads
 \begin{equation}
-\mathcal{H} = \sum_{i, j, \sigma} \sum_{\alpha, \beta} c_{i,\alpha}^\dagger t_{\alpha \beta}^\sigma ( \bm R_i - \bm R_j ) c_{j, \beta} = \sum_{i, j} \sum_{\alpha, \beta} c_{i,\alpha}^\dagger t_{\alpha \beta} ( \bm R_i - \bm R_j ) c_{j, \beta} , \, \text{since} \,  t_{\alpha \beta}^\uparrow ( \bm R )  = t_{\alpha \beta}^\downarrow ( \bm R ) \equiv \frac{1}{2} t_{\alpha \beta} ( \bm R )
+\mathcal{H} = \sum_{i, j, \sigma} \sum_{\alpha, \beta} c_{i,\alpha}^\dagger t_{\alpha \beta}^\sigma ( \bm R_i - \bm R_j ) c_{j, \beta} \text{ and } t_{\alpha \beta}^\downarrow ( \bm R ) = t_{\alpha \beta}^\uparrow ( \bm R )
 \end{equation}
 where we consider the basis set $\{ \left| \alpha \right\rangle \}_{\alpha = 1}^3 = \{ (d_{z^2}) , (d_{x y}, d_{ x^2 - y^2 }) \} $.
 Here, we split the basis into two orbital categories based on which irreducible representation of the $D_{3h}$ group they belong to.
@@ -131,7 +136,6 @@ Let index $j$ run through the orbital categories, and $\mu$ through the basis el
 \begin{equation*}
 \left| \phi_1^1 \right\rangle = d_{z^2} \quad \left| \phi_1^2 \right\rangle = d_{xy} \quad \left| \phi_2^2 \right\rangle = d_{x^2 - y^2} 
 \end{equation*}
-
 By symmetry, there are eight independent parameters, which can be written in terms of only a few of all the hopping integrals $t_{\mu \nu}^{j k} ( \bm R_i ) = \left\langle \phi_\mu^j ( \bm r ) | \mathcal{H} | \phi_{\nu}^k ( \bm r - \bm R_i ) \right\rangle$ \cite{braz_electronic_2015,liu_three-band_2013}.
 Let 
 \begin{equation*}

@@ -14,13 +14,13 @@ Some of these are not explained by band theory, namely the Mott metal-insulator 
 \subsection{Electron correlations in narrow $d-$bands}
 
 First, note that the effects of correlations cannot possibly be the same in narrow energy bands and in the free electron gas.
-To see this, we may simply recall the shape of a $d-$wave function.
-\begin{figure}[H]\label{fig:hydrogenWF}
+To see this, we may simply recall the shape of a $d-$wave function (see Fig.(\ref{fig:hydrogenWF})).
+\begin{figure}[H]
 \centering
 \includegraphics[width = 9cm]{Hubbard/Hydrogen.jpeg}
 \caption[Hydrogen atomic wave functions.]{Probability density plots for different hydrogen orbital wave functions corresponding to quantum numbers $(n, l, m)$ for $n = 3$.
 d-wave functions correspond to $l=2$.
-We compare them with p-wave functions ($l=1$). The probability density is higher in a region near the nucleus, and its shape leads to a non-uniform distribution of electronic charge, as opposed to the case of the free electron gas. (adapted from \cite{hydrogen})}
+We compare them with p-wave functions ($l=1$). The probability density is higher in a region near the nucleus, and its shape leads to a non-uniform distribution of electronic charge, as opposed to the case of the free electron gas.\label{fig:hydrogenWF} (adapted from \cite{hydrogen})}
 \end{figure}
 
 In a $d-$orbital, the electron charge density is concentrated near the nucleus.
@@ -37,29 +37,29 @@ On the other hand, the $d-$electrons contribute significantly to the low tempera
 This is characteristic of band theory\footnote{Think, for example, of a tight binding model. Electrons hop from atom to atom, and in general the spin of each atom depends on the particular electrons \say{belonging} to it at a given time. If we take an average of the total spin of each atom, we will in general not necessarily obtain an integer multiple of the Bohr magneton. If we simply had a collection of atoms, Hund's rule would apply, and each atom would have its spin aligned in a given direction. The average spin would then tend to be an integer multiple of the Bohr magneton.}.
 Our theory of correlations should describe this balance between band-like and atomic-like behavior.
 
-The atomic picture of a solid consists of an electron gas where ions are immersed.
-The ions then interact in much the same way as they do in salts.
-This extreme scenario is surely not even close to the true state of affairs since the number of $d-$electrons per atom is in general not an integer.
-This motivates us to introduce a less restrictive model, which is not too far from the atomic model.
-We shall assume that while $d-$electrons still have some band motion, they are strongly correlated with each other so that the solid retains some atomic-like behavior.
-The correlations between electrons on different atoms are likely much weaker and we neglect them.
-
-Let us now look at an example of the aforementioned circumstance.
-Take a partially filled $d-$band of non-interacting electrons.
-The spin of any given atom in the solid is just the total spin of all electrons on that atom.
-It fluctuates both in magnitude and in direction, with a characteristic time that depends on how frequently $d-$electrons hop.
-We can estimate the time interval between $d-$electron hopping events between atoms as a being of the order $\hbar / \Delta$, where $\Delta$ is the $d-$electron bandwidth.
-The spin can thus be thought of as being associated to each individual (and constantly hopping) $d-$electron.
-
-How do the electron interactions affect this picture?
-We start by recalling Hund's rule: the nature of the  interactions between atoms leads to an alignment of the spins on each atom.
-Since the atomic picture seems to prevail in our metal, we have reason to expect a similar effect to occur.
-An atom with a total spin in some direction at a given time will tend to attract electrons with the spin on that direction and repel those with opposite spin.
-This mechanism makes it unlikely for the spin of an atom to change much over time.
-If the interactions between atoms are strong enough, the correlations become considerable and, making our statement  more precise, the total spin of an atom will persist for a time that is long compared with the $d-$electron hopping time.
-Note that it is not the localization of the electrons that causes the spin state of the atom to persist.
-The specific electrons belonging to a given atom change all the time as long as their spin is consistent with the total spin requirement imposed by Hund's rule.
-For strong enough correlations, we may think of the spin as being associated to each atom, which opens up the possibility to describe the system using an atomic (Heisenberg) model, as we shall see later.
+%The atomic picture of a solid consists of an electron gas where ions are immersed.
+%The ions then interact in much the same way as they do in salts.
+%This extreme scenario is surely not even close to the true state of affairs since the number of $d-$electrons per atom is in general not an integer.
+%This motivates us to introduce a less restrictive model, which is not too far from the atomic model.
+%We shall assume that while $d-$electrons still have some band motion, they are strongly correlated with each other so that the solid retains some atomic-like behavior.
+%The correlations between electrons on different atoms are likely much weaker and we neglect them.
+%
+%Let us now look at an example of the aforementioned circumstance.
+%Take a partially filled $d-$band of non-interacting electrons.
+%The spin of any given atom in the solid is just the total spin of all electrons on that atom.
+%It fluctuates both in magnitude and in direction, with a characteristic time that depends on how frequently $d-$electrons hop.
+%We can estimate the time interval between $d-$electron hopping events between atoms as a being of the order $\hbar / \Delta$, where $\Delta$ is the $d-$electron bandwidth.
+%The spin can thus be thought of as being associated to each individual (and constantly hopping) $d-$electron.
+%
+%How do the electron interactions affect this picture?
+%We start by recalling Hund's rule: the nature of the  interactions between atoms leads to an alignment of the spins on each atom.
+%Since the atomic picture seems to prevail in our metal, we have reason to expect a similar effect to occur.
+%An atom with a total spin in some direction at a given time will tend to attract electrons with the spin on that direction and repel those with opposite spin.
+%This mechanism makes it unlikely for the spin of an atom to change much over time.
+%If the interactions between atoms are strong enough, the correlations become considerable and, making our statement  more precise, the total spin of an atom will persist for a time that is long compared with the $d-$electron hopping time.
+%Note that it is not the localization of the electrons that causes the spin state of the atom to persist.
+%The specific electrons belonging to a given atom change all the time as long as their spin is consistent with the total spin requirement imposed by Hund's rule.
+%For strong enough correlations, we may think of the spin as being associated to each atom, which opens up the possibility to describe the system using an atomic (Heisenberg) model, as we shall see later.
 
 A theory of electron correlations in a narrow energy band should reduce to an atomic model in the appropriate limit, for example atoms that are so far apart on a lattice that they interact only very weakly.
 Although we always keep in mind that we are focusing on $d-$electrons, we shall consider $s-$electrons in what follows for the sake of simplicity.

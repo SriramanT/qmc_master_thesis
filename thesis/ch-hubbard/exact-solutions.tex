@@ -11,7 +11,7 @@ Let indexes $i$ and $j$ label sites on a lattice, and define
 \end{equation}
 where $c_{i,\sigma}^{(\dagger)}$ is an operator that annihilates (creates) an electron with spin $\sigma$ on site $i$; $n_{i,\sigma}$ is the number operator counting the number of electrons of spin $\sigma$ on site $i$ (either 0 or 1); $t$ is the hopping parameter related to the kinetic energy of the electrons: it is determined by the overlap of the atomic wave functions on neighboring sites $\left\langle i, j \right\rangle$; $U$ is the on-site Coulomb repulsion between electrons: whenever a site $i$ has two electrons, there is a local repulsion between them corresponding to an energy cost $U n_{i \uparrow} n_{i \downarrow}$ (up to an additive constant); $\mu$ is the chemical potential controlling the electron number (or density).
 
-A given physical observable of interest $\mathcal{O}$, such as the spin-spin correlation, or the magnetic susceptibility may be computed formally by
+A given physical observable of interest $\mathcal{O}$, such as the spin-spin correlation, or the magnetic susceptibility may be computed formally by using the projection operator $\mathcal{P}$ defined below
 \begin{equation}\label{eq:projection}
 \left\langle \mathcal{O} \right\rangle = \text{Tr} [ \mathcal{O} \mathcal{P} ] , \text{where
 } \,\, \mathcal{P} \equiv \frac{1}{Z} e^{-\beta \mathcal{H} } , \text{ with } Z = \text{Tr} [ e^{-\beta \mathcal{H} } ]
@@ -117,11 +117,11 @@ From these we can compute some traces we shall find useful to obtain averages of
 \end{split}
 \end{equation}
 
-The bottom line is that we are able to obtain \emph{exact} expressions for
+The bottom line is that we are able to obtain \emph{exact} expressions for:
 \begin{enumerate}
-\item the one-site density $\rho = \left\langle n_\uparrow \right\rangle + \left\langle n_\downarrow \right\rangle$, measuring the average occupation of each site.
+\item The one-site density $\rho = \left\langle n_\uparrow \right\rangle + \left\langle n_\downarrow \right\rangle$, measuring the average occupation of each site,
 \begin{equation}
-\rho = \frac{\text{Tr} \big[ (n_\uparrow + n_\downarrow ) e^{-\beta\mathcal{H}} \big]}{Z} = \frac{2 e^{\beta(\frac{U}{2} + \mu)} + 2 e^{2\beta\mu}}{1 + 2 e^{\beta(\mu + \frac{U}{2})} + e^{2 \beta \mu}}
+\rho = \frac{\text{Tr} \big[ (n_\uparrow + n_\downarrow ) e^{-\beta\mathcal{H}} \big]}{Z} = \frac{2 e^{\beta(\frac{U}{2} + \mu)} + 2 e^{2\beta\mu}}{1 + 2 e^{\beta(\mu + \frac{U}{2})} + e^{2 \beta \mu}} .
 \end{equation}
 
 Note that when there is no chemical potential $\mu = 0$, we have $\rho = 1$ for any $U$, or $\beta$.
@@ -142,7 +142,7 @@ As we shall see, this feature of the model remains present as the number of site
 Note that in the Mott gap, the compressibility vanishes: $\kappa = \frac{\partial \rho}{\partial \mu} = 0$, leading to the appearance of the Mott Plateau.
 Just as thermal fluctuations can destroy the sharp jumps corresponding to the gap, so can quantum fluctuations.
 The hopping term in the Hamiltonian introduces such fluctuations, leading to an effect similar to that of Fig.(\ref{fig:rhoVsMu_mSqVsT}).
-\item the one-site energy $E = \left\langle \mathcal{H} \right\rangle$.
+\item The one-site energy $E = \left\langle \mathcal{H} \right\rangle$,
 \begin{equation}
 \begin{split}
 E &= \frac{\text{Tr}\bigg( \mathcal{H}e^{-\beta\mathcal{H} } \bigg)}{Z} = \frac{ \frac{U}{4} + 2 ( -\mu - \frac{U}{4} ) e^{\beta(\frac{U}{2} + \mu )} + (\frac{U}{4} - 2\mu ) e^{2\beta\mu}}{1 + 2 e^{\beta (\frac{U}{2} + \mu )} + e^{2\beta\mu} } \\
@@ -154,7 +154,7 @@ which at half filling becomes
 $
 E = \frac{U}{4} - \frac{U}{2} ( 1 + e^{-\beta U /2} )^{-1}
 $.
-\item the double occupancy $\left\langle n_\uparrow n_\downarrow \right\rangle$.
+\item The double occupancy $\left\langle n_\uparrow n_\downarrow \right\rangle$,
 \begin{equation}
 \left\langle n_\uparrow n_\downarrow \right\rangle = \frac{\text{Tr} \big[ n_\uparrow n_\downarrow \big]}{Z} = \frac{e^{2\beta\mu}}{1 + 2 e^{\beta (\frac{U}{2} + \mu )} + e^{2\beta\mu}}
 \end{equation}
@@ -274,18 +274,18 @@ In \acs{1D}, we have $\varepsilon_{k} = - 2 t \cos k$, which gives $N(E) = ( \pi
 
 Now that we have found a closed form solution for $Z$, it is again possible to find closed form expressions for observables of interest as well, namely:
 \begin{enumerate}
-\item the density, or average occupation of each site, $\rho$.
+\item The density, or average occupation of each site, $\rho$,
 \begin{equation}
 \rho = \left\langle n \right\rangle = \left\langle \tilde{n} \right\rangle = \frac{1}{N} \sum_{{\bm k}} \left\langle \tilde{n}_{\bm k} \right\rangle  = \frac{1}{N} \sum_{\bm k}  \frac{1}{1 + e^{\beta (\varepsilon_{\bm k} - \mu)}} = \frac{1}{N} \sum_{\bm k}  f(\bm k) ,
 \end{equation}
 where $f (\bm k ) = \big(1 + e^{\beta(\varepsilon_{\bm k} - \mu)} \big)^{-1}$ is the Fermi-Dirac distribution (at half filling: $\mu = 0$).
-\item the energy $E = \left\langle \mathcal{H} \right\rangle$.
+\item The energy $E = \left\langle \mathcal{H} \right\rangle$, 
 \begin{equation}
-E = \frac{1}{N} \sum_{\bm k} \frac{\varepsilon_{\bm k} - \mu}{1 + e^{\beta(\varepsilon_{\bm k} - \mu)}} = \sum_{\bm k} (\varepsilon_{\bm k} - \mu) f(\bm k)
+E = \frac{1}{N} \sum_{\bm k} \frac{\varepsilon_{\bm k} - \mu}{1 + e^{\beta(\varepsilon_{\bm k} - \mu)}} = \sum_{\bm k} (\varepsilon_{\bm k} - \mu) f(\bm k) .
 \end{equation}
-\item the equal-time Green's function, which plays a key role in computing other quantities, such as correlation functions.
+\item The equal-time Green's function, which will be introduced later, in section \ref{sec:green}, and plays a key role in computing other quantities, such as correlation functions,
 \begin{equation}\label{eq:eqGreenNonInt}
-G_{\bm l \bm j} = \left\langle c_{\bm l} c_{\bm j}^\dagger \right\rangle = \frac{1}{N} \sum_{\bm k} e^{ i {\bm k} \cdot ( \bm l -\bm  j ) } ( 1 - f(\bm k) )
+G_{\bm l \bm j} = \left\langle c_{\bm l} c_{\bm j}^\dagger \right\rangle = \frac{1}{N} \sum_{\bm k} e^{ i {\bm k} \cdot ( \bm l -\bm  j ) } ( 1 - f(\bm k) ) .
 \end{equation}
 
 Note that the Green's function, like the Hamiltonian, is translationally invariant: $G_{\bm l \bm j} = G_{\bm l-\bm j}$. 

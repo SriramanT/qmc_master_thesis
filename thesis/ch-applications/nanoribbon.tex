@@ -1,9 +1,9 @@
 \section{Nanoribbons}
 \label{sec:nanoribbon}
 
-In this section, we apply our code to the case of the honeycomb lattice of graphene and of the triangular lattice with nonuniform hoppings considered in the 3-band minimal model of \acs{TMD}s with intra-orbital on-site interactions.
+In this section, we apply our code to the case of the honeycomb lattice of graphene and of the triangular lattice with the hoppings considered in the 3-band minimal model of \acs{TMD}s with intra-orbital on-site interactions.
 We take boundary conditions corresponding to nanoribbons.
-These structures are much longer on one direction than on the other, , i.e. $l \gg w$, resembling a ribbon, hence their name (see Fig.(\ref{fig:bcRibbon}))\footnote{In Fig.(\ref{fig:bcRibbon}), this condition is, of course, not obeyed solely for the sake of giving a good visual representation of the boundary conditions, and the numbering system).}.
+These structures are much longer on one direction than on the other, i.e. $l \gg w$, resembling a ribbon, hence their name (see Fig.(\ref{fig:bcRibbon}))\footnote{In Fig.(\ref{fig:bcRibbon}), this condition is, of course, not obeyed solely for the sake of giving a good visual representation of the boundary conditions, and the numbering system).}.
 Along the $x$-direction, a ribbon is normally very long, which justifies the fact that we take \acp{PBC}.
 In contrast, in the narrow $y$-direction we take \acp{OBC}.
 The presence of low energy electronic states on the edges of these ribbons might lead to nontrivial magnetic behavior in \ac{TMD} nanostructures (as indeed they do in graphene nanostructures \cite{yazyev_emergence_2010}) and it is this possibility was unexplored numerically before this work \cite{feldner_dynamical_2011, golor_quantum_2013}, as was mentioned in chapter \ref{cap:int}.
@@ -60,7 +60,7 @@ It reaches another (smaller) maximum on the other side of the ribbon, i.e., in t
 This type of global antiferromagnetic ordering (considering the two sublattices) is confirmed by \ac{QMC} \cite{feldner_dynamical_2011, raczkowski_interplay_2017}.
 Other recent auxiliary field \ac{QMC} studies point at the possibility of strain-tuning this type of edge-magnetism in zig-zag graphene nanoribbons \cite{yang_strain-tuning_2017}.
 The authors start by introducing a reduction in the hopping along $x$ to model strain, i.e. changing the hopping between atoms connected by red bonds in Fig.(\ref{fig:bcRibbon}): $-t \mapsto -t + \Delta$.
-Then, they identify phase transitions to edge-magnetized states for relatively small values of the hopping reduction ($\Delta = 0-0.5t$) and on-site interaction ($U = 1 t- 4t$).
+Then, they identify phase transitions to edge-magnetized states for relatively small values of the hopping reduction ($\Delta = 0-0.5t$) and on-site interaction ($U = (1 - 4) t$).
 To do so, they fit the susceptibility at the edge $\chi_e$ to the Curie-Weiss law:
 \begin{equation}
 \frac{1}{\chi_e} = \frac{T - T_c}{A} ,
@@ -80,7 +80,7 @@ By repeating this procedure for different simulations, one can find critical val
 
 Any kind of mean field treatment tends to overestimate long range order.
 In this case, it predicts spin correlations to decay rapidly from the edge rows inward, and then to remain constant along the $x$ direction \cite{feldner_dynamical_2011}.
-The result of Fig.(\ref{fig:bcRibbon}) shows us that it decays as we penetrate the sample, and then increases again, with the profile shown in Fig.(\ref{fig:longProf}).
+The \ac{QMC} result of Fig.(\ref{fig:bcRibbon}) shows us that it decays along the periodic $x$-direction, and then increases again, with the profile shown in Fig.(\ref{fig:longProf}).
 This is a typical result for this type of nanostructure, and it generally indicates long range order.
 For example, in \cite{feldner_dynamical_2011}, it is shown that by increasing the width of ribbon, the correlations decay less and less until they almost reach the type of behavior predicted by mean field.
 
@@ -200,12 +200,12 @@ The self consistent relation allowing us to compute the new MF parameters at eac
 \hspace{0.9cm}
 \includegraphics[scale=1.]{Applications/MFnanoribbon.png}
 \includegraphics[scale=1.45]{Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png}
-	\caption[Comparison between the zero temperature MF solutions of the Hubbard model for a graphene nanoribbon(GNR) and a \acs{TMDNR}]{Comparison between the zero temperature MF solutions of the Hubbard model at half filling ($\left\langle n \right\rangle = 1$) for a $16 \times 8$ graphene nanoribbon (GNR) at $U=1.2$ (left) and a \acs{TMDNR} with $N_y = 16$ at $U = 20$, and electron density $\left\langle n \right\rangle = 0.66$, the filling that corresponds to charge neutrality.Left: Comparison between the spin density profile along the ribbon's transverse direction $\left\langle m \right\rangle (y)$ (the obtained solution is constant along $x$) for the GNR and the \acs{TMDNR}.
+	\caption[Comparison between the zero temperature MF solutions of the Hubbard model for a graphene nanoribbon(GNR) and a \acs{TMDNR}]{Comparison between the zero temperature MF solutions of the Hubbard model at half filling ($\left\langle n \right\rangle = 1$) for a $16 \times 8$ graphene nanoribbon (GNR) at $U=1.2t$ (left) and a \acs{TMDNR} with $N_y = 16$ at $U = 20| t_0 |$, and electron density $\left\langle n \right\rangle = 0.66$, the filling that corresponds to charge neutrality.Left: Comparison between the spin density profile along the ribbon's transverse direction $\left\langle m \right\rangle (y)$ (the obtained solution is constant along $x$) for the GNR and the \acs{TMDNR}.
 Right: Ordered phases obtained in mean field for graphene and \ac{TMD} nanoribbons. 
 The size of the dots corresponds to the magnitude of the spin, and red stands for a positive spin, while blue stands for a negative spin.}
 	\label{fig:nanoGraphVsTMD}
 \end{figure}
-From now on, we take a \acs{TMDNR} with $N_y = 16$, $U = 20$ and $\left\langle n \right\rangle = 0.66$.
+From now on, we take a \acs{TMDNR} with $N_y = 16$, $U = 20| t_0 |$ and $\left\langle n \right\rangle = 0.66$.
 By solving the self-consistent equation iteratively, at zero temperature, for varying $U$, we find two phase transitions, with respective critical on-site interactions $U_{c_1} \approx 11.8 |t_0|$, and $U_{c_2} \approx 15.395 |t_0|$.
 \begin{figure}[H]
 \includegraphics[trim={0cm 1.7cm 0cm 1.7cm},clip, scale =0.21]{Applications/tmd-mf/edge-mag.pdf}
@@ -228,7 +228,7 @@ To understand the effect of the on-site interaction at the mean field level, we 
 \begin{figure}[H]
 \centering
 \includegraphics[trim={0cm 3cm 0cm 4cm},clip, scale =0.35]{Applications/tmd-mf/bandsZoomed.pdf}
-	\caption[$T=0$ mean field band structure for a \ac{TMDNR} of width $N_y = 16$ in the ordered phase, at $U=20$.]{$T=0$ mean field band structure for a \ac{TMDNR} of width $N_y = 16$ in the ordered phase ($U=20$).}
+	\caption[$T=0$ mean field band structure for a \ac{TMDNR} of width $N_y = 16$ in the ordered phase, at $U=20 | t_0 |$.]{$T=0$ mean field band structure for a \ac{TMDNR} of width $N_y = 16$ in the ordered phase ($U=20 | t_0 |$).}
 	\label{fig:bandsZoomed}
 \end{figure}
 
@@ -245,12 +245,12 @@ the K-point splitting (circled in yellow), corresponding to a region where one o
 \includegraphics[scale=0.42]{Applications/tmd-mf/superposedBands075} \\
 \includegraphics[scale=0.42]{Applications/tmd-mf/superposedBands4} \\
 	\caption[Spin-resolved band structures for varying $U$ and $\beta$, compared with the tight-binding bands.]{Spin-resolved band structures for varying $U$ and $\beta$, compared with the tight-binding bands, demonstrating the changes in shape of the bands, and the change of the Fermi energy.
-	From top to bottom, we have $\beta = 0.5, 0.75, 4$.
+	From top to bottom, we have $\beta = (0.5, 0.75, 4)| t_0 |$.
 	We can see that increasing $U$ leads to an increase in the Fermi energy, to compensate for the states that gain more energy, and that must be occupied to ensure charge neutrality.
 	On the rightmost figures, we represent the Fermi energy that would correspond to the  considered temperature in the tight-binding case.}
 	\label{fig:band-structures}
 \end{figure}
-The spin polarization leading to the edge magnetization is due to the different occupation of the spin-up and spin-down bands.
+The edge magnetization is due to the different occupation of the spin-up (in red) and spin-down bands (in blue).
 As the red, spin-up band near the Fermi energy rests completely below it, its electronic states are all occupied, while the corresponding spin-down states are all above $\varepsilon_F$, and thus are unoccupied.
 If these states were extended throughout the sample, a magnetization would appear in the bulk as well.
 However, as we show later, the wave functions corresponding to the states near the Fermi energy are heavily localized at the edges.
@@ -281,28 +281,27 @@ Finally, in Fig.(\ref{fig:pdMF}), we present a complete phase diagram, containin
 \includegraphics[scale=0.38]{Applications/tmd-mf/bands152.png}
 \hspace{8mm}
 \includegraphics[scale=0.38]{Applications/tmd-mf/bands154.png}
-	\caption[Comparison of the band structures at $U = 15.2$, and $U=15.4$.]{Comparison of the band structures at $U = 15.2$ (left), and $U=15.4$ (right). The second phase transition occurs because the degeneracy of the bands marked as "$1$" below $U = 15.395$ is lifted, leading to the appearance of two bands, marked "$2$", and "$3$". Band 2 stays above the Fermi energy. Thus, it is unoccupied. Part of band 3 becomes occupied, leading to the magnetization of the edge (the states that become occupied are localized at the bottom edge).}
+	\caption[Comparison of the band structures at $U = 15.2| t_0 |$, and $U=15.4| t_0 |$.]{Comparison of the band structures at $U = 15.2| t_0 |$ (left), and $U=15.4| t_0 |$ (right). The second phase transition occurs because the degeneracy of the bands marked as "$1$" below $U = 15.395 | t_0 |$ is lifted, leading to the appearance of two bands, marked "$2$", and "$3$". Band 2 stays above the Fermi energy. Thus, it is unoccupied. Part of band 3 becomes occupied, leading to the magnetization of the edge (the states that become occupied are localized at the bottom edge).}
 	\label{fig:bandDegen}
 \end{figure}
 \vspace{-0.6cm}
 \begin{figure}[H]
 \hspace{0.3cm}
 \includegraphics[scale=0.55]{Applications/tmd-mf/edge-mag-phase-diagram}
-\includegraphics[scale = 0.53]{Applications/signTMDdensSignU16beta2.png}
-	\caption[Mean field phase diagram for varying $U$ and $\beta$. Average sign as a function of electron density, obtained by running our determinant \ac{QMC} code for a $9 \times 4$ \acs{TMDNR} at $\beta = 2$, $U = 16$.]{Left: Mean field phase diagram for varying $U$ and $\beta$. Right: Average sign as a function of electron density, obtained by running our determinant \ac{QMC} code for a $9 \times 4$ \acs{TMDNR} at $\beta = 2$, $U = 16$.}
+	\caption[Mean field phase diagram for varying $U$ and $\beta$. Average sign as a function of electron density, obtained by running our determinant \ac{QMC} code for a $9 \times 4$ \acs{TMDNR} at $\beta = 2| t_0 |$, $U = 16| t_0 |$.]{Left: Mean field phase diagram for varying $U$ and $\beta$. Right: Average sign as a function of electron density, obtained by running our determinant \ac{QMC} code for a $9 \times 4$ \acs{TMDNR} at $\beta = 2| t_0 |$, $U = 16| t_0 |$.}
 	\label{fig:pdMF}
 \end{figure}
 \vspace{-0.3cm}
-The first phase transition is suppressed at inverse temperature $\beta \lesssim 1$ (in units of $| t_0 |$), and for yet higher temperatures the second transition too is suppressed.
+The first phase transition is suppressed at inverse temperature $\beta \lesssim 1 | t_0 |$, and for yet higher temperatures the second transition too is suppressed.
 The critical on-site interactions $U_{c_{1, 2}}$ vary with temperature.
-As $\beta$ is decreased from $\infty$ to $\beta \sim 10$, the first transition occurs sooner, at about $U = 10$, and the center plateau between the two transitions becomes shorter.
-By $\beta = 2$, the plateau has disappeared, $U_{c_1}$ returns to about its original ($\beta = \infty$) value, and the magnetization increases smoothly until $U_{c_2}$ (which is now higher than the original one at $\beta = \infty$ ).
-Below $\beta = 0.75$, the system smoothly increases its edge magnetization starting at $U \sim 12$, and at about $\beta = 0.1$, both transitions seem to be completely suppressed (in this range of $U$).
+As $\beta$ is decreased from $\infty$ to $\beta \sim 10 | t_0 |$, the first transition occurs sooner, at about $U = 10 | t_0 |$, and the center plateau between the two transitions becomes shorter.
+By $\beta = 2 | t_0 |$, the plateau has disappeared, $U_{c_1}$ returns to about its original ($\beta = \infty$) value, and the magnetization increases smoothly until $U_{c_2}$ (which is now higher than the original one at $\beta = \infty$ ).
+Below $\beta = 0.75 | t_0 |$, the system smoothly increases its edge magnetization starting at $U \sim 12 | t_0 |$, and at about $\beta = 0.1 | t_0 |$, both transitions seem to be completely suppressed (in this range of $U$).
 
 In Fig.(\ref{fig:pdMF}, right), we show an example of a result of our \ac{QMC} code for a \acs{TMDNR}.
 On the lattice models considered so far, we took half filling, where (in the cases we had been discussing so far - bipartite lattices and particularly symmetric Hamiltonians) there is no sign problem (see appendix \ref{ap:theoAFQMC}).
 In the model we consider, the sign problem severely restricts the range of parameters $U$, $\beta$, $\mu$ (or $\left\langle n \right\rangle$) that we can explore.
-In fact, for $\beta > 2$, the average sign rapidly goes to zero for the range of on-site interactions where mean field predicts the existence of an ordered phase.
+In fact, for $\beta > 2 | t_0 |$, the average sign rapidly goes to zero for the range of on-site interactions where mean field predicts the existence of an ordered phase.
 Nonetheless, Fig.(\ref{fig:pdMF}, right) gives us a particularly good combination of parameters for which mean field predicts an ordered phase, and at the relevant electron density $\left\langle n \right\rangle = 0.66$, the sign problem is not prohibitive ($\left\langle \text{sign} \right\rangle \sim0.4$), so that our simulations can be used to extract information about the system.
 However, the preliminar results of Fig.(\ref{fig:tmd-data}) indicate that the complexity of the problem is much higher than, for example, in the case of graphene.
 Furthermore, recent analogous studies for graphene \cite{feldner_dynamical_2011, yang_strain-tuning_2017,raczkowski_interplay_2017} suggest that one needs thicker ribbons to measure long range ordering with enough accuracy, which implies taking larger system sizes.
@@ -310,8 +309,8 @@ To be conclusive about the true nature of edge-magnetism in \ac{TMDNR}s, given t
 \vspace{-0.25cm}
 \begin{figure}[H]
 \centering
-\includegraphics[scale = 0.84]{Applications/tmdFinalxyxy.png} \\
-\hspace{-0.5cm}\includegraphics[scale = 0.87]{Applications/tmdFinalx2y2z2.png}
+\includegraphics[scale = 1.07]{Applications/tmdFinalxyxy.png} \\
+\hspace{-0.5cm}\includegraphics[scale = 1.08]{Applications/tmdFinalx2y2z2.png}
 	\caption[Longitudinal profile (along the $x$ direction) of orbital-resolved $S^z$ spin-spin correlation functions we measured, for two lattice sizes: $9 \times 4$ and $9 \times 6$.]{Longitudinal profile (along the $x$ direction) of some of the orbital-resolved $S^z$ spin-spin correlation functions for two lattice sizes $9 \times 4$ and $9 \times 6$ ($d_{x^2-y^2} d_{z^2}$ and $d_{xy} - d_{xy}$).
 	We use translational invariance along the $x$ direction to average these correlations to improve the statistical properties of the estimator.
 	On the left, curves 0, and 3 show correlations along the edge rows, while on the right, curves 0 and 5 correspond to the edges.}

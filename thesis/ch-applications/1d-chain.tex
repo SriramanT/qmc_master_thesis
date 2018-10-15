@@ -17,7 +17,7 @@ Contrastingly, the $q = 0$ components of both the structure factor and the susce
 \includegraphics[scale=0.53]{Applications/magCorr.png}
 \hspace{0.7cm}
 \includegraphics[scale=0.53]{Applications/SandChi.png}
-\caption[Spin-spin correlation function, magnetic structure factor, and susceptibility for a 64 site Hubbard chain at $\beta = 25 t$, for $U = 4$.]{Left: Spin-spin correlation function $\left\langle S^z_i S^z_j \right\rangle$ centered on the middle of the chain.
+\caption[Spin-spin correlation function, magnetic structure factor, and susceptibility for a 64 site Hubbard chain at $\beta = 25 t$, for $U = 4t$.]{Left: Spin-spin correlation function $\left\langle S^z_i S^z_j \right\rangle$ centered on the middle of the chain.
 Right: Magnetic structure factor, and susceptibility (right) for a 64 site Hubbard chain at $\beta = 25 t$, for $U = 4t$, at half filling $\left\langle n \right\rangle = 1$.}
 \end{figure}
 %According to spin-wave theory, the magnetic susceptiblity can be obtained from the spin-wave dispersion relation $\varepsilon ( k ) \propto k$, and at low temperature, we have
@@ -43,7 +43,7 @@ Already at $U = 4 t$, we find exactly this behavior with a critical temperature 
 The staggered susceptibility diverges near $T_c = 0$, signaling the transition to the antiferromagnetic ground state.}
 \end{figure}
 
-We ran \texttt{QUEST} for the same 64-site chain we simulated with our code, using $\beta = 25 t$, taking a half filled chain ($\left\langle n \right\rangle = 1$), and setting $U = 4$.
+We ran \texttt{QUEST} for the same 64-site chain we simulated with our code, using $\beta = 25 t$, taking a half filled chain ($\left\langle n \right\rangle = 1$), and setting $U = 4t$.
 We found a remarkable agreement between the measurements obtained using our code and using \texttt{QUEST}, namely in the magnetic structure factor, which we show in Fig.(\ref{fig:quest_time}).
 Then, we took a small $2$-site system to compare the run time and verify the $\mathcal{O}(L)$ scaling of the determinant \ac{QMC} algorithm.
 We noticed that \texttt{QUEST}'s algorithm suffers from large overhead time if the required precision via the Trotter error $\Delta \tau$, or the inverse temperature $\beta$ are large. 

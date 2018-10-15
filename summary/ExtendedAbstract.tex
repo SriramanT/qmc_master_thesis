@@ -38,6 +38,33 @@
 %% \usepackage{graphicx}
 %% or use the epsfig package if you prefer to use the old commands
 %% \usepackage{epsfig}
+
+% MY OWN PACKAGES
+\usepackage{cuted}
+\usepackage{bm}
+\usepackage{bbm}
+\pagenumbering{arabic}
+\usepackage{scrextend}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\usepackage{dirtytalk}
+\usepackage{setspace}
+\newcommand*\chem[1]{\ensuremath{\mathrm{#1}}}
+\def\Pm{\mathrel{\raise -1.2pt \hbox{\tiny(}\! 
+                 \raise 1.5pt \hbox{+}
+                 \settowidth {\dimen03} {+}
+                 \hskip-\dimen03
+                 \raise -2.6pt \hbox {$-$}
+                 \!\raise -1.2pt \hbox{\tiny)}}}
+\usepackage{simplewick}
+\newcommand{\angstrom}{\textup{\AA}}
+\usepackage{multicol}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, amsbsy}
+\DeclareMathOperator{\Tr}{Tr}
+\usepackage[backend=biber,style=nature,sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+
 \usepackage{graphicx} % Enhanced LaTeX Graphics
 
 % Multiple figures
@@ -189,12 +216,17 @@
 % > unsorted with entries appearing in the order in which the citations appear.
 %\bibliographystyle{unsrt}
 % > entries ordered alphabetically, with first names and names of journals and months abbreviated
-\bibliographystyle{abbrv}
+%\bibliographystyle{abbrv}
 % > entries ordered alphabetically, with reference markers based on authors' initials and publication year
 %\bibliographystyle{alpha}
 
+\renewcommand{\bibfont}{\scriptsize}
+\begin{multicols}{2}
+	\printbibliography[heading=none]
+\end{multicols}
+
 % External bibliography database file in the BibTeX format (ExtendedAbstract_ref_db.bib)
-\bibliography{ExtendedAbstract_ref_db}
+%\bibliography{ExtendedAbstract_ref_db}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

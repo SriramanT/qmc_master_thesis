@@ -182,7 +182,7 @@ To prove it, consider the matrices
 \end{pmatrix}
 \end{equation}
 
-Using the identity $\det ( \bm A \bm B ) = \det ( \bm A ) \det ( \bm B )$ applied to these two matrices, we can clearly see that the determinants of the two matrices coincide, i.e.
+Using the identity $\det ( \bm M \bm N ) = \det ( \bm M ) \det ( \bm N )$ applied to these two matrices, we can clearly see that the determinants of the two matrices coincide, i.e.
 \begin{equation}
 \det ( \bm P) = \det
 \begin{pmatrix}
@@ -214,14 +214,14 @@ The sought identity is obtained by computing the determinants explicitly.
 \bm I & \bm 0 \\
 \bm B & \bm I + \bm B \bm A 
 \end{pmatrix}
-= \bm I + \bm B \bm A 
+= \det (\bm I + \bm B \bm A )
 \quad
 \det ( \bm Q ) = \det
 \begin{pmatrix}
 \bm I + \bm A \bm B & \bm 0 \\
 \bm B & \bm I
 \end{pmatrix}
-= \bm I + \bm A \bm B
+= \det ( \bm I + \bm A \bm B )
 \end{equation}
 
 A corollary of Sylvester's identity for any two column vectors: $\text{det}[\bm I + \bm x \bm y^T] = 1 + \bm y^T \bm x$ may be used with $x \mapsto ( \bm I - \bm A_1^{-1} ) \bm e_1$, $y \mapsto \bm e_1$ to write the ratio of the determinants of matrices $\bm A_1$ and $\bm A_2$ as
@@ -305,14 +305,14 @@ In the following figures we give examples of this procedure for a Hubbard chain 
 \begin{figure}[H]
 \includegraphics[scale = 0.5]{Applications/muVsSign.png}
 \includegraphics[scale = 0.5]{Applications/densVsSign.png}
-	\caption[Average sign as a function of chemical potential/electron density for a Hubbard chain.]{Average sign as a function of chemical potential/electron density for a Hubbard chain.}
+	\caption[Average sign as a function of chemical potential/electron density for a 4-site Hubbard chain.]{Average sign as a function of chemical potential/electron density for a 4-site Hubbard chain.}
 	\label{fig:signMuDens}
 \end{figure}
 \begin{figure}[H]
 \includegraphics[scale = 0.5]{Applications/muDens.png}
 \includegraphics[scale = 0.5]{Applications/muSignTMDbeta1.png}
-	\caption[Electron density as a function of chemical potential for a Hubbard chain. Average sign as a function of chemical potential for a simulation of a $9 \times 4$ TMD nanoribbon using the minimal model described in chapter 2.]{Left: Electron density as a function of chemical potential for a Hubbard chain.
-	Right: Average sign as a function of chemical potential for a simulation of a $9 \times 4$ TMD nanoribbon using the minimal model described in chapter 2 at $\beta = 1$ and $U = 14, 16, 18$.
+	\caption[Electron density as a function of chemical potential for a 4-site Hubbard chain. Average sign as a function of chemical potential for a simulation of a $9 \times 4$ TMD nanoribbon using the minimal model described in chapter 2.]{Left: Electron density as a function of chemical potential for a 4-site Hubbard chain.
+	Right: Average sign as a function of chemical potential for a simulation of a $9 \times 4$ TMD nanoribbon using the minimal model described in chapter 2 at $\beta = 1 |t_0|$ and $U = (14, 16, 18)|t_0|$.
 	The sign problem worsens as $U$ is increased.}
 	\label{fig:muSign}
 \end{figure}
@@ -325,13 +325,13 @@ In the following figures we give examples of this procedure for a Hubbard chain 
 \begin{figure}[H]
 \includegraphics[scale = 0.5]{Applications/muSignTMDbeta1.png}
 \includegraphics[scale = 0.5]{Applications/signTMDmusSignU16beta2.png}
-	\caption[Average sign as a function of chemical potential for the same system, and for a system at lower temperature ($\beta = 2$), and fixed on-site/orbital interaction $U = 16$.]{Average sign as a function of chemical potential for the same system (left), and for a system at lower temperature ($\beta = 2$), and fixed on-site/orbital interaction $U = 16$ (right).}
+	\caption[Average sign as a function of chemical potential for the same system, and for a system at lower temperature ($\beta = 2|t_0|$), and fixed on-site/orbital interaction $U = 16|t_0|$.]{Average sign as a function of chemical potential for the same system (left), and for a system at lower temperature ($\beta = 2|t_0|$), and fixed on-site/orbital interaction $U = 16|t_0|$ (right).}
 	\label{fig:muDensU16signDens}
 \end{figure}
 \begin{figure}[H]
 \includegraphics[scale = 0.5]{Applications/signTMDmusDensU16beta2.png}
 \includegraphics[scale = 0.5]{Applications/Local-av-sign.png}
-	\caption[Electron density as a function of the chemical potential for the $9 \times 4$ \acs{TMD} nanoribbon, with $\beta = 2$ and $U = 16$. Sign of the accepted configuration as a function for a few space-time sweeps of the algorithm.]{Left: Electron density as a function of the chemical potential for the $9 \times 4$ \acs{TMD} nanoribbon, with $\beta = 2$ and $U = 16$.
+	\caption[Electron density as a function of the chemical potential for the $9 \times 4$ \acs{TMD} nanoribbon, with $\beta = 2|t_0|$ and $U = 16|t_0|$. Sign of the accepted configuration as a function for a few space-time sweeps of the algorithm.]{Left: Electron density as a function of the chemical potential for the $9 \times 4$ \acs{TMD} nanoribbon, with $\beta =1 |t_0|$ and $U = 16|t_0|$.
 	Right: Sign of the accepted configuration as a function for a few space-time sweeps of the algorithm, for the same \acs{TMDNR}; the red line is the local average of the sign.}
 	\label{fig:SignLoc}
 \end{figure}

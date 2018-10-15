@@ -1,0 +1,346 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{novoselov_electric_2004}{article}{}
+      \name{author}{8}{}{%
+        {{hash=36069fe6cce2bfc2ce88ced9f8a6618f}{%
+           family={Novoselov},
+           familyi={N\bibinitperiod},
+           given={K.\bibnamedelimi S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=61254c1999639e718d72bd4ac22286a4}{%
+           family={Geim},
+           familyi={G\bibinitperiod},
+           given={A.\bibnamedelimi K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=f7fdfb33b45fd6ae767d0324c3ddcafa}{%
+           family={Morozov},
+           familyi={M\bibinitperiod},
+           given={S.\bibnamedelimi V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=444a95a649677e9745b34ae7e38568c1}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=95a281ba3b1fbf7b222b10f7711f11b0}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=10fe886b17345abea64ddb74a08da317}{%
+           family={Dubonos},
+           familyi={D\bibinitperiod},
+           given={S.\bibnamedelimi V.},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=8e5bd9db7c5443d603b907d2e052beae}{%
+           family={Grigorieva},
+           familyi={G\bibinitperiod},
+           given={I.\bibnamedelimi V.},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=c261a992b3a0a120688d0e32100d5ca6}{%
+           family={Firsov},
+           familyi={F\bibinitperiod},
+           given={A.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c717d530904180772bde0a9ffb9b9e7}
+      \strng{fullhash}{eb745baf8be6825ca0a07de2f497762a}
+      \strng{bibnamehash}{1c717d530904180772bde0a9ffb9b9e7}
+      \strng{authorbibnamehash}{1c717d530904180772bde0a9ffb9b9e7}
+      \strng{authornamehash}{1c717d530904180772bde0a9ffb9b9e7}
+      \strng{authorfullhash}{eb745baf8be6825ca0a07de2f497762a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We describe monocrystalline graphitic films, which are a few atoms thick but are nonetheless stable under ambient conditions, metallic, and of remarkably high quality. The films are found to be a two-dimensional semimetal with a tiny overlap between valence and conductance bands, and they exhibit a strong ambipolar electric field effect such that electrons and holes in concentrations up to 1013 per square centimeter and with room-temperature mobilities of ∼10,000 square centimeters per volt-second can be induced by applying gate voltage. Exfoliating graphite yields stable carbon films just a few atoms thick, which on a silicon substrate act as a new type of strong semimetal transistor. Exfoliating graphite yields stable carbon films just a few atoms thick, which on a silicon substrate act as a new type of strong semimetal transistor.}
+      \field{day}{22}
+      \field{issn}{0036-8075, 1095-9203}
+      \field{journaltitle}{Science}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{5696}
+      \field{title}{Electric Field Effect in Atomically Thin Carbon Films}
+      \field{urlday}{10}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{volume}{306}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{666\bibrangedash 669}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1126/science.1102896
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/franciscobrito/Zotero/storage/QBZMH58T/Novoselov et al. - 2004 - Electric Field Effect in Atomically Thin Carbon Fi.pdf:application/pdf;Snapshot:/Users/franciscobrito/Zotero/storage/AP27JPSV/666.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://science.sciencemag.org/content/306/5696/666
+      \endverb
+      \verb{url}
+      \verb http://science.sciencemag.org/content/306/5696/666
+      \endverb
+    \endentry
+    \entry{liu_three-band_2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fcc911878c164d26085ea1f484fd4eb9}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Gui-Bin},
+           giveni={G\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=b545fc883aea552017ca0f5a772c6855}{%
+           family={Shan},
+           familyi={S\bibinitperiod},
+           given={Wen-Yu},
+           giveni={W\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=ed543cfa89de1fe2082396131703241e}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Yugui},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bca84b8be8dfdf75206a80fe59c55e35}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Wang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=cc1352d1711338afe7b3f3b971e85c13}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Di},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{254db7dc0f171cd260a16b0dd24c846a}
+      \strng{fullhash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \strng{bibnamehash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \strng{authorbibnamehash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \strng{authornamehash}{254db7dc0f171cd260a16b0dd24c846a}
+      \strng{authorfullhash}{bbf60e1dea0d2d070519a2826b2b44df}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a three-band tight-binding ({TB}) model for describing the low-energy physics in monolayers of group-{VIB} transition metal dichalcogenides {MX}2 (M=Mo, W; X=S, Se, Te). As the conduction- and valence-band edges are predominantly contributed by the dz2, dxy, and dx2−y2 orbitals of M atoms, the {TB} model is constructed using these three orbitals based on the symmetries of the monolayers. Parameters of the {TB} model are fitted from the first-principles energy bands for all {MX}2 monolayers. The {TB} model involving only the nearest-neighbor M-M hoppings is sufficient to capture the band-edge properties in the ±K valleys, including the energy dispersions as well as the Berry curvatures. The {TB} model involving up to the third-nearest-neighbor M-M hoppings can well reproduce the energy bands in the entire Brillouin zone. Spin-orbit coupling in valence bands is well accounted for by including the on-site spin-orbit interactions of M atoms. The conduction band also exhibits a small valley-dependent spin splitting which has an overall sign difference between {MoX}2 and {WX}2. We discuss the origins of these corrections to the three-band model. The three-band {TB} model developed here is efficient to account for low-energy physics in {MX}2 monolayers, and its simplicity can be particularly useful in the study of many-body physics and physics of edge states.}
+      \field{day}{26}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{8}
+      \field{number}{8}
+      \field{shortjournal}{Phys. Rev. B}
+      \field{title}{Three-band tight-binding model for monolayers of group-{VIB} transition metal dichalcogenides}
+      \field{urlday}{14}
+      \field{urlmonth}{8}
+      \field{urlyear}{2018}
+      \field{volume}{88}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{085433}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.88.085433
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/Users/franciscobrito/Zotero/storage/7PYF872E/PhysRevB.88.html:text/html;Liu2013-erratum.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Liu2013-erratum.pdf:application/pdf;Liu2013.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Liu2013.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.88.085433
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevB.88.085433
+      \endverb
+    \endentry
+    \entry{troyer_computational_2005}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8c95c0b716ad4a10a2ab4370aca0d0ca}{%
+           family={Troyer},
+           familyi={T\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=801584482294882ba45ba6f5e9aa5456}{%
+           family={Wiese},
+           familyi={W\bibinitperiod},
+           given={Uwe-Jens},
+           giveni={U\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{67324938f341ebfcb460cc8f09d376f4}
+      \strng{fullhash}{67324938f341ebfcb460cc8f09d376f4}
+      \strng{bibnamehash}{67324938f341ebfcb460cc8f09d376f4}
+      \strng{authorbibnamehash}{67324938f341ebfcb460cc8f09d376f4}
+      \strng{authornamehash}{67324938f341ebfcb460cc8f09d376f4}
+      \strng{authorfullhash}{67324938f341ebfcb460cc8f09d376f4}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Quantum Monte Carlo simulations, while being efficient for bosons, suffer from the “negative sign problem” when applied to fermions—causing an exponential increase of the computing time with the number of particles. A polynomial time solution to the sign problem is highly desired since it would provide an unbiased and numerically exact method to simulate correlated quantum systems. Here we show that such a solution is almost certainly unattainable by proving that the sign problem is nondeterministic polynomial ({NP}) hard, implying that a generic solution of the sign problem would also solve all problems in the complexity class {NP} in polynomial time.}
+      \field{day}{4}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{5}
+      \field{number}{17}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Computational Complexity and Fundamental Limitations to Fermionic Quantum Monte Carlo Simulations}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{94}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{170201}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.94.170201
+      \endverb
+      \verb{file}
+      \verb APS Snapshot:/Users/franciscobrito/Zotero/storage/CTD34YQE/PhysRevLett.94.html:text/html;Troyer2005.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/sign-problem/Troyer2005.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.94.170201
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.94.170201
+      \endverb
+      \keyw{Sign problem}
+    \endentry
+    \entry{hou_numerical_2009}{inbook}{}
+      \name{author}{4}{}{%
+        {{hash=1152022ae21c42723dbd02ef3e840663}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Zhaojun},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=2853def73650dc0f9dd85279b83aceaf}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wenbin},
+           giveni={W\bibinitperiod}}}%
+        {{hash=93a057e341d8b26f54ff6384b86c79d6}{%
+           family={Scalettar},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2e502740fbdacb1962a23f142035aa9a}{%
+           family={Yamazaki},
+           familyi={Y\bibinitperiod},
+           given={Ichitaro},
+           giveni={I\bibinitperiod}}}%
+      }
+      \name{bookauthor}{3}{}{%
+        {{hash=6976afb820819676e2bbe811cdbdf875}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima Y},
+           giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=4ec3e9c8301de4f687edbaef543e2206}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chun},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c94eab2fe25997199aafe2200d3f000f}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jian-Guo},
+           giveni={J\bibinithyphendelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{CO}-{PUBLISHED} {WITH} {HIGHER} {EDUCATION} {PRESS}}%
+      }
+      \strng{namehash}{528a3fda56821a6a9fe15e44f335246a}
+      \strng{fullhash}{c6c119e9b6a3cf31eb500001fb291f2b}
+      \strng{bibnamehash}{c6c119e9b6a3cf31eb500001fb291f2b}
+      \strng{authorbibnamehash}{c6c119e9b6a3cf31eb500001fb291f2b}
+      \strng{authornamehash}{528a3fda56821a6a9fe15e44f335246a}
+      \strng{authorfullhash}{c6c119e9b6a3cf31eb500001fb291f2b}
+      \strng{bookauthorbibnamehash}{cc75efbd1597c7be39a3f9144ecbace3}
+      \strng{bookauthornamehash}{7674bf3ba25bba5570b5deacbefb504d}
+      \strng{bookauthorfullhash}{cc75efbd1597c7be39a3f9144ecbace3}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Series in Contemporary Applied Mathematics}
+      \field{isbn}{978-981-4273-25-1 978-981-4273-26-8}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{Numerical Methods for Quantum Monte Carlo Simulations of the Hubbard Model}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{volume}{12}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 110}
+      \range{pages}{110}
+      \verb{doi}
+      \verb 10.1142/9789814273268_0001
+      \endverb
+      \verb{file}
+      \verb Bai2009.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Bai2009.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.worldscientific.com/doi/abs/10.1142/9789814273268_0001
+      \endverb
+      \verb{url}
+      \verb http://www.worldscientific.com/doi/abs/10.1142/9789814273268_0001
+      \endverb
+      \keyw{Quantum Monte Carlo,Numerical Methods,Determinant,Bai,Scalettar}
+    \endentry
+    \entry{hirsch_discrete_1983}{article}{}
+      \name{author}{1}{}{%
+        {{hash=eefc2eb9b9cb2c10cb62f286fac3ed4c}{%
+           family={Hirsch},
+           familyi={H\bibinitperiod},
+           given={J.E.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{eefc2eb9b9cb2c10cb62f286fac3ed4c}
+      \strng{fullhash}{eefc2eb9b9cb2c10cb62f286fac3ed4c}
+      \strng{bibnamehash}{eefc2eb9b9cb2c10cb62f286fac3ed4c}
+      \strng{authorbibnamehash}{eefc2eb9b9cb2c10cb62f286fac3ed4c}
+      \strng{authornamehash}{eefc2eb9b9cb2c10cb62f286fac3ed4c}
+      \strng{authorfullhash}{eefc2eb9b9cb2c10cb62f286fac3ed4c}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We discuss a new functional-integral formulation of interacting fermion systems on a lattice such as the Anderson or Hubbard models: the fermion-fermion interaction is eliminated by introducing auxiliary Ising variables. The resulting model for a d-dimensional quantum system is a (d+1)-dimensional Ising model with complicated interactions. The new transformation is particularly useful for performing numerical studies of these models using Monte Carlo techniques. We study its convergence properties and compare it with the usual Gaussian formulation for the case of the Hubbard model.}
+      \field{day}{16}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{6}
+      \field{number}{7}
+      \field{title}{Discrete Hubbard-Stratonovich transformation for fermion lattice models}
+      \field{volume}{28}
+      \field{year}{1983}
+      \field{dateera}{ce}
+      \field{pages}{4059\bibrangedash 4061}
+      \range{pages}{3}
+      \verb{file}
+      \verb Hirsch1983.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/hubbard-stratonovich/Hirsch1983.pdf:application/pdf
+      \endverb
+      \keyw{Hubbard-Stratonovich,Discrete,Transformation,Fermion lattice models}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

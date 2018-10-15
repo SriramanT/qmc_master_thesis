@@ -13,22 +13,16 @@ Right: \ac{QMC} data showing the decrease of the double occupancy with increasin
 \end{figure}
 Our results for a half-filled $4 \times 4$ lattice at $\beta = 16 t$ clearly show antiferromagnetic spin-spin correlations - Fig.(\ref{fig:corrSq},left), which results in a peak of the magnetic structure factor $S (\bm q)$ at $\bm q = (\pi, \pi)$ - Fig.(\ref{fig:corrSq},right).
 \begin{figure}[H]
-\includegraphics[scale=0.55]{Applications/square/CorrelationsDots}
-\hspace{0.5cm}
-\includegraphics[scale=0.65]{Applications/square/S(q)}
+\includegraphics[scale=0.4]{Applications/square/CorrelationsDots}
+\includegraphics[scale=0.4]{Applications/square/S(q)pcolor.png}
+\includegraphics[scale=0.4]{Applications/square/chi(q)pcolor.png}
 \caption[Spin-spin correlations on the square lattice.
-Magnetic structure factors showing a peak at $\bm q = \bm \pi$.]{Spin-spin correlations with respect to the point on the lower left corner of the lattice (which we label as $\bm 0$).
-3D Plot of the magnetic structure factor $S ( \bm q)$ displaying the $\bm q = \bm \pi$ peak \label{fig:corrSq}.}
+Magnetic structure factors showing a peak at $\bm q = \bm \pi$. Color maps of the structure factor $S ( \bm q)$, and susceptibility $\chi ( \bm q)$, both showing peaks at $\bm q = \bm\pi$.]{Spin-spin correlations with respect to the point on the lower left corner of the lattice (which we label as $\bm 0$).
+Color maps of the structure factor $S ( \bm q)$, and susceptibility $\chi ( \bm q)$, both showing peaks at $\bm q = \bm\pi$.
+ \label{fig:corrSq}.}
 \end{figure}
-The susceptibility $\chi ( \bm q) $ is also strongly peaked at $\bm q = \bm \pi$, again revealing long range \ac{AF} order.
-\begin{figure}[H]
-\hspace{1cm}
-\includegraphics[scale=0.5]{Applications/square/S(q)pcolor.png}
-\hspace{0.4cm}
-\includegraphics[scale=0.5]{Applications/square/chi(q)pcolor.png}
-\caption[Color map of the structure factor $S ( \bm q)$, and susceptibility $\chi ( \bm q)$, both showing peaks at $\bm q = \bm\pi$.]{Color map of the structure factor $S ( \bm q)$, and susceptibility $\chi ( \bm q)$, both showing peaks at $\bm q = \bm\pi$.\label{fig:Schi3d}}
-\end{figure}
-\vspace{-0.5cm}
+The susceptibility $\chi ( \bm q) $ is also strongly peaked at $\bm q = \bm \pi$, again revealing long range \ac{AF} order (Fig.(\ref{fig:corrSq},right)).
+
 We finish this section by characterizing \ac{AF} order for varying system size and temperature, reproducing one of the main results of the seminal \ac{QMC} study of White, Scalapino and Sugar \cite{white_numerical_1989}.
 In this paper, the authors report that by $\beta = 20 t$, our finite temperature algorithm is already measuring ground state properties.
 In fact, for $\beta = 20 t$ the peaks $S ( \bm \pi )$ coincide with those obtained using the projective variant of auxiliary field \ac{QMC} mentioned in chapter \ref{cap:int}.
@@ -46,7 +40,7 @@ Thus, to extrapolate the long range order, we fit $S ( \bm \pi ) / N$ by linear 
 As we increase $U$, this value becomes larger.
 According to \cite{hirsch_two-dimensional_1985} (and references therein), on a finite lattice, the \ac{AF} long range order is $50 \%$ reduced from the classical Néel state due to quantum fluctuations.
 Thus, at $U \rightarrow \infty$, we obtain the maximum value $m_{\text{st}}^2 = 0.25$.
-Thus, the estimate we get for $m_{\text{st}}^2$  at $U=4$ amounts to $36\%$ of the maximum of $m_{\text{st}}^2$.
+Thus, the estimate we get for $m_{\text{st}}^2$  at $U=4t$ amounts to $36\%$ of the maximum of $m_{\text{st}}^2$.
 \vspace{-0.3cm}
 \begin{figure}[H]
 \includegraphics[scale=0.55]{Applications/square/Spipi.png}

@@ -2,15 +2,16 @@
 \label{sec:matform}
 
 Auxiliary-field, or Determinant \acs{QMC} is a simulation method that is commonly used to simulate the Hubbard model, allowing one to capture the elusive effects of electron-electron correlations in the two-dimensional graphene-like nanostructures we are concerned with.
-The sign problem may deem the algorithm exponentially complex in the size of the system and in inverse temperature, but it is possible to overcome this hurdle for a class of models, namely the Hubbard model on a bipartite lattice at half filling ($\mu = 0$ in our conventions).
+The sign problem may deem the algorithm exponentially complex in the size of the system and in inverse temperature.
+However, it is possible to overcome this hurdle for a class of models, namely the Hubbard model on a bipartite lattice at half filling.
 In fact, many interesting phenomena occur at half filling, for example magnetic ordering and the Mott metal-insulator transition.
 The difficulty lies in computing the nearly vanishing average of a random variable $X$ with comparatively large variance, i.e. $\sigma_X / \left\langle X \right\rangle \gg 1$.
 
 Ultimately, we seek a computable approximation of the projection operator $\mathcal{P}$ defined in equation (\ref{eq:projection}).
-As we shall see, it is found by using (either a discrete or continuous) Hubbard-Stratonovich transformation.
+As we shall see, it is found by using a (either discrete or continuous) Hubbard-Stratonovich transformation.
 This transformation introduces an auxiliary field (consisting basically of Ising spins), and we use Monte Carlo to sample configurations from the distribution corresponding to this \emph{classical} configuration space.
 This approach is equivalent to an exact solution of the integral that is approximated by using the saddle point approximation in mean field, an observation which motivates us to compare our results with the mean field ones.
-Mean field theory may be formulated by applying the Hubbard Stratonovich (HS)  transformation to transform an interacting problem into a one-body problem, and then apply the saddle-point approximation to solve the resulting integrals.
+The mean field theory may be formulated by applying the Hubbard Stratonovich (HS)  transformation to transform an interacting problem into a one-body problem, and then apply the saddle-point approximation to solve the resulting integrals.
 In the \acs{GCE} (where we make $\mathcal{H} \mapsto \mathcal{H} - \mu \mathcal{N}$, $\mathcal{N}$ being the total particle number), the grand-partition function may be written in terms of a functional integral over a space-time dependent field of the exponential of a one-body action
 \begin{equation}
 Z = \Tr [ e^{-\beta \mathcal{H} } ] = \int \mathcal{D}\bm h \, e^{-S(\bm h) }  \equiv \Tr_{\bm h} [ e^{-S(\bm h)} ],
@@ -20,9 +21,10 @@ In mean field, we approximate the integral by replacing the functional integral 
 %The integral is evaluated exactly in the auxiliary field \acs{QMC} method, which avoids the bias introduced by the specific choice of the HS decoupling.
 %The nature of the analytical mean field solution depends on this choice, while the unbiased \acs{QMC} solution does not, relying on a numerical solution that scales with the cubic volume of the system, and linearly with inverse temperature.
 This approach depends on the HS decoupling that was used.
-In contrast, with the auxiliary field \ac{QMC} method, one computes the integral directly, which is independent of this choice, despite being more expensive in computing time ($\mathcal{O}(\beta N^3)$ ).
+In contrast, with the auxiliary field \ac{QMC} method, one computes the integral directly.
+Although it is more expensive in computing time ($\mathcal{O}(\beta N^3)$ ), it does not rely on any particular choice of the decoupling.
 Another obstacle of taking into account all the fluctuations around $\bm h^\star$ is the fermion sign problem referred in chapter \ref{cap:int}.
-However, in certain cases, the symmetries of the model (like \ac{PHS}) may be used to avoid it, as we explain in appendix \ref{ap:afqmcCalc}.
+However, in certain cases, the symmetries of the model (like \ac{PHS}) may be used to avoid it, as we explain in appendix \ref{ap:theoAFQMC}.
 %The sign problem may be seen as an inherent difficulty that arises from taking all possible fluctuations around the mean field solution.
 %An advantage of determinant \acs{QMC} is that certain symmetries of the model at hand, such as \acs{PHS} in the Hubbard model, may be used to avoid the sign problem.
 \subsection{Trotter-Suzuki Decomposition}
@@ -33,7 +35,8 @@ Computing the partition function of a quantum system in equilibrium
 \begin{equation}\label{eq:partitionBeta}
 Z_\beta = \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \sum_{\alpha} \left\langle \psi_\alpha | e^{-\beta \mathcal{H} } | \psi_\alpha \right\rangle
 \end{equation}
-is equivalent to studying its imaginary time evolution, i.e. $Z_\beta$ may be thought of as the wave function of the trace of the propagator of the analogous quantum system at imaginary time $\beta$.
+is equivalent to studying its imaginary time evolution.
+One may think of $\beta$ as the time parameter of the (imaginary) time evolution of the partition function $Z_\beta$.
 %To see this, recall that quantum states evolve according to
 %
 %\begin{equation}
@@ -70,7 +73,7 @@ In that case, the partition function strictly corresponds to the ground state wa
 %More generally, as we saw for diffusion \acs{QMC}, we only require $\int d\bm y \, \psi_0^\star ( \bm y ) \psi ( \bm y, 0 ) = C \neq 0$, and we obtain $\psi (\bm x, \tau\rightarrow \infty) \rightarrow C \psi_0 (x) e^{-E_0 \tau}$.
  
 Eq.(\ref{eq:partitionBeta}) is not very amenable to numerical computation since it contains an exponential of a sum of non-commuting operators $e^{-\beta (\mathcal{H}_K + \mathcal{H}_V)}$ as per Eq.(\ref{eq:def_energies}). 
-The exponential is not factorizable and involves computing an infinite number of commutators containing these two operators, as per the Zassenhaus formula, valid for any two generic operators $X$ and $Y$\footnote{This is just the inverse of the well known Baker–Campbell–Hausdorff formula commonly used in quantum mechanics.}:
+The exponential is not factorizable and involves computing an infinite number of nested commutators containing these two operators, as per the Zassenhaus formula\footnote{This is just the inverse of the well known Baker–Campbell–Hausdorff formula commonly used in quantum mechanics.}, valid for any two generic operators $X$ and $Y$:
 \begin{equation}\label{eq:zassenhaus}
 e^{(X+Y)}=e^{X} e^{Y} e^{-{\frac{1}{2}}[X,Y]} e^{{\frac {1}{6}}(2[Y,[X,Y]]+[X,[X,Y]])}  e^{{-\frac {1}{24}}([[[X,Y],X],X]+3[[[X,Y],X],Y]+3[[[X,Y],Y],Y])} \, ... , 
 \end{equation}
@@ -87,7 +90,7 @@ Actually, by writing the matrix elements of the projection operator $\mathcal{P}
 \end{equation}
 we see that it is the same as the partition function, if the paths are periodic in imaginary time:
 \begin{equation}
-Z = \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \sum_{\left| \psi_0 \right\rangle} \left\langle \psi_0 | e^{-\beta \mathcal{H}} | \psi_0 \right\rangle = \sum_{\{ \left| \psi_l \right\rangle \}} \prod_{l = 0}^{L - 1} \left\langle \psi_{l} | e^{-\Delta \tau \mathcal{H} } | \psi_{l+1} \right\rangle \delta_{0, L} = \Tr \bigg[ \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H} } \bigg] ,
+Z = \text{Tr} \big[ e^{-\beta \mathcal{H} } \big] = \sum_{\left| \psi_0 \right\rangle} \left\langle \psi_0 | e^{-\beta \mathcal{H}} | \psi_0 \right\rangle = \sum_{\{ \left| \psi_l \right\rangle \}} \prod_{l = 0}^{L - 1} \left\langle \psi_{l} | e^{-\Delta \tau \mathcal{H} } | \psi_{l+1} \right\rangle = \Tr \bigg[ \prod_{l=0}^{L-1} e^{-\Delta\tau \mathcal{H}^l } \bigg] ,
 \end{equation}
 where we have $\left| \psi_L \right\rangle = \left| \psi_0 \right\rangle$. We recover Eq.(\ref{eq:partBreak}) by reorganizing the summations over $\{ \left| \psi_l \right\rangle \}$, and using closure relations in the Hilbert space of each slice.
 The \say{Trotter breakup} follows from truncating Eq.(\ref{eq:zassenhaus}), and keeping only the first order term in $\Delta \tau$.
@@ -118,9 +121,9 @@ $
 e^{ \frac{a^2}{2}} = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{-\frac{z^2}{2}  - za } dz
 $ 
 $ \forall a > 0$, 
-which is also valid if $\mathcal{A}$ is an operator.
+which is also valid if $a$ is an operator $\mathcal{A}$.
 Noting that $(n_{i\uparrow} - \frac{1}{2} ) (n_{i\downarrow} - \frac{1}{2} ) = -\frac{1}{2} ( n_{i\uparrow} - n_{i\downarrow} )^2 + \frac{1}{4}$, we can recast the potential energy term as
-\begin{equation}
+\begin{equation}\label{eq:gaussianForm}
 e^{-\Delta\tau \mathcal{H}_V} = \prod_i e^{ \frac{U \Delta \tau}{2} ( n_{i\uparrow} - n_{i\downarrow} )^2 } e^{- \frac{U \Delta \tau}{4}}
 =\bigg( \frac{\Delta \tau e^{- \frac{U \Delta \tau}{2}}}{\pi} \bigg)^{N/2} \int_{-\infty}^\infty \prod_i d \widetilde{h}_i e^{-\Delta \tau [ \widetilde{h}_i^2 + \sqrt{2U} ( n_{i\uparrow} - n_{i\downarrow} ) \widetilde{h}_i ]} ,
 \end{equation}
@@ -141,7 +144,7 @@ e^{-U \Delta\tau (n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )} = c_U \sum_{\w
 
 Notice that $\Delta \tau$ appears explicitly in the coupling constant.
 This is because we worked with fixed length Ising spins.
-In the Gaussian formulation we started with, $\Delta \tau$ can be reabsorbed in the HS field, even though $\Delta \tau$ is still implicit in the integration measure.
+In the Gaussian formulation we started with (Eq.(\ref{eq:gaussianForm})), $\Delta \tau$ can be reabsorbed in the HS field, even though $\Delta \tau$ is still implicit in the integration measure.
 The parameter $\frac{1}{\Delta \tau}$ can be seen as a high energy cutoff, and it must be larger than all other energy scales in the problem, which is required to make the Trotter breakup error small when discretizing time onto a lattice of $L = \beta / \Delta \tau$ points.
 
 To prove Eq.(\ref{eq:discreteHS}), let us write down how the operators  $(n_{i\uparrow} - 1/2 ) (n_{i\downarrow} - 1/2 )$ and $(n_{i\uparrow} - n_{i\downarrow} )$ act:
@@ -162,7 +165,7 @@ To prove Eq.(\ref{eq:discreteHS}), let us write down how the operators  $(n_{i\u
 \end{cases}
 \end{equation}
 
-We can now compare the action of the operators on the LHS and on the RHS of Eq.(\ref{eq:discreteHS}) and find the desired relation by defining
+We can now compare the action of the operators on the LHS and on the RHS of Eq.(\ref{eq:discreteHS}) and find the desired relation since we have defined 
 $
 \cosh \nu =  \frac{1}{2} ( e^\nu + e^{-\nu} ) \equiv e^{\frac{U\Delta \tau}{2}}
 $.
@@ -173,9 +176,9 @@ $.
 \end{split}
 \end{equation}
 
-Note that we require $U > 0$ so that there exists $\nu \in \mathbb{R}$ such that $\cosh \nu = e^{U\Delta \tau / 2}$. A similar reasoning could be made for $U < 0$.
-Similar transformations that recast other types of quartic terms in terms of quadratic ones exist, but the transformation we derived is the one we will use throughout \cite{hirsch_monte_1983}.
-We have made progress at the expense of introducing $L$ fields $\widetilde{\bm h}$ to each fermions are coupled to at each slice.
+We require $U > 0$ to fulfill $\cosh \nu = e^{U\Delta \tau / 2}$. A similar reasoning could be made for $U < 0$.
+Similar transformations that recast other types of quartic terms in terms of quadratic ones exist, but the transformation we derived, following \cite{hirsch_monte_1983}, is the one we will use throughout.
+We have made progress at the expense of introducing $L$ fields $\widetilde{\bm h}$ to which fermions are coupled to at each slice.
 More precisely, the external field couples to the local spin at each site.
 Our representation of the interacting problem is \emph{exact}, and is encoded in the configurations of the $NL$-dimensional HS field $\bm h$  \cite{hou_numerical_2009}.
 The interacting term can be manipulated to arrive at a more compact form.
@@ -195,8 +198,8 @@ $
 
 \subsection{Single-particle propagators and the fermionic trace}\label{subsec:fermiontrace}
 
-For each imaginary time slice $l$, we may define a HS-field $\widetilde{\bm h_l}$, which in turn specifies $\bm V_l$ and $\mathcal{H}_{V_\sigma}^l$.
-Note that the Hamiltonian has acquired a \say{ficticious} imaginary-time dependence that merely serves to enforce (imaginary-)time ordering, and independent Hilbert spaces at each slice.
+For each imaginary time slice $l$, we may define a HS-field $\widetilde{\bm h_l}$, which specifies $\bm V_l$ and $\mathcal{H}_{V_\sigma}^l$.
+The Hamiltonian acquires a \say{ficticious} imaginary-time dependence that enforces (imaginary-)time ordering, and independent Hilbert spaces at each slice.
 We may now replace the result of equation (\ref{eq:exp_quartic}) in equation (\ref{eq:Z_propagator}), and exchange the traces to obtain
 \begin{equation}\label{eq:Z_quadratic}
 Z  = (c_U)^{NL} \text{Tr}_{\bm h} \Tr \bigg[ \prod_{l=0}^{L-1} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\uparrow}} e^{\mathcal{H}_{V_\uparrow}^l} \bigg)}_{B_{l, \uparrow}(\widetilde{\bm h_l)}} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\downarrow}} e^{\mathcal{H}_{V_\downarrow}^l} \bigg)}_{B_{l, \downarrow}(\widetilde{\bm h_l)}} \bigg] ,
@@ -223,11 +226,13 @@ Then, the following identity holds
 \Tr \big[ e^{-\mathcal{H}_1 } e^{-\mathcal{H}_2 } ... e^{-\mathcal{H}_L } \big] = \text{det} ( \bm I + e^{-\bm H_L} e^{-\bm H_{L-1}} ... e^{-\bm H_1} )
 \end{equation}
 
-For simplicity, in appendix \ref{ap:afqmcCalc}, we present the proof for a simpler case, corresponding to a single $\bm B$-matrix, i.e. a product of exponentials of two quadratic operators \cite{hirsch_two-dimensional_1985}.
+For simplicity, in appendix \ref{ap:theoAFQMC}, we present the proof for a simpler case, corresponding to a single $\bm B$-matrix, i.e. a product of exponentials of two quadratic operators \cite{hirsch_two-dimensional_1985}.
 It could then be easily extended to the more general case \cite{hanke_electronic_nodate}(ch.4, ap. III).
 The products of up and down spin $\bm B$-matrices give rise to a product of two such determinants, which may easily be deduced from the proof of appendix \ref{ap:theoAFQMC}.
 
-When applied to our problem, Eq.(\ref{eq:quadraticIdentity}) essentially makes the computation of the trace possible! Note that if we were to compute it naively, we would soon run out of computer memory.
+When applied to our problem, Eq.(\ref{eq:quadraticIdentity}) essentially makes the computation of the trace possible!
+That is because it turns the many-fermion problem into a single-particle problem.
+Note that if we were to compute it naively, we would soon run out of computer memory.
 The dimension of the Hilbert space of the Hubbard model is exponential in the number of sites N (actually $4^N$).
 Contrastingly, at worst, the determinant can be calculated in $\mathcal{O}(N^3)$ flops for a matrix whose size is polynomial in $N$, leading to a naive $\mathcal{O}(N^4)$ algorithm.
 The computable form of the partition function (\ref{eq:Z_quadratic}) is
@@ -251,7 +256,7 @@ The Trotter-Suzuki approximation then becomes exact and the Hubbard Hamiltonian 
 Monte Carlo sampling is not required.
 
 We mapped a $d$-dimensional quantum problem to a $(d+1)$-dimensional \say{classical} problem with an extra imaginary-time dimension.
-Note that the size of the state space might have been increased to $2^{NL}$ (assuming that $L > 2$), and even if it didn't, it still remains exponential.
+Note that the size of the configuration space remains exponential despite having been increased to $2^{NL}$ (assuming that $L > 2$).
 However, it can now be probed more easily: while we might have increased the number of possible configurations by introducing the mapping, we arrived at a form which is tractable by a standard Monte Carlo method, as described in the previous section.
 This is because we may now efficiently navigate through the exponentially large state space of the system using importance sampling.
 Schematically, the degrees of freedom of the quantum problem correspond to the $i$-indices of the $c$-operators.
@@ -268,11 +273,10 @@ h_{l, i}' = - h_{l, i},
 $
 keeping all others unchanged.
 The most common scheme to ensure that the distribution of the accepted sample is $P(\bm h)$ is the Metropolis-Hastings algorithm, but others exist, such as the heat bath algorithm.
-After the warm-up steps, we are correctly sampling from the required distribution, and we may perform measurements.
+After the thermalization steps, we will be correctly sampling from the required distribution, and we may perform measurements.
 \begin{figure}[H]\label{fig:convergence}
-\includegraphics[scale=0.55]{Afqmc/Log-weights_N=64sites.png}
-\hspace{-0.8cm}
-\includegraphics[scale=0.55]{Afqmc/Log-weights_N=108sites.png}
+\includegraphics[scale=0.5]{Afqmc/Log-weights_N=64sites.png}
+\includegraphics[scale=0.5]{Afqmc/Log-weights_N=108sites.png}
 \caption[Evolution of the probability of accepted configurations.]{Evolution of the probability of accepted HS field  configurations with respect to the probability of the first randomly chosen configuration for a $8 \times 8$ square lattice and for a $9 \times 4$ $\text{Mo}\text{S}_2$ \acs{TMDNR}. Note that while we consider a higher $U$  for the \acs{TMDNR}, the statistical weights are smaller since the hoppings are normalized to $|t_0| = 0.184$, instead of being uniform and equal to one: $t= 1$, as in the square lattice. Moreover, we consider $\beta = 2$, a typical used inverse temperature, since the sign problem tends to impede accurate lower temperature simulations.}
 \end{figure}
 \begin{algorithm}
@@ -308,7 +312,7 @@ After the warm-up steps, we are correctly sampling from the required distributio
 \end{algorithm}
 
 The acceptance/rejection scheme leads to a rank-one update of the matrices $\bm M_\sigma (\bm h)$\footnote{We will see that it is actually more convenient to work with their inverses, the Green's matrices.}, which affords an efficient evaluation of the acceptance ratio $a_{l, i}$ \cite{hou_numerical_2009} (see appendix \ref{ap:theoAFQMC}).
-The acceptance ratio is given in terms of determinants of the Green's matrices, but these need not be explicitly computed at each step.
+The acceptance ratio is given in terms of determinants of the Green's matrices $\bm G (\bm h) = \bm M_\sigma^{-1} (\bm h)$, but these need not be explicitly computed at each step.
 Instead, a \emph{global} update of the Green's matrices at each step suffices to obtain the ratio between the determinants of the Green's matrices of the current and previous configurations.
 This brings the computational complexity from $\mathcal{O}(N^3)$ to $\mathcal{O}(N^2)$ at each step.
 Upon fixing the precision via the Trotter error $\Delta \tau$, this results in an overall cubic scaling of the algorithm, more precisely $\mathcal{O}(\beta N^3)$ (the process is repeated $L N$ times, and $\beta \sim L$).
