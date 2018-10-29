@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  29 OCT 2018 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  29 OCT 2018 19:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2163,13 +2163,13 @@ Overfull \hbox (10.92175pt too wide) detected at line 175
 \OML/cmm/b/it/10 h[] \OT1/cmr/m/n/10 = []
  []
 
-<all-figures/Applications/fillingVsE.png, id=2126, 329.5512pt x 263.66505pt>
+<all-figures/Applications/fillingVsE.png, id=2125, 329.5512pt x 263.66505pt>
 File: all-figures/Applications/fillingVsE.png Graphic file (type png)
 <use all-figures/Applications/fillingVsE.png>
 Package pdftex.def Info: all-figures/Applications/fillingVsE.png  used on input
  line 179.
 (pdftex.def)             Requested size: 181.25371pt x 145.01622pt.
-<all-figures/Applications/BandStructureNanoribbonTMD.png, id=2127, 489.62926pt 
+<all-figures/Applications/BandStructureNanoribbonTMD.png, id=2126, 489.62926pt 
 x 266.4354pt>
 File: all-figures/Applications/BandStructureNanoribbonTMD.png Graphic file (typ
 e png)
@@ -2180,19 +2180,19 @@ g  used on input line 180.
 Package acronym Info: Label `acro:TMDNR' overridden on input line 189.
 [70 <./all-figures/Applications/fillingVsE.png> <./all-figures/Applications/Ban
 dStructureNanoribbonTMD.png>]
-<all-figures/Applications/magProf.png, id=2146, 384.4764pt x 268.41078pt>
+<all-figures/Applications/magProf.png, id=2145, 384.4764pt x 268.41078pt>
 File: all-figures/Applications/magProf.png Graphic file (type png)
 <use all-figures/Applications/magProf.png>
 Package pdftex.def Info: all-figures/Applications/magProf.png  used on input li
 ne 210.
 (pdftex.def)             Requested size: 199.92886pt x 139.5744pt.
-<all-figures/Applications/MFnanoribbon.png, id=2147, 107.6823pt x 114.54794pt>
+<all-figures/Applications/MFnanoribbon.png, id=2146, 107.6823pt x 114.54794pt>
 File: all-figures/Applications/MFnanoribbon.png Graphic file (type png)
 <use all-figures/Applications/MFnanoribbon.png>
 Package pdftex.def Info: all-figures/Applications/MFnanoribbon.png  used on inp
 ut line 212.
 (pdftex.def)             Requested size: 107.68202pt x 114.54765pt.
-<all-figures/Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png, id=2148, 74.3
+<all-figures/Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png, id=2147, 74.3
 1766pt x 76.3653pt>
 File: all-figures/Applications/lattice_Nx=512_Ny=16_U=20_beta=100.png Graphic f
 ile (type png)
@@ -2200,13 +2200,13 @@ ile (type png)
 Package pdftex.def Info: all-figures/Applications/lattice_Nx=512_Ny=16_U=20_bet
 a=100.png  used on input line 213.
 (pdftex.def)             Requested size: 107.7601pt x 110.72916pt.
-<all-figures/Applications/tmd-mf/edge-mag.pdf, id=2156, 1027.84pt x 770.88pt>
+<all-figures/Applications/tmd-mf/edge-mag.pdf, id=2155, 1027.84pt x 770.88pt>
 File: all-figures/Applications/tmd-mf/edge-mag.pdf Graphic file (type pdf)
 <use all-figures/Applications/tmd-mf/edge-mag.pdf>
 Package pdftex.def Info: all-figures/Applications/tmd-mf/edge-mag.pdf  used on 
 input line 225.
 (pdftex.def)             Requested size: 215.85277pt x 141.57376pt.
-<all-figures/Applications/tmd-mf/edge-magzoom1.png, id=2158, 392.9079pt x 254.5
+<all-figures/Applications/tmd-mf/edge-magzoom1.png, id=2157, 392.9079pt x 254.5
 1085pt>
 File: all-figures/Applications/tmd-mf/edge-magzoom1.png Graphic file (type png)
 
@@ -2596,7 +2596,7 @@ ftt0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sft
 t0900.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sftt1
 000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb>
 
-Output written on thesis.pdf (122 pages, 30212331 bytes).
+Output written on thesis.pdf (122 pages, 30212271 bytes).
 PDF statistics:
  3029 PDF objects out of 3580 (max. 8388607)
  2554 compressed objects within 26 object streams
