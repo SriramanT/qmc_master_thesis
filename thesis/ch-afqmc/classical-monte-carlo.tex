@@ -87,7 +87,7 @@ Intuitively, detailed balance corresponds to incorporating time-reversal symmetr
 \end{equation}
 
 Crucially, Monte Carlo methods employ \emph{importance sampling}.
-It turns out that we can improve upon our estimate of $\mathbb{E} [f(X)]$ by reducing the variance of the estimator. If we introduce a separate distribution $q(x)$, and define a weight function as $w(x) = p(x)/ q(x)$, we can rewrite equation (\ref{eq:int_mean}):
+It turns out that we can improve upon our estimate of $\mathbb{E} [f(X)]$ by reducing the variance of the estimator. If we introduce a separate distribution $q(x)$, and define a weight function as $w(x) = p(x)/ q(x)$, we can rewrite Eq.(\ref{eq:int_mean}):
 \begin{equation}
 \mathbb{E} [f(X)] = \int dx f(x) q(x) w(x) = \mathbb{E} [f(Y) w(Y)],
 \end{equation}
@@ -223,8 +223,8 @@ where $\tilde{m}' (\omega)$ is the Fourier transform of $m' (t) = m(t) - \left\l
 In practice, when implementing a MC algorithm, we take a measurement say every sweep (which can be less than a correlation time), and then compute the time-displaced correlator at the end of the simulation to estimate the correlation time.
 How can we estimate the error in the mean of the $N_s$ correlated samples without knowing $\tau_c$ in advance?
 Take again magnetization measurements.
-Suppose your $N_s$ samples were  independent.
-The standard deviation of their mean would be well known:
+Suppose your $N_s$ samples are independent.
+Then, the standard deviation of their mean are well known:
 \begin{equation}\label{eq:errorUncorr}
 \sigma = \sqrt{ \frac{ \frac{1}{N_s} \sum_{i=0}^{N_s} ( m_i - \overline{m} )^2 }{N_s - 1} } = \sqrt{ \frac{1}{N_s - 1} ( \overline{m^2} - \overline{m}^2 } )
 \end{equation}

@@ -128,11 +128,11 @@ The interacting problem then becomes a problem of independent fermions coupled t
 This contribution can be evaluated numerically by employing importance sampling over the field configurations.
 Auxiliary field \acs{QMC} relies on a mapping to a so called \say{classical} system (in quotes because there may be no actual classical analogue):
 \begin{equation}\label{eq:Zsign}
-Z = \Tr [ e^{-\beta \mathcal{H} } ] = \sum_{\{ \bm h\} } \sum_{\text{fermionic}} e^{-S} = \sum_c p_c ,
+Z = \Tr [ e^{-\beta \mathcal{H} } ] = \sum_{\{ \bm h\} } \sum_{\text{fermionic}} e^{-S} = \sum_c p (c) ,
 \end{equation}
-but some of the \say{probabilities} $p_c$ can actually be negative due to the antisymmetry of the many-electron wavefunction under electron exchange.
+but some of the \say{probabilities} $p (c)$ can actually be negative due to the antisymmetry of the many-electron wavefunction under electron exchange.
 Here, $S$ is a fermion-field action that we shall write out explicitly later.
-For a fixed configuration of the $\bm h$ field, we sum over the fermionic part exactly to obtain the weight of each configuration $p_c$.
+For a fixed configuration of the $\bm h$ field, we sum over the fermionic part exactly to obtain the weight of each configuration, $p (c)$.
 The sum over $\bm h$ is carried out stochastically.
 The negative weight problem can be circumvented when computing the average of an observable $A$:
 \begin{equation}\label{eq:signSampling}
@@ -140,16 +140,16 @@ The negative weight problem can be circumvented when computing the average of an
 \end{equation}
 where $s(c) = \text{sign} [ p ( c ) ]$, and $| p ( c ) | $ corresponds to an auxiliary bosonic system (also coupled to the classical field) corresponding to the original fermionic system, and for which there is no sign problem.
 
-The relative error $\Delta s / \left\langle s \right\rangle$ increases exponentially with the number of particles, with inverse temperature, and possibly with other parameters of the specific model to be studied \cite{troyer_computational_2005, hou_numerical_2009}.
+The relative error $\Delta s / \left\langle s \right\rangle$ increases exponentially with system size, inverse temperature, and possibly other parameters of the specific model to be studied \cite{troyer_computational_2005, hou_numerical_2009}.
 To see this, we start by noting that the average sign is the ratio between the partition functions of the fermionic ($Z = \sum_c p(c)$) and bosonic systems ($Z' = \sum_c | p ( c ) |$).
-In terms of the difference in free energy densities, $\left\langle s \right\rangle = Z / Z' = e^{-\beta N_p \Delta f}$, implying that for $M$ samples, the error of the denominator of Eq. (\ref{eq:signSampling}) becomes
+In terms of the difference in free energy densities, $\left\langle s \right\rangle = Z / Z' = e^{-\beta N \Delta f}$, implying that for $M$ samples, the error of the denominator of Eq. (\ref{eq:signSampling}) becomes
 \begin{equation}
-\frac{\Delta s}{\left\langle s \right\rangle} = \frac{\sqrt{(\left\langle s^2 \right\rangle - \left\langle s \right\rangle^2 )/ M }}{\left\langle s \right\rangle} = \frac{ \sqrt{ 1 - \left\langle s \right\rangle^2}  }{\sqrt{M} \left\langle s \right\rangle} \propto \frac{e^{\beta N_p \Delta f}}{\sqrt{M}} ,
+\frac{\Delta s}{\left\langle s \right\rangle} = \frac{\sqrt{(\left\langle s^2 \right\rangle - \left\langle s \right\rangle^2 )/ M }}{\left\langle s \right\rangle} = \frac{ \sqrt{ 1 - \left\langle s \right\rangle^2}  }{\sqrt{M} \left\langle s \right\rangle} \propto \frac{e^{\beta N \Delta f}}{\sqrt{M}} ,
 \end{equation}
 and similarly for the numerator of Eq. (\ref{eq:signSampling}).
 
 Auxiliary field, or determinant \acs{QMC} can also be formulated to probe ground state properties, and a sign problem arises similarly.
-In fact, this problem plagues all \acs{QMC} methods, even though we showed it only for the determinant method\footnote{So called because, as we shall show later, $p_c$ boils down to a product of determinants that depends on the energy scales of the problem.}.
+In fact, this problem plagues all \acs{QMC} methods, even though we showed it only for the determinant method\footnote{So called because, as we shall show later, $p (c)$ boils down to a product of determinants that depends on the energy scales of the problem.}.
 The latter is the most robust, unbiased, and reliable method, with a generally modest sign problem, hence we choose it to carry out our simulations.
 
 Furthermore, in general, it suffices to use the finite temperature auxiliary field  method with $\beta$ large enough to probe ground state properties (for example, this is shown numerically for the Hubbard model on the square lattice in \cite{white_numerical_1989}).

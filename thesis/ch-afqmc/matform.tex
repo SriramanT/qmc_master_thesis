@@ -3,16 +3,16 @@
 
 Auxiliary-field, or Determinant \acs{QMC} is a simulation method that is commonly used to simulate the Hubbard model, allowing one to capture the elusive effects of electron-electron correlations in the two-dimensional graphene-like nanostructures we are concerned with.
 The sign problem may deem the algorithm exponentially complex in the size of the system and in inverse temperature.
-However, it is possible to overcome this hurdle for a class of models, namely the Hubbard model on a bipartite lattice at half filling.
-In fact, many interesting phenomena occur at half filling, for example magnetic ordering and the Mott metal-insulator transition.
 The difficulty lies in computing the nearly vanishing average of a random variable $X$ with comparatively large variance, i.e. $\sigma_X / \left\langle X \right\rangle \gg 1$.
+However, it is possible to overcome the sign problem hurdle for a class of models, namely the Hubbard model on a bipartite lattice at half filling.
+In fact, many interesting phenomena occur at half filling, for example magnetic ordering and the Mott metal-insulator transition.
 
-Ultimately, we seek a computable approximation of the projection operator $\mathcal{P}$ defined in equation (\ref{eq:projection}).
-As we shall see, it is found by using a (either discrete or continuous) Hubbard-Stratonovich transformation.
+Ultimately, we seek a computable approximation of the projection operator $\mathcal{P}$ defined in Eq.(\ref{eq:projection}).
+As we shall see, it is found by using a Hubbard-Stratonovich transformation (in either its discrete or continuous form).
 This transformation introduces an auxiliary field (consisting basically of Ising spins), and we use Monte Carlo to sample configurations from the distribution corresponding to this \emph{classical} configuration space.
 This approach is equivalent to an exact solution of the integral that is approximated by using the saddle point approximation in mean field, an observation which motivates us to compare our results with the mean field ones.
-The mean field theory may be formulated by applying the Hubbard Stratonovich (HS)  transformation to transform an interacting problem into a one-body problem, and then apply the saddle-point approximation to solve the resulting integrals.
-In the \acs{GCE} (where we make $\mathcal{H} \mapsto \mathcal{H} - \mu \mathcal{N}$, $\mathcal{N}$ being the total particle number), the grand-partition function may be written in terms of a functional integral over a space-time dependent field of the exponential of a one-body action
+Mean field theory may be formulated by applying the Hubbard Stratonovich (HS)  transformation to transform an interacting problem into a one-body problem, and then apply the saddle-point approximation to solve the resulting integrals.
+In the \acs{GCE} (where we make $\mathcal{H} \mapsto \mathcal{H} - \mu \mathcal{N}$, $\mathcal{N}$ being the total particle number operator), the grand-partition function may be written in terms of a functional integral over a space-time dependent field of the exponential of a one-body action
 \begin{equation}
 Z = \Tr [ e^{-\beta \mathcal{H} } ] = \int \mathcal{D}\bm h \, e^{-S(\bm h) }  \equiv \Tr_{\bm h} [ e^{-S(\bm h)} ],
 \end{equation}
@@ -23,8 +23,8 @@ In mean field, we approximate the integral by replacing the functional integral 
 This approach depends on the HS decoupling that was used.
 In contrast, with the auxiliary field \ac{QMC} method, one computes the integral directly.
 Although it is more expensive in computing time ($\mathcal{O}(\beta N^3)$ ), it does not rely on any particular choice of the decoupling.
-Another obstacle of taking into account all the fluctuations around $\bm h^\star$ is the fermion sign problem referred in chapter \ref{cap:int}.
-However, in certain cases, the symmetries of the model (like \ac{PHS}) may be used to avoid it, as we explain in appendix \ref{ap:theoAFQMC}.
+Another obstacle of taking into account all the fluctuations around $\bm h^\star$ is the aforementioned fermion sign problem, also referred in chapter \ref{cap:int}.
+However, as we mentioned above, in certain cases, the symmetries of the model (like \ac{PHS}) may be used to avoid it, as we explain in appendix \ref{ap:theoAFQMC}.
 %The sign problem may be seen as an inherent difficulty that arises from taking all possible fluctuations around the mean field solution.
 %An advantage of determinant \acs{QMC} is that certain symmetries of the model at hand, such as \acs{PHS} in the Hubbard model, may be used to avoid the sign problem.
 \subsection{Trotter-Suzuki Decomposition}
@@ -121,7 +121,7 @@ $
 e^{ \frac{a^2}{2}} = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{-\frac{z^2}{2}  - za } dz
 $ 
 $ \forall a > 0$, 
-which is also valid if $a$ is an operator $\mathcal{A}$.
+which is also valid if $a$ is an operator.
 Noting that $(n_{i\uparrow} - \frac{1}{2} ) (n_{i\downarrow} - \frac{1}{2} ) = -\frac{1}{2} ( n_{i\uparrow} - n_{i\downarrow} )^2 + \frac{1}{4}$, we can recast the potential energy term as
 \begin{equation}\label{eq:gaussianForm}
 e^{-\Delta\tau \mathcal{H}_V} = \prod_i e^{ \frac{U \Delta \tau}{2} ( n_{i\uparrow} - n_{i\downarrow} )^2 } e^{- \frac{U \Delta \tau}{4}}
@@ -131,7 +131,7 @@ so that in the $\tau \rightarrow 0$ limit, the partition function becomes
 \begin{equation}
 Z \propto \int \mathcal{D} \widetilde{\bm h} ( \tau) e^{-\int_0^\beta d\tau \widetilde{\bm h}^2 ( \tau ) } \Tr \bigg[ \mathcal{T}_\tau e^{ -\int_0^\beta d\tau [ \mathcal{H}_K ( \tau ) + \sqrt{2U} ( \bm n_{\uparrow} (\tau) - \bm n_{\downarrow} (\tau ) ) \cdot \widetilde{\bm h}(\tau) ] } \bigg] ,
 \end{equation}
-representing a system of noninteracting fermions coupled via spin $s^z$ to an external fluctuating real field.
+representing a system of noninteracting fermions coupled via spin $S^z$ to an external fluctuating real field.
 
 The fact that $n_{i,\sigma}$ can only take on two possible values suggests an analogous transformation in which the fluctuating field can only take on two possible values.
 An Ising spin will prove sufficient to eliminate the direct electron-electron interaction.
@@ -200,7 +200,7 @@ $
 
 For each imaginary time slice $l$, we may define a HS-field $\widetilde{\bm h_l}$, which specifies $\bm V_l$ and $\mathcal{H}_{V_\sigma}^l$.
 The Hamiltonian acquires a \say{ficticious} imaginary-time dependence that enforces (imaginary-)time ordering, and independent Hilbert spaces at each slice.
-We may now replace the result of equation (\ref{eq:exp_quartic}) in equation (\ref{eq:Z_propagator}), and exchange the traces to obtain
+We may now replace the result of Eq.(\ref{eq:exp_quartic}) in Eq.(\ref{eq:Z_propagator}), and exchange the traces to obtain
 \begin{equation}\label{eq:Z_quadratic}
 Z  = (c_U)^{NL} \text{Tr}_{\bm h} \Tr \bigg[ \prod_{l=0}^{L-1} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\uparrow}} e^{\mathcal{H}_{V_\uparrow}^l} \bigg)}_{B_{l, \uparrow}(\widetilde{\bm h_l)}} \underbrace{\bigg( e^{-\Delta\tau  \mathcal{H}_{K_\downarrow}} e^{\mathcal{H}_{V_\downarrow}^l} \bigg)}_{B_{l, \downarrow}(\widetilde{\bm h_l)}} \bigg] ,
 \end{equation}
@@ -234,7 +234,7 @@ When applied to our problem, Eq.(\ref{eq:quadraticIdentity}) essentially makes t
 That is because it turns the many-fermion problem into a single-particle problem.
 Note that if we were to compute it naively, we would soon run out of computer memory.
 The dimension of the Hilbert space of the Hubbard model is exponential in the number of sites N (actually $4^N$).
-Contrastingly, at worst, the determinant can be calculated in $\mathcal{O}(N^3)$ flops for a matrix whose size is polynomial in $N$, leading to a naive $\mathcal{O}(N^4)$ algorithm.
+Contrastingly, at worst, the determinant can be calculated in $\mathcal{O}(LN^3)$ flops for a matrix whose size is polynomial in $N$, leading to a naive $\mathcal{O}(L^2 N^4)$ algorithm.
 The computable form of the partition function (\ref{eq:Z_quadratic}) is
 \begin{equation}\label{eq:effectiveDensityMatrix}
 Z =  \Tr_{\bm h} \bigg[ (c_U)^{NL} \text{det} [ \bm M_\uparrow (\bm h)] \text{det} [  \bm M_\downarrow (\bm h) ] \bigg] = \sum_{\{ \bm h \} } P ( \bm h ) \equiv \Tr_{\bm h} [ e^{-S(\bm h) } ]
@@ -275,9 +275,11 @@ keeping all others unchanged.
 The most common scheme to ensure that the distribution of the accepted sample is $P(\bm h)$ is the Metropolis-Hastings algorithm, but others exist, such as the heat bath algorithm.
 After the thermalization steps, we will be correctly sampling from the required distribution, and we may perform measurements.
 \begin{figure}[H]\label{fig:convergence}
+\hspace{0.3cm}
 \includegraphics[scale=0.5]{Afqmc/Log-weights_N=64sites.png}
+\hspace{0.3cm}
 \includegraphics[scale=0.5]{Afqmc/Log-weights_N=108sites.png}
-\caption[Evolution of the probability of accepted configurations.]{Evolution of the probability of accepted HS field  configurations with respect to the probability of the first randomly chosen configuration for a $8 \times 8$ square lattice and for a $9 \times 4$ $\text{Mo}\text{S}_2$ \acs{TMDNR}. Note that while we consider a higher $U$  for the \acs{TMDNR}, the statistical weights are smaller since the hoppings are normalized to $|t_0| = 0.184$, instead of being uniform and equal to one: $t= 1$, as in the square lattice. Moreover, we consider $\beta = 2$, a typical used inverse temperature, since the sign problem tends to impede accurate lower temperature simulations.}
+\caption[Evolution of the probability of accepted configurations.]{Evolution of the probability of accepted HS field configurations, $\bm h$, with respect to the probability of the first randomly chosen configuration, $\bm h_0$, for a $8 \times 8$ square lattice and for a $9 \times 4$ $\text{Mo}\text{S}_2$ \acs{TMDNR}.}
 \end{figure}
 \begin{algorithm}
 \caption{Auxiliary Field Quantum Monte Carlo Sampling Scheme}

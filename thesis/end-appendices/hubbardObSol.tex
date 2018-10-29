@@ -553,16 +553,26 @@ On a final note, we remark that this procedure can be generalized to the \ac{GCE
 \Omega_G \le \Omega_{\text{MF}} + \left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} \equiv \Omega ,
 \end{equation}
 where we defined $\Omega_{\text{MF}} = \left\langle \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}} - T \mathcal{S}_{\text{MF}}- \mu \left\langle \mathcal{N} \right\rangle_{\text{MF}}$, $\mathcal{N}$ being the total number operator.
+
+For example, for the \acs{TMD} nanoribbon of chapter \ref{cap:applications}, at iteration $I$ we have that
+\begin{equation}
+\begin{split}
+\Omega_{\text{MF}, I} &= -\frac{1}{\beta} \sum_{q, \nu, \sigma} \ln \bigg( 1 + e^{-\beta [\varepsilon_{ \nu, \sigma} (q) ]_I} \bigg) \\
+\left\langle \mathcal{H} - \mathcal{H}_{\text{MF}} \right\rangle_{\text{MF}, I} &= U N_x \bigg( \sum_{\mu} \left\langle n_{\mu, \uparrow} \right\rangle_I \left\langle n_{\mu, \downarrow} \right\rangle_I - \sum_{\mu, \sigma} \left\langle n_{\mu, \sigma} \right\rangle_{I - 1} \left\langle n_{\mu, -\sigma} \right\rangle_I \bigg)
+\end{split}
+\end{equation}
+
 The iterative scheme we use to solve the self consistent equation is not a minimization algorithm.
 However, if it does not get stuck in a metastable state, it tends to take steps towards minimizing the functional $\Omega$.
 This is illustrated in Fig.(\ref{fig:grandPotMin}).
 The data was obtained by solving the self consistent equation for the generalized intra-orbital version of the Hubbard model we use throughout.
 The model is obtained from the 3-band tight binding Hamiltonian of the first chapter, and by adding an on-site and intra-orbital interaction.
-In this case, we consider a \acs{TMD} nanoribbon with $N_y = 16$, at inverse temperature $\beta t = 2 $, at $U = 16$, where $U$ is an on-site interaction that only occurs if the electrons occupy the same $d$-orbital.
+In this case, we consider a \acs{TMD} nanoribbon with $N_y = 16$, at inverse temperature $\beta | t_0 | = 2 $, at $U = 20 | t_0 |$, where $U$ is an on-site interaction that only occurs if the electrons occupy the same $d$-orbital.
 Thus, only double occupancy of a site \emph{and an orbital} is penalized.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.55]{Applications/grandpotMin_Nx=512_Ny=16_U=16_beta=2.png}
-	\caption[Example of the minimization of the grandpotential functional.]{Example of the minimization of the grandpotential functional $\Omega$ for a TMD nanoribbon of width $N_y = 16$, at inverse temperature $\beta = 2 t $, at $U = 16 t$. \label{fig:grandPotMin}}
+\includegraphics[scale=0.55]{Applications/minimizationExample.png}
+	\caption[Example of the minimization of the grandpotential functional.]{Example of the minimization of the grandpotential functional per particle in units of $| t_0 |$, $\Omega  / N$, for a \acs{TMD} nanoribbon of width $N_y = 16$, at inverse temperature $\beta | t_0 | = 2 $, at $U = 20 | t_0 |$.
+	$N$ is the total number of sites in the system. \label{fig:grandPotMin}}
 \end{figure}

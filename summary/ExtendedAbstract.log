@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  15 OCT 2018 10:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.17)  15 OCT 2018 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,20 +22,41 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/sttools/flushend.sty
+Package: flushend 2017/03/27 v3.3 Balancing columns in twocolumn mode
+\flushend@@lastskip@a=\skip43
+\flushend@@lastskip@b=\skip44
+\flushend@@lastskip@c=\skip45
+\flushend@@penalty@a=\count88
+\flushend@@lastkern@a=\dimen103
+\var@@temp@spread=\dimen104
+\var@@temp@a=\dimen105
+\flushend@@page@rule=\dimen106
+\flushend@@varbox@a=\box26
+\flushend@@varbox@c=\box27
+\flushend@@tempbox@a=\box28
+\flushend@@tempbox@c=\box29
+\@viper=\box30
+\hold@viper=\box31
+\atColsBreak=\toks14
+\atColsEnd=\toks15
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count89
+))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/sttools/cuted.sty
 Package: cuted 2012/10/04 v1.5 Mixing onecolumn and twocolumn modes
-\At@ViperColsBreak=\toks14
-\v@aaa=\box26
-\v@ccc=\box27
-\lastskip@a=\skip43
-\lastskip@b=\skip44
-\lastskip@d=\skip45
-\lastbox@a=\box28
-\stripsep=\skip46
-\@viper=\box29
-\viper@penalty=\count88
-\hold@viper=\box30
-\ht@viper=\dimen103
+\At@ViperColsBreak=\toks16
+\v@aaa=\box32
+\v@ccc=\box33
+\lastskip@a=\skip46
+\lastskip@b=\skip47
+\lastskip@d=\skip48
+\lastbox@a=\box34
+\stripsep=\skip49
+\viper@penalty=\count90
+\ht@viper=\dimen107
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
@@ -66,7 +87,7 @@ basics and keyval usage)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks17
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2018/03/30 v3.25 KOMA-Script package (loading files)
@@ -77,20 +98,20 @@ Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ms/everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
-\CenteringLeftskip=\skip47
-\RaggedLeftLeftskip=\skip48
-\RaggedRightLeftskip=\skip49
-\CenteringRightskip=\skip50
-\RaggedLeftRightskip=\skip51
-\RaggedRightRightskip=\skip52
-\CenteringParfillskip=\skip53
-\RaggedLeftParfillskip=\skip54
-\RaggedRightParfillskip=\skip55
-\JustifyingParfillskip=\skip56
-\CenteringParindent=\skip57
-\RaggedLeftParindent=\skip58
-\RaggedRightParindent=\skip59
-\JustifyingParindent=\skip60
+\CenteringLeftskip=\skip50
+\RaggedLeftLeftskip=\skip51
+\RaggedRightLeftskip=\skip52
+\CenteringRightskip=\skip53
+\RaggedLeftRightskip=\skip54
+\RaggedRightRightskip=\skip55
+\CenteringParfillskip=\skip56
+\RaggedLeftParfillskip=\skip57
+\RaggedRightParfillskip=\skip58
+\JustifyingParfillskip=\skip59
+\CenteringParindent=\skip60
+\RaggedLeftParindent=\skip61
+\RaggedRightParindent=\skip62
+\JustifyingParindent=\skip63
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -143,7 +164,7 @@ Package etexcmds Info: Could not find \expanded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@dirtytalk@qdepth=\count89
+\c@dirtytalk@qdepth=\count91
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -152,44 +173,40 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 Package: simplewick 2007/11/23 v1.2a
 
 Package: simplewick v1.2a (2007/11/23)
-\swb@xone=\box31
-\swb@xtwo=\box32
-\swb@xthree=\box33
-\swb@xfour=\box34
-\swdimen@ne=\dimen104
-\swdimentw@=\dimen105
+\swb@xone=\box35
+\swb@xtwo=\box36
+\swb@xthree=\box37
+\swb@xfour=\box38
+\swdimen@ne=\dimen108
+\swdimentw@=\dimen109
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
-\c@tracingmulticols=\count90
+\c@tracingmulticols=\count92
 
 
 Package multicol Warning: May not work with the twocolumn option on input line 
 141.
 
-\mult@box=\box35
-\multicol@leftmargin=\dimen106
-\c@unbalance=\count91
-\c@collectmore=\count92
-\doublecol@number=\count93
-\multicoltolerance=\count94
-\multicolpretolerance=\count95
-\full@width=\dimen107
-\page@free=\dimen108
-\premulticols=\dimen109
-\postmulticols=\dimen110
-\multicolsep=\skip61
-\multicolbaselineskip=\skip62
-\partial@page=\box36
-\last@line=\box37
-\maxbalancingoverflow=\dimen111
-\mult@rightbox=\box38
-\mult@grightbox=\box39
-\mult@gfirstbox=\box40
-\mult@firstbox=\box41
-\@tempa=\box42
-\@tempa=\box43
-\@tempa=\box44
-\@tempa=\box45
+\mult@box=\box39
+\multicol@leftmargin=\dimen110
+\c@unbalance=\count93
+\c@collectmore=\count94
+\doublecol@number=\count95
+\multicoltolerance=\count96
+\multicolpretolerance=\count97
+\full@width=\dimen111
+\page@free=\dimen112
+\premulticols=\dimen113
+\postmulticols=\dimen114
+\multicolsep=\skip64
+\multicolbaselineskip=\skip65
+\partial@page=\box40
+\last@line=\box41
+\maxbalancingoverflow=\dimen115
+\mult@rightbox=\box42
+\mult@grightbox=\box43
+\mult@gfirstbox=\box44
+\mult@firstbox=\box45
 \@tempa=\box46
 \@tempa=\box47
 \@tempa=\box48
@@ -203,21 +220,25 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \@tempa=\box56
 \@tempa=\box57
 \@tempa=\box58
-\c@columnbadness=\count96
-\c@finalcolumnbadness=\count97
-\last@try=\dimen112
-\multicolovershoot=\dimen113
-\multicolundershoot=\dimen114
-\mult@nat@firstbox=\box59
-\colbreak@box=\box60
-\mc@col@check@num=\count98
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\c@columnbadness=\count98
+\c@finalcolumnbadness=\count99
+\last@try=\dimen116
+\multicolovershoot=\dimen117
+\multicolundershoot=\dimen118
+\mult@nat@firstbox=\box63
+\colbreak@box=\box64
+\mc@col@check@num=\count100
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip63
+\@mathmargin=\skip66
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -225,66 +246,66 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
-\ex@=\dimen115
+\@emptytoks=\toks18
+\ex@=\dimen119
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 LaTeX Info: Redefining \boldsymbol on input line 28.
-\pmbraise@=\dimen116
+\pmbraise@=\dimen120
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count99
+\inf@bad=\count101
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count100
-\leftroot@=\count101
+\uproot@=\count102
+\leftroot@=\count103
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count102
-\DOTSCASE@=\count103
+\classnum@=\count104
+\DOTSCASE@=\count105
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box61
-\strutbox@=\box62
-\big@size=\dimen117
+\Mathstrutbox@=\box65
+\strutbox@=\box66
+\big@size=\dimen121
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count104
-\c@MaxMatrixCols=\count105
+\macc@depth=\count106
+\c@MaxMatrixCols=\count107
 \dotsspace@=\muskip11
-\c@parentequation=\count106
-\dspbrk@lvl=\count107
-\tag@help=\toks17
-\row@=\count108
-\column@=\count109
-\maxfields@=\count110
-\andhelp@=\toks18
-\eqnshift@=\dimen118
-\alignsep@=\dimen119
-\tagshift@=\dimen120
-\tagwidth@=\dimen121
-\totwidth@=\dimen122
-\lineht@=\dimen123
-\@envbody=\toks19
-\multlinegap=\skip64
-\multlinetaggap=\skip65
-\mathdisplay@stack=\toks20
+\c@parentequation=\count108
+\dspbrk@lvl=\count109
+\tag@help=\toks19
+\row@=\count110
+\column@=\count111
+\maxfields@=\count112
+\andhelp@=\toks20
+\eqnshift@=\dimen122
+\alignsep@=\dimen123
+\tagshift@=\dimen124
+\tagwidth@=\dimen125
+\totwidth@=\dimen126
+\lineht@=\dimen127
+\@envbody=\toks21
+\multlinegap=\skip67
+\multlinetaggap=\skip68
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks21
-\thm@bodyfont=\toks22
-\thm@headfont=\toks23
-\thm@notefont=\toks24
-\thm@headpunct=\toks25
-\thm@preskip=\skip66
-\thm@postskip=\skip67
-\thm@headsep=\skip68
-\dth@everypar=\toks26
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip69
+\thm@postskip=\skip70
+\thm@headsep=\skip71
+\dth@everypar=\toks28
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -311,13 +332,9 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count111
-)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count112
+\lrq@indent=\count113
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -325,62 +342,62 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
-\integerpart=\count113
-\decimalpart=\count114
+\integerpart=\count114
+\decimalpart=\count115
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count115
-\c@listtotal=\count116
-\c@listcount=\count117
-\c@liststart=\count118
-\c@liststop=\count119
-\c@citecount=\count120
-\c@citetotal=\count121
-\c@multicitecount=\count122
-\c@multicitetotal=\count123
-\c@instcount=\count124
-\c@maxnames=\count125
-\c@minnames=\count126
-\c@maxitems=\count127
-\c@minitems=\count128
-\c@citecounter=\count129
-\c@savedcitecounter=\count130
-\c@uniquelist=\count131
-\c@uniquename=\count132
-\c@refsection=\count133
-\c@refsegment=\count134
-\c@maxextratitle=\count135
-\c@maxextratitleyear=\count136
-\c@maxextradate=\count137
-\c@maxextraalpha=\count138
-\c@abbrvpenalty=\count139
-\c@highnamepenalty=\count140
-\c@lownamepenalty=\count141
-\c@maxparens=\count142
-\c@parenlevel=\count143
-\blx@tempcnta=\count144
-\blx@tempcntb=\count145
-\blx@tempcntc=\count146
-\blx@maxsection=\count147
-\blx@maxsegment@0=\count148
-\blx@notetype=\count149
-\blx@parenlevel@text=\count150
-\blx@parenlevel@foot=\count151
-\blx@sectionciteorder@0=\count152
-\labelnumberwidth=\skip69
-\labelalphawidth=\skip70
-\biblabelsep=\skip71
-\bibitemsep=\skip72
-\bibnamesep=\skip73
-\bibinitsep=\skip74
-\bibparsep=\skip75
-\bibhang=\skip76
+\c@tabx@nest=\count116
+\c@listtotal=\count117
+\c@listcount=\count118
+\c@liststart=\count119
+\c@liststop=\count120
+\c@citecount=\count121
+\c@citetotal=\count122
+\c@multicitecount=\count123
+\c@multicitetotal=\count124
+\c@instcount=\count125
+\c@maxnames=\count126
+\c@minnames=\count127
+\c@maxitems=\count128
+\c@minitems=\count129
+\c@citecounter=\count130
+\c@savedcitecounter=\count131
+\c@uniquelist=\count132
+\c@uniquename=\count133
+\c@refsection=\count134
+\c@refsegment=\count135
+\c@maxextratitle=\count136
+\c@maxextratitleyear=\count137
+\c@maxextradate=\count138
+\c@maxextraalpha=\count139
+\c@abbrvpenalty=\count140
+\c@highnamepenalty=\count141
+\c@lownamepenalty=\count142
+\c@maxparens=\count143
+\c@parenlevel=\count144
+\blx@tempcnta=\count145
+\blx@tempcntb=\count146
+\blx@tempcntc=\count147
+\blx@maxsection=\count148
+\blx@maxsegment@0=\count149
+\blx@notetype=\count150
+\blx@parenlevel@text=\count151
+\blx@parenlevel@foot=\count152
+\blx@sectionciteorder@0=\count153
+\labelnumberwidth=\skip72
+\labelalphawidth=\skip73
+\biblabelsep=\skip74
+\bibitemsep=\skip75
+\bibnamesep=\skip76
+\bibinitsep=\skip77
+\bibparsep=\skip78
+\bibhang=\skip79
 \blx@bcfin=\read1
 \blx@bcfout=\write4
-\c@mincomprange=\count153
-\c@maxcomprange=\count154
-\c@mincompwidth=\count155
+\c@mincomprange=\count154
+\c@maxcomprange=\count155
+\c@mincompwidth=\count156
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -391,88 +408,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'nature.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count156
-\c@savedafterword=\count157
-\c@annotator=\count158
-\c@savedannotator=\count159
-\c@author=\count160
-\c@savedauthor=\count161
-\c@bookauthor=\count162
-\c@savedbookauthor=\count163
-\c@commentator=\count164
-\c@savedcommentator=\count165
-\c@editor=\count166
-\c@savededitor=\count167
-\c@editora=\count168
-\c@savededitora=\count169
-\c@editorb=\count170
-\c@savededitorb=\count171
-\c@editorc=\count172
-\c@savededitorc=\count173
-\c@foreword=\count174
-\c@savedforeword=\count175
-\c@holder=\count176
-\c@savedholder=\count177
-\c@introduction=\count178
-\c@savedintroduction=\count179
-\c@namea=\count180
-\c@savednamea=\count181
-\c@nameb=\count182
-\c@savednameb=\count183
-\c@namec=\count184
-\c@savednamec=\count185
-\c@translator=\count186
-\c@savedtranslator=\count187
-\c@shortauthor=\count188
-\c@savedshortauthor=\count189
-\c@shorteditor=\count190
-\c@savedshorteditor=\count191
-\c@labelname=\count192
-\c@savedlabelname=\count193
-\c@institution=\count194
-\c@savedinstitution=\count195
-\c@lista=\count196
-\c@savedlista=\count197
-\c@listb=\count198
-\c@savedlistb=\count199
-\c@listc=\count266
-\c@savedlistc=\count267
-\c@listd=\count268
-\c@savedlistd=\count269
-\c@liste=\count270
-\c@savedliste=\count271
-\c@listf=\count272
-\c@savedlistf=\count273
-\c@location=\count274
-\c@savedlocation=\count275
-\c@organization=\count276
-\c@savedorganization=\count277
-\c@origlocation=\count278
-\c@savedoriglocation=\count279
-\c@origpublisher=\count280
-\c@savedorigpublisher=\count281
-\c@publisher=\count282
-\c@savedpublisher=\count283
-\c@language=\count284
-\c@savedlanguage=\count285
-\c@origlanguage=\count286
-\c@savedoriglanguage=\count287
-\c@pageref=\count288
-\c@savedpageref=\count289
-\shorthandwidth=\skip77
-\shortjournalwidth=\skip78
-\shortserieswidth=\skip79
-\shorttitlewidth=\skip80
-\shortauthorwidth=\skip81
-\shorteditorwidth=\skip82
-\locallabelnumberwidth=\skip83
-\locallabelalphawidth=\skip84
-\localshorthandwidth=\skip85
-\localshortjournalwidth=\skip86
-\localshortserieswidth=\skip87
-\localshorttitlewidth=\skip88
-\localshortauthorwidth=\skip89
-\localshorteditorwidth=\skip90
+\c@afterword=\count157
+\c@savedafterword=\count158
+\c@annotator=\count159
+\c@savedannotator=\count160
+\c@author=\count161
+\c@savedauthor=\count162
+\c@bookauthor=\count163
+\c@savedbookauthor=\count164
+\c@commentator=\count165
+\c@savedcommentator=\count166
+\c@editor=\count167
+\c@savededitor=\count168
+\c@editora=\count169
+\c@savededitora=\count170
+\c@editorb=\count171
+\c@savededitorb=\count172
+\c@editorc=\count173
+\c@savededitorc=\count174
+\c@foreword=\count175
+\c@savedforeword=\count176
+\c@holder=\count177
+\c@savedholder=\count178
+\c@introduction=\count179
+\c@savedintroduction=\count180
+\c@namea=\count181
+\c@savednamea=\count182
+\c@nameb=\count183
+\c@savednameb=\count184
+\c@namec=\count185
+\c@savednamec=\count186
+\c@translator=\count187
+\c@savedtranslator=\count188
+\c@shortauthor=\count189
+\c@savedshortauthor=\count190
+\c@shorteditor=\count191
+\c@savedshorteditor=\count192
+\c@labelname=\count193
+\c@savedlabelname=\count194
+\c@institution=\count195
+\c@savedinstitution=\count196
+\c@lista=\count197
+\c@savedlista=\count198
+\c@listb=\count199
+\c@savedlistb=\count266
+\c@listc=\count267
+\c@savedlistc=\count268
+\c@listd=\count269
+\c@savedlistd=\count270
+\c@liste=\count271
+\c@savedliste=\count272
+\c@listf=\count273
+\c@savedlistf=\count274
+\c@location=\count275
+\c@savedlocation=\count276
+\c@organization=\count277
+\c@savedorganization=\count278
+\c@origlocation=\count279
+\c@savedoriglocation=\count280
+\c@origpublisher=\count281
+\c@savedorigpublisher=\count282
+\c@publisher=\count283
+\c@savedpublisher=\count284
+\c@language=\count285
+\c@savedlanguage=\count286
+\c@origlanguage=\count287
+\c@savedoriglanguage=\count288
+\c@pageref=\count289
+\c@savedpageref=\count290
+\shorthandwidth=\skip80
+\shortjournalwidth=\skip81
+\shortserieswidth=\skip82
+\shorttitlewidth=\skip83
+\shortauthorwidth=\skip84
+\shorteditorwidth=\skip85
+\locallabelnumberwidth=\skip86
+\locallabelalphawidth=\skip87
+\localshorthandwidth=\skip88
+\localshortjournalwidth=\skip89
+\localshortserieswidth=\skip90
+\localshorttitlewidth=\skip91
+\localshortauthorwidth=\skip92
+\localshorteditorwidth=\skip93
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -484,13 +501,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
-\c@textcitecount=\count290
-\c@textcitetotal=\count291
-\c@textcitemaxnames=\count292
-\c@biburlnumpenalty=\count293
-\c@biburlucpenalty=\count294
-\c@biburllcpenalty=\count295
-\c@smartand=\count296
+\c@textcitecount=\count291
+\c@textcitetotal=\count292
+\c@textcitemaxnames=\count293
+\c@biburlnumpenalty=\count294
+\c@biburlucpenalty=\count295
+\c@biburllcpenalty=\count296
+\c@smartand=\count297
 )
 Package biblatex Info: Trying to load bibliography style 'nature'...
 Package biblatex Info: ... file 'nature.bbx' found.
@@ -512,8 +529,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count297
-\c@bbx:relatedtotal=\count298
+\c@bbx:relatedcount=\count298
+\c@bbx:relatedtotal=\count299
 ))))
 Package biblatex Info: Trying to load citation style 'nature'...
 Package biblatex Info: ... file 'nature.cbx' found.
@@ -525,8 +542,8 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2018/03/04 v3.11 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count299
-\c@cbx@tempcntb=\count300
+\c@cbx@tempcnta=\count300
+\c@cbx@tempcntb=\count301
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -559,55 +576,55 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 )
-\Gin@req@height=\dimen124
-\Gin@req@width=\dimen125
+\Gin@req@height=\dimen128
+\Gin@req@width=\dimen129
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip91
-\subfigcapskip=\skip92
-\subfigcaptopadj=\dimen126
-\subfigbottomskip=\skip93
-\subfigcapmargin=\dimen127
-\subfiglabelskip=\skip94
-\c@subfigure=\count301
-\c@lofdepth=\count302
-\c@subtable=\count303
-\c@lotdepth=\count304
+\subfigtopskip=\skip94
+\subfigcapskip=\skip95
+\subfigcaptopadj=\dimen130
+\subfigbottomskip=\skip96
+\subfigcapmargin=\dimen131
+\subfiglabelskip=\skip97
+\c@subfigure=\count302
+\c@lofdepth=\count303
+\c@subtable=\count304
+\c@lotdepth=\count305
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/local/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip95
-\subfig@bottom=\skip96
+\subfig@top=\skip98
+\subfig@bottom=\skip99
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/subfigmat/subfigmat.sty
 Package: subfigmat 1999/02/27 v1.0 Subfigure Matrix Package
-\sfm@width=\skip97
-\sfmcolsep=\skip98
-\c@sfm@count=\count305
+\sfm@width=\skip100
+\sfmcolsep=\skip101
+\c@sfm@count=\count306
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
-\col@sep=\dimen128
-\ar@mcellbox=\box63
-\extrarowheight=\dimen129
-\NC@list=\toks27
-\extratabsurround=\skip99
-\backup@length=\skip100
-\ar@cellbox=\box64
+\col@sep=\dimen132
+\ar@mcellbox=\box67
+\extrarowheight=\dimen133
+\NC@list=\toks29
+\extratabsurround=\skip102
+\backup@length=\skip103
+\ar@cellbox=\box68
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count306
-\float@exts=\toks28
-\float@box=\box65
-\@float@everytoks=\toks29
-\@floatcapt=\box66
+\c@float@type=\count307
+\float@exts=\toks30
+\float@box=\box69
+\@float@everytoks=\toks31
+\@floatcapt=\box70
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
@@ -615,15 +632,15 @@ les
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box67
-\beforetitleunit=\skip101
-\aftertitleunit=\skip102
-\ttl@plus=\dimen130
-\ttl@minus=\dimen131
-\ttl@toksa=\toks30
-\titlewidth=\dimen132
-\titlewidthlast=\dimen133
-\titlewidthfirst=\dimen134
+\ttl@box=\box71
+\beforetitleunit=\skip104
+\aftertitleunit=\skip105
+\ttl@plus=\dimen134
+\ttl@minus=\dimen135
+\ttl@toksa=\toks32
+\titlewidth=\dimen136
+\titlewidthlast=\dimen137
+\titlewidthfirst=\dimen138
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/secdot/secdot.sty
 Package: secdot 2000/06/20 v1.0 section numbers with dots
@@ -634,68 +651,40 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
-\@quotelevel=\count307
-\@quotereset=\count308
+\@quotelevel=\count308
+\@quotereset=\count309
 
-(./ExtendedAbstract.aux
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-
-LaTeX Warning: Label `fig:blade_flow_pressure' multiply defined.
-
-)
+(./ExtendedAbstract.aux)
 \openout1 = `ExtendedAbstract.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 161.
+LaTeX Info: Redefining \selectfont on input line 163.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count309
-\scratchdimen=\dimen135
-\scratchbox=\box68
-\nofMPsegments=\count310
-\nofMParguments=\count311
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count312
-\MPscratchDim=\dimen136
-\MPnumerator=\count313
-\makeMPintoPDFobject=\count314
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count310
+\scratchdimen=\dimen139
+\scratchbox=\box72
+\nofMPsegments=\count311
+\nofMParguments=\count312
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count313
+\MPscratchDim=\dimen140
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
+\everyMPtoPDFconversion=\toks34
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -725,377 +714,186 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ExtendedAbstract.bbl' found.
 
 (./ExtendedAbstract.bbl)
-Package biblatex Info: Reference section=0 on input line 161.
-Package biblatex Info: Reference segment=0 on input line 161.
-LaTeX Font Info:    Try loading font information for U+msa on input line 177.
+Package biblatex Info: Reference section=0 on input line 163.
+Package biblatex Info: Reference segment=0 on input line 163.
+LaTeX Font Info:    Try loading font information for U+msa on input line 179.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 177.
+LaTeX Font Info:    Try loading font information for U+msb on input line 179.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (./ExtendedAbstract_abstr.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--27
+Underfull \hbox (badness 10000) in paragraph at lines 16--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 ) (./ExtendedAbstract_intro.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-])
-(./ExtendedAbstract_backg.tex
-<images/tmd2.png, id=15, 998.73125pt x 517.935pt>
+<images/tmd2.png, id=1, 998.73125pt x 517.935pt>
 File: images/tmd2.png Graphic file (type png)
 <use images/tmd2.png>
-Package pdftex.def Info: images/tmd2.png  used on input line 26.
-(pdftex.def)             Requested size: 199.7427pt x 103.58516pt.
-<images/energiesTMDs.png, id=17, 945.5325pt x 594.72188pt>
+Package pdftex.def Info: images/tmd2.png  used on input line 30.
+(pdftex.def)             Requested size: 170.71652pt x 88.52986pt.
+) (./ExtendedAbstract_backg.tex [1{/usr/local/texlive/2018/texmf-var/fonts/map/
+pdftex/updmap/pdftex.map}
+
+
+ <./images/tmd2.png>]
+<images/energiesTMDs.png, id=22, 945.5325pt x 594.72188pt>
 File: images/energiesTMDs.png Graphic file (type png)
 <use images/energiesTMDs.png>
-Package pdftex.def Info: images/energiesTMDs.png  used on input line 36.
+Package pdftex.def Info: images/energiesTMDs.png  used on input line 18.
 (pdftex.def)             Requested size: 189.10315pt x 118.94226pt.
 
-Underfull \hbox (badness 1742) in paragraph at lines 54--57
+Underfull \hbox (badness 1742) in paragraph at lines 41--44
 \OT1/cmr/m/n/10 where we con-sider the ba-sis set $\OMS/cmsy/m/n/10 f[]g[] \OT1
 /cmr/m/n/10 =
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./images/tmd2.png> <./images/energiesTMDs.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 73--83
+Underfull \hbox (badness 10000) in paragraph at lines 59--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--83
+Underfull \hbox (badness 10000) in paragraph at lines 59--69
 
  []
 
-Extra height:0.0pt when 97.65192pt
-(2)Left:97.65192pt Right:94.50034pt Output:97.65192pt
+Extra height:0.0pt when 518.7342pt
+(2)Left:518.7342pt Right:515.63727pt Output:518.7342pt
 - LAST -
-Left:97.65192pt
-Right:94.50034pt
-Output:97.65192pt
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--92
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 47.97221pt
-(2)Left:47.97221pt Right:46.0pt Output:47.97221pt
-- LAST -
-Left:47.97221pt
-Right:46.0pt
-Output:47.97221pt
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--103
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 6252) has occurred while \output is active []
-
-Extra height:34.0pt when 49.97221pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:34.0pt when 50.97221pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 51.97221pt
-(2)Left:51.97221pt Right:46.0pt Output:51.97221pt
-- LAST -
-Left:51.97221pt
-Right:46.0pt
-Output:51.97221pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-Overfull \hbox (10.92178pt too wide) detected at line 201
-\OML/cmm/b/it/10 h[] \OT1/cmr/m/n/10 = []
- []
-
-
-Underfull \hbox (badness 3536) in paragraph at lines 159--202
-\OT1/cmr/m/n/10 for the nanorib-bon, we can par-tially di-ag-o-
- []
-
-
-Underfull \hbox (badness 5217) in paragraph at lines 159--202
-\OT1/cmr/m/n/10 nal-ize the Hamil-to-nian an-a-lyt-i-cally, re-duc-ing
- []
-
-
-Underfull \hbox (badness 1565) in paragraph at lines 159--202
-\OT1/cmr/m/n/10 the size of the ma-trix to be di-ag-o-nal-ized to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--202
-
- []
-
-Extra height:0.0pt when 521.7088pt
-(2)Left:521.7088pt Right:524.95792pt Output:521.7088pt
-(2)Left:524.95792pt Right:524.95792pt Output:524.95792pt
-- LAST -
-Left:524.95792pt
-Right:524.95792pt
-Output:524.95792pt
-[4]
-Extra height:0.0pt when 0.0pt
-(2)Left:0.0pt Right:0.0pt Output:0.0pt
-- LAST -
-Left:0.0pt
-Right:0.0pt
-Output:0.0pt
-
-Underfull \hbox (badness 1342) in paragraph at lines 202--219
-\OT1/cmr/m/n/10 Hubbard-type in-ter-ac-tions, we ob-tain so-lu-tions
- []
-
-
-Underfull \hbox (badness 3861) in paragraph at lines 202--219
-\OT1/cmr/m/n/10 that are in-de-pen-dent of $\OML/cmm/m/it/10 x$ \OT1/cmr/m/n/10
- (the lon-gi-tu-di-nal
- []
-
-
-Underfull \hbox (badness 2119) in paragraph at lines 202--219
-\OT1/cmr/m/n/10 to re-duce the num-ber of MF pa-ram-e-ters by
- []
-
-
-Underfull \hbox (badness 7814) in paragraph at lines 202--219
-\OT1/cmr/m/n/10 choos-ing the trans-la-tion-ally in-vari-ant ansatz
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--219
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 101.97221pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 102.97221pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 103.97221pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 104.97221pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 105.97221pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:0.0pt when 106.97221pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-(2)Left:106.97221pt Right:94.0pt Output:106.97221pt
-- LAST -
-Left:106.97221pt
-Right:94.0pt
-Output:106.97221pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 237--243
-\OT1/cmr/m/n/10 electron wave-func-tion un-der elec-tron ex-change.
- []
-
-[5]
-Overfull \hbox (2.84145pt too wide) detected at line 291
+Left:518.7342pt
+Right:515.63727pt
+Output:518.7342pt
+[2 <./images/energiesTMDs.png>]
+Overfull \hbox (16.4383pt too wide) detected at line 87
 []
  []
 
-[6]) (./ExtendedAbstract_imple.tex
-<images/OrdersOfMagnitude_N=64sites.png, id=48, 393.75105pt x 254.1495pt>
+
+Underfull \hbox (badness 1342) in paragraph at lines 87--89
+\OT1/cmr/m/n/10 We seek the most en-er-get-i-cally fa-vor-able self-
+ []
+
+[3]
+Overfull \hbox (3.84395pt too wide) detected at line 151
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+\OT1/cmr/m/n/10 Fourier trans-form-ing along $\OML/cmm/m/it/10 m$\OT1/cmr/m/n/1
+0 : $\OML/cmm/m/it/10 c[] \OT1/cmr/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 4569) in paragraph at lines 151--153
+[] [][] \OML/cmm/m/it/10 e[]c[]$\OT1/cmr/m/n/10 , with $\OML/cmm/m/it/10 k \OT1
+/cmr/m/n/10 = []\OMS/cmsy/m/n/10 f^^@[] \OT1/cmr/m/n/10 +
+ []
+
+[4]
+Underfull \hbox (badness 1418) in paragraph at lines 218--224
+\OT1/cmr/m/n/10 electron wave-func-tion un-der elec-tron ex-change.
+ []
+
+
+Overfull \hbox (2.84145pt too wide) detected at line 272
+[]
+ []
+
+[5] [6]) (./ExtendedAbstract_imple.tex
+<images/OrdersOfMagnitude_N=64sites.png, id=50, 393.75105pt x 254.1495pt>
 File: images/OrdersOfMagnitude_N=64sites.png Graphic file (type png)
 <use images/OrdersOfMagnitude_N=64sites.png>
 Package pdftex.def Info: images/OrdersOfMagnitude_N=64sites.png  used on input 
 line 22.
 (pdftex.def)             Requested size: 213.39566pt x 137.73506pt.
- [7]
-<images/s_compare.png, id=55, 378.9357pt x 257.40166pt>
+<images/s_compare.png, id=51, 378.9357pt x 257.40166pt>
 File: images/s_compare.png Graphic file (type png)
 <use images/s_compare.png>
 Package pdftex.def Info: images/s_compare.png  used on input line 30.
-(pdftex.def)             Requested size: 213.39566pt x 144.95695pt.
-<images/LongitudinalProfile.png, id=56, 389.2944pt x 255.71535pt>
+(pdftex.def)             Requested size: 207.7052pt x 141.09216pt.
+<images/LongitudinalProfile.png, id=52, 389.2944pt x 255.71535pt>
 File: images/LongitudinalProfile.png Graphic file (type png)
 <use images/LongitudinalProfile.png>
 Package pdftex.def Info: images/LongitudinalProfile.png  used on input line 40.
 
 (pdftex.def)             Requested size: 213.39566pt x 140.17563pt.
-<images/fityang2017.png, id=57, 383.031pt x 260.05154pt>
+<images/fityang2017.png, id=53, 383.031pt x 260.05154pt>
 File: images/fityang2017.png Graphic file (type png)
 <use images/fityang2017.png>
 Package pdftex.def Info: images/fityang2017.png  used on input line 49.
-(pdftex.def)             Requested size: 213.39566pt x 144.88583pt.
-) (./ExtendedAbstract_resul.tex
-<images/magProf.png, id=58, 384.4764pt x 268.41078pt>
+(pdftex.def)             Requested size: 207.7052pt x 141.02095pt.
+ [7 <./images/OrdersOfMagnitude_N=64sites.png> <./images/s_compare.png> <./imag
+es/LongitudinalProfile.png>]
+<images/magProf.png, id=62, 384.4764pt x 268.41078pt>
 File: images/magProf.png Graphic file (type png)
 <use images/magProf.png>
-Package pdftex.def Info: images/magProf.png  used on input line 21.
-(pdftex.def)             Requested size: 192.23772pt x 134.20506pt.
-<images/freeBands.png, id=59, 433.62pt x 289.08pt>
-File: images/freeBands.png Graphic file (type png)
-<use images/freeBands.png>
-Package pdftex.def Info: images/freeBands.png  used on input line 27.
-(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
-
-Underfull \vbox (badness 5260) has occurred while \output is active []
-
- [8 <./images/OrdersOfMagnitude_N=64sites.png> <./images/s_compare.png> <./imag
-es/LongitudinalProfile.png> <./images/fityang2017.png>]
-File: images/magProf.png Graphic file (type png)
-<use images/magProf.png>
-Package pdftex.def Info: images/magProf.png  used on input line 34.
-(pdftex.def)             Requested size: 170.71652pt x 119.18234pt.
-<images/edge-mag.pdf, id=68, 1027.84pt x 770.88pt>
-File: images/edge-mag.pdf Graphic file (type pdf)
-<use images/edge-mag.pdf>
-Package pdftex.def Info: images/edge-mag.pdf  used on input line 40.
-(pdftex.def)             Requested size: 215.85277pt x 141.57376pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<images/edge-mag-phase-diagram.png, id=70, 384.2355pt x 254.1495pt>
-File: images/edge-mag-phase-diagram.png Graphic file (type png)
-<use images/edge-mag-phase-diagram.png>
-Package pdftex.def Info: images/edge-mag-phase-diagram.png  used on input line 
-47.
-(pdftex.def)             Requested size: 192.11728pt x 127.07443pt.
-<images/bands_Nx=512.png, id=71, 540.00143pt x 372.04596pt>
+Package pdftex.def Info: images/magProf.png  used on input line 67.
+(pdftex.def)             Requested size: 211.46266pt x 147.62637pt.
+<images/bands_Nx=512.png, id=63, 540.00143pt x 372.04596pt>
 File: images/bands_Nx=512.png Graphic file (type png)
 <use images/bands_Nx=512.png>
-Package pdftex.def Info: images/bands_Nx=512.png  used on input line 54.
-(pdftex.def)             Requested size: 170.71652pt x 117.61519pt.
-<images/bands152.png, id=72, 548.38477pt x 375.65945pt>
-File: images/bands152.png Graphic file (type png)
-<use images/bands152.png>
-Package pdftex.def Info: images/bands152.png  used on input line 61.
-(pdftex.def)             Requested size: 170.71652pt x 116.94618pt.
+Package pdftex.def Info: images/bands_Nx=512.png  used on input line 84.
+(pdftex.def)             Requested size: 226.79904pt x 156.25822pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (4.177pt too wide) in paragraph at lines 84--85
+ [][] 
+ []
 
- [9 <./images/edge-mag.pdf> <./images/magProf.png> <./images/freeBands.png> <./
-images/edge-mag-phase-diagram.png> <./images/bands_Nx=512.png>]
-<images/bands154.png, id=101, 548.38477pt x 375.65945pt>
-File: images/bands154.png Graphic file (type png)
-<use images/bands154.png>
-Package pdftex.def Info: images/bands154.png  used on input line 68.
-(pdftex.def)             Requested size: 170.71652pt x 116.94618pt.
-<images/bottomEdgeMagProfU154.png, id=102, 1054.94125pt x 705.13437pt>
-File: images/bottomEdgeMagProfU154.png Graphic file (type png)
-<use images/bottomEdgeMagProfU154.png>
-Package pdftex.def Info: images/bottomEdgeMagProfU154.png  used on input line 7
-5.
-(pdftex.def)             Requested size: 170.71652pt x 114.10417pt.
-<images/topEdgeMagProfU13.png, id=103, 1055.44313pt x 704.13063pt>
+<images/edgeMagInsetBeta.pdf, id=64, 1027.84pt x 770.88pt>
+File: images/edgeMagInsetBeta.pdf Graphic file (type pdf)
+<use images/edgeMagInsetBeta.pdf>
+Package pdftex.def Info: images/edgeMagInsetBeta.pdf  used on input line 89.
+(pdftex.def)             Requested size: 215.85277pt x 142.76869pt.
+[8 <./images/fityang2017.png> <./images/magProf.png>]
+<images/topEdgeMagProfU13.png, id=71, 1055.44313pt x 704.13063pt>
 File: images/topEdgeMagProfU13.png Graphic file (type png)
 <use images/topEdgeMagProfU13.png>
-Package pdftex.def Info: images/topEdgeMagProfU13.png  used on input line 82.
-(pdftex.def)             Requested size: 170.71652pt x 113.88803pt.
-<images/signTMDdensSignU16beta2.png, id=104, 433.62pt x 289.08pt>
-File: images/signTMDdensSignU16beta2.png Graphic file (type png)
-<use images/signTMDdensSignU16beta2.png>
-Package pdftex.def Info: images/signTMDdensSignU16beta2.png  used on input line
- 89.
-(pdftex.def)             Requested size: 170.71652pt x 113.8126pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<images/tmdFinalxyxy.png, id=105, 433.62pt x 131.96503pt>
+Package pdftex.def Info: images/topEdgeMagProfU13.png  used on input line 106.
+(pdftex.def)             Requested size: 207.7052pt x 138.56735pt.
+<images/tmdFinalxyxy.png, id=72, 214.35281pt x 128.92969pt>
 File: images/tmdFinalxyxy.png Graphic file (type png)
 <use images/tmdFinalxyxy.png>
-Package pdftex.def Info: images/tmdFinalxyxy.png  used on input line 96.
-(pdftex.def)             Requested size: 170.71652pt x 51.95544pt.
-<images/tmdFinalx2y2z2.png, id=106, 433.62pt x 128.78514pt>
+Package pdftex.def Info: images/tmdFinalxyxy.png  used on input line 112.
+(pdftex.def)             Requested size: 207.7052pt x 124.93573pt.
+<images/tmdFinalx2y2z2.png, id=73, 216.95454pt x 123.72624pt>
 File: images/tmdFinalx2y2z2.png Graphic file (type png)
 <use images/tmdFinalx2y2z2.png>
-Package pdftex.def Info: images/tmdFinalx2y2z2.png  used on input line 103.
-(pdftex.def)             Requested size: 170.71652pt x 50.7035pt.
-)
-(./ExtendedAbstract_concl.tex) (./ExtendedAbstract_ackno.tex) [10 <./images/ban
-ds152.png> <./images/bands154.png> <./images/bottomEdgeMagProfU154.png> <./imag
-es/topEdgeMagProfU13.png> <./images/signTMDdensSignU16beta2.png> <./images/tmdF
-inalxyxy.png> <./images/tmdFinalx2y2z2.png>] [11
-
-] (./ExtendedAbstract.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
+Package pdftex.def Info: images/tmdFinalx2y2z2.png  used on input line 113.
+(pdftex.def)             Requested size: 207.7052pt x 118.45111pt.
+ [9 <./images/edgeMagInsetBeta.pdf> <./images/bands_Nx=512.png> <./images/topEd
+geMagProfU13.png> <./images/tmdFinalxyxy.png> <./images/tmdFinalx2y2z2.png>])
+(./ExtendedAbstract_concl.tex) (./ExtendedAbstract_ackno.tex)
+- LAST -
+Extra skip:11.83333pt
+Left:449.88889pt/1.94444pt
+Right:438.25pt/1.75pt
+Output:450.06944pt
+ [10]
+(./ExtendedAbstract.aux)
 Package logreq Info: Writing requests to 'ExtendedAbstract.run.xml'.
 \openout1 = `ExtendedAbstract.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11643 strings out of 492649
- 196936 string characters out of 6129622
- 668662 words of memory out of 5000000
- 15278 multiletter control sequences out of 15000+600000
+ 11702 strings out of 492649
+ 197823 string characters out of 6129622
+ 664759 words of memory out of 5000000
+ 15343 multiletter control sequences out of 15000+600000
  18705 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,29n,45p,1510b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,28n,56p,1510b,1271s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
@@ -1125,10 +923,10 @@ st/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2018/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on ExtendedAbstract.pdf (11 pages, 8806446 bytes).
+Output written on ExtendedAbstract.pdf (10 pages, 4658677 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
+ 199 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 

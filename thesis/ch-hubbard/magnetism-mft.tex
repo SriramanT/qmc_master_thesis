@@ -17,9 +17,10 @@ An unequal number of spin-up and spin-down electrons also decreases the potentia
 An extreme example is a completely polarized lattice.
 In that case, the potential energy is zero.
 More generally, partial spin polarization makes double occupation unlikely, lowering the potential energy.
+\vspace{-0.3cm}
 \begin{figure}[H]
 	\centering
-\hspace{2mm}\includegraphics[trim={0 7.5cm 0 7.5cm},clip, width=0.9 \linewidth]{Hubbard/dos.pdf}
+\hspace{2mm}\includegraphics[trim={0 7.5cm 0 7.5cm},clip, width=0.8 \linewidth]{Hubbard/dos.pdf}
 	\caption[Density of states of the \acs{1D} tight-binding model.]{Density of states of the \acs{1D} tight-binding model.
 	Here we represent a polarization of the spins, which leads to an increase in kinetic energy, since the imbalance of spins forces higher energy levels to be filled.}
 	\label{fig:dos}
@@ -54,7 +55,7 @@ n_\uparrow n_\downarrow &= \big( \left\langle n_\uparrow \right\rangle +  \delta
 \end{equation}
 and from equation (\ref{eq:meanFieldNop}), we obtain the quadratic mean field Hamiltonian
 \begin{equation}
-\mathcal{H}_{\text{MF}} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg( c_{i\sigma}^\dagger c_{j\sigma} + c_{j\sigma}^\dagger c_{i\sigma} \bigg) + U \sum_i \bigg( n_{i,\uparrow} \left\langle n_{i, \downarrow} \right\rangle + n_{i, \downarrow} \left\langle n_{i, \uparrow} \right\rangle - \left\langle n_{i, \uparrow} \right\rangle \left\langle n_{i, \downarrow} \right\rangle \bigg) ,
+\mathcal{H}_{\text{MF}} = - t \sum_{\left\langle i, j \right\rangle, \sigma} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) + U \sum_i \bigg( n_{i,\uparrow} \left\langle n_{i, \downarrow} \right\rangle + n_{i, \downarrow} \left\langle n_{i, \uparrow} \right\rangle - \left\langle n_{i, \uparrow} \right\rangle \left\langle n_{i, \downarrow} \right\rangle \bigg) ,
 \end{equation}
 where we consider a \say{mean field} in the sense that the average density of spin-up electrons interacts with the spin-down electrons and vice-versa.
 The last term subtracts the overcounted  interaction term.
@@ -67,7 +68,7 @@ We compute the energy $E$ for fixed $n$ as a function of $m$, and inspect the sy
 For simplicity, let us now consider the \acs{1D} model.
 Since the average densities are site-independent, we can easily write down the polarized dispersion relations (up to an additive constant), and add these levels up for the various possible fillings of the lattice.
 \begin{equation}\label{eq:meanFieldDispersion}
-\varepsilon_{\uparrow k} = U ( n - m ) - 2 t \cos k \quad \varepsilon_{\downarrow k} = U ( n + m ) - 2 t \cos k ,
+\varepsilon_{\uparrow, k} = U ( n - m ) - 2 t \cos k \quad \varepsilon_{\downarrow, k} = U ( n + m ) - 2 t \cos k ,
 \end{equation}
 
 The computational procedure to perfom mean field computations goes as follows: fix the lattice size $N$, the total particle number $N_p$, and the on-site interaction $U$; set the possible densities by iterating $N_\uparrow = 0, 1, ..., N_p / 2$, and $N_\downarrow = N_p - N_\downarrow$ (we only need half the values since the values are symmetric under $ N_\uparrow \leftrightarrow N_\downarrow$), and setting $n_{\uparrow, \downarrow} = N_{\uparrow, \downarrow} / N$; fill the lowest $N_\uparrow$, and $N_\downarrow$ energy levels, by looping over the allowes momentum states $k = \frac{2\pi}{N} \{ -\frac{N}{2} + 1, -\frac{N}{2}, ..., \frac{N}{2} \}$, and using Eq.(\ref{eq:meanFieldDispersion}).
@@ -80,7 +81,7 @@ Out of the energies computed in this way for varying $N_{\uparrow, \downarrow}$,
 \includegraphics[trim={0 0 0 0},clip, scale=0.47]{Hubbard/mfHubbard.png}
 \hspace{-2.5mm}
 \includegraphics[trim={0 0 0 0},clip, scale = 0.47]{Hubbard/mf-hubbard-1d-quarter-filling-multiple.png}
-	\caption[Mean field results for the \acs{1D} Hubbard model.]{Mean field results at quarter filling for a $ 1024$ sites chain.
+	\caption[Mean field results for the \acs{1D} Hubbard model.]{Mean field results at quarter filling for a $1024$-site chain.
 	$U$ is in units of $t$.
 	As the on-site interaction is increased, we see a transition from a paramagnetic to a ferromagnetic phase. On the right, we close in on the phase transition: plots of each energy curve separately giving evidence of a phase transition.}
 	\label{fig:mft}
@@ -117,7 +118,7 @@ In this section, we solve the mean field Hamiltonian in an iterative, self-consi
 \mathcal{H}_{\text{MF}} = \mathcal{H}_\uparrow + \mathcal{H}_\downarrow + \mathcal{C} , \,\, \mathcal{H}_\sigma = - t \sum_{\left\langle i, j \right\rangle} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) + U \sum_i n_{i,\sigma} \left\langle n_{i,-\sigma} \right\rangle , \,\, \mathcal{C} = - U \sum_i \left\langle n_{i,\uparrow} \right\rangle \left\langle n_{i,\downarrow} \right\rangle
 \end{equation}
 
-We seek the most energetically self-consistent solution iteratively\footnote{One must pay attention so as not to get stuck in metastable states.}: the up and down-spin electron densities are updated successively until convergence occurs.
+We seek the most energetically favorable self-consistent solution iteratively\footnote{One must pay attention so as not to get stuck in metastable states.}: the up and down-spin electron densities are updated successively until convergence occurs.
 
 Since the interacting problem is turned into a single particle problem, the solution basically consists of diagonalizing two $N \times N$ matrices, where $N$ is the size of the system.
 By varying the $2N$ mean field parameters, which are essentially the average local densities $\left\langle n_{i,\sigma} \right\rangle$, we can find the ground state, or other excited states, at the mean field level.
@@ -143,7 +144,7 @@ Recompute mean field parameters, and check for convergence: at iteration $I$, $\
 \left\langle n_{i,\sigma} \right\rangle = \sum_\alpha | Q_{\alpha i, \sigma} |^2 ( 1 + e^ { \beta ( \varepsilon_{\alpha, \sigma} - \mu )} )^{-1}
 \end{equation}
 
-As we explain in appendix \ref{ap:hubbardObSol}, a self-consistent solution is not necessarily the mean field one, thus one must continually check if the functional $F$ of Eq.(\ref{eq:gibbs2}) is being minimized.
+As we explain in appendix \ref{ap:hubbardObSol}, a self-consistent solution is not necessarily the mean field one, thus one must continually check if the functional $F$ of Eq.(\ref{eq:gibbs2}) is being minimized (of, in the case of the \acs{GCE}, the functional $\Omega$ of Eq.(\ref{eq:gibbsGrand}).
 Moreover, we must repeat the calculation above several times by varying the initial conditions, and then select the lowest energy solution that minimizes $F$ as the mean field one.
 This is illustrated in appendix \ref{ap:hubbardObSol}.
 
@@ -164,13 +165,16 @@ To compare with the results of our \ac{QMC} simulations, we may compute other ob
 
 Now, we discuss how to circumvent the convergence issues that may arise when applying the self-consistent procedure.
 First, there are many possible initial conditions, most notably: the random one, which is the most unbiased, but may be slow or not converge at all; the paramagnetic state $\left\langle n_{i,\sigma} \right\rangle = \text{const.}$, which, when combined with the annealing method we shall describe below, emulates the random initial condition; a specific state, such as the antiferromagnetic one, which is a biased choice, which limits the accessible part of parameter space, and potentially gives a misleading mean field solution, but can have good convergence properties.
+
 In some cases, the symmetry of the system dramatically slows down convergence.
 By starting the procedure at a higher temperature than the desired one, we can improve convergence.
 The temperature is then gradually lowered until the desired one is achieved, and this procedure is applied at that temperature.
 There are a lot of possible annealing schemes, namely keeping $\beta$ fixed for some iterations and then adjusting it to the desired $\beta = \beta_0$, or smoothly reducing $\beta$ until it reaches $\beta_0$.
+
 A common convergence issue is the oscillation between two configurations $\left\langle n_{i,\sigma}\right\rangle_I \leftrightarrow \left\langle n_{i,\sigma}\right\rangle_{I+1}$.
 This is solved by averaging the values obtained at the current and previous iterations: $\left\langle n_{i,\sigma}\right\rangle_{I+1} \leftarrow \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_I + \frac{1}{2} \left\langle n_{i,\sigma}\right\rangle_{I+1}$
 The weights attributed to each configuration can be also be different, or even vary with the iteration: $\left\langle n_{i,\sigma}\right\rangle_{I+1} \leftarrow P(I) \left\langle n_{i,\sigma}\right\rangle_I + (1 - P(I) ) \left\langle n_{i,\sigma}\right\rangle_{I+1}$, if we make sure that $P(I) > \delta$, the latter being the convergence parameter.
+
 Finally, the number of parameters may be reduced.
 This is done while taking into account the symmetry of the system.
 For example, one may take only the number of sublattices, say 2 for a square lattice with \acp{PBC}.

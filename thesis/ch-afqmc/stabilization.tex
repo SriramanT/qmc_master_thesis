@@ -132,9 +132,8 @@ Using the orthogonality condition $\bm Q^{-1} = \bm Q^T$, and decomposing $\bm Q
 \bm Q^T \bm T^{-1} + \bm D ) \bm T ]^{-1} = \bm T^{-1} ( \underbrace{\bm Q^T \bm T^{-1} + \bm D}_{\bm Q' \bm D' \bm T'} )^{-1} \bm Q^T = ( \bm T' \bm T )^{-1} (\bm D')^{-1} (\bm Q \bm Q')^{T} ,
 \end{equation}
 \begin{figure}[H]\label{fig:divergences}
-\hspace{0.3cm}
 \includegraphics[scale=0.55]{Afqmc/OrdersOfMagnitude_N=64sites.png}
-\hspace{0.3cm}
+\hspace{0.1cm}
 \includegraphics[scale=0.55]{Afqmc/OrdersOfMagnitude_N=108sites.png}
 \caption[Exponentially divergent diagonal entries of $\bm D'$, showing the orders of magnitude spanned by the matrix elements of the stabilized matrix product.]{Exponentially divergent (and order one)  diagonal entries of $\bm D'$, showing the orders of magnitude spanned by the matrix elements of the stabilized matrix product.
 The depicted systems are the same of Fig.(3.1). }
@@ -152,12 +151,13 @@ The remaining rows determine the effective condition number, so that $\kappa ( \
 This corresponds to defining numerical stability operationally.
 We maintain the numerical scales explicitly, so that the information that we lose at the end is practically irrelevant in computing the Green's function: because of the way we organized the calculation, the overwriting of small scales by unit numbers and of unit scales by big numbers does not decrease precision, instead cutting off certain well picked numerical scales.
 \begin{figure}[H]\label{fig:divergences}
+\hspace{0.2cm}
 \includegraphics[scale=0.55]{Afqmc/conditionNumberNaive.png}
-\hspace{-0.8cm}
 \includegraphics[scale=0.55]{Afqmc/DivergentScalesComparison.png}
 \caption[Condition number of $\bm M_l = \prod_l \bm B_l$ obtained by multiplying $\bm B$-matrices naively. Absolute values of the diagonal entries of $\bm D'$ and corresponding condition number of the matrix to invert to obtain the Green's function.]{Left: Exponentially growing condition number $\kappa [ \bm M_l ]$ obtained by multiplying $\bm B$-matrices naively.
 Right: Absolute values of the diagonal entries of $\bm D'$ for varying $\beta$ and $U$ and corresponding condition number of the matrix to invert to obtain the Green's function: $\kappa ( \bm Q^T \bm T^{-1} + \bm D )$.
-Here, we show that are able to stabilize a multiplication of $\bm B$-matrices with elements spanning about 150 orders of magnitude, as can be seen by the elements of $\bm D'$. }
+Here, we show that are able to stabilize a multiplication of $\bm B$-matrices with elements spanning about 150 orders of magnitude, as can be seen by the elements of $\bm D'$.
+Here, $\beta$ is measured in units of the hopping, $t$.}
 \end{figure}
 
 In the band picture, our reasoning becomes particularly evident.

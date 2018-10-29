@@ -90,7 +90,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Project Euclid - mathematics and statistics online}
-      \field{issn}{0010-3616, 1432-0916}
       \field{journaltitle}{Communications in Mathematical Physics}
       \field{langid}{english}
       \field{number}{4}
@@ -192,7 +191,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Graphene is not the only atomically thin material of technological importance. Diverse families of newly harnessed monolayers have far-reaching implications for basic physics, materials science, and engineering.}
       \field{day}{31}
-      \field{issn}{0031-9228}
       \field{journaltitle}{Physics Today}
       \field{langid}{english}
       \field{month}{8}
@@ -672,8 +670,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Metallic quantum critical phenomena are believed to play a key role in many strongly correlated materials, including high temperature superconductors. Theoretically, the problem of quantum criticality in the presence of a Fermi surface has proven to be highly challenging. However, it has recently been realized that many models used to describe such systems are amenable to numerically exact solution by quantum Monte Carlo ({QMC}) techniques, without suffering from the fermion sign problem. In this article, we review the status of the understanding of metallic quantum criticality, and the recent progress made by {QMC} simulations. We focus on the cases of spin density wave and Ising nematic criticality. We describe the results obtained so far, and their implications for superconductivity, non-Fermi liquid behavior, and transport in the vicinity of metallic quantum critical points. Some of the outstanding puzzles and future directions are highlighted.}
       \field{day}{5}
-      \field{eprinttype}{arxiv}
-      \field{journaltitle}{{arXiv}:1804.01988 [cond-mat]}
       \field{month}{4}
       \field{title}{Monte Carlo Studies of Quantum Critical Metals}
       \field{urlday}{8}
@@ -682,9 +678,6 @@
       \field{year}{2018}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \verb{eprint}
-      \verb 1804.01988
-      \endverb
       \verb{file}
       \verb arXiv.org Snapshot:/Users/franciscobrito/Zotero/storage/NQJH7MWF/1804.html:text/html;Berg2018.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/detQMC-BSS-and-beyond/Berg2018.pdf:application/pdf
       \endverb
@@ -794,7 +787,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Determinant quantum Monte Carlo is a method for studying magnetic, transport and thermodynamic properties of interacting fermions on a lattice. It is widely used to explore the physics of strongly correlated quantum systems, from cuprate superconductors to ultracold atoms trapped on optical lattices. This paper contains a description of recent algorithmic advances in the determinant quantum Monte Carlo technique. Focus will be on algorithms developed for hybrid multicore processor and {GPU} platforms. The resulting speed-up of the simulations will be quantified. Simulations’ results will also be presented, with an emphasis on physical quantities that can now be computed for large numbers of sites.}
       \field{day}{23}
-      \field{issn}{1478-6435}
       \field{journaltitle}{Philosophical Magazine}
       \field{month}{4}
       \field{number}{12}
@@ -940,7 +932,7 @@
       \field{month}{11}
       \field{number}{18}
       \field{shortjournal}{Phys. Rev. B}
-      \field{title}{Determinant quantum Monte Carlo study of the enhancement of $d$-wave pairing by charge inhomogeneity}
+      \field{title}{Determinant quantum Monte Carlo study of the enhancement of d-wave pairing by charge inhomogeneity}
       \field{urlday}{7}
       \field{urlmonth}{6}
       \field{urlyear}{2018}
@@ -1391,7 +1383,7 @@
       \field{month}{12}
       \field{number}{23}
       \field{shortjournal}{Phys. Rev. B}
-      \field{title}{Quantum Monte Carlo simulations of thermodynamic properties of \${\textbackslash}mathrm\{{SU}\}(2N)\$ ultracold fermions in optical lattices}
+      \field{title}{Quantum Monte Carlo simulations of thermodynamic properties of SU(2N) ultracold fermions in optical lattices}
       \field{urlday}{8}
       \field{urlmonth}{6}
       \field{urlyear}{2018}
@@ -1540,7 +1532,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{This paper is concerned with solving linear system (In+{BL}⋯B2B1)x=b arising from the Green’s function calculation in the quantum Monte Carlo simulation of interacting electrons. The order of the system and integer L are adjustable. Also adjustable is the conditioning of the coefficient matrix to give rise an extreme ill-conditioned system. Two numerical methods based on the {QR} decomposition with column pivoting and the singular value decomposition, respectively, are studied in this paper. It is proved that the computed solution x∼ by each of the methods is weakly backward stable in the sense that the computed x∼ is close to the exact solution of a nearby linear system[In+({BL}+Δ{BL})⋯(B2+ΔB2)(B1+ΔB1)]x∼=bwith each ΔBi small in norm relatively to Bi.}
       \field{day}{1}
-      \field{issn}{0024-3795}
       \field{journaltitle}{Linear Algebra and its Applications}
       \field{month}{8}
       \field{number}{3}
@@ -1589,7 +1580,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Magnetic materials and nanostructures based on carbon offer unique opportunities for future technological applications such as spintronics. This paper reviews graphene-derived systems in which magnetic correlations emerge as a result of reduced dimensions, disorder and other possible scenarios. In particular, zero-dimensional graphene nanofragments, one-dimensional graphene nanoribbons and defect-induced magnetism in graphene and graphite are covered. Possible physical mechanisms of the emergence of magnetism in these systems are illustrated with the help of computational examples based on simple model Hamiltonians. In addition, this review covers spin-transport properties, proposed designs of graphene-based spintronic devices, magnetic ordering at finite temperatures as well as the most recent experimental achievements.}
-      \field{issn}{0034-4885}
       \field{journaltitle}{Reports on Progress in Physics}
       \field{langid}{english}
       \field{number}{5}
@@ -1637,7 +1627,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{4}
-      \field{issn}{0036-8075, 1095-9203}
       \field{journaltitle}{Science}
       \field{langid}{english}
       \field{month}{8}
@@ -1685,7 +1674,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{We study a new kind of ordering — topological order — in rigid states (the states with no local gapless excitations). We concentrate on characterization of the different topological orders. As an example we discuss in detail chiral spin states of 2 + 1 dimensional spin systems. Chiral spin states are described by the topological Chern-Simons theories in the continuum limit. We show that the topological orders can be characterized by a non-Abelian gauge structure over the moduli space which parametrizes a family of the model Hamiltonians supporting topologically ordered ground states. In 2 + 1 dimensions, the non-Abelian gauge structure determines possible fractional statistics of the quasi-particle excitations over the topologically ordered ground states. The dynamics of the low lying global excitations is shown to be independent of random spatial dependent perturbations. The ground state degeneracy and the non-Abelian gauge structures discussed in this paper are very robust, even against those perturbations that break translation symmetry. We also discuss the symmetry properties of the degenerate ground states of chiral spin states. We find that some degenerate ground states of chiral spin states on torus carry non-trivial quantum numbers of the 90° rotation.}
       \field{day}{1}
-      \field{issn}{0217-9792}
       \field{journaltitle}{International Journal of Modern Physics B}
       \field{month}{2}
       \field{number}{2}
@@ -1786,7 +1774,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{It is pointed out that one of the main effects of correlation phenomena in d- and f-bands is to give rise to behaviour characteristic of the atomic or Heitler-London model. To investigate this situation a simple, approximate model for the interaction of electrons in narrow energy bands is introduced. The results of applying the Hartree-Fock approximation to this model are examined. Using a Green function technique an approximate solution of the correlation problem for this model is obtained. This solution has the property of reducing to the exact atomic solution in the appropriate limit and to the ordinary uncorrelated band picture in the opposite limit. The condition for ferromagnetism of this solution is discussed. To clarify the physical meaning of the solution a two-electron example is examined.}
       \field{day}{26}
-      \field{issn}{0080-4630, 2053-9169}
       \field{journaltitle}{Proc. R. Soc. Lond. A}
       \field{langid}{english}
       \field{month}{11}
@@ -1871,7 +1858,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{We describe monocrystalline graphitic films, which are a few atoms thick but are nonetheless stable under ambient conditions, metallic, and of remarkably high quality. The films are found to be a two-dimensional semimetal with a tiny overlap between valence and conductance bands, and they exhibit a strong ambipolar electric field effect such that electrons and holes in concentrations up to 1013 per square centimeter and with room-temperature mobilities of ∼10,000 square centimeters per volt-second can be induced by applying gate voltage. Exfoliating graphite yields stable carbon films just a few atoms thick, which on a silicon substrate act as a new type of strong semimetal transistor. Exfoliating graphite yields stable carbon films just a few atoms thick, which on a silicon substrate act as a new type of strong semimetal transistor.}
       \field{day}{22}
-      \field{issn}{0036-8075, 1095-9203}
       \field{journaltitle}{Science}
       \field{langid}{english}
       \field{month}{10}
@@ -1919,7 +1905,6 @@
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Carbon is one of the most intriguing elements in the Periodic Table. It forms many allotropes, some known from ancient times (diamond and graphite) and some discovered 10-20 years ago (fullerenes and nanotubes). Interestingly, the two-dimensional form (graphene) was only obtained very recently, immediately attracting a great deal of attention. Electrons in graphene, obeying a linear dispersion relation, behave like massless relativistic particles. This results in the observation of a number of very peculiar electronic properties – from an anomalous quantum Hall effect to the absence of localization – in this, the first two-dimensional material. It also provides a bridge between condensed matter physics and quantum electrodynamics, and opens new perspectives for carbon-based electronics.}
       \field{day}{1}
-      \field{issn}{1369-7021}
       \field{journaltitle}{Materials Today}
       \field{month}{1}
       \field{number}{1}
@@ -1948,6 +1933,27 @@
       \verb http://www.sciencedirect.com/science/article/pii/S1369702106717886
       \endverb
       \keyw{graphene,katsnelson,review}
+    \endentry
+    \entry{noauthor_nobel_nodate}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nobelprize.org, The Official Web Site of the Nobel Prize}
+      \field{title}{The Nobel Prize in Physics 2010 - Advanced Information}
+      \field{urlday}{7}
+      \field{urlmonth}{6}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/Users/franciscobrito/Zotero/storage/9VNLBSMH/advanced.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nobelprize.org/nobel_prizes/physics/laureates/2010/advanced.html
+      \endverb
+      \verb{url}
+      \verb https://www.nobelprize.org/nobel_prizes/physics/laureates/2010/advanced.html
+      \endverb
+      \keyw{graphene}
     \endentry
     \entry{castro_neto_electronic_2009}{article}{}
       \name{author}{5}{}{%
@@ -2055,7 +2061,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The remarkable properties of graphene have renewed interest in inorganic, two-dimensional materials with unique electronic and optical attributes. Transition metal dichalcogenides ({TMDCs}) are layered materials with strong in-plane bonding and weak out-of-plane interactions enabling exfoliation into two-dimensional layers of single unit cell thickness. Although {TMDCs} have been studied for decades, recent advances in nanoscale materials characterization and device fabrication have opened up new opportunities for two-dimensional layers of thin {TMDCs} in nanoelectronics and optoelectronics. {TMDCs} such as {MoS}2, {MoSe}2, {WS}2 and {WSe}2 have sizable bandgaps that change from indirect to direct in single layers, allowing applications such as transistors, photodetectors and electroluminescent devices. We review the historical development of {TMDCs}, methods for preparing atomically thin layers, their electronic and optical properties, and prospects for future advances in electronics and optoelectronics.}
-      \field{issn}{1748-3395}
       \field{journaltitle}{Nature Nanotechnology}
       \field{langid}{english}
       \field{month}{11}
@@ -2278,7 +2283,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Theoretically, it has been known that breaking spin degeneracy and effectively realizing spinless fermions is a promising path to topological superconductors. Yet, topological superconductors are rare to date. Here we propose to realize spinless fermions by splitting the spin degeneracy in momentum space. Specifically, we identify monolayer hole-doped transition metal dichalcogenide ({TMD})s as candidates for topological superconductors out of such momentum-space-split spinless fermions. Although electron-doped {TMDs} have recently been found superconducting, the observed superconductivity is unlikely topological because of the near spin degeneracy. Meanwhile, hole-doped {TMDs} with momentum-space-split spinless fermions remain unexplored. Employing a renormalization group analysis, we propose that the unusual spin-valley locking in hole-doped {TMDs} together with repulsive interactions selectively favours two topological superconducting states: interpocket paired state with Chern number 2 and intrapocket paired state with finite pair momentum. A confirmation of our predictions will open up possibilities for manipulating topological superconductors on the device-friendly platform of monolayer {TMDs}.}
       \field{day}{11}
-      \field{issn}{2041-1723}
       \field{journaltitle}{Nature Communications}
       \field{langid}{english}
       \field{month}{4}
@@ -2330,14 +2334,12 @@
       \strng{authorbibnamehash}{494b7ec4877319abf518a4f65c59312d}
       \strng{authornamehash}{08f71198ce2c97cbae2a5aa79965e898}
       \strng{authorfullhash}{494b7ec4877319abf518a4f65c59312d}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We compute the valley/magnetic phase diagram of mono layers of transition metal dichalcogenides in the hole doped region where spin-orbit effects are particularly relevant. Taking into account the moderate to high local electron-electron interactions due to the presence of transition metal atoms, we show that the system is unstable to an itinerant ferromagnetic phase where all charge carriers are spin and valley polarized. This phase shows an anomalous charge Hall and anomalous spin-Hall response, and may thus be detected experimentally.}
       \field{day}{19}
-      \field{eprinttype}{arxiv}
-      \field{journaltitle}{{arXiv}:1712.07157 [cond-mat]}
       \field{month}{12}
       \field{title}{Valley polarized magnetic state in hole-doped mono layers of transition metal dichalcogenides}
       \field{urlday}{13}
@@ -2346,9 +2348,6 @@
       \field{year}{2017}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \verb{eprint}
-      \verb 1712.07157
-      \endverb
       \verb{file}
       \verb arXiv.org Snapshot:/Users/franciscobrito/Zotero/storage/LL8SD8FW/1712.html:text/html;Braz2017.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/tmd/Braz2017.pdf:application/pdf
       \endverb
@@ -2415,7 +2414,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Novel physical phenomena can emerge in low-dimensional nanomaterials. Bulk {MoS}(2), a prototypical metal dichalcogenide, is an indirect bandgap semiconductor with negligible photoluminescence. When the {MoS}(2) crystal is thinned to monolayer, however, a strong photoluminescence emerges, indicating an indirect to direct bandgap transition in this d-electron system. This observation shows that quantum confinement in layered d-electron materials like {MoS}(2) provides new opportunities for engineering the electronic structure of matter at the nanoscale.}
       \field{day}{14}
-      \field{issn}{1530-6992}
       \field{journaltitle}{Nano Letters}
       \field{month}{4}
       \field{number}{4}
@@ -2480,7 +2478,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Because of the edge states and quantum confinement, the shape and size of graphene nanostructures dictate their electrical, optical, magnetic and chemical properties. The current synthesis methods for graphene nanostructures do not produce large quantities of graphene nanostructures that are easily transferable to different substrates/solvents, do not produce graphene nanostructures of different and controlled shapes, or do not allow control of {GN} dimensions over a wide range (up to 100 nm). Here we report the production of graphene nanostructures with predetermined shapes (square, rectangle, triangle and ribbon) and controlled dimensions. This is achieved by diamond-edge-induced nanotomy (nanoscale-cutting) of graphite into graphite nanoblocks, which are then exfoliated. Our results show that the edges of the produced graphene nanostructures are straight and relatively smooth with an {ID}/{IG} of 0.22–0.28 and roughness {<}1 nm. Further, thin films of {GN}-ribbons exhibit a bandgap evolution with width reduction (0, 10 and {\textasciitilde}35 {meV} for 50, 25 and 15 nm, respectively).}
       \field{day}{15}
-      \field{issn}{2041-1723}
       \field{journaltitle}{Nature Communications}
       \field{langid}{english}
       \field{month}{5}
@@ -2557,7 +2554,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Transition metal dichalcogenides ({TMDs}) are a family of van der Waals layered materials exhibiting unique electronic, optical, magnetic and transport properties. Their technological potentials hinge critically on the ability to achieve controlled fabrication of desirable nanostructures, such as nanoribbons and nanodots. To date, nanodots/nanoislands have been regularly observed, while controlled fabrication of {TMD} nanoribbons remains challenging. Here we report a bottom-up fabrication of {MoSe}2 nanoribbons using molecular beam epitaxy, via an unexpected temperature-induced morphological phase transition from the nanodot to nanoribbon regime. Such nanoribbons are of zigzag nature, characterized by distinct chemical and electronic properties along the edges. The phase space for nanoribbon growth is narrowly defined by proper Se:Mo ratios, as corroborated experimentally using different Se fluxes, and supported theoretically using first-principles calculations that establish the crucial role of the morphological reconstruction of the bare Mo-terminated edge. The growth mechanism revealed should be applicable to other {TMD} systems.}
       \field{day}{4}
-      \field{issn}{2041-1723}
       \field{journaltitle}{Nature Communications}
       \field{langid}{english}
       \field{month}{5}
@@ -2869,7 +2865,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Using the determinant quantum Monte-Carlo method, we elucidate the strain tuning of edge magnetism in zigzag graphene nanoribbons. Our intensive numerical results show that a relatively weak Coulomb interaction may induce a ferromagnetic-like behaviour with a proper strain, and the edge magnetism can be enhanced greatly as the strain along the zigzag edge increases, which provides another way to control graphene magnetism even at room temperature.}
-      \field{issn}{0953-8984}
       \field{journaltitle}{Journal of Physics: Condensed Matter}
       \field{langid}{english}
       \field{number}{36}
@@ -3132,8 +3127,8 @@
       \strng{authorbibnamehash}{67324938f341ebfcb460cc8f09d376f4}
       \strng{authornamehash}{67324938f341ebfcb460cc8f09d376f4}
       \strng{authorfullhash}{67324938f341ebfcb460cc8f09d376f4}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Quantum Monte Carlo simulations, while being efficient for bosons, suffer from the “negative sign problem” when applied to fermions—causing an exponential increase of the computing time with the number of particles. A polynomial time solution to the sign problem is highly desired since it would provide an unbiased and numerically exact method to simulate correlated quantum systems. Here we show that such a solution is almost certainly unattainable by proving that the sign problem is nondeterministic polynomial ({NP}) hard, implying that a generic solution of the sign problem would also solve all problems in the complexity class {NP} in polynomial time.}
@@ -3195,7 +3190,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
-      \field{issn}{0002-9505}
       \field{journaltitle}{American Journal of Physics}
       \field{month}{5}
       \field{number}{5}
@@ -3530,7 +3524,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{State-of-the-art machine learning techniques promise to become a powerful tool in statistical mechanics via their capacity to distinguish different phases of matter in an automated way. Here we demonstrate that convolutional neural networks ({CNN}) can be optimized for quantum many-fermion systems such that they correctly identify and locate quantum phase transitions in such systems. Using auxiliary-field quantum Monte Carlo ({QMC}) simulations to sample the many-fermion system, we show that the Green’s function holds sufficient information to allow for the distinction of different fermionic phases via a {CNN}. We demonstrate that this {QMC} + machine learning approach works even for systems exhibiting a severe fermion sign problem where conventional approaches to extract information from the Green’s function, e.g. in the form of equal-time correlation functions, fail.}
       \field{day}{18}
-      \field{issn}{2045-2322}
       \field{journaltitle}{Scientific Reports}
       \field{langid}{english}
       \field{month}{8}
@@ -3592,7 +3585,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{16}
-      \field{issn}{2542-4653}
       \field{journaltitle}{{SciPost} Physics}
       \field{langid}{english}
       \field{month}{8}
@@ -3991,7 +3983,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{The theory developed in a previous paper is applied to calculate the correlation energy of a free-electron gas. The theory involves no cut-off and gives a uniform description of collective motion effects in the long-range limit and of particle motion effects in the short-range limit. It is shown that in the lowest order the theory agrees with Bohm \& Pines’s plasma oscillation theory in the long-range limit, but is inadequate in the short-range limit. The theory is approximately evaluated to the next order, which is correct in the short-range limit, and is applied to calculate the correlation energy at several gas densities; the results are in good agreement with those of Bohm \& Pines.}
       \field{day}{14}
-      \field{issn}{0080-4630, 2053-9169}
       \field{journaltitle}{Proc. R. Soc. Lond. A}
       \field{langid}{english}
       \field{month}{1}
@@ -4040,7 +4031,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{The theory previously developed and applied to calculate the correlation energy of a free-electron gas is extended in this paper to calculate the energy of an electron gas in a potential field. Two new features arise: (i) the introduction of a self-consistent field which is a generalization of the ordinary Hartree field; (ii) the occurrence of ‘local field correction’ effects. It is shown that the energy of the gas can be expressed in terms of the eigenvalues of a certain homogeneous integral equation and a stationary principle for these eigenvalues is given. The theory is applied to crystals and an approximate expression for the correlation energy of a metal is derived neglecting Lorentz-Lorenz corrections effects.}
       \field{day}{11}
-      \field{issn}{0080-4630, 2053-9169}
       \field{journaltitle}{Proc. R. Soc. Lond. A}
       \field{langid}{english}
       \field{month}{3}
@@ -4139,7 +4129,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Models are abundant in virtually all branches of physics, with some achieving iconic status. The Hubbard model, celebrating its golden jubilee this year, continues to be one of the most popular contrivances of theoretical condensed-matter physics.}
-      \field{issn}{1745-2481}
       \field{journaltitle}{Nature Physics}
       \field{langid}{english}
       \field{month}{9}
@@ -4190,8 +4179,8 @@
       \strng{authorbibnamehash}{78b6982805e175b54838c8cd59adca5e}
       \strng{authornamehash}{78b6982805e175b54838c8cd59adca5e}
       \strng{authorfullhash}{78b6982805e175b54838c8cd59adca5e}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This book provides an introduction to the field of solid state physics for undergraduate students in physics, chemistry, engineering, and materials science.}
@@ -4225,8 +4214,8 @@
       \strng{authorbibnamehash}{455822c633709a66fd571d29e8916811}
       \strng{authornamehash}{455822c633709a66fd571d29e8916811}
       \strng{authorfullhash}{455822c633709a66fd571d29e8916811}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Attention is drawn to a class of semi-conductors or insulators with incompletely filled 3d bands. Their lack of conductivity, if the number of electrons per atom is an integer, is explained by the circumstance that a moving electron will have a large probability of being withdrawn to the initial atom, if only the potential barriers to be penetrated are sufficiently high to reduce the frequency of transition below a certain limit. This inhibiting factor disappears, if for ions of equal electronic levels the number of electrons per atom differs from an integer. In the case of {NiO} this condition is fulfilled if an electron is brought by thermal excitation from the lattice 3d band into the somewhat raised and less occupied levels a, a' (figure 1); these levels belong to Ni ions adjacent to a vacant Ni lattice point introduced by the deviations from stoichiometry, and two of these Ni ions are at the absolute zero Ni3+ ions. An analogous conduction mechanism holds for non-stoichiometric Cu2O, with a completely filled 3d band (figure 2). Photoconductivity is generally observed with substances with completely filled zones and never with substances of the {NiO} type. A tentative explanation is given for this fact on the basis of the model of figure 1 and figure 2. In non-stoechiometric {ZnO} vacant oxygen lattice points are assumed (figure 3); in that case the calculation of the lattice levels shows that at the lattice holes one Zn2+ is converted into Zn, whereas in the lattice the additional electrons form Zn+ ions, as will be the case after thermal transitions of the electrons belonging to these Zn atoms into the lattice 4s band.}
@@ -4264,11 +4253,10 @@
       \strng{authorbibnamehash}{d23ac3fa0b220eb6a29cc6bf3949f081}
       \strng{authornamehash}{d23ac3fa0b220eb6a29cc6bf3949f081}
       \strng{authorfullhash}{d23ac3fa0b220eb6a29cc6bf3949f081}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0959-5309}
       \field{journaltitle}{Proceedings of the Physical Society}
       \field{langid}{english}
       \field{number}{4}
@@ -4311,12 +4299,11 @@
       \strng{authorbibnamehash}{1638ef5a5e93e73733dd03c2e0aabf3b}
       \strng{authornamehash}{1638ef5a5e93e73733dd03c2e0aabf3b}
       \strng{authorfullhash}{1638ef5a5e93e73733dd03c2e0aabf3b}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{It is shown that the collective electron and London-Heitler models are not to be regarded as different approximations to the same exact wave function for solids in which, according to the former model, there is a partially filled zone of energy levels. It can thus be shown why nickel oxide in the pure state is a non-conductor, although it contains an incomplete zone. The properties of the metals nickel, palladium and platinum are discussed in the light of these results; platinum differs from nickel in that the orbital contribution to the moment of the elementary magnets is not quenched. A discussion is given of x-ray absorption edges, and it is shown why exciton lines are absent for metals.}
-      \field{issn}{0370-1298}
       \field{journaltitle}{Proceedings of the Physical Society. Section A}
       \field{langid}{english}
       \field{number}{7}
@@ -4548,8 +4535,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{In these pedagogical notes I introduce the operator form of Wick's theorem, i.e. a procedure to bring to normal order a product of 1-particle creation and destruction operators, with respect to some reference many-body state. Both the static and the time- ordered cases are presented.}
       \field{day}{25}
-      \field{eprinttype}{arxiv}
-      \field{journaltitle}{{arXiv}:1710.09248 [cond-mat, physics:math-ph]}
       \field{month}{10}
       \field{title}{Notes on Wick's theorem in many-body theory}
       \field{urlday}{2}
@@ -4558,9 +4543,6 @@
       \field{year}{2017}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \verb{eprint}
-      \verb 1710.09248
-      \endverb
       \verb{file}
       \verb arXiv.org Snapshot:/Users/franciscobrito/Zotero/storage/A3VE8IRQ/1710.html:text/html;Molinari2016.pdf:/Users/franciscobrito/Physics/MScEngPhysics2018/msc_references/references/many-body-theory/Molinari2016.pdf:application/pdf
       \endverb
@@ -4606,13 +4588,12 @@
       \strng{authorbibnamehash}{b1ae1f30f5a1848aa9620fcdb96753e6}
       \strng{authornamehash}{b33ca7d9c92e6f199609c562f0a7612e}
       \strng{authorfullhash}{b1ae1f30f5a1848aa9620fcdb96753e6}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The phase diagram of the Hubbard model is studied numerically by varying parameters and suggests that spin stripe order can be observable at accessible temperatures. A team led by Thomas P. Devereaux from Stanford University and colleagues from {SLAC} National Accelerator Laboratory and University of North Dakota investigate emergence of spin stripe orders in the Hubbard model by tuning various parameters in the determinant quantum Monte Carlo simulations and the density matrix renormalization group calculations. They show that including the next-nearest-neighbor hopping term, which was often neglected in previous studies, in the Hubbard model leads to nearly half-filled spin stripes upon hole-doping, while no stripes upon electron-doping. The consistence of these findings with experimental results on both electron and hole-doped cuprate superconductors supports a unified description across a large portion of the cuprate phase diagram.}
       \field{day}{20}
-      \field{issn}{2397-4648}
       \field{journaltitle}{npj Quantum Materials}
       \field{langid}{english}
       \field{month}{4}
@@ -4665,11 +4646,10 @@
       \strng{authorbibnamehash}{e90eb16cd2f4b23ec0d8e29159f6e062}
       \strng{authornamehash}{9b9dee27a94840db8a9460974f985700}
       \strng{authorfullhash}{e90eb16cd2f4b23ec0d8e29159f6e062}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{issn}{1521-4079}
       \field{journaltitle}{Crystal Research and Technology}
       \field{langid}{english}
       \field{number}{1}
@@ -4727,7 +4707,6 @@
       \field{isbn}{978-0-19-851797-9}
       \field{langid}{english}
       \field{month}{2}
-      \field{note}{Google-Books-{ID}: J5aLdDN4uFwC}
       \field{pagetotal}{500}
       \field{title}{Monte Carlo Methods in Statistical Physics}
       \field{year}{1999}
@@ -4762,7 +4741,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{By means of the Monte Carlo sampling technique the equilibrium thermodynamics of fluids and magnets can be calculated numerically. We show that the questions of convergence and accuracy of this method can be understood in terms of the dynamics of the appropriate stochastic model. Also, we discuss to what extent various choices of transition probabilities lead to different dynamic properties of the system. As examples of applications, we consider Ising and Heisenberg spin systems. The numerical results about the dynamic correlation functions are compared to simple approximations taken from the theory of the kinetic Ising model.}
       \field{day}{1}
-      \field{issn}{0022-4715, 1572-9613}
       \field{journaltitle}{Journal of Statistical Physics}
       \field{langid}{english}
       \field{month}{5}
@@ -4809,7 +4787,6 @@
       \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0103-9733}
       \field{journaltitle}{Brazilian Journal of Physics}
       \field{month}{3}
       \field{number}{1}
@@ -5051,7 +5028,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The present paper is based on our graduate lectures in condensed-matter physics. We found that the mean-field solution of the Hubbard model is an excellent tool to stimulate students’ reflections towards the treatment of realistic magnetic interactions. We show by detailed analytical and numerical calculations how to find the mean-field solution of the model on a square lattice. We then interpret the physical implications of the ground-state magnetic phase diagram in terms of the electron density and the ratio between the Coulomb repulsion and the electron-structure bandwidth.}
-      \field{issn}{0143-0807}
       \field{journaltitle}{European Journal of Physics}
       \field{langid}{english}
       \field{number}{3}
@@ -5106,7 +5082,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{We study the mean-field phase diagram of the repulsive Hubbard model in the Lieb lattice. Far from half-filling, the most stable phases are paramagnetism for low on-site interaction U/t and ferromagnetism for high U/t, as in the case of the mean-field phase diagram of the square lattice Hubbard model obtained by Dzierzawa (1991) [1]. At half-filling, the ground state was found to be ferrimagnetic [a (π,π) spiral phase], in agreement with a theorem by Lieb (1989) [2]. The total magnetization approaches Lieb's prediction as U/t becomes large. As we move away from half-filling, this ferrimagnetic phase becomes a (q1,q1) spiral phase with q1≈π and then undergoes a series of first-order phase transitions, (q1,q1)→(q1,q2)→(q1,0), with q2≈π/2, before becoming ferromagnetic at large U/t or paramagnetic at low U/t.}
       \field{day}{15}
-      \field{issn}{0304-8853}
       \field{journaltitle}{Journal of Magnetism and Magnetic Materials}
       \field{month}{5}
       \field{shortjournal}{Journal of Magnetism and Magnetic Materials}
@@ -5186,7 +5161,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper, we address the stability of the Sherman–Morrison–Woodbury formula. Our main result states that if the original matrices, A and B, are well conditioned, then there exists matrices U and V such that the Sherman–Morrison–Woodbury formula is stable when applied to \$A = B - {UV}{^}T \$.}
       \field{day}{1}
-      \field{issn}{0196-5204}
       \field{journaltitle}{{SIAM} Journal on Scientific and Statistical Computing}
       \field{month}{4}
       \field{number}{2}

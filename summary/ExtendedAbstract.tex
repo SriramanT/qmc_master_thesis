@@ -39,6 +39,7 @@
 %% or use the epsfig package if you prefer to use the old commands
 %% \usepackage{epsfig}
 
+\usepackage{flushend}
 % MY OWN PACKAGES
 \usepackage{cuted}
 \usepackage{bm}
@@ -65,6 +66,7 @@
 \usepackage[backend=biber,style=nature,sorting=none]{biblatex}
 \addbibresource{references.bib}
 
+\raggedbottom
 
 \usepackage{graphicx} % Enhanced LaTeX Graphics
 
@@ -193,7 +195,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % RESULTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{ExtendedAbstract_resul}
+%\input{ExtendedAbstract_resul}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CONCLUSIONS
@@ -222,7 +224,7 @@
 %\bibliographystyle{alpha}
 
 \renewcommand{\bibfont}{\scriptsize}
-\printbibliography
+\printbibliography[heading=none]
 
 % External bibliography database file in the BibTeX format (ExtendedAbstract_ref_db.bib)
 %\bibliography{ExtendedAbstract_ref_db}

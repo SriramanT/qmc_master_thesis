@@ -9,28 +9,10 @@
 % article already dealt with in the Introduction and lay the
 % foundation for further work.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Background}
 \label{sec:backg}
-
 In this section we summarize the main aspects of the three most important parts of this work: the tight-binding model used to describe TMD nanoribbons, and its extension to the interacting case via on-site intra-orbital interactions; the mean field theory of this model, and the iterative solution of the corresponding self-consistent equation; the simulation of the model using Determinant Quantum Monte Carlo.
-
 \subsection{Minimal 3-band tight-binding model}
-
-Here, we present a minimal model describing the low energy physics of group 6 TMD monolayers \cite{liu_three-band_2013}.
-To obtain this tight-binding model, one uses the symmetries of the monolayer, and the fact that at low energies, both band edges have major contributions from $d_{z^2}$, $d_{xy}$, and $d_{x^2 - y^2}$ orbitals of M-atoms and the $p$-orbitals of the X-atoms (which contribute very little at the band edges).
-This is illustrated for $\text{Mo}\text{S}_2$ in Fig.(\ref{fig:nanoribbons_energiesTMDs}).
-Near the Fermi energy, the $\text{Mo}$ $d$-orbitals are clearly more populated at the $K$ point (circled in orange), hence these atomic orbitals contribute more to the Bloch states near that point.
-\begin{figure}[H]
-\centering
-\includegraphics[scale = 0.2]{images/tmd2.png}
- \caption{(a) The 2H phase of a  TMD monolayer may be viewed simply as a $M-X$ honeycomb lattice. Here we represent the six nearest neighbors of a point on the $M$ triangular lattice by the real space vectors $\bm R_{i = 1,2,..., 6}$.
-(b) Unit cell of the trigonal prismatic (2H) phase of a TMD monolayer.
-(c) High symmetry points $\Gamma, M, K$ of the first Brillouin zone ($\bm b_{1,2}$ are the reciprocal basis vectors.\label{fig:tmdHex} (taken from \cite{liu_three-band_2013}). }
-\end{figure}
-The existence of mirror symmetry through the $x-y$ plane (see Fig.(\ref{fig:tmdHex}b)) imposes that no hybridization can occur between the sets of orbitals $\{d_{z^2}, d_{xy}, d_{x^2 - y^2} \}$ and $\{d_{xz}, d_{yz} \}$ ($d_{yz}$ and $d_{xz}$ orbitals are not symmetric under reflection upon the $x-y$ plane).
-At low energies, the former are known to be the most relevant for the band structure of TMDs (see Fig.(\ref{fig:nanoribbons_energiesTMDs})).
-These considerations motivate us to construct a three-band tight-binding model.
 \begin{figure}[H]
 \centering
 \includegraphics[scale = 0.2]{images/energiesTMDs}
@@ -38,14 +20,19 @@ These considerations motivate us to construct a three-band tight-binding model.
 The Fermi energy is set to 0, and the symbol size is proportional to the population of the state.
 The panels represent the contributions from: (a) $\text{Mo}$ $d$-orbitals; (b) All $p$-orbitals, dominated by $\text{S}$ atoms; (c) All $s$-orbitals. \label{fig:nanoribbons_energiesTMDs}}
 \end{figure}
+Here, we present a minimal model describing the low energy physics of group 6 TMD monolayers \cite{liu_three-band_2013}.
+To obtain this tight-binding model, one uses the symmetries of the monolayer, and the fact that at low energies, both band edges have major contributions from $d_{z^2}$, $d_{xy}$, and $d_{x^2 - y^2}$ orbitals of M-atoms and the $p$-orbitals of the X-atoms (which contribute very little at the band edges).
+This is illustrated for $\text{Mo}\text{S}_2$ in Fig.(\ref{fig:nanoribbons_energiesTMDs}).
+Near the Fermi energy, the $\text{Mo}$ $d$-orbitals are clearly more populated at the $K$ point (circled in orange), hence these atomic orbitals contribute more to the Bloch states near that point.
+The existence of mirror symmetry through the $x-y$ plane (see Fig.(\ref{fig:tmdHex}b)) imposes that no hybridization can occur between the sets of orbitals $\{d_{z^2}, d_{xy}, d_{x^2 - y^2} \}$ and $\{d_{xz}, d_{yz} \}$ ($d_{yz}$ and $d_{xz}$ orbitals are not symmetric under reflection upon the $x-y$ plane).
+At low energies, the former are known to be the most relevant for the band structure of TMDs (see Fig.(\ref{fig:nanoribbons_energiesTMDs})).
+These considerations motivate us to construct a three-band tight-binding model.
+
 Moreover, the remaining point-symmetry operations impose a constraint on the number of independent hopping parameters.
 By fitting to first principles results obtained from density functional theory %(using both the local-density and the generalized gradient approximations - LDA and GCA) 
 for the materials' energy bands, the hopping parameters can be obtained.
-The strategy that is chosen to do the fit in \cite{liu_three-band_2013} is to fit the band energies at the high-symmetry $\bm k$-points $\Gamma$, $K$, and $M$, and the energies of the valence and conduction bands near $K$ by least-squares.
-This procedure leads to a non-uniform nearest neighbor (NN) hopping matrix on the M-atom triangular lattice.
 Note that since the argument is purely based on symmetry, in general, the $d-d$ hoppings include both direct $d-d$ interactions of M atoms, and indirect ones, mediated by $X-p$ orbitals.
 These M-M hoppings suffice to describe the band-edge properties near the $\pm K$ valleys.
-By including third nearest neighbor hoppings, one can reproduce the energy dispersion in  the entire first Brillouin zone.
 We consider a \say{spinless} model.
 Let the greek indices represent orbital space, except for $\sigma$, meaning spin.
 Then, the  tight-binding Hamiltonian reads
@@ -61,9 +48,8 @@ t_0 &= t_{11}^{11} ( \bm R_1 ) \quad t_1 = t_{11}^{12} ( \bm R_1 ) \quad t_2 = t
 t_{11} &= t_{11}^{22} ( \bm R_1 ) \quad t_{12} = t_{12}^{22} ( \bm R_1 ) \quad t_{22} = t_{22}^{22} ( \bm R_1 )
 \end{split}
 \end{equation*}
-
 The on-site energies $\varepsilon_j$ corresponding to the atomic orbitals $\left| \phi_\mu^j \right\rangle$ appear through a diagonal hopping matrix in orbital space $\bm t ( \bm 0 ) \equiv \bm t^0 = \text{diag} ( \varepsilon_1, \varepsilon_2, \varepsilon_2 )$, while the NN hoppings are (see Fig.(\ref{fig:tmdHex}a))
-\begin{equation}
+\begin{equation}\label{eq:t14}
 \bm t (\bm R_{1, 4}) \equiv \bm t^{1, 4} =
 \begin{pmatrix}
 t_0 & \pm t_1 & t_2 \\
@@ -72,7 +58,7 @@ t_2 & \mp t_{12} & t_{22} \\
 \end{pmatrix}
 \end{equation}
 \begin{strip}
-\begin{equation}
+\begin{equation}\label{eq:t2536}
 \bm t (\bm R_{2,5\,(3,6)})  \equiv \bm t^{2, 5 (3, 6)}  =
 \begin{pmatrix}
 t_0 & \Pm \bigg( \pm \frac{1}{2} t_1 - \frac{\sqrt{3}}{2} t_2 \bigg) & \mp \frac{\sqrt{3}}{2} t_1 - \frac{1}{2} t_2 \\
@@ -81,27 +67,24 @@ t_0 & \Pm \bigg( \pm \frac{1}{2} t_1 - \frac{\sqrt{3}}{2} t_2 \bigg) & \mp \frac
 \end{pmatrix}
 \end{equation}
 \end{strip}
-
 The model we consider is obtained by adding intra-orbital on-site interactions to this model.
 Let $\bm K = \bm K_{\text{site}} \otimes \bm K_{\text{orb}}$ be the hopping matrix whose elements are the hoppings between the orbital $\alpha$ of site $i$ and the orbital $\beta$ of site $j$.
 Then, the intra-orbital Hubbard-like model corresponding to this minimal 3-band tight-binding model reads
-\begin{strip}
 \begin{equation}\label{eq:tmdHam}
-\mathcal{H} = \overbrace{- \sum_{\substack{i, j \\ \alpha, \beta, \sigma}} K_{(i\alpha),(j\beta )} \bigg( c_{i,\alpha, \sigma}^\dagger c_{j,\beta, \sigma} + c_{j,\beta , \sigma}^\dagger c_{i,\alpha, \sigma} \bigg)}^{\mathcal{H}_K} + \underbrace{\frac{U}{2} \sum_{\substack{i, \alpha \\ \sigma \neq \sigma'} } n_{i\alpha, \sigma} n_{i\alpha, \sigma'}}_{\mathcal{H}_V}
+\begin{split}
+\mathcal{H} &= \overbrace{- \sum_{\substack{i, j \\ \alpha, \beta, \sigma}} K_{(i\alpha),(j\beta )} \bigg( c_{i,\alpha, \sigma}^\dagger c_{j,\beta, \sigma} + c_{j,\beta , \sigma}^\dagger c_{i,\alpha, \sigma} \bigg)}^{\mathcal{H}_K} \\
+& + \underbrace{\frac{U}{2} \sum_{\substack{i, \alpha \\ \sigma \neq \sigma'} } n_{i\alpha, \sigma} n_{i\alpha, \sigma'}}_{\mathcal{H}_V}
+\end{split}
 \end{equation}
-\end{strip}
-
 \subsection{Self-consistent solution in the GCE}\label{subsec:selfconsistent}
-
 Here, we start by showing how to obtain the solution of the mean field Hubbard Hamiltonian numerically in an self-consistent manner, and then we generalize the procedure to treat the TMD nanoribbon.
-
 The mean field Hubbard Hamiltonian reads
-\begin{strip}
 \begin{equation}
-\mathcal{H}_{\text{MF}} = \mathcal{H}_\uparrow + \mathcal{H}_\downarrow + \mathcal{C} , \,\, \mathcal{H}_\sigma = - t \sum_{\left\langle i, j \right\rangle} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) + U \sum_i n_{i,\sigma} \left\langle n_{i,-\sigma} \right\rangle , \,\, \mathcal{C} = - U \sum_i \left\langle n_{i,\uparrow} \right\rangle \left\langle n_{i,\downarrow} \right\rangle
+\begin{split}
+\mathcal{H}_{\text{MF}} &= \mathcal{H}_\uparrow + \mathcal{H}_\downarrow + \mathcal{C} \\
+ \mathcal{H}_\sigma &= - t \sum_{\left\langle i, j \right\rangle} \bigg( c_{i,\sigma}^\dagger c_{j,\sigma} + c_{j,\sigma}^\dagger c_{i,\sigma} \bigg) + U \sum_i n_{i,\sigma} \left\langle n_{i,-\sigma} \right\rangle \\ \mathcal{C} &= - U \sum_i \left\langle n_{i,\uparrow} \right\rangle \left\langle n_{i,\downarrow} \right\rangle
+\end{split}
 \end{equation}
-\end{strip}
-
 We seek the most energetically favorable self-consistent solution iteratively\footnote{One must pay attention so as not to get stuck in metastable states.}: the up and down-spin electron densities are updated successively until convergence occurs.
 
 Since the interacting problem is turned into a single particle problem, the solution basically consists of diagonalizing two $N \times N$ matrices, where $N$ is the size of the system.
@@ -120,7 +103,6 @@ First, we diagonalize $\mathcal{H}_\sigma$, obtaining the one-particle spectrum 
 \begin{equation}
 \mathcal{H}_{\text{MF}} = \sum_{\alpha, \sigma} \varepsilon_{\alpha, \sigma} d_{\alpha, \sigma}^\dagger d_{\alpha, \sigma} + \mathcal{C} , \,\, d_{\alpha, \sigma} = \sum_i Q_{\alpha i, \sigma}^\star c_{i,\sigma}
 \end{equation}
-
 Given a number of electrons per unit cell, $n_e$, we compute the chemical potential corresponding to that filling implicitly through 
 \begin{equation*}
 \frac{1}{N} \sum_{\alpha, \sigma} (  e^{\beta ( \varepsilon_{\alpha, \sigma} - \mu ) } +1 )^{-1} = n_e
@@ -131,7 +113,6 @@ Then, we recompute the mean field parameters, and check for convergence: at iter
 \begin{equation}\label{eq:selfConsistent}
 \left\langle n_{i,\sigma} \right\rangle = \sum_\alpha | Q_{\alpha i, \sigma} |^2 ( 1 + e^ { \beta ( \varepsilon_{\alpha, \sigma} - \mu )} )^{-1}
 \end{equation}
-
 Now, we discuss how to circumvent the convergence issues that may arise when applying the self-consistent procedure.
 First, there are many possible initial conditions, most notably: the random one, which is the most unbiased, but may be slow or not converge at all; the paramagnetic state $\left\langle n_{i,\sigma} \right\rangle = \text{const.}$, which, when combined with the annealing method we shall describe below, emulates the random initial condition; a specific state, such as the antiferromagnetic one, which is a biased choice, which limits the accessible part of parameter space, and potentially gives a misleading mean field solution, but can have good convergence properties.
 
@@ -158,20 +139,22 @@ If this reduction is not done correctly, we will obtain biased self-consistent s
 
 Since we consider PBCs along the $x$-direction for the nanoribbon, we can partially diagonalize the Hamiltonian analytically, reducing the size of the matrix to be diagonalized to $N_{\text{orb}} N_y \times N_{\text{orb}} N_y$, where $N_y$ is the width of the ribbon, i.e. the number of $\text{M}\text{X}_2$ formula units.
 Consider the spinless 3-band tight binding model on the nanoribbon, with unit lattice constant.
-\begin{strip}
-\vspace{-1.1cm}
 \begin{equation}
 \begin{split}
-\mathcal{H}_0 &= \sum_{\substack{m, n \\ \alpha, \beta}} \bigg( c_{m,n, \alpha}^\dagger t_{\alpha\beta}^0 c_{m, n, \beta} + \delta_{0, N_x}  c_{m,n, \alpha}^\dagger t_{\alpha\beta}^1 c_{m+1, n, \beta} + \delta_{-\sqrt{3}/2, (N_y -1)\sqrt{3}/2}  c_{m,n, \alpha}^\dagger t_{\alpha\beta}^4 c_{m-1, n, \beta} \\
-& + \delta_{0, N_m} \delta_{-1, (N_y -1)\sqrt{3}/2} c_{m+1/2,n-\sqrt{3}/2, \alpha}^\dagger t_{\alpha\beta}^2 c_{m, n, \beta} + \delta_{-1, (N_y -1)\sqrt{3}/2} c_{m-1/2,n-\sqrt{3}/2, \alpha}^\dagger t_{\alpha\beta}^3 c_{m, n, \beta} \\
-& + \delta_{N_y\sqrt{3}/2, 0} c_{m+1/2,n+\sqrt{3}/2, \alpha}^\dagger t_{\alpha\beta}^6 c_{m, n, \beta} + \delta_{-1, N_x -1} \delta_{N_y\sqrt{3}/2, 0} c_{m-1/2,n+\sqrt{3}/2, \alpha}^\dagger t_{\alpha\beta}^5 c_{m, n, \beta} \bigg)
+\mathcal{H}_0 &= \sum_{\substack{m, n \\ \alpha, \beta}} \big( c_{m,n, \alpha}^\dagger t_{\alpha\beta}^0 c_{m, n, \beta} + \delta_{0, N_x}  c_{m,n, \alpha}^\dagger t_{\alpha\beta}^1 c_{m+1, n, \beta} \\
+&+ \delta_{-\sqrt{3}/2, (N_y -1)\sqrt{3}/2}  c_{m,n, \alpha}^\dagger t_{\alpha\beta}^4 c_{m-1, n, \beta} \\
+& + \delta_{0, N_m} \delta_{-1, (N_y -1)\sqrt{3}/2} c_{m+1/2,n-\sqrt{3}/2, \alpha}^\dagger t_{\alpha\beta}^2 c_{m, n, \beta} \\
+& + \delta_{-1, (N_y -1)\sqrt{3}/2} c_{m-1/2,n-\sqrt{3}/2, \alpha}^\dagger t_{\alpha\beta}^3 c_{m, n, \beta} \\
+& + \delta_{N_y\sqrt{3}/2, 0} c_{m+1/2,n+\sqrt{3}/2, \alpha}^\dagger t_{\alpha\beta}^6 c_{m, n, \beta} \\
+& + \delta_{-1, N_x -1} \delta_{N_y\sqrt{3}/2, 0} c_{m-1/2,n+\sqrt{3}/2, \alpha}^\dagger t_{\alpha\beta}^5 c_{m, n, \beta} \big)
 \end{split}
 \end{equation}
 Fourier transforming along $m$: $c_{m, n, \alpha} = \frac{1}{\sqrt{N_x}}\sum_{k} e^{-i k m } c_{k, n, \alpha} $, with $k = \frac{2\pi}{N_x} \{ -\frac{N_x}{2} + 1, -\frac{N_x}{2}, ..., \frac{N_x}{2} \}$:
 \begin{equation}
 \begin{split}
-\mathcal{H}_0 &= \sum_{ \substack{k, y \\ \alpha, \beta} } \bigg( c_{k, y, \alpha}^\dagger (t_{\alpha \beta}^0  + e^{ik} t_{\alpha \beta}^1 + e^{-ik} t_{\alpha \beta}^4 )  c_{k, y, \beta} + \delta_{-1, N_y -1} c_{k, y - 1, \alpha}^\dagger ( e^{ik/2} t_{\alpha \beta}^2 + e^{-ik/2} t_{\alpha \beta}^3 ) c_{k, y, \beta} \\
-& + \delta_{N_y, 0} c_{k, y, \alpha}^\dagger ( e^{ik/2} t_{\alpha \beta}^6 + e^{-ik/2} t_{\alpha \beta}^5 ) c_{k, y+1, \beta} \bigg) , \,\, \text{with} \, y \, \text{defined as in Fig.(4.1)}
+\mathcal{H}_0 &= \sum_{ \substack{k, y \\ \alpha, \beta} } \bigg( c_{k, y, \alpha}^\dagger (t_{\alpha \beta}^0  + e^{ik} t_{\alpha \beta}^1 + e^{-ik} t_{\alpha \beta}^4 )  c_{k, y, \beta} \\
+&+ \delta_{-1, N_y -1} c_{k, y - 1, \alpha}^\dagger ( e^{ik/2} t_{\alpha \beta}^2 + e^{-ik/2} t_{\alpha \beta}^3 ) c_{k, y, \beta} \\
+& + \delta_{N_y, 0} c_{k, y, \alpha}^\dagger ( e^{ik/2} t_{\alpha \beta}^6 + e^{-ik/2} t_{\alpha \beta}^5 ) c_{k, y+1, \beta} \bigg) , 
 \end{split}
 \end{equation}
 leading to a tridiagonal block $3 N_y \times 3 N_y$ hopping matrix $\bm H (k)$ with three different types of matrix elements: $\bm h_1 = \bm H_{y,y}$, $\bm h_2 = \bm H_{y,y-1}$, $\bm h_2^\dagger = \bm H_{y, y+1}$.
@@ -183,40 +166,38 @@ leading to a tridiagonal block $3 N_y \times 3 N_y$ hopping matrix $\bm H (k)$ w
 & \bm h_2 & \bm h_1 & \ddots & \\
 & & \ddots & \ddots & \bm h_2^\dagger \\
 & & & \bm h_2 & \bm h_1
-\end{pmatrix}, \, 
-\bm h_1 = 
-\begin{pmatrix}
-\varepsilon_1 + 2 t_0 \cos k & 2 i t_1 \sin k & 2 t_2 \cos k \\
--2 i t_1 \sin k & \varepsilon_2 + 2 t_{11} \cos k & 2 i t_{12} \sin k \\
-2 t_2 \cos k& -2 i t_{12} \sin k & \varepsilon_2 + 2 t_{22} \cos k \\
 \end{pmatrix}
 \end{equation}
-\begin{equation*}
-\bm h_2 =
-\begin{pmatrix}
-2 t_0 \cos ( k / 2 ) & i \sin ( k / 2 ) \bigg( t_1 - \sqrt{3} t_2 \bigg) & - \cos (k /2 ) \bigg( \sqrt{3} t_1 + t_2 \bigg) \\
--i \sin ( k / 2 ) \bigg(t_1 + \sqrt{3} t_2 \bigg) & \frac{1}{2} \cos (k / 2) \bigg( t_{11} + 3 t_{22} \bigg) & -i \sin (k / 2) \bigg( \frac{\sqrt{3}}{2} (t_{11} -  t_{22} ) + 2 t_{12} \bigg) \\
-\cos ( k / 2) \bigg( \sqrt{3} t_1 - t_2 \bigg) & -i \sin (k / 2) \bigg( \frac{\sqrt{3}}{2} ( t_{11} - t_{22} ) - 2 t_{12} \bigg) & \frac{1}{2} \cos (k / 2) \bigg( 3 t_{11	} + t_{22} \bigg)
-\end{pmatrix}
-\end{equation*}
-\end{strip}
+These matrices ($\bm h_1$, $\bm h_2$) can be obtained by gathering matrix elements of the matrices of Eqs.(\ref{eq:t14},\ref{eq:t2536}).
+%\begin{equation*}
+%\bm h_2 =
+%\begin{pmatrix}
+%2 t_0 \cos ( k / 2 ) & i \sin ( k / 2 ) \bigg( t_1 - \sqrt{3} t_2 \bigg) & - \cos (k /2 ) \bigg( \sqrt{3} t_1 + t_2 \bigg) \\
+%-i \sin ( k / 2 ) \bigg(t_1 + \sqrt{3} t_2 \bigg) & \frac{1}{2} \cos (k / 2) \bigg( t_{11} + 3 t_{22} \bigg) & -i \sin (k / 2) \bigg( \frac{\sqrt{3}}{2} (t_{11} -  t_{22} ) + 2 t_{12} \bigg) \\
+%\cos ( k / 2) \bigg( \sqrt{3} t_1 - t_2 \bigg) & -i \sin (k / 2) \bigg( \frac{\sqrt{3}}{2} ( t_{11} - t_{22} ) - 2 t_{12} \bigg) & \frac{1}{2} \cos (k / 2) \bigg( 3 t_{11	} + t_{22} \bigg)
+%\end{pmatrix}
+%\end{equation*}
 In fact, by applying our mean field approach in real space to solve the 3-band model with Hubbard-type interactions, we obtain solutions that are independent of $x$ (the longitudinal coordinate on the ribbon), which motivates us to reduce the number of MF parameters by choosing the translationally invariant ansatz introduced above.
 This is equivalent to taking $\left\langle n_{x, y,\alpha, \sigma}\right\rangle = \left\langle n_{y,\alpha, \sigma}\right\rangle  \forall x$ ($6 N_y$ parameters).
 By reducing the number of parameters, convergence is facilitated, which makes it more likely that, for example, the solution of Fig.(\ref{fig:nanoGraphVsTMD}) is robust, i.e. it  does not correspond to a metastable.
 The mean field form of the interaction term with the reduced number of parameters changes, implying that the self-consistent relation of Eq.(\ref{eq:selfConsistent}) from which the local densities are computed changes as well.
-\begin{strip}
-\vspace{-0.3cm}
 \begin{equation}
-\mathcal{H}_{\text{MF}} = \mathcal{H}_0 + \mathcal{H}_1 + \mathcal{C} , \,\text{where} \,\, \mathcal{H}_1 = U \sum_{m, n, \alpha}  \sum_\sigma n_{\substack{m, \sigma \\ n, \alpha}} \big\langle n_{\substack{m, -\sigma \\ n, \alpha}} \big\rangle  , \,\, \mathcal{C} = -U  \sum_{m, n, \alpha} \big\langle n_{\substack{m, \uparrow \\ n, \alpha}} \big\rangle \big\langle n_{\substack{m, \downarrow \\ n, \alpha}} \big\rangle
+\begin{split}
+\mathcal{H}_{\text{MF}} &= \mathcal{H}_0 + \mathcal{H}_1 + \mathcal{C} , \,\text{where} \\
+\mathcal{H}_1 &= U \sum_{m, n, \alpha}  \sum_\sigma n_{\substack{m, \sigma \\ n, \alpha}} \big\langle n_{\substack{m, -\sigma \\ n, \alpha}} \big\rangle  , \\
+\mathcal{C} &= -U  \sum_{m, n, \alpha} \big\langle n_{\substack{m, \uparrow \\ n, \alpha}} \big\rangle \big\langle n_{\substack{m, \downarrow \\ n, \alpha}} \big\rangle
+\end{split}
 \end{equation}
 \begin{equation}
 \begin{split}
-\mathcal{H}_1 + \mathcal{C} &= \frac{U}{N_x^{\,2}} \sum_{\substack{n \alpha \\ k_1 k_2 \\ k_3 k_4}} \underbrace{\sum_m e^{i [ (k_1 + k_3) - (k_2 + k_4) ] m}}_{N_x \delta_{k_4, k_1 + k_3 - k_2}} \bigg( \sum_\sigma c_{\substack{k_1, \sigma \\ n, \alpha}}^\dagger c_{\substack{k_2, \sigma \\ n, \alpha}} \underbrace{\big\langle c_{\substack{k_3, -\sigma\\ n, \alpha}}^\dagger c_{\substack{k_4, -\sigma \\ n, \alpha}} \big\rangle}_{\delta_{k_3, k_4} \big\langle n_{\substack{k_3,-\sigma \\ n, \alpha}} \big\rangle} - \underbrace{\big\langle c_{\substack{k_1, \uparrow \\ n, \alpha}}^\dagger c_{\substack{k_2  \uparrow \\n, \alpha}} \big\rangle}_{\delta_{k_1, k_2} \big\langle n_{\substack{k_2,\uparrow \\ n, \alpha}} \big\rangle} \underbrace{\big\langle c_{\substack{k_3, \downarrow \\ n, \alpha}}^\dagger c_{\substack{k_4, \downarrow \\ n, \alpha}} \big\rangle}_{\delta_{k_3, k_4} \big\langle n_{\substack{k_3,\downarrow \\ n, \alpha}} \big\rangle}  \bigg) \\
-&= \frac{U}{N_x} \sum_{\substack{n \alpha \\ k_2 k_3}} \bigg( \sum_\sigma n_{\substack{k_2, \sigma \\ n, \alpha}} \big\langle n_{\substack{k_3, -\sigma \\ n, \alpha}} \big\rangle - \big\langle n_{\substack{k_2, \uparrow \\ n, \alpha}} \big\rangle \big\langle n_{\substack{k_3, \downarrow \\ n, \alpha}} \big\rangle \bigg) \equiv
-U \sum_{k, \mu} \bigg( \sum_\sigma n_{k,\mu, \sigma} \big\langle n_{\mu, -\sigma} \big\rangle - \big\langle n_{\mu, \uparrow} \big\rangle \big\langle n_{\mu, \downarrow} \big\rangle \bigg)
+\mathcal{H}_1 + \mathcal{C} &= \frac{U}{N_x^{\,2}} \sum_{\substack{n \alpha \\ k_1 k_2 \\ k_3 k_4}} \underbrace{\sum_m e^{i [ (k_1 + k_3) - (k_2 + k_4) ] m}}_{N_x \delta_{k_4, k_1 + k_3 - k_2}} \\
+&\bigg( \sum_\sigma c_{\substack{k_1, \sigma \\ n, \alpha}}^\dagger c_{\substack{k_2, \sigma \\ n, \alpha}} \underbrace{\big\langle c_{\substack{k_3, -\sigma\\ n, \alpha}}^\dagger c_{\substack{k_4, -\sigma \\ n, \alpha}} \big\rangle}_{\delta_{k_3, k_4} \big\langle n_{\substack{k_3,-\sigma \\ n, \alpha}} \big\rangle} \\
+&- \underbrace{\big\langle c_{\substack{k_1, \uparrow \\ n, \alpha}}^\dagger c_{\substack{k_2  \uparrow \\n, \alpha}} \big\rangle}_{\delta_{k_1, k_2} \big\langle n_{\substack{k_2,\uparrow \\ n, \alpha}} \big\rangle} \underbrace{\big\langle c_{\substack{k_3, \downarrow \\ n, \alpha}}^\dagger c_{\substack{k_4, \downarrow \\ n, \alpha}} \big\rangle}_{\delta_{k_3, k_4} \big\langle n_{\substack{k_3,\downarrow \\ n, \alpha}} \big\rangle}  \bigg) \\
+= \frac{U}{N_x} \sum_{\substack{n \alpha \\ k_2 k_3}} & \bigg( \sum_\sigma n_{\substack{k_2, \sigma \\ n, \alpha}} \big\langle n_{\substack{k_3, -\sigma \\ n, \alpha}} \big\rangle - \big\langle n_{\substack{k_2, \uparrow \\ n, \alpha}} \big\rangle \big\langle n_{\substack{k_3, \downarrow \\ n, \alpha}} \big\rangle \bigg) \\
+\equiv
+U \sum_{k, \mu} & \bigg( \sum_\sigma n_{k,\mu, \sigma} \big\langle n_{\mu, -\sigma} \big\rangle - \big\langle n_{\mu, \uparrow} \big\rangle \big\langle n_{\mu, \downarrow} \big\rangle \bigg)
 \end{split}
 \end{equation}
-\end{strip}
 where we collapsed the indexes $(n, \alpha)$ into a single index $\mu$.
 The self-consistent relation allowing us to compute the new MF parameters at each step emerges by diagonalizing $\mathcal{H}_1$ in the $\mu$-subspace:
 \begin{equation}
